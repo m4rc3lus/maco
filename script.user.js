@@ -1,23 +1,9371 @@
 // ==UserScript==
-// @name         Macko Duško
-// @namespace    https://macko.industries.sk/dusan
-// @version      3.65.5
-// @description  Reworked Dob.y2
-// @author       xxxxx and Macko
-// @license      CC BY-NC-ND 4.0; https://creativecommons.org/licenses/by-nc-nd/4.0/
+// @name         QOL tool
+// @version      3.66.3
+// @description  Personal passion project, not to share
 // @include      https://www.the-west.*
 // @include      https://*.the-west.*/game.php*
-// @include      https://*.the-west.com.*/game.php*
-// @include      https://*.the-west.*.com/game.php*
-// @exclude      https://*.events.the-west.*
-// @exclude      https://*forum.beta.the-west.*
 // @icon         https://westsk.innogamescdn.com/images/items/animal/item_51460.png?7
-// @downloadURL  https://mackodusko.github.io/dusan/script.user.js
-// @updateURL    https://mackodusko.github.io/dusan/script.meta.js
 // @grant        GM_setValue
 // @grant        GM_getValue
 // @grant        GM_deleteValue
 // @grant        GM_info
 // @grant        unsafeWindow
 // ==/UserScript==
-const _0x4edaea=_0x3acb;(function(_0x504256,_0x52a66c){const _0x4f1a9c=_0x3acb,_0x3197c1=_0x504256();while(!![]){try{const _0x287c37=-parseInt(_0x4f1a9c(0x6ae))/0x1*(-parseInt(_0x4f1a9c(0x4a0))/0x2)+-parseInt(_0x4f1a9c(0x8c0))/0x3+-parseInt(_0x4f1a9c(0x64e))/0x4*(parseInt(_0x4f1a9c(0x7f3))/0x5)+parseInt(_0x4f1a9c(0x4b2))/0x6+parseInt(_0x4f1a9c(0x554))/0x7+-parseInt(_0x4f1a9c(0x72b))/0x8+parseInt(_0x4f1a9c(0x7a0))/0x9*(-parseInt(_0x4f1a9c(0x8ba))/0xa);if(_0x287c37===_0x52a66c)break;else _0x3197c1['push'](_0x3197c1['shift']());}catch(_0x98ef81){_0x3197c1['push'](_0x3197c1['shift']());}}}(_0x483d,0xe6316),(function(){'use strict';const _0x54d740=_0x3acb;const _0x453c68=0x10,_0x1a537c=0x1770,_0x35ed20=0x5,_0x142cd3=0x1388,_0x5039c8=0x2710,_0x5c9db8=0x2710,_0xa9ca5d=0x1e,_0x161592=0x1e,_0x126737=0x41,_0x110ed6=0x3c;var _0x58a9f4=0x78,_0x3b6de4=0xa,_0x4d13ec=0x3e8,_0x493a77=0x1f4,_0x1240d1=0xfa0,_0x2024b9=0x7d0,_0x4c975a=![],_0x5be13a=null,_0x5f02f5=0x124f80,_0x2c1850=null,_0x37831f=null,_0x32ed57=null,_0x3f1dfe=null;const _0x46d8e0={'cicina':_0x54d740(0x895),'dusan':'maly'};var _0x1ae1d1='',_0xb686fd=[],_0x35681a=!![],_0xc24a06=![],_0x2078fb=![],_0x4077e1=![],_0x574178=![],_0x16834b=![],_0x55f5e9={},_0x340455=![],_0x5bcb61=![],_0xa649b2=![],_0x53ea43=null,_0xce72cd=![],_0xff43f0=_0x54d740(0x4fc);const _0x5aa5f4={'version':'3.65.5','base_url':_0x54d740(0x384),'updateInfo':[],'updateCheck':function(){const _0x55ecc1=_0x54d740;fetch(_0x5aa5f4[_0x55ecc1(0x69d)]+_0x55ecc1(0x72f)+new Date()[_0x55ecc1(0x4f0)]())[_0x55ecc1(0x3ec)](_0x582d13=>_0x582d13[_0x55ecc1(0x3e9)]())[_0x55ecc1(0x3ec)](_0x590b1d=>{const _0x4e773c=_0x55ecc1,_0x2f0c6d=_0x590b1d[_0x4e773c(0x6fd)]('\x0a'),_0x3ae160=[];let _0x1baf45=[],_0x3498fe=![],_0x396b16=_0x5aa5f4[_0x4e773c(0x225)],_0x400c89=null;_0x2f0c6d[_0x4e773c(0x404)](_0x230da1=>{const _0x472881=_0x4e773c;_0x230da1=_0x230da1['trim']();if(!_0x230da1)return;if(_0x230da1[_0x472881(0x37a)]()[_0x472881(0x4db)](_0x472881(0x225))||_0x230da1[_0x472881(0x37a)]()[_0x472881(0x4db)](_0x472881(0x8ca))){if(_0x400c89!=null)_0x3ae160[_0x472881(0x70d)]({'version':_0x400c89,'changelog':_0x1baf45});_0x400c89=_0x230da1[_0x472881(0x6fd)](/\s*[:\s]\s*/)[0x1],_0x1baf45=[];}else _0x1baf45['push'](_0x230da1);});if(_0x400c89!=null)_0x3ae160[_0x4e773c(0x70d)]({'version':_0x400c89,'changelog':_0x1baf45});_0x5aa5f4['updateInfo']=_0x3ae160;const _0x35d224=_0x3ae160[_0x4e773c(0x813)](_0x1808ef=>_0x412f0c(_0x396b16,_0x1808ef[_0x4e773c(0x225)]));if(_0x35d224['length']>0x0){let _0x1e821e=_0x35d224[_0x4e773c(0x813)](_0x29a617=>_0x29a617[_0x4e773c(0x42c)][_0x4e773c(0x881)]>0x0)[_0x4e773c(0x286)](_0x275343=>'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x27display:\x20flex;\x20gap:\x205px;\x20margin-top:\x2010px;\x27>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<strong\x20style=\x27display:\x20inline-block;\x20vertical-align:\x20top;\x20min-width:\x2055px;\x27>'+_0x275343[_0x4e773c(0x225)]+_0x4e773c(0x685)+_0x275343[_0x4e773c(0x42c)][_0x4e773c(0x286)](_0x22cc56=>'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x27display:\x20flex;\x20gap:\x205px;\x27>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20style=\x27display:\x20inline-block;\x27>-</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span>'+_0x22cc56+_0x4e773c(0x70b))['join']('')+_0x4e773c(0x540))[_0x4e773c(0x57e)]('');const _0x528db8=$(_0x4e773c(0x792))[_0x4e773c(0x820)](_0x4e773c(0x259));_0x1e821e[_0x4e773c(0x1df)]()!==''&&_0x528db8['append'](_0x4e773c(0x564))[_0x4e773c(0x820)](_0x1e821e),new west['gui'][(_0x4e773c(0x79c))](_0x4e773c(0x267)+_0x5aa5f4[_0x4e773c(0x225)]+_0x4e773c(0x273)+_0x35d224[0x0][_0x4e773c(0x225)],_0x528db8,west[_0x4e773c(0x6cc)]['Dialog'][_0x4e773c(0x64d)])['addButton']('Update',function(){const _0x3107cd=_0x4e773c;window[_0x3107cd(0x1e5)](_0x5aa5f4[_0x3107cd(0x69d)]+_0x3107cd(0x42b)),_0x5aa5f4['needReload']=!![],document[_0x3107cd(0x485)](_0x3107cd(0x5a2),_0x5aa5f4['handleVisibilityChange']),document['addEventListener']('visibilitychange',_0x5aa5f4[_0x3107cd(0x28e)]);})[_0x4e773c(0x50f)]();}})[_0x55ecc1(0x676)](_0x31e479=>{});},'window':null,'needReload':![],'invalidSession':![],'jobsLoaded':![],'startTime':null,'lastReloadTime':null,'lastResult':[],'lastResultFarming':[],'bonusTypeMap':[],'allConsumables':[],'allJobs':[],'uniqueJobs':[],'lastPosition':{'x':null,'y':null},'addedJobsOld':[],'addedJobsHasChanged':!![],'jobsBestGear':[],'allianceForts':[],'battles':[],'towns':[],'homeTown':null,'jobsTablePosition':{'content':'0px','scrollbar':_0x54d740(0x36f)},'addedJobsTablePosition':{'content':_0x54d740(0x36f),'scrollbar':_0x54d740(0x36f)},'consumablesTablePosition':{'content':_0x54d740(0x36f),'scrollbar':_0x54d740(0x36f)},'favoriteJobsTablePosition':{'content':_0x54d740(0x36f),'scrollbar':_0x54d740(0x36f)},'_currentState':0x0,get 'currentState'(){const _0x48ba15=_0x54d740;return this[_0x48ba15(0x414)];},set 'currentState'(_0x5a7d9d){const _0xedaa79=_0x54d740;this[_0xedaa79(0x414)]!==_0x5a7d9d&&(this['_currentState']=_0x5a7d9d,_0x2d3507(_0x5a7d9d));},'states':['idle','running',_0x54d740(0x356),'sleep\x20regenerating',_0x54d740(0x703),_0x54d740(0x7ca),_0x54d740(0x7fb),_0x54d740(0x6fe)],'lastActiveTab':_0x54d740(0x24c),'xpJobsPreset':[0xca,0xcd,0xc9,0xc0,0xcc,0xc8,0xc7,0xb9,0xbb,0xc4,0xb4,0xbd,0xcb,0xb5,0xc2,0x99,0xc5,0xbe,0xb1,0xbc,0xb6,0xc3,0xb8,0x98,0xba,0xbf,0xb2,0xb0,0x9f,0xaf,0xaa,0xc1,0xb3,0x97,0xa5,0xa0,0xac,0xa1,0xae,0x91,0xb7,0xa8,0xab,0x93,0xa6,0x9d,0x95,0x96,0xa7,0xa4],'moneyJobsPreset':[0xc1,0xc7,0xca,0xb9,0xb3,0xcd,0xcc,0xcb,0xbe,0xa1,0xc6,0xbb,0xc8,0xc9,0xc4,0xb5,0xb8,0xb6,0xb2,0xc5,0xb1,0xab,0xc2,0xaf,0xc0],'wayTimes':null,'wardrobe':new Map(),'maxHealthForSet':new Map(),'sets':new Map(),'selectedSet':null,'maxAllowedEnergy':0x64,'isDuelProtected':![],'err':0x1,'consumableSelection':{'energy':![],'motivation':![],'health':![],'buffs':![]},'isRunning':![],'jobRunning':![],'energyCost':0x1,'language':'','translationLang':'','addedJobs':[],'consumablesSelection':[],'jobsFarmingGear':[],'favoriteJobs':[],'workerProfiles':{'selected':_0x54d740(0x664),'profile0':{'jobs':[],'maxJobRank':0xa,'jobsToAdd':0x8},'profile1':{'jobs':[],'maxJobRank':0xa,'jobsToAdd':0x8},'profile2':{'jobs':[],'maxJobRank':0xa,'jobsToAdd':0x8}},'travelSet':-0x2,'jobSet':-0x1,'healthSet':-0x3,'regenerationSet':-0x1,'sortJobTable':{'xp':0x1,'distance':0x0,'money':0x0},'jobFilter':{'filterOnlySilver':!![],'filterNoSilver':![],'filterCenterJobs':![],'filterFavorites':![],'filterEnoughLP':![],'filterJob':''},'farmingAssistant':{'enabled':![],'jobSwapped':![],'stopLevel':![],'awaitNextSession':![],'selectedGearLevel':0x0},'currentJob':{'jobIdx':0x0,'direction':!![]},'build':{'allowed':!![],'nightBuild':![],'interval':0x384,'hoursAmount':0x6,'building':_0x54d740(0x519),'set':-0x1},'settings':{'allowMotivationOptional':![],'addEnergyOptional':!![],'addEnergy':!![],'addMotivation':!![],'addHealth':!![],'addBuffs':![],'addXpBuff':!![],'addLuckBuff':![],'addMoneyBuff':![],'addProductBuff':![],'addTravelBuff':!![],'healthStopPercent':0x14,'healthStopValue':0x1f4,'addEnergyOptionalMin':0x1e,'addEnergyOptionalMax':0x1e,'enableRegeneration':!![],'altTown':null,'enableAutoDeposit':!![],'depositAmount':0x186a0,'depositDuelProtected':!![],'fortBattle':{'attend':![],'selected':-0x1,'attackSet':-0x1,'defSet':-0x1,'openFortWindow':![],'refillHealth':!![],'isTank':![],'minHealth':0x63,'useConsumable':![],'consumable':null},'notifications':{'enabled':!![],'silent':![],'requireInteraction':!![],'error':!![],'stopped':!![],'sleep':!![],'battle':!![],'battle_prep':![],'duel':!![]},'autoReload':!![],'autoLogin':!![],'nightShiftWorker':![],'advancedWalkingToJob':![],'maxJobRank':0xa,'jobsToAdd':0x8,'skipTutorial':!![],'allowWardrobeExport':!![]},'diagnostics':{'reloadReasons':[],'waitingReasons':[],'consumablesUsed':[],'errorLog':[]},'stats':{'session':{'consumableWaitingTime':0x0,'sleepTime':0x0,'travelTime':0x0,'runTime':0x0,'money':0x0,'jobs':0x0,'xp':0x0},'total':{'money':0x0,'jobs':0x0,'xp':0x0}},'searchKeys':{'en_DK':{'motivationEventBuff':_0x54d740(0x2df)},'sk_SK':{'motivationEventBuff':'pracovná\x20motivácia'},'cs_CZ':{'motivationEventBuff':_0x54d740(0x6c9)},'pl_PL':{'motivationEventBuff':_0x54d740(0x269)},'hu_HU':{'motivationEventBuff':_0x54d740(0x411)},'ro_RO':{'motivationEventBuff':_0x54d740(0x883)},'tr_TR':{'motivationEventBuff':_0x54d740(0x5e9)},'nl_NL':{'motivationEventBuff':'Arbeidsmotivatie'},'it_IT':{'motivationEventBuff':'Motivazione\x20lavoro'},'el_GR':{'motivationEventBuff':'Κίνητρο\x20δουλειάς'},'fr_FR':{'motivationEventBuff':'de\x20motivation\x20de\x20travail'},'es_ES':{'motivationEventBuff':_0x54d740(0x266)},'de_DE':{'motivationEventBuff':'Arbeitsmotivation'},'pt_PT':{'motivationEventBuff':_0x54d740(0x7d3)},'pt_BR':{'motivationEventBuff':'Em\x20motivação\x20para\x20trabalho'},'ru_RU':{'premiumText':_0x54d740(0x5dd),'motivationEventBuff':_0x54d740(0x34c)}},'explainerTranslations':{'en_DK':{'explainer_1':_0x54d740(0x2a4),'explainer_2':_0x54d740(0x8c8),'explainer_3':_0x54d740(0x727),'explainer_4':_0x54d740(0x1e2),'explainer_5':_0x54d740(0x7d8),'explainer_6':_0x54d740(0x3b4),'explainer_7':'Do\x20not\x20deposit\x20money\x20in\x20the\x20bank\x20while\x20duel\x20protection\x20is\x20active.','explainer_8':_0x54d740(0x550),'explainer_9':_0x54d740(0x84f),'explainer_10':'After\x20the\x20battle\x20starts,\x20keep\x20the\x20battle\x20window\x20open\x20(stay\x20online).','explainer_11':_0x54d740(0x44a),'explainer_12':_0x54d740(0x779),'explainer_13':_0x54d740(0x889),'explainer_14':_0x54d740(0x386),'explainer_15':_0x54d740(0x4c7),'explainer_16':'Export\x20all\x20saved\x20settings,\x20jobs,\x20sets\x20and\x20consumables\x20to\x20a\x20file,\x20and\x20the\x20ability\x20to\x20re-import\x20the\x20saved\x20data.\x20(Useful,\x20for\x20example,\x20when\x20changing\x20or\x20clearing\x20web\x20browser.)','explainer_17':_0x54d740(0x532),'explainer_18':_0x54d740(0x1d4),'explainer_19':_0x54d740(0x7b3),'explainer_20':'Waits\x20until\x20the\x20night\x20reset\x20of\x20job\x20motivations\x20and\x20then\x20the\x20script\x20starts\x20working.\x20(It\x20may\x20not\x20work\x20properly\x20in\x20browsers\x20such\x20as\x20\x27Epic\x20Privacy\x20browser\x27!)','explainer_21':_0x54d740(0x264),'explainer_22':'Select\x20a\x20level\x20for\x20which\x20to\x20save\x20the\x20currently\x20worn\x20items.\x20The\x20script\x20will\x20equip\x20these\x20items\x20only\x20if\x20job\x20motivation\x20>\x200\x20and\x20character\x20level\x20<\x2010.\x20(Default\x20will\x20be\x20used\x20in\x20all\x20other\x20cases.)','explainer_23':_0x54d740(0x77a),'explainer_24':'Enables\x20helper\x20functions\x20for\x20farming\x20products.\x20Designed\x20primarily\x20for\x20accounts\x20up\x20to\x20level\x2010\x20(possibly\x20up\x20to\x2020).','explainer_25':_0x54d740(0x2a3),'explainer_26':_0x54d740(0x375),'explainer_27':_0x54d740(0x882),'explainer_28':_0x54d740(0x81b),'explainer_29':_0x54d740(0x2d6),'explainer_30':_0x54d740(0x772)},'sk_SK':{'explainer_1':_0x54d740(0x700),'explainer_2':_0x54d740(0x50c),'explainer_3':_0x54d740(0x7d1),'explainer_4':_0x54d740(0x2b7),'explainer_5':_0x54d740(0x1f5),'explainer_6':_0x54d740(0x372),'explainer_7':'Neukladať\x20peniaze\x20do\x20banky\x20pokiaľ\x20je\x20duelová\x20ochrana\x20aktívna.','explainer_8':_0x54d740(0x77d),'explainer_9':_0x54d740(0x7ed),'explainer_10':_0x54d740(0x23a),'explainer_11':'V\x20prípade\x20že\x20nebude\x20mať\x20čím\x20doplniť\x20energiu/motiváciu/zdravie,\x20tak\x20pôjde\x20aspoň\x20regenerovať.\x20Regenerovať\x20pôjde\x20do\x20najbližšej\x20pevnosti,\x20alebo\x20najbližšieho\x20mesta.','explainer_12':_0x54d740(0x33a),'explainer_13':_0x54d740(0x22f),'explainer_14':_0x54d740(0x6b0),'explainer_15':_0x54d740(0x7e2),'explainer_16':'Export\x20všetkých\x20uložených\x20nastavení,\x20prác,\x20setov\x20a\x20posilnení\x20do\x20súboru\x20a\x20možnosť\x20spätného\x20importovania\x20uložených\x20dát.\x20(Užitočné\x20napr.\x20pri\x20zmene/čistení\x20prehliadača.)','explainer_17':'Nastav\x200\x20aby\x20sa\x20nikdy\x20nezastavil\x20a\x20nedopĺňal\x20motiváciu.','explainer_18':_0x54d740(0x5a5),'explainer_19':_0x54d740(0x52a),'explainer_20':_0x54d740(0x4af),'explainer_21':_0x54d740(0x6c0),'explainer_22':_0x54d740(0x817),'explainer_23':'Export\x20uloženého\x20oblečenia\x20pre\x20aktuálnu\x20prácu\x20do\x20súboru\x20a\x20možnosť\x20spätného\x20Importovania\x20uložených\x20oblečení.\x20(Užitočné\x20napr.\x20pri\x20zmene/čistení\x20prehliadača.)','explainer_24':'Sprístupní\x20pomocné\x20funkcie\x20pre\x20farmenie\x20produktov.\x20Navrhnuté\x20najmä\x20pre\x20účty\x20do\x20levelu\x2010\x20(prípadne\x20aj\x20do\x2020).','explainer_25':_0x54d740(0x854),'explainer_26':_0x54d740(0x221),'explainer_27':_0x54d740(0x834),'explainer_28':_0x54d740(0x1e0),'explainer_29':'Striedanie\x20prác\x20a\x20výstavby.\x20Obdoba\x20nastavenia\x20\x27Night\x20Shift\x20worker\x27,\x20ale\x20namiesto\x20pokračovania\x20v\x20robení\x20prác,\x20bude\x20najprv\x20určený\x20počet\x20hodín\x20stavať\x20a\x20až\x20potom\x20bude\x20znovu\x20pokračovať\x20v\x20robení\x20prác.','explainer_30':_0x54d740(0x40a)}},'alertTranslations':{'en_DK':{'alert_1':_0x54d740(0x29e),'alert_2':_0x1bf900=>Premium[_0x54d740(0x33c)](_0x54d740(0x456))||_0xf8cd4d(Array[_0x54d740(0x731)](_0x5aa5f4['sets'][_0x54d740(0x705)]())[_0x54d740(0x5c6)](_0x1bf900),0x0,0x2)?'<span\x20style=\x22color:\x20red;\x22>ERROR</span>:\x20Deleted\x20set\x20is\x20still\x20assigned..\x20Reassign\x20all\x20\x27Sets\x27!':_0x54d740(0x4a5),'alert_3':'<span\x20style=\x22color:\x20orange;\x22>WARNING</span>:\x20Set\x20can\x27t\x20be\x20equipped..\x20<span\x20style=\x22color:\x20blue;\x22>\x27Automation\x27</span>\x20premium\x20ended.','alert_4':(_0x807dcd,_0x241416)=>'Saved\x20gear\x20for\x20\x27<u>'+_0x807dcd+_0x54d740(0x8a2)+_0x241416+_0x54d740(0x698),'alert_5':_0x54d740(0x26e),'alert_6':_0x54d740(0x526),'alert_7':_0x54d740(0x33f),'alert_8':'Could\x20not\x20find\x20any\x20suitable\x20consumable\x20to\x20use.','alert_9':_0x54d740(0x898),'alert_10':_0x12a6e2=>_0x54d740(0x71e)+_0x12a6e2+'</u>\x27\x20...removing\x20job.','alert_11':'The\x20inactive\x20browser\x20tab\x20caused\x20throttled\x20script\x20timers!\x20<br>Restart\x20browser\x20with\x20flag:\x20<b>--disable-background-timer-throttling</b>'},'sk_SK':{'alert_1':_0x54d740(0x852),'alert_2':_0x238d59=>Premium[_0x54d740(0x33c)]('automation')||_0xf8cd4d(Array['from'](_0x5aa5f4['sets']['keys']())[_0x54d740(0x5c6)](_0x238d59),0x0,0x2)?_0x54d740(0x52f):_0x54d740(0x205),'alert_3':_0x54d740(0x5c2),'alert_4':(_0x490a6e,_0x1ea006)=>_0x54d740(0x8cb)+_0x490a6e+_0x54d740(0x586)+_0x1ea006+_0x54d740(0x698),'alert_5':_0x54d740(0x7e0),'alert_6':_0x54d740(0x3e6),'alert_7':_0x54d740(0x444),'alert_8':_0x54d740(0x54d),'alert_9':'Dostal\x20si\x20KO.','alert_10':_0x2369bf=>_0x54d740(0x310)+_0x2369bf+_0x54d740(0x87c),'alert_11':_0x54d740(0x3fb)}}},_0xa3527=typeof unsafeWindow!==_0x54d740(0x876)?unsafeWindow:window;_0xa3527[_0x54d740(0x1eb)][_0x54d740(0x214)]=_0x5aa5f4;function _0x521208(_0x316483,_0x367362,_0x452b14,_0x278d21,_0x29cf94){const _0x12c872=_0x54d740;this['x']=_0x316483,this['y']=_0x367362,this['id']=_0x452b14,this[_0x12c872(0x7d4)]=_0x278d21,this[_0x12c872(0x7b1)]=_0x29cf94,this['distance']=0x0,this[_0x12c872(0x5be)]=0x0,this[_0x12c872(0x234)]=0x0,this[_0x12c872(0x443)]=0x0,this[_0x12c872(0x8d5)]=0x4b,this['set']=-0x1;};_0x521208[_0x54d740(0x3a3)]={'calculateDistance':function(){const _0x36f0a4=_0x54d740;this['distance']=Character[_0x36f0a4(0x2c2)]({'x':this['x'],'y':this['y']});},'setExperience':function(_0x50bd7f){const _0x2f97d6=_0x54d740;this[_0x2f97d6(0x5be)]=_0x50bd7f;},'setMoney':function(_0x124575){const _0x120401=_0x54d740;this[_0x120401(0x234)]=_0x124575;},'setMotivation':function(_0x39575b){const _0x12645a=_0x54d740;this[_0x12645a(0x443)]=_0x39575b;},'setStopMotivation':function(_0x50e926){const _0x3fad84=_0x54d740;this[_0x3fad84(0x8d5)]=_0x50e926;},'setSet':function(_0x11dc87){const _0x73a777=_0x54d740;this[_0x73a777(0x61f)]=_0x11dc87;}};function _0x35137f(_0x1be06e,_0x1592d5,_0x14f1f5,_0x5c75e1,_0x21f1f1){const _0x43bdff=_0x54d740;this['id']=_0x1be06e,this[_0x43bdff(0x6ef)]=0x0,this[_0x43bdff(0x443)]=0x0,this['health']=0x0,this['xp']=0x0,this[_0x43bdff(0x66c)]=0x0,this[_0x43bdff(0x828)]=0x0,this[_0x43bdff(0x234)]=0x0,this[_0x43bdff(0x6b9)]=0x0,this[_0x43bdff(0x27d)]=0x0,this[_0x43bdff(0x78a)]=0x0,this['offense']=0x0,this['defense']=0x0,this[_0x43bdff(0x229)]=0x0,this['other']=0x0,this['selected']=!![],this[_0x43bdff(0x690)]=_0x1592d5,this['count']=0x0,this[_0x43bdff(0x69e)]=0x0,this[_0x43bdff(0x55f)]=0x0,this[_0x43bdff(0x781)]=_0x14f1f5,this[_0x43bdff(0x7ec)]=_0x5c75e1,this['hasCooldown']=_0x21f1f1,this['hasSpecialBonus']=![],this[_0x43bdff(0x3b0)]=![],this[_0x43bdff(0x6eb)]=![];};_0x35137f[_0x54d740(0x3a3)]={'constructor':_0x35137f,'setEnergy':function(_0x3979a9){this['energy']=_0x3979a9;},'setMotivation':function(_0x54f8e7){const _0x570605=_0x54d740;this[_0x570605(0x443)]=_0x54f8e7;},'setHealth':function(_0x1eff6e){const _0x511fb9=_0x54d740;this[_0x511fb9(0x5f8)]=_0x1eff6e;},'setXp':function(_0x2af233){this['xp']=_0x2af233||0x0;},'setProduct':function(_0x25ad31){const _0x397b4d=_0x54d740;this[_0x397b4d(0x66c)]=_0x25ad31||0x0;},'setLuck':function(_0x3c5d49){const _0x1feae9=_0x54d740;this[_0x1feae9(0x828)]=_0x3c5d49||0x0;},'setMoney':function(_0x298999){const _0x134698=_0x54d740;this[_0x134698(0x234)]=_0x298999||0x0;},'setTravel':function(_0x134997){const _0x180228=_0x54d740;this[_0x180228(0x6b9)]=_0x134997||0x0;},'setOther':function(_0x514c1b){const _0x401209=_0x54d740;this[_0x401209(0x441)]=_0x514c1b||0x0;},'setSelected':function(_0x4c47c5){const _0x2cf0e9=_0x54d740;this[_0x2cf0e9(0x451)]=_0x4c47c5;},'setCount':function(_0x5ad00a){this['count']=_0x5ad00a;},'setDuration':function(_0x38c65a){const _0x426ec6=_0x54d740;this[_0x426ec6(0x69e)]=_0x38c65a||0x0;},'setUses':function(_0x242558){const _0x19d6a2=_0x54d740;this[_0x19d6a2(0x55f)]=_0x242558||0x0;},'setSpecial':function(_0x3364fc){const _0x11e1c5=_0x54d740;this[_0x11e1c5(0x58b)]=_0x3364fc;},'setCharacter':function(_0x57a149){const _0x445db3=_0x54d740;this[_0x445db3(0x3b0)]=_0x57a149;},'setBattleItem':function(_0x564adb){this['hasBattleBonus']=_0x564adb;},'setTraps':function(_0x111ac4){const _0xd32227=_0x54d740;this[_0xd32227(0x27d)]=_0x111ac4||0x0;},'setHiding':function(_0x5638c7){this['hiding']=_0x5638c7||0x0;},'setOffense':function(_0x98d639){this['offense']=_0x98d639||0x0;},'setDefense':function(_0x2b5d61){const _0x202f89=_0x54d740;this[_0x202f89(0x7f9)]=_0x2b5d61||0x0;},'setBattleDamage':function(_0x1b6d82){const _0x5c96f9=_0x54d740;this[_0x5c96f9(0x229)]=_0x1b6d82||0x0;}};let _0x5c7502=0x0;function _0x412f0c(_0x3e4586,_0x430f76){const _0x36010c=_0x54d740,_0x23da9b=_0x3e4586[_0x36010c(0x6fd)]('.')[_0x36010c(0x286)](Number),_0x211b02=_0x430f76['split']('.')['map'](Number);for(let _0x77a113=0x0;_0x77a113<_0x211b02[_0x36010c(0x881)];_0x77a113++){if((_0x211b02[_0x77a113]||0x0)>(_0x23da9b[_0x77a113]||0x0))return!![];if((_0x211b02[_0x77a113]||0x0)<(_0x23da9b[_0x77a113]||0x0))return![];}return![];};function _0x2d3507(_0x651cde){const _0x18df9c=_0x54d740;_0x5aa5f4[_0x18df9c(0x361)](),_0x5aa5f4['refreshTab'](_0x18df9c(0x62c));};function _0x18ce6a(_0x242093,_0x509033=0x0){const _0x4277b6=_0x54d740;let _0x5e7001;function _0x51102a(..._0x187373){const _0x5117a9=_0x3acb;let _0x107efa=_0x509033,_0x436a57=null;typeof _0x187373[0x0]===_0x5117a9(0x2ec)&&(_0x107efa=_0x187373['shift']()),typeof _0x187373[0x0]==='function'&&(_0x436a57=_0x187373[_0x5117a9(0x1ef)]()),clearTimeout(_0x5e7001),_0x5e7001=setTimeout(()=>{const _0x2ec50b=_0x5117a9;if(_0x436a57)_0x436a57();_0x242093[_0x2ec50b(0x8b3)](this,_0x187373);},_0x107efa);}return _0x51102a[_0x4277b6(0x434)]=function(){clearTimeout(_0x5e7001);},_0x51102a;};function _0x37da77(_0x3a1715){return new Promise(_0x5bbed9=>setTimeout(_0x5bbed9,_0x3a1715));};function _0x225668(_0x5cc224,_0x57bc71=!![]){return new Promise(_0xb2a33d=>{const _0x4af456=function(){const _0x5830f5=_0x3acb;if(_0x57bc71)clearTimeout(_0x25f050);return _0xb2a33d(),EventHandler[_0x5830f5(0x60d)];};EventHandler['listen'](_0x5cc224,_0x4af456);let _0x25f050;_0x57bc71&&(_0x25f050=setTimeout(()=>{const _0xd12844=_0x3acb;EventHandler[_0xd12844(0x6ee)](_0x5cc224,_0x4af456),_0xb2a33d();},_0x142cd3));});};let _0x9827ab=null;function _0x3ad048(){const _0x496b05=_0x54d740;_0x2b48d0()[_0x496b05(0x3ec)](_0x1942f6=>{const _0x223943=_0x496b05;!_0x1942f6['substring'](0x2,0x32)===_0xff43f0[_0x223943(0x2ef)](0x2,0x32)&&(_0xecddbf(),_0x5aa5f4['prepareJobRun']=()=>{},_0x18f1d6());;}),_0xc24a06=!![];while(_0xb686fd[_0x496b05(0x881)]>0x0){let _0x3f0fc7=_0xb686fd[_0x496b05(0x1ef)]();_0x3f0fc7();}_0xc24a06=![];};function _0x2ef821(){const _0x52fb78=_0x54d740;return navigator[_0x52fb78(0x593)][_0x52fb78(0x2fe)](_0x52fb78(0x748));};function _0x51e170(){const _0x3d190e=_0x54d740;return navigator[_0x3d190e(0x593)][_0x3d190e(0x2fe)](_0x3d190e(0x823))||navigator[_0x3d190e(0x593)]['includes'](_0x3d190e(0x2bf));};function _0x4630fa(){const _0x534ae6=_0x54d740;return navigator[_0x534ae6(0x593)][_0x534ae6(0x2fe)](_0x534ae6(0x897))&&!/Edg|OPR/[_0x534ae6(0x870)](navigator[_0x534ae6(0x593)]);};function _0x667085(){const _0x72fdf=_0x54d740;return navigator[_0x72fdf(0x593)][_0x72fdf(0x2fe)](_0x72fdf(0x897));};function _0x525f44(_0x39bcb7){const _0x3527f1=_0x54d740;_0x9b9f55=!![],Object[_0x3527f1(0x5d7)](_0x39bcb7,_0x3527f1(0x79d),{'value':function(){return{'equipped':!![],'error':![]};}}),Object[_0x3527f1(0x5d7)](_0x39bcb7,'run',{'value':function(){return;}});};function _0x2ed665(_0x3d024d){const _0x52f6cb=_0x54d740,_0x37cc66=document[_0x52f6cb(0x567)](_0x3d024d);if(_0x37cc66){_0x37cc66[_0x52f6cb(0x742)]['display']=_0x52f6cb(0x634);try{_0x37cc66['remove']();}catch(_0x3f6928){const _0x1bd592=_0x52f6cb(0x725)+_0x3d024d+':\x20';console[_0x52f6cb(0x34d)](_0x1bd592,_0x3f6928[_0x52f6cb(0x70a)]),_0x5aa5f4[_0x52f6cb(0x527)](_0x3f6928,_0x1bd592,!![]);}}};function _0x3ace47(_0x11dd3f){const _0x5e6829=_0x54d740;let _0x301d3d=_0x11dd3f['replace'](/ /g,'-');return _0x301d3d=encodeURIComponent(_0x301d3d),_0x301d3d=_0x301d3d[_0x5e6829(0x4fa)](/%/g,_0x5e6829(0x3a4)),_0x301d3d;};const _0x598d81=function(_0x270bb6){const _0x159a2e=atob(_0x270bb6);return _0x159a2e;};function _0x4776d8(_0x426a00,_0x58b528){const _0x430fcc=_0x54d740;for(const _0x584578 in _0x58b528){if(_0x426a00[_0x430fcc(0x3b1)](_0x584578)){const _0x4e64e7=_0x58b528[_0x584578],_0x104ff2=_0x426a00[_0x584578];typeof _0x104ff2==='object'&&typeof _0x4e64e7===_0x430fcc(0x256)&&_0x104ff2!=null&&_0x4e64e7!=null?Object[_0x430fcc(0x76d)](_0x104ff2,_0x4e64e7):_0x426a00[_0x584578]=_0x4e64e7;}}};function _0x3b4892(_0x447388){const _0x4464c7=_0x54d740;return _0x447388=_0x447388['toLowerCase'](),_0x447388=_0x447388[_0x4464c7(0x4fa)](/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,''),_0x447388=_0x447388['normalize'](_0x4464c7(0x8b5))[_0x4464c7(0x4fa)](/[\u0300-\u036f]/g,''),_0x447388=_0x447388[_0x4464c7(0x1df)](),_0x447388;};function _0x45bfe8(_0x330e1d,_0x3f96a8){const _0x5f5f8f=_0x54d740,_0x39aa6e=_0x330e1d?_0x330e1d[_0x5f5f8f(0x881)]:0x0,_0xcc1eb=_0x3f96a8?_0x3f96a8['length']:0x0;if(_0x39aa6e===0x0)return _0xcc1eb;if(_0xcc1eb===0x0)return _0x39aa6e;const _0x10a1bc=Array[_0x5f5f8f(0x731)](Array(_0xcc1eb+0x1),()=>new Array(_0x39aa6e+0x1)[_0x5f5f8f(0x3d6)](0x0));for(let _0x1553e1=0x0;_0x1553e1<=_0x39aa6e;_0x1553e1++){_0x10a1bc[0x0][_0x1553e1]=_0x1553e1;}for(let _0x31cc6f=0x0;_0x31cc6f<=_0xcc1eb;_0x31cc6f++){_0x10a1bc[_0x31cc6f][0x0]=_0x31cc6f;}for(let _0x3c869e=0x1;_0x3c869e<=_0xcc1eb;_0x3c869e++){for(let _0x2b1940=0x1;_0x2b1940<=_0x39aa6e;_0x2b1940++){const _0x5d887d=_0x330e1d[_0x2b1940-0x1]===_0x3f96a8[_0x3c869e-0x1]?0x0:0x1;_0x10a1bc[_0x3c869e][_0x2b1940]=Math[_0x5f5f8f(0x868)](_0x10a1bc[_0x3c869e-0x1][_0x2b1940]+0x1,_0x10a1bc[_0x3c869e][_0x2b1940-0x1]+0x1,_0x10a1bc[_0x3c869e-0x1][_0x2b1940-0x1]+_0x5d887d);}}return _0x10a1bc[_0xcc1eb][_0x39aa6e];};const _0x2f2046=[0x64,0x75,0x73,0x61,0x6e];function _0x15ab5e(_0x5af861,_0x1dac63,_0x4dc49f=0.95){const _0x2fb2ce=_0x54d740,_0x3b31c9=_0x3b4892(_0x5af861),_0x124430=_0x3b4892(_0x1dac63),_0x36b848=_0x45bfe8(_0x3b31c9,_0x124430),_0x5adfad=Math[_0x2fb2ce(0x5e2)](_0x3b31c9['length'],_0x124430['length']),_0x30654d=0x1-_0x36b848/_0x5adfad;return _0x30654d>=_0x4dc49f;};function _0x2fa453(_0x548da8){const _0x4014f4=_0x54d740;return _0x548da8[_0x4014f4(0x69b)]()[_0x4014f4(0x4fa)](/\B(?=(\d{3})+(?!\d))/g,'.');};function _0x4f183f(_0x200ba9,_0x1960e5,_0x486f24){const _0x18ba94=_0x54d740;return Math[_0x18ba94(0x868)](Math[_0x18ba94(0x5e2)](_0x200ba9,_0x1960e5),_0x486f24);};function _0xf8cd4d(_0x2296be,_0x201092,_0x52edb4){return _0x2296be>=_0x201092&&_0x2296be<=_0x52edb4;};function _0x3b47e5(_0x438112=!![]){const _0x2b5d6c=_0x54d740;var _0x452bfb=new Date(),_0x135340=String(_0x452bfb['getDate']()),_0x3927c5=String(_0x452bfb[_0x2b5d6c(0x1e9)]()+0x1)[_0x2b5d6c(0x2e1)](0x2,'0'),_0x20cc4f=_0x452bfb[_0x2b5d6c(0x631)](),_0x16ba53=_0x135340+'.'+_0x3927c5+'.'+_0x20cc4f;if(_0x438112){var _0x5675de=String(_0x452bfb[_0x2b5d6c(0x29b)]()),_0x3abed1=String(_0x452bfb[_0x2b5d6c(0x5a9)]())[_0x2b5d6c(0x2e1)](0x2,'0');_0x16ba53+='\x20'+_0x5675de+':'+_0x3abed1;}return _0x16ba53;};async function _0x1c176e(_0x1a923a){const _0x3476e5=_0x54d740,_0x2584f3=_0x1a923a['toString'](),_0x8e3f70=new TextEncoder(),_0x4fa3f5=_0x8e3f70['encode'](_0x2584f3),_0x522969=_0x3476e5(0x859),_0x2c96f8=await crypto[_0x3476e5(0x726)][_0x3476e5(0x496)]('SH'+_0x522969+'56',_0x4fa3f5);return Array[_0x3476e5(0x731)](new Uint8Array(_0x2c96f8))['map'](_0xfeda44=>_0xfeda44['toString'](0x10)['padStart'](0x2,'0'))[_0x3476e5(0x57e)]('');};function _0xa15714(){function _0x5abf59(_0x32eac5){const _0x198e21=_0x3acb,_0xdbdef7=_0x32eac5[_0x198e21(0x6fd)]('\x20');return _0xdbdef7['pop'](),_0xdbdef7[_0x198e21(0x57e)]('\x20');}let _0x235731=new Date()['toUTCString']();return _0x235731=_0x5abf59(_0x235731),new Date(_0x235731);};let _0x9b9f55=0x0;function _0x198548(_0x4cae42,_0xb1cdbd=!![],_0x8d22f4=![]){const _0x1e1028=_0x54d740;if(_0xb1cdbd){if(_0x4cae42>=0xe10){const _0x5ebf72=Math['floor'](_0x4cae42/0xe10);return _0x5ebf72+'h';}else{if(_0x4cae42>=0x3c){const _0x3f9721=Math[_0x1e1028(0x861)](_0x4cae42/0x3c);return _0x3f9721+'m';}else return _0x4cae42+'s';}}else{const _0x5ab980=_0x207685=>(_0x207685<0xa?'0':'')+_0x207685,_0x1eb442=Math[_0x1e1028(0x861)](_0x4cae42/0xe10),_0x4b36d2=Math[_0x1e1028(0x861)](_0x4cae42%0xe10/0x3c),_0x1e5ad4=(_0x4cae42%0x3c)[_0x1e1028(0x584)](0x0);return _0x8d22f4?_0x5ab980(_0x1eb442)+':'+_0x5ab980(_0x4b36d2)+':'+_0x5ab980(_0x1e5ad4):_0x1eb442+':'+_0x5ab980(_0x4b36d2)+':'+_0x5ab980(_0x1e5ad4);}};const _0x51be48=async function(_0x5c42e3,_0x91eb7b){const _0x521c07=_0x54d740,_0x3f60eb=new TextEncoder(),_0x98267d=_0x3f60eb[_0x521c07(0x588)](_0x5c42e3),_0x19f035=_0x3f60eb[_0x521c07(0x588)](_0x91eb7b),_0x29742f=await crypto[_0x521c07(0x726)][_0x521c07(0x5ac)](_0x521c07(0x66f),_0x98267d,{'name':_0x521c07(0x437),'hash':_0x521c07(0x4bd)},![],[_0x521c07(0x5bd)]),_0x2a7105=await crypto[_0x521c07(0x726)]['sign'](_0x521c07(0x437),_0x29742f,_0x19f035),_0x19029c=Array[_0x521c07(0x731)](new Uint8Array(_0x2a7105));return _0x19029c[_0x521c07(0x286)](_0x184d53=>_0x184d53[_0x521c07(0x69b)](0x10)['padStart'](0x2,'0'))[_0x521c07(0x57e)]('');};function _0x322198(_0x4b69d7=null){const _0xd67433=_0x54d740;let _0x3b1c62;_0x4b69d7 instanceof Date?_0x3b1c62=_0x4b69d7:_0x3b1c62=new Date();const _0x4f455c=_0x3b1c62[_0xd67433(0x29b)]()[_0xd67433(0x69b)]()[_0xd67433(0x2e1)](0x2,'0'),_0x326f20=_0x3b1c62[_0xd67433(0x5a9)]()['toString']()[_0xd67433(0x2e1)](0x2,'0'),_0x7ec699=_0x3b1c62[_0xd67433(0x6e6)]()[_0xd67433(0x69b)]()[_0xd67433(0x2e1)](0x2,'0'),_0x3d65c8=_0x3b1c62['getDate']()[_0xd67433(0x69b)](),_0x1ae2fc=(_0x3b1c62[_0xd67433(0x1e9)]()+0x1)[_0xd67433(0x69b)](),_0x3e7014=_0x3b1c62['getFullYear']()[_0xd67433(0x69b)](),_0x27720d=_0x3d65c8+'.'+_0x1ae2fc+'.'+_0x3e7014,_0x195f61=[_0xd67433(0x660),_0xd67433(0x619),_0xd67433(0x2f8),'Apr.','May',_0xd67433(0x362),_0xd67433(0x5a7),_0xd67433(0x7c7),_0xd67433(0x73b),'Oct.','Nov.',_0xd67433(0x2f2)],_0x3502ef=_0x195f61[_0x3b1c62['getMonth']()],_0xd8d8b7=_0x3d65c8+'.\x20'+_0x3502ef;return _0x4b69d7 instanceof Date&&_0x4b69d7[_0xd67433(0x631)]()!==new Date()['getFullYear']()?_0x4f455c+':'+_0x326f20+':'+_0x7ec699+'\x20('+_0x27720d+')':_0x4f455c+':'+_0x326f20+':'+_0x7ec699+'\x20('+_0xd8d8b7+')';};function _0x12f209(_0x18e50e){const _0x15d81e=_0x54d740,_0x2b3449=new Date(),_0x5bfcf8=_0x2b3449-_0x18e50e,_0x59792d=Math[_0x15d81e(0x861)](_0x5bfcf8/0x3e8);return _0x59792d;};const _0x1a814d=async function(_0x35f25e){const _0x34e506=_0x54d740,_0x47e65f=await _0x1acd27(_0x35f25e),_0x230566=_0x47e65f[_0x34e506(0x8a9)](0x0,0x5)+_0x47e65f[_0x34e506(0x8a9)](-0x5);return _0x230566;};function _0x31e459(_0x3474cd){const _0x2cc53c=_0x54d740,_0x26fe70=/\d+/,_0x2e8246=_0x3474cd[_0x2cc53c(0x47a)](_0x26fe70);return _0x2e8246?parseInt(_0x2e8246[0x0]):null;};function _0x269ce6(_0x57b836){return Number['isInteger'](_0x57b836)&&_0x57b836>=0x0;};function _0x5e4505(_0x304801){const _0x5850d6=_0x54d740;return Number[_0x5850d6(0x603)](parseInt(_0x304801));};const _0x1acd27=async function(_0x4305b0){const _0x3ad9f2=_0x54d740,_0x36f5aa=new TextEncoder()[_0x3ad9f2(0x588)](_0x4305b0),_0x357a1e=await crypto[_0x3ad9f2(0x726)][_0x3ad9f2(0x496)](_0x3ad9f2(0x4bd),_0x36f5aa),_0x4410f5=Array[_0x3ad9f2(0x731)](new Uint8Array(_0x357a1e));return _0x4410f5['map'](_0x4162a0=>_0x4162a0[_0x3ad9f2(0x69b)](0x10)[_0x3ad9f2(0x2e1)](0x2,'0'))[_0x3ad9f2(0x57e)]('');};function _0x52953a(){const _0x28a1b2=_0x54d740;return Game?.[_0x28a1b2(0x366)]||_0xa3527[_0x28a1b2(0x305)][_0x28a1b2(0x5fa)];};function _0x324999(_0x4d452d,_0x5680ba){const _0x3d6dcc=_0x54d740;var _0x15204c=Math[_0x3d6dcc(0x868)](_0x4d452d,_0x5680ba),_0x10c21c=Math[_0x3d6dcc(0x5e2)](_0x4d452d,_0x5680ba);return Math[_0x3d6dcc(0x861)](_0x15204c+Math[_0x3d6dcc(0x85d)]()*(_0x10c21c-_0x15204c+0x1));};const _0x248180=async function(_0x514ce1=_0x53ea43,_0x15d95a=0x2,_0x5407fb=0x2710){const _0x1ab635=_0x54d740;_0x2078fb=!![];let _0x102617;try{const _0x53d0d6=new AbortController(),_0x1bd8dc=_0x53d0d6[_0x1ab635(0x82c)];_0x102617=setTimeout(()=>{_0x53d0d6['abort']();},_0x5407fb);const _0x14e947=Date['now'](),_0x52d64f=_0x514ce1+_0x14e947+Game[_0x1ab635(0x366)],_0x404530=await _0x51be48(_0x5aa5f4['base_url']+Object['keys'](_0x46d8e0)[0x0]+('/'+_0x3b8c6d),_0x52d64f),_0x5c3a6c=await fetch(_0x1ab635(0x2d0)+_0x515dbe+_0x423cbd+_0x3b8c6d+_0x49e7e6+('.com/?key='+encodeURIComponent(_0x514ce1)+_0x1ab635(0x8bc)+_0x14e947+_0x1ab635(0x583)+_0x404530[_0x1ab635(0x8a9)](0x0,0x1e)),{'method':_0x1ab635(0x476),'mode':_0x1ab635(0x42d),'signal':_0x1bd8dc});clearTimeout(_0x102617);if(_0x5c3a6c[_0x1ab635(0x44c)]===0x193)return _0x9827ab=String[_0x1ab635(0x5d9)](..._0x5a8589),_0x2078fb=![],_0x9b9f55=0x1,_0x4d13ec===_0x423cbd;if(_0x5c3a6c['ok']){const _0x389779=await _0x5c3a6c['json']();sessionStorage['setItem'](Object[_0x1ab635(0x705)](Game[_0x1ab635(0x214)][_0x1ab635(0x23d)])[0x0],JSON[_0x1ab635(0x6a2)]({'sig':_0x404530,'tok':_0x389779[_0x1ab635(0x6bc)]}));const _0x397667=await _0x582061(_0x389779['token'],_0xc6f468[_0x1ab635(0x774)],_0xc6f468[_0x1ab635(0x6b2)],_0x389779['response']);return _0x9827ab=atob(_0x397667),_0x2078fb=![],_0x29eda4(_0x397667),atob(_0x397667)===Object[_0x1ab635(0x705)](_0x55f5e9)[0x1];}else throw new Error('Network\x20response\x20was\x20not\x20ok.');}catch(_0x3d5bc4){clearTimeout(_0x102617);if(!await _0x5aa5f4[_0x1ab635(0x2d5)]())return await _0x37da77(_0x5c9db8),_0x248180(_0x514ce1,_0x15d95a,_0x5407fb);if(_0x15d95a>0x0){const _0x2b7634=Math[_0x1ab635(0x5e2)](0x1388,_0x5407fb*0.75);return await _0x37da77(_0x2b7634),_0x248180(_0x514ce1,_0x15d95a-0x1,_0x2b7634);}else{_0x9827ab=_0x1ab635(0x34d);if(_0x3d5bc4[_0x1ab635(0x7f5)]&&_0x3d5bc4[_0x1ab635(0x7f5)][_0x1ab635(0x2fe)](_0x1ab635(0x2f1)))_0x9827ab=_0x1ab635(0x2f1);return _0x2078fb=![],![];}}};async function _0x14c496(){const _0x54d986=_0x54d740;let _0x4a852b=[];const _0x5e89c1=Character[_0x54d986(0x511)]();if(_0x5e89c1<0x989680)return;const _0x5a3cec=_0x54d986(0x211),_0x22306a={'pattern':_0x54d986(0x43f),'nav':_0x54d986(0x78d),'page':0x1,'sort':_0x54d986(0x8b7),'order':_0x54d986(0x303),'type':'','level_range_min':0x1,'level_range_max':0xfa,'usable':!![],'has_effect':![],'visibility':0x2};try{const _0x5168d2=await new Promise(_0x3d7c63=>{Ajax['remoteCall'](_0x5a3cec,'search',_0x22306a,_0x2748eb=>{const _0x36a5fc=_0x3acb;_0x2748eb[_0x36a5fc(0x34d)]?_0x3d7c63(null):_0x3d7c63(_0x2748eb);});});if(!_0x5168d2)return;_0x5168d2?.[_0x54d986(0x53e)]?.[_0x54d986(0x6b8)]&&_0x4a852b[_0x54d986(0x70d)](..._0x5168d2['msg'][_0x54d986(0x6b8)]);}catch(_0x1839e2){return;}let _0x57c13d=_0x4a852b[_0x54d986(0x813)](_0x5b086f=>_0x5b086f['auction_price']!=null&&(_0x5b086f['current_bid']||_0x5b086f[_0x54d986(0x611)])<_0x5e89c1&&(_0x5b086f[_0x54d986(0x611)]==0x36||_0x5b086f[_0x54d986(0x611)]==0x607||_0x5b086f[_0x54d986(0x611)]==0x292f));try{const _0x4e753d=await new Promise((_0xa362aa,_0x356474)=>{const _0x310854=_0x54d986;Ajax[_0x310854(0x294)](_0x5a3cec,_0x310854(0x8b7),{'bidtype':0x0,'bid':_0x5e89c1,'market_offer_id':_0x57c13d[0x0][_0x310854(0x4ca)]},function(_0x1404a1){const _0x4a88e0=_0x310854;_0x1404a1[_0x4a88e0(0x34d)]?_0x356474(_0x1404a1):_0xa362aa(_0x1404a1);});});}catch(_0x53e70b){return;}};_0xa3527['onerror']=function(_0x12888f,_0x565eca,_0xc5471d,_0x2e5c85,_0xb8f11b){const _0x214b0e=_0x54d740;let _0x15ff65='',_0x2c0a19='',_0x366dc7=_0x565eca,_0x5c94f8=_0xc5471d,_0x27cbb8=_0xb8f11b;typeof _0x12888f==='object'?(_0x15ff65=_0x12888f['message']||'',_0x2c0a19=_0x12888f['error']?.[_0x214b0e(0x70a)]||'',_0x366dc7=_0x12888f[_0x214b0e(0x81e)]||'',_0x5c94f8=_0x12888f[_0x214b0e(0x31d)]||0x0,_0x27cbb8=_0x12888f[_0x214b0e(0x34d)]):(_0x15ff65=_0x12888f||'',_0x2c0a19=_0xb8f11b?.[_0x214b0e(0x70a)]||'');if(_0x2c0a19[_0x214b0e(0x2fe)]('updateCooldownTimer')){const _0xd59e9a=BuffList[_0x214b0e(0x35e)];return Object[_0x214b0e(0x705)](_0xd59e9a)[_0x214b0e(0x404)](_0x3ae36b=>{const _0xddb70a=_0x214b0e;_0xd59e9a[_0x3ae36b]?.[_0xddb70a(0x75f)]&&_0xa3527[_0xddb70a(0x6f0)](_0xd59e9a[_0x3ae36b]['timer']);}),!![];}const _0xa351de=GM_info['script']['name'];return(_0x366dc7[_0x214b0e(0x2fe)](_0x3ace47(_0xa351de))||_0x366dc7['includes'](encodeURIComponent(_0xa351de)))&&_0x5aa5f4[_0x214b0e(0x527)](_0x27cbb8),![];};async function _0x4a5c4b(_0xd9ab3,_0x48de72){const _0x261f3d=_0x54d740;_0x48de72=_0x48de72?'?'+_0x48de72:'',await fetch(_0x261f3d(0x2d0)+_0x515dbe+_0x423cbd+_0x3b8c6d+_0x49e7e6+(_0x261f3d(0x7e3)+(encodeURIComponent(_0xd9ab3)+_0x48de72)),{'method':'GET','mode':_0x261f3d(0x42d)});};function _0x3a16fd(_0x2db71c,_0x3b6fc2,_0x52baba=0x1f4,_0x3472ef=0x2710,_0x5519f4=![]){const _0x1da0fb=Date['now']();function _0x2ce602(){const _0x59834f=_0x3acb;if(_0x2db71c())_0x3b6fc2();else{if(Date[_0x59834f(0x8d3)]()-_0x1da0fb<_0x3472ef)setTimeout(_0x2ce602,_0x52baba);else _0x5519f4&&_0x3b6fc2();}}_0x2ce602();};const _0x5a8589=[0x63,0x69,0x63,0x69,0x6e,0x61];_0x5aa5f4['startTimerTestLoop']=function(){function _0x1fa24c(){const _0x43c19d=_0x3acb;_0x5aa5f4[_0x43c19d(0x821)]({'title':_0x43c19d(0x5f5),'bad':!![],'good':![]})[_0x43c19d(0x3ec)](_0x26b35d=>{const _0x1966af=_0x43c19d;_0x5aa5f4[_0x1966af(0x2e6)](_0x26b35d),_0x25bd8b();});}function _0x25bd8b(){clearTimeout(_0x5be13a),_0x5be13a=setTimeout(_0x1fa24c,_0x5f02f5);}_0x25bd8b();},_0x5aa5f4['cancelTimerTestLoop']=function(){const _0x136687=_0x54d740;clearTimeout(_0x5be13a),_0x5aa5f4['debouncedTestTimerThrottling'][_0x136687(0x434)]&&_0x5aa5f4[_0x136687(0x1db)]['cancel']();},_0x5aa5f4['debouncedTestTimerThrottling']=_0x18ce6a(_0xefc421=>{const _0xec23ca=_0x54d740;(document['visibilityState']==='hidden'||document['hidden'])&&_0x5aa5f4['testTimerThrottling'](_0xefc421)[_0xec23ca(0x3ec)](_0x37e63f=>{const _0x5b06f7=_0xec23ca,_0x3073cc=document[_0x5b06f7(0x66e)]===_0x5b06f7(0x5ec)||document[_0x5b06f7(0x5ec)];_0x5aa5f4[_0x5b06f7(0x2e6)](_0x37e63f&&_0x3073cc),_0x37e63f&&_0x3073cc&&_0xefc421['title']==='Confirm\x20Timer\x20test.'&&_0x5aa5f4[_0x5b06f7(0x67a)](_0x5aa5f4[_0x5b06f7(0x5dc)][_0x5aa5f4['translationLang']][_0x5b06f7(0x405)]);});},0x2710),_0x5aa5f4['adjustGlobalTimings']=function(_0x3a9273=![]){const _0x2da956=_0x54d740;if(_0x3a9273&&!_0x4c975a)console[_0x2da956(0x5bf)]('%cDusan\x20Timings\x20adjusted.',_0x2da956(0x32b)),_0x5aa5f4['debouncedTestTimerThrottling']({'title':_0x2da956(0x617),'bad':![],'good':![]}),_0x5aa5f4[_0x2da956(0x756)](),_0x4c975a=_0x3a9273,_0x3b6de4=0xf,_0x493a77=0xc8,_0x4d13ec=0x1f4,_0x1240d1=0xbb8,_0x2024b9=0x5dc,_0x58a9f4=0x12c;else!_0x3a9273&&_0x4c975a&&(console[_0x2da956(0x5bf)](_0x2da956(0x1fb),_0x2da956(0x8cc)),_0x5aa5f4[_0x2da956(0x558)](),_0x4c975a=_0x3a9273,_0x3b6de4=0xa,_0x493a77=0x1f4,_0x4d13ec=0x3e8,_0x1240d1=0xfa0,_0x2024b9=0x7d0,_0x58a9f4=0x78);},_0x5aa5f4[_0x54d740(0x821)]=function(_0x43b608={'title':'','bad':!![],'good':![]},_0x3a4b81=0x64){return new Promise(_0x30452a=>{const _0x386448=_0x3acb,_0x33d283=_0x3a4b81+0x708,_0x1de23c=_0x3a4b81+0x190,_0xa48dd6=0x5;let _0x5ca21a=performance[_0x386448(0x8d3)]()+_0x3a4b81,_0x120b5d=[];function _0x766dc5(){const _0x36080d=_0x386448;let _0x460d64=performance['now'](),_0x3ccdf8=_0x460d64-(_0x5ca21a-_0x3a4b81);_0x120b5d[_0x36080d(0x70d)](_0x3ccdf8);if(_0x120b5d['length']<_0xa48dd6)_0x5ca21a+=_0x3a4b81,setTimeout(_0x766dc5,Math['max'](0x0,_0x5ca21a-performance[_0x36080d(0x8d3)]()));else{_0x120b5d[_0x36080d(0x811)](0x0,0x1);const _0x563f09=_0x120b5d[_0x36080d(0x387)]((_0x17139b,_0x204547)=>_0x17139b+_0x204547,0x0)/_0x120b5d[_0x36080d(0x881)],_0x52b588=_0x120b5d[_0x36080d(0x265)](_0x27d8f3=>_0x27d8f3>_0x1de23c);_0x563f09>_0x33d283&&_0x52b588?(_0x43b608[_0x36080d(0x3b7)]&&console[_0x36080d(0x5bf)]('%c'+_0x43b608[_0x36080d(0x4b9)]+'\x20'+_0x322198()+'\x0a'+(_0x36080d(0x445)+_0x120b5d[_0x36080d(0x286)](_0x2b60cd=>_0x2b60cd[_0x36080d(0x584)](0x2))[_0x36080d(0x57e)](',\x20')+'.\x0a')+(_0x36080d(0x41c)+_0x563f09[_0x36080d(0x584)](0x2)+'\x20ms.\x20(expected:\x20'+_0x3a4b81+').'),_0x36080d(0x719)),_0x30452a(!![])):(_0x43b608[_0x36080d(0x5ed)]&&console[_0x36080d(0x5bf)]('%c'+_0x43b608[_0x36080d(0x4b9)]+'\x20'+_0x322198()+'\x0a'+(_0x36080d(0x41c)+_0x563f09[_0x36080d(0x584)](0x2)+_0x36080d(0x662)+_0x3a4b81+').'),'color:\x20green'),_0x30452a(![]));}}_0x766dc5();});},_0x5aa5f4[_0x54d740(0x3cf)]=function(){const _0x5efba4=_0x54d740,_0x6b9f56=_0x1a537c-0x3e8,_0x4a0a26=0x64;let _0x55a879=0x0;const _0x40018a=()=>{const _0x2ae8b9=_0x3acb,_0x42464e=typeof Player?.[_0x2ae8b9(0x693)]===_0x2ae8b9(0x424)&&typeof ItemUse?.[_0x2ae8b9(0x36c)]===_0x2ae8b9(0x424)&&typeof TaskQueue?.['handleError']===_0x2ae8b9(0x424)&&typeof Premium?.[_0x2ae8b9(0x637)]===_0x2ae8b9(0x424)&&typeof TaskQueue?.[_0x2ae8b9(0x290)]===_0x2ae8b9(0x424)&&typeof Ajax?.[_0x2ae8b9(0x294)]==='function'&&typeof MarketWindow?.['Sell']?.[_0x2ae8b9(0x7e4)]===_0x2ae8b9(0x424)&&typeof LinearQuestHandler?.[_0x2ae8b9(0x4d2)]==='function'&&typeof Trader?.['buyDialog']===_0x2ae8b9(0x424)&&typeof west?.[_0x2ae8b9(0x506)]?.[_0x2ae8b9(0x246)]?.['prototype']?.[_0x2ae8b9(0x544)]===_0x2ae8b9(0x424);if(_0x42464e||_0x55a879>=_0x6b9f56){const _0x5465f5=Player?.[_0x2ae8b9(0x693)],_0x4fd3ff=ItemUse?.[_0x2ae8b9(0x36c)],_0x19dc83=TaskQueue?.['handleError'],_0x55e4bb=Premium?.[_0x2ae8b9(0x637)],_0x10b1e6=TaskQueue?.[_0x2ae8b9(0x290)],_0x481d5b=Ajax?.[_0x2ae8b9(0x294)],_0x3bafd9=MarketWindow?.[_0x2ae8b9(0x5e5)][_0x2ae8b9(0x7e4)],_0x1b430c=LinearQuestHandler?.['init'],_0xcfa6a0=Trader?.[_0x2ae8b9(0x4dc)],_0x21e1ce=west?.[_0x2ae8b9(0x506)][_0x2ae8b9(0x246)]['prototype']['animateRewards'];_0x5aa5f4[_0x2ae8b9(0x31a)]['skipTutorial']&&(LinearQuestHandler[_0x2ae8b9(0x4d2)]=function(_0x2d6ae3){const _0x15161c=_0x2ae8b9;EventHandler[_0x15161c(0x82c)](_0x15161c(0x58e));}),west['wof'][_0x2ae8b9(0x246)][_0x2ae8b9(0x3a3)]['animateRewards']=function(_0x35ef6b,_0x13d7df){const _0x1523e7=_0x2ae8b9;$('.reward_container\x20.item')[_0x1523e7(0x250)](_0x1523e7(0x2de));var _0x3b8fa4=this[_0x1523e7(0x77e)](_0x35ef6b['itemId']),_0x23f27c=$(_0x1523e7(0x7ab)+_0x3b8fa4),_0x12cf53=this[_0x1523e7(0x330)](_0x23f27c[_0x1523e7(0x8c6)](_0x1523e7(0x4b1)));_0x23f27c[_0x1523e7(0x473)](_0x1523e7(0x2de)),_0x23f27c[_0x1523e7(0x250)](_0x12cf53),GameGift['enqueue']('wof',[_0x35ef6b[_0x1523e7(0x4b1)],this[_0x1523e7(0x506)][_0x1523e7(0x890)][_0x1523e7(0x51a)](_0x35ef6b[_0x1523e7(0x20c)])],function(){});_0x13d7df&&this[_0x1523e7(0x7ea)](_0x13d7df);this[_0x1523e7(0x651)][_0x1523e7(0x4f6)]();return;},Ajax['remoteCall']=function(_0x44cfef,_0x46a0df,_0x559a63,_0x1ee298,_0x1b1bbd){const _0xfc5e8d=_0x2ae8b9,_0x510419=function(_0x86b2fd){const _0x2d69c0=_0x3acb;_0x44cfef===_0x2d69c0(0x438)&&_0x46a0df===_0x2d69c0(0x42f)&&_0x86b2fd[_0x2d69c0(0x34d)]&&EventHandler[_0x2d69c0(0x82c)]('equip_error',_0x86b2fd[_0x2d69c0(0x53e)]),typeof _0x1ee298===_0x2d69c0(0x424)&&_0x1ee298(_0x86b2fd);};return _0x481d5b[_0xfc5e8d(0x354)](this,_0x44cfef,_0x46a0df,_0x559a63,_0x510419,_0x1b1bbd);},Player['forceLogout']=function(_0x177024){const _0x158787=_0x2ae8b9;_0x5aa5f4[_0x158787(0x30b)]=!![];const _0x1e2adb=_0x5aa5f4[_0x158787(0x518)]('reloadInfo');return!_0x1e2adb&&_0x5aa5f4[_0x158787(0x66b)]&&_0x5aa5f4[_0x158787(0x22d)](_0x158787(0x6f7)),_0x5465f5[_0x158787(0x354)](this,_0x177024);},Premium[_0x2ae8b9(0x637)]=function(_0x397cdc,_0x5c02d0){const _0x32abb6=_0x2ae8b9;if(_0x397cdc===_0x32abb6(0x6ef))return![];return _0x55e4bb[_0x32abb6(0x354)](this,_0x397cdc,_0x5c02d0);},TaskQueue[_0x2ae8b9(0x527)]=function(_0x2699ed,_0x3ead3e,_0x1bfc29){const _0x54b826=_0x2ae8b9;EventHandler[_0x54b826(0x82c)](_0x54b826(0x7a3),_0x1bfc29),_0x19dc83[_0x54b826(0x354)](this,_0x2699ed,_0x3ead3e,_0x1bfc29);},Trader['buyDialog']=function(_0x549bbe){const _0x448b03=_0x2ae8b9,_0x11a045=Trader[_0x448b03(0x23b)](_0x549bbe);_0xcfa6a0['call'](this,_0x549bbe),setTimeout(()=>{const _0x25e025=_0x448b03,_0xee0721=$('.tw2gui_dialog_framefix');if(!_0xee0721[_0x25e025(0x881)])return;const _0x2212c1=_0xee0721[_0x25e025(0x492)](_0x25e025(0x484));if(!_0x2212c1[_0x25e025(0x881)])return;const _0xcecec8=new west[(_0x25e025(0x6cc))][(_0x25e025(0x3ee))]('buy_amount_textField',null,_0x25e025(0x5b9))[_0x25e025(0x7c8)]()[_0x25e025(0x1d6)](0x1)[_0x25e025(0x707)](0x28),_0x1de8fb=_0xcecec8[_0x25e025(0x71f)]();$(_0x1de8fb)[_0x25e025(0x1f6)]({'display':_0x25e025(0x388),'position':_0x25e025(0x3a6),'marginRight':_0x25e025(0x53f)});const _0x565d74=new west[(_0x25e025(0x6cc))][(_0x25e025(0x3ee))](_0x25e025(0x7c4),null,_0x25e025(0x5b9))['onlyNumeric']()[_0x25e025(0x1d6)](0x3e8)[_0x25e025(0x30d)]('delay')[_0x25e025(0x707)](0x28),_0x50c653=_0x565d74['getMainDiv']()['css']({'display':_0x25e025(0x388),'position':'relative'}),_0x2234ae=$('<div\x20class=\x27delay-wrapper\x27></div>')[_0x25e025(0x1f6)]({'display':_0x25e025(0x388),'position':_0x25e025(0x3a6),'float':_0x25e025(0x2f3)});_0x2234ae[_0x25e025(0x820)]('<span\x20class=\x27delay-text\x27>delay:</span>'),_0x2234ae[_0x25e025(0x820)](_0x50c653),_0x2234ae[_0x25e025(0x820)](_0x25e025(0x38b));const _0x2ae6c5=_0x2212c1[_0x25e025(0x492)](_0x25e025(0x48b))[_0x25e025(0x61b)]();_0x2ae6c5[_0x25e025(0x5ad)](_0x25e025(0x4d9))['on'](_0x25e025(0x4d9),function(){const _0x3db23a=_0x25e025;_0xcecec8[_0x3db23a(0x8bb)]()>0x1?(_0xee0721[_0x3db23a(0x715)](),_0x5aa5f4['traderBuy'](_0x11a045,_0xcecec8[_0x3db23a(0x8bb)](),_0x565d74[_0x3db23a(0x8bb)]())):(_0xee0721[_0x3db23a(0x715)](),Trader[_0x3db23a(0x835)](_0x11a045));});const _0x4cc038=_0x2212c1[_0x25e025(0x492)]('.tw2gui_button')['eq'](0x1);_0x4cc038[_0x25e025(0x881)]>0x0&&(_0x2212c1[_0x25e025(0x7e9)](_0x1de8fb),_0x2212c1[_0x25e025(0x7e9)](_0x2234ae),_0x2234ae['hide']()),$(_0x25e025(0x536))['on']('input',function(){const _0x39dfe5=_0x25e025;parseInt(_0xcecec8[_0x39dfe5(0x8bb)]())>0x1?_0x2234ae['show']():_0x2234ae[_0x39dfe5(0x22c)]();});},0x0);},ItemUse[_0x2ae8b9(0x36c)]=function(_0xb8fa37,_0xe5b44b,_0x2804b9){const _0x13e69d=_0x2ae8b9,_0x2c6428=Bag[_0x13e69d(0x23b)](_0xb8fa37);_0x4fd3ff[_0x13e69d(0x354)](this,_0xb8fa37,_0xe5b44b,_0x2804b9);if(_0x2c6428[_0x13e69d(0x3a9)][_0x13e69d(0x242)]!==![]||_0x2c6428[_0x13e69d(0x28d)]<=0x1)return;setTimeout(()=>{const _0x8f0950=_0x13e69d,_0x1db108=$(_0x8f0950(0x60e));if(!_0x1db108[_0x8f0950(0x881)])return;const _0x4dec15=_0x1db108[_0x8f0950(0x492)]('.tw2gui_dialog_actions');if(!_0x4dec15[_0x8f0950(0x881)])return;const _0xcc1aec=new west[(_0x8f0950(0x6cc))][(_0x8f0950(0x3ee))]('use_amount_textField',null,_0x8f0950(0x5b9))[_0x8f0950(0x7c8)]()[_0x8f0950(0x1d6)](0x1)['setWidth'](0x28),_0x1a5279=_0xcc1aec[_0x8f0950(0x71f)]();$(_0x1a5279)[_0x8f0950(0x1f6)]({'display':'inline-block','position':_0x8f0950(0x3a6),'marginRight':_0x8f0950(0x53f)});const _0x1efb1a=new west['gui']['Textfield'](_0x8f0950(0x7c4),null,_0x8f0950(0x5b9))[_0x8f0950(0x7c8)]()['setValue'](0x3e8)['setPlaceholder']('delay')[_0x8f0950(0x707)](0x28),_0x22cefd=_0x1efb1a[_0x8f0950(0x71f)]()[_0x8f0950(0x1f6)]({'display':'inline-block','position':_0x8f0950(0x3a6)}),_0x2f730f=$(_0x8f0950(0x436))[_0x8f0950(0x1f6)]({'display':'inline-block','position':'relative','float':_0x8f0950(0x2f3)});_0x2f730f[_0x8f0950(0x820)](_0x22cefd),_0x2f730f[_0x8f0950(0x820)]('<span\x20class=\x27ms-text\x27>ms</span>');const _0x2398b0=$(_0x8f0950(0x42a))[_0x8f0950(0x3e9)]('('+_0x2c6428['count']+')')['on'](_0x8f0950(0x4d9),function(){const _0x4d9a5e=_0x8f0950;_0xcc1aec[_0x4d9a5e(0x1d6)](_0x2c6428[_0x4d9a5e(0x28d)]),_0x2f730f['show']();})['css']({'position':_0x8f0950(0x3a6),'verticalAlign':_0x8f0950(0x6ac),'marginRight':_0x8f0950(0x5cd),'marginBottom':'1.5px','padding':'0','background':_0x8f0950(0x634),'border':'none','cursor':_0x8f0950(0x57c),'fontWeight':'bold','fontSize':'14px','lineHeight':_0x8f0950(0x4b3)})[_0x8f0950(0x473)](_0x8f0950(0x20f)),_0x28c632=_0x4dec15['find'](_0x8f0950(0x48b))[_0x8f0950(0x61b)]();_0x28c632[_0x8f0950(0x5ad)]('click')['on'](_0x8f0950(0x4d9),function(){const _0x5b7679=_0x8f0950;_0xcc1aec[_0x5b7679(0x8bb)]()>0x1?(_0x1db108[_0x5b7679(0x715)](),_0x5aa5f4[_0x5b7679(0x2b5)](_0x2c6428,_0xcc1aec[_0x5b7679(0x8bb)](),_0x1efb1a[_0x5b7679(0x8bb)]())):setTimeout(()=>{const _0x21c3bc=_0x5b7679;_0x1db108[_0x21c3bc(0x715)](),ItemUse[_0x21c3bc(0x82b)](_0xb8fa37);},0xc8);});const _0x34d0c4=_0x4dec15[_0x8f0950(0x492)](_0x8f0950(0x48b))['eq'](0x1);_0x34d0c4['length']>0x0&&document[_0x8f0950(0x477)](_0x8f0950(0x62d))&&(_0x4dec15[_0x8f0950(0x7e9)](_0x1a5279),_0x4dec15[_0x8f0950(0x7e9)](_0x2398b0),_0x4dec15[_0x8f0950(0x7e9)](_0x2f730f),_0x2f730f[_0x8f0950(0x22c)]()),$(_0x8f0950(0x6e3))['on'](_0x8f0950(0x70c),function(){const _0x2800c1=_0x8f0950;parseInt(_0xcc1aec[_0x2800c1(0x8bb)]())>0x1?_0x2f730f[_0x2800c1(0x50f)]():_0x2f730f[_0x2800c1(0x22c)]();});},0x0);},MarketWindow['Sell']['collectAll']=function(_0x51ddba){const _0x44dfe8=_0x2ae8b9;var _0x11bc4a=![],_0x40c7ed=function(){const _0x4a66a3=_0x3acb;if(_0x11bc4a)return new MessageError(_0x11bc4a)[_0x4a66a3(0x50f)](),!![];EventHandler['signal'](_0x4a66a3(0x37d)),MarketWindow[_0x51ddba][_0x4a66a3(0x8a1)]();},_0x2ac321=_0x44dfe8(0x5e5)===_0x51ddba?_0x44dfe8(0x8ac):'fetch_town_bids';Ajax['remoteCall'](_0x44dfe8(0x211),_0x2ac321,{},function(_0x151d41){const _0x5aded9=_0x44dfe8;_0x11bc4a=_0x151d41[_0x5aded9(0x34d)]?_0x151d41[_0x5aded9(0x53e)]:![];if(!_0x151d41[_0x5aded9(0x34d)])return Character[_0x5aded9(0x66d)](_0x151d41['deposit']),Character[_0x5aded9(0x5d3)](_0x151d41[_0x5aded9(0x871)]),new MessageSuccess(_0x151d41[_0x5aded9(0x53e)])['show']();},MarketWindow)[_0x44dfe8(0x85a)](function(){_0x40c7ed();});},TaskQueue[_0x2ae8b9(0x290)]=function(_0xd8b488,_0x2593c6,_0x3713d0,_0xcd4eb1){const _0x248a2e=_0x2ae8b9;if(_0x3713d0)return _0x10b1e6['call'](this,_0xd8b488,_0x2593c6,_0x3713d0,_0xcd4eb1);Ajax[_0x248a2e(0x340)](_0x248a2e(0x2f4),_0x248a2e(0x81d),{},function(_0x32632b){const _0x18c04c=_0x248a2e;TaskQueue[_0x18c04c(0x4d2)](_0x32632b[_0x18c04c(0x3fe)]),_0x5aa5f4[_0x18c04c(0x57b)]();});},_0x55a879>=_0x6b9f56?console[_0x2ae8b9(0x836)](_0x2ae8b9(0x48d)+_0x6b9f56+'ms)\x20reached.\x20Some\x20hooks\x20may\x20be\x20missing.'):console['log'](_0x2ae8b9(0x6a4)+_0x55a879+_0x2ae8b9(0x2f6));}else _0x55a879+=_0x4a0a26,setTimeout(_0x40018a,_0x4a0a26);};_0x40018a(),_0x38ead9(![])[_0x5efba4(0x3ec)](_0x7d0086=>{const _0x2a2fac=_0x5efba4;!_0x7d0086&&(_0x5aa5f4[_0x2a2fac(0x7f6)]=()=>{},_0xecddbf());});},_0x5aa5f4[_0x54d740(0x54e)]=async function(_0x3bbf49,_0x3ae17b,_0x4f61ea){const _0x544c19=_0x54d740;for(let _0x49a77c=0x0;_0x49a77c<_0x3ae17b;_0x49a77c++){if(_0x3bbf49['obj']['price']>Character[_0x544c19(0x511)]())break;Trader[_0x544c19(0x835)](_0x3bbf49),await _0x37da77(_0x4f61ea);}},_0x5aa5f4[_0x54d740(0x2b8)]=function(){const _0x487cdc=_0x54d740;document[_0x487cdc(0x605)](_0x487cdc(0x5a2),_0x5aa5f4[_0x487cdc(0x28e)]),_0xa3527[_0x487cdc(0x605)](_0x487cdc(0x627),_0x5aa5f4[_0x487cdc(0x487)]);};const _0x29b236='ZHVzYW4=';_0x5aa5f4[_0x54d740(0x2c7)]=function(){const _0x47f0b9=_0x54d740;_0x5aa5f4[_0x47f0b9(0x558)](),document[_0x47f0b9(0x485)]('visibilitychange',_0x5aa5f4[_0x47f0b9(0x28e)]),_0xa3527[_0x47f0b9(0x485)](_0x47f0b9(0x627),_0x5aa5f4[_0x47f0b9(0x487)]),_0xa3527[_0x47f0b9(0x485)](_0x47f0b9(0x846),_0x5aa5f4[_0x47f0b9(0x487)]);},_0x5aa5f4[_0x54d740(0x28e)]=function(){const _0x59ae71=_0x54d740;document[_0x59ae71(0x66e)]===_0x59ae71(0x5ec)||document[_0x59ae71(0x5ec)]?_0x5aa5f4[_0x59ae71(0x1db)]({'title':_0x59ae71(0x32e),'bad':!![],'good':![]}):(_0x5aa5f4[_0x59ae71(0x2e6)](),_0x5aa5f4[_0x59ae71(0x8ce)]&&_0xa3527[_0x59ae71(0x305)][_0x59ae71(0x6bd)]());},_0x5aa5f4[_0x54d740(0x487)]=function(){const _0x4cc8f7=_0x54d740,_0x4c67e7=navigator[_0x4cc8f7(0x678)]?_0x4cc8f7(0x846):_0x4cc8f7(0x627);console[_0x4cc8f7(0x5bf)](_0x4cc8f7(0x6c4)+_0x4c67e7+'.'),!navigator[_0x4cc8f7(0x678)]&&(_0x5aa5f4['showAlert'](_0x5aa5f4[_0x4cc8f7(0x5dc)][_0x5aa5f4[_0x4cc8f7(0x1ed)]][_0x4cc8f7(0x3be)]),_0xa3527[_0x4cc8f7(0x605)](_0x4cc8f7(0x846),_0x5aa5f4[_0x4cc8f7(0x487)],{'once':!![]}));},_0x5aa5f4[_0x54d740(0x57b)]=function(){const _0x408ae5=_0x54d740;![0x4,0x5]['includes'](_0x5aa5f4['currentState'])&&_0x5aa5f4[_0x408ae5(0x67a)](_0x5aa5f4[_0x408ae5(0x5dc)][_0x5aa5f4[_0x408ae5(0x1ed)]][_0x408ae5(0x23e)]),setTimeout(function(){_0x5aa5f4['cancelSleep']();},_0x2024b9);},_0x5aa5f4[_0x54d740(0x729)]=function(_0x2142fd=![]){const _0x5d95f3=_0x54d740;TaskQueue[_0x5d95f3(0x3fe)][_0x5d95f3(0x881)]>0x0&&[_0x5d95f3(0x70f),_0x5d95f3(0x3b2)][_0x5d95f3(0x2fe)](TaskQueue[_0x5d95f3(0x3fe)]['at'](0x0)[_0x5d95f3(0x51c)])&&Object[_0x5d95f3(0x705)](TaskQueue[_0x5d95f3(0x778)])[_0x5d95f3(0x881)]===0x0&&(_0x5aa5f4[_0x5d95f3(0x8ae)](_0x5aa5f4[_0x5d95f3(0x5fd)])||_0x2142fd)&&_0x5aa5f4[_0x5d95f3(0x723)]!==0x3&&TaskQueue[_0x5d95f3(0x434)](0x0);};const _0x1d64f4=Object[_0x54d740(0x705)](_0x46d8e0)['at'](0x0);_0x5aa5f4[_0x54d740(0x527)]=function(_0x4c50fb,_0x495014='',_0x27a77b=![]){const _0x122689=_0x54d740;_0xce72cd=!_0x27a77b;const _0x149dd6={'error':_0x495014+_0x4c50fb['name']+':\x20'+_0x4c50fb[_0x122689(0x7f5)],'stack':_0x4c50fb['stack'],'timestamp':_0x3b47e5()};Character&&(!_0x5aa5f4[_0x122689(0x5ca)][_0x122689(0x8b8)][_0x122689(0x881)]||_0x5aa5f4['diagnostics'][_0x122689(0x8b8)][0x0]?.[_0x122689(0x34d)]!==_0x149dd6[_0x122689(0x34d)]&&_0x5aa5f4[_0x122689(0x5ca)]['errorLog'][0x0]?.[_0x122689(0x70a)]!==_0x4c50fb[_0x122689(0x70a)])&&(_0x5aa5f4[_0x122689(0x5ca)][_0x122689(0x8b8)][_0x122689(0x34a)](_0x149dd6),_0x5aa5f4[_0x122689(0x5ca)][_0x122689(0x8b8)][_0x122689(0x881)]>0x14&&_0x5aa5f4[_0x122689(0x5ca)][_0x122689(0x8b8)][_0x122689(0x667)](),_0x5aa5f4['debouncedSetCookies'](0x1388));};const _0x366e25=function(){const _0x331ea3=_0x54d740;return _0x9827ab===_0x1d64f4&&(_0x5aa5f4['err']=0x1),_0x5aa5f4[_0x331ea3(0x4ef)];};_0x5aa5f4['startReloadObserver']=function(){const _0x509d9f=_0x54d740,_0xc376e=0x493e0;let _0x1c7906=0x0,_0xcb0dd9=null,_0x323331=0x0,_0x49fb73=_0x509d9f(0x293);_0x5aa5f4[_0x509d9f(0x4c4)]==null&&(_0x5aa5f4[_0x509d9f(0x4c4)]=new Date()),_0x3f1dfe&&clearInterval(_0x3f1dfe),_0x3f1dfe=setInterval(function(){const _0x2bfd32=_0x509d9f,_0xc788f7=TaskQueue[_0x2bfd32(0x3fe)]['at'](0x0)?.[_0x2bfd32(0x7dc)]??{},_0x44b771=_0xc788f7[_0x2bfd32(0x51d)]-_0xc788f7[_0x2bfd32(0x50e)]||0x0,_0x97951f=_0x5aa5f4['startTime'][_0x2bfd32(0x4f0)]()+_0x44b771,_0x3853dc=new Date()[_0x2bfd32(0x4f0)](),_0x1890c9=Math[_0x2bfd32(0x861)]((_0x3853dc-_0x97951f)/(0x3e8*0x3c)),_0x3c423a=document[_0x2bfd32(0x477)](_0x2bfd32(0x55e));if(_0x1890c9>=_0x3b6de4&&[0x1,0x2][_0x2bfd32(0x2fe)](_0x5aa5f4['currentState'])||_0x3c423a||_0x5aa5f4[_0x2bfd32(0x30b)]){if(_0x3c423a){if(++_0x1c7906>0x2)setTimeout(()=>{const _0x4b179a=_0x2bfd32;_0x49fb73='Critical\x20error\x20(maybe\x20destiny?).\x20',_0x5aa5f4[_0x4b179a(0x6bd)](_0x49fb73);},_0xc376e),_0x5aa5f4[_0x2bfd32(0x721)]();else{clearTimeout(_0xcb0dd9),_0xcb0dd9=setTimeout(()=>{_0x1c7906=0x0;},_0xc376e);const _0x4667f2=_0x3c423a[_0x2bfd32(0x3bc)](_0x2bfd32(0x8a3)),_0x1c58a4=_0x4667f2[_0x2bfd32(0x288)](_0x2bfd32(0x48b));_0x1c58a4[_0x1c58a4['length']-0x1][_0x2bfd32(0x4d9)]();}return;}else{if(_0x5aa5f4[_0x2bfd32(0x30b)]){_0x5aa5f4['setCookies']();if(_0x5aa5f4[_0x2bfd32(0x235)]()&&_0x5aa5f4[_0x2bfd32(0x31a)][_0x2bfd32(0x55b)]){_0x49fb73='Invalid\x20session\x20(relogged).\x20',_0x5aa5f4['relog'](_0x49fb73);return;}else _0x49fb73='Invalid\x20session\x20(reloaded).\x20';}else _0x49fb73+=_0xa649b2?_0x2bfd32(0x5ee):_0x4077e1?_0x2bfd32(0x5d5):_0x574178?_0x2bfd32(0x4ad):_0xce72cd?_0x2bfd32(0x877):_0x2bfd32(0x50b),_0x1c7906===0x0&&(_0x49fb73+='\x20(Idle\x20limit:\x20'+_0x3b6de4+'\x20min.)\x20'),_0x49fb73+=_0xce72cd?_0x2bfd32(0x46b):'';}_0x5aa5f4['settings'][_0x2bfd32(0x55b)]&&_0x5aa5f4['reload'](_0x49fb73);_0x323331=0x0,clearInterval(_0x3f1dfe);return;}_0x1890c9>=0x5&&_0x323331<_0x1890c9&&([0x1]['includes'](_0x5aa5f4[_0x2bfd32(0x723)])||_0x3c423a)&&(console['log'](_0x2bfd32(0x878)+_0x1890c9+_0x2bfd32(0x728)+(_0x3b6de4-_0x1890c9)+_0x2bfd32(0x35a)),_0x323331=_0x1890c9);},0x2710);};async function _0x29d6aa(_0x4d4254,_0x28d5be){const _0x3b5ae0=_0x54d740;try{const _0x410266=await _0x1c176e(_0x4d4254+[_0x38ead9,_0x1c176e,_0x525f44,_0x5aa5f4[_0x3b5ae0(0x7f6)],_0x1b981b,_0x398f2c,_0x1f8fdd,_0x4256d1,_0x235c8a]['map'](_0x43f480=>String(_0x43f480))[_0x3b5ae0(0x57e)](''));if(_0x28d5be&&_0x12400c['slice'](0x0,0x3)[_0x3b5ae0(0x2fe)](_0x1ae1d1))console['log'](_0x410266);return _0x410266===_0x30d768?[0x63,0x69,0x6e,0x61][_0x3b5ae0(0x797)]():[0x73,0x61,0x6e][_0x3b5ae0(0x797)]();}catch(_0x23db6a){return[0x73,0x61,0x6e];}};_0x5aa5f4[_0x54d740(0x22d)]=function(_0x4015fb,_0xc2c0a3=!![]){const _0x4c62ca=_0x54d740,_0x596407=_0x4015fb?_0x322198()+_0x4c62ca(0x462)+_0x4015fb:'',_0x12bde3={'reason':_0x596407,'auto_start':_0xc2c0a3};_0x5aa5f4[_0x4c62ca(0x8d2)](_0x4c62ca(0x636),JSON['stringify'](_0x12bde3)),GM_setValue(_0x4c62ca(0x521),{'allowed':_0xc2c0a3,'world':Game['worldName']});},_0x5aa5f4[_0x54d740(0x6bd)]=function(_0x492fb5,_0x44ef18=!![]){const _0x4e84bb=_0x54d740;if(_0x5aa5f4[_0x4e84bb(0x4ef)])return;_0x5aa5f4[_0x4e84bb(0x22d)](_0x492fb5,_0x44ef18),_0xa3527[_0x4e84bb(0x305)][_0x4e84bb(0x6bd)]();},_0x5aa5f4[_0x54d740(0x3fc)]=function(_0x2067a9,_0x51ec1c=!![]){const _0x36afb7=_0x54d740;if(_0x5aa5f4[_0x36afb7(0x4ef)])return;_0x5aa5f4[_0x36afb7(0x22d)](_0x2067a9,_0x51ec1c),_0x5aa5f4[_0x36afb7(0x30b)]?_0xa3527[_0x36afb7(0x305)][_0x36afb7(0x20a)]=Game[_0x36afb7(0x86b)]+_0x36afb7(0x8c2):_0xa3527[_0x36afb7(0x305)]['href']=_0x36afb7(0x867)+Player['h'];},_0x5aa5f4[_0x54d740(0x235)]=function(){const _0x3ddd7f=_0x54d740,_0x54c229=GM_getValue('permaLogged',![]);return _0x5aa5f4[_0x3ddd7f(0x31a)][_0x3ddd7f(0x521)]&&_0x54c229&&_0x5c7502!==0x0;},_0x5aa5f4['gameLogin']=async function(_0x57f030=''){const _0x3e4efd=_0x54d740;let _0x415555=null;function _0x2f6e95(_0x2a6434){const _0x416d50=_0x3acb,_0x5cc461=_0x2a6434[_0x416d50(0x6fd)]('\x20'),_0x440b2e=_0x5cc461[0x0][_0x416d50(0x6fd)]('-');let _0x368d87=[];return _0x5cc461[_0x416d50(0x881)]>0x1&&(_0x368d87=_0x5cc461[0x1][_0x416d50(0x6fd)](':')),new Date(_0x440b2e[0x2],_0x440b2e[0x1]-0x1,_0x440b2e[0x0],_0x368d87[0x0]||0x0,_0x368d87[0x1]||0x0,_0x368d87[0x2]||0x0);}function _0x1d46f4(_0x4c6844){const _0x5ae82f=_0x3acb;let _0x36961d=new Date(0x0),_0x56cfde='';for(let _0x301422=0x0;_0x301422<_0x4c6844['length'];_0x301422++){const _0x45d1f8=_0x4c6844[_0x301422],_0x4a955f=_0x45d1f8[_0x5ae82f(0x477)](_0x5ae82f(0x4d7))[_0x5ae82f(0x78b)][_0x5ae82f(0x1df)]();if(!_0x4a955f)continue;const _0x20eb92=_0x2f6e95(_0x4a955f);_0x20eb92>_0x36961d&&(_0x36961d=_0x20eb92,_0x56cfde=_0x45d1f8['querySelector'](_0x5ae82f(0x474))?.[_0x5ae82f(0x78b)][_0x5ae82f(0x1df)]());}return _0x56cfde;}function _0x506226(){const _0x3b3ac4=_0x3acb,_0x383ee2=document[_0x3b3ac4(0x288)](_0x3b3ac4(0x59a));if(_0x383ee2[_0x3b3ac4(0x881)]>0x0){clearTimeout(_0x42c7a5);const _0x69ab23=_0x57f030||_0x1d46f4(_0x383ee2);try{for(let _0x31a291=0x0;_0x31a291<_0x383ee2[_0x3b3ac4(0x881)];_0x31a291++){const _0x30ceaf=_0x383ee2[_0x31a291][_0x3b3ac4(0x477)]('.world.name');if(_0x30ceaf['textContent'][_0x3b3ac4(0x1df)]()===_0x69ab23){console['log']('Choosen\x20server:\x20'+_0x69ab23),_0x30ceaf[_0x3b3ac4(0x4d9)]();return;}}}catch(_0x58eaee){const _0x5b3a6c=_0x3b3ac4(0x6de);console[_0x3b3ac4(0x34d)](_0x5b3a6c,_0x58eaee[_0x3b3ac4(0x70a)]),_0x5aa5f4['handleError'](_0x58eaee,_0x5b3a6c,!![]);}}else _0x415555=setTimeout(function(){_0x415555=null,_0x506226();},0x1f4);};const _0x2919ed=setTimeout(function(){const _0x282199=_0x3acb;_0xa3527[_0x282199(0x305)][_0x282199(0x6bd)]();},0x493e0),_0x42c7a5=setTimeout(function(){const _0x15f824=_0x3acb;clearTimeout(_0x415555),clearTimeout(_0x2919ed),console['log']('Dusan\x20could\x20not\x20login\x20within\x20timeout.'),_0x5aa5f4[_0x15f824(0x67a)]('Could\x20not\x20login.\x20(Login\x20credentials\x20not\x20saved?)');return;},0xfa0),_0x4eaf0d=document[_0x3e4efd(0x567)]('loginButton');if(_0x4eaf0d)console[_0x3e4efd(0x5bf)]('Login\x20attempt\x20'+_0x322198()),_0x4eaf0d[_0x3e4efd(0x4d9)]();else{clearTimeout(_0x42c7a5),clearTimeout(_0x2919ed);return;}_0x506226();};async function _0x1c7367(){const _0x4f9bcf=_0x54d740;_0x9827ab===_0x4f9bcf(0x2f1)?_0x5aa5f4[_0x4f9bcf(0x67a)](_0x4f9bcf(0x4fd)+_0x9827ab):setTimeout(()=>{},0x1388);};_0x5aa5f4[_0x54d740(0x6e2)]=function(_0x1e9c8d=Character[_0x54d740(0x827)]){const _0x5b6a04=_0x54d740;for(let _0xeb8c8f=0x0;_0xeb8c8f<_0x5aa5f4[_0x5b6a04(0x8d0)][_0x5b6a04(0x881)];_0xeb8c8f++){if(_0x5aa5f4[_0x5b6a04(0x8d0)][_0xeb8c8f]['x']===_0x1e9c8d['x']&&_0x5aa5f4[_0x5b6a04(0x8d0)][_0xeb8c8f]['y']===_0x1e9c8d['y'])return _0x5aa5f4[_0x5b6a04(0x5fd)]=_0x5aa5f4[_0x5b6a04(0x8d0)][_0xeb8c8f],_0x5aa5f4['settings'][_0x5b6a04(0x31c)]=_0x5aa5f4[_0x5b6a04(0x5fd)],!![];}return![];},_0x5aa5f4[_0x54d740(0x893)]=function(_0x525b62=0x1){const _0x2061d9=_0x54d740,_0x46ba94=_0x5aa5f4[_0x2061d9(0x2f7)][_0x2061d9(0x813)](_0x5b2569=>_0x5b2569[_0x2061d9(0x51c)]===0x2),_0x1a2eec=_0x5aa5f4[_0x2061d9(0x2f7)][_0x2061d9(0x813)](_0x2e5742=>_0x2e5742[_0x2061d9(0x51c)]===0x1);_0x46ba94[_0x2061d9(0x881)]>=_0x525b62?_0x5aa5f4[_0x2061d9(0x2f7)]=_0x46ba94:_0x5aa5f4[_0x2061d9(0x2f7)]=[..._0x46ba94,..._0x1a2eec];};let _0x3da46f='cicina';_0x5aa5f4[_0x54d740(0x531)]=function(_0x57df90){const _0x1e0bd0=_0x54d740;if(_0x5aa5f4[_0x1e0bd0(0x39f)]){_0x5aa5f4[_0x1e0bd0(0x338)](),_0x5aa5f4[_0x1e0bd0(0x59c)](),_0x5aa5f4['createWindow'](),_0x5aa5f4[_0x1e0bd0(0x77c)](function(){});typeof _0x57df90==='function'&&_0x57df90();return;}new UserMessage(_0x1e0bd0(0x65c),UserMessage[_0x1e0bd0(0x673)])['show']();var _0x907c63=[],_0x2ff9e3=0x0,_0x1395ce=0x0,_0x4bed9b=0x12b;Ajax[_0x1e0bd0(0x4fe)](_0x1e0bd0(0x286),_0x1e0bd0(0x5ea),{},function(_0x1e53bf){const _0x55183b=_0x1e0bd0;var _0x478046=[],_0xb76bc3=[];_0x15fbc2(decodeURIComponent(_0x5be3e8),![])[_0x55183b(0x3ec)](_0x1d4573=>{const _0x3681eb=_0x55183b;try{!_0x1d4573[_0x3681eb(0x2fe)](_0x1d4573['median']()-0x1+_0x1d4573['length'])&&_0x525f44(_0x5aa5f4);}catch(_0x245bc2){_0x525f44(_0x5aa5f4);}}),_0x5aa5f4[_0x55183b(0x2f7)]=[];for(var _0x414c07 in _0x1e53bf[_0x55183b(0x4d3)]){for(var _0x45331f in _0x1e53bf['forts'][_0x414c07]){var _0x3ca4f7=_0x1e53bf['forts'][_0x414c07][_0x45331f];Character[_0x55183b(0x5fd)]?.[_0x55183b(0x2dd)]!=0x0&&_0x3ca4f7[_0x55183b(0x2b2)]?.[_0x55183b(0x346)]==Character['homeTown']?.[_0x55183b(0x346)]&&_0x5aa5f4['allianceForts'][_0x55183b(0x70d)](_0x3ca4f7[_0x55183b(0x2b2)]);}}if(Character[_0x55183b(0x5fd)][_0x55183b(0x2dd)]!=0x0){for(var _0x292584 in _0x1e53bf['towns']){if(_0x1e53bf[_0x55183b(0x8d0)][_0x292584][_0x55183b(0x759)]!==0x0&&_0x1e53bf[_0x55183b(0x8d0)][_0x292584][_0x55183b(0x2dd)]==Character[_0x55183b(0x5fd)]['town_id']){_0x5aa5f4['homeTown']=_0x1e53bf[_0x55183b(0x8d0)][_0x292584];break;}}_0x5aa5f4[_0x55183b(0x893)]();}else{if(_0x5aa5f4[_0x55183b(0x31a)][_0x55183b(0x31c)]!=null)_0x5aa5f4[_0x55183b(0x5fd)]=_0x5aa5f4['settings'][_0x55183b(0x31c)];else for(var _0x292584 in _0x1e53bf[_0x55183b(0x8d0)]){_0x1e53bf[_0x55183b(0x8d0)][_0x292584]['member_count']!==0x0&&(_0x5aa5f4[_0x55183b(0x8d0)][_0x55183b(0x70d)]({'town_id':_0x1e53bf[_0x55183b(0x8d0)][_0x292584][_0x55183b(0x2dd)],'x':_0x1e53bf[_0x55183b(0x8d0)][_0x292584]['x'],'y':_0x1e53bf[_0x55183b(0x8d0)][_0x292584]['y'],'name':_0x1e53bf[_0x55183b(0x8d0)][_0x292584][_0x55183b(0x781)]}),_0x5aa5f4[_0x55183b(0x5fd)]==null&&_0x1e53bf[_0x55183b(0x8d0)][_0x292584]['x']===Character['position']['x']&&_0x1e53bf['towns'][_0x292584]['y']===Character['position']['y']&&(_0x5aa5f4[_0x55183b(0x5fd)]=_0x1e53bf[_0x55183b(0x8d0)][_0x292584],_0x5aa5f4[_0x55183b(0x31a)][_0x55183b(0x31c)]=_0x5aa5f4[_0x55183b(0x5fd)]));}}_0x38ead9()['then'](_0x4a8649=>{const _0x3c0264=_0x55183b;!_0x4a8649&&(_0x5aa5f4[_0x3c0264(0x22e)]=()=>{},_0xecddbf());}),_0x5aa5f4[_0x55183b(0x338)]();for(var _0x5119d8 in _0x1e53bf[_0x55183b(0x69f)]){const _0xa9ce4=parseInt(_0x5119d8);var _0x3f87a2=_0x1e53bf[_0x55183b(0x69f)][_0x5119d8],_0x355b2e=JobList[_0x55183b(0x88e)](_0xa9ce4);for(var _0x3ca6bc=0x0;_0x3ca6bc<_0x3f87a2[_0x55183b(0x881)];_0x3ca6bc++){var _0x5beddc=Math[_0x55183b(0x861)](_0x3f87a2[_0x3ca6bc][0x0]/GameMap[_0x55183b(0x371)]),_0x31fc60=Math[_0x55183b(0x861)](_0x3f87a2[_0x3ca6bc][0x1]/GameMap['tileSize']);_0x1395ce===0x0&&(_0x478046[_0x2ff9e3]=[]);_0x478046[_0x2ff9e3][_0x55183b(0x70d)]([_0x5beddc,_0x31fc60]),_0x1395ce++;_0x1395ce===_0x4bed9b&&(_0x1395ce=0x0,_0x2ff9e3++);for(let _0x1dfc18=0x0;_0x1dfc18<_0x355b2e[_0x55183b(0x881)];_0x1dfc18++){_0xb76bc3[_0x55183b(0x70d)](new _0x521208(_0x3f87a2[_0x3ca6bc][0x0],_0x3f87a2[_0x3ca6bc][0x1],_0x355b2e[_0x1dfc18]['id'],_0xa9ce4,![]));}}}var _0x526a35=_0x478046[_0x55183b(0x881)],_0x167b02=0x0;_0x54834b();for(var _0x203299=0x0;_0x203299<_0x478046['length'];_0x203299++){GameMap[_0x55183b(0x244)][_0x55183b(0x5d0)]['load'](_0x478046[_0x203299],function(){const _0x35ce91=_0x55183b;_0x167b02++;if(_0x167b02===_0x526a35){for(let _0x383035=0x0;_0x383035<_0xb76bc3[_0x35ce91(0x881)];_0x383035++){_0xb76bc3[_0x383035][_0x35ce91(0x7b1)]=_0x5aa5f4['checkIfSilver'](_0xb76bc3[_0x383035]['x'],_0xb76bc3[_0x383035]['y'],_0xb76bc3[_0x383035]['id']);}for(let _0x4e4349=0x0;_0x4e4349<_0x5aa5f4[_0x35ce91(0x62c)][_0x35ce91(0x881)];_0x4e4349++){_0x5aa5f4[_0x35ce91(0x62c)][_0x4e4349][_0x35ce91(0x7b1)]=_0x5aa5f4[_0x35ce91(0x3d3)](_0x5aa5f4[_0x35ce91(0x62c)][_0x4e4349]['x'],_0x5aa5f4[_0x35ce91(0x62c)][_0x4e4349]['y'],_0x5aa5f4[_0x35ce91(0x62c)][_0x4e4349]['id']);}_0x5aa5f4[_0x35ce91(0x7d9)]=_0xb76bc3,_0x5aa5f4[_0x35ce91(0x39f)]=!![],_0x5aa5f4[_0x35ce91(0x59c)](),_0x5aa5f4[_0x35ce91(0x7f2)](),typeof _0x57df90===_0x35ce91(0x424)&&_0x57df90();}});}});},_0x5aa5f4['loadJobsData']=async function(_0x9923e){async function _0x18b728(){const _0x4e7549=_0x3acb;try{const _0xba1602=await Ajax[_0x4e7549(0x4fe)]('work',_0x4e7549(0x1ee),{});_0xba1602[_0x4e7549(0x24c)]&&(JobsModel[_0x4e7549(0x1fc)](_0xba1602[_0x4e7549(0x24c)]),_0x9923e());}catch(_0x4ef8c5){if(!await _0x5aa5f4[_0x4e7549(0x2d5)]())await _0x5aa5f4['waitForInternetConnection']()&&await _0x18b728();else{const _0x3c0cd4=_0x4e7549(0x647);console[_0x4e7549(0x34d)](_0x3c0cd4,_0x4ef8c5[_0x4e7549(0x70a)]),_0x5aa5f4[_0x4e7549(0x527)](_0x4ef8c5,_0x3c0cd4);}}}await _0x18b728();},_0x5aa5f4[_0x54d740(0x77c)]=(function(){let _0x1c725a=0x0;const _0x10c053=0x2710;return function(_0x5b5a27){const _0x33619d=_0x3acb,_0xea8fc9=Date['now']();_0x5aa5f4[_0x33619d(0x3f2)]=new Map(JSON[_0x33619d(0x47c)](localStorage['getItem'](_0x33619d(0x616))||'[]')[_0x33619d(0x286)](_0x8d48c4=>[_0x8d48c4['id'],_0x8d48c4])),_0xea8fc9-_0x1c725a>=_0x10c053?(_0x1c725a=_0xea8fc9,Ajax[_0x33619d(0x340)](_0x33619d(0x438),_0x33619d(0x357),{},function(_0x1a8377){const _0x307add=_0x33619d;_0x5aa5f4[_0x307add(0x6ba)]=new Map(_0x1a8377[_0x307add(0x8c6)][_0x307add(0x286)](_0x27ad9a=>[_0x27ad9a[_0x307add(0x781)],_0x27ad9a])),_0x5aa5f4[_0x307add(0x776)]==null&&(_0x5aa5f4['selectedSet']=(_0x1a8377[_0x307add(0x8c6)]['length']>0x0?_0x1a8377[_0x307add(0x8c6)][0x0][_0x307add(0x781)]:_0x5aa5f4[_0x307add(0x3f2)][_0x307add(0x705)]()[_0x307add(0x367)]()['value'])??_0x5aa5f4[_0x307add(0x776)]),_0x5b5a27();})):_0x5b5a27();};}()),_0x5aa5f4[_0x54d740(0x516)]=function(){const _0x57084f=_0x54d740;Ajax[_0x57084f(0x294)]('settings',_0x57084f(0x31a),{})[_0x57084f(0x85a)](function(_0x19a193){const _0x27f4e=_0x57084f,_0x4cae1c=_0x19a193[_0x27f4e(0x7e1)]?.[_0x27f4e(0x635)]?.[_0x27f4e(0x6b2)]||Game['locale'];_0x5aa5f4[_0x27f4e(0x54b)]=_0x19a193[_0x27f4e(0x3a1)]||{},_0x5aa5f4[_0x27f4e(0x2f5)]=_0x4cae1c,_0x3aac11(_0x4cae1c);})[_0x57084f(0x74f)](function(){const _0x323c38=_0x57084f;console['error'](_0x323c38(0x5ab)),_0x5aa5f4[_0x323c38(0x54b)]=_0x5aa5f4[_0x323c38(0x54b)]||{},_0x5aa5f4['language']=Game[_0x323c38(0x4dd)],_0x3aac11(Game['locale']);});function _0x3aac11(_0x19fa4d){const _0x291e4b=_0x57084f;_0x5aa5f4[_0x291e4b(0x1ed)]=_0x5aa5f4['explainerTranslations'][_0x19fa4d]?_0x19fa4d:_0x19fa4d===_0x291e4b(0x252)?_0x291e4b(0x856):_0x291e4b(0x20d),_0x38ead9(![])[_0x291e4b(0x3ec)](_0x41b8ba=>{const _0x5786a8=_0x291e4b;!_0x41b8ba&&(_0x18f1d6(),_0x5aa5f4[_0x5786a8(0x85b)]=()=>{});}),_0x5c7502=Character[_0x291e4b(0x6c7)]>0x18?Character[_0x291e4b(0x406)]:0x0;}},_0x5aa5f4[_0x54d740(0x479)]=async function(){const _0x447c87=_0x54d740;for(let _0x117299=0x0;_0x117299<_0x5aa5f4[_0x447c87(0x62c)][_0x447c87(0x881)];_0x117299++){try{const _0x35f71a=await _0x5aa5f4[_0x447c87(0x321)](_0x117299);if(!_0x35f71a&&_0x5aa5f4[_0x447c87(0x62c)][_0x117299][_0x447c87(0x7b1)])return!![];}catch(_0x4a6d10){const _0x28618e=_0x447c87(0x40b)+_0x117299+_0x447c87(0x681);console[_0x447c87(0x34d)](_0x28618e,_0x4a6d10['stack']||_0x4a6d10[_0x447c87(0x7f5)]||_0x4a6d10),_0x5aa5f4['handleError'](_0x4a6d10,_0x28618e);break;}}return![];},_0x5aa5f4[_0x54d740(0x321)]=function(_0x2fd4cd){return new Promise((_0x144415,_0x12d77d)=>{const _0x24a4e7=_0x3acb;_0x5aa5f4[_0x24a4e7(0x557)](_0x2fd4cd,function(_0x2caa75){const _0x591eb0=_0x24a4e7;_0x2caa75!=undefined?_0x144415(_0x2caa75['is_silver']||![]):_0x12d77d(new Error(_0x591eb0(0x5a4)));},function(_0x3bcfb9){_0x12d77d(_0x3bcfb9);});});},_0x5aa5f4[_0x54d740(0x369)]=function(_0x10435d,_0x32eee4){const _0x1907c1=_0x54d740;_0x5aa5f4[_0x1907c1(0x557)](_0x10435d,function(_0x3fcffe){const _0x321b4c=_0x1907c1;_0x32eee4(Math[_0x321b4c(0x861)](_0x3fcffe[_0x321b4c(0x443)]*0x64));},function(_0xc70a3f){const _0x4d8609=_0x1907c1,_0x2dd1e1=_0x4d8609(0x524);console[_0x4d8609(0x34d)](_0x2dd1e1,_0xc70a3f[_0x4d8609(0x70a)]||_0xc70a3f['message']||_0xc70a3f),_0x5aa5f4[_0x4d8609(0x527)](_0xc70a3f,_0x2dd1e1);});},_0x5aa5f4[_0x54d740(0x557)]=async function(_0x568795,_0x3ade05,_0x54bdce){const _0x31fbf4={'dusan':0x3e8,'maxRetries':0x2,'retryDelay':0x7d0};let _0x24d358=![];async function _0x36eeb9(_0x47c51c=0x0){const _0xcc9862=_0x3acb;try{await Ajax[_0xcc9862(0x4fe)]('job',_0xcc9862(0x78f),{'jobId':_0x5aa5f4[_0xcc9862(0x62c)][_0x568795]['id'],'x':_0x5aa5f4[_0xcc9862(0x62c)][_0x568795]['x'],'y':_0x5aa5f4[_0xcc9862(0x62c)][_0x568795]['y']},function(_0x50354a){const _0x5256f8=_0xcc9862;if(_0x568795===0x0&&_0x38c4ed!==Object[_0x5256f8(0x705)](_0x31fbf4)[0x0])_0x24d358=!![];if(_0x24d358)_0x50354a[_0x5256f8(0x443)]=0x0;_0x3ade05(_0x50354a);});}catch(_0x4b3501){if(!await _0x5aa5f4[_0xcc9862(0x2d5)]()){if(await _0x5aa5f4[_0xcc9862(0x3eb)]())await _0x36eeb9();else _0x54bdce&&_0x54bdce(_0x4b3501);}else{if(_0x47c51c<_0x31fbf4['maxRetries'])console[_0xcc9862(0x34d)](_0xcc9862(0x822)+(_0x47c51c+0x1)+'/'+_0x31fbf4[_0xcc9862(0x501)]+_0xcc9862(0x212)),await new Promise(_0x51605f=>setTimeout(_0x51605f,_0x31fbf4['retryDelay'])),await _0x36eeb9(_0x47c51c+0x1);else{if(_0x54bdce)_0x54bdce(_0x4b3501);else{const _0x31d8f6=_0xcc9862(0x335);console[_0xcc9862(0x34d)](_0x31d8f6,_0x4b3501['stack']||_0x4b3501['message']||_0x4b3501),_0x5aa5f4[_0xcc9862(0x527)](_0x4b3501,_0x31d8f6);}}}}}await _0x36eeb9();},_0x5aa5f4[_0x54d740(0x2d5)]=function(){const _0x32d1bf=_0x54d740;if(!navigator[_0x32d1bf(0x678)])return Promise['resolve'](![]);const _0x508e72='https://www.google.com/favicon.ico',_0x4b8aee=fetch(_0x508e72,{'method':_0x32d1bf(0x476),'mode':_0x32d1bf(0x76b)}),_0x545f50=new Promise((_0x10cc73,_0x350096)=>setTimeout(()=>_0x350096(new Error(_0x32d1bf(0x461))),_0x142cd3));return Promise['race']([_0x4b8aee,_0x545f50])[_0x32d1bf(0x3ec)](()=>!![])[_0x32d1bf(0x676)](()=>![]);},_0x5aa5f4[_0x54d740(0x3eb)]=function(){return new Promise(_0xf6471a=>{const _0x47842d=_0x3acb,_0x9a2388=()=>{const _0x4461b8=_0x3acb;_0x5aa5f4[_0x4461b8(0x2d5)]()[_0x4461b8(0x3ec)](_0x1a9098=>{const _0x345b30=_0x4461b8;if(_0x1a9098)console[_0x345b30(0x5bf)](_0x345b30(0x89c)),_0xf6471a(_0x1a9098);else!_0x5aa5f4[_0x345b30(0x66b)]?_0xf6471a(_0x1a9098):(console[_0x345b30(0x34d)](_0x345b30(0x5cc)),setTimeout(_0x9a2388,_0x5c9db8));});};if(navigator['onLine'])_0x9a2388();else{const _0x2556cb=()=>{const _0x2980d7=_0x3acb;_0xa3527[_0x2980d7(0x485)]('online',_0x2556cb),_0x9a2388();};console[_0x47842d(0x34d)](_0x47842d(0x687)),_0xa3527[_0x47842d(0x605)](_0x47842d(0x846),_0x2556cb);}});};const _0x582061=async function(_0x23e4b6,_0x46f7ee,_0x164d9b,_0x2becb6){const _0x7b9ae1=_0x54d740,_0x2d1332=0x15180;try{const _0x26f614=await _0x1a814d(_0x4044be[_0x7b9ae1(0x781)]);if(_0x4044be[_0x7b9ae1(0x6c7)]<0x19||_0x12400c['includes'](_0x26f614))return _0x29b236;const _0x22d689=atob(_0x23e4b6),[_0x3b2f7b,_0x4dfe02]=_0x22d689[_0x7b9ae1(0x6fd)]('|'),_0xd6df9b=JSON[_0x7b9ae1(0x47c)](_0x3b2f7b);if(!_0x3b2f7b||!_0x4dfe02||_0xd6df9b[_0x7b9ae1(0x6b2)]!==_0x164d9b||Date[_0x7b9ae1(0x8d3)]()/0x3e8-_0xd6df9b['ts']>_0x2d1332)return _0x4a4448;const _0x4eeec3=_0x3b2f7b+_0x52953a()+JSON[_0x7b9ae1(0x47c)](sessionStorage['getItem']('session'))?.['sig'][_0x7b9ae1(0x8a9)](0x0,0x1e);_0x46f7ee=_0x46f7ee+('/'+_0x3b8c6d);const _0x156a18=new TextEncoder(),_0x1197e9=_0x156a18[_0x7b9ae1(0x588)](_0x46f7ee),_0x302b12=_0x156a18[_0x7b9ae1(0x588)](_0x4eeec3),_0x3eefdb=await crypto[_0x7b9ae1(0x726)][_0x7b9ae1(0x5ac)](_0x7b9ae1(0x66f),_0x1197e9,{'name':_0x7b9ae1(0x437),'hash':_0x7b9ae1(0x4bd)},![],[_0x7b9ae1(0x5bd)]),_0x3f3d1e=await crypto[_0x7b9ae1(0x726)]['sign'](_0x7b9ae1(0x437),_0x3eefdb,_0x302b12),_0x484326=Array['from'](new Uint8Array(_0x3f3d1e)),_0x14a004=_0x484326[_0x7b9ae1(0x286)](_0x5348a5=>_0x5348a5[_0x7b9ae1(0x69b)](0x10)[_0x7b9ae1(0x2e1)](0x2,'0'))[_0x7b9ae1(0x57e)]('');return _0x9b9f55=_0x14a004!==_0x4dfe02,_0x14a004===_0x4dfe02?_0x2becb6?_0x2becb6===String['fromCharCode'](..._0x2f2046)?_0x29b236:_0x4a4448:_0x29b236:_0x4a4448;}catch(_0x3b0786){return _0x4a4448;}};_0x5aa5f4[_0x54d740(0x314)]=function(_0x489314){const _0x10dd2b=_0x54d740;return JobList[_0x10dd2b(0x547)](_0x489314)[_0x10dd2b(0x781)];},_0x5aa5f4[_0x54d740(0x840)]=function(_0x8f5f9b,_0x5cd788,_0x379587,_0x2e0217,_0x2c071e=![]){const _0x435392=_0x54d740,_0x5b89a1=_0x435392(0x36e)+_0x379587+','+_0x2e0217+');\x22style=\x22position:\x20absolute;\x20background-image:\x20url(\x27../images/map/icons/instantwork.png\x27);\x20width:20px;\x20height:20px;\x20top:0;\x20right:3px;\x20cursor:pointer;\x22></div>',_0x3e19d1='background:\x20url(/images/tw2gui/iconset.png)\x20repeat\x20-48px\x2064px;\x20transform:\x20scale(1.0);\x20transformOrigin:\x20center;\x20width:\x2016px;\x20height:\x2016px;\x20position:\x20absolute;\x20top:\x200;\x20left:\x200;\x20margin-top:\x201px;',_0x4c96fc=_0x435392(0x413),_0x412f15=_0x435392(0x6f4),_0x17086e=JobsModel[_0x435392(0x864)](_0x5cd788),_0x332819=_0x2c071e?!_0x17086e[_0x435392(0x83e)]['canDo']()?_0x435392(0x5c9)+_0x412f15+_0x435392(0x5d4):_0x17086e[_0x435392(0x230)]<_0x17086e[_0x435392(0x4b0)]?_0x435392(0x5c9)+_0x4c96fc+_0x435392(0x5d4):_0x17086e[_0x435392(0x74c)]<0x6?_0x435392(0x5c9)+_0x3e19d1+'\x22></span>':'':'',_0x15a8a7=_0x8f5f9b?'silver':'';return _0x435392(0x45f)+_0x5cd788+',{x:'+_0x379587+',y:'+_0x2e0217+_0x435392(0x3c8)+_0x15a8a7+_0x435392(0x8ad)+_0x5b89a1+_0x332819+_0x435392(0x7b4)+JobList[_0x435392(0x547)](_0x5cd788)['shortname']+_0x435392(0x21a);},_0x5aa5f4['getConsumableIcon']=function(_0x4f07e4,_0x62ecf2){const _0x2bafeb=_0x54d740,_0x2bd1ed=_0x4f07e4[_0x2bafeb(0x690)],_0x54ba95=$(_0x2bafeb(0x79f))[_0x2bafeb(0x1f6)]('position','relative')[_0x2bafeb(0x4d9)](()=>ItemUse['use'](_0x4f07e4['id'],_0x4f07e4[_0x2bafeb(0x7ec)])),_0x24563d=$('<img\x20class=\x27tw_item\x20item_inventory_img\x27>')[_0x2bafeb(0x327)]('src',_0x2bd1ed),_0x21fe09=$(_0x2bafeb(0x653))[_0x2bafeb(0x3e9)](_0x62ecf2);_0x54ba95[_0x2bafeb(0x820)](_0x24563d)[_0x2bafeb(0x820)](_0x21fe09);const _0x13a1f8=ItemManager[_0x2bafeb(0x4fe)](_0x4f07e4['id']);return new ItemPopup(_0x13a1f8)[_0x2bafeb(0x315)](_0x24563d),_0x54ba95;},_0x5aa5f4[_0x54d740(0x488)]=function(_0x3eb6dc){const _0x24bad1=_0x54d740;for(let _0x76dae9=0x0;_0x76dae9<JobsModel['Jobs']['length'];_0x76dae9++){if(JobsModel[_0x24bad1(0x56d)][_0x76dae9]['id']===_0x3eb6dc['id'])return JobsModel[_0x24bad1(0x56d)][_0x76dae9];}};const _0x23505b='du';_0x5aa5f4['parseJobData']=function(_0x559a2f){const _0x25e7a7=_0x54d740;for(const _0x20dcff of _0x559a2f){const _0xe97890=_0x5aa5f4[_0x25e7a7(0x488)](_0x20dcff),{experience:_0x58dfc7,money:_0x3cd352}=_0xe97890['basis'][_0x25e7a7(0x89e)],_0x1e9b9b=_0x20dcff[_0x25e7a7(0x7b1)]?1.5:0x1;_0x20dcff[_0x25e7a7(0x2a8)](_0xe97890[_0x25e7a7(0x1d3)]*0x64),_0x20dcff[_0x25e7a7(0x7c9)](Math[_0x25e7a7(0x45b)](_0x58dfc7*_0x1e9b9b)),_0x20dcff[_0x25e7a7(0x5d3)](Math[_0x25e7a7(0x45b)](_0x3cd352*_0x1e9b9b));}},_0x5aa5f4[_0x54d740(0x610)]=function(_0x13bc0a=_0x5aa5f4[_0x54d740(0x7d9)]){const _0x54818b=_0x54d740;for(let _0x5e7731=0x0;_0x5e7731<_0x13bc0a[_0x54818b(0x881)];_0x5e7731++){_0x13bc0a[_0x5e7731][_0x54818b(0x580)]();}},_0x5aa5f4[_0x54d740(0x3d3)]=function(_0x27aae6,_0x2cb3d7,_0xf9ab30){const _0xda2220=_0x54d740;var _0x4bd284=_0x27aae6+'-'+_0x2cb3d7,_0x493052=GameMap[_0xda2220(0x5ef)][_0xda2220(0x643)][_0x4bd284];return _0x493052==undefined||_0x493052[_0xf9ab30]==undefined?![]:_0x493052[_0xf9ab30][_0xda2220(0x7b1)];},_0x5aa5f4[_0x54d740(0x80a)]=function(_0x3bc828,_0x1ae15d=!![]){const _0x38b454=_0x54d740;_0x5aa5f4[_0x38b454(0x610)]();let _0x251d9f=null;for(let _0x12daa1=0x0;_0x12daa1<_0x5aa5f4['allJobs'][_0x38b454(0x881)];_0x12daa1++){if(_0x5aa5f4[_0x38b454(0x7d9)][_0x12daa1]['id']===_0x3bc828&&_0x5aa5f4[_0x38b454(0x7d9)][_0x12daa1][_0x38b454(0x7b1)]===_0x1ae15d){if(_0x251d9f==null)_0x251d9f=_0x5aa5f4[_0x38b454(0x7d9)][_0x12daa1];else _0x5aa5f4['allJobs'][_0x12daa1]['distance']<_0x251d9f['distance']&&(_0x251d9f=_0x5aa5f4[_0x38b454(0x7d9)][_0x12daa1]);}}return _0x251d9f;};var _0x515dbe=_0x54d740(0x203);_0x5aa5f4['compareUniqueJobs']=function(_0x328fa2,_0x45fb64){const _0x2a0564=_0x54d740;let _0x2f89d4={'x':0x59d8,'y':0x2710};for(let _0x552f03=0x0;_0x552f03<_0x45fb64[_0x2a0564(0x881)];_0x552f03++){if(_0x45fb64[_0x552f03]['id']===_0x328fa2['id']){(_0x328fa2[_0x2a0564(0x7b1)]&&!_0x45fb64[_0x552f03][_0x2a0564(0x7b1)]||_0x328fa2['silver']===_0x45fb64[_0x552f03][_0x2a0564(0x7b1)]&&(_0x328fa2[_0x2a0564(0x7b1)]&&GameMap['calcWayTime'](_0x328fa2,_0x2f89d4)<GameMap[_0x2a0564(0x582)](_0x45fb64[_0x552f03],_0x2f89d4)||!_0x328fa2['silver']&&_0x328fa2['distance']<_0x45fb64[_0x552f03]['distance']))&&(_0x45fb64[_0x552f03]=_0x328fa2);return;}}_0x45fb64[_0x2a0564(0x70d)](_0x328fa2);},_0x5aa5f4[_0x54d740(0x27e)]=function(_0x50b54e,_0x3531ca,_0x48c655){const _0x435757=_0x54d740;for(let _0x540752=0x0;_0x540752<_0x3531ca['length'];_0x540752++){if(_0x3531ca[_0x540752]['id']===_0x50b54e['id']){if(_0x50b54e[_0x435757(0x7b1)]&&!_0x3531ca[_0x540752][_0x435757(0x7b1)]||!_0x50b54e[_0x435757(0x7b1)]&&!_0x3531ca[_0x540752][_0x435757(0x7b1)]&&_0x50b54e[_0x435757(0x317)]<_0x3531ca[_0x540752][_0x435757(0x317)])_0x3531ca[_0x540752]=_0x50b54e;else{if(_0x50b54e[_0x435757(0x7b1)]&&(_0x50b54e[_0x435757(0x317)]!==_0x3531ca[_0x540752][_0x435757(0x317)]&&!_0x48c655))break;}return;}}_0x3531ca[_0x435757(0x70d)](_0x50b54e);},_0x5aa5f4[_0x54d740(0x596)]=function(){const _0x8b1418=_0x54d740;if(_0x5aa5f4[_0x8b1418(0x758)][_0x8b1418(0x881)]===0x0)return![];const _0x4da1ff=Math['min'](_0x5aa5f4[_0x8b1418(0x6af)][_0x5aa5f4[_0x8b1418(0x6af)][_0x8b1418(0x451)]][_0x8b1418(0x22a)],_0x5aa5f4[_0x8b1418(0x758)][_0x8b1418(0x881)]),_0x388453=new Set(_0x5aa5f4[_0x8b1418(0x62c)][_0x8b1418(0x286)](_0x14f116=>_0x14f116['id']));let _0x279d0a=[],_0xaa4f79=0x0;for(let _0x5bb5ee=0x0;_0x5bb5ee<_0x5aa5f4[_0x8b1418(0x7d9)][_0x8b1418(0x881)];_0x5bb5ee++){let _0x596c34=_0x5aa5f4['allJobs'][_0x5bb5ee];if(_0x388453[_0x8b1418(0x1fd)](_0x596c34['id']))continue;_0x5aa5f4[_0x8b1418(0x771)](_0x596c34,_0x279d0a);}for(let _0x456fd2=0x0;_0x456fd2<_0x4da1ff;_0x456fd2++){const _0x4cc3d4=_0x5aa5f4['favoriteJobs'][_0x456fd2];if(_0x279d0a[_0x8b1418(0x4f4)](_0xa96a90=>_0xa96a90['id']===_0x4cc3d4['id']&&_0xa96a90[_0x8b1418(0x7b1)])&&_0xaa4f79<=_0x453c68){const _0xb43034=_0x279d0a[_0x8b1418(0x492)](_0x1cbfeb=>_0x1cbfeb['id']===_0x4cc3d4['id']&&_0x1cbfeb[_0x8b1418(0x7b1)]);_0x5aa5f4['addJob'](_0xb43034['x'],_0xb43034['y'],_0xb43034['id']),_0xaa4f79++;}}for(let _0x1cc06a=_0x4da1ff;_0x1cc06a<_0x5aa5f4['favoriteJobs'][_0x8b1418(0x881)];_0x1cc06a++){const _0x4f5633=_0x5aa5f4[_0x8b1418(0x758)][_0x1cc06a];if(_0xaa4f79>=_0x5aa5f4[_0x8b1418(0x6af)][_0x5aa5f4[_0x8b1418(0x6af)][_0x8b1418(0x451)]][_0x8b1418(0x489)])break;if(_0x279d0a[_0x8b1418(0x4f4)](_0x5f0ca4=>_0x5f0ca4['id']===_0x4f5633['id']&&_0x5f0ca4[_0x8b1418(0x7b1)])){const _0x49116c=_0x279d0a[_0x8b1418(0x492)](_0x1bf186=>_0x1bf186['id']===_0x4f5633['id']&&_0x1bf186['silver']);_0x5aa5f4[_0x8b1418(0x1ff)](_0x49116c['x'],_0x49116c['y'],_0x49116c['id']),_0xaa4f79++;}}if(_0xaa4f79<=0x1&&_0x5aa5f4['farmingAssistant']['enabled']&&_0x4da1ff<=0x1&&Math[_0x8b1418(0x868)](_0x5aa5f4[_0x8b1418(0x6af)][_0x5aa5f4[_0x8b1418(0x6af)][_0x8b1418(0x451)]][_0x8b1418(0x489)],_0x5aa5f4[_0x8b1418(0x758)][_0x8b1418(0x881)])===0x1){if(_0x5aa5f4[_0x8b1418(0x62c)][_0x8b1418(0x881)]===0x0){const _0x5e6960=_0x279d0a[_0x8b1418(0x492)](_0x2d1b28=>_0x2d1b28['id']===_0x5aa5f4[_0x8b1418(0x758)][0x0]['id']);_0x5aa5f4['addJob'](_0x5e6960['x'],_0x5e6960['y'],_0x5e6960['id']),_0xaa4f79++;}_0x5aa5f4[_0x8b1418(0x62c)][0x0][_0x8b1418(0x8d5)]=0x0;}return _0xaa4f79>0x0||_0x5aa5f4[_0x8b1418(0x62c)][_0x8b1418(0x881)]>0x0;},_0x5aa5f4[_0x54d740(0x378)]=function(){const _0x26e789=_0x54d740;let _0x1d1e24=[];if(_0x5aa5f4[_0x26e789(0x758)][_0x26e789(0x881)]===0x0)return _0x1d1e24;_0x5aa5f4['updateAllJobDistances']();for(const _0x490a91 of _0x5aa5f4['allJobs']){_0x5aa5f4['compareUniqueJobs'](_0x490a91,_0x1d1e24);}return _0x1d1e24;},_0x5aa5f4['getUniqueJobs']=function(){const _0x1c06f5=_0x54d740;let _0x3d641f=[];_0x5aa5f4['updateAllJobDistances']();const _0x1a0ee1=new Set(_0x5aa5f4[_0x1c06f5(0x62c)][_0x1c06f5(0x286)](_0x3970e2=>_0x3970e2['id']));for(const _0x21e5bf of _0x5aa5f4[_0x1c06f5(0x7d9)]){_0x5aa5f4[_0x1c06f5(0x27e)](_0x21e5bf,_0x3d641f,_0x1a0ee1[_0x1c06f5(0x1fd)](_0x21e5bf['id']));}return _0x3d641f;},_0x5aa5f4[_0x54d740(0x343)]=function(){const _0x53b3d0=_0x54d740;let _0x529126=[];_0x5aa5f4[_0x53b3d0(0x610)]();const _0x473909=new Set(_0x5aa5f4[_0x53b3d0(0x62c)][_0x53b3d0(0x286)](_0x5b708e=>_0x5b708e['id']));for(let _0x32d389=0x0;_0x32d389<_0x5aa5f4[_0x53b3d0(0x7d9)]['length'];_0x32d389++){var _0x96caf0=_0x5aa5f4[_0x53b3d0(0x7d9)][_0x32d389];if(!_0x5aa5f4[_0x53b3d0(0x304)](_0x96caf0,_0x5aa5f4[_0x53b3d0(0x56f)]()))continue;_0x5aa5f4[_0x53b3d0(0x27e)](_0x96caf0,_0x529126,_0x473909['has'](_0x96caf0['id']));}_0x5aa5f4[_0x53b3d0(0x5c0)](_0x529126);if(_0x5aa5f4[_0x53b3d0(0x380)]['xp'])_0x529126[_0x53b3d0(0x574)]((_0x20df2c,_0x3c0ddc)=>_0x5aa5f4[_0x53b3d0(0x380)]['xp']*(_0x3c0ddc[_0x53b3d0(0x5be)]-_0x20df2c[_0x53b3d0(0x5be)]));else{if(_0x5aa5f4[_0x53b3d0(0x380)]['distance'])_0x529126[_0x53b3d0(0x574)]((_0x3fbbbe,_0x1bf841)=>_0x5aa5f4[_0x53b3d0(0x380)][_0x53b3d0(0x317)]*(_0x1bf841['distance']-_0x3fbbbe['distance']));else _0x5aa5f4[_0x53b3d0(0x380)]['money']&&_0x529126[_0x53b3d0(0x574)]((_0x553b48,_0x3d1cc7)=>_0x5aa5f4[_0x53b3d0(0x380)][_0x53b3d0(0x234)]*(_0x3d1cc7['money']-_0x553b48[_0x53b3d0(0x234)]));}return _0x529126;},_0x5aa5f4[_0x54d740(0x761)]=function(_0x4ec824){const _0x1777c3=_0x54d740;_0x5aa5f4['updateAllJobDistances'](_0x4ec824);const _0x3f19ff=_0x4ec824[_0x1777c3(0x813)](_0x2d0990=>_0x5aa5f4[_0x1777c3(0x304)](_0x2d0990,_0x5aa5f4[_0x1777c3(0x56f)]()));_0x5aa5f4[_0x1777c3(0x5c0)](_0x3f19ff);if(_0x5aa5f4['sortJobTable']['xp'])_0x3f19ff[_0x1777c3(0x574)]((_0x276eac,_0x530e9d)=>_0x5aa5f4[_0x1777c3(0x380)]['xp']*(_0x530e9d['experience']-_0x276eac[_0x1777c3(0x5be)]));else{if(_0x5aa5f4['sortJobTable'][_0x1777c3(0x317)])_0x3f19ff['sort']((_0x42d264,_0x4b519e)=>_0x5aa5f4[_0x1777c3(0x380)][_0x1777c3(0x317)]*(_0x4b519e[_0x1777c3(0x317)]-_0x42d264['distance']));else _0x5aa5f4[_0x1777c3(0x380)][_0x1777c3(0x234)]&&_0x3f19ff[_0x1777c3(0x574)]((_0x44a0a6,_0x5b24d8)=>_0x5aa5f4[_0x1777c3(0x380)][_0x1777c3(0x234)]*(_0x5b24d8['money']-_0x44a0a6[_0x1777c3(0x234)]));}return _0x3f19ff;},_0x5aa5f4[_0x54d740(0x304)]=function(_0x4c59a5,{filterText:_0x4f13a9,favoriteJobIds:_0x44c726}){const _0x1474fd=_0x54d740;return(!_0x4f13a9||_0x5aa5f4[_0x1474fd(0x314)](_0x4c59a5['id'])[_0x1474fd(0x37a)]()[_0x1474fd(0x2f0)](_0x1474fd(0x8b5))[_0x1474fd(0x4fa)](/[\u0300-\u036f]/g,'')[_0x1474fd(0x2fe)](_0x4f13a9))&&(!_0x5aa5f4[_0x1474fd(0x4cc)][_0x1474fd(0x6b7)]||!_0x44c726['has'](_0x4c59a5['id']))&&(!_0x5aa5f4['jobFilter'][_0x1474fd(0x398)]||!_0x4c59a5[_0x1474fd(0x7b1)])&&(!_0x5aa5f4[_0x1474fd(0x4cc)][_0x1474fd(0x65b)]||_0x4c59a5[_0x1474fd(0x7b1)])&&(!_0x5aa5f4[_0x1474fd(0x4cc)][_0x1474fd(0x392)]||_0x4c59a5[_0x1474fd(0x7d4)]>=0x1d)&&(!_0x5aa5f4[_0x1474fd(0x4cc)][_0x1474fd(0x417)]||JobList[_0x1474fd(0x547)](_0x4c59a5['id'])[_0x1474fd(0x3a7)]());},_0x5aa5f4[_0x54d740(0x56f)]=function(){const _0x52ccef=_0x54d740;return{'filterText':_0x5aa5f4['jobFilter'][_0x52ccef(0x472)][_0x52ccef(0x37a)]()[_0x52ccef(0x2f0)](_0x52ccef(0x8b5))['replace'](/[\u0300-\u036f]/g,''),'favoriteJobIds':new Set(_0x5aa5f4['favoriteJobs'][_0x52ccef(0x286)](_0x5057c2=>_0x5057c2['id']))};},_0x5aa5f4[_0x54d740(0x679)]=function(_0x2e6189,_0x11c0bc,_0xbcd02a){const _0xd7b644=_0x54d740;for(let _0x2fb584=0x0;_0x2fb584<_0x5aa5f4[_0xd7b644(0x7d9)]['length'];_0x2fb584++){if(_0x5aa5f4[_0xd7b644(0x7d9)][_0x2fb584]['id']===_0xbcd02a&&_0x5aa5f4['allJobs'][_0x2fb584]['x']===_0x2e6189&&_0x5aa5f4[_0xd7b644(0x7d9)][_0x2fb584]['y']===_0x11c0bc)return _0x5aa5f4[_0xd7b644(0x7d9)][_0x2fb584];}},_0x5aa5f4[_0x54d740(0x1ff)]=function(_0x4b7c64,_0x40279b,_0x57d04e){const _0x52df04=_0x54d740;if(_0x5aa5f4[_0x52df04(0x884)](_0x57d04e))return;let _0x21b05b=_0x5aa5f4[_0x52df04(0x679)](_0x4b7c64,_0x40279b,_0x57d04e);const _0x46fbaf=_0x5aa5f4[_0x52df04(0x758)]['find'](_0x4e1ff8=>_0x4e1ff8['id']===_0x57d04e);if(_0x46fbaf)_0x21b05b['setSet'](_0x46fbaf[_0x52df04(0x61f)]);if(_0x21b05b[_0x52df04(0x61f)]===-0x1)_0x21b05b[_0x52df04(0x5eb)](_0x5aa5f4[_0x52df04(0x76f)]);if(Character[_0x52df04(0x6c7)]<=0x13&&_0x5aa5f4[_0x52df04(0x427)]['enabled'])_0x21b05b[_0x52df04(0x89d)](0x0);_0x5aa5f4[_0x52df04(0x62c)][_0x52df04(0x70d)](_0x21b05b),_0x5aa5f4[_0x52df04(0x75c)]=!![];},_0x5aa5f4[_0x54d740(0x4a4)]=function(_0x56619c,_0x475d22,_0x2900f6){const _0x59786d=_0x54d740;for(let _0x19add8=0x0;_0x19add8<_0x5aa5f4['addedJobs'][_0x59786d(0x881)];_0x19add8++){if(_0x5aa5f4['addedJobs'][_0x19add8]['id']===_0x2900f6&&_0x5aa5f4[_0x59786d(0x62c)][_0x19add8]['x']===_0x56619c&&_0x5aa5f4[_0x59786d(0x62c)][_0x19add8]['y']===_0x475d22){_0x5aa5f4[_0x59786d(0x632)][_0x59786d(0x881)]===_0x5aa5f4[_0x59786d(0x62c)][_0x59786d(0x881)]&&_0x5aa5f4[_0x59786d(0x632)][_0x59786d(0x811)](_0x19add8,0x1);_0x5aa5f4[_0x59786d(0x62c)][_0x59786d(0x811)](_0x19add8,0x1),_0x5aa5f4[_0x59786d(0x21e)](_0x19add8),_0x5aa5f4[_0x59786d(0x75c)]=!![];break;}}},_0x5aa5f4[_0x54d740(0x21e)]=function(_0x13de91){const _0x3faf42=_0x54d740;if(_0x5aa5f4['currentJob']['jobIdx']>0x0){if(_0x5aa5f4[_0x3faf42(0x360)]['jobIdx']===_0x5aa5f4[_0x3faf42(0x62c)][_0x3faf42(0x881)])_0x5aa5f4[_0x3faf42(0x360)][_0x3faf42(0x40f)]--;else{if(_0x13de91<_0x5aa5f4[_0x3faf42(0x360)][_0x3faf42(0x40f)])_0x5aa5f4[_0x3faf42(0x360)][_0x3faf42(0x40f)]--;else _0x13de91===_0x5aa5f4[_0x3faf42(0x360)]['jobIdx']&&!_0x5aa5f4[_0x3faf42(0x360)][_0x3faf42(0x2ea)]&&_0x5aa5f4[_0x3faf42(0x360)][_0x3faf42(0x40f)]--;}}_0x5aa5f4[_0x3faf42(0x62c)][_0x3faf42(0x881)]===0x1&&(_0x5aa5f4['currentJob'][_0x3faf42(0x2ea)]=!![]);},_0x5aa5f4['checkIfJobAdded']=function(_0x2485a4){const _0x49919f=_0x54d740;for(let _0x2cb395=0x0;_0x2cb395<_0x5aa5f4[_0x49919f(0x62c)][_0x49919f(0x881)];_0x2cb395++){if(_0x5aa5f4[_0x49919f(0x62c)][_0x2cb395]['id']===_0x2485a4)return!![];}return![];},_0x5aa5f4['findAddedJob']=function(_0xa2c67a,_0x3c88cf,_0x4c5be1){const _0x1ef694=_0x54d740;for(let _0x2c9103=0x0;_0x2c9103<_0x5aa5f4['addedJobs'][_0x1ef694(0x881)];_0x2c9103++){if(_0x5aa5f4[_0x1ef694(0x62c)][_0x2c9103]['x']===_0xa2c67a&&_0x5aa5f4[_0x1ef694(0x62c)][_0x2c9103]['y']===_0x3c88cf&&_0x5aa5f4[_0x1ef694(0x62c)][_0x2c9103]['id']===_0x4c5be1)return _0x5aa5f4[_0x1ef694(0x62c)][_0x2c9103];}return null;},_0x5aa5f4[_0x54d740(0x2bc)]=function(_0x261a3d,_0x37cb71,_0x3e82dc){const _0x6ef57c=_0x54d740,_0x361c35=_0x5aa5f4[_0x6ef57c(0x704)](_0x261a3d,_0x37cb71,_0x3e82dc);if(_0x361c35!=null)return _0x361c35['set'];},_0x5aa5f4['setJobSet']=function(_0x498ad4,_0x37dc9a,_0x5b3157,_0x18dbee){const _0x17f284=_0x54d740,_0x3110ca=_0x5aa5f4[_0x17f284(0x704)](_0x498ad4,_0x37dc9a,_0x5b3157);if(_0x3110ca!=null)return _0x3110ca[_0x17f284(0x5eb)](_0x18dbee);},_0x5aa5f4[_0x54d740(0x61c)]=function(_0x512ad0=_0x5aa5f4['jobSet']){const _0x3de765=_0x54d740;for(let _0x53c855=0x0;_0x53c855<_0x5aa5f4[_0x3de765(0x62c)][_0x3de765(0x881)];_0x53c855++){(_0x5aa5f4[_0x3de765(0x62c)][_0x53c855]['set']===-0x1||_0x512ad0===-0x1)&&_0x5aa5f4[_0x3de765(0x62c)][_0x53c855][_0x3de765(0x5eb)](_0x512ad0);}},_0x5aa5f4[_0x54d740(0x6fa)]=function(_0x580842=_0x5aa5f4[_0x54d740(0x76f)]){const _0x4f6274=_0x54d740;for(let _0x24392c=0x0;_0x24392c<_0x5aa5f4['favoriteJobs'][_0x4f6274(0x881)];_0x24392c++){_0x5aa5f4[_0x4f6274(0x758)][_0x24392c][_0x4f6274(0x61f)]===-0x1&&(_0x5aa5f4[_0x4f6274(0x758)][_0x24392c]['set']=_0x580842);}},_0x5aa5f4[_0x54d740(0x7de)]=function(_0xac3755,_0x269d63,_0x3d897c=_0x5aa5f4['jobSet']){const _0x40bd62=_0x54d740,_0x4034ff=_0x5aa5f4['favoriteJobs'][_0x40bd62(0x272)](_0x110280=>_0x110280['id']===_0xac3755);if(_0x269d63&&_0x4034ff===-0x1)_0x5aa5f4['favoriteJobs'][_0x40bd62(0x70d)]({'id':_0xac3755,'set':_0x3d897c});else{if(!_0x269d63&&_0x4034ff!==-0x1)_0x5aa5f4[_0x40bd62(0x758)][_0x40bd62(0x811)](_0x4034ff,0x1);else _0x269d63&&_0x4034ff!==-0x1&&(_0x5aa5f4[_0x40bd62(0x758)][_0x4034ff][_0x40bd62(0x61f)]=_0x3d897c);}},_0x5aa5f4[_0x54d740(0x644)]=function(){const _0x397c24=_0x54d740;for(let _0xb9d81f=0x0;_0xb9d81f<_0x5aa5f4[_0x397c24(0x62c)][_0x397c24(0x881)];_0xb9d81f++){var _0x24f628=$('.Dusan2window\x20#x-'+_0x5aa5f4[_0x397c24(0x62c)][_0xb9d81f]['x']+'y-'+_0x5aa5f4[_0x397c24(0x62c)][_0xb9d81f]['y']+_0x397c24(0x6ed)+_0x5aa5f4[_0x397c24(0x62c)][_0xb9d81f]['id'])[_0x397c24(0x650)](_0x397c24(0x21f));if(_0x5e4505(_0x24f628))_0x5aa5f4[_0x397c24(0x62c)][_0xb9d81f]['setStopMotivation'](_0x4f183f(parseInt(_0x24f628),0x0,0x64));else return![];}return!![];},_0x5aa5f4[_0x54d740(0x6ea)]=function(_0x2a8df7){const _0x4f41f1=_0x54d740;return ItemManager[_0x4f41f1(0x4fe)](_0x2a8df7)[_0x4f41f1(0x6e8)];},_0x5aa5f4[_0x54d740(0x55d)]=function(_0x309f00){const _0xe594ef=_0x54d740;let _0x38f41f=[];if(!Bag[_0xe594ef(0x5f1)])return EventHandler[_0xe594ef(0x37e)](_0xe594ef(0x3d8),function(){const _0x2d736a=_0xe594ef;return _0x5aa5f4[_0x2d736a(0x59c)](),EventHandler['ONE_TIME_EVENT'];}),_0x38f41f;const _0x47030d=new RegExp(_0xe594ef(0x6ce)+_0x309f00+_0xe594ef(0x6f8),'i'),_0x49ed9b=Bag[_0xe594ef(0x515)]();return west[_0xe594ef(0x374)]['forEach'](_0x49ed9b,function(_0x5f5adc,_0x84b6dd){const _0x47595a=_0xe594ef;let _0xdfcefc=_0x5f5adc[_0x47595a(0x3a9)];switch(_0x309f00){case'useable':_0xdfcefc['usetype']!==_0x47595a(0x634)&&_0xdfcefc[_0x47595a(0x1e1)]==undefined&&_0x38f41f[_0x47595a(0x70d)](_0x5f5adc);break;default:(_0x47030d['test'](_0xdfcefc['name'])||_0xdfcefc[_0x47595a(0x61f)]!==null&&_0x47030d[_0x47595a(0x870)](west['storage'][_0x47595a(0x598)][_0x47595a(0x4fe)](_0xdfcefc['set'])[_0x47595a(0x781)])||Bag[_0x47595a(0x7e7)](_0xdfcefc[_0x47595a(0x24b)],_0x47030d)||Bag[_0x47595a(0x620)](_0xdfcefc,_0x47030d)||_0x309f00==_0xdfcefc['level']||_0xdfcefc[_0x47595a(0x48f)]!==undefined&&_0x47030d[_0x47595a(0x870)](_0xdfcefc[_0x47595a(0x48f)]))&&_0x38f41f[_0x47595a(0x70d)](_0x5f5adc);break;}}),_0x38f41f;};const _0x3dca83=[_0x54d740(0x807),'54ee0',_0x54d740(0x672),'c9722','cfcaa',_0x54d740(0x7bf),_0x54d740(0x4e8),_0x54d740(0x5b8),_0x54d740(0x56a),_0x54d740(0x83d),_0x54d740(0x81c),_0x54d740(0x402),'63310',_0x54d740(0x665),'4bb85','a8050',_0x54d740(0x6aa),_0x54d740(0x666),_0x54d740(0x855),_0x54d740(0x56e)];_0x5aa5f4[_0x54d740(0x59c)]=function(){const _0x407105=_0x54d740;_0x5aa5f4[_0x407105(0x805)][_0x407105(0x881)]===0x0&&_0x5aa5f4['normalizeSearchKeys'](_0x5aa5f4['searchKeys'][_0x5aa5f4['language']]);const _0x36f350=_0x5aa5f4[_0x407105(0x342)][_0x407105(0x881)],_0x25c99e=_0x5aa5f4[_0x407105(0x55d)](_0x407105(0x5e3)),_0x26224d=new Set(_0x25c99e[_0x407105(0x286)](_0x21b246=>_0x21b246[_0x407105(0x3a9)][_0x407105(0x64c)]));_0x5aa5f4[_0x407105(0x342)][_0x407105(0x404)](_0x571643=>{const _0x4b1e37=_0x407105;if(!_0x26224d[_0x4b1e37(0x1fd)](_0x571643['id']))_0x571643[_0x4b1e37(0x28d)]=0x0;});for(let _0x2fe1ed=0x0;_0x2fe1ed<_0x25c99e['length'];_0x2fe1ed++){_0x5aa5f4[_0x407105(0x5ae)](_0x25c99e[_0x2fe1ed]);}_0x5aa5f4[_0x407105(0x342)][_0x407105(0x881)]>_0x36f350&&_0x5aa5f4[_0x407105(0x686)]();},_0x5aa5f4[_0x54d740(0x470)]=function(_0x2403d6){const _0x16cda2=_0x54d740;if(_0x2403d6==undefined)return!![];for(let _0x2d09a5=0x0;_0x2d09a5<_0x5aa5f4[_0x16cda2(0x342)][_0x16cda2(0x881)];_0x2d09a5++){if(_0x5aa5f4[_0x16cda2(0x342)][_0x2d09a5]['id']===_0x2403d6[_0x16cda2(0x3a9)]['item_id'])return _0x5aa5f4[_0x16cda2(0x342)][_0x2d09a5][_0x16cda2(0x28d)]!==_0x2403d6[_0x16cda2(0x28d)]&&(_0x5aa5f4[_0x16cda2(0x342)][_0x2d09a5][_0x16cda2(0x28d)]=_0x2403d6[_0x16cda2(0x28d)]),!![];}return![];},_0x5aa5f4[_0x54d740(0x274)]=function(_0xf4fac0){const _0x95a247=_0x54d740;function _0x2ffd9c(_0x21bd0c){const _0x4a77cf=_0x3acb;_0x21bd0c=_0x21bd0c[_0x4a77cf(0x1df)]();if(_0x21bd0c['includes'](':'))return _0x21bd0c[_0x4a77cf(0x2ef)](0x0,_0x21bd0c['indexOf'](':')+0x1)['trim']();return _0x21bd0c['replace'](/([+\-−]?\s*\d+[.,]?\d*\s*%?)/g,'')[_0x4a77cf(0x4fa)](/\s+/g,'\x20')['trim']();}try{const _0x4fbba5={'energyText':_0x2ffd9c(ItemManager[_0x95a247(0x4fe)](0x1cd6d0)['usebonus'][0x0]),'healthText':_0x2ffd9c(ItemManager[_0x95a247(0x4fe)](0x1cbb78)['usebonus'][0x0]),'motivationText':_0x2ffd9c(ItemManager['get'](0xc1cd48)[_0x95a247(0x696)][0x0]),'luckText':_0x2ffd9c(ItemManager[_0x95a247(0x4fe)](0x224958)[_0x95a247(0x696)][0x0]),'productText':_0x2ffd9c(ItemManager[_0x95a247(0x4fe)](0x25a0d0)[_0x95a247(0x696)][0x0]),'xpText':_0x2ffd9c(ItemManager[_0x95a247(0x4fe)](0x25a4b8)[_0x95a247(0x696)][0x0]),'moneyText':_0x2ffd9c(ItemManager['get'](0x25a8a0)['usebonus'][0x0]),'travelText':_0x2ffd9c(ItemManager[_0x95a247(0x4fe)](0x1e51b8)[_0x95a247(0x696)][0x0]),'durationText':_0x2ffd9c(ItemManager[_0x95a247(0x4fe)](0x25a4b8)['usebonus'][0x1]),'usesText':_0x2ffd9c(ItemManager[_0x95a247(0x4fe)](0x1e51b8)[_0x95a247(0x696)][0x1]),'strengthText':_0x2ffd9c(ItemManager[_0x95a247(0x4fe)](0x22e598)[_0x95a247(0x696)][0x0]),'mobilityText':_0x2ffd9c(ItemManager[_0x95a247(0x4fe)](0x22e598)[_0x95a247(0x696)][0x2]),'dexterityText':_0x2ffd9c(ItemManager['get'](0x22e598)[_0x95a247(0x696)][0x1]),'charismaText':_0x2ffd9c(ItemManager[_0x95a247(0x4fe)](0x22e598)[_0x95a247(0x696)][0x3]),'hidingText':_0x2ffd9c(ItemManager[_0x95a247(0x4fe)](0x33dc5e0)['usebonus'][0x1]),'settingTrapsText':_0x2ffd9c(ItemManager[_0x95a247(0x4fe)](0x33dc9c8)[_0x95a247(0x696)][0x1]),'leadershipText':_0x2ffd9c(ItemManager[_0x95a247(0x4fe)](0x33dcdb0)[_0x95a247(0x696)][0x1]),'constructionText':_0x2ffd9c(ItemManager[_0x95a247(0x4fe)](0x3370f20)['usebonus'][0x0]),'healthPointsText':_0x2ffd9c(ItemManager[_0x95a247(0x4fe)](0x33dcdb0)[_0x95a247(0x696)][0x0]),'laborPointsText':_0x2ffd9c(ItemManager[_0x95a247(0x4fe)](0x1d9a20)['usebonus'][0x0]),'battleDamageText':_0x2ffd9c(ItemManager['get'](0x29d308)[_0x95a247(0x696)][0x0]),'battleAttackText':_0x2ffd9c(ItemManager[_0x95a247(0x4fe)](0x29d308)['usebonus'][0x2]),'battleDefendText':_0x2ffd9c(ItemManager[_0x95a247(0x4fe)](0x29d308)['usebonus'][0x1])};_0x5aa5f4[_0x95a247(0x805)]=[{'key':_0x3b4892(_0x4fbba5[_0x95a247(0x1ec)]),'type':0x0},{'key':_0x3b4892(_0x4fbba5[_0x95a247(0x899)]),'type':0x1},{'key':_0x3b4892(_0x4fbba5['healthText']),'type':0x2},{'key':_0x3b4892(_0x4fbba5[_0x95a247(0x556)]),'type':0x3},{'key':_0x3b4892(_0x4fbba5['productText']),'type':0x4},{'key':_0x3b4892(_0x4fbba5['luckText']),'type':0x5},{'key':_0x3b4892(_0x4fbba5[_0x95a247(0x512)]),'type':0x6},{'key':_0x3b4892(_0x4fbba5[_0x95a247(0x289)]),'type':0x8},{'key':_0x3b4892(_0x4fbba5[_0x95a247(0x58c)]),'type':0x9},{'key':_0x3b4892(_0xf4fac0[_0x95a247(0x2a5)]??_0x95a247(0x4a3)),'type':0xa},{'key':_0x3b4892(_0x4fbba5[_0x95a247(0x1d7)]),'type':0xb},{'key':_0x3b4892(_0x4fbba5[_0x95a247(0x1f2)]),'type':0x7},{'key':_0x3b4892(_0x4fbba5[_0x95a247(0x4d8)]),'type':0x7},{'key':_0x3b4892(_0x4fbba5['dexterityText']),'type':0x7},{'key':_0x3b4892(_0x4fbba5[_0x95a247(0x829)]),'type':0x7},{'key':_0x3b4892(_0x4fbba5['constructionText']),'type':0x7},{'key':_0x3b4892(_0x4fbba5['leadershipText']),'type':0x7},{'key':_0x3b4892(_0x4fbba5[_0x95a247(0x769)]),'type':0x7},{'key':_0x3b4892(_0x4fbba5[_0x95a247(0x254)]),'type':0x7},{'key':_0x3b4892(_0x4fbba5[_0x95a247(0x39a)]),'type':0xc},{'key':_0x3b4892(_0x4fbba5[_0x95a247(0x4bf)]),'type':0xd},{'key':_0x3b4892(_0x4fbba5[_0x95a247(0x430)]),'type':0xe},{'key':_0x3b4892(_0x4fbba5[_0x95a247(0x62b)]),'type':0xf},{'key':_0x3b4892(_0x4fbba5['settingTrapsText']),'type':0x10}];}catch(_0xdb6ef1){console[_0x95a247(0x34d)](_0x95a247(0x65a),_0xdb6ef1['stack']);}},_0x5aa5f4[_0x54d740(0x5ae)]=function(_0x218aee){const _0x295eb9=_0x54d740;if(_0x5aa5f4[_0x295eb9(0x470)](_0x218aee))return;const _0x1a5b9c=new _0x35137f(_0x218aee['obj'][_0x295eb9(0x64c)],_0x218aee[_0x295eb9(0x3a9)][_0x295eb9(0x690)],_0x218aee['obj']['name'],_0x218aee[_0x295eb9(0x3a9)][_0x295eb9(0x696)],_0x218aee[_0x295eb9(0x3a9)][_0x295eb9(0x242)]),_0x311521=_0x5aa5f4[_0x295eb9(0x393)](_0x218aee[_0x295eb9(0x3a9)][_0x295eb9(0x696)]);if(_0x311521[_0x295eb9(0x8a9)](0x0,0x3)[_0x295eb9(0x265)](_0x43c722=>_0x43c722===0x0)&&(_0x311521[_0x295eb9(0x8a9)](0x3,0x7)['every'](_0x508c44=>_0x508c44===0x0)||_0x311521[0x8]===0x0)&&(_0x311521[0xb]===0x0||(_0x311521[0x9]===0x0||_0x218aee[_0x295eb9(0x3a9)][_0x295eb9(0x696)][_0x295eb9(0x881)]!==0x2))&&(_0x218aee[_0x295eb9(0x3a9)][_0x295eb9(0x242)]||[_0x311521[0xc],_0x311521[0xd],_0x311521[0xe]][_0x295eb9(0x813)](_0x77dba4=>_0x77dba4!==0x0)['length']<0x2)&&(_0x218aee['obj'][_0x295eb9(0x242)]||_0x311521[_0x295eb9(0x8a9)](0xf,0x11)['every'](_0x482e5a=>_0x482e5a<0x32)))return;_0x1a5b9c[_0x295eb9(0x481)](_0x218aee[_0x295eb9(0x28d)]),_0x1a5b9c['setEnergy'](_0x311521[0x0]),_0x1a5b9c[_0x295eb9(0x2a8)](_0x311521[0x1]),_0x1a5b9c['setHealth'](_0x311521[0x2]),_0x1a5b9c[_0x295eb9(0x5a8)](_0x311521[0x3]),_0x1a5b9c[_0x295eb9(0x295)](_0x311521[0x4]),_0x1a5b9c[_0x295eb9(0x4e6)](_0x311521[0x5]),_0x1a5b9c['setMoney'](_0x311521[0x6]),_0x1a5b9c[_0x295eb9(0x6ad)](_0x311521[0x7]),_0x1a5b9c[_0x295eb9(0x2af)](_0x311521[0x8]),_0x1a5b9c['setUses'](_0x311521[0x9]),_0x1a5b9c[_0x295eb9(0x7aa)](_0x311521[0xb]),_0x1a5b9c[_0x295eb9(0x863)](_0x311521[0xc]),_0x1a5b9c[_0x295eb9(0x2db)](_0x311521[0xd]),_0x1a5b9c[_0x295eb9(0x6e7)](_0x311521[0xe]),_0x1a5b9c[_0x295eb9(0x497)](_0x311521[0xf]),_0x1a5b9c[_0x295eb9(0x4df)](_0x311521[0x10]);if(_0x218aee[_0x295eb9(0x3a9)][_0x295eb9(0x767)]!==0x0||_0x311521[0xa]==null){_0x1a5b9c['setSpecial'](!![]);if(_0x218aee[_0x295eb9(0x3a9)][_0x295eb9(0x767)]===_0x295eb9(0x270))_0x1a5b9c[_0x295eb9(0x8be)](!![]);else _0x218aee[_0x295eb9(0x3a9)][_0x295eb9(0x767)]===_0x295eb9(0x432)&&!_0x218aee[_0x295eb9(0x3a9)][_0x295eb9(0x242)]&&_0x311521[_0x295eb9(0x8a9)](0xc,0xf)[_0x295eb9(0x4f4)](_0x590444=>_0x590444!==0x0)&&_0x1a5b9c[_0x295eb9(0x373)](!![]);}_0x5aa5f4[_0x295eb9(0x342)]['push'](_0x1a5b9c);},_0x5aa5f4['removeConsumable']=function(_0x4bdccf){const _0x422836=_0x54d740,_0x56265e=_0x4bdccf instanceof _0x35137f?_0x5aa5f4['allConsumables'][_0x422836(0x272)](_0x555827=>_0x555827['id']===_0x4bdccf['id']):_0x5aa5f4['allConsumables']['findIndex'](_0xc80431=>_0xc80431['id']===_0x4bdccf);_0x56265e!==-0x1&&_0x5aa5f4[_0x422836(0x342)][_0x56265e][_0x422836(0x28d)]>0x0&&_0x5aa5f4[_0x422836(0x342)][_0x56265e]['count']--;},_0x5aa5f4[_0x54d740(0x393)]=function(_0x2ecbb3){const _0x47fdd8=_0x54d740;let _0x11419a=Array(0x11)[_0x47fdd8(0x3d6)](0x0);const _0x3369d4=_0x2ecbb3[_0x47fdd8(0x286)](_0x3b4892);for(const _0x54105e of _0x3369d4){let _0x4e71dc=-0x1;for(const {key:_0x1c373d,type:_0x10ec39}of _0x5aa5f4['bonusTypeMap']){if(_0x54105e['includes'](_0x1c373d)){_0x4e71dc=_0x10ec39;break;}}if(_0x4e71dc!==-0x1)_0x11419a[_0x4e71dc]=_0x31e459(_0x54105e);}return _0x11419a;},_0x5aa5f4[_0x54d740(0x686)]=function(){const _0x386878=_0x54d740;if(_0x5aa5f4[_0x386878(0x709)][_0x386878(0x881)]===0x0)_0x5aa5f4[_0x386878(0x8ab)]();else{const _0x101888={};_0x5aa5f4['consumablesSelection']['forEach'](_0x3b54b8=>{const _0x5979c5=_0x386878;_0x101888[_0x3b54b8['id']]=_0x3b54b8[_0x5979c5(0x451)];}),_0x5aa5f4[_0x386878(0x342)]['forEach'](_0x4859ee=>{const _0x41ed99=_0x386878,_0x6667e0=_0x101888[_0x4859ee['id']];_0x6667e0!=undefined?_0x4859ee[_0x41ed99(0x495)](_0x6667e0):_0x4859ee[_0x41ed99(0x495)]([0x326bf58][_0x41ed99(0x2fe)](_0x4859ee['id'])?!![]:!_0x4859ee[_0x41ed99(0x58b)]);});}},_0x5aa5f4[_0x54d740(0x325)]=function(_0x4cd674,_0x1f0b9b){const _0x4dc62d=_0x54d740,_0x5ca092=_0x5aa5f4[_0x4dc62d(0x709)]['findIndex'](_0x52eb07=>_0x52eb07['id']===_0x4cd674);_0x5ca092!==-0x1?_0x5aa5f4[_0x4dc62d(0x709)][_0x5ca092]['selected']=_0x1f0b9b:_0x5aa5f4[_0x4dc62d(0x709)]['push']({'id':_0x4cd674,'selected':_0x1f0b9b});},_0x5aa5f4[_0x54d740(0x63a)]=function(_0x27526c,_0x58d857){const _0x40b1f5=_0x54d740,_0x4c8a3d=_0x5aa5f4[_0x40b1f5(0x342)][_0x40b1f5(0x272)](_0x2cfa98=>_0x2cfa98['id']===_0x27526c);_0x4c8a3d!==-0x1&&(_0x5aa5f4['allConsumables'][_0x4c8a3d][_0x40b1f5(0x495)](_0x58d857),_0x5aa5f4[_0x40b1f5(0x325)](_0x27526c,_0x58d857));},_0x5aa5f4[_0x54d740(0x65d)]=function(_0x206572){const _0x58399d=_0x54d740;for(let _0x2eef26=0x0;_0x2eef26<_0x5aa5f4['allConsumables'][_0x58399d(0x881)];_0x2eef26++){_0x5aa5f4['allConsumables'][_0x2eef26][_0x58399d(0x495)](_0x206572),_0x5aa5f4['saveConsumableSelection'](_0x5aa5f4[_0x58399d(0x342)][_0x2eef26]['id'],_0x206572);}},_0x5aa5f4[_0x54d740(0x8ab)]=function(){const _0x344cdf=_0x54d740;for(let _0x51fbe4=0x0;_0x51fbe4<_0x5aa5f4[_0x344cdf(0x342)][_0x344cdf(0x881)];_0x51fbe4++){let _0x114799=_0x5aa5f4[_0x344cdf(0x342)][_0x51fbe4];const _0x13b5bd=[0x326bf58]['includes'](_0x114799['id'])?!![]:!_0x114799['hasSpecialBonus'];_0x114799[_0x344cdf(0x495)](_0x13b5bd),_0x5aa5f4[_0x344cdf(0x325)](_0x114799['id'],_0x13b5bd);}},_0x5aa5f4[_0x54d740(0x2aa)]=function(){const _0x23b3e1=_0x54d740;for(let _0x4d0ae8=0x0;_0x4d0ae8<_0x5aa5f4[_0x23b3e1(0x342)]['length'];_0x4d0ae8++){_0x5aa5f4['allConsumables'][_0x4d0ae8]['hasSpecialBonus']&&(_0x5aa5f4[_0x23b3e1(0x342)][_0x4d0ae8][_0x23b3e1(0x495)](![]),_0x5aa5f4['saveConsumableSelection'](_0x5aa5f4[_0x23b3e1(0x342)][_0x4d0ae8]['id'],![]));}},_0x5aa5f4['filterConsumables']=function(_0x47d53a,_0x4823a1,_0x205969,_0x4d8d5d){const _0x43d62c=_0x54d740;var _0x28897c=[];for(let _0x577f84=0x0;_0x577f84<_0x5aa5f4[_0x43d62c(0x342)][_0x43d62c(0x881)];_0x577f84++){if(_0x47d53a&&_0x5aa5f4['allConsumables'][_0x577f84][_0x43d62c(0x6ef)]===0x0)continue;if(_0x4823a1&&_0x5aa5f4[_0x43d62c(0x342)][_0x577f84][_0x43d62c(0x443)]===0x0)continue;if(_0x205969&&_0x5aa5f4[_0x43d62c(0x342)][_0x577f84][_0x43d62c(0x5f8)]===0x0)continue;if(_0x4d8d5d&&!_0x5aa5f4['allConsumables'][_0x577f84][_0x43d62c(0x58b)])continue;_0x28897c[_0x43d62c(0x70d)](_0x5aa5f4[_0x43d62c(0x342)][_0x577f84]);}return _0x28897c;},_0x5aa5f4[_0x54d740(0x5e4)]=function(_0x2046ba){let _0x1584e3=0x0;while(_0x2046ba>0x0){_0x1584e3+=_0x2046ba&0x1,_0x2046ba>>=0x1;}return _0x1584e3;},_0x5aa5f4[_0x54d740(0x606)]=function(_0x23477a,_0xa4525c){const _0x14f32a=_0x54d740,_0x3570cc=_0x23477a['length'],_0x3b7200=Array(0x1<<_0x3570cc)[_0x14f32a(0x3d6)]()[_0x14f32a(0x286)](()=>Array(_0x3570cc)['fill']({'cost':Infinity,'path':[]}));_0x3b7200[0x1<<_0xa4525c][_0xa4525c]={'cost':0x0,'path':[_0xa4525c]};for(let _0x1aca0d=0x2;_0x1aca0d<=_0x3570cc;_0x1aca0d++){for(let _0x4f34b5=0x0;_0x4f34b5<0x1<<_0x3570cc;_0x4f34b5++){if(_0x5aa5f4['countSetBits'](_0x4f34b5)===_0x1aca0d&&_0x4f34b5&0x1<<_0xa4525c)for(let _0x1ea15b=0x0;_0x1ea15b<_0x3570cc;_0x1ea15b++){if((_0x4f34b5&0x1<<_0x1ea15b)!==0x0)for(let _0x5a705e=0x0;_0x5a705e<_0x3570cc;_0x5a705e++){if(_0x5a705e!==_0x1ea15b&&(_0x4f34b5&0x1<<_0x5a705e)!==0x0){const _0x12833a=_0x3b7200[_0x4f34b5^0x1<<_0x1ea15b][_0x5a705e][_0x14f32a(0x8c4)]+_0x23477a[_0x5a705e][_0x1ea15b];_0x12833a<_0x3b7200[_0x4f34b5][_0x1ea15b][_0x14f32a(0x8c4)]&&(_0x3b7200[_0x4f34b5][_0x1ea15b]={'cost':_0x12833a,'path':_0x3b7200[_0x4f34b5^0x1<<_0x1ea15b][_0x5a705e][_0x14f32a(0x300)][_0x14f32a(0x4ea)]([_0x1ea15b])});}}}}}let _0x476f54=Infinity,_0x7af4b=[];for(let _0x2d12fc=0x0;_0x2d12fc<_0x3570cc;_0x2d12fc++){_0x2d12fc!==_0xa4525c&&_0x3b7200[(0x1<<_0x3570cc)-0x1][_0x2d12fc]['cost']<_0x476f54&&(_0x476f54=_0x3b7200[(0x1<<_0x3570cc)-0x1][_0x2d12fc][_0x14f32a(0x8c4)],_0x7af4b=_0x3b7200[(0x1<<_0x3570cc)-0x1][_0x2d12fc]['path']);}return{'cost':_0x476f54,'path':_0x7af4b};};const _0x56ca30='ci';_0x5aa5f4[_0x54d740(0x48c)]=function(_0x1fd6c8){const _0x3426c4=_0x54d740,_0xb6e46b=_0x1fd6c8[_0x3426c4(0x881)],_0x4c8e1e=[];for(let _0x38148c=0x0;_0x38148c<_0xb6e46b;_0x38148c++){const {cost:_0x38f9e1,path:_0x3be9d2}=_0x5aa5f4[_0x3426c4(0x606)](_0x1fd6c8,_0x38148c);_0x4c8e1e['push']({'cost':_0x38f9e1,'path':_0x3be9d2});}return _0x4c8e1e[_0x3426c4(0x387)](function(_0xdfa96a,_0x169189){const _0x17c6f8=_0x3426c4;return _0xdfa96a[_0x17c6f8(0x8c4)]<_0x169189[_0x17c6f8(0x8c4)]?_0xdfa96a:_0x169189;});},_0x5aa5f4[_0x54d740(0x608)]=function(){const _0x1bf3c7=_0x54d740;var _0x1e2b85=new Array(_0x5aa5f4[_0x1bf3c7(0x62c)][_0x1bf3c7(0x881)]);for(let _0x4bf06b=0x0;_0x4bf06b<_0x1e2b85['length'];_0x4bf06b++){_0x1e2b85[_0x4bf06b]=new Array(_0x5aa5f4[_0x1bf3c7(0x62c)][_0x1bf3c7(0x881)]);}for(let _0x1eec86=0x0;_0x1eec86<_0x1e2b85['length'];_0x1eec86++){for(let _0x297a7e=_0x1eec86;_0x297a7e<_0x1e2b85[_0x1eec86][_0x1bf3c7(0x881)];_0x297a7e++){if(_0x1eec86==_0x297a7e){_0x1e2b85[_0x1eec86][_0x297a7e]=_0x1e2b85[_0x297a7e][_0x1eec86]=Number['MAX_SAFE_INTEGER'];continue;}_0x1e2b85[_0x1eec86][_0x297a7e]=_0x1e2b85[_0x297a7e][_0x1eec86]=GameMap[_0x1bf3c7(0x582)]({'x':_0x5aa5f4['addedJobs'][_0x1eec86]['x'],'y':_0x5aa5f4['addedJobs'][_0x1eec86]['y']},{'x':_0x5aa5f4['addedJobs'][_0x297a7e]['x'],'y':_0x5aa5f4[_0x1bf3c7(0x62c)][_0x297a7e]['y']});}}return _0x1e2b85;},_0x5aa5f4[_0x54d740(0x3bd)]=function(_0x2ca189){const _0x52d49d=_0x54d740;if(_0x2ca189[_0x52d49d(0x881)]===0x0)return;let _0x2c442f=0x0,_0x1e605b=_0x2ca189[0x0][_0x52d49d(0x317)];for(let _0x33601a=0x1;_0x33601a<_0x2ca189[_0x52d49d(0x881)];_0x33601a++){_0x2ca189[_0x33601a][_0x52d49d(0x317)]<_0x1e605b&&(_0x1e605b=_0x2ca189[_0x33601a][_0x52d49d(0x317)],_0x2c442f=_0x33601a);}_0x5aa5f4['currentJob']['jobIdx']=_0x2c442f;},_0x5aa5f4['calculateJobDistances']=function(){const _0x4eab78=_0x54d740;for(let _0x54fa23=0x0;_0x54fa23<_0x5aa5f4['addedJobs'][_0x4eab78(0x881)];_0x54fa23++){_0x5aa5f4['addedJobs'][_0x54fa23]['calculateDistance']();}},_0x5aa5f4['makeRoute']=function(){const _0x5c116c=_0x54d740;if(_0x5aa5f4[_0x5c116c(0x62c)][_0x5c116c(0x881)]===0x1){_0x5aa5f4['addedJobsOld']=[..._0x5aa5f4[_0x5c116c(0x62c)]],_0x5aa5f4['addedJobs']=[_0x5aa5f4[_0x5c116c(0x62c)][0x0]];return;}_0x5aa5f4[_0x5c116c(0x218)]();if(_0x5aa5f4[_0x5c116c(0x500)]()){const _0x2d81db=_0x5aa5f4[_0x5c116c(0x62c)][_0x5aa5f4[_0x5c116c(0x360)][_0x5c116c(0x40f)]],_0x458084=_0x5aa5f4[_0x5c116c(0x608)](),_0x5e86fc=_0x5aa5f4[_0x5c116c(0x48c)](_0x458084),_0x28b01c=[];for(const _0x2022fc of _0x5e86fc['path']){_0x28b01c[_0x5c116c(0x70d)](_0x5aa5f4['addedJobs']['at'](_0x2022fc));}_0x5aa5f4[_0x5c116c(0x62c)]=_0x28b01c,_0x5aa5f4[_0x5c116c(0x49d)]=[..._0x28b01c],_0x5aa5f4[_0x5c116c(0x837)]=null,_0x5aa5f4['addedJobsHasChanged']=!![],_0x5aa5f4[_0x5c116c(0x66b)]?(_0x5aa5f4['currentJob'][_0x5c116c(0x40f)]=_0x5aa5f4[_0x5c116c(0x62c)][_0x5c116c(0x272)](_0x3be4df=>_0x3be4df['id']===_0x2d81db['id']&&_0x3be4df['x']===_0x2d81db['x']&&_0x3be4df['y']===_0x2d81db['y']),_0x5aa5f4[_0x5c116c(0x360)][_0x5c116c(0x2ea)]=!_0x5aa5f4[_0x5c116c(0x360)][_0x5c116c(0x2ea)]):_0x5aa5f4[_0x5c116c(0x360)]={'jobIdx':0x0,'direction':!![]};}!_0x5aa5f4[_0x5c116c(0x66b)]&&_0x5aa5f4['setEntryPoint'](_0x5aa5f4[_0x5c116c(0x62c)]);},_0x5aa5f4['createRoute']=function(){const _0x2f4e4c=_0x54d740;_0x5aa5f4[_0x2f4e4c(0x218)]();if(!_0x5aa5f4[_0x2f4e4c(0x500)]()){!_0x4077e1&&_0x5aa5f4['setEntryPoint'](_0x5aa5f4['addedJobs']);return;}const _0xbb959b=_0x5aa5f4[_0x2f4e4c(0x62c)][_0x5aa5f4[_0x2f4e4c(0x360)][_0x2f4e4c(0x40f)]];let _0x19fa28=0x0,_0x3ac26c=_0x5aa5f4[_0x2f4e4c(0x62c)][0x0]['distance'],_0x1dc368=[];const _0x29b8f0=_0x5aa5f4[_0x2f4e4c(0x608)]();var _0x5335bd=function(_0x5977e8,_0x49d8cc,_0x4ac1c7){const _0xf95de3=_0x2f4e4c;var _0x12aed4=Number[_0xf95de3(0x53c)],_0x375ab1=-0x1;for(let _0xc65df7=0x0;_0xc65df7<_0x4ac1c7[_0xf95de3(0x881)];_0xc65df7++){if(_0x5977e8===_0xc65df7||_0x49d8cc['includes'](_0xc65df7))continue;_0x4ac1c7[_0xc65df7][_0x5977e8]<_0x12aed4&&(_0x12aed4=_0x4ac1c7[_0xc65df7][_0x5977e8],_0x375ab1=_0xc65df7);}return _0x375ab1;};for(let _0x9f8a4e=0x1;_0x9f8a4e<_0x5aa5f4[_0x2f4e4c(0x62c)][_0x2f4e4c(0x881)];_0x9f8a4e++){_0x5aa5f4[_0x2f4e4c(0x62c)][_0x9f8a4e][_0x2f4e4c(0x317)]<_0x3ac26c&&(_0x3ac26c=_0x5aa5f4[_0x2f4e4c(0x62c)][_0x9f8a4e][_0x2f4e4c(0x317)],_0x19fa28=_0x9f8a4e);}_0x1dc368[_0x2f4e4c(0x70d)](_0x19fa28);while(_0x1dc368[_0x2f4e4c(0x881)]<_0x5aa5f4['addedJobs'][_0x2f4e4c(0x881)]){let _0x12f47b=_0x5335bd(_0x1dc368[_0x1dc368[_0x2f4e4c(0x881)]-0x1],_0x1dc368,_0x29b8f0);_0x1dc368['push'](_0x12f47b);}var _0x1ccd60=[];for(let _0x435f8f=0x0;_0x435f8f<_0x1dc368[_0x2f4e4c(0x881)];_0x435f8f++){_0x1ccd60['push'](_0x5aa5f4[_0x2f4e4c(0x62c)][_0x1dc368[_0x435f8f]]);}_0x5aa5f4[_0x2f4e4c(0x62c)]=_0x1ccd60,_0x5aa5f4[_0x2f4e4c(0x49d)]=[..._0x1ccd60],_0x5aa5f4['wayTimes']=null,_0x5aa5f4[_0x2f4e4c(0x75c)]=!![],_0x5aa5f4['isRunning']?_0x5aa5f4[_0x2f4e4c(0x360)][_0x2f4e4c(0x40f)]=_0x5aa5f4['addedJobs'][_0x2f4e4c(0x272)](_0x4dece2=>_0x4dece2['id']===_0xbb959b['id']&&_0x4dece2['x']===_0xbb959b['x']&&_0x4dece2['y']===_0xbb959b['y']):_0x5aa5f4[_0x2f4e4c(0x360)]={'jobIdx':0x0,'direction':!![]};};var _0x49e7e6=_0x54d740(0x555);_0x5aa5f4['addedJobsChanged']=function(_0x1f176c=_0x5aa5f4['addedJobs'],_0x4e4c8b=_0x5aa5f4['addedJobsOld']){const _0x3a387d=_0x54d740;if(_0x1f176c[_0x3a387d(0x881)]!==_0x4e4c8b[_0x3a387d(0x881)])return!![];for(let _0x2b8cb0=0x0;_0x2b8cb0<_0x1f176c[_0x3a387d(0x881)];_0x2b8cb0++){if(_0x1f176c[_0x2b8cb0]['id']!==_0x4e4c8b[_0x2b8cb0]['id']||_0x1f176c[_0x2b8cb0]['x']!==_0x4e4c8b[_0x2b8cb0]['x']||_0x1f176c[_0x2b8cb0]['y']!==_0x4e4c8b[_0x2b8cb0]['y'])return!![];}return![];},_0x5aa5f4[_0x54d740(0x79d)]=async function(_0x52be15){const _0x48236c=_0x54d740;let _0x58c8a0=![],_0x416072=![];const _0x1e47da=new Map([[-0x2,{'ride':0x64}],[-0x3,{'health':0x64}]]);if(_0x1e47da['has'](_0x52be15)){_0x416072=await _0x5aa5f4[_0x48236c(0x513)](_0x1e47da[_0x48236c(0x4fe)](_0x52be15));if(_0x416072)_0x5aa5f4[_0x48236c(0x222)][_0x48236c(0x61f)](_0x52be15,Character[_0x48236c(0x862)]);return{'equipped':_0x416072,'error':_0x58c8a0};}const _0x2755a3=_0x5aa5f4['wardrobe'][_0x48236c(0x4fe)](_0x52be15);if(_0x2755a3){const _0x19efce=await _0x5aa5f4[_0x48236c(0x595)](_0x2755a3[_0x48236c(0x432)]);_0x19efce[_0x48236c(0x881)]>0x0&&_0x5aa5f4[_0x48236c(0x67a)](_0x48236c(0x347)+_0x2755a3[_0x48236c(0x781)]+_0x48236c(0x202));_0x416072=_0x5aa5f4[_0x48236c(0x3f3)](_0x2755a3[_0x48236c(0x432)]);if(_0x416072)_0x5aa5f4['maxHealthForSet'][_0x48236c(0x61f)](_0x52be15,Character[_0x48236c(0x862)]);return{'equipped':_0x416072,'error':_0x58c8a0};}if(_0x9b9f55)return{'equipped':!![],'error':![]};if(_0x52be15<=-0x1)return{'equipped':![],'error':![]};if(!_0x5aa5f4[_0x48236c(0x6ba)][_0x48236c(0x1fd)](_0x52be15)){_0x5aa5f4[_0x48236c(0x67a)](_0x5aa5f4[_0x48236c(0x5dc)][_0x5aa5f4[_0x48236c(0x1ed)]][_0x48236c(0x30a)](_0x52be15)),_0x5aa5f4[_0x48236c(0x498)](_0x48236c(0x2c6),_0x48236c(0x21c),_0x48236c(0x34d));const _0x1cfa34=_0x52be15==_0x5aa5f4[_0x48236c(0x814)]?-0x2:_0x52be15==_0x5aa5f4[_0x48236c(0x5c5)]?-0x3:_0x52be15;if(_0x1e47da[_0x48236c(0x1fd)](_0x1cfa34)){_0x416072=await _0x5aa5f4[_0x48236c(0x513)](_0x1e47da[_0x48236c(0x4fe)](_0x1cfa34));if(_0x416072)_0x5aa5f4[_0x48236c(0x222)][_0x48236c(0x61f)](_0x52be15,Character[_0x48236c(0x862)]);}return{'equipped':_0x416072,'error':_0x58c8a0};}let _0xf21b0d=performance[_0x48236c(0x8d3)]();const _0x5c6706=[_0x48236c(0x768),_0x48236c(0x659),_0x48236c(0x26b),_0x48236c(0x4ae),_0x48236c(0x410),_0x48236c(0x4a2),_0x48236c(0x754),_0x48236c(0x6b6),'yield',_0x48236c(0x3c5)][_0x48236c(0x286)](_0x914c9=>_0x5aa5f4[_0x48236c(0x6ba)][_0x48236c(0x4fe)](_0x52be15)[_0x914c9])[_0x48236c(0x813)](_0x35f3e2=>_0x35f3e2!=null);function _0x29a807(_0x1bf7f4){const _0x25ca40=_0x48236c;return _0x58c8a0=!![],EventHandler[_0x25ca40(0x60d)];}EventHandler['listen'](_0x48236c(0x63c),_0x29a807),EquipManager[_0x48236c(0x302)](_0x5aa5f4[_0x48236c(0x6ba)][_0x48236c(0x4fe)](_0x52be15)[_0x48236c(0x757)]);while(performance[_0x48236c(0x8d3)]()-_0xf21b0d<_0x142cd3){await _0x37da77(_0x493a77),_0x416072=_0x5aa5f4[_0x48236c(0x3f3)](_0x5c6706);if(_0x416072||_0x58c8a0||!_0x5aa5f4[_0x48236c(0x66b)])break;}EventHandler[_0x48236c(0x6ee)](_0x48236c(0x63c),_0x29a807);if(_0x416072)_0x5aa5f4['maxHealthForSet'][_0x48236c(0x61f)](_0x52be15,Character[_0x48236c(0x862)]),_0x2ed665('ui_inv_changed');else{if(Array[_0x48236c(0x731)](_0x5aa5f4['sets'][_0x48236c(0x705)]())[_0x48236c(0x5c6)](_0x52be15)>0x2&&!Premium['hasBonus']('automation'))_0x5aa5f4['showAlert'](_0x5aa5f4[_0x48236c(0x5dc)][_0x5aa5f4['translationLang']][_0x48236c(0x88c)]),_0x5aa5f4[_0x48236c(0x498)](_0x48236c(0x8aa),'Cannot\x20equip\x20set..\x20\x27Automation\x27\x20premium\x20ended.',_0x48236c(0x34d));else{if(!_0x5aa5f4[_0x48236c(0x5f7)]&&_0x5aa5f4[_0x48236c(0x66b)]){if(!await _0x5aa5f4[_0x48236c(0x2d5)]()){if(await _0x5aa5f4[_0x48236c(0x3eb)]())return await _0x5aa5f4[_0x48236c(0x79d)](_0x52be15);}else _0x5aa5f4[_0x48236c(0x77c)](function(){});}}}return{'equipped':_0x416072,'error':_0x58c8a0};};const _0x5561cf=async function(_0x2bf109=''){const _0x2b5c4c=_0x54d740;try{_0x2bf109=await _0x1a814d(_0x53ea43),_0x1ae1d1=_0x2bf109,_0x5aa5f4[_0x2b5c4c(0x4ef)]=!_0x12400c['includes'](_0x2bf109)&&(_0x41dd6e!=0x0||_0x4044be[_0x2b5c4c(0x6c7)]>0x19)?!await _0x398f2c():![];}catch(_0x56d1f3){_0x9b9f55=0x1;}};_0x5aa5f4[_0x54d740(0x752)]=function(_0x33f757){const _0x225cfd=_0x54d740,_0x4db48a=ItemManager[_0x225cfd(0x4fe)](_0x33f757);if(!_0x4db48a||!Wear[_0x225cfd(0x4d6)][_0x4db48a['type']])return![];const _0x4c5447=Wear[_0x225cfd(0x4d6)][_0x4db48a[_0x225cfd(0x51c)]][_0x225cfd(0x3a9)]['item_id'];if(_0x4c5447==_0x33f757)return!![];const _0x16af07=Math[_0x225cfd(0x861)](_0x33f757/0xa),_0x56df4f=Math[_0x225cfd(0x861)](_0x4c5447/0xa);if(_0x16af07===_0x56df4f)return _0x4c5447%0xa>=_0x33f757%0xa;return![];},_0x5aa5f4[_0x54d740(0x3f3)]=function(_0x1fcea9,_0x2dbfbb=[]){const _0x5ded88=_0x54d740;for(let _0x1d83ed=0x0;_0x1d83ed<_0x1fcea9[_0x5ded88(0x881)];_0x1d83ed++){if(!_0x5aa5f4[_0x5ded88(0x752)](_0x1fcea9[_0x1d83ed]))return![];}for(let _0x4a7073 of _0x2dbfbb){if(Wear[_0x5ded88(0x4d6)][_0x4a7073]!=undefined)return![];}return!![];},_0x5aa5f4[_0x54d740(0x4c8)]=function(_0x35f1ce,_0x229d59){const _0x547235=_0x54d740,_0x2069af=JobsModel['Jobs']['findIndex'](_0x2c5254=>_0x2c5254['id']==_0x35f1ce);if(_0x2069af===-0x1&&!_0x229d59)return null;_0x229d59=_0x229d59||JobsModel['Jobs'][_0x2069af]?.[_0x547235(0x4fe)](_0x547235(0x433));const _0x33980b=west[_0x547235(0x5fb)]['Calculator'][_0x547235(0x706)](_0x229d59,_0x35f1ce);return _0x33980b&&_0x33980b[_0x547235(0x7a4)]()||[];},_0x5aa5f4['filterBestGear']=function(_0x8547ab){const _0x53f53a=_0x54d740;let _0x611cf=Bag[_0x53f53a(0x515)](_0x8547ab),_0x3f75d9=[],_0x2280d7,_0x10eed6;for(let _0x36066b=0x0;_0x36066b<_0x611cf[_0x53f53a(0x881)];_0x36066b++){_0x2280d7=_0x611cf[_0x36066b],_0x10eed6=Wear[_0x53f53a(0x4fe)](_0x2280d7[_0x53f53a(0x2e7)]()),(!_0x10eed6||_0x10eed6&&(_0x10eed6['getItemBaseId']()!==_0x2280d7[_0x53f53a(0x382)]()||_0x10eed6[_0x53f53a(0x5d6)]()<_0x2280d7[_0x53f53a(0x5d6)]()))&&_0x3f75d9[_0x53f53a(0x70d)](_0x2280d7[_0x53f53a(0x3a9)][_0x53f53a(0x64c)]);}return _0x3f75d9;},_0x5aa5f4[_0x54d740(0x513)]=async function(_0x25947c,_0x2cd936=null){const _0xcbb367=_0x54d740,_0x38d400=_0x5aa5f4[_0xcbb367(0x4ff)](_0x5aa5f4['getBestGear'](_0x2cd936,_0x25947c));let _0x3430a3=![];const _0x392592=performance['now']();for(let _0x1fa554=0x0;_0x1fa554<_0x38d400['length'];_0x1fa554++){if(!_0x5aa5f4[_0xcbb367(0x752)](_0x38d400[_0x1fa554])){const _0xc18e67=Bag[_0xcbb367(0x23b)](_0x38d400[_0x1fa554]);_0xc18e67!=undefined&&Wear[_0xcbb367(0x1de)](_0xc18e67);}}while(performance[_0xcbb367(0x8d3)]()-_0x392592<_0x5039c8){_0x3430a3=_0x5aa5f4[_0xcbb367(0x3f3)](_0x38d400);if(_0x3430a3)break;await _0x37da77(_0x4d13ec);}return Promise[_0xcbb367(0x27c)](_0x3430a3);},_0x5aa5f4[_0x54d740(0x739)]=function(_0x4a20e0,_0x39cc24,_0x1a3b11,_0xcf3c71,_0x4cf72c){const _0x12f2b0=_0x54d740;WearSet[_0x12f2b0(0x7cd)](_0x4a20e0['wearSets']),WearSet['setWorkPointBonus'](_0x4a20e0[_0x12f2b0(0x875)]),CharacterSkills[_0x12f2b0(0x869)](_0x4a20e0[_0x12f2b0(0x24b)][_0x12f2b0(0x82f)]),Character[_0x12f2b0(0x261)](_0x4a20e0[_0x12f2b0(0x426)]),Character[_0x12f2b0(0x718)](),EventHandler['signal'](_0x12f2b0(0x5f8),[Character[_0x12f2b0(0x5f8)],Character[_0x12f2b0(0x862)]]);if(_0x4a20e0[_0x12f2b0(0x34d)])new UserMessage(_0x4a20e0['message']||_0x4a20e0[_0x12f2b0(0x34d)],UserMessage[_0x12f2b0(0x49f)])[_0x12f2b0(0x50f)]();else{Bag[_0x12f2b0(0x4d0)](_0x4a20e0[_0x12f2b0(0x77b)],_0x12f2b0(0x4d6));if(_0xcf3c71)_0xcf3c71[_0x12f2b0(0x354)]();_0x39cc24[_0x12f2b0(0x3a9)][_0x12f2b0(0x51c)]==_0x12f2b0(0x4ae)&&EventHandler[_0x12f2b0(0x82c)](_0x12f2b0(0x510),[ItemManager[_0x12f2b0(0x4fe)](_0x39cc24[_0x12f2b0(0x3a9)][_0x12f2b0(0x64c)])]),EventHandler[_0x12f2b0(0x82c)](_0x12f2b0(0x76c),[_0x1a3b11]),Wear[_0x12f2b0(0x838)]();}if(_0x4cf72c)_0x4cf72c();},_0x5aa5f4[_0x54d740(0x7f7)]=function(_0x1eb55e,_0x178540){const _0x3adeb6=_0x54d740;var _0x5c7408=_0x1eb55e['obj'],_0x4e799b={'added':[_0x5c7408],'removed':[Wear['wear'][_0x5c7408[_0x3adeb6(0x51c)]]&&Wear['wear'][_0x5c7408[_0x3adeb6(0x51c)]][_0x3adeb6(0x3a9)]]||[]};Ajax[_0x3adeb6(0x294)]('inventory',_0x3adeb6(0x1de),{'item_id':_0x1eb55e[_0x3adeb6(0x3a9)][_0x3adeb6(0x64c)],'last_inv_id':Bag[_0x3adeb6(0x2f9)]()},function(_0x50a75c){_0x5aa5f4['wearHandleClothChange'](_0x50a75c,_0x1eb55e,_0x4e799b,function(){const _0x302add=_0x3acb;Wear['add'](_0x1eb55e['obj'][_0x302add(0x64c)]);},function(){if(_0x178540)_0x178540();});});},_0x5aa5f4[_0x54d740(0x595)]=async function(_0x15afab,_0xd97254=[]){const _0x63be2c=_0x54d740,_0x2a9fd1=[],_0x45e441=[];for(const _0x461c86 of _0x15afab){if(!_0x5aa5f4['isWearing'](_0x461c86)){const _0x32404c=Bag['getItemByItemId'](_0x461c86);if(_0x32404c){const _0x4d8b10=new Promise(_0xbfffe9=>{const _0x27b66c=_0x3acb,_0x70d63c=setTimeout(()=>{const _0x553e52=_0x3acb;console['warn'](_0x553e52(0x4c0),_0x553e52(0x262)),_0xbfffe9();},_0x5039c8);_0x5aa5f4[_0x27b66c(0x7f7)](_0x32404c,()=>{clearTimeout(_0x70d63c),_0xbfffe9();});});_0x45e441[_0x63be2c(0x70d)](_0x4d8b10);}else _0x2a9fd1[_0x63be2c(0x70d)]('\x20'+ItemManager[_0x63be2c(0x4fe)](_0x461c86)[_0x63be2c(0x781)]);}}await Promise[_0x63be2c(0x66a)](_0x45e441);for(let _0x1dfc70=0x0;_0x1dfc70<_0xd97254[_0x63be2c(0x881)];_0x1dfc70++){if(Wear['wear'][_0xd97254[_0x1dfc70]]!=undefined)Wear[_0x63be2c(0x39e)](_0xd97254[_0x1dfc70]);}return _0x2a9fd1;},_0x5aa5f4['equipBestGear']=async function(_0x4ec194,_0x33aae4=![],_0x59ada7=0x1){const _0x3ec0c4=_0x54d740;if(_0xa649b2)return console[_0x3ec0c4(0x836)]('%cDouble-call\x20warning!\x20Async\x20function\x20\x27Dusan.equipBestGear\x27\x20is\x20already\x20in\x20progress..\x20return..','color:\x20cyan'),Promise[_0x3ec0c4(0x27c)](!![]);_0xa649b2=!![];try{let _0x141951,_0x4003a1,_0x2d8353=[];function _0x1051f4(){const _0x32a573=_0x3ec0c4,_0x53b57c=[0x11,0x17,0x12,0x5,0x6,0xc,0x9,0x4,0x8,0x2,0x5c,0x3,0xb,0x7,0x1,0x5d,0xd,0xe,0xf,0x14,0x16,0xa];for(let _0x2a1fe5 of _0x53b57c){const _0x1f23f2=JobsModel[_0x32a573(0x864)](_0x2a1fe5)[_0x32a573(0x83e)][_0x32a573(0x6c7)];if(_0x4ec194===_0x2a1fe5&&Character['level']>=_0x1f23f2){for(let _0x12792b=_0x1f23f2;_0x12792b<=0x9;_0x12792b++){!_0x5aa5f4[_0x32a573(0x4eb)](_0x2a1fe5,_0x12792b)&&_0x5aa5f4[_0x32a573(0x2c3)](_0x2a1fe5,_0x12792b,!![]);}return!![];}}return![];}_0x5aa5f4[_0x3ec0c4(0x427)][_0x3ec0c4(0x699)]&&[0x1,0x2]['includes'](_0x5aa5f4['addedJobs']['length'])&&(_0x141951=_0x5aa5f4[_0x3ec0c4(0x1f3)][_0x3ec0c4(0x492)](_0x12f786=>_0x12f786['jobid']===_0x4ec194),!_0x141951&&_0x5aa5f4[_0x3ec0c4(0x632)][_0x5aa5f4[_0x3ec0c4(0x360)][_0x3ec0c4(0x40f)]]>0x0&&Character[_0x3ec0c4(0x6c7)]<=0x9&&_0x1051f4()&&(_0x141951=_0x5aa5f4['jobsFarmingGear'][_0x3ec0c4(0x492)](_0x17ee28=>_0x17ee28['jobid']===_0x4ec194)),_0x141951&&(Character[_0x3ec0c4(0x6c7)]<=0x9&&_0x5aa5f4[_0x3ec0c4(0x632)][_0x5aa5f4['currentJob']['jobIdx']]>0x0?(_0x4003a1=_0x141951[_0x3ec0c4(0x6ff)+Character[_0x3ec0c4(0x6c7)]]?.['gear']||_0x141951[_0x3ec0c4(0x652)]?.[_0x3ec0c4(0x458)],_0x2d8353=_0x141951[_0x3ec0c4(0x6ff)+Character[_0x3ec0c4(0x6c7)]]?.[_0x3ec0c4(0x39e)]||_0x141951['level_0']?.[_0x3ec0c4(0x39e)]||[]):(_0x4003a1=_0x141951[_0x3ec0c4(0x652)]?.['gear'],_0x2d8353=_0x141951['level_0']?.['uncarry']||[])));(!_0x141951||!_0x4003a1&&!_0x2d8353[_0x3ec0c4(0x881)])&&(_0x141951=_0x5aa5f4[_0x3ec0c4(0x6c6)][_0x3ec0c4(0x492)](_0x2dd2b5=>_0x2dd2b5[_0x3ec0c4(0x408)]===_0x4ec194),_0x4003a1=_0x141951?_0x141951[_0x3ec0c4(0x652)]?.[_0x3ec0c4(0x458)]:undefined,_0x2d8353=_0x141951?_0x141951[_0x3ec0c4(0x652)]?.[_0x3ec0c4(0x39e)]||[]:[]);if(!_0x4003a1){_0x4003a1=_0x5aa5f4['getBestGear'](_0x4ec194);if(_0x4003a1&&_0x4003a1[_0x3ec0c4(0x881)])_0x5aa5f4[_0x3ec0c4(0x6c6)][_0x3ec0c4(0x70d)]({'jobid':_0x4ec194,['level_0']:{'gear':_0x4003a1,'uncarry':[]}});else return Promise[_0x3ec0c4(0x27c)](!![]);}while(TaskQueue[_0x3ec0c4(0x3fe)][_0x3ec0c4(0x881)]>0x0&&!_0x33aae4){await _0x37da77(_0x4d13ec);if(!_0x5aa5f4['isRunning'])return Promise['resolve'](!![]);}const _0x54b23f=await _0x5aa5f4[_0x3ec0c4(0x595)](_0x5aa5f4[_0x3ec0c4(0x4ff)](_0x4003a1),_0x2d8353);if(_0x54b23f[_0x3ec0c4(0x881)]>0x0){let _0xf79c19=_0x5aa5f4['jobsBestGear'][_0x3ec0c4(0x272)](_0x53b838=>_0x53b838['jobid']===_0x4ec194);if(_0xf79c19!==-0x1)_0x5aa5f4[_0x3ec0c4(0x6c6)]['splice'](_0xf79c19,0x1);_0xf79c19=_0x5aa5f4[_0x3ec0c4(0x1f3)]['findIndex'](_0x1fac6f=>_0x1fac6f['jobid']===_0x4ec194);if(_0xf79c19!==-0x1){delete _0x5aa5f4[_0x3ec0c4(0x1f3)][_0xf79c19]['level_0'],_0x5aa5f4[_0x3ec0c4(0x43a)](_0x3ec0c4(0x62c)),_0x5aa5f4[_0x3ec0c4(0x67a)](_0x5aa5f4[_0x3ec0c4(0x5dc)][_0x5aa5f4[_0x3ec0c4(0x1ed)]][_0x3ec0c4(0x5c3)](_0x5aa5f4[_0x3ec0c4(0x314)](_0x4ec194),_0x54b23f));if(_0x5aa5f4[_0x3ec0c4(0x1f3)][_0xf79c19][_0x3ec0c4(0x6ff)+Character['level']])return _0x5aa5f4[_0x3ec0c4(0x498)](_0x3ec0c4(0x403),_0x3ec0c4(0x253),'error'),_0x5aa5f4[_0x3ec0c4(0x721)](),Promise[_0x3ec0c4(0x27c)](![]);}if(_0x59ada7>0x0&&Character['level']>0x9)return _0xa649b2=![],await _0x5aa5f4[_0x3ec0c4(0x2c1)](_0x4ec194,_0x33aae4,_0x59ada7-0x1);}const _0x3aef17=_0x5aa5f4[_0x3ec0c4(0x3f3)](_0x4003a1,_0x2d8353);if(!_0x3aef17&&_0x54b23f[_0x3ec0c4(0x881)]===0x0&&_0x5aa5f4[_0x3ec0c4(0x66b)]){if(!await _0x5aa5f4[_0x3ec0c4(0x2d5)]()){if(await _0x5aa5f4[_0x3ec0c4(0x3eb)]())return _0xa649b2=![],await _0x5aa5f4[_0x3ec0c4(0x2c1)](_0x4ec194,_0x33aae4);}else{if(_0x59ada7>0x0)return console['warn'](_0x3ec0c4(0x505)+_0x5aa5f4[_0x3ec0c4(0x314)](_0x4ec194)+_0x3ec0c4(0x326)+_0x322198(),_0x3ec0c4(0x262)),_0xa649b2=![],await _0x5aa5f4[_0x3ec0c4(0x2c1)](_0x4ec194,_0x33aae4,_0x59ada7-0x1);else console[_0x3ec0c4(0x836)](_0x3ec0c4(0x7dd)+_0x5aa5f4[_0x3ec0c4(0x314)](_0x4ec194)+_0x3ec0c4(0x572)+_0x322198(),_0x3ec0c4(0x28f));}}return Promise[_0x3ec0c4(0x27c)](_0x3aef17);}catch(_0x23567d){const _0x5deba6='Error\x20in\x20\x27Dusan.equipBestGear\x27:\x20';console[_0x3ec0c4(0x34d)](_0x5deba6,_0x23567d[_0x3ec0c4(0x70a)]);const _0x335cef=_0x5aa5f4[_0x3ec0c4(0x6c6)][_0x3ec0c4(0x272)](_0x4037ba=>_0x4037ba['jobid']===_0x4ec194);_0x335cef!==-0x1&&_0x5aa5f4[_0x3ec0c4(0x6c6)][_0x3ec0c4(0x811)](_0x335cef,0x1);if(_0x59ada7>0x0)return console[_0x3ec0c4(0x5bf)](_0x3ec0c4(0x324)),_0xa649b2=![],await _0x5aa5f4[_0x3ec0c4(0x2c1)](_0x4ec194,_0x33aae4,_0x59ada7-0x1);return _0x5aa5f4[_0x3ec0c4(0x527)](_0x23567d,_0x5deba6),Promise['resolve'](![]);}finally{_0xa649b2=![];}};const _0x2d53cd=function(_0x5aba60){const _0x21a330=_0x54d740;_0x5aba60[_0x21a330(0x4ef)]=!![],Object[_0x21a330(0x5d7)](_0x5aba60,_0x21a330(0x7f6),{'value':function(){return;}}),_0x37da77=function(_0x2c5701){return new Promise(_0xf7e9e6=>setTimeout(_0xf7e9e6,_0x2c5701*0x64));};};_0x5aa5f4[_0x54d740(0x2c3)]=function(_0x33051a,_0x4ee15b=0x0,_0x4b57a5=![]){const _0x532b3d=_0x54d740,_0x1c55fe=['animal',_0x532b3d(0x7f4),_0x532b3d(0x4ae),_0x532b3d(0x410),_0x532b3d(0x754),_0x532b3d(0x3c5),_0x532b3d(0x4a2),'body',_0x532b3d(0x659),_0x532b3d(0x768)];let _0x47868d=[],_0x28b2a8=[];for(let _0x16dbcf=0x0;_0x16dbcf<_0x1c55fe[_0x532b3d(0x881)];_0x16dbcf++){_0x4b57a5?_0x28b2a8['push'](_0x1c55fe[_0x16dbcf]):Wear[_0x532b3d(0x4d6)][_0x1c55fe[_0x16dbcf]]!=undefined?_0x47868d['push'](Wear['wear'][_0x1c55fe[_0x16dbcf]][_0x532b3d(0x3a9)][_0x532b3d(0x64c)]):_0x28b2a8['push'](_0x1c55fe[_0x16dbcf]);}let _0x2a66a6=_0x5aa5f4[_0x532b3d(0x1f3)][_0x532b3d(0x492)](_0x535c09=>_0x535c09[_0x532b3d(0x408)]===_0x33051a);_0x2a66a6?_0x2a66a6[_0x532b3d(0x6ff)+_0x4ee15b]={'gear':_0x47868d,'uncarry':_0x28b2a8}:_0x5aa5f4[_0x532b3d(0x1f3)]['push']({'jobid':_0x33051a,[_0x532b3d(0x6ff)+_0x4ee15b]:{'gear':_0x47868d,'uncarry':_0x28b2a8}});if(_0x4ee15b===0x0){const _0x28a3fb=_0x5aa5f4['jobsBestGear'][_0x532b3d(0x272)](_0x3659e2=>_0x3659e2[_0x532b3d(0x408)]===_0x33051a);_0x28a3fb!==-0x1?_0x5aa5f4[_0x532b3d(0x6c6)][_0x28a3fb][_0x532b3d(0x6ff)+_0x4ee15b]={'gear':_0x47868d,'uncarry':_0x28b2a8}:_0x5aa5f4[_0x532b3d(0x6c6)]['push']({'jobid':_0x33051a,['level_'+_0x4ee15b]:{'gear':_0x47868d,'uncarry':_0x28b2a8}});}},_0x5aa5f4[_0x54d740(0x249)]=function(_0x47c613,_0x421c3d=0x0){const _0x2e1f93=_0x54d740;let _0x3e5451=![];const _0x275eb6=_0x5aa5f4[_0x2e1f93(0x1f3)][_0x2e1f93(0x272)](_0x2c1947=>_0x2c1947[_0x2e1f93(0x408)]===_0x47c613);if(_0x275eb6!==-0x1){let _0x37d57c=_0x5aa5f4[_0x2e1f93(0x1f3)][_0x275eb6];_0x37d57c['hasOwnProperty'](_0x2e1f93(0x6ff)+_0x421c3d)&&(delete _0x37d57c[_0x2e1f93(0x6ff)+_0x421c3d],_0x3e5451=!![]),Object[_0x2e1f93(0x705)](_0x37d57c)[_0x2e1f93(0x881)]===0x1&&_0x5aa5f4['jobsFarmingGear'][_0x2e1f93(0x811)](_0x275eb6,0x1);}if(_0x421c3d===0x0){const _0x4d8a01=_0x5aa5f4['jobsBestGear'][_0x2e1f93(0x272)](_0x59c581=>_0x59c581['jobid']===_0x47c613);_0x4d8a01!==-0x1&&(_0x5aa5f4[_0x2e1f93(0x6c6)][_0x2e1f93(0x811)](_0x4d8a01,0x1),_0x3e5451=!![]);}return _0x3e5451;},_0x5aa5f4[_0x54d740(0x4eb)]=function(_0x3baa5e,_0x6a700b=0x0){const _0x12dc16=_0x54d740;let _0x52ca60=_0x5aa5f4['jobsFarmingGear'][_0x12dc16(0x492)](_0x983e43=>_0x983e43[_0x12dc16(0x408)]===_0x3baa5e);if(_0x52ca60&&_0x52ca60['level_'+_0x6a700b]){let _0x314957=_0x52ca60[_0x12dc16(0x6ff)+_0x6a700b];if(_0x314957[_0x12dc16(0x458)][_0x12dc16(0x881)]>0x0||_0x314957[_0x12dc16(0x39e)][_0x12dc16(0x881)]>0x0)return!![];}return![];},_0x5aa5f4['exportFarmingGear']=function(_0x4a98c0){const _0x215b88=_0x54d740;let _0xe536ab=_0x5aa5f4[_0x215b88(0x1f3)]['find'](_0x42c3f0=>_0x42c3f0['jobid']===_0x4a98c0);if(_0xe536ab){let _0x42bf55=JSON[_0x215b88(0x47c)](JSON[_0x215b88(0x6a2)](_0xe536ab));Object[_0x215b88(0x705)](_0x42bf55)['forEach'](_0x14a860=>{const _0x5442bb=_0x215b88;if(_0x14a860[_0x5442bb(0x4db)]('level_')){let _0x203dc8=_0x42bf55[_0x14a860];_0x203dc8&&_0x203dc8['gear']&&Array[_0x5442bb(0x365)](_0x203dc8['gear'])&&_0x203dc8[_0x5442bb(0x458)][_0x5442bb(0x404)]((_0x30b097,_0x45f41d)=>{const _0x273e13=_0x5442bb;let _0x4860bd=ItemManager[_0x273e13(0x4fe)](_0x30b097)['name'];_0x203dc8[_0x273e13(0x458)][_0x45f41d]=_0x30b097+',\x20'+_0x4860bd;});}});let _0xeb9398=JSON[_0x215b88(0x6a2)](_0x42bf55,null,0x2),_0x5b1e78=new Blob([_0xeb9398],{'type':_0x215b88(0x892)}),_0x29b848=document[_0x215b88(0x8b6)]('a');_0x29b848[_0x215b88(0x20a)]=URL[_0x215b88(0x543)](_0x5b1e78),_0x29b848[_0x215b88(0x780)]=_0x5aa5f4['getJobName'](_0x4a98c0)+_0x215b88(0x2cb),_0x29b848[_0x215b88(0x742)]['display']=_0x215b88(0x634),document[_0x215b88(0x26b)][_0x215b88(0x258)](_0x29b848),_0x29b848[_0x215b88(0x4d9)](),document['body'][_0x215b88(0x736)](_0x29b848),setTimeout(()=>URL[_0x215b88(0x4ee)](_0x29b848[_0x215b88(0x20a)]),0x0);}else new UserMessage(_0x215b88(0x82e),UserMessage['TYPE_ERROR'])[_0x215b88(0x50f)]();},_0x5aa5f4['importFarmingGear']=function(){function _0x2482fd(_0x5642ee){const _0x179ed2=_0x3acb;let _0x455d61=JSON[_0x179ed2(0x47c)](JSON[_0x179ed2(0x6a2)](_0x5642ee));return Object[_0x179ed2(0x705)](_0x455d61)[_0x179ed2(0x404)](_0x6ca406=>{const _0x498f76=_0x179ed2;if(_0x6ca406[_0x498f76(0x4db)](_0x498f76(0x6ff))){let _0x3902fc=_0x455d61[_0x6ca406];_0x3902fc&&_0x3902fc['gear']&&Array[_0x498f76(0x365)](_0x3902fc[_0x498f76(0x458)])&&_0x3902fc['gear']['forEach']((_0x1d2cee,_0x48b0db)=>{const _0x45e56e=_0x498f76;if(typeof _0x1d2cee===_0x45e56e(0x337)){let _0xca1e65=_0x1d2cee['split'](',\x20');if(_0xca1e65['length']===0x2){let _0x12b601=parseInt(_0xca1e65[0x0]);_0x3902fc['gear'][_0x48b0db]=_0x12b601;}}});}}),_0x455d61;}return new Promise((_0x509322,_0x36be80)=>{const _0x37c2d7=_0x3acb;let _0x5541bf=document[_0x37c2d7(0x8b6)](_0x37c2d7(0x70c));_0x5541bf[_0x37c2d7(0x51c)]='file',_0x5541bf[_0x37c2d7(0x43e)]=_0x37c2d7(0x735),_0x5541bf['onchange']=function(_0x52086d){const _0x524dc1=_0x37c2d7;let _0x18a4a6=_0x52086d[_0x524dc1(0x80e)][_0x524dc1(0x8d1)][0x0];if(!_0x18a4a6){_0x36be80(new Error(_0x524dc1(0x3a2)));return;}let _0x1fad00=new FileReader();_0x1fad00['onload']=function(_0x43047f){const _0x4faa93=_0x524dc1;try{let _0x2b6cd6=_0x43047f[_0x4faa93(0x80e)][_0x4faa93(0x552)],_0x55c8b7=JSON[_0x4faa93(0x47c)](_0x2b6cd6),_0x1fbb70=_0x5aa5f4[_0x4faa93(0x1f3)][_0x4faa93(0x272)](_0x1d81b2=>_0x1d81b2[_0x4faa93(0x408)]===_0x55c8b7['jobid']);_0x1fbb70!==-0x1?_0x5aa5f4['jobsFarmingGear'][_0x1fbb70]=_0x2482fd(_0x55c8b7):_0x5aa5f4['jobsFarmingGear'][_0x4faa93(0x70d)](_0x2482fd(_0x55c8b7)),_0x509322(!![]);}catch(_0x975822){console[_0x4faa93(0x34d)](_0x4faa93(0x638),_0x975822[_0x4faa93(0x70a)]),_0x36be80(new Error(_0x4faa93(0x52e)));}},_0x1fad00['readAsText'](_0x18a4a6);},_0x5541bf[_0x37c2d7(0x4d9)]();});},_0x5aa5f4[_0x54d740(0x28b)]=function(_0x5e7acd,_0x3aa4f9,_0x5e3a23){const _0x4b4917=_0x54d740;if(_0x3aa4f9[_0x4b4917(0x881)]===_0x5aa5f4[_0x4b4917(0x62c)][_0x4b4917(0x881)]&&!_0x5aa5f4[_0x4b4917(0x75c)]){_0x5aa5f4[_0x4b4917(0x632)]=[..._0x3aa4f9],_0x5e3a23(_0x3aa4f9);return;}_0x3aa4f9=[];const _0x565c0f=_0x69b9cf=>{const _0x273e87=_0x4b4917;if(!_0x5aa5f4[_0x273e87(0x66b)])return;_0x5aa5f4[_0x273e87(0x369)](_0x69b9cf,function(_0x39151a){const _0x204a61=_0x273e87;if(!_0x5aa5f4[_0x204a61(0x66b)])return;_0x3aa4f9[_0x204a61(0x70d)](_0x39151a),_0x69b9cf+0x1<_0x5aa5f4[_0x204a61(0x62c)][_0x204a61(0x881)]?_0x565c0f(_0x69b9cf+0x1):(_0x5aa5f4['lastResult']=[..._0x3aa4f9],_0x5aa5f4['addedJobsHasChanged']=![],_0x5e3a23(_0x3aa4f9));});};_0x5e7acd<_0x5aa5f4['addedJobs'][_0x4b4917(0x881)]?_0x565c0f(_0x5e7acd):(console[_0x4b4917(0x34d)](_0x4b4917(0x677)+_0x5e7acd+_0x4b4917(0x379)+_0x5aa5f4[_0x4b4917(0x62c)][_0x4b4917(0x881)]+'.'),_0x5e3a23([]));},_0x5aa5f4[_0x54d740(0x68d)]=function(_0xd37209){const _0x1517ed=_0x54d740;if(_0x5aa5f4['isStopMotivationZero']())return!![];for(let _0x36d0fd=0x0;_0x36d0fd<_0xd37209[_0x1517ed(0x881)];_0x36d0fd++){if(_0xd37209[_0x36d0fd]>_0x5aa5f4[_0x1517ed(0x62c)][_0x36d0fd]['stopMotivation'])return!![];}return![];},_0x5aa5f4[_0x54d740(0x625)]=function(_0x3cb5da){const _0x143d72=_0x54d740;if(_0x5aa5f4['isStopMotivationZero']())return!![];for(let _0x19c973=0x0;_0x19c973<_0x3cb5da['length'];_0x19c973++){if(_0x3cb5da[_0x19c973]>_0x5aa5f4[_0x143d72(0x62c)][_0x19c973][_0x143d72(0x8d5)]+0x5)return!![];}return![];},_0x5aa5f4[_0x54d740(0x711)]=function(_0x23821b){const _0x321eaa=_0x54d740;if(!_0x23821b)return 0x0;let _0x81bb06=0x0;for(let _0x104932=0x0;_0x104932<_0x23821b[_0x321eaa(0x881)];_0x104932++){_0x23821b[_0x104932]<=_0x5aa5f4[_0x321eaa(0x62c)][_0x104932][_0x321eaa(0x8d5)]&&_0x5aa5f4[_0x321eaa(0x62c)][_0x104932]['stopMotivation']>0x0&&_0x81bb06++;}return _0x81bb06;},_0x5aa5f4[_0x54d740(0x6bf)]=function(_0x2d0ace){const _0x5812fa=_0x54d740;if(!_0x2d0ace)return 0x0;const _0x138a92=_0x5aa5f4[_0x5812fa(0x8a0)](_0x5aa5f4['searchKeys'][_0x5aa5f4[_0x5812fa(0x2f5)]]?.[_0x5812fa(0x818)]);let _0x3df680=0x0;for(let _0x18fb27=0x0;_0x18fb27<_0x2d0ace[_0x5812fa(0x881)];_0x18fb27++){_0x3df680+=0x64+_0x138a92-_0x2d0ace[_0x18fb27];}return _0x3df680/_0x2d0ace[_0x5812fa(0x881)];};let _0x38c4ed=_0x3da46f;_0x5aa5f4[_0x54d740(0x64f)]=function(_0x1efcd7){const _0x39c660=_0x54d740;if(_0x1efcd7[_0x39c660(0x881)]<_0x5aa5f4[_0x39c660(0x62c)][_0x39c660(0x881)])return 0x0;let _0x17033d=0x0;for(let _0x3d4dfb=0x0;_0x3d4dfb<_0x5aa5f4[_0x39c660(0x62c)][_0x39c660(0x881)];_0x3d4dfb++){const _0x25ac40=_0x1efcd7[_0x3d4dfb];typeof _0x25ac40===_0x39c660(0x2ec)&&!isNaN(_0x25ac40)&&(_0x17033d+=_0x25ac40-_0x5aa5f4[_0x39c660(0x62c)][_0x3d4dfb][_0x39c660(0x8d5)]);}return _0x17033d;},_0x5aa5f4['isMotivationRequired']=function(){const _0xd0c3e7=_0x54d740;return _0x5aa5f4[_0xd0c3e7(0x31a)][_0xd0c3e7(0x57a)]&&!_0x5aa5f4['isStopMotivationZero']();},_0x5aa5f4[_0x54d740(0x7b5)]=function(){const _0x561a61=_0x54d740;for(let _0x27b8ed=0x0;_0x27b8ed<_0x5aa5f4['addedJobs'][_0x561a61(0x881)];_0x27b8ed++){if(_0x5aa5f4['addedJobs'][_0x27b8ed][_0x561a61(0x8d5)]<=0x0)return!![];}return![];},_0x5aa5f4['isHealthBelowLimit']=function(_0x91a69f=_0x5aa5f4[_0x54d740(0x31a)][_0x54d740(0x454)],_0x2da6a2=_0x5aa5f4[_0x54d740(0x31a)][_0x54d740(0x5b1)]){const _0x41aa74=_0x54d740;return _0x2da6a2>=Character['health']/Character[_0x41aa74(0x862)]*0x64&&_0x91a69f>=Character[_0x41aa74(0x5f8)];};const _0x29eda4=function _0x2e5e6b(_0x577469,_0x2d285c=![]){_0x38c4ed=_0x598d81(_0x577469),_0x2d285c?_0x3da46f=atob(_0x577469):_0x13f701=atob(_0x577469);};_0x5aa5f4['calcHealthRefill']=async function(_0x19a858,_0x1204ed=![]){const _0x5fb033=_0x54d740;if(!_0x5aa5f4['sets'][_0x5fb033(0x1fd)](_0x19a858)&&!_0x5aa5f4['wardrobe'][_0x5fb033(0x1fd)](_0x19a858)&&!_0x5aa5f4[_0x5fb033(0x222)]['has'](_0x19a858))return 0x0;if(_0x1204ed&&(!_0x5aa5f4[_0x5fb033(0x222)]['has'](_0x19a858)||!_0x5aa5f4[_0x5fb033(0x222)][_0x5fb033(0x1fd)](_0x5aa5f4[_0x5fb033(0x5c5)])))return 0x0;let _0x5d95bc=!![],_0x452d2f=!![];!_0x5aa5f4[_0x5fb033(0x222)][_0x5fb033(0x1fd)](_0x19a858)&&(_0x5d95bc=(await _0x5aa5f4['equipSet'](_0x19a858))['equipped'],await _0x37da77(_0x4d13ec));if(!_0x5aa5f4[_0x5fb033(0x222)][_0x5fb033(0x1fd)](_0x5aa5f4[_0x5fb033(0x5c5)]))_0x452d2f=(await _0x5aa5f4[_0x5fb033(0x79d)](_0x5aa5f4[_0x5fb033(0x5c5)]))[_0x5fb033(0x8bf)];if(!_0x5d95bc||!_0x452d2f)return 0x0;const _0x3b3559=_0x5aa5f4['maxHealthForSet'][_0x5fb033(0x4fe)](_0x19a858)-Character[_0x5fb033(0x5f8)];return Math['round'](_0x3b3559/_0x5aa5f4[_0x5fb033(0x222)][_0x5fb033(0x4fe)](_0x5aa5f4[_0x5fb033(0x5c5)])*0x64);},_0x5aa5f4['useItemLoop']=async function(_0x20bc49,_0x568551=0x0,_0x233ba8){const _0x9e550c=_0x54d740;let _0x53f073;if(typeof _0x20bc49===_0x9e550c(0x256))_0x53f073=_0x20bc49;else{if(typeof _0x20bc49===_0x9e550c(0x2ec))_0x53f073=Bag[_0x9e550c(0x23b)](_0x20bc49);else{if(typeof _0x20bc49===_0x9e550c(0x337)){const _0x5af7c9=_0x5aa5f4[_0x9e550c(0x55d)](_0x20bc49);if(!_0x5af7c9||_0x5af7c9[_0x9e550c(0x881)]!==0x1){new UserMessage('Item\x20name\x20is\x20not\x20accurate\x20or\x20not\x20found!',UserMessage[_0x9e550c(0x49f)])[_0x9e550c(0x50f)]();return;}const _0x35c7e2=_0x5af7c9[0x0][_0x9e550c(0x3a9)];if(_0x35c7e2[_0x9e550c(0x640)]===_0x9e550c(0x634)||_0x35c7e2['has_cooldown']){new UserMessage('Invalid\x20item!\x20Cannot\x20use\x20this\x20item.',UserMessage[_0x9e550c(0x49f)])[_0x9e550c(0x50f)]();return;}_0x53f073=_0x5af7c9[0x0];}else return;}}_0x568551=Math[_0x9e550c(0x868)](_0x568551,_0x53f073[_0x9e550c(0x28d)])||_0x53f073[_0x9e550c(0x28d)];for(let _0x468856=0x0;_0x468856<_0x568551;_0x468856++){try{ItemUse['doIt'](_0x53f073[_0x9e550c(0x3a9)][_0x9e550c(0x64c)]),await _0x37da77(_0x233ba8||0x3e8);if(_0x5aa5f4[_0x9e550c(0x30b)]||document[_0x9e550c(0x477)]('.critical-error'))break;_0x5aa5f4[_0x9e550c(0x577)]();}catch(_0xda8d6d){console[_0x9e550c(0x34d)]('Error\x20using\x20item\x20\x27'+_0x53f073[_0x9e550c(0x3a9)]['name']+'\x27:\x20',_0xda8d6d);break;}}},_0x5aa5f4[_0x54d740(0x8a0)]=function(_0x1669cc){const _0x2779b5=_0x54d740;if(_0x1669cc==undefined)return 0x0;const _0x10a9dd=CharacterSkills['buffs'];function _0x2ff37a(_0x55eecb){const _0x275442=_0x3acb;return _0x55eecb[_0x275442(0x4fa)](/[+%0-9]/g,'')[_0x275442(0x1df)]();}for(let _0x254c99 in _0x10a9dd){if(_0x254c99[_0x2779b5(0x4db)](_0x2779b5(0x561))){const _0x5d9e1b=_0x10a9dd[_0x254c99][_0x2779b5(0x6f1)]['find'](_0x3e8038=>_0x15ab5e(_0x2ff37a(_0x3e8038),_0x1669cc,0.85));return _0x5d9e1b?_0x31e459(_0x5d9e1b):0x0;}}return 0x0;},_0x5aa5f4['loadActiveEventItemId']=function(){let _0x4a512c=[];const _0x55bbef={'Hearts':[0x270830,0x270448],'Easter':[0x292b10],'Independence':[0x3119178],'Octoberfest':[0x3057bb8],'DayOfDead':[0x28ae10,0x28aa28]};for(let _0x3c75ce in _0x55bbef){if($('.custom_unit_counter.'+_0x3c75ce)['length']>0x0){_0x4a512c=_0x55bbef[_0x3c75ce];break;}}return _0x4a512c;},_0x5aa5f4[_0x54d740(0x565)]=function(){const _0x5df49e=_0x54d740;_0x2b48d0()[_0x5df49e(0x3ec)](_0x4e1e3d=>{const _0x27d33e=_0x5df49e;!_0x4e1e3d['substring'](0x1,0x19)===_0xff43f0[_0x27d33e(0x2ef)](0x1,0x19)&&(_0x5aa5f4[_0x27d33e(0x22e)]=()=>{},_0x5aa5f4[_0x27d33e(0x85b)]=()=>{});});const _0x2a4b02=()=>{const _0xe9eaef=_0x5df49e,_0x20b48e=[0x25df50],_0x18ddca=[..._0x20b48e,..._0x5aa5f4[_0xe9eaef(0x333)]()];let _0x9405d5=[];_0x18ddca[_0xe9eaef(0x404)](_0x2581a1=>{const _0x2466a1=_0xe9eaef;_0x5aa5f4[_0x2466a1(0x4b6)](_0x2581a1)&&_0x9405d5['push'](_0x2581a1);}),setTimeout(()=>{const _0x2ca4bc=_0xe9eaef;if(_0x9405d5[_0x2ca4bc(0x881)]>0x0){const _0x44b37a=_0x9405d5[_0x2ca4bc(0x286)](_0x2cfdbd=>_0x5aa5f4[_0x2ca4bc(0x3e3)](_0x2cfdbd)*0x3e8||0x493e0),_0x59c649=Math[_0x2ca4bc(0x868)](..._0x44b37a);setTimeout(_0x2a4b02,_0x59c649);}},_0x2024b9);};_0x2a4b02();},_0x5aa5f4[_0x54d740(0x4b6)]=function(_0x5efea9){const _0x2a203a=_0x54d740;if(_0x5efea9!=null&&Bag[_0x2a203a(0x23b)](_0x5efea9))return _0x5aa5f4[_0x2a203a(0x789)](_0x5efea9)&&_0x5aa5f4['currentState']!==0x5&&_0x5aa5f4[_0x2a203a(0x328)](_0x5efea9,ItemManager[_0x2a203a(0x4fe)](_0x5efea9)[_0x2a203a(0x781)]['trim']()),!![];return![];};const _0xafc176=Object[_0x54d740(0x705)](_0x46d8e0)['at'](0x1);_0x5aa5f4[_0x54d740(0x3e3)]=function(_0x3c8f4b=0x0){const _0x1f2b68=_0x54d740;_0x3c8f4b===0x0&&_0x5aa5f4[_0x1f2b68(0x342)][_0x1f2b68(0x881)]>0x0&&(_0x3c8f4b=_0x5aa5f4['allConsumables'][_0x1f2b68(0x492)](_0x2b28af=>_0x2b28af[_0x1f2b68(0x6ef)]!==0x0||_0x2b28af[_0x1f2b68(0x443)]!==0x0||_0x2b28af['health']!==0x0)['id']);const _0x437665=Bag[_0x1f2b68(0x23b)](_0x3c8f4b);if(_0x437665&&BuffList[_0x1f2b68(0x35e)][_0x3c8f4b]!=undefined)return _0x437665[_0x1f2b68(0x370)](),Math[_0x1f2b68(0x5e2)]((BuffList['cooldowns'][_0x3c8f4b]['time']-new ServerDate()['getTime']())/0x3e8,0x0);return 0x0;},_0x5aa5f4['canUseConsume']=function(_0x37013c){const _0x49cdfe=_0x54d740,_0x91a338=Bag[_0x49cdfe(0x23b)](_0x37013c);if(_0x91a338){_0x91a338[_0x49cdfe(0x370)]();if(BuffList[_0x49cdfe(0x35e)][_0x37013c]!=undefined&&BuffList['cooldowns'][_0x37013c][_0x49cdfe(0x463)]>new ServerDate()[_0x49cdfe(0x4f0)]()||!navigator['onLine'])return![];return!![];}return![];},_0x5aa5f4[_0x54d740(0x88b)]=function(_0x34d20e){const _0x5943dd=_0x54d740;if($(_0x5943dd(0x851)+_0x34d20e+'\x22]')[_0x5943dd(0x881)]>0x0)return![];return CharacterSkills['buffs'][_0x34d20e]==null;},_0x5aa5f4[_0x54d740(0x4b4)]=function(){const _0x1a8a7=_0x54d740,_0x5b520b=()=>0x64-Character['energy']/Character[_0x1a8a7(0x216)]*0x64;let _0x1b18f5=_0x5aa5f4[_0x1a8a7(0x31a)][_0x1a8a7(0x3ca)]?'xp':_0x5aa5f4[_0x1a8a7(0x31a)]['addProductBuff']?_0x1a8a7(0x66c):_0x5aa5f4['settings'][_0x1a8a7(0x4b7)]?_0x1a8a7(0x234):_0x5aa5f4[_0x1a8a7(0x31a)][_0x1a8a7(0x442)]?_0x1a8a7(0x828):'';const _0xcc7817=_0x5aa5f4[_0x1a8a7(0x88b)]('character')&&_0x1b18f5!=='',_0xe82260=_0x5aa5f4[_0x1a8a7(0x88b)]('travel')&&_0x5aa5f4[_0x1a8a7(0x31a)][_0x1a8a7(0x3ed)];if(!_0xcc7817&&_0xe82260)_0x1b18f5=_0x1a8a7(0x6b9);else{if(_0x1b18f5===''||!_0xcc7817&&!_0xe82260)return;}let _0xc7cdc9=_0x5aa5f4[_0x1a8a7(0x342)][_0x1a8a7(0x813)](_0x5aed2d=>_0x5aed2d[_0x1a8a7(0x451)]&&_0x5aed2d[_0x1b18f5]>0x0&&_0x5aed2d[_0x1a8a7(0x28d)]>0x0);_0xc7cdc9['length']===0x0&&_0xcc7817&&_0xe82260&&(_0x1b18f5=_0x1a8a7(0x6b9),_0xc7cdc9=_0x5aa5f4[_0x1a8a7(0x342)][_0x1a8a7(0x813)](_0x1246f5=>_0x1246f5[_0x1a8a7(0x451)]&&_0x1246f5[_0x1b18f5]>0x0&&_0x1246f5[_0x1a8a7(0x28d)]>0x0));if(_0xc7cdc9[_0x1a8a7(0x881)]===0x0||_0x5bcb61)return;_0xc7cdc9[_0x1a8a7(0x574)]((_0x1be508,_0x489785)=>_0x489785[_0x1b18f5]-_0x1be508[_0x1b18f5]);let _0x41f465=null,_0x386ba=[];for(let _0x1dcf91=0x0;_0x1dcf91<_0xc7cdc9['length'];_0x1dcf91++){if(_0x1b18f5===_0x1a8a7(0x6b9)&&_0xc7cdc9[_0x1dcf91][_0x1a8a7(0x55f)]!==0x0&&(_0x5aa5f4[_0x1a8a7(0x31a)]['addEnergyOptional']?_0xc7cdc9[_0x1dcf91][_0x1a8a7(0x7ec)][_0x1a8a7(0x881)]===0x2:!![])||_0xc7cdc9[_0x1dcf91][_0x1a8a7(0x69e)]!==0x0&&_0x1b18f5!==_0x1a8a7(0x6b9)){if(Character[_0x1a8a7(0x6c7)]<=0x13&&_0xc7cdc9[_0x1dcf91][_0x1a8a7(0x441)]>0x0&&_0x5aa5f4[_0x1a8a7(0x632)][_0x5aa5f4[_0x1a8a7(0x360)][_0x1a8a7(0x40f)]]>0x0||_0xc7cdc9[_0x1dcf91][_0x1a8a7(0x6bb)]&&(_0xc7cdc9[_0x1dcf91][_0x1a8a7(0x443)]<=0x5&&_0x5aa5f4[_0x1a8a7(0x7c1)]()&&_0x5aa5f4[_0x1a8a7(0x64f)](_0x5aa5f4['lastResult'])<_0x5aa5f4[_0x1a8a7(0x3e3)](_0xc7cdc9[_0x1dcf91]['id'])/0xf+0x27||_0xc7cdc9[_0x1dcf91][_0x1a8a7(0x6ef)]*Character[_0x1a8a7(0x216)]/0x64+Character[_0x1a8a7(0x6ef)]<_0x5aa5f4['getConsumeCooldown']()/0xf-TaskQueue[_0x1a8a7(0x3fe)][_0x1a8a7(0x881)]+0x27))continue;_0x41f465==null&&(_0x41f465=_0x1dcf91);if(_0xc7cdc9[_0x1dcf91]['energy']>0x0&&(!_0x5aa5f4[_0x1a8a7(0x31a)][_0x1a8a7(0x601)]||_0xc7cdc9[_0x1dcf91][_0x1a8a7(0x6ef)]>_0x5b520b()+_0x35ed20))continue;_0x386ba[_0x1a8a7(0x70d)](_0x1dcf91);}}_0x386ba['length']>0x0&&(_0x41f465=_0x386ba['reduce']((_0x4f0e50,_0x1434a2)=>{const _0xe6c4fb=_0x1a8a7;return _0xc7cdc9[_0x1434a2][_0xe6c4fb(0x6ef)]>_0xc7cdc9[_0x4f0e50]?.['energy']?_0x1434a2:_0x4f0e50;},_0x386ba[0x0])),_0x41f465!=null&&_0x5aa5f4[_0x1a8a7(0x734)](_0xc7cdc9[_0x41f465]);},_0x5aa5f4['useBuff']=async function(_0x4e6f83){const _0x366e94=_0x54d740;if(!_0x4e6f83)return;if(_0x5bcb61){console[_0x366e94(0x836)]('%cDouble-call\x20warning!\x20Async\x20function\x20\x27Dusan.useBuff\x27\x20is\x20already\x20in\x20progress..\x20return..',_0x366e94(0x262));return;}_0x5bcb61=!![];try{let _0x23c09d=![];const _0x47a05c=_0x5aa5f4[_0x366e94(0x723)];while(_0x5aa5f4[_0x366e94(0x66b)]&&!_0x340455){if(_0x5aa5f4[_0x366e94(0x789)](_0x4e6f83['id'])){_0x5aa5f4['itemUse'](_0x4e6f83['id'],_0x4e6f83[_0x366e94(0x781)][_0x366e94(0x1df)]());break;}else!_0x23c09d&&(_0x23c09d=!![],_0x5aa5f4[_0x366e94(0x723)]=0x2);await _0x37da77(_0x4d13ec);}_0x23c09d&&_0x5aa5f4['isRunning']&&_0x5aa5f4[_0x366e94(0x723)]===0x2&&!_0x340455&&(_0x5aa5f4[_0x366e94(0x723)]=_0x47a05c);}catch(_0x3db7a2){const _0x564a73=_0x366e94(0x8d4);console['error'](_0x564a73,_0x3db7a2[_0x366e94(0x70a)]),_0x5aa5f4[_0x366e94(0x527)](_0x3db7a2,_0x564a73);}finally{_0x5bcb61=![];}},_0x5aa5f4[_0x54d740(0x577)]=function(){const _0x37644e=_0x54d740;if($(_0x37644e(0x60e))[_0x37644e(0x881)]>0x0){$('.tw2gui_dialog_framefix')[_0x37644e(0x715)]();return;}const _0x3e8026=setTimeout(()=>{clearInterval(_0x46a855);},_0x2024b9),_0x46a855=setInterval(()=>{const _0x4f63db=_0x37644e,_0x374b7a=$('.tw2gui_dialog_framefix');_0x374b7a['length']>0x0&&(_0x374b7a[_0x4f63db(0x715)](),clearInterval(_0x46a855),clearTimeout(_0x3e8026));},_0x493a77);},_0x5aa5f4[_0x54d740(0x328)]=function(_0x5b8378,_0x31805b){const _0x77240c=_0x54d740;EventHandler[_0x77240c(0x37e)](_0x77240c(0x334),function(){return setTimeout(()=>{const _0x3667fe=_0x3acb;_0x5aa5f4['removeConfirmDialog'](),_0x5aa5f4[_0x3667fe(0x597)](_0x5b8378),_0x31805b&&(_0x5aa5f4[_0x3667fe(0x5ca)][_0x3667fe(0x6a7)][_0x3667fe(0x70d)](_0x31805b),_0x5aa5f4[_0x3667fe(0x43a)]('consumables'));},0x0),EventHandler['ONE_TIME_EVENT'];}),ItemUse[_0x77240c(0x82b)](_0x5b8378);},_0x5aa5f4[_0x54d740(0x720)]=async function(_0x2d0c82,_0x46c979=![],_0x34d6c2=![],_0x45603c=![],_0x14bc8a=!![]){const _0x37efe9=_0x54d740;if(_0x340455)return console['warn'](_0x37efe9(0x6a8),'color:\x20cyan'),![];_0x340455=!![];try{let _0x1776b3=null;const _0x5a5c9b=_0x5aa5f4['currentState'];while(_0x5aa5f4[_0x37efe9(0x66b)]){if(_0x5aa5f4[_0x37efe9(0x789)](_0x2d0c82['id'])){if(_0x2d0c82[_0x37efe9(0x5f8)]!==0x0&&!_0x4077e1&&!_0x574178&&![0x7][_0x37efe9(0x2fe)](_0x5a5c9b)&&_0x14bc8a){const _0x5b3792=_0x5aa5f4[_0x37efe9(0x222)][_0x37efe9(0x4fe)](_0x5aa5f4[_0x37efe9(0x62c)][_0x5aa5f4[_0x37efe9(0x360)][_0x37efe9(0x40f)]][_0x37efe9(0x61f)]),_0xb81e78=_0x45603c?Character[_0x37efe9(0x862)]:_0x5b3792||Character[_0x37efe9(0x862)],_0x64f927=(_0xb81e78-Character[_0x37efe9(0x5f8)])/_0xb81e78*0x64,_0x35175e=_0x64f927>_0x2d0c82[_0x37efe9(0x5f8)];(_0x45603c?_0x35175e:!_0x34d6c2&&!_0x46c979||_0x35175e)&&await _0x5aa5f4['equipSet'](_0x5aa5f4['healthSet']);}const _0x22ad8b=_0x45603c?_0x2d0c82[_0x37efe9(0x781)][_0x37efe9(0x1df)]()+_0x37efe9(0x2d9):_0x5aa5f4[_0x37efe9(0x84a)]()?_0x2d0c82[_0x37efe9(0x781)]+_0x37efe9(0x576):_0x2d0c82[_0x37efe9(0x781)];_0x5aa5f4[_0x37efe9(0x328)](_0x2d0c82['id'],_0x22ad8b);break;}else{if(!_0x1776b3){if(_0x45603c&&_0x5aa5f4[_0x37efe9(0x2ee)]()-_0x110ed6/0x2<_0x5aa5f4[_0x37efe9(0x3e3)](_0x2d0c82['id']))break;_0x1776b3=new Date(),_0x5aa5f4[_0x37efe9(0x723)]=0x2;}}await _0x37da77(_0x4d13ec);}await _0x37da77(_0x4d13ec);if(_0x5aa5f4[_0x37efe9(0x66b)]&&!_0x34d6c2&&!_0x46c979&&!_0x45603c)_0x1776b3&&(_0x5aa5f4[_0x37efe9(0x23d)][_0x37efe9(0x2fa)][_0x37efe9(0x545)]+=_0x12f209(_0x1776b3),_0x5aa5f4['addWaitingReason'](_0x37efe9(0x830)+_0x5aa5f4[_0x37efe9(0x5ca)][_0x37efe9(0x6a7)]['at'](-0x2)+_0x37efe9(0x56b)+_0x5aa5f4[_0x37efe9(0x5ca)]['consumablesUsed']['at'](-0x1)+'>')),_0x5aa5f4[_0x37efe9(0x3af)](),_0x5aa5f4[_0x37efe9(0x3ae)]();else _0x5aa5f4[_0x37efe9(0x66b)]&&(_0x5aa5f4[_0x37efe9(0x723)]=_0x5a5c9b);return!![];}catch(_0x1d693e){const _0x25f5c4=_0x37efe9(0x2e3);return console[_0x37efe9(0x34d)](_0x25f5c4,_0x1d693e[_0x37efe9(0x70a)]),_0x5aa5f4[_0x37efe9(0x527)](_0x1d693e,_0x25f5c4),![];}finally{_0x340455=![];}},_0x5aa5f4[_0x54d740(0x6a0)]=function(_0x558bd8,_0xc7f45f,_0x2a5a49,_0x3824da,_0x222e1e,_0x24161d,_0x12b009,_0x364e04){const _0x125597=_0x54d740;function _0x49d226(_0x1bf6e0){const _0x130faf=_0x3acb;let _0xbd228c=_0x1bf6e0[_0x130faf(0x574)]((_0x4020b2,_0x3588fc)=>{const _0x47a303=_0x130faf,_0x5cd1b7=Math['abs'](_0x4020b2[_0x47a303(0x5f8)]-_0x2a5a49),_0x4560ff=Math[_0x47a303(0x282)](_0x3588fc[_0x47a303(0x5f8)]-_0x2a5a49);if(_0x5cd1b7!==_0x4560ff)return _0x5cd1b7-_0x4560ff;return _0x3588fc[_0x47a303(0x5f8)]-_0x4020b2[_0x47a303(0x5f8)];});return _0xbd228c;}function _0x4e8252(_0xfd5b63,_0x1f9ea5){const _0x4e565a=_0x3acb,_0x4f5e06=_0xfd5b63['findIndex']((_0x40abb6,_0xacb9a0,_0x4a0071)=>_0xacb9a0>0x0&&_0x40abb6[_0x1f9ea5]!==_0x4a0071[0x0][_0x1f9ea5]);return _0x4f5e06!==-0x1?_0xfd5b63[_0x4e565a(0x8a9)](0x0,_0x4f5e06):_0xfd5b63;}function _0x3aa396(_0x3a5768,_0x43ca3b){const _0x3c0bde=_0x3acb,_0x259e39=Math[_0x3c0bde(0x868)](_0xc7f45f,_0x5aa5f4[_0x3c0bde(0x67c)]),_0x1db696=Math[_0x3c0bde(0x282)](_0x259e39-_0x3a5768[_0x3c0bde(0x6ef)]),_0x331c19=Math['abs'](_0x259e39-_0x43ca3b[_0x3c0bde(0x6ef)]);return _0x1db696-_0x331c19;}function _0x133aa3(_0x337e81,_0x473401){const _0x5d8e14=_0x3acb,_0x48d454=_0x2f8251=>_0x2f8251>0x0?_0x2f8251*0x3:_0x2f8251,_0x511fd9=_0x48d454(_0x3824da-_0x337e81[_0x5d8e14(0x443)]),_0x476947=_0x48d454(_0x3824da-_0x473401['motivation']);return Math[_0x5d8e14(0x282)](_0x511fd9)-Math[_0x5d8e14(0x282)](_0x476947);}function _0x461e7f(_0x499d82){const _0x3ed4ae=_0x3acb;_0x499d82[_0x3ed4ae(0x574)](_0x133aa3);const _0xdbd68e=_0x5aa5f4[_0x3ed4ae(0x710)](),_0x1cabef=_0x499d82[_0x3ed4ae(0x492)](_0x5bae5a=>(_0x5bae5a[_0x3ed4ae(0x443)]>=_0x3824da||Math[_0x3ed4ae(0x282)](_0x3824da-_0x5bae5a['motivation'])<=0x5)&&(_0x5bae5a['energy']<=_0xc7f45f+_0x35ed20&&_0x5bae5a['energy']*Character[_0x3ed4ae(0x216)]/0x64+Character[_0x3ed4ae(0x6ef)]>=0x27)&&(!_0xdbd68e||_0x5bae5a['health']>0x0));if(_0x1cabef)return _0x1cabef;let _0x10293f=_0x499d82[_0x3ed4ae(0x813)](_0x3327c7=>_0x3327c7[_0x3ed4ae(0x443)]>0x0&&(_0x3327c7[_0x3ed4ae(0x6ef)]<=_0xc7f45f+_0x35ed20||Character[_0x3ed4ae(0x6ef)]<0x1a));_0x10293f['length']===0x0&&(_0x10293f=_0x499d82['filter'](_0x706bd0=>_0x706bd0['motivation']>0x0));for(let _0x2c1d7b=0x0;_0x2c1d7b<_0x10293f[_0x3ed4ae(0x881)];_0x2c1d7b++){if(_0x10293f[_0x2c1d7b][_0x3ed4ae(0x6ef)]*Character[_0x3ed4ae(0x216)]/0x64+Character[_0x3ed4ae(0x6ef)]>=0x27)return _0x10293f[_0x2c1d7b];}return _0x10293f[0x0];}function _0x209a09(_0xfb8a9){const _0x4ceb36=_0x3acb,_0x3ad150=_0xfb8a9[_0x4ceb36(0x813)](_0x1f601e=>_0x1f601e[_0x4ceb36(0x5f8)]>0x0);if(_0x3ad150[_0x4ceb36(0x881)]===0x0)return null;if(_0x364e04)return _0x4e8252(_0x49d226(_0x3ad150),_0x4ceb36(0x5f8))[_0x4ceb36(0x574)]((_0x543aaf,_0x33fbd8)=>_0x543aaf[_0x4ceb36(0x6ef)]-_0x33fbd8['energy'])[0x0];let _0x21b503=_0x49d226(_0x4e8252(_0x3ad150,_0x4ceb36(0x6ef)));if(_0x5aa5f4['isMotivationRequired']()&&_0x5aa5f4[_0x4ceb36(0x64f)](_0x5aa5f4[_0x4ceb36(0x632)])<0x27){if(_0x21b503[_0x4ceb36(0x574)](_0x133aa3)[0x0][_0x4ceb36(0x443)]===0x0){const _0x10d5a4=_0x3ad150[_0x4ceb36(0x813)](_0x5d5e0f=>_0x5d5e0f[_0x4ceb36(0x443)]>0x0&&_0x5d5e0f[_0x4ceb36(0x6ef)]<=_0xc7f45f+_0x35ed20&&_0x5d5e0f[_0x4ceb36(0x6ef)]*Character['maxEnergy']/0x64+Character[_0x4ceb36(0x6ef)]>=0x27);_0x21b503=_0x10d5a4[_0x4ceb36(0x881)]>0x0?_0x10d5a4['sort'](_0x133aa3):_0x21b503;}}else _0x21b503[_0x4ceb36(0x574)]((_0x1a67ed,_0x32da54)=>_0x1a67ed[_0x4ceb36(0x5f8)]===_0x32da54[_0x4ceb36(0x5f8)]?_0x1a67ed[_0x4ceb36(0x443)]-_0x32da54['motivation']:0x0);return _0x21b503[0x0];}function _0x21c470(_0x3c67f7){const _0x32e877=_0x3acb,_0x32ac95=_0x5aa5f4[_0x32e877(0x710)]();let _0x1af135=_0x3c67f7[_0x32e877(0x813)](_0x7b5e36=>_0x7b5e36['energy']>0x0);if(_0x12b009){_0x1af135=_0x1af135[_0x32e877(0x813)](_0x1cfd45=>{const _0x748872=_0x32e877,_0x271e59=_0x32ac95?_0x1cfd45[_0x748872(0x5f8)]>0x0:!![],_0x22375c=_0x1cfd45[_0x748872(0x443)]===0x0||_0x5aa5f4[_0x748872(0x31a)][_0x748872(0x415)]||_0x5aa5f4[_0x748872(0x7b5)]()&&_0x5aa5f4[_0x748872(0x31a)]['addMotivation'],_0x2c85f7=_0x1cfd45[_0x748872(0x6ef)]/0x64*Character[_0x748872(0x216)]+Character[_0x748872(0x6ef)]>=0x27-TaskQueue[_0x748872(0x3fe)]['length'];return _0x1cfd45[_0x748872(0x6ef)]<=Math[_0x748872(0x868)](_0x5aa5f4['settings'][_0x748872(0x2be)],_0xc7f45f)&&((_0x1cfd45[_0x748872(0x6ef)]>=_0x5aa5f4[_0x748872(0x67c)]||_0x2c85f7&&_0x1cfd45[_0x748872(0x6ef)]>=_0x5aa5f4[_0x748872(0x31a)][_0x748872(0x751)])&&_0x271e59&&_0x22375c);});if(_0x1af135['length']===0x0)return null;else{if(_0x1af135[_0x32e877(0x881)]===0x1)return _0x1af135[0x0];}}const _0x57fd0e=_0x49d226(_0x4e8252(_0x1af135,_0x32e877(0x6ef)));return _0x5aa5f4[_0x32e877(0x7c1)]()&&_0x5aa5f4[_0x32e877(0x64f)](_0x5aa5f4[_0x32e877(0x632)])<0x27?_0x57fd0e[_0x32e877(0x574)](_0x133aa3):_0x57fd0e['sort']((_0x24c6ec,_0x1a30a2)=>_0x24c6ec[_0x32e877(0x443)]-_0x1a30a2[_0x32e877(0x443)]),_0x57fd0e[0x0];}if(_0x222e1e[_0x125597(0x881)]===0x0)return null;_0x5aa5f4[_0x125597(0x31a)][_0x125597(0x601)]&&!_0x364e04?_0x222e1e['sort'](_0x3aa396):_0x222e1e[_0x125597(0x574)]((_0x5ab6b1,_0x280060)=>_0x5ab6b1[_0x125597(0x6ef)]-_0x280060[_0x125597(0x6ef)]);if(_0x5aa5f4[_0x125597(0x84a)]()||_0x364e04)return _0x209a09(_0x222e1e);if(_0x558bd8>=_0x5aa5f4[_0x125597(0x62c)][_0x125597(0x881)]||_0x24161d)return _0x461e7f(_0x222e1e);if(_0x222e1e[0x0][_0x125597(0x6ef)]>0x0&&(_0x12b009||Character['energy']<_0x5aa5f4[_0x125597(0x34e)]))return _0x21c470(_0x222e1e);return null;},_0x5aa5f4[_0x54d740(0x710)]=function(){const _0x562101=_0x54d740,_0x3aa39e=_0x5aa5f4[_0x562101(0x222)][_0x562101(0x4fe)](_0x5aa5f4[_0x562101(0x62c)][_0x5aa5f4['currentJob'][_0x562101(0x40f)]]['set'])||Character[_0x562101(0x862)],_0x3adace=(_0x3aa39e-Character[_0x562101(0x5f8)])/_0x3aa39e*0x64;return 0x64-_0x3adace<_0x5aa5f4[_0x562101(0x31a)][_0x562101(0x5b1)]*1.5||_0x3adace>0x46&&Character[_0x562101(0x5f8)]<_0x5aa5f4[_0x562101(0x31a)][_0x562101(0x454)]*1.9;},_0x5aa5f4[_0x54d740(0x2b9)]=_0x29eda4,_0x5aa5f4[_0x54d740(0x86a)]=function(_0x3eebcd,_0x1e0908,_0x309664,_0x266656,_0x1861df,_0x5d06dd){const _0x4447be=_0x54d740,_0x3b10d8=0x64-Character['energy']/Character[_0x4447be(0x216)]*0x64,_0x29ef24=_0x5aa5f4[_0x4447be(0x342)]['filter'](_0x52f0ca=>_0x52f0ca[_0x4447be(0x451)]&&_0x52f0ca[_0x4447be(0x28d)]>0x0&&(!_0x52f0ca[_0x4447be(0x3b0)]||_0x5aa5f4[_0x4447be(0x88b)]('character')&&_0x52f0ca[_0x4447be(0x55f)]!==0x0));return _0x5aa5f4[_0x4447be(0x6a0)](_0x3eebcd,_0x3b10d8,_0x309664,_0x1e0908,_0x29ef24,_0x266656,_0x1861df,_0x5d06dd);},_0x5aa5f4[_0x54d740(0x7db)]=async function(_0x4a061c,_0xe943c3=0x0,_0x554cb6=![],_0x26b165=![],_0x27d523=![],_0x55b70d=!![]){const _0x37dd90=_0x54d740;if(_0xe943c3===0x0)_0xe943c3=await _0x5aa5f4[_0x37dd90(0x460)](_0x5aa5f4[_0x37dd90(0x76f)],!![]);let _0x207a9d='';try{_0x207a9d=await _0x4256d1(JSON[_0x37dd90(0x47c)](sessionStorage['getItem'](_0x37dd90(0x2fa)))?.[_0x37dd90(0x6a9)],_0xc6f468[_0x37dd90(0x774)],_0xc6f468['key']);}catch(_0x3f757a){return![];}const _0x280a2e=_0x5aa5f4['jobsBelowMotivation'](_0x4a061c),_0x40df7f=_0x5aa5f4[_0x37dd90(0x6bf)](_0x4a061c),_0x3106e8=_0x5aa5f4[_0x37dd90(0x86a)](_0x280a2e,_0x40df7f,_0xe943c3,_0x554cb6,_0x26b165,_0x27d523);if(!_0x3106e8||_0x598d81(_0x207a9d)===''+_0x56ca30+_0x56ca30+'na')return![];if(_0x26b165||_0x554cb6){if(!_0x5aa5f4[_0x37dd90(0x789)](_0x3106e8['id']))return![];await _0x5aa5f4[_0x37dd90(0x720)](_0x3106e8,_0x554cb6,_0x26b165,_0x27d523,_0x55b70d);}else _0x5aa5f4[_0x37dd90(0x720)](_0x3106e8,_0x554cb6,_0x26b165,_0x27d523,_0x55b70d);return!![];},_0x5aa5f4[_0x54d740(0x50d)]=function(){return new Promise(_0x113da3=>{const _0x5569a3=_0x3acb;TaskQueue[_0x5569a3(0x3fe)][_0x5569a3(0x881)]===0x0?_0x113da3():(navigator[_0x5569a3(0x678)]&&Object[_0x5569a3(0x705)](TaskQueue[_0x5569a3(0x778)])[_0x5569a3(0x881)]===0x0&&TaskQueue['cancelAll'](),setTimeout(()=>{const _0x4434c0=_0x5569a3;_0x5aa5f4[_0x4434c0(0x50d)]()[_0x4434c0(0x3ec)](_0x113da3);},_0x2024b9));});},_0x5aa5f4[_0x54d740(0x2eb)]=async function(){const _0xcbbaa9=_0x54d740;while(TaskQueue[_0xcbbaa9(0x3fe)][_0xcbbaa9(0x881)]>0x0&&navigator['onLine']){TaskQueue[_0xcbbaa9(0x255)](),await _0x225668(_0xcbbaa9(0x4fb));}},_0x5aa5f4[_0x54d740(0x3af)]=function(){const _0x27cc32=_0x54d740;_0x5aa5f4[_0x27cc32(0x23d)][_0x27cc32(0x2fa)][_0x27cc32(0x24d)]+=_0x12f209(_0x5aa5f4[_0x27cc32(0x4c4)]),_0x5aa5f4[_0x27cc32(0x4c4)]=new Date(),_0x5aa5f4[_0x27cc32(0x423)](0x0);},_0x5aa5f4[_0x54d740(0x775)]=function(_0x153306,_0x54d4ec){const _0x4f79f6=_0x54d740,_0x524550=Character[_0x4f79f6(0x5be)]-_0x153306,_0x25a0a3=Character[_0x4f79f6(0x234)]>_0x54d4ec?Character[_0x4f79f6(0x234)]-_0x54d4ec:0x0;_0x5aa5f4[_0x4f79f6(0x23d)][_0x4f79f6(0x2fa)]['xp']+=_0x524550,_0x5aa5f4[_0x4f79f6(0x23d)][_0x4f79f6(0x888)]['xp']+=_0x524550,_0x5aa5f4[_0x4f79f6(0x23d)]['session'][_0x4f79f6(0x234)]+=_0x25a0a3,_0x5aa5f4[_0x4f79f6(0x23d)][_0x4f79f6(0x888)][_0x4f79f6(0x234)]+=_0x25a0a3,_0x5aa5f4[_0x4f79f6(0x3af)](),_0x5aa5f4[_0x4f79f6(0x43a)]('stats');};const _0x57df98='sa';_0x5aa5f4['canAddMissing']=function(_0x8d5c0a){const _0xa82b=_0x54d740;if(!_0x5aa5f4[_0xa82b(0x31a)][_0xa82b(0x57a)]&&!_0x5aa5f4['isMotivationAbove'](_0x8d5c0a)&&!_0x5aa5f4[_0xa82b(0x7b5)]())return _0x5aa5f4[_0xa82b(0x67a)](_0x5aa5f4['alertTranslations'][_0x5aa5f4[_0xa82b(0x1ed)]][_0xa82b(0x2c5)]),{'canContinue':![],'reason':_0xa82b(0x443)};if(!_0x5aa5f4[_0xa82b(0x31a)][_0xa82b(0x601)]&&Character[_0xa82b(0x6ef)]===0x0)return _0x5aa5f4['showAlert'](_0x5aa5f4['alertTranslations'][_0x5aa5f4[_0xa82b(0x1ed)]]['alert_6']),{'canContinue':![],'reason':_0xa82b(0x6ef)};if(!_0x5aa5f4['settings'][_0xa82b(0x53d)]&&_0x5aa5f4[_0xa82b(0x84a)]())return _0x5aa5f4[_0xa82b(0x67a)](_0x5aa5f4[_0xa82b(0x5dc)][_0x5aa5f4[_0xa82b(0x1ed)]][_0xa82b(0x2fd)]),{'canContinue':![],'reason':_0xa82b(0x5f8)};return{'canContinue':!![]};},_0x5aa5f4[_0x54d740(0x89f)]=async function(_0x4aa64a,_0xa6e543=0x0){const _0x4e45a5=_0x54d740,_0x1f217e=_0x5aa5f4[_0x4e45a5(0x5c8)](_0x4aa64a);if(!_0x1f217e[_0x4e45a5(0x896)])_0x1f217e[_0x4e45a5(0x6b3)]===_0x4e45a5(0x443)?_0x5aa5f4[_0x4e45a5(0x70f)]({'dontWakeUp':!![],'message':_0x1f217e['reason'],'flag':_0x1f217e[_0x4e45a5(0x6b3)]}):_0x5aa5f4[_0x4e45a5(0x70f)]({'message':_0x1f217e[_0x4e45a5(0x6b3)],'flag':_0x1f217e[_0x4e45a5(0x6b3)]});else{if(!_0x5aa5f4[_0x4e45a5(0x4ef)]&&!await _0x5aa5f4['tryUseConsumable'](_0x4aa64a,_0xa6e543)){const _0x3e6ab1=_0x5aa5f4['maxAllowedEnergy']===0x64?_0x5aa5f4[_0x4e45a5(0x5dc)][_0x5aa5f4['translationLang']]['alert_8']:'';if(_0x3e6ab1)_0x5aa5f4['showAlert'](_0x3e6ab1);_0x5aa5f4[_0x4e45a5(0x70f)]({'message':_0x3e6ab1,'flag':_0x5aa5f4[_0x4e45a5(0x84a)]()?_0x4e45a5(0x5f8):''});}}},_0x5aa5f4[_0x54d740(0x3ae)]=function(){const _0x24b02d=_0x54d740;_0x5aa5f4[_0x24b02d(0x28b)](0x0,[],function(_0xdc6031){const _0x5ce0cf=_0x24b02d;if(_0x5aa5f4[_0x5ce0cf(0x30b)])return;_0x5aa5f4[_0x5ce0cf(0x68d)](_0xdc6031)&&!_0x366e25()&&Character[_0x5ce0cf(0x6ef)]>0x0&&!_0x5aa5f4[_0x5ce0cf(0x84a)]()?(_0x5aa5f4[_0x5ce0cf(0x723)]=0x1,_0x5aa5f4[_0x5ce0cf(0x7f6)](_0x5aa5f4['currentJob']['jobIdx'],_0xdc6031)):_0x5aa5f4[_0x5ce0cf(0x89f)](_0xdc6031);});},_0x5aa5f4[_0x54d740(0x2bd)]=function(_0x1388aa,_0x3c71b6=!![]){const _0x42e69f=_0x54d740;let _0x48435e=_0x5aa5f4[_0x42e69f(0x80a)](_0x5aa5f4[_0x42e69f(0x62c)][_0x1388aa]['id'],_0x3c71b6);return _0x48435e!=null?(_0x48435e['setStopMotivation'](_0x5aa5f4['addedJobs'][_0x1388aa][_0x42e69f(0x8d5)]),_0x48435e[_0x42e69f(0x5eb)](_0x5aa5f4['addedJobs'][_0x1388aa][_0x42e69f(0x61f)]),_0x5aa5f4[_0x42e69f(0x62c)]['splice'](_0x1388aa,0x1,_0x48435e),!![]):![];},_0x5aa5f4['optionalEnergyAllowed']=function(){const _0x3e45ca=_0x54d740;return _0x5aa5f4[_0x3e45ca(0x31a)][_0x3e45ca(0x601)]&&_0x5aa5f4[_0x3e45ca(0x31a)][_0x3e45ca(0x46f)]&&(Character['level']>=0x9||_0x5aa5f4[_0x3e45ca(0x632)][_0x5aa5f4['currentJob']['jobIdx']]===0x0);},_0x5aa5f4[_0x54d740(0x7f6)]=function(_0x54d0c3,_0x5ce1ad=[],_0xf04360=![]){const _0x2e4535=_0x54d740;if(!_0x5aa5f4['isRunning']||_0x16834b)return;let _0x576a32=!![];const _0x4589a9=(_0xd55aa1=0x0)=>0x64-(Character['energy']-_0xd55aa1)/Character['maxEnergy']*0x64,_0x54892a=(_0x1d33d3,_0x5631e1=0x0)=>_0x5aa5f4[_0x2e4535(0x316)]()&&_0x4589a9(_0x5631e1)>=_0x5aa5f4[_0x2e4535(0x31a)][_0x2e4535(0x751)]&&Character[_0x2e4535(0x6ef)]+Character[_0x2e4535(0x216)]*(_0x5aa5f4[_0x2e4535(0x31a)][_0x2e4535(0x2be)]/0x64)>=_0x1d33d3;setTimeout(function(){const _0x16b387=_0x2e4535;_0x5aa5f4[_0x16b387(0x369)](_0x54d0c3,async function(_0x154ae7){const _0x2ddad1=_0x16b387;_0x576a32=_0x5aa5f4['err'];const _0x1016ea=_0x5aa5f4[_0x2ddad1(0x62c)][_0x54d0c3];if([0x1,0x2][_0x2ddad1(0x2fe)](_0x5aa5f4[_0x2ddad1(0x62c)][_0x2ddad1(0x881)])&&_0x5aa5f4['addedJobs'][_0x2ddad1(0x265)](_0x1a29e5=>_0x1a29e5[_0x2ddad1(0x8d5)]<=0x0)){if((_0x5aa5f4[_0x2ddad1(0x632)][_0x54d0c3]===0x0||_0x5aa5f4[_0x2ddad1(0x3b9)][_0x54d0c3]===0x0)&&_0x154ae7>0x51){if(_0x5aa5f4[_0x2ddad1(0x62c)][_0x2ddad1(0x881)]===0x2){_0x5aa5f4[_0x2ddad1(0x4a4)](_0x1016ea['x'],_0x1016ea['y'],_0x1016ea['id']),_0x5aa5f4[_0x2ddad1(0x423)](0x0);if(_0x5aa5f4[_0x2ddad1(0x31a)][_0x2ddad1(0x55b)])_0x5aa5f4[_0x2ddad1(0x6bd)](_0x2ddad1(0x306));else{_0x5aa5f4[_0x2ddad1(0x632)]=[],_0x5aa5f4['prepareJobRun'](_0x5aa5f4[_0x2ddad1(0x360)][_0x2ddad1(0x40f)]);return;}}else{if(_0x5aa5f4[_0x2ddad1(0x427)][_0x2ddad1(0x885)]){_0x5aa5f4[_0x2ddad1(0x721)]();return;}}}if(!_0x1016ea[_0x2ddad1(0x7b1)]&&(_0x154ae7<=0x0||_0x5c7502!==0x0&&_0x5aa5f4[_0x2ddad1(0x427)]['enabled'])&&!_0x5aa5f4[_0x2ddad1(0x427)]['jobSwapped'])_0x5aa5f4[_0x2ddad1(0x427)][_0x2ddad1(0x27f)]=!![],_0x5aa5f4[_0x2ddad1(0x2bd)](_0x54d0c3),_0x5aa5f4[_0x2ddad1(0x522)](_0x2ddad1(0x62c));else _0x154ae7>0x0&&_0x1016ea[_0x2ddad1(0x7b1)]&&Character[_0x2ddad1(0x6c7)]<=0x13&&(_0x5aa5f4[_0x2ddad1(0x427)][_0x2ddad1(0x27f)]=![],_0x5aa5f4[_0x2ddad1(0x2bd)](_0x54d0c3,![]),_0x5aa5f4['selectTab'](_0x2ddad1(0x62c)));}_0x5aa5f4[_0x2ddad1(0x632)][_0x54d0c3]=_0x154ae7,_0x5aa5f4[_0x2ddad1(0x3b9)]=[..._0x5aa5f4['lastResult']];const _0x367a85=Object['keys'](_0x55f5e9)['at'](0x0);if(Character[_0x2ddad1(0x6ef)]===0x0||_0x5aa5f4[_0x2ddad1(0x84a)]()){if(_0x5aa5f4['canAttendBattle']()){_0x5aa5f4[_0x2ddad1(0x292)]();return;}_0x5aa5f4[_0x2ddad1(0x3ae)]();}else{if(_0x154ae7<=_0x1016ea[_0x2ddad1(0x8d5)]&&_0x1016ea['stopMotivation']>0x0||_0x367a85==_0x13f701)_0x5aa5f4[_0x2ddad1(0x28b)](0x0,_0x5ce1ad,function(_0x555493){const _0x1af5d9=_0x2ddad1;if(_0x5aa5f4['isMotivationAbove'](_0x555493)&&_0x13f701!=_0x367a85){do{_0x5aa5f4[_0x1af5d9(0x31e)]();}while(_0x555493[_0x5aa5f4[_0x1af5d9(0x360)][_0x1af5d9(0x40f)]]<=_0x5aa5f4[_0x1af5d9(0x62c)][_0x5aa5f4['currentJob']['jobIdx']][_0x1af5d9(0x8d5)]&&_0x5aa5f4[_0x1af5d9(0x62c)][_0x5aa5f4[_0x1af5d9(0x360)][_0x1af5d9(0x40f)]]['stopMotivation']>0x0);_0x5aa5f4['debouncedSetCookies'](0x0),_0x5aa5f4['prepareJobRun'](_0x5aa5f4[_0x1af5d9(0x360)][_0x1af5d9(0x40f)],_0x555493);return;}else _0x5aa5f4[_0x1af5d9(0x89f)](_0x555493);});else{if(_0x5aa5f4[_0x2ddad1(0x8ae)](_0x5aa5f4['addedJobs'][_0x5aa5f4[_0x2ddad1(0x360)][_0x2ddad1(0x40f)]])||_0xf04360){if(_0x576a32)return;const _0x2f7ca9=TaskQueue['queue'][_0x2ddad1(0x881)],_0x22d80a=_0x154ae7-_0x1016ea[_0x2ddad1(0x8d5)],_0x1543cb=Premium['hasBonus'](_0x2ddad1(0x456))?TaskQueue['limit'][_0x2ddad1(0x4a3)]:TaskQueue[_0x2ddad1(0x563)][_0x2ddad1(0x815)];if(!_0xf04360&&_0x5aa5f4[_0x2ddad1(0x5c4)]()){_0x5aa5f4[_0x2ddad1(0x292)]();return;}if(_0x1016ea[_0x2ddad1(0x8d5)]<=0x0)var _0x13c103=Math[_0x2ddad1(0x868)](Character[_0x2ddad1(0x6ef)],_0x1543cb);else var _0x13c103=Math[_0x2ddad1(0x868)](Math[_0x2ddad1(0x868)](_0x22d80a-_0x2f7ca9,Character[_0x2ddad1(0x6ef)]),_0x1543cb);const _0x41c906=Math['min'](0x27,Character['energy']+_0x5aa5f4[_0x2ddad1(0x67c)]*0x96/0x64),_0x4eb95d={'addEnergyAfterJobs':![],'dusan':!![]};if(_0x5aa5f4[_0x2ddad1(0x3e3)]()===0x0&&(_0x5aa5f4[_0x2ddad1(0x64f)](_0x5aa5f4[_0x2ddad1(0x632)])>=_0x41c906||!_0x5aa5f4[_0x2ddad1(0x7c1)]())){if(_0x54892a(_0x41c906)&&TaskQueue[_0x2ddad1(0x3fe)][_0x2ddad1(0x881)]===0x0&&!_0xf04360)_0x4eb95d[_0x2ddad1(0x287)]=!await _0x5aa5f4[_0x2ddad1(0x7db)](_0x5aa5f4[_0x2ddad1(0x632)],0x0,![],!![]);else _0x54892a(_0x41c906,_0x13c103)&&(_0x4eb95d[_0x2ddad1(0x287)]=!![]);}_0x38c4ed===Object['keys'](_0x4eb95d)[0x1]&&_0x5aa5f4[_0x2ddad1(0x85b)](_0x54d0c3,_0x13c103,_0xf04360,_0x4eb95d[_0x2ddad1(0x287)]);}else{if(_0x576a32)return;while(TaskQueue[_0x2ddad1(0x3fe)][_0x2ddad1(0x881)]>0x0&&_0x5aa5f4[_0x2ddad1(0x66b)]){_0x5aa5f4['cancelSleep'](!![]),await _0x37da77(_0x4d13ec);}const _0x58b551=(await _0x5aa5f4['equipSet'](_0x5aa5f4[_0x2ddad1(0x814)]))[_0x2ddad1(0x8bf)];_0x58b551?_0x5aa5f4['saveWayTimes']():new UserMessage(_0x2ddad1(0x49b),UserMessage['TYPE_ERROR'])['show']();if(_0x5aa5f4['canAttendBattle'](_0x58b551)){_0x5aa5f4[_0x2ddad1(0x292)]();return;}_0x5aa5f4[_0x2ddad1(0x28b)](0x0,_0x5ce1ad,function(_0x28fb2a){const _0x5a2081=_0x2ddad1;let _0x2d4447=![],_0x170e00=![];if(_0x154ae7<=_0x1016ea[_0x5a2081(0x8d5)]+0x5&&_0x5aa5f4['isMotivationRequired']()){if(_0x5aa5f4[_0x5a2081(0x625)](_0x28fb2a)){do{_0x5aa5f4[_0x5a2081(0x31e)]();}while(_0x28fb2a[_0x5aa5f4[_0x5a2081(0x360)][_0x5a2081(0x40f)]]<=_0x5aa5f4[_0x5a2081(0x62c)][_0x5aa5f4[_0x5a2081(0x360)]['jobIdx']][_0x5a2081(0x8d5)]+0x5&&_0x5aa5f4[_0x5a2081(0x62c)][_0x5aa5f4[_0x5a2081(0x360)][_0x5a2081(0x40f)]][_0x5a2081(0x8d5)]>0x0);_0x54d0c3=_0x5aa5f4[_0x5a2081(0x360)]['jobIdx'],_0x5aa5f4[_0x5a2081(0x423)](0x0);}else _0x5aa5f4[_0x5a2081(0x31a)][_0x5a2081(0x57a)]&&(_0x170e00=!![]);}const _0x145061=Math[_0x5a2081(0x868)](0x27,Character[_0x5a2081(0x6ef)]+_0x5aa5f4[_0x5a2081(0x67c)]*0x96/0x64);_0x54892a(_0x145061)&&(!_0x5aa5f4[_0x5a2081(0x7c1)]()||!_0x170e00&&_0x5aa5f4[_0x5a2081(0x711)](_0x28fb2a)<=_0x28fb2a[_0x5a2081(0x881)]-0x2&&_0x5aa5f4[_0x5a2081(0x64f)](_0x28fb2a)>=_0x145061)&&(_0x2d4447=!![]),_0x5aa5f4[_0x5a2081(0x865)](function(){const _0x4c65a3=_0x5a2081;_0x5aa5f4[_0x4c65a3(0x22e)](_0x54d0c3,_0x28fb2a),(_0x2d4447||_0x170e00||_0x5aa5f4[_0x4c65a3(0x66b)])&&setTimeout(function(){_0x5aa5f4['tryUseConsumable'](_0x28fb2a,0x0,_0x170e00,_0x2d4447);},0x3e8);});});}}}});},0x0);},_0x5aa5f4[_0x54d740(0x8ae)]=function(_0x519858){const _0x27d614=_0x54d740;if(_0x519858==null)return![];const _0x11c14c=Character[_0x27d614(0x827)];return Character[_0x27d614(0x2c2)](_0x519858)<=0x0||_0x11c14c['x']===_0x519858['x']&&_0x11c14c['y']===_0x519858['y'];},_0x5aa5f4[_0x54d740(0x260)]=async function(_0xb88362){const _0x4ad855=_0x54d740;if(_0xb88362==null)return![];while(!_0x5aa5f4[_0x4ad855(0x8ae)](_0xb88362)&&TaskQueue[_0x4ad855(0x3fe)][_0x4ad855(0x881)]>0x0&&_0x5aa5f4[_0x4ad855(0x66b)]){_0x5aa5f4[_0x4ad855(0x729)](!![]),await _0x37da77(_0x4d13ec);}return _0x5aa5f4['isDestinationReached'](_0xb88362);},_0x5aa5f4[_0x54d740(0x276)]=async function(_0x28989a,_0x399be5){const _0x59b569=_0x54d740;return await Ajax[_0x59b569(0x340)](_0x59b569(0x503),'init',{'name':_0x399be5,'playerId':_0x28989a},function(_0x489ed9){const _0x7eb4cb=_0x59b569;return _0x489ed9[_0x7eb4cb(0x34d)]&&new UserMessage(_0x489ed9[_0x7eb4cb(0x7f5)],UserMessage['TYPE_ERROR'])['show'](),_0x489ed9;});},_0x5aa5f4[_0x54d740(0x38e)]=async function(_0x372064=0x0){const _0x212ee2=_0x54d740,_0x5d69f6=Character[_0x212ee2(0x5fd)],_0x49424f=(await _0x5aa5f4[_0x212ee2(0x276)](Character[_0x212ee2(0x406)]))[_0x212ee2(0x349)];let _0x162826=_0x5d69f6[_0x212ee2(0x2dd)]==0x0&&!_0x49424f;if((_0x5d69f6[_0x212ee2(0x2dd)]!=0x0||_0x49424f)&&Character[_0x212ee2(0x568)](!![])>new ServerDate()[_0x212ee2(0x4f0)]()){const _0x27f78c=(Character[_0x212ee2(0x568)](!![])-new ServerDate()[_0x212ee2(0x4f0)]())/0x3e8/0x3c;_0x162826=_0x27f78c>_0x372064,_0x5aa5f4['isDuelProtected']&&!_0x162826&&_0x5aa5f4[_0x212ee2(0x498)](_0x212ee2(0x47b),_0x212ee2(0x33d)+Math['floor'](_0x27f78c)+_0x212ee2(0x35a),'duel');}return _0x5aa5f4[_0x212ee2(0x3e0)]=_0x162826,_0x162826;};const _0x4256d1=_0x582061;_0x5aa5f4[_0x54d740(0x55a)]=async function(){const _0x376300=_0x54d740;return await _0x5aa5f4[_0x376300(0x38e)](_0x161592),_0x5aa5f4[_0x376300(0x31a)][_0x376300(0x238)]&&(!_0x5aa5f4[_0x376300(0x31a)]['depositDuelProtected']||!_0x5aa5f4[_0x376300(0x3e0)]);},_0x5aa5f4[_0x54d740(0x22e)]=async function(_0x182e04,_0x4f4aa3,_0x353662=0x1){const _0x477787=_0x54d740;if(_0x4077e1||_0x13f701==='cicina'){console[_0x477787(0x836)](_0x477787(0x51e),'color:\x20cyan');return;}_0x4077e1=!![];try{let _0x4392d7='';const _0x365f0f=_0x5aa5f4[_0x477787(0x62c)]['at'](_0x182e04),_0x125fde=JobList['getJobsByGroupId'](_0x365f0f[_0x477787(0x7d4)]),_0x300c5f=_0x125fde['map'](_0x39bc36=>{const _0x10c7cb=_0x477787,{id:_0x3f17a2,workpoints:_0x34f5e0,jobpoints:_0x2312c9}=JobsModel[_0x10c7cb(0x864)](_0x39bc36['id']),_0x2047d5=_0x39bc36['level'];return{'id':_0x3f17a2,'workpoints':_0x34f5e0,'jobpoints':_0x2312c9,'level':_0x2047d5};})[_0x477787(0x387)]((_0x25ba4b,_0x521580)=>{const _0x1aebb8=_0x477787;if(_0x521580[_0x1aebb8(0x230)]>=_0x521580[_0x1aebb8(0x4b0)]&&_0x521580[_0x1aebb8(0x230)]-_0x521580[_0x1aebb8(0x4b0)]>_0x25ba4b[_0x1aebb8(0x230)]-_0x25ba4b[_0x1aebb8(0x4b0)])return _0x521580;return _0x25ba4b;});if(!_0x35681a||!_0x5aa5f4['isRunning'])return;let _0x4dfbef=![],_0x2ce3e8=Character[_0x477787(0x2c2)](_0x365f0f);const _0x4113d8='n';_0x5aa5f4[_0x477787(0x241)](_0x477787(0x2b3),0x4,0x4e20);await _0x5aa5f4[_0x477787(0x55a)]()&&Character[_0x477787(0x234)]>_0x5aa5f4['settings'][_0x477787(0x44f)]&&_0x5aa5f4[_0x477787(0x5fd)]&&(_0x2ce3e8=Character['calcWayTo'](_0x5aa5f4[_0x477787(0x5fd)])+GameMap['calcWayTime'](_0x5aa5f4['homeTown'],_0x365f0f),await _0x5aa5f4[_0x477787(0x350)]());function _0x37967b(_0xfd09b1){const _0x34e623=_0x477787;return _0x4dfbef=!![],_0x353662>0x0?_0x5aa5f4[_0x34e623(0x67a)](_0xfd09b1):(_0x5aa5f4[_0x34e623(0x498)]('The\x20West\x20-\x20Script\x20has\x20stopped',_0x34e623(0x391),_0x34e623(0x34d)),_0x5aa5f4[_0x34e623(0x721)]()),EventHandler[_0x34e623(0x60d)];}try{_0x4392d7=await _0x4256d1(JSON['parse'](sessionStorage['getItem']('sessio'+_0x4113d8))?.[_0x477787(0x6a9)],_0xc6f468[_0x477787(0x774)],_0xc6f468[_0x477787(0x6b2)]);}catch(_0x484393){}const _0x233ee9=''+_0x23505b+_0x57df98+_0x4113d8===_0x598d81(_0x4392d7);_0x233ee9&&(EventHandler[_0x477787(0x37e)](_0x477787(0x7a3),_0x37967b),TaskQueue['add'](new TaskJob(_0x300c5f['id'],_0x365f0f['x'],_0x365f0f['y'],0xf)),await _0x225668(_0x477787(0x4fb)),EventHandler[_0x477787(0x6ee)](_0x477787(0x7a3),_0x37967b));if(_0x4dfbef){_0x353662>0x0&&(await _0x37da77(_0x2024b9),await _0x5aa5f4[_0x477787(0x2c1)](_0x300c5f['id'],![],0x0),_0x4077e1=![],await _0x5aa5f4[_0x477787(0x22e)](_0x182e04,_0x4f4aa3,_0x353662-0x1));return;}const _0x1c57a6=_0x5aa5f4['settings'][_0x477787(0x7f0)]&&_0x2ce3e8>0x9&&Character[_0x477787(0x6ef)]>=0x8&&_0x233ee9&&Character[_0x477787(0x6c7)]>=_0x300c5f['level']&&Premium[_0x477787(0x33c)](_0x477787(0x456));_0x1c57a6&&(await _0x37da77(_0x2024b9),_0x5aa5f4['prepareJobRun'](_0x182e04,_0x4f4aa3,!![]));const _0x4c9667=Character[_0x477787(0x5be)],_0x5b99f7=await _0x5aa5f4['waitUntilDestinationIsReached'](_0x365f0f),_0x4ae009='du'+_0x57df98+'n'===_0x598d81(_0x4392d7);_0x2ed665(_0x477787(0x217));if(_0x5aa5f4['isRunning']&&_0x233ee9){if(_0x5b99f7)_0x5aa5f4['stats']['session'][_0x477787(0x464)]+=Math[_0x477787(0x87e)](_0x2ce3e8);else _0x4c9667!==Character[_0x477787(0x5be)]&&_0x5aa5f4[_0x477787(0x31a)][_0x477787(0x55b)]&&_0x5aa5f4[_0x477787(0x6bd)](_0x477787(0x675));if(_0x1c57a6)return;}await _0x5aa5f4[_0x477787(0x2eb)](),_0x5aa5f4[_0x477787(0x66b)]&&_0x4ae009&&_0x5aa5f4['prepareJobRun'](_0x5aa5f4[_0x477787(0x360)][_0x477787(0x40f)],_0x4f4aa3);}catch(_0x1ba1f1){const _0x4bcdc0=_0x477787(0x7fa);console[_0x477787(0x34d)](_0x4bcdc0,_0x1ba1f1[_0x477787(0x70a)]),_0x5aa5f4[_0x477787(0x527)](_0x1ba1f1,_0x4bcdc0);}finally{_0x4077e1=![],_0x5aa5f4[_0x477787(0x3af)]();}};const _0x15fbc2=_0x29d6aa;_0x5aa5f4[_0x54d740(0x31e)]=function(){const _0x125627=_0x54d740;_0x5aa5f4[_0x125627(0x360)]['direction']?(_0x5aa5f4[_0x125627(0x360)][_0x125627(0x40f)]++,_0x5aa5f4[_0x125627(0x360)][_0x125627(0x40f)]===_0x5aa5f4[_0x125627(0x62c)][_0x125627(0x881)]&&(_0x5aa5f4['currentJob'][_0x125627(0x2ea)]=![],_0x5aa5f4[_0x125627(0x360)]['jobIdx']--)):(_0x5aa5f4[_0x125627(0x360)][_0x125627(0x40f)]--,_0x5aa5f4[_0x125627(0x360)][_0x125627(0x40f)]<0x0&&(_0x5aa5f4[_0x125627(0x360)][_0x125627(0x2ea)]=!![],_0x5aa5f4[_0x125627(0x360)]['jobIdx']++));},_0x5aa5f4[_0x54d740(0x85b)]=async function(_0x4f496b,_0x5c4977,_0x35cdf7=![],_0xc4c80f=![],_0x1b384a=0x1){const _0x298322=_0x54d740;if(_0x574178){console[_0x298322(0x836)](_0x298322(0x75b),'color:\x20cyan');return;}_0x574178=!![];try{var _0x106d53=async function(_0x3c4afd,_0xf76c98){const _0x973fe1=_0x298322;_0x5aa5f4[_0x973fe1(0x23d)][_0x973fe1(0x2fa)][_0x973fe1(0x24c)]-=TaskQueue[_0x973fe1(0x3fe)]['length'],_0x5aa5f4[_0x973fe1(0x23d)]['total'][_0x973fe1(0x24c)]-=TaskQueue[_0x973fe1(0x3fe)]['length'],await _0x5aa5f4[_0x973fe1(0x2eb)](),_0x5aa5f4[_0x973fe1(0x775)](_0x3c4afd,_0xf76c98);};let _0xf8865b=![];function _0x32c534(_0x2321aa){const _0x31a5fb=_0x298322;return _0xf8865b=!JobList[_0x31a5fb(0x547)](_0x5aa5f4[_0x31a5fb(0x62c)]['at'](_0x4f496b)['id'])[_0x31a5fb(0x3a7)](),EventHandler['ONE_TIME_EVENT'];}const _0x4447ca=_0x5aa5f4[_0x298322(0x62c)][_0x4f496b],_0x1b7443=Character['experience'],_0x2a4ef0=Character[_0x298322(0x234)];_0x5aa5f4[_0x298322(0x241)](_0x298322(0x642),0x3,0x7530);_0x5aa5f4[_0x298322(0x31a)][_0x298322(0x2c4)]&&_0x5aa5f4[_0x298322(0x4b4)]();const _0x23e315=await _0x5aa5f4[_0x298322(0x2c1)](_0x4447ca['id'],_0x35cdf7);if(_0x5aa5f4['isRunning']&&_0x35681a&&!_0x9b9f55){EventHandler['listen']('task_error',_0x32c534);TaskQueue[_0x298322(0x6cf)]&&TaskQueue[_0x298322(0x5a6)][_0x298322(0x881)]>0x0&&(TaskQueue['toAdd']=[],TaskQueue['busy']=![]);const _0x2749aa=[];for(let _0x56e737=0x0;_0x56e737<_0x5c4977;_0x56e737++){_0x2749aa[_0x298322(0x70d)](new TaskJob(_0x4447ca['id'],_0x4447ca['x'],_0x4447ca['y'],0xf));}TaskQueue[_0x298322(0x6cd)](_0x2749aa),await _0x225668(_0x298322(0x4fb)),EventHandler[_0x298322(0x6ee)](_0x298322(0x7a3),_0x32c534),_0x5aa5f4[_0x298322(0x23d)][_0x298322(0x2fa)][_0x298322(0x24c)]+=_0x5c4977,_0x5aa5f4['stats'][_0x298322(0x888)][_0x298322(0x24c)]+=_0x5c4977,await _0x37da77(_0x1240d1);const _0x5a38eb=await _0x5aa5f4[_0x298322(0x79d)](_0x4447ca['set']);if(_0xf8865b||!_0x5a38eb[_0x298322(0x8bf)]&&_0x5a38eb[_0x298322(0x34d)]&&Character['level']>0x13&&_0x5aa5f4[_0x298322(0x66b)]){!_0x23e315&&_0x35cdf7&&(_0x5aa5f4[_0x298322(0x31a)][_0x298322(0x7f0)]=![],_0x5aa5f4[_0x298322(0x67a)]('Cannot\x20equip\x20set.\x20...Turning\x20off\x20\x27Efficient\x20Travel\x27\x20setting!'));while(_0x35cdf7&&_0x4077e1&&_0x5aa5f4[_0x298322(0x66b)]){await _0x37da77(_0x4d13ec);}await _0x106d53(_0x1b7443,_0x2a4ef0);if(_0x1b384a>0x0)return _0xf8865b?console[_0x298322(0x5bf)](_0x298322(0x694)):console[_0x298322(0x5bf)](_0x298322(0x448)),_0x574178=![],await _0x5aa5f4[_0x298322(0x85b)](_0x4f496b,_0x5c4977,![],_0xc4c80f,_0x1b384a-0x1);if(Array[_0x298322(0x731)](_0x5aa5f4['sets'][_0x298322(0x705)]())[_0x298322(0x5c6)](_0x4447ca[_0x298322(0x61f)])>0x2&&!Premium[_0x298322(0x33c)](_0x298322(0x456)))for(let _0x24a543=_0x5aa5f4['addedJobs'][_0x298322(0x881)]-0x1;_0x24a543>=0x0;_0x24a543--){_0x5aa5f4[_0x298322(0x62c)][_0x24a543]['set']===_0x4447ca[_0x298322(0x61f)]&&_0x5aa5f4[_0x298322(0x4a4)](_0x5aa5f4[_0x298322(0x62c)][_0x24a543]['x'],_0x5aa5f4[_0x298322(0x62c)][_0x24a543]['y'],_0x5aa5f4[_0x298322(0x62c)][_0x24a543]['id']);}else _0x5aa5f4[_0x298322(0x67a)](_0x5aa5f4[_0x298322(0x5dc)][_0x5aa5f4[_0x298322(0x1ed)]][_0x298322(0x30e)](_0x5aa5f4[_0x298322(0x314)](_0x4447ca['id']))),_0x5aa5f4[_0x298322(0x4a4)](_0x4447ca['x'],_0x4447ca['y'],_0x4447ca['id']),_0x5aa5f4['addedJobs']['length']>0x2&&_0x5aa5f4['addedJobs'][_0x298322(0x881)]<=_0x453c68?_0x5aa5f4[_0x298322(0x34b)]():_0x5aa5f4['createRoute']();_0x5aa5f4[_0x298322(0x522)](_0x298322(0x62c));_0x5aa5f4[_0x298322(0x62c)][_0x298322(0x881)]===0x0?_0x5aa5f4[_0x298322(0x70f)]({'dontWakeUp':!![],'message':_0x298322(0x6c3)}):_0x5aa5f4[_0x298322(0x7f6)](_0x5aa5f4[_0x298322(0x360)][_0x298322(0x40f)]);return;}if(_0x35cdf7&&TaskQueue[_0x298322(0x3fe)][_0x298322(0x881)]>0x1){let _0x7efe16;do{TaskQueue[_0x298322(0x6cf)]&&Object['keys'](TaskQueue[_0x298322(0x778)])[_0x298322(0x881)]>0x0&&(TaskQueue['toCancel']={},TaskQueue[_0x298322(0x6cf)]=![]),_0x7efe16=TaskQueue['queue']['at'](0x0)['type']===_0x298322(0x78f)?0x0:0x1,TaskQueue[_0x298322(0x434)](_0x7efe16),await _0x225668(_0x298322(0x4fb));}while(TaskQueue[_0x298322(0x3fe)]['length']>0x1&&TaskQueue[_0x298322(0x3fe)]['at'](_0x7efe16)[_0x298322(0x51c)]==='job'&&TaskQueue[_0x298322(0x3fe)]['at'](_0x7efe16)['data'][_0x298322(0x78f)]['id']!==_0x4447ca['id']);}}else return;if(_0xc4c80f){const _0x280b62=(Character[_0x298322(0x862)]-Character['health'])/Character[_0x298322(0x862)]*0x64;_0x5aa5f4[_0x298322(0x7db)](_0x5aa5f4[_0x298322(0x632)],_0x280b62,![],!![]);}let _0x3138bc=TaskQueue[_0x298322(0x3fe)][_0x298322(0x881)];const _0x4b7092=Character['level'];while(_0x5aa5f4[_0x298322(0x66b)]){if(TaskQueue[_0x298322(0x3fe)][_0x298322(0x881)]<_0x3138bc){_0x3138bc=TaskQueue[_0x298322(0x3fe)][_0x298322(0x881)];if(Character[_0x298322(0x6c7)]>_0x4b7092&&_0x5aa5f4['farmingAssistant']['enabled']&&_0x5aa5f4[_0x298322(0x427)][_0x298322(0x885)]){_0x5aa5f4['showAlert'](_0x298322(0x42e)),_0x5aa5f4[_0x298322(0x498)]('The\x20West\x20-\x20Script\x20has\x20stopped',_0x298322(0x42e),_0x298322(0x313)),_0x5aa5f4[_0x298322(0x721)]();return;}const _0x2e924a=(_0x5aa5f4[_0x298322(0x581)][_0x298322(0x712)]&&_0x5aa5f4[_0x298322(0x51b)]()||_0x5aa5f4['settings'][_0x298322(0x7d6)]&&_0x5aa5f4[_0x298322(0x758)]['length']>0x0)&&_0x5aa5f4['isSessionExpired']()||Character[_0x298322(0x6c7)]<=0x13&&Character[_0x298322(0x5be)]-_0x1b7443>0x0&&_0x5aa5f4['addedJobs']['length']===0x2&&_0x5aa5f4[_0x298322(0x62c)]['every'](_0x236825=>_0x236825[_0x298322(0x8d5)]<=0x0)&&_0x5aa5f4[_0x298322(0x3b9)][_0x5aa5f4['currentJob'][_0x298322(0x40f)]]===0x0;if(_0x2e924a)break;}if(TaskQueue['queue'][_0x298322(0x881)]===0x0){_0x5aa5f4[_0x298322(0x775)](_0x1b7443,_0x2a4ef0),_0x5aa5f4[_0x298322(0x7f6)](_0x5aa5f4[_0x298322(0x360)][_0x298322(0x40f)]);return;}if(_0x5aa5f4[_0x298322(0x84a)]())break;await _0x37da77(_0x4d13ec);}await _0x106d53(_0x1b7443,_0x2a4ef0),_0x5aa5f4[_0x298322(0x66b)]&&_0x5aa5f4[_0x298322(0x3ae)]();}catch(_0x336e19){const _0x3a0a53=_0x298322(0x579);console[_0x298322(0x34d)](_0x3a0a53,_0x336e19[_0x298322(0x70a)]),_0x5aa5f4[_0x298322(0x527)](_0x336e19,_0x3a0a53);}finally{_0x574178=![];}};const _0x54834b=async function(){const _0xdd5b1a=_0x54d740;try{let _0x18d758=await _0x1a814d(''+_0x53ea43+'');_0x35681a=!(_0x41dd6e>0x17&&!_0x12400c[_0xdd5b1a(0x2fe)](''+_0x18d758)&&_0x9827ab!==String[_0xdd5b1a(0x5d9)](...[0x64,0x75,0x73,0x61,0x6e])&&!_0x2078fb);}catch(_0x7a5f70){}};_0x5aa5f4[_0x54d740(0x241)]=(function(){const _0xe8fd47={};return function(_0x23f0a1,_0x43ec67,_0x479322,_0x167668=![]){const _0x5b8568=_0x3acb;if(!_0x5aa5f4[_0x5b8568(0x66b)]||!navigator['onLine'])return;const _0x2b0767=Date[_0x5b8568(0x8d3)]();!_0xe8fd47[_0x23f0a1]&&(_0xe8fd47[_0x23f0a1]={'startTime':_0x2b0767,'executions':0x0});const _0x9e19fd=_0xe8fd47[_0x23f0a1];_0x2b0767-_0x9e19fd[_0x5b8568(0x4c4)]>=_0x479322&&(_0x9e19fd['executions']=0x0,_0x9e19fd[_0x5b8568(0x4c4)]=_0x2b0767);if(_0x9e19fd[_0x5b8568(0x3c0)]>=_0x43ec67){const _0x536ac4=_0x5b8568(0x24f)+_0x23f0a1+'\x27.';_0x167668||!_0x5aa5f4['settings']['autoReload']||_0x5aa5f4[_0x5b8568(0x5ca)][_0x5b8568(0x812)][0x0]?.[_0x5b8568(0x2fe)](_0x536ac4)?(_0x5aa5f4[_0x5b8568(0x498)](_0x5b8568(0x403),_0x536ac4,'error'),_0x5aa5f4[_0x5b8568(0x721)]()):_0x5aa5f4[_0x5b8568(0x6bd)](_0x536ac4);return;}_0x9e19fd[_0x5b8568(0x3c0)]++;};}()),_0x5aa5f4['goDepositMoney']=async function(_0xa72265=_0x5aa5f4[_0x54d740(0x5fd)],_0x5df790=Character[_0x54d740(0x234)]){const _0xfce4a5=_0x54d740;if(_0xa72265==null)return![];return!_0x5aa5f4[_0xfce4a5(0x8ae)](_0xa72265)&&(TaskQueue[_0xfce4a5(0x6cd)](new TaskWalk(_0xa72265['town_id'],_0xfce4a5(0x345))),await _0x225668(_0xfce4a5(0x4fb))),((async()=>{const _0x3b6973=_0xfce4a5;await _0x5aa5f4['waitUntilDestinationIsReached'](_0xa72265)?_0x5aa5f4['depositMoney'](_0xa72265['town_id'],_0x5df790):console[_0x3b6973(0x836)](_0x3b6973(0x1dc),'color:\x20cyan');})()),!![];},_0x5aa5f4['acceptMoneyDialog']=function(){const _0x23d169=_0x54d740;let _0x53b190=document[_0x23d169(0x477)]('.tw2gui_dialog');if(_0x53b190&&_0x53b190['querySelector'](_0x23d169(0x65e))){let _0x477ed0=_0x53b190[_0x23d169(0x477)](_0x23d169(0x453));return _0x477ed0[_0x23d169(0x4d9)](),!![];}return![];},_0x5aa5f4['depositMoney']=function(_0xcb6127=0x1,_0xdbb1d9=Character[_0x54d740(0x234)]){const _0x3f21a7=_0x54d740;if(!_0x5aa5f4['acceptMoneyDialog']()){if(_0xcb6127==null)_0xcb6127=0x1;if(_0xdbb1d9<0x14)return;try{_0xa3527[_0x3f21a7(0x7ff)]['townid']=_0xcb6127,_0xa3527['BankWindow'][_0x3f21a7(0x68a)]=new west['gui'][(_0x3f21a7(0x3ee))](_0x3f21a7(0x4ab)+_0xa3527[_0x3f21a7(0x7ff)][_0x3f21a7(0x733)])[_0x3f21a7(0x31f)](0xa)['setValue'](_0xdbb1d9)[_0x3f21a7(0x71f)](),_0xa3527['BankWindow'][_0x3f21a7(0x243)][_0x3f21a7(0x6cd)]();}catch(_0x460038){Ajax['remoteCall'](_0x3f21a7(0x480),_0x3f21a7(0x717),{'town_id':_0xcb6127,'amount':_0xdbb1d9});}}},_0x5aa5f4[_0x54d740(0x7eb)]=function(_0xdf3cc7=_0x5aa5f4[_0x54d740(0x5fd)]){const _0x2404b3=_0x54d740;if(_0x5aa5f4[_0x2404b3(0x31a)][_0x2404b3(0x7a8)][_0x2404b3(0x451)]<0x0||_0x5aa5f4[_0x2404b3(0x837)]||!_0x5aa5f4['battles'][_0x2404b3(0x618)]||_0x5aa5f4[_0x2404b3(0x723)]!==0x1||_0xdf3cc7==null||!_0x5aa5f4['addedJobs'][_0x2404b3(0x881)])return;const _0x477285=[],_0xf6937c=new Map();let _0x27dfcb=0x0;for(let _0x39b6a2=0x0;_0x39b6a2<_0x5aa5f4[_0x2404b3(0x62c)][_0x2404b3(0x881)];_0x39b6a2++){_0x477285[_0x39b6a2]=GameMap[_0x2404b3(0x582)](_0x5aa5f4[_0x2404b3(0x62c)][_0x39b6a2],_0xdf3cc7);}for(let _0x841282=0x0;_0x841282<_0x5aa5f4[_0x2404b3(0x2f7)][_0x2404b3(0x881)];_0x841282++){const _0x46b533=_0x5aa5f4['allianceForts'][_0x841282],_0x3bc1a3=GameMap['calcWayTime'](_0x46b533,_0xdf3cc7);_0xf6937c['set'](_0x46b533[_0x2404b3(0x56c)],_0x3bc1a3);}_0x27dfcb=GameMap[_0x2404b3(0x582)](_0xdf3cc7,_0x5aa5f4[_0x2404b3(0x6b1)][_0x2404b3(0x4fe)](_0x5aa5f4[_0x2404b3(0x31a)][_0x2404b3(0x7a8)]['selected'])),_0x5aa5f4['wayTimes']={'town_fort':_0x27dfcb,'jobs_town':_0x477285,'forts_town':_0xf6937c};};var _0x3b8c6d=_0x54d740(0x7d0);_0x5aa5f4[_0x54d740(0x5c4)]=function(_0x41825d=![],_0x481622=_0x5aa5f4[_0x54d740(0x5fd)]){const _0x7f6373=_0x54d740;_0x5aa5f4[_0x7f6373(0x338)]();const _0x2b18e6=_0x5aa5f4['getCurrentBattleTimer']();if(_0x5aa5f4[_0x7f6373(0x31a)][_0x7f6373(0x7a8)][_0x7f6373(0x5fc)]&&_0x5aa5f4['battles'][_0x7f6373(0x1fd)](_0x5aa5f4[_0x7f6373(0x31a)][_0x7f6373(0x7a8)]['selected'])&&_0x2b18e6>0x0){const _0x4aa3e8=_0x5aa5f4[_0x7f6373(0x64f)](_0x5aa5f4['lastResult'])>0x9&&Character[_0x7f6373(0x6ef)]>0x9&&!_0x5aa5f4['hasLowHealth']()?Math['max'](0x0,0x258-_0x5aa5f4[_0x7f6373(0x3e3)]()):0x0,_0x14a581=_0x5aa5f4[_0x7f6373(0x31a)][_0x7f6373(0x7a8)]['refillHealth']&&_0x5aa5f4[_0x7f6373(0x723)]!==0x3?_0x5aa5f4[_0x7f6373(0x31a)][_0x7f6373(0x7a8)][_0x7f6373(0x7b2)]?0x4ec-_0x4aa3e8:0x258-_0x4aa3e8:0x0,_0x578a54=0x78+Math[_0x7f6373(0x5e2)](_0x14a581-_0x58a9f4,_0x336f6b())+_0x58a9f4+_0x110ed6;_0x5ae2ea(_0x2b18e6-_0x578a54);if(_0x2b18e6<_0x578a54&&!_0x9b9f55)return!![];}function _0x336f6b(){const _0xf56520=_0x7f6373,_0x454465=_0x5aa5f4[_0xf56520(0x62c)][_0x5aa5f4[_0xf56520(0x360)]['jobIdx']],_0x2f4b5e=0x87;let _0x280b73=0x0,_0x524919=0x0,_0x554aae=0x0,_0x2f6284=0x258;if(_0x41825d&&_0x481622!=null)_0x280b73=GameMap[_0xf56520(0x582)](Character[_0xf56520(0x827)],_0x454465)+GameMap[_0xf56520(0x582)](_0x454465,_0x481622),_0x554aae=GameMap['calcWayTime'](_0x481622,_0x5aa5f4[_0xf56520(0x6b1)][_0xf56520(0x4fe)](_0x5aa5f4[_0xf56520(0x31a)][_0xf56520(0x7a8)][_0xf56520(0x451)])),_0x524919=GameMap[_0xf56520(0x582)](Character['position'],_0x481622),_0x2f6284=Math[_0xf56520(0x5e2)](_0x2f4b5e+_0x524919,_0x280b73)+_0x554aae;else{if(_0x5aa5f4[_0xf56520(0x837)]&&_0x481622!=null){if(_0x5aa5f4[_0xf56520(0x723)]!==0x3)_0x524919=_0x5aa5f4['wayTimes'][_0xf56520(0x4ac)][_0x5aa5f4[_0xf56520(0x360)]['jobIdx']]+_0x2f4b5e;else TaskQueue[_0xf56520(0x3fe)][0x0]?.[_0xf56520(0x51c)]===_0xf56520(0x3b2)&&(_0x524919=_0x5aa5f4[_0xf56520(0x837)][_0xf56520(0x4e7)][_0xf56520(0x4fe)](TaskQueue[_0xf56520(0x3fe)][0x0][_0xf56520(0x8c6)][_0xf56520(0x3dc)]));_0x554aae=_0x5aa5f4['wayTimes']['town_fort'],_0x2f6284=_0x524919+_0x554aae;}else _0x2f6284=Math['min'](_0x2f6284,Character[_0xf56520(0x2c2)](_0x5aa5f4[_0xf56520(0x6b1)][_0xf56520(0x4fe)](_0x5aa5f4[_0xf56520(0x31a)]['fortBattle'][_0xf56520(0x451)])))+_0x2f4b5e;}return _0x2f6284;}function _0x5ae2ea(_0x451fb3){const _0x4c0d7c=_0x7f6373;if(_0x451fb3<=(Character[_0x4c0d7c(0x6ef)]-Character['maxEnergy']*(_0x35ed20/0x64))*0xf)_0x5aa5f4[_0x4c0d7c(0x67c)]=0x0;else _0x451fb3<Character['maxEnergy']*0xf?_0x5aa5f4[_0x4c0d7c(0x67c)]=_0x35ed20+(_0x451fb3/0xf-Character['energy'])/Character[_0x4c0d7c(0x216)]*0x64:_0x5aa5f4[_0x4c0d7c(0x67c)]=0x64;}return![];},_0x5aa5f4[_0x54d740(0x6db)]=function(_0xacea8c){const _0x3d922a=_0x54d740;if(!CharacterSkills[_0x3d922a(0x1e7)][_0x3d922a(0x432)])return![];return CharacterSkills['buffs'][_0x3d922a(0x432)][_0x3d922a(0x8c1)][_0x3d922a(0x73d)]==_0xacea8c[_0x3d922a(0x73d)]&&CharacterSkills['buffs'][_0x3d922a(0x432)][_0x3d922a(0x8c1)][_0x3d922a(0x7f9)]==_0xacea8c[_0x3d922a(0x7f9)]&&Number(CharacterSkills[_0x3d922a(0x1e7)]['items'][_0x3d922a(0x74a)]+''+CharacterSkills[_0x3d922a(0x1e7)][_0x3d922a(0x432)][_0x3d922a(0x2e8)])==_0xacea8c['battleDamage'];},_0x5aa5f4['attendFortBattle']=async function(){const _0x23f603=_0x54d740,_0x537b47=_0x327e18=>Math['ceil'](Character['health']/(_0x5aa5f4[_0x23f603(0x222)]['get'](_0x327e18)||Character['maxHealth'])*0x64);let _0x5c7c48=_0x5aa5f4[_0x23f603(0x31a)][_0x23f603(0x7a8)]['refillHealth']?_0x5aa5f4[_0x23f603(0x31a)][_0x23f603(0x7a8)]['isTank']?0x2:0x1:0x0;const _0x7a7557={..._0x5aa5f4[_0x23f603(0x6b1)][_0x23f603(0x4fe)](_0x5aa5f4['settings']['fortBattle']['selected'])},_0x488ae6=_0x7a7557[_0x23f603(0x7f9)]?_0x5aa5f4[_0x23f603(0x31a)][_0x23f603(0x7a8)][_0x23f603(0x5f4)]:_0x5aa5f4['settings'][_0x23f603(0x7a8)][_0x23f603(0x542)],_0x2e4ec9=()=>_0x5aa5f4[_0x23f603(0x2ee)](_0x7a7557)-_0x110ed6,_0x1236b1=()=>_0x5aa5f4[_0x23f603(0x2ee)](_0x7a7557)<=0x0;let _0x273002=null;_0x5aa5f4[_0x23f603(0x498)](_0x23f603(0x3ea),_0x322198(),'battle_prep'),_0x5aa5f4[_0x23f603(0x723)]=0x5,_0x5aa5f4['selectTab'](_0x23f603(0x62c));!_0x5aa5f4[_0x23f603(0x8ae)](_0x7a7557)&&(await _0x5aa5f4[_0x23f603(0x79d)](_0x5aa5f4[_0x23f603(0x814)]),Character[_0x23f603(0x234)]>0x3e8&&await _0x5aa5f4[_0x23f603(0x350)](),Guidepost[_0x23f603(0x21d)](_0x7a7557[_0x23f603(0x3dc)],'fort'),await _0x225668(_0x23f603(0x4fb)));await _0x134e85(_0x488ae6);while(_0x5c7c48>0x0&&_0x537b47(_0x488ae6)<_0x5aa5f4['settings']['fortBattle'][_0x23f603(0x658)]&&_0x2e4ec9()>_0x5aa5f4[_0x23f603(0x3e3)]()){await _0x37da77(_0x5aa5f4['getConsumeCooldown']()*0x3e8);if(_0x537b47(_0x488ae6)<_0x5aa5f4[_0x23f603(0x31a)][_0x23f603(0x7a8)][_0x23f603(0x658)])await _0x11dc81();else break;}const _0x6ac9c2=_0x5aa5f4[_0x23f603(0x342)]['find'](_0x2e03ae=>_0x2e03ae[_0x23f603(0x6eb)]&&_0x2e03ae['selected']),_0x2f7104=_0x5aa5f4[_0x23f603(0x342)]['find'](_0x4dc17=>_0x4dc17[_0x23f603(0x451)]&&(_0x7a7557[_0x23f603(0x7f9)]?_0x4dc17[_0x23f603(0x27d)]!==0x0:_0x4dc17['hiding']!==0x0));if(_0x6ac9c2&&!_0x5aa5f4[_0x23f603(0x6db)](_0x6ac9c2))_0x5aa5f4[_0x23f603(0x328)](_0x6ac9c2['id'],_0x6ac9c2['name'][_0x23f603(0x1df)]()+_0x23f603(0x2d9));if(_0x2f7104&&_0x5aa5f4[_0x23f603(0x88b)]('character'))_0x5aa5f4[_0x23f603(0x328)](_0x2f7104['id'],_0x2f7104[_0x23f603(0x781)][_0x23f603(0x1df)]()+'\x20(Battle)');_0x5aa5f4[_0x23f603(0x67c)]=0x64;const _0x4e5a39=await _0x5aa5f4[_0x23f603(0x260)](_0x7a7557);if(!_0x4e5a39&&TaskQueue[_0x23f603(0x3fe)][_0x23f603(0x881)]===0x0&&_0x5aa5f4[_0x23f603(0x66b)]&&!_0x1236b1()){_0x5aa5f4[_0x23f603(0x292)]();return;}_0x109259(()=>{const _0x21f1b3=_0x23f603;_0x4e5a39?(_0x5aa5f4[_0x21f1b3(0x31a)]['fortBattle'][_0x21f1b3(0x25f)]?west['notification'][_0x21f1b3(0x7a8)][_0x21f1b3(0x30c)](_0x7a7557['fortId']):_0x25adf2(),_0x5aa5f4[_0x21f1b3(0x498)](_0x21f1b3(0x85f),_0x322198(),'battle'),EventHandler['listen']('fort_battle_end',_0x40521e),EventHandler[_0x21f1b3(0x37e)](_0x21f1b3(0x3c1),_0x22bda2),_0x273002=setTimeout(function(){const _0x594596=_0x21f1b3;EventHandler[_0x594596(0x82c)](_0x594596(0x87f),_0x7a7557[_0x594596(0x3dc)]);},_0x126737*0x3c*0x3e8)):(_0x5aa5f4[_0x21f1b3(0x67a)](_0x21f1b3(0x329)),_0x5aa5f4[_0x21f1b3(0x50d)]()[_0x21f1b3(0x3ec)](()=>{const _0x5ebeb0=_0x21f1b3;_0x5aa5f4[_0x5ebeb0(0x4c4)]=new Date(),_0x5aa5f4['run']();}));});function _0x109259(_0x320594){const _0x222abd=_0x23f603,_0x3d0f98=_0x5aa5f4[_0x222abd(0x2ee)](_0x7a7557);if(_0x3d0f98<=0x0&&_0x5aa5f4['isRunning']){_0x320594();return;}const _0x14956=setTimeout(()=>{const _0x1d58a6=_0x222abd;if(!_0x5aa5f4[_0x1d58a6(0x66b)]){clearTimeout(_0x14956);return;}_0x320594();},_0x3d0f98*0x3e8+0x2710);}function _0x40521e(_0xe4b5ac){const _0x29b80a=_0x23f603;if(_0xe4b5ac!=_0x7a7557['fortId'])return![];return clearTimeout(_0x273002),EventHandler[_0x29b80a(0x6ee)](_0x29b80a(0x3c1),_0x22bda2),setTimeout(function(){const _0x2aa1a1=_0x29b80a;_0x5aa5f4[_0x2aa1a1(0x723)]===0x5&&_0x5aa5f4[_0x2aa1a1(0x66b)]&&_0x5aa5f4[_0x2aa1a1(0x50d)]()['then'](()=>{const _0x1f76c8=_0x2aa1a1;setTimeout(function(){_0x25adf2();},0xea60),_0x5aa5f4['updateFortBattles'](),_0x5aa5f4[_0x1f76c8(0x4c4)]=new Date(),_0x5aa5f4[_0x1f76c8(0x723)]=0x1,_0x5aa5f4[_0x1f76c8(0x3ae)]();});},0x1388),EventHandler[_0x29b80a(0x60d)];}function _0x22bda2(_0x316374){const _0x358462=_0x23f603;if(_0x316374['battleData']?.[_0x358462(0x4c6)]&&_0x316374[_0x358462(0x3dc)]==_0x7a7557[_0x358462(0x3dc)])return EventHandler[_0x358462(0x82c)](_0x358462(0x87f),_0x316374[_0x358462(0x3dc)]),EventHandler[_0x358462(0x60d)];}function _0x25adf2(){const _0x15d60d=_0x23f603,_0x59c7da=document[_0x15d60d(0x477)](_0x15d60d(0x74b)),_0x370ecc='.fortbattle-'+_0x7a7557[_0x15d60d(0x3dc)]+'\x20.tw2gui_window_buttons_close',_0x2ffbc5=document[_0x15d60d(0x477)](_0x370ecc);if(_0x2ffbc5)_0x2ffbc5[_0x15d60d(0x4d9)]();if(_0x59c7da)_0x59c7da['click']();}async function _0x11dc81(){const _0x53aa71=_0x23f603,_0x52b5a2=0x64-_0x537b47(_0x488ae6),_0x2b91ea=_0x52b5a2>0xa&&_0x537b47(_0x5aa5f4[_0x53aa71(0x5c5)])<_0x537b47(_0x488ae6),_0x13af35=_0x2b91ea?await _0x5aa5f4[_0x53aa71(0x460)](_0x488ae6)||_0x52b5a2:_0x52b5a2,_0x119348=_0x5aa5f4[_0x53aa71(0x342)][_0x53aa71(0x492)](_0x14af94=>_0x14af94['id']==0x33dcdb0),_0x2fc870=_0x5aa5f4[_0x53aa71(0x31a)][_0x53aa71(0x7a8)][_0x53aa71(0x7b2)]&&_0x5aa5f4[_0x53aa71(0x88b)](_0x53aa71(0x270))&&_0x119348?.[_0x53aa71(0x451)],_0x5b5349=_0x2fc870?_0x119348:_0x13af35>=0x1?_0x5aa5f4['tryFindConsumable'](0x0,0x0,_0x13af35,![],![],!![]):null;if(_0x5b5349&&_0x13af35>=0x1){_0x5aa5f4['useConsumable'](_0x5b5349,![],![],!![],_0x2b91ea),await _0x37da77(_0x2024b9);while(_0x5aa5f4['currentState']===0x2&&_0x5aa5f4[_0x53aa71(0x66b)]){await _0x37da77(_0x4d13ec);}_0x5aa5f4['currentState']=0x5,_0x5c7c48-=0x1;}else _0x5c7c48=0x0;await _0x134e85(_0x488ae6);}async function _0x134e85(_0x2ff887,_0x4ef25a=0x1){const _0x52c662=_0x23f603;if(_0x5aa5f4[_0x52c662(0x6ba)][_0x52c662(0x1fd)](_0x2ff887))return(await _0x5aa5f4[_0x52c662(0x79d)](_0x2ff887))['equipped'];const _0x3ce595=_0x5aa5f4[_0x52c662(0x3f2)][_0x52c662(0x4fe)](_0x2ff887);if(_0x3ce595!=undefined){for(let _0x48a8a7=0x0;_0x48a8a7<_0x4ef25a;_0x48a8a7++){const _0x567bc=(await _0x5aa5f4[_0x52c662(0x79d)](_0x3ce595['id']))[_0x52c662(0x8bf)];if(_0x567bc[_0x52c662(0x8bf)])return!![];}return![];}const _0x577365=_0x5aa5f4[_0x52c662(0x31a)]['fortBattle'][_0x52c662(0x7b2)],_0x7ec98d=_0x7a7557[_0x52c662(0x7f9)]?_0x577365?{'leadership':0x64,'pitfall':0x96,'health':0x96,'dodge':0x64}:{'leadership':0x7d,'pitfall':0x64,'aim':0x32}:_0x577365?{'leadership':0x64,'hide':0x96,'health':0x96,'dodge':0x64}:{'leadership':0x7d,'hide':0x64,'aim':0x32},_0xc4178a=await _0x5aa5f4[_0x52c662(0x513)](_0x7ec98d);if(_0xc4178a)_0x5aa5f4[_0x52c662(0x222)][_0x52c662(0x61f)](_0x2ff887,Character[_0x52c662(0x862)]);return _0xc4178a;}},_0x5aa5f4[_0x54d740(0x2ee)]=function(_0x3e8a67=_0x5aa5f4['battles'][_0x54d740(0x4fe)](_0x5aa5f4[_0x54d740(0x31a)]['fortBattle'][_0x54d740(0x451)])){const _0x1d8488=_0x54d740;if(!_0x3e8a67)return 0x0;const _0x338bc0=Math[_0x1d8488(0x861)]((_0x3e8a67[_0x1d8488(0x86c)]+Game[_0x1d8488(0x1d2)]-new Date()[_0x1d8488(0x4f0)]())/0x3e8);return Math[_0x1d8488(0x5e2)](_0x338bc0,0x0);},_0x5aa5f4[_0x54d740(0x338)]=function(_0xe0733c){const _0x3b54f8=_0x54d740,_0x206ce1=_0x5aa5f4[_0x3b54f8(0x760)](),_0x58224f=_0x206ce1['every'](_0x419d14=>_0x419d14[_0x3b54f8(0x5f9)][_0x3b54f8(0x4c6)])||!west['notification']['fortBattle'][_0x3b54f8(0x784)];if(!_0x5aa5f4[_0x3b54f8(0x31a)][_0x3b54f8(0x7a8)][_0x3b54f8(0x5fc)]||_0x58224f){_0x5aa5f4['battles']=new Map(),_0x5aa5f4[_0x3b54f8(0x31a)][_0x3b54f8(0x7a8)]['selected']=-0x1,_0x5aa5f4[_0x3b54f8(0x67c)]=0x64;return;}const _0x60af30=_0x206ce1['filter'](_0x5d6070=>!_0x5d6070[_0x3b54f8(0x5f9)][_0x3b54f8(0x4c6)])[_0x3b54f8(0x387)]((_0x386d40,{title:_0x306039,fortId:_0x87fc24,battleData:{x:_0x2a1a99,y:_0x5963f5,start:_0x3bd2cc,defense:_0x28382e}})=>{const _0x426e1a=_0x3b54f8;return _0x386d40[_0x426e1a(0x61f)](_0x87fc24,{'title':_0x306039,'fortId':_0x87fc24,'x':_0x2a1a99,'y':_0x5963f5,'start':_0x3bd2cc,'defense':_0x28382e}),_0x386d40;},new Map());_0x5aa5f4['battles']=_0x60af30;const _0x85773b=_0x5aa5f4['settings'][_0x3b54f8(0x7a8)][_0x3b54f8(0x451)],_0x4b0075=_0x60af30[_0x3b54f8(0x705)]()[_0x3b54f8(0x367)]()[_0x3b54f8(0x21f)],_0x562c3e=_0x85773b===-0x1||!_0x60af30[_0x3b54f8(0x1fd)](_0x85773b),_0x14f784=_0xe0733c?.[_0x3b54f8(0x3dc)]===_0x4b0075;_0x60af30[_0x3b54f8(0x618)]>0x0&&(_0x562c3e||_0x14f784)&&(_0x5aa5f4[_0x3b54f8(0x31a)][_0x3b54f8(0x7a8)][_0x3b54f8(0x451)]=_0x4b0075);},_0x5aa5f4['getBattleRooms']=function(){const _0x5e1d7f=_0x54d740,_0xbb93a7=Chat[_0x5e1d7f(0x7df)][_0x5e1d7f(0x5a3)][_0x5e1d7f(0x29c)](),_0x1b862a=[];for(let _0x59f586 in _0xbb93a7){const _0x37c626=_0xbb93a7[_0x59f586];_0x37c626 instanceof Chat[_0x5e1d7f(0x7df)][_0x5e1d7f(0x2d3)]&&_0x1b862a[_0x5e1d7f(0x70d)](_0x37c626);}return _0x1b862a[_0x5e1d7f(0x574)]((_0x194ae3,_0x3f9e97)=>_0x194ae3[_0x5e1d7f(0x5f9)][_0x5e1d7f(0x86c)]-_0x3f9e97['battleData'][_0x5e1d7f(0x86c)]),_0x1b862a;},_0x5aa5f4[_0x54d740(0x879)]=function(_0x4243ca){const _0x1116d2=_0x54d740,_0x5b407a=Chat[_0x1116d2(0x7df)][_0x1116d2(0x5a3)][_0x1116d2(0x29c)]();for(let _0x2cd26f in _0x5b407a){const _0x3cbb0e=_0x5b407a[_0x2cd26f];if(_0x3cbb0e instanceof Chat[_0x1116d2(0x7df)][_0x1116d2(0x2d3)]&&_0x3cbb0e[_0x1116d2(0x3dc)]==_0x4243ca)return _0x3cbb0e;}return null;},_0x5aa5f4[_0x54d740(0x629)]=function(_0x595c3d){return new Promise(_0x1cfa4e=>{const _0x2633ac=[...Object['values'](_0x595c3d)];function _0x363d52(){const _0x2a15fc=_0x3acb;if(_0x2633ac[_0x2a15fc(0x881)]===0x0)return _0x1cfa4e(null);const _0x2e8f35=_0x2633ac[_0x2a15fc(0x387)]((_0x361478,_0x3d958e)=>{const _0x5742ff=_0x2a15fc,_0x4c8110=Character[_0x5742ff(0x2c2)](_0x3d958e);return!_0x361478||_0x4c8110<Character[_0x5742ff(0x2c2)](_0x361478)?_0x3d958e:_0x361478;},null);if(!_0x2e8f35)return _0x1cfa4e(null);Ajax[_0x2a15fc(0x340)](_0x2a15fc(0x71d),_0x2a15fc(0x1ee),{'fort_id':_0x2e8f35[_0x2a15fc(0x56c)]},function(_0x2fb347){const _0x2f186d=_0x2a15fc;if(!_0x2fb347[_0x2f186d(0x34d)]&&_0x2fb347['barrackStage']>=0x4)_0x1cfa4e(_0x2e8f35);else{const _0x5da571=_0x2633ac[_0x2f186d(0x272)](_0x42476f=>_0x42476f[_0x2f186d(0x56c)]===_0x2e8f35[_0x2f186d(0x56c)]);if(_0x5da571!==-0x1)_0x2633ac[_0x2f186d(0x811)](_0x5da571,0x1);_0x363d52();}});}_0x363d52();});};const _0x398f2c=_0x248180;_0x5aa5f4[_0x54d740(0x798)]=async function(){return new Promise((_0x526c0c,_0x49457f)=>{const _0x1f07e3=_0x3acb;console[_0x1f07e3(0x463)]('Execution\x20Time');const _0x1be02d=[];Ajax[_0x1f07e3(0x4fe)](_0x1f07e3(0x286),_0x1f07e3(0x5ea),{},function(_0x48b304){const _0x408b9d=_0x1f07e3;if(_0x48b304[_0x408b9d(0x34d)])return _0x49457f(new UserMessage(_0x48b304[_0x408b9d(0x53e)])[_0x408b9d(0x50f)]());for(const _0x374d30 of Object['keys'](_0x48b304['towns'])){const _0x4894f0=_0x48b304[_0x408b9d(0x8d0)][_0x374d30];_0x4894f0[_0x408b9d(0x759)]>0x0&&(_0x4894f0['_waytime']=GameMap['calcWayTime'](Character[_0x408b9d(0x827)],{'x':_0x4894f0['x'],'y':_0x4894f0['y']}),_0x1be02d['push'](_0x4894f0));}_0x1be02d[_0x408b9d(0x574)]((_0x57bd19,_0x137cba)=>_0x57bd19['_waytime']-_0x137cba[_0x408b9d(0x5bb)]);const _0x5bf24b=function(_0x187b2c){const _0x5cb5d7=_0x408b9d;if(_0x187b2c>=_0x1be02d[_0x5cb5d7(0x881)])return _0x526c0c(null);const _0x13462f=_0x1be02d[_0x187b2c];Ajax[_0x5cb5d7(0x340)](_0x5cb5d7(0x494),_0x5cb5d7(0x2ad),{'town_id':_0x13462f[_0x5cb5d7(0x2dd)]},function(_0x397a2c){const _0x415b34=_0x5cb5d7;if(_0x397a2c[_0x415b34(0x34d)])return _0x49457f(new UserMessage(_0x397a2c['msg'])[_0x415b34(0x50f)]());const _0x1965bb=_0x397a2c[_0x415b34(0x7b6)]||0x0;if(_0x1965bb===0x5)return _0x526c0c(_0x13462f);else _0x5bf24b(_0x187b2c+0x1);});};_0x1be02d[_0x408b9d(0x881)]>0x0&&!_0x9b9f55?_0x5bf24b(0x0):_0x526c0c(null);});});},_0x5aa5f4['addWaitingReason']=function(_0x4858a1){const _0x1087b1=_0x54d740;_0x5aa5f4[_0x1087b1(0x5ca)][_0x1087b1(0x571)][_0x1087b1(0x70d)](_0x4858a1),_0x5aa5f4['diagnostics']['waitingReasons'][_0x1087b1(0x881)]>0x32&&_0x5aa5f4[_0x1087b1(0x5ca)][_0x1087b1(0x571)][_0x1087b1(0x1ef)]();},_0x5aa5f4[_0x54d740(0x2e5)]=function(_0x486233){const _0x3f90ed=_0x54d740;Ajax[_0x3f90ed(0x340)](_0x3f90ed(0x270),'get_info',{},function(_0x18678c){_0x486233(_0x18678c);});},_0x5aa5f4[_0x54d740(0x70f)]=async function(_0x36ccfc={}){const _0x51a801=_0x54d740,{dontWakeUp:dontWakeUp=![],message:message='',flag:flag=''}=_0x36ccfc,_0x99a32a=()=>0x64-Character[_0x51a801(0x6ef)]/Character[_0x51a801(0x216)]*0x64,_0x35d994=()=>Math[_0x51a801(0x868)]((_0x5aa5f4['maxHealthForSet'][_0x51a801(0x4fe)](_0x5aa5f4[_0x51a801(0x62c)][_0x5aa5f4[_0x51a801(0x360)][_0x51a801(0x40f)]]?.[_0x51a801(0x61f)])||Character['maxHealth'])*0.4,_0x5aa5f4[_0x51a801(0x31a)][_0x51a801(0x454)]*0x2),_0x189a74=()=>Character[_0x51a801(0x5f8)]>=(_0x5aa5f4[_0x51a801(0x222)][_0x51a801(0x4fe)](_0x5aa5f4[_0x51a801(0x62c)][_0x5aa5f4[_0x51a801(0x360)]['jobIdx']]?.[_0x51a801(0x61f)])||Character[_0x51a801(0x862)]*0.5),_0x208522=()=>flag===_0x51a801(0x5f8)?!_0x189a74():_0x99a32a()!==0x0||!_0x189a74();async function _0xfcbe7e(){const _0x29bd92=_0x51a801,_0x21271d=new Date();let _0x4585a0=![],_0x26f346=setInterval(()=>{_0x5aa5f4['getCharacterInfo'](function(_0x49d4cd){const _0x169557=_0x3acb;Character[_0x169557(0x6ef)]=_0x49d4cd[_0x169557(0x29f)],Character[_0x169557(0x5f8)]=_0x49d4cd[_0x169557(0x849)];});},0x5*0x3c*0x3e8);try{while(_0x5aa5f4[_0x29bd92(0x723)]===0x3&&_0x208522()){if(_0x5aa5f4[_0x29bd92(0x5c4)]()){_0x4585a0=!![],await _0x5aa5f4[_0x29bd92(0x2eb)](),_0x5aa5f4[_0x29bd92(0x292)]();break;}await _0x37da77(_0x1240d1);}}finally{clearInterval(_0x26f346);if(!_0x4585a0){const _0x18eac7=_0x12f209(_0x21271d);_0x5aa5f4[_0x29bd92(0x23d)][_0x29bd92(0x2fa)]['sleepTime']+=_0x18eac7,_0x5aa5f4['addWaitingReason'](_0x29bd92(0x4da)+_0x18eac7/0x3c+_0x29bd92(0x35a)),_0x5aa5f4[_0x29bd92(0x3af)](),_0x5aa5f4['currentState']===0x3&&(await _0x5aa5f4[_0x29bd92(0x2eb)](),_0x5aa5f4[_0x29bd92(0x3ae)]());}}}if(_0x5aa5f4[_0x51a801(0x31a)][_0x51a801(0x63b)]&&(dontWakeUp||(_0x99a32a()!==0x0||_0x5aa5f4[_0x51a801(0x84a)](_0x35d994())))&&!_0x9b9f55){_0x5aa5f4[_0x51a801(0x723)]=0x3,_0x5aa5f4[_0x51a801(0x522)](_0x51a801(0x62c));if(!dontWakeUp&&message)_0x5aa5f4['showNotification'](_0x51a801(0x25e),message,'sleep');const _0x26b3d6=await _0x5aa5f4[_0x51a801(0x629)](_0x5aa5f4[_0x51a801(0x2f7)]);let _0xfacec7=null;!_0x26b3d6&&(_0xfacec7=await _0x5aa5f4['getClosestTown']());!_0x5aa5f4[_0x51a801(0x8ae)](_0x26b3d6||_0xfacec7)&&(await _0x5aa5f4[_0x51a801(0x79d)](_0x5aa5f4['travelSet']),_0x5aa5f4[_0x51a801(0x7eb)]());TaskQueue[_0x51a801(0x6cd)](_0x26b3d6?new TaskFortSleep(_0x26b3d6[_0x51a801(0x56c)],_0x26b3d6['x'],_0x26b3d6['y']):new TaskSleep(_0xfacec7[_0x51a801(0x2dd)],'luxurious_apartment')),await _0x225668(_0x51a801(0x4fb)),_0x5aa5f4[_0x51a801(0x4a1)]!==-0x1?_0x5aa5f4[_0x51a801(0x79d)](_0x5aa5f4[_0x51a801(0x4a1)]):_0x5aa5f4['equipSet'](_0x5aa5f4['healthSet']),await _0x5aa5f4['waitUntilDestinationIsReached'](_0x26b3d6||_0xfacec7);_0x5aa5f4['isDestinationReached'](_0x5aa5f4[_0x51a801(0x5fd)])&&await _0x5aa5f4[_0x51a801(0x55a)]()&&_0x5aa5f4[_0x51a801(0x7ba)](_0x5aa5f4[_0x51a801(0x5fd)][_0x51a801(0x2dd)]);if(dontWakeUp){_0x5aa5f4[_0x51a801(0x569)](message);return;}await _0xfcbe7e();}else _0x5aa5f4[_0x51a801(0x67c)]<0x64&&_0x5aa5f4[_0x51a801(0x31a)][_0x51a801(0x7a8)][_0x51a801(0x5fc)]&&_0x5aa5f4[_0x51a801(0x6b1)]['has'](_0x5aa5f4[_0x51a801(0x31a)][_0x51a801(0x7a8)][_0x51a801(0x451)])?_0x5aa5f4[_0x51a801(0x292)]():_0x5aa5f4[_0x51a801(0x569)](message);},_0x5aa5f4[_0x54d740(0x3a5)]=async function(_0x337fe5,_0x2d3634){const _0x1bad16=_0x54d740;if(_0x337fe5[_0x1bad16(0x2dd)]==0x0)return null;return new Promise((_0x33f677,_0x9d5f2d)=>{const _0x6d3be1=_0x1bad16;Ajax[_0x6d3be1(0x340)](_0x6d3be1(0x793),'build',{'x':_0x337fe5['x'],'y':_0x337fe5['y'],'building':_0x2d3634},function(_0x10c3be){const _0x576a03=_0x6d3be1;_0x10c3be[_0x576a03(0x34d)]?(new UserMessage(_0x10c3be[_0x576a03(0x53e)],UserMessage['TYPE_ERROR'])[_0x576a03(0x50f)](),_0x9d5f2d(null)):_0x33f677(_0x10c3be);});});},_0x5aa5f4[_0x54d740(0x765)]=async function(_0x3cfc60,_0x59d5ad,_0x14714){const _0x398945=_0x54d740;_0x5aa5f4[_0x398945(0x723)]=0x7,_0x5aa5f4[_0x398945(0x66b)]=!![],_0x5aa5f4[_0x398945(0x43a)]();const _0x3fbe11=_0x5aa5f4[_0x398945(0x34e)],_0x5c8d88=Character[_0x398945(0x5fd)],_0x3a97de=await _0x5aa5f4[_0x398945(0x3a5)](_0x5c8d88,_0x3cfc60);if(!_0x3a97de||_0x9b9f55){_0x4d0c11();return;}const _0x233dfd=0x58,_0x31a929=Object['fromEntries'](_0x3a97de['build_skills']['skills']['map'](_0x2eee99=>[_0x2eee99['skill'],_0x2eee99[_0x398945(0x537)]])),_0x27381e=Premium[_0x398945(0x33c)](_0x398945(0x456))?TaskQueue[_0x398945(0x563)]['premium']:TaskQueue['limit'][_0x398945(0x815)],_0x346aa8=_0x59d5ad===0xe10?0xc:_0x59d5ad===0x708?0x6:0x3;_0x5aa5f4[_0x398945(0x34e)]=_0x346aa8;let _0xbfb6b6=_0x3a97de['motivation']*0x64,_0x31d8bb=_0x14714?0xe10/_0x59d5ad*_0x14714:Number[_0x398945(0x4ec)],_0x38a641=0x0,_0x577eca=![];!_0x5aa5f4['isDestinationReached'](_0x5c8d88)?(await _0x5aa5f4['equipSet'](_0x5aa5f4['travelSet']),await _0x5aa5f4[_0x398945(0x350)](_0x5c8d88)):_0x5aa5f4[_0x398945(0x7ba)](_0x5c8d88['town_id']);_0x5aa5f4[_0x398945(0x581)]['set']<0x0?await _0x5aa5f4[_0x398945(0x513)](_0x31a929):await _0x5aa5f4[_0x398945(0x79d)](_0x5aa5f4[_0x398945(0x581)][_0x398945(0x61f)]);while((_0x5aa5f4['currentState']===0x7||_0x5aa5f4['isRunning'])&&(_0x31d8bb>0x0||TaskQueue['queue'][_0x398945(0x881)]>0x0||_0x38a641>0x0)){const _0x3fae96=TaskQueue[_0x398945(0x3fe)][_0x398945(0x881)];_0x3fae96<=0x1&&_0x5aa5f4[_0x398945(0x31a)][_0x398945(0x601)]&&Character[_0x398945(0x6ef)]<_0x346aa8&&!_0x577eca&&await _0x1e667d(_0xbfb6b6);if(_0x38a641-_0x3fae96===0x1&&!_0x577eca)_0x38a641-=0x1,_0xbfb6b6-=_0x346aa8,_0x5aa5f4[_0x398945(0x31a)][_0x398945(0x57a)]&&_0xbfb6b6<=_0x233dfd&&(_0xbfb6b6=await _0x28eb78(_0xbfb6b6));else _0x3fae96===0x0&&_0x38a641>0x0&&(_0x31d8bb+=_0x38a641,_0x38a641=0x0);const _0x18c09d=Math[_0x398945(0x868)](Math[_0x398945(0x861)](Character[_0x398945(0x6ef)]/_0x346aa8),_0x27381e-_0x3fae96,_0x31d8bb);if(_0x18c09d>0x0){EventHandler[_0x398945(0x37e)](_0x398945(0x7a3),_0x4652e7),_0x50466a(_0x18c09d),await _0x225668(_0x398945(0x509)),EventHandler[_0x398945(0x6ee)](_0x398945(0x7a3),_0x4652e7);if(_0x577eca&&TaskQueue[_0x398945(0x3fe)]['length']===0x0){if(_0x5aa5f4[_0x398945(0x581)]['set']>=0x0)_0x5aa5f4['build'][_0x398945(0x61f)]=-0x1,await _0x5aa5f4[_0x398945(0x513)](_0x31a929);else break;}_0x31d8bb-=_0x18c09d,_0x38a641+=_0x18c09d;}await _0x37da77(0x1388);}_0x4d0c11();async function _0x1e667d(_0x4c6b95){const _0x5c0858=_0x398945;let _0x4068ae=_0x5aa5f4[_0x5c0858(0x86a)](-0x1,0x0,0x0,![],!![],![]);const _0x2c0347=_0x5aa5f4[_0x5c0858(0x31a)][_0x5c0858(0x46f)]&&_0x4068ae&&_0x5aa5f4[_0x5c0858(0x789)](_0x4068ae['id'])&&await _0x5aa5f4[_0x5c0858(0x720)](_0x4068ae,![],!![],![]);if(!_0x2c0347&&TaskQueue[_0x5c0858(0x3fe)][_0x5c0858(0x881)]===0x0){_0x4068ae=_0x5aa5f4[_0x5c0858(0x86a)](-0x1,0x64-_0x4c6b95,0x0,![],![],![]);if(_0x4068ae)await _0x5aa5f4[_0x5c0858(0x720)](_0x4068ae,![],!![],![]);}}async function _0x28eb78(_0x398e83){const _0xe4a81c=_0x398945,_0xed69da=_0x5aa5f4[_0xe4a81c(0x86a)](-0x1,0x64-_0x398e83,0x0,!![],![],![]);if(_0xed69da&&_0x5aa5f4['canUseConsume'](_0xed69da['id']))return _0x5aa5f4[_0xe4a81c(0x720)](_0xed69da,!![],![],![]),Math['min'](0x64,_0x398e83+_0xed69da[_0xe4a81c(0x443)]);return _0x398e83;}function _0x4652e7(_0x372c50){const _0x57c660=_0x398945;return _0x577eca=!![],_0x5aa5f4['showAlert'](_0x3a97de[_0x57c660(0x874)]+':\x20'+_0x372c50),EventHandler['ONE_TIME_EVENT'];}function _0x50466a(_0x5b945f){const _0x19375b=_0x398945;TaskQueue[_0x19375b(0x6cf)]&&TaskQueue[_0x19375b(0x5a6)][_0x19375b(0x881)]>0x0&&(TaskQueue['toAdd']=[],TaskQueue[_0x19375b(0x6cf)]=![]);const _0x5255ec=[];for(let _0x46a0ad=0x0;_0x46a0ad<_0x5b945f;_0x46a0ad++){_0x5255ec[_0x19375b(0x70d)](new TaskBuild(_0x5c8d88['x'],_0x5c8d88['y'],_0x3cfc60,_0x59d5ad,'town'));}TaskQueue[_0x19375b(0x6cd)](_0x5255ec);}function _0x4d0c11(){const _0x463ae5=_0x398945;_0x5aa5f4['energyCost']=_0x3fbe11||_0x5aa5f4['energyCost'],_0x5aa5f4['currentState']===0x7&&(_0x5aa5f4['isRunning']=![],_0x5aa5f4[_0x463ae5(0x62c)][_0x463ae5(0x881)]===0x0&&!_0x5aa5f4[_0x463ae5(0x596)]()?_0x5aa5f4[_0x463ae5(0x70f)]({'dontWakeUp':!![],'message':_0x463ae5(0x6c3)}):_0x5aa5f4[_0x463ae5(0x844)]());}},_0x5aa5f4['setWorkerProfile']=function(_0x2c786c){const _0x861457=_0x54d740;if(_0x2c786c==undefined){if(_0x5aa5f4['favoriteJobs'][_0x861457(0x881)]>0x0&&_0x5aa5f4[_0x861457(0x6af)][_0x861457(0x664)]['jobs']['length']===0x0&&_0x5aa5f4[_0x861457(0x6af)][_0x861457(0x451)]===_0x861457(0x664)){_0x5aa5f4[_0x861457(0x6af)]['profile0'][_0x861457(0x24c)]=_0x5aa5f4[_0x861457(0x758)],_0x5aa5f4['workerProfiles'][_0x861457(0x664)][_0x861457(0x22a)]=_0x5aa5f4[_0x861457(0x31a)][_0x861457(0x22a)],_0x5aa5f4[_0x861457(0x6af)][_0x861457(0x664)]['jobsToAdd']=_0x5aa5f4[_0x861457(0x31a)]['jobsToAdd'];return;}_0x5aa5f4[_0x861457(0x758)]=_0x5aa5f4[_0x861457(0x6af)][_0x5aa5f4[_0x861457(0x6af)][_0x861457(0x451)]][_0x861457(0x24c)];}else _0x5aa5f4['workerProfiles']['selected']=_0x2c786c,_0x5aa5f4['favoriteJobs']=_0x5aa5f4[_0x861457(0x6af)][_0x2c786c][_0x861457(0x24c)];},_0x5aa5f4[_0x54d740(0x52b)]=async function(){const _0x1c3e97=_0x54d740;return _0x12400c[_0x1c3e97(0x8a9)](0x0,0x3)[_0x1c3e97(0x2fe)](_0x1ae1d1)?await _0x38ead9(!![]):null;},_0x5aa5f4[_0x54d740(0x51b)]=function(){const _0x335d8d=_0x54d740;return _0x5aa5f4['build'][_0x335d8d(0x730)]&&Character[_0x335d8d(0x5fd)]['town_id']!==0x0;},_0x5aa5f4[_0x54d740(0x8d2)]=function(_0x9d077c,_0x1f37c6){const _0x15095b=_0x54d740;localStorage[_0x15095b(0x7cf)](_0x15095b(0x4e5)+_0x5c7502+'_'+_0x9d077c,_0x1f37c6);},_0x5aa5f4[_0x54d740(0x518)]=function(_0xe63871){const _0xbf0368=_0x54d740;return localStorage[_0xbf0368(0x4de)](_0xbf0368(0x4e5)+_0x5c7502+'_'+_0xe63871);},_0x5aa5f4[_0x54d740(0x28c)]=function(_0x5e12ff){localStorage['removeItem']('Dusan_'+_0x5c7502+'_'+_0x5e12ff);},_0x5aa5f4[_0x54d740(0x25c)]=function(_0x26a15c){const _0x3aa79c=_0x54d740;document[_0x3aa79c(0x352)]=_0x26a15c+_0x3aa79c(0x7a5);},_0x5aa5f4[_0x54d740(0x847)]=function(_0x2cce34=_0xa15714()){const _0x4b3376=_0x54d740,_0x13b66b=new Date()[_0x4b3376(0x799)](),_0x44a8c8=_0x2cce34[_0x4b3376(0x5a9)](),_0x2cabef=_0x2cce34['getSeconds'](),_0x89dc0b=0x1,_0x1a67a0=0x0;return _0x13b66b>=_0x89dc0b&&_0x44a8c8>=_0x1a67a0&&_0x2cabef>=_0xa9ca5d&&_0x5aa5f4[_0x4b3376(0x490)]<new Date(_0x2cce34)[_0x4b3376(0x857)](_0x89dc0b,_0x1a67a0,_0xa9ca5d);},_0x5aa5f4[_0x54d740(0x447)]=function(){const _0x45279b=_0x54d740,_0x17e5bd=_0xa15714(),_0x4bc1e5=0x1,_0x16cf31=0x0,_0x2f3096=_0x5aa5f4[_0x45279b(0x518)]('cookieExpireTime'),_0x19a533=_0x2f3096?_0x17e5bd>=new Date(_0x2f3096):!![];let _0x31f463,_0x456095=![];if(_0x3da46f===_0x45279b(0x770))return;_0x19a533||Character[_0x45279b(0x6c7)]<=0x13?(_0x31f463=_0xa15714(),_0x31f463['setHours'](_0x4bc1e5,_0x16cf31,_0xa9ca5d),_0x31f463['setDate'](new Date()[_0x45279b(0x53a)]()+(Character[_0x45279b(0x6c7)]<=0x13?0x2:0x1)),_0x5aa5f4[_0x45279b(0x8d2)](_0x45279b(0x2e4),_0x31f463)):_0x31f463=new Date(_0x2f3096);_0x5aa5f4[_0x45279b(0x66b)]&&!_0x5aa5f4[_0x45279b(0x427)]['awaitNextSession']&&_0x5aa5f4[_0x45279b(0x847)](_0x17e5bd)&&(_0x5aa5f4[_0x45279b(0x31a)][_0x45279b(0x7d6)]&&_0x5aa5f4['favoriteJobs']['length']>0x0||_0x5aa5f4[_0x45279b(0x581)][_0x45279b(0x712)]&&_0x5aa5f4['canBuild']())&&(_0x5aa5f4[_0x45279b(0x62c)]=[],_0x456095=!![]);const _0x21052a={..._0x5aa5f4['jobFilter'],'filterJob':''},_0x25e80c=[];(!_0x19a533||(!_0x5aa5f4[_0x45279b(0x31a)][_0x45279b(0x7d6)]||_0x5aa5f4[_0x45279b(0x758)][_0x45279b(0x881)]===0x0)||_0x5aa5f4[_0x45279b(0x427)]['awaitNextSession'])&&_0x5aa5f4['addedJobs'][_0x45279b(0x404)](function(_0x3a0416){const _0x197a34=_0x45279b;let _0x3fb1a7={'x':_0x3a0416['x'],'y':_0x3a0416['y'],'id':_0x3a0416['id'],'groupId':_0x3a0416[_0x197a34(0x7d4)],'silver':_0x3a0416[_0x197a34(0x7b1)],'motivation':_0x3a0416[_0x197a34(0x443)],'stopMotivation':_0x3a0416[_0x197a34(0x8d5)],'set':_0x3a0416[_0x197a34(0x61f)]};_0x25e80c[_0x197a34(0x70d)](_0x3fb1a7);});const _0x50d7db={'sessionStats':_0x5aa5f4[_0x45279b(0x23d)][_0x45279b(0x2fa)],'diagnostics':_0x5aa5f4[_0x45279b(0x5ca)],'currentJob':_0x5aa5f4[_0x45279b(0x360)],'addedJobs':_0x25e80c},_0x5a16e5={'jobFilterPreferences':_0x21052a,'sortJobTable':_0x5aa5f4['sortJobTable'],'farmingAssistant':_0x5aa5f4[_0x45279b(0x427)]['enabled'],'build':_0x5aa5f4[_0x45279b(0x581)],'settings':_0x5aa5f4['settings'],'consumablesSelection':_0x5aa5f4[_0x45279b(0x709)],'favoriteJobs':_0x5aa5f4[_0x45279b(0x758)],'workerProfiles':_0x5aa5f4[_0x45279b(0x6af)],'jobsFarmingGear':_0x5aa5f4[_0x45279b(0x1f3)],'totalStats':_0x5aa5f4[_0x45279b(0x23d)][_0x45279b(0x888)],'travelSet':_0x5aa5f4[_0x45279b(0x814)],'jobSet':_0x5aa5f4[_0x45279b(0x76f)],'healthSet':_0x5aa5f4[_0x45279b(0x5c5)],'regenerationSet':_0x5aa5f4[_0x45279b(0x4a1)]},_0x24efec=encodeURIComponent(JSON['stringify'](_0x50d7db)),_0x1ab6ef=encodeURIComponent(JSON[_0x45279b(0x6a2)](_0x5a16e5,_0xa4b642));_0x5aa5f4['localStorageSet'](_0x45279b(0x7a9),_0x24efec),_0x5aa5f4[_0x45279b(0x8d2)](_0x45279b(0x8c6),_0x1ab6ef),_0x456095&&_0x5aa5f4[_0x45279b(0x66b)]&&(_0x5aa5f4[_0x45279b(0x235)]()?_0x5aa5f4['relog']('Daily\x20jobs\x20reset\x20(relogged).\x20'):_0x5aa5f4[_0x45279b(0x6bd)]('Daily\x20jobs\x20reset\x20(reloaded).\x20'));};const _0xc6f468={},_0x17d0a0=async function(_0x2a4fb1,_0x5e1023){const _0xaa3e3d=_0x54d740;try{_0xc6f468['key']=_0x2a4fb1['name'],_0xc6f468[_0xaa3e3d(0x774)]=_0x5e1023[_0xaa3e3d(0x69d)]+Object['keys'](_0x55f5e9)['at'](0x0);}catch(_0x4b7542){}};function _0xa4b642(_0x1e2391,_0x956593){const _0x563cb4=_0x54d740;if(_0x956593===Infinity)return _0x563cb4(0x247);return _0x956593;};function _0x208d9e(_0x1e986f,_0x473a63){if(_0x473a63==='Infinity')return Infinity;return _0x473a63;};var _0x13f701=_0x54d740(0x79a);_0x5aa5f4['getCookies']=function(){const _0x896c9c=_0x54d740;_0x41dd6e=_0x4044be['level']>0x18?_0x4044be[_0x896c9c(0x406)]:0x0;const _0x3ae5dd=_0x5aa5f4[_0x896c9c(0x518)](_0x896c9c(0x2e4)),_0x2437b1=_0x3ae5dd?_0xa15714()>=new Date(_0x3ae5dd):!![],_0x312174=!_0x2437b1&&_0x5aa5f4[_0x896c9c(0x518)](_0x896c9c(0x7a9))?JSON[_0x896c9c(0x47c)](decodeURIComponent(_0x5aa5f4[_0x896c9c(0x518)](_0x896c9c(0x7a9)))):null;_0x17d0a0(_0x4044be,_0x5aa5f4);let _0x562c94=_0x5aa5f4['localStorageGet'](_0x896c9c(0x8c6));if(!_0x562c94){const _0x3e56d6=_0x5aa5f4['localStorageGet']('settings');_0x3e56d6&&(_0x5aa5f4['localStorageSet'](_0x896c9c(0x8c6),_0x3e56d6),_0x562c94=_0x3e56d6);}const _0x483186=_0x562c94?JSON[_0x896c9c(0x47c)](decodeURIComponent(_0x562c94),_0x208d9e):null;if(_0x312174){if(_0x3da46f===_0x896c9c(0x770))return;_0x5aa5f4[_0x896c9c(0x62c)]=[];const _0x367fec=_0x312174[_0x896c9c(0x62c)]||[];for(let _0x4aaced=0x0;_0x4aaced<_0x367fec[_0x896c9c(0x881)];_0x4aaced++){const _0xbcad0f=new _0x521208(_0x367fec[_0x4aaced]['x'],_0x367fec[_0x4aaced]['y'],_0x367fec[_0x4aaced]['id'],_0x367fec[_0x4aaced][_0x896c9c(0x7d4)],_0x367fec[_0x4aaced]['silver']);_0xbcad0f[_0x896c9c(0x317)]=0x0,_0xbcad0f['setMotivation'](_0x367fec[_0x4aaced][_0x896c9c(0x443)]),_0xbcad0f[_0x896c9c(0x89d)](_0x367fec[_0x4aaced][_0x896c9c(0x8d5)]),_0xbcad0f[_0x896c9c(0x5eb)](_0x367fec[_0x4aaced][_0x896c9c(0x61f)]),_0x5aa5f4[_0x896c9c(0x62c)]['push'](_0xbcad0f);}_0x5aa5f4['addedJobsOld']=[..._0x5aa5f4[_0x896c9c(0x62c)]],_0x4776d8(_0x5aa5f4[_0x896c9c(0x360)],_0x312174[_0x896c9c(0x360)]),_0x5aa5f4[_0x896c9c(0x23d)][_0x896c9c(0x2fa)]=_0x312174[_0x896c9c(0x237)]??_0x5aa5f4['stats'][_0x896c9c(0x2fa)],_0x5aa5f4[_0x896c9c(0x5ca)]=_0x312174[_0x896c9c(0x5ca)]??_0x5aa5f4['diagnostics'];for(var _0x444630 in _0x312174[_0x896c9c(0x5ca)]){_0x312174['diagnostics']['hasOwnProperty'](_0x444630)&&_0x312174[_0x896c9c(0x5ca)][_0x444630]!=undefined&&(_0x5aa5f4[_0x896c9c(0x5ca)][_0x444630]=_0x312174[_0x896c9c(0x5ca)][_0x444630],Array['isArray'](_0x5aa5f4[_0x896c9c(0x5ca)][_0x444630])&&_0x5aa5f4[_0x896c9c(0x5ca)][_0x444630][_0x896c9c(0x881)]>0x1388&&(_0x5aa5f4[_0x896c9c(0x5ca)][_0x444630]=[]));}}_0x483186&&(_0x4776d8(_0x5aa5f4[_0x896c9c(0x31a)],_0x483186[_0x896c9c(0x31a)]),_0x4776d8(_0x5aa5f4['build'],_0x483186[_0x896c9c(0x581)]),_0x4776d8(_0x5aa5f4[_0x896c9c(0x4cc)],_0x483186[_0x896c9c(0x8c9)]),_0x4776d8(_0x5aa5f4['sortJobTable'],_0x483186[_0x896c9c(0x380)]),_0x4776d8(_0x5aa5f4['stats']['total'],_0x483186['totalStats']),_0x4776d8(_0x5aa5f4['workerProfiles'],_0x483186['workerProfiles']),_0x5aa5f4[_0x896c9c(0x1f3)]=_0x483186[_0x896c9c(0x1f3)]??_0x5aa5f4['jobsFarmingGear'],_0x5aa5f4[_0x896c9c(0x758)]=_0x483186[_0x896c9c(0x758)]??_0x5aa5f4[_0x896c9c(0x758)],_0x5aa5f4['consumablesSelection']=_0x483186['consumablesSelection']??_0x5aa5f4['consumablesSelection'],_0x5aa5f4[_0x896c9c(0x427)][_0x896c9c(0x699)]=_0x483186[_0x896c9c(0x427)]??_0x5aa5f4[_0x896c9c(0x427)]['enabled'],_0x5aa5f4[_0x896c9c(0x814)]=_0x483186[_0x896c9c(0x814)]??_0x5aa5f4[_0x896c9c(0x814)],_0x5aa5f4[_0x896c9c(0x76f)]=_0x483186['jobSet']??_0x5aa5f4[_0x896c9c(0x76f)],_0x5aa5f4[_0x896c9c(0x5c5)]=_0x483186[_0x896c9c(0x5c5)]??_0x5aa5f4[_0x896c9c(0x5c5)],_0x5aa5f4[_0x896c9c(0x4a1)]=_0x483186[_0x896c9c(0x4a1)]??_0x5aa5f4[_0x896c9c(0x4a1)],_0x5aa5f4['setSetForAllJobs'](),_0x5aa5f4[_0x896c9c(0x702)]());},_0x5aa5f4[_0x54d740(0x220)]=function(){const _0x5dd5e5=_0x54d740;_0x5aa5f4[_0x5dd5e5(0x447)]();var _0x37d00f=_0x5aa5f4['localStorageGet'](_0x5dd5e5(0x8c6)),_0x46d3cd=localStorage['getItem'](_0x5dd5e5(0x616)),_0x4692ea={'dusanData':JSON[_0x5dd5e5(0x47c)](decodeURIComponent(_0x37d00f),_0x208d9e),'wardrobe':_0x46d3cd&&_0x5aa5f4['settings'][_0x5dd5e5(0x88a)]?JSON[_0x5dd5e5(0x47c)](_0x46d3cd):null},_0x267e71=encodeURIComponent(JSON[_0x5dd5e5(0x6a2)](_0x4692ea,_0xa4b642)),_0x3af3fc=_0x5dd5e5(0x573)+Character['name']+_0x5dd5e5(0x419),_0x1600e7=new Blob([_0x267e71],{'type':_0x5dd5e5(0x63e)}),_0x277fba=document[_0x5dd5e5(0x8b6)]('a');_0x277fba[_0x5dd5e5(0x20a)]=URL[_0x5dd5e5(0x543)](_0x1600e7),_0x277fba[_0x5dd5e5(0x780)]=_0x3af3fc,document[_0x5dd5e5(0x26b)][_0x5dd5e5(0x258)](_0x277fba),_0x277fba['click'](),document[_0x5dd5e5(0x26b)][_0x5dd5e5(0x736)](_0x277fba),setTimeout(()=>URL[_0x5dd5e5(0x4ee)](_0x277fba['href']),0x0);},_0x5aa5f4[_0x54d740(0x3fd)]=function(){return new Promise((_0x3bf31b,_0x291860)=>{const _0x1d5106=_0x3acb;var _0x4841f4=document[_0x1d5106(0x8b6)](_0x1d5106(0x70c));_0x4841f4[_0x1d5106(0x51c)]='file',_0x4841f4[_0x1d5106(0x43e)]=_0x1d5106(0x419),_0x4841f4['onchange']=function(_0x489588){const _0x445f06=_0x1d5106;var _0x4c6bd8=_0x489588[_0x445f06(0x80e)][_0x445f06(0x8d1)][0x0];if(!_0x4c6bd8){_0x291860(new Error(_0x445f06(0x2e9)));return;}var _0x40e784=new FileReader();_0x40e784['onload']=function(_0x323921){const _0x582cc3=_0x445f06;try{var _0x2fd575=JSON[_0x582cc3(0x47c)](decodeURIComponent(_0x323921[_0x582cc3(0x80e)][_0x582cc3(0x552)]));if(_0x2fd575[_0x582cc3(0x785)])_0x5aa5f4[_0x582cc3(0x8d2)]('data',encodeURIComponent(JSON['stringify'](_0x2fd575['dusanData'],_0xa4b642)));else{if(_0x2fd575[_0x582cc3(0x31a)][_0x582cc3(0x31a)])_0x5aa5f4[_0x582cc3(0x8d2)](_0x582cc3(0x8c6),encodeURIComponent(JSON[_0x582cc3(0x6a2)](_0x2fd575[_0x582cc3(0x31a)],_0xa4b642)));else _0x2fd575[_0x582cc3(0x31a)]&&_0x5aa5f4['localStorageSet']('data',encodeURIComponent(JSON[_0x582cc3(0x6a2)](_0x2fd575,_0xa4b642)));}_0x2fd575[_0x582cc3(0x3f2)]&&localStorage['setItem'](_0x582cc3(0x616),JSON[_0x582cc3(0x6a2)](_0x2fd575[_0x582cc3(0x3f2)])),_0x3bf31b(!![]);}catch(_0x300062){console[_0x582cc3(0x34d)](_0x582cc3(0x747),_0x300062[_0x582cc3(0x70a)]),_0x291860(new Error(_0x582cc3(0x52e)));}},_0x40e784[_0x445f06(0x1f1)](_0x4c6bd8);},_0x4841f4[_0x1d5106(0x4d9)]();});};async function _0x38ead9(_0xc2c026){const _0x31b7bd=_0x54d740;try{const _0x130139=await _0x1acd27(_0x3dca83+_0x5561cf[_0x31b7bd(0x69b)]()+_0x38ead9['toString']()+_0x248180[_0x31b7bd(0x69b)]()+_0x29d6aa['toString']()+_0x2d53cd['toString']()+_0x366e25[_0x31b7bd(0x69b)]()+_0x5aa5f4[_0x31b7bd(0x2cd)][_0x31b7bd(0x69b)]()+_0x12400c);if(_0xc2c026)console[_0x31b7bd(0x5bf)](_0x130139);if(_0x3da46f===_0x31b7bd(0x770))return![];return _0x130139===_0xff43f0;}catch(_0x2c4642){return![];}};_0x5aa5f4[_0x54d740(0x88d)]=function(){const _0x14b800=_0x54d740;return[0x0,0x4][_0x14b800(0x2fe)](_0x5aa5f4['currentState'])?'https://westsk.innogamescdn.com/images/chat/status_offline.png':[0x3,0x5,0x6,0x7][_0x14b800(0x2fe)](_0x5aa5f4['currentState'])?_0x14b800(0x38a):_0x14b800(0x20b);},_0x5aa5f4[_0x54d740(0x361)]=function(){const _0x5590e7=_0x54d740;var _0x508090=_0x5aa5f4['getStatusIcon']();$(_0x5590e7(0x7b0))['attr'](_0x5590e7(0x6a1),_0x508090)[_0x5590e7(0x327)]('title',_0x5aa5f4[_0x5590e7(0x5b7)][_0x5aa5f4[_0x5590e7(0x723)]]);},_0x5aa5f4['createWindow']=function(){const _0x2bd148=_0x54d740;var _0x1acc02=wman[_0x2bd148(0x1e5)]('Dušan')['setResizeable'](![])[_0x2bd148(0x7ce)](0x28a,0x1e0)[_0x2bd148(0x31f)](0x28a,0x1e0)[_0x2bd148(0x3da)](_0x2bd148(0x2c9)),_0x53e3c4=$(_0x2bd148(0x78c)),_0x3acc2a=$(_0x2bd148(0x3d7)),_0x1ac617=_0x5aa5f4[_0x2bd148(0x88d)](),_0x57f184=$(_0x2bd148(0x1ce)+_0x1ac617+_0x2bd148(0x8ad));_0x57f184[_0x2bd148(0x1f6)]({'position':'absolute','top':_0x2bd148(0x81a),'left':'5.5px','margin':'0','padding-left':_0x2bd148(0x53f),'padding-right':_0x2bd148(0x53f),'border':_0x2bd148(0x634),'verticalAlign':'middle'});var _0x516afa=$('<p><b>v.\x20'+_0x5aa5f4[_0x2bd148(0x225)]+_0x2bd148(0x3dd))[_0x2bd148(0x1f6)]({'position':_0x2bd148(0x786),'top':_0x2bd148(0x7f8),'right':_0x2bd148(0x6b4),'padding-left':_0x2bd148(0x33b),'padding-right':_0x2bd148(0x33b),'transform':_0x2bd148(0x7e8),'user-select':_0x2bd148(0x3e9)});$(_0x2bd148(0x43d))['prop'](_0x2bd148(0x51c),'text/css')['html'](_0x2bd148(0x35f))[_0x2bd148(0x5f3)](_0x2bd148(0x768));if(Player[_0x2bd148(0x641)]){var _0x49cf01=$(_0x2bd148(0x5df))[_0x2bd148(0x473)](_0x2bd148(0x4b5))['on'](_0x2bd148(0x4d9),function(){const _0x236ff8=_0x2bd148;_0x5aa5f4[_0x236ff8(0x645)](),$(this)['remove']();});_0x3acc2a[_0x2bd148(0x820)](_0x49cf01);}_0x3acc2a[_0x2bd148(0x820)](_0x57f184),_0x3acc2a[_0x2bd148(0x820)](_0x516afa),_0x1acc02[_0x2bd148(0x80f)](_0x3acc2a);function _0x55dbf2(_0x28c939){const _0x42af69=_0x2bd148;_0x5aa5f4[_0x42af69(0x6c5)](),_0x5aa5f4['removeWindowContent'](),_0x5aa5f4[_0x42af69(0x8a5)](_0x28c939);}const _0x350dd5={'jobs':'Jobs','addedJobs':_0x2bd148(0x2c0),'sets':_0x2bd148(0x8bd),'consumables':'Consumables','stats':_0x2bd148(0x4a9),'settings':_0x2bd148(0x446),'favoriteJobs':_0x2bd148(0x3f1),'townBuild':_0x2bd148(0x4c1),'notificationSettings':_0x2bd148(0x2d7)};var _0x5216fe=function(_0x2bf543,_0x49ffdf){const _0x2a650f=_0x2bd148;var _0x374d2f=$(_0x2a650f(0x78c));switch(_0x49ffdf){case _0x2a650f(0x24c):_0x5aa5f4['loadJobsData'](function(){const _0x9344bc=_0x2a650f;_0x55dbf2(_0x49ffdf),_0x374d2f[_0x9344bc(0x820)](_0x5aa5f4[_0x9344bc(0x7c2)]()),_0x5aa5f4[_0x9344bc(0x41e)]['appendToContentPane'](_0x374d2f),_0x5aa5f4[_0x9344bc(0x541)](),$(_0x9344bc(0x4f1))[_0x9344bc(0x1f6)]({'top':_0x5aa5f4['jobsTablePosition'][_0x9344bc(0x83b)]}),$('.Dusan2window\x20.tw2gui_scrollbar_pulley')['css']({'top':_0x5aa5f4[_0x9344bc(0x336)][_0x9344bc(0x29a)]}),_0x5aa5f4[_0x9344bc(0x5c7)](),_0x5aa5f4['addJobFilterEvent'](),$(_0x9344bc(0x88f))[_0x9344bc(0x327)]('autocomplete',_0x9344bc(0x5ad))[_0x9344bc(0x2c8)](_0x9344bc(0x418));});break;case _0x2a650f(0x62c):_0x55dbf2(_0x49ffdf),_0x374d2f[_0x2a650f(0x820)](_0x5aa5f4[_0x2a650f(0x6f3)]()),_0x5aa5f4[_0x2a650f(0x41e)][_0x2a650f(0x80f)](_0x374d2f),$(_0x2a650f(0x4f1))['css']({'top':_0x5aa5f4[_0x2a650f(0x4f7)][_0x2a650f(0x83b)]}),$(_0x2a650f(0x394))[_0x2a650f(0x1f6)]({'top':_0x5aa5f4[_0x2a650f(0x4f7)][_0x2a650f(0x29a)]}),_0x5aa5f4[_0x2a650f(0x70e)]();break;case _0x2a650f(0x76a):_0x55dbf2(_0x49ffdf),_0x5aa5f4[_0x2a650f(0x59c)](),_0x374d2f['append'](_0x5aa5f4['createConsumablesTab']()),_0x5aa5f4['window'][_0x2a650f(0x80f)](_0x374d2f),$(_0x2a650f(0x4f1))[_0x2a650f(0x1f6)]({'top':_0x5aa5f4[_0x2a650f(0x848)][_0x2a650f(0x83b)]}),$(_0x2a650f(0x394))[_0x2a650f(0x1f6)]({'top':_0x5aa5f4[_0x2a650f(0x848)]['scrollbar']}),_0x5aa5f4[_0x2a650f(0x318)]();break;case'sets':_0x5aa5f4[_0x2a650f(0x77c)](function(){const _0x52479a=_0x2a650f;_0x55dbf2(_0x49ffdf),_0x374d2f['append'](_0x5aa5f4[_0x52479a(0x33e)]()),_0x5aa5f4[_0x52479a(0x41e)][_0x52479a(0x80f)](_0x374d2f);});break;case _0x2a650f(0x23d):_0x55dbf2(_0x49ffdf),_0x374d2f['append'](_0x5aa5f4[_0x2a650f(0x228)]()),_0x5aa5f4[_0x2a650f(0x41e)][_0x2a650f(0x80f)](_0x374d2f);break;case _0x2a650f(0x31a):_0x55dbf2(_0x49ffdf),_0x374d2f[_0x2a650f(0x820)](_0x5aa5f4[_0x2a650f(0x7c6)]()),_0x5aa5f4['window'][_0x2a650f(0x80f)](_0x374d2f);break;case _0x2a650f(0x758):_0x55dbf2(_0x49ffdf),_0x374d2f[_0x2a650f(0x820)](_0x5aa5f4[_0x2a650f(0x4c9)]()),_0x5aa5f4[_0x2a650f(0x41e)][_0x2a650f(0x80f)](_0x374d2f),$(_0x2a650f(0x4f1))[_0x2a650f(0x1f6)]({'top':_0x5aa5f4[_0x2a650f(0x4a7)][_0x2a650f(0x83b)]}),$(_0x2a650f(0x394))['css']({'top':_0x5aa5f4[_0x2a650f(0x4a7)][_0x2a650f(0x29a)]}),_0x5aa5f4[_0x2a650f(0x6a3)]();break;case _0x2a650f(0x28a):_0x5aa5f4['loadCityHall'](function(_0x37cfa4){const _0x2574a8=_0x2a650f;_0x55dbf2(_0x49ffdf),_0x374d2f[_0x2574a8(0x820)](_0x5aa5f4[_0x2574a8(0x40c)](_0x37cfa4)),_0x5aa5f4[_0x2574a8(0x41e)]['appendToContentPane'](_0x374d2f);});break;case _0x2a650f(0x41b):_0x55dbf2(_0x49ffdf),_0x374d2f[_0x2a650f(0x820)](_0x5aa5f4[_0x2a650f(0x671)]()),_0x5aa5f4[_0x2a650f(0x41e)][_0x2a650f(0x80f)](_0x374d2f);break;}_0x5aa5f4[_0x2a650f(0x2fb)]=_0x49ffdf;};for(var _0x2f9599 in _0x350dd5){_0x1acc02[_0x2bd148(0x208)](_0x350dd5[_0x2f9599],_0x2f9599,_0x5216fe);}_0x5aa5f4['window']=_0x1acc02,_0x5aa5f4[_0x2bd148(0x522)](_0x5aa5f4[_0x2bd148(0x2fb)]);};let _0x41dd6e=0x19;_0x5aa5f4['refreshTab']=function(_0xf10366){const _0x116ce9=_0x54d740,_0x161b9e=_0x5aa5f4[_0x116ce9(0x808)](),_0x278603=_0xf10366!=undefined?_0xf10366:_0x161b9e;_0x278603&&_0x278603===_0x161b9e&&_0x5aa5f4[_0x116ce9(0x41e)][_0x116ce9(0x248)][_0x278603]['f'](_0x5aa5f4[_0x116ce9(0x41e)],_0x278603);},_0x5aa5f4[_0x54d740(0x522)]=function(_0x2f1ae9){const _0x1092aa=_0x54d740;_0x5aa5f4[_0x1092aa(0x41e)]['tabIds'][_0x2f1ae9]['f'](_0x5aa5f4[_0x1092aa(0x41e)],_0x2f1ae9);},_0x5aa5f4['removeActiveTab']=function(){const _0x10d4d0=_0x54d740,_0x30992d=_0x5aa5f4['getActiveTab']();[_0x10d4d0(0x24c),_0x10d4d0(0x62c),_0x10d4d0(0x76a),'favoriteJobs']['includes'](_0x30992d)&&(_0x5aa5f4[_0x30992d+_0x10d4d0(0x377)]['content']=$('.Dusan2window\x20.tw2gui_scrollpane_clipper_contentpane')[_0x10d4d0(0x1f6)](_0x10d4d0(0x622)),_0x5aa5f4[_0x30992d+_0x10d4d0(0x377)]['scrollbar']=$(_0x10d4d0(0x394))[_0x10d4d0(0x1f6)](_0x10d4d0(0x622))),$(_0x10d4d0(0x6da),_0x5aa5f4[_0x10d4d0(0x41e)][_0x10d4d0(0x44b)])[_0x10d4d0(0x250)](_0x10d4d0(0x1d9));},_0x5aa5f4[_0x54d740(0x8a5)]=function(_0x31efd2){const _0x19bf65=_0x54d740;$(_0x19bf65(0x1e4)+_0x31efd2,_0x5aa5f4[_0x19bf65(0x41e)]['divMain'])[_0x19bf65(0x473)](_0x19bf65(0x1d9));},_0x5aa5f4[_0x54d740(0x46a)]=function(){const _0x32785f=_0x54d740;$(_0x32785f(0x296))['remove']();},_0x5aa5f4[_0x54d740(0x808)]=function(){const _0x598809=_0x54d740,_0x4f06ad=$(_0x598809(0x3c6),_0x5aa5f4['window']?.[_0x598809(0x44b)]);if(_0x4f06ad[_0x598809(0x881)]>0x0){var _0x54c8dc=_0x4f06ad[_0x598809(0x327)]('class')[_0x598809(0x47a)](/_tab_id_([^\s]+)/);if(_0x54c8dc&&_0x54c8dc[_0x598809(0x881)]>0x1)return _0x54c8dc[0x1];}return'';},_0x5aa5f4[_0x54d740(0x541)]=function(){const _0x27251a=_0x54d740;$(_0x27251a(0x332))[_0x27251a(0x1f6)]({'margin-top':_0x27251a(0x409)}),$('.Dusan2window\x20.dummy')[_0x27251a(0x1f6)]({'float':_0x27251a(0x2f3)}),$('.Dusan2window\x20.jobIcon')[_0x27251a(0x1f6)]({'width':'70px'}),$(_0x27251a(0x773))[_0x27251a(0x1f6)]({'width':'150px'}),$('.Dusan2window\x20.jobXp')['css']({'width':_0x27251a(0x602)}),$(_0x27251a(0x6b5))[_0x27251a(0x1f6)]({'width':_0x27251a(0x602)}),$(_0x27251a(0x801))[_0x27251a(0x1f6)]({'width':'40px'}),$('.Dusan2window\x20.jobDistance')['css']({'width':_0x27251a(0x7c5)}),$(_0x27251a(0x633))[_0x27251a(0x1f6)]({'width':_0x27251a(0x358)}),$(_0x27251a(0x695))['css']({'width':'150px','margin-bottom':_0x27251a(0x33b)}),$(_0x27251a(0x429))[_0x27251a(0x1f6)]({'width':_0x27251a(0x602),'margin-bottom':'10px'}),$('.Dusan2window\x20.row\x20.jobMoney')['css']({'width':'40px','margin-bottom':'10px'}),$(_0x27251a(0x538))[_0x27251a(0x1f6)]({'width':_0x27251a(0x602),'margin-bottom':'10px'}),$(_0x27251a(0x4d1))[_0x27251a(0x1f6)]({'width':_0x27251a(0x7c5),'margin-bottom':_0x27251a(0x33b)}),$(_0x27251a(0x6e1))[_0x27251a(0x1f6)]({'width':_0x27251a(0x358),'margin-bottom':'5px'}),$(_0x27251a(0x7ad))[_0x27251a(0x1f6)]({'margin-bottom':_0x27251a(0x53f)}),$(_0x27251a(0x7f1))[_0x27251a(0x1f6)]({'height':_0x27251a(0x320),'background':'none'}),$('.Dusan2window\x20.trows')[_0x27251a(0x1f6)]({'height':_0x27251a(0x529)}),$('.Dusan2window')[_0x27251a(0x492)](_0x27251a(0x44d))[_0x27251a(0x1f6)](_0x27251a(0x4cd),'380px'),$(_0x27251a(0x296))[_0x27251a(0x492)](_0x27251a(0x27b))[_0x27251a(0x1f6)](_0x27251a(0x4cd),_0x27251a(0x450)),$(_0x27251a(0x296))[_0x27251a(0x492)]('.tw2gui_scrollpane')[_0x27251a(0x1f6)](_0x27251a(0x4cd),_0x27251a(0x450)),$('.Dusan2window')['find'](_0x27251a(0x7b7))['css'](_0x27251a(0x4cd),_0x27251a(0x85e));},_0x5aa5f4[_0x54d740(0x70e)]=function(){const _0x334374=_0x54d740;$(_0x334374(0x200))['css']({'width':'70px'}),$(_0x334374(0x773))[_0x334374(0x1f6)]({'width':_0x334374(0x525)}),$(_0x334374(0x3db))['css']({'width':_0x334374(0x7a7)}),$(_0x334374(0x32a))['css']({'width':_0x334374(0x7a7)}),$(_0x334374(0x8b9))[_0x334374(0x1f6)]({'width':_0x334374(0x73f)}),$(_0x334374(0x695))['css']({'width':_0x334374(0x525),'margin-bottom':_0x334374(0x33b)}),$(_0x334374(0x517))[_0x334374(0x1f6)]({'width':_0x334374(0x7a7),'margin-bottom':_0x334374(0x33b)}),$(_0x334374(0x599))['css']({'width':_0x334374(0x7a7),'margin-bottom':'10px'}),$('.Dusan2window\x20.row\x20.jobRemove')[_0x334374(0x1f6)]({'width':'91px','margin-bottom':_0x334374(0x53f)}),$(_0x334374(0x7ad))['css']({'margin-bottom':'5px'}),$(_0x334374(0x7f1))[_0x334374(0x1f6)]({'height':_0x334374(0x320),'background':_0x334374(0x634)}),$(_0x334374(0x296))[_0x334374(0x492)](_0x334374(0x7c3))[_0x334374(0x1f6)](_0x334374(0x4cd),_0x334374(0x439));},_0x5aa5f4['addFavoriteJobsTableCss']=function(){const _0x42ffc3=_0x54d740;$(_0x42ffc3(0x2ca))['css']({'float':_0x42ffc3(0x2f3)}),$(_0x42ffc3(0x200))[_0x42ffc3(0x1f6)]({'width':'70px'}),$(_0x42ffc3(0x773))[_0x42ffc3(0x1f6)]({'width':_0x42ffc3(0x5b5)}),$(_0x42ffc3(0x32a))['css']({'width':_0x42ffc3(0x850)}),$(_0x42ffc3(0x4d4))['css']({'width':_0x42ffc3(0x47d),'font-weight':_0x42ffc3(0x61e)}),$(_0x42ffc3(0x2ab))[_0x42ffc3(0x1f6)]({'width':'28px'}),$(_0x42ffc3(0x1e6))[_0x42ffc3(0x1f6)]({'width':_0x42ffc3(0x297)}),$('.Dusan2window\x20.row\x20.jobRank')[_0x42ffc3(0x1f6)]({'padding-left':_0x42ffc3(0x5cd)}),$(_0x42ffc3(0x213))['css']({'height':'30px','display':_0x42ffc3(0x866),'align-items':_0x42ffc3(0x548)}),$(_0x42ffc3(0x843))[_0x42ffc3(0x1f6)]({'height':'30px','display':_0x42ffc3(0x866),'align-items':_0x42ffc3(0x548)}),$(_0x42ffc3(0x8b9))[_0x42ffc3(0x1f6)]({'width':_0x42ffc3(0x47d),'display':_0x42ffc3(0x866),'align-items':_0x42ffc3(0x548)}),$('.Dusan2window\x20.row:not(.row_head)\x20>\x20*:not(.jobIcon)')[_0x42ffc3(0x1f6)]({'margin-top':_0x42ffc3(0x782)}),$('.Dusan2window\x20.row')[_0x42ffc3(0x1f6)]({'background':'none','height':_0x42ffc3(0x320),'display':_0x42ffc3(0x866),'align-items':_0x42ffc3(0x548)}),$('.Dusan2window\x20.trows')['css']({'height':'360px'}),$(_0x42ffc3(0x296))[_0x42ffc3(0x492)](_0x42ffc3(0x44d))[_0x42ffc3(0x1f6)](_0x42ffc3(0x4cd),_0x42ffc3(0x359)),$(_0x42ffc3(0x296))[_0x42ffc3(0x492)](_0x42ffc3(0x27b))[_0x42ffc3(0x1f6)](_0x42ffc3(0x4cd),_0x42ffc3(0x67d)),$('.Dusan2window')['find'](_0x42ffc3(0x7c3))[_0x42ffc3(0x1f6)](_0x42ffc3(0x4cd),_0x42ffc3(0x67d)),$(_0x42ffc3(0x296))[_0x42ffc3(0x492)](_0x42ffc3(0x7b7))[_0x42ffc3(0x1f6)]('height',_0x42ffc3(0x85e));},_0x5aa5f4[_0x54d740(0x318)]=function(){const _0x23b6c3=_0x54d740;$(_0x23b6c3(0x60c))[_0x23b6c3(0x1f6)]({'width':'65px'}),$(_0x23b6c3(0x210))['css']({'width':_0x23b6c3(0x850)}),$(_0x23b6c3(0x8c7))[_0x23b6c3(0x1f6)]({'width':_0x23b6c3(0x549)}),$(_0x23b6c3(0x5b2))['css']({'width':_0x23b6c3(0x549)}),$(_0x23b6c3(0x3b3))[_0x23b6c3(0x1f6)]({'width':_0x23b6c3(0x5d8)}),$(_0x23b6c3(0x7cb))[_0x23b6c3(0x1f6)]({'width':'130px'}),$('.Dusan2window\x20.row\x20.consumSelected')[_0x23b6c3(0x1f6)]({'display':_0x23b6c3(0x866),'align-items':_0x23b6c3(0x548)}),$('.Dusan2window\x20.row:not(.row_head)\x20>\x20*:not(.consumIcon)')[_0x23b6c3(0x1f6)]({'margin-top':_0x23b6c3(0x53f)}),$(_0x23b6c3(0x7f1))[_0x23b6c3(0x1f6)]({'height':_0x23b6c3(0x5d8),'background-position':_0x23b6c3(0x824),'display':'flex','align-items':_0x23b6c3(0x548)}),$(_0x23b6c3(0x296))[_0x23b6c3(0x492)](_0x23b6c3(0x7c3))[_0x23b6c3(0x1f6)](_0x23b6c3(0x4cd),_0x23b6c3(0x439));};const _0x1f8fdd=[_0x54d740(0x3c7),_0x54d740(0x2a9),_0x54d740(0x7d2),_0x54d740(0x639),_0x54d740(0x5cf),_0x54d740(0x312),_0x54d740(0x486),_0x54d740(0x55c),_0x54d740(0x4e0),_0x54d740(0x5aa),_0x54d740(0x84e),_0x54d740(0x7cc),_0x54d740(0x803),'12f9d',_0x54d740(0x58a),_0x54d740(0x661),'3ae61',_0x54d740(0x2b0),_0x54d740(0x4cf),_0x54d740(0x3cb)];_0x5aa5f4[_0x54d740(0x5c7)]=function(){const _0x565156=_0x54d740;$(_0x565156(0x78e))[_0x565156(0x4d9)](function(){const _0x4cd1aa=_0x565156;_0x5aa5f4['sortJobTable']['xp']===0x0?_0x5aa5f4['sortJobTable']['xp']=0x1:_0x5aa5f4[_0x4cd1aa(0x380)]['xp']*=-0x1,_0x5aa5f4[_0x4cd1aa(0x380)][_0x4cd1aa(0x317)]=0x0,_0x5aa5f4['sortJobTable']['money']=0x0,_0x5aa5f4[_0x4cd1aa(0x43a)](_0x4cd1aa(0x24c));}),$('.Dusan2window\x20.jobMoney')[_0x565156(0x4d9)](function(){const _0x35f0a9=_0x565156;_0x5aa5f4['sortJobTable'][_0x35f0a9(0x234)]===0x0?_0x5aa5f4[_0x35f0a9(0x380)][_0x35f0a9(0x234)]=0x1:_0x5aa5f4[_0x35f0a9(0x380)][_0x35f0a9(0x234)]*=-0x1,_0x5aa5f4['sortJobTable'][_0x35f0a9(0x317)]=0x0,_0x5aa5f4['sortJobTable']['xp']=0x0,_0x5aa5f4[_0x35f0a9(0x43a)](_0x35f0a9(0x24c));}),$(_0x565156(0x4b8))[_0x565156(0x4d9)](function(){const _0x1f3abb=_0x565156;_0x5aa5f4[_0x1f3abb(0x380)]['distance']===0x0?_0x5aa5f4[_0x1f3abb(0x380)][_0x1f3abb(0x317)]=-0x1:_0x5aa5f4[_0x1f3abb(0x380)][_0x1f3abb(0x317)]*=-0x1,_0x5aa5f4[_0x1f3abb(0x380)]['xp']=0x0,_0x5aa5f4[_0x1f3abb(0x380)][_0x1f3abb(0x234)]=0x0,_0x5aa5f4[_0x1f3abb(0x43a)]('jobs');});},_0x5aa5f4[_0x54d740(0x1f0)]=function(){const _0x50b616=_0x54d740;var _0x573760=function(){const _0x1ccc67=_0x3acb;_0x5aa5f4[_0x1ccc67(0x37b)]!=undefined&&clearTimeout(_0x5aa5f4[_0x1ccc67(0x37b)]),_0x5aa5f4[_0x1ccc67(0x37b)]=setTimeout(function(){const _0x13ea43=_0x1ccc67;_0x5aa5f4[_0x13ea43(0x4cc)]['filterJob']=$(_0x13ea43(0x88f))[_0x13ea43(0x3d9)]()||'',$(_0x13ea43(0x4f1))[_0x13ea43(0x1f6)]({'top':_0x13ea43(0x36f)}),$('.Dusan2window\x20.tw2gui_scrollbar_pulley')[_0x13ea43(0x1f6)]({'top':'0px'}),_0x5aa5f4[_0x13ea43(0x43a)](_0x13ea43(0x24c));},0x2bc);};$('#job_filter_textField')['on'](_0x50b616(0x3f4),_0x573760);},_0x5aa5f4[_0x54d740(0x7c2)]=function(){const _0x10453f=_0x54d740;var _0x4a54c9=$('<div\x20id\x20=\x20\x27jobs_overview\x27></div>'),_0x43de71=$(_0x10453f(0x52d)),_0x3f6456=_0x10453f(0x3ff),_0x1f0f83=_0x10453f(0x689),_0x516974='<img\x20src=\x22/images/icons/motivation.png\x22>',_0x285ebe=_0x10453f(0x5e0),_0x58b73d='&nbsp;<img\x20src=\x22../images/window/jobs/sortarrow_asc.png\x22/>',_0x329404=new west[(_0x10453f(0x6cc))][(_0x10453f(0x3ee))]('job_filter_textField')[_0x10453f(0x30d)](_0x10453f(0x231))[_0x10453f(0x707)](0x8c);_0x5aa5f4[_0x10453f(0x4cc)][_0x10453f(0x472)]&&_0x329404['setValue'](_0x5aa5f4[_0x10453f(0x4cc)][_0x10453f(0x472)]);var _0x70d634=$(_0x10453f(0x478),{'src':_0x10453f(0x32c),'click':function(){const _0x47552a=_0x10453f;$(_0x47552a(0x88f))[_0x47552a(0x3d9)]('')[_0x47552a(0x2c8)](_0x47552a(0x348));},'css':{'filter':_0x10453f(0x1d5),'-webkit-filter':_0x10453f(0x1d5),'-moz-filter':_0x10453f(0x1d5),'-o-filter':_0x10453f(0x1d5),'position':_0x10453f(0x786),'top':_0x10453f(0x894),'left':_0x10453f(0x626)}});let _0x42578d=[];!_0x5aa5f4[_0x10453f(0x4cc)][_0x10453f(0x398)]?((!_0x5aa5f4[_0x10453f(0x8ae)](_0x5aa5f4[_0x10453f(0x3c4)])||_0x5aa5f4[_0x10453f(0x43b)][_0x10453f(0x881)]===0x0)&&(_0x5aa5f4['uniqueJobs']=_0x5aa5f4[_0x10453f(0x4c3)]()),_0x5aa5f4['lastPosition']={...Character[_0x10453f(0x827)]},_0x42578d=_0x5aa5f4[_0x10453f(0x761)](_0x5aa5f4[_0x10453f(0x43b)])):_0x42578d=_0x5aa5f4[_0x10453f(0x343)]();const _0xb295b2=new Set(_0x5aa5f4['favoriteJobs']['map'](_0x1509b7=>_0x1509b7['id'])),_0x109d22=new Set(_0x5aa5f4[_0x10453f(0x62c)][_0x10453f(0x286)](_0x4e81d5=>_0x4e81d5['id']));var _0x4e5a91=new west[(_0x10453f(0x6cc))][(_0x10453f(0x514))]();_0x4e5a91['addColumn'](_0x10453f(0x2a0),_0x10453f(0x2a0))[_0x10453f(0x755)](_0x10453f(0x468),_0x10453f(0x468))[_0x10453f(0x755)](_0x10453f(0x20e),_0x10453f(0x20e))[_0x10453f(0x755)](_0x10453f(0x3d4),_0x10453f(0x3d4))[_0x10453f(0x755)](_0x10453f(0x682),'jobMoney')[_0x10453f(0x755)](_0x10453f(0x2ed),_0x10453f(0x2ed))[_0x10453f(0x755)]('jobDistance',_0x10453f(0x6ca))[_0x10453f(0x755)](_0x10453f(0x8a8),_0x10453f(0x8a8))['addColumn'](_0x10453f(0x826),_0x10453f(0x826)),_0x4e5a91[_0x10453f(0x1f7)](_0x10453f(0x768),'dummy','')[_0x10453f(0x1f7)](_0x10453f(0x768),_0x10453f(0x468),'Job\x20icon')['appendToCell'](_0x10453f(0x768),_0x10453f(0x20e),_0x10453f(0x311))[_0x10453f(0x1f7)]('head',_0x10453f(0x3d4),_0x3f6456+(_0x5aa5f4[_0x10453f(0x380)]['xp']==0x1?_0x58b73d:_0x5aa5f4['sortJobTable']['xp']==-0x1?_0x285ebe:''))[_0x10453f(0x1f7)]('head','jobMoney',_0x1f0f83+(_0x5aa5f4['sortJobTable']['money']==0x1?_0x58b73d:_0x5aa5f4[_0x10453f(0x380)][_0x10453f(0x234)]==-0x1?_0x285ebe:''))[_0x10453f(0x1f7)](_0x10453f(0x768),'jobMotivation',_0x516974)[_0x10453f(0x1f7)]('head','jobDistance',_0x10453f(0x74d)+(_0x5aa5f4[_0x10453f(0x380)]['distance']==0x1?_0x58b73d:_0x5aa5f4[_0x10453f(0x380)][_0x10453f(0x317)]==-0x1?_0x285ebe:''))[_0x10453f(0x1f7)](_0x10453f(0x768),_0x10453f(0x8a8),'')[_0x10453f(0x1f7)](_0x10453f(0x768),_0x10453f(0x826),_0x10453f(0x425));for(let _0x544e98=0x0;_0x544e98<_0x42578d['length'];_0x544e98++){const _0x4e6d5b=_0x109d22['has'](_0x42578d[_0x544e98]['id']);_0x4e5a91[_0x10453f(0x309)]()['appendToCell'](-0x1,_0x10453f(0x468),_0x5aa5f4[_0x10453f(0x840)](_0x42578d[_0x544e98]['silver'],_0x42578d[_0x544e98]['id'],_0x42578d[_0x544e98]['x'],_0x42578d[_0x544e98]['y'],!![]))[_0x10453f(0x1f7)](-0x1,_0x10453f(0x20e),_0x5aa5f4[_0x10453f(0x314)](_0x42578d[_0x544e98]['id'])+'&nbsp;\x20')[_0x10453f(0x1f7)](-0x1,_0x10453f(0x3d4),_0x42578d[_0x544e98][_0x10453f(0x5be)])[_0x10453f(0x1f7)](-0x1,_0x10453f(0x682),_0x42578d[_0x544e98]['money'])[_0x10453f(0x1f7)](-0x1,'jobMotivation',_0x42578d[_0x544e98][_0x10453f(0x443)])[_0x10453f(0x1f7)](-0x1,_0x10453f(0x6ca),_0x42578d[_0x544e98][_0x10453f(0x317)][_0x10453f(0x4d5)]())[_0x10453f(0x1f7)](-0x1,_0x10453f(0x8a8),_0x5aa5f4[_0x10453f(0x351)](_0x42578d[_0x544e98]['x'],_0x42578d[_0x544e98]['y'],_0x42578d[_0x544e98]['id'],_0x4e6d5b,_0x544e98))[_0x10453f(0x1f7)](-0x1,_0x10453f(0x826),_0x5aa5f4[_0x10453f(0x7ee)](_0x42578d[_0x544e98]['id'],_0x5aa5f4[_0x10453f(0x336)],_0xb295b2))[_0x10453f(0x3f5)]()[_0x10453f(0x1f6)](_0x10453f(0x570),_0x4e6d5b?0.6:0x1);}let _0xc4fbd0=![];function _0x1d9551(){if(_0xc4fbd0)return;_0xc4fbd0=!![],setTimeout(function(){const _0x30ed28=_0x3acb;_0xc4fbd0=![],_0x5aa5f4[_0x30ed28(0x423)](0xbb8),$(_0x30ed28(0x4f1))[_0x30ed28(0x1f6)]({'top':_0x30ed28(0x36f)}),$(_0x30ed28(0x394))['css']({'top':_0x30ed28(0x36f)}),_0x5aa5f4[_0x30ed28(0x522)]('jobs');},0x0);}var _0x4ba569=new west[(_0x10453f(0x6cc))]['Checkbox']()[_0x10453f(0x562)](_0x10453f(0x1fe))['setSelected'](_0x5aa5f4['jobFilter'][_0x10453f(0x65b)])['setCallback'](function(){const _0x5b8751=_0x10453f;this[_0x5b8751(0x465)]()?(_0x5aa5f4['jobFilter'][_0x5b8751(0x65b)]=this[_0x5b8751(0x465)](),_0xbeec53[_0x5b8751(0x495)](!this[_0x5b8751(0x465)]())):_0x5aa5f4[_0x5b8751(0x4cc)][_0x5b8751(0x65b)]=![],_0x1d9551();}),_0xbeec53=new west['gui'][(_0x10453f(0x89b))]()[_0x10453f(0x562)](_0x10453f(0x624))['setSelected'](_0x5aa5f4[_0x10453f(0x4cc)][_0x10453f(0x398)])['setCallback'](function(){const _0x1b0a3d=_0x10453f;this['isSelected']()?(_0x5aa5f4[_0x1b0a3d(0x4cc)]['filterNoSilver']=this[_0x1b0a3d(0x465)](),_0x4ba569[_0x1b0a3d(0x495)](!this['isSelected']())):_0x5aa5f4[_0x1b0a3d(0x4cc)][_0x1b0a3d(0x398)]=![],_0x1d9551();}),_0xc67433=new west[(_0x10453f(0x6cc))][(_0x10453f(0x89b))]()[_0x10453f(0x562)](_0x10453f(0x36b))[_0x10453f(0x495)](_0x5aa5f4[_0x10453f(0x4cc)][_0x10453f(0x392)])[_0x10453f(0x845)](function(){const _0x16d5cc=_0x10453f;_0x5aa5f4[_0x16d5cc(0x4cc)][_0x16d5cc(0x392)]=this[_0x16d5cc(0x465)](),_0x1d9551();}),_0x9fba4e=new west[(_0x10453f(0x6cc))]['Checkbox']()[_0x10453f(0x562)](_0x10453f(0x2b4))[_0x10453f(0x495)](_0x5aa5f4[_0x10453f(0x4cc)]['filterFavorites'])[_0x10453f(0x845)](function(){const _0x5386a6=_0x10453f;_0x5aa5f4[_0x5386a6(0x4cc)][_0x5386a6(0x6b7)]=this['isSelected'](),_0x1d9551();}),_0x491105=new west['gui']['Checkbox']()['setLabel'](_0x10453f(0x35c))['setSelected'](_0x5aa5f4[_0x10453f(0x4cc)][_0x10453f(0x417)])['setCallback'](function(){const _0x6afd64=_0x10453f;_0x5aa5f4[_0x6afd64(0x4cc)][_0x6afd64(0x417)]=this[_0x6afd64(0x465)](),_0x1d9551();});return $(_0x10453f(0x819),_0x43de71)['append'](_0x329404[_0x10453f(0x71f)]()),$(_0x10453f(0x819),_0x43de71)[_0x10453f(0x820)](_0x70d634),$('#job_only_silver',_0x43de71)[_0x10453f(0x820)](_0x4ba569[_0x10453f(0x71f)]()),$('#job_no_silver',_0x43de71)[_0x10453f(0x820)](_0xbeec53[_0x10453f(0x71f)]()),$(_0x10453f(0x75e),_0x43de71)[_0x10453f(0x820)](_0xc67433['getMainDiv']()),$(_0x10453f(0x67b),_0x43de71)[_0x10453f(0x820)](_0x491105['getMainDiv']()),_0x4e5a91[_0x10453f(0x43c)](_0x10453f(0x2a0),_0x43de71),_0x4a54c9[_0x10453f(0x820)](_0x4e5a91['getMainDiv']()),_0x4a54c9;},_0x5aa5f4['createAddJobButton']=function(_0x1a5b37,_0x5ea169,_0x4bb193,_0x2f6e01,_0x1c5fa7){const _0x403127=_0x54d740;var _0xc3b5fd=new west[(_0x403127(0x6cc))][(_0x403127(0x528))](_0x403127(0x401),function(){const _0x3ba557=_0x403127;_0x5aa5f4[_0x3ba557(0x1ff)](_0x1a5b37,_0x5ea169,_0x4bb193),_0x5aa5f4[_0x3ba557(0x336)][_0x3ba557(0x83b)]=$('.Dusan2window\x20.tw2gui_scrollpane_clipper_contentpane')[_0x3ba557(0x1f6)]('top'),_0x5aa5f4[_0x3ba557(0x336)][_0x3ba557(0x29a)]=$(_0x3ba557(0x394))[_0x3ba557(0x1f6)](_0x3ba557(0x622)),_0x5aa5f4[_0x3ba557(0x423)](0xbb8),$(_0xc3b5fd[_0x3ba557(0x71f)]())['hide'](),$(_0x3ba557(0x57f)+_0x1c5fa7)[_0x3ba557(0x1f6)](_0x3ba557(0x570),'0.6');});_0xc3b5fd[_0x403127(0x707)](0x64);var _0x1d03c5=$(_0xc3b5fd[_0x403127(0x71f)]());return _0x2f6e01?_0x1d03c5['css'](_0x403127(0x62e),_0x403127(0x634)):_0x1d03c5;},_0x5aa5f4[_0x54d740(0x7ee)]=function(_0xc2e06c,_0x89622f,_0x37af04){const _0xb9149e=_0x54d740,_0x33daf6=new west['gui']['Checkbox']()[_0xb9149e(0x495)](_0x37af04[_0xb9149e(0x1fd)](_0xc2e06c))['setId'](_0xc2e06c)[_0xb9149e(0x845)](function(){const _0x246b14=_0xb9149e;_0x5aa5f4['updateFavoriteJobs'](parseInt(this[_0x246b14(0x44b)][_0x246b14(0x327)]('id')),this['isSelected']()),_0x5aa5f4[_0x246b14(0x423)](0xbb8);});return _0x33daf6[_0xb9149e(0x71f)]();},_0x5aa5f4['setCheck']=function(){const _0xc72ed7=_0x54d740,_0x596309=[_0x5aa5f4[_0xc72ed7(0x814)],_0x5aa5f4[_0xc72ed7(0x76f)],_0x5aa5f4[_0xc72ed7(0x5c5)],_0x5aa5f4[_0xc72ed7(0x4a1)],_0x5aa5f4[_0xc72ed7(0x31a)][_0xc72ed7(0x7a8)][_0xc72ed7(0x542)],_0x5aa5f4['settings'][_0xc72ed7(0x7a8)][_0xc72ed7(0x5f4)]],_0x9fd555=_0x596309[_0xc72ed7(0x265)](_0x1bea2f=>_0x5aa5f4[_0xc72ed7(0x6ba)][_0xc72ed7(0x1fd)](_0x1bea2f)||_0x1bea2f<=-0x1||_0x5aa5f4[_0xc72ed7(0x3f2)]['has'](_0x1bea2f)),_0x286afa=_0x5aa5f4[_0xc72ed7(0x62c)][_0xc72ed7(0x265)](_0x468283=>_0x5aa5f4[_0xc72ed7(0x6ba)][_0xc72ed7(0x1fd)](_0x468283['set'])||_0x468283[_0xc72ed7(0x61f)]<=-0x1||_0x5aa5f4['wardrobe'][_0xc72ed7(0x1fd)](_0x468283[_0xc72ed7(0x61f)]));return _0x9fd555&&_0x286afa;},_0x5aa5f4[_0x54d740(0x219)]=function(){const _0x49ebb2=_0x54d740;for(let _0x16bb6a=0x0;_0x16bb6a<_0x5aa5f4[_0x49ebb2(0x62c)][_0x49ebb2(0x881)];_0x16bb6a++){if(_0x5aa5f4[_0x49ebb2(0x62c)][_0x16bb6a][_0x49ebb2(0x61f)]<=-0x1)return![];}return!![];},_0x5aa5f4[_0x54d740(0x2cd)]=function(){_0x37831f=setInterval(function(){const _0x3957e6=_0x3acb;!_0xc24a06&&!_0x574178&&!_0x4077e1&&!_0x2078fb&&!_0x340455&&(!_0x235c8a()?(_0x3ad048(),clearInterval(_0x37831f)):(_0x1c7367(),_0x5aa5f4[_0x3957e6(0x721)]()));},_0x4d13ec);},_0x5aa5f4[_0x54d740(0x844)]=function(_0x525c08=0x0){const _0x161407=_0x54d740;if(!_0x5aa5f4[_0x161407(0x66b)])_0x5aa5f4[_0x161407(0x723)]=0x4;_0x5aa5f4['addedJobs'][_0x161407(0x881)]<=_0x453c68?_0x5aa5f4[_0x161407(0x34b)]():_0x5aa5f4['createRoute'](),_0x5aa5f4[_0x161407(0x522)](_0x161407(0x62c)),_0x5aa5f4[_0x161407(0x423)](0x3e8),!_0x5aa5f4[_0x161407(0x66b)]&&!_0xc24a06&&_0xb686fd[_0x161407(0x881)]===0x0&&_0x3da46f===_0x161407(0x79a)&&(_0xb686fd[_0x161407(0x70d)](function(){const _0x48d886=_0x161407;_0x5aa5f4[_0x48d886(0x66b)]=!![],_0x5aa5f4[_0x48d886(0x67c)]=0x64,_0x5aa5f4['addRunTimeEventListeners'](),_0x5aa5f4[_0x48d886(0x427)]['awaitNextSession']?_0x5aa5f4['awaitNextSession']():(clearTimeout(_0x2c1850),_0x2c1850=setTimeout(()=>{const _0x49a2a3=_0x48d886;_0x2c1850=null,_0x5aa5f4[_0x49a2a3(0x37f)](),_0x5aa5f4[_0x49a2a3(0x31a)][_0x49a2a3(0x55b)]&&_0x5aa5f4[_0x49a2a3(0x621)](),_0x5aa5f4[_0x49a2a3(0x4c4)]=new Date(),_0x5aa5f4[_0x49a2a3(0x3ae)]();},_0x525c08));}),_0x5aa5f4['startFlagCheck']());},_0x5aa5f4[_0x54d740(0x721)]=function(_0x10a432=0x0){const _0x4f59af=_0x54d740;clearTimeout(_0x2c1850),clearInterval(_0x37831f),_0xb686fd=[];if(_0x10a432>0x0)return _0x2c1850=setTimeout(()=>{const _0x5a89eb=_0x3acb;_0x5aa5f4[_0x5a89eb(0x833)](),_0x3a16fd(()=>TaskQueue[_0x5a89eb(0x3fe)][_0x5a89eb(0x881)]===0x0&&!_0x574178&&!_0x4077e1&&!_0x340455,()=>_0x5aa5f4[_0x5a89eb(0x70f)]({'dontWakeUp':!![],'message':_0x5a89eb(0x62f)}),0x1f4,0x2710);},_0x10a432),_0x5aa5f4[_0x4f59af(0x43a)](_0x4f59af(0x62c)),_0x2c1850;else _0x5aa5f4[_0x4f59af(0x833)](),_0x3a16fd(()=>TaskQueue['queue'][_0x4f59af(0x881)]===0x0&&!_0x574178&&!_0x4077e1&&!_0x340455,()=>EventHandler[_0x4f59af(0x82c)](_0x4f59af(0x691)),0x1f4,0x1388,!![]);return null;},_0x5aa5f4[_0x54d740(0x833)]=function(){const _0x399aeb=_0x54d740;_0x5aa5f4['currentState']=0x0,_0x5aa5f4['isRunning']=![],_0x2c1850=null,clearInterval(_0x3f1dfe),_0x5aa5f4[_0x399aeb(0x2c7)](),_0x32ed57!=null&&(_0x32ed57[_0x399aeb(0x47e)](),_0x32ed57=null),_0x5aa5f4[_0x399aeb(0x522)](_0x399aeb(0x62c));},_0x5aa5f4[_0x54d740(0x569)]=function(_0x5e6363=''){const _0x544612=_0x54d740,_0x104e68=_0x544612(0x6ab)+_0x5e6363;_0x5aa5f4['stopCleanup'](),_0x5aa5f4['showNotification'](_0x544612(0x403),_0x104e68,_0x544612(0x313));},_0x5aa5f4['awaitNextSession']=async function(){_0x5aa5f4['currentState']=0x6,clearInterval(_0x3f1dfe);const _0x189b0f=setInterval(()=>{const _0x3a7460=_0x3acb;if(!_0x5aa5f4['isRunning']||_0x5aa5f4[_0x3a7460(0x723)]!==0x6||!_0x5aa5f4[_0x3a7460(0x427)][_0x3a7460(0x2a1)])clearInterval(_0x189b0f);else _0x5aa5f4['isSessionExpired']()&&(clearInterval(_0x189b0f),_0x5aa5f4[_0x3a7460(0x447)](),_0x5aa5f4[_0x3a7460(0x6bd)](_0x3a7460(0x54c)));},0x2710);};const _0x4a4448=_0x54d740(0x23c);_0x5aa5f4['createAddedJobsTab']=function(){const _0xbdd0a2=_0x54d740;var _0x15457b=$(_0xbdd0a2(0x298)),_0x53cd51=$(_0xbdd0a2(0x592)+_0x5aa5f4[_0xbdd0a2(0x5b7)][_0x5aa5f4[_0xbdd0a2(0x723)]]+_0xbdd0a2(0x1f8));if(_0x5aa5f4[_0xbdd0a2(0x500)]()&&_0x5aa5f4[_0xbdd0a2(0x62c)][_0xbdd0a2(0x881)]>0x2&&_0x5aa5f4[_0xbdd0a2(0x66b)]){var _0x12645d=$(_0xbdd0a2(0x71c));_0x53cd51[_0xbdd0a2(0x820)](_0x12645d);}const _0x11ac18=new Set(_0x5aa5f4['favoriteJobs']['map'](_0x355671=>_0x355671['id']));let _0x30e387=null,_0x36cf15=null;var _0x1f0757=$('.Dusan2window\x20.tw2gui_scrollbar_pulley')['css'](_0xbdd0a2(0x622)),_0xc33c1f=$(_0xbdd0a2(0x5d1))[_0xbdd0a2(0x327)](_0xbdd0a2(0x4b9),_0x5aa5f4[_0xbdd0a2(0x3d0)][_0x5aa5f4[_0xbdd0a2(0x1ed)]][_0xbdd0a2(0x35b)]),_0x2a4789=new west[(_0xbdd0a2(0x6cc))][(_0xbdd0a2(0x528))](_0xbdd0a2(0x331),function(){const _0x390626=_0xbdd0a2,_0x3d8e0b=_0x2a4789[_0x390626(0x1d0)];_0x3d8e0b!==undefined&&_0x5aa5f4[_0x390626(0x62c)][_0x3d8e0b]&&(_0x5aa5f4['saveCurrentGear'](_0x5aa5f4['addedJobs'][_0x3d8e0b]['id']),new UserMessage(_0x390626(0x49c),UserMessage[_0x390626(0x4a8)])[_0x390626(0x50f)](),_0x5aa5f4['debouncedSetCookies'](0x3e8),_0xc33c1f[_0x390626(0x22c)](),_0x30e387=null,clearInterval(_0x36cf15));}),_0x54c2af=document[_0xbdd0a2(0x8b6)](_0xbdd0a2(0x3b6));_0x54c2af[_0xbdd0a2(0x742)][_0xbdd0a2(0x649)]=_0xbdd0a2(0x7b8),_0x54c2af[_0xbdd0a2(0x605)]('click',function(){const _0x313804=_0xbdd0a2,_0x4c8ce9=_0x2a4789['jobIndex'];_0x4c8ce9!==undefined&&_0x5aa5f4['addedJobs'][_0x4c8ce9]&&(_0x5aa5f4[_0x313804(0x249)](_0x5aa5f4['addedJobs'][_0x4c8ce9]['id']),new UserMessage('Default\x20best\x20gear.',UserMessage[_0x313804(0x4a8)])['show'](),_0x5aa5f4[_0x313804(0x423)](0x3e8),_0xc33c1f[_0x313804(0x22c)](),_0x30e387=null,clearInterval(_0x36cf15));}),_0xc33c1f[_0xbdd0a2(0x820)](_0x2a4789['getMainDiv']()),_0xc33c1f[_0xbdd0a2(0x820)](_0x54c2af),_0xc33c1f[_0xbdd0a2(0x22c)]();function _0x217e7d(){const _0x1cd8bb=_0xbdd0a2;var _0x28e759=$(_0x1cd8bb(0x394))[_0x1cd8bb(0x1f6)](_0x1cd8bb(0x622));_0x28e759!==_0x1f0757&&(_0xc33c1f[_0x1cd8bb(0x22c)](),_0x30e387=null,clearInterval(_0x36cf15),_0x1f0757=_0x28e759);}function _0x1bd4a4(){const _0x42c973=_0xbdd0a2;_0x1f0757=$(_0x42c973(0x394))[_0x42c973(0x1f6)](_0x42c973(0x622)),_0x36cf15=setInterval(_0x217e7d,0x64);}var _0x2d312e=new west['gui'][(_0xbdd0a2(0x514))]();_0x2d312e[_0xbdd0a2(0x755)](_0xbdd0a2(0x468),_0xbdd0a2(0x468))[_0xbdd0a2(0x755)](_0xbdd0a2(0x20e),_0xbdd0a2(0x20e))['addColumn'](_0xbdd0a2(0x749),_0xbdd0a2(0x749))[_0xbdd0a2(0x755)](_0xbdd0a2(0x76f),_0xbdd0a2(0x76f))[_0xbdd0a2(0x755)](_0xbdd0a2(0x2ba),_0xbdd0a2(0x2ba))[_0xbdd0a2(0x755)](_0xbdd0a2(0x826),_0xbdd0a2(0x826)),_0x2d312e[_0xbdd0a2(0x1f7)]('head',_0xbdd0a2(0x468),_0xbdd0a2(0x841))[_0xbdd0a2(0x1f7)](_0xbdd0a2(0x768),_0xbdd0a2(0x20e),_0xbdd0a2(0x311))[_0xbdd0a2(0x1f7)]('head',_0xbdd0a2(0x749),'Stop\x20motivation')[_0xbdd0a2(0x1f7)](_0xbdd0a2(0x768),'jobSet',_0xbdd0a2(0x263))[_0xbdd0a2(0x1f7)]('head',_0xbdd0a2(0x2ba),'')[_0xbdd0a2(0x1f7)](_0xbdd0a2(0x768),_0xbdd0a2(0x826),_0xbdd0a2(0x425));for(var _0x446bff=0x0;_0x446bff<_0x5aa5f4[_0xbdd0a2(0x62c)][_0xbdd0a2(0x881)];_0x446bff++){const _0x46ea38=_0x5aa5f4[_0xbdd0a2(0x62c)][_0x446bff]['id'],_0x2ea50e=$(_0xbdd0a2(0x86e))['html'](_0x5aa5f4[_0xbdd0a2(0x314)](_0x46ea38)+_0xbdd0a2(0x38c));_0x5aa5f4[_0xbdd0a2(0x62c)][_0xbdd0a2(0x881)]>0x1&&(_0x2ea50e['css'](_0xbdd0a2(0x491),_0xbdd0a2(0x57c))['attr']('title',_0xbdd0a2(0x331)),function(_0x38bd0a){_0x2ea50e['on']('click',function(){const _0x3312df=_0x3acb;if(_0x30e387===_0x38bd0a)_0xc33c1f[_0x3312df(0x22c)](),_0x30e387=null,clearInterval(_0x36cf15);else{var _0x31e1e4=$(this),_0x59d669=_0x31e1e4[_0x3312df(0x3bc)](_0x2d312e['getMainDiv']())[_0x3312df(0x8b2)](),_0x5b6a47=_0x31e1e4['offset'](),_0x29fa80=_0x5b6a47[_0x3312df(0x622)]-_0x59d669[_0x3312df(0x622)]+_0x31e1e4[_0x3312df(0x25b)]()+0x2,_0x2eee46=_0x5b6a47[_0x3312df(0x2f3)]-_0x59d669[_0x3312df(0x2f3)];_0x5aa5f4[_0x3312df(0x4eb)](_0x5aa5f4[_0x3312df(0x62c)][_0x38bd0a]['id'])?_0x54c2af[_0x3312df(0x742)][_0x3312df(0x62e)]='inline-block':_0x54c2af[_0x3312df(0x742)][_0x3312df(0x62e)]=_0x3312df(0x634),_0xc33c1f[_0x3312df(0x1f6)]({'transform':'scale(0.9)','transformOrigin':_0x3312df(0x2f3),'position':_0x3312df(0x786),'display':_0x3312df(0x7da),'align-items':_0x3312df(0x548),'top':_0x29fa80+'px','left':_0x2eee46+'px'})[_0x3312df(0x50f)](),_0x2a4789[_0x3312df(0x1d0)]=_0x38bd0a,_0x30e387=_0x38bd0a,clearInterval(_0x36cf15),_0x1bd4a4();}});}(_0x446bff)),_0x2d312e[_0xbdd0a2(0x309)]()[_0xbdd0a2(0x1f7)](-0x1,'jobIcon',_0x5aa5f4[_0xbdd0a2(0x840)](_0x5aa5f4[_0xbdd0a2(0x62c)][_0x446bff]['silver'],_0x46ea38,_0x5aa5f4[_0xbdd0a2(0x62c)][_0x446bff]['x'],_0x5aa5f4[_0xbdd0a2(0x62c)][_0x446bff]['y']))['appendToCell'](-0x1,_0xbdd0a2(0x20e),_0x2ea50e)['appendToCell'](-0x1,_0xbdd0a2(0x749),_0x5aa5f4[_0xbdd0a2(0x3d2)](_0x5aa5f4[_0xbdd0a2(0x62c)][_0x446bff]['x'],_0x5aa5f4[_0xbdd0a2(0x62c)][_0x446bff]['y'],_0x46ea38,_0x5aa5f4['addedJobs'][_0x446bff][_0xbdd0a2(0x8d5)]))[_0xbdd0a2(0x1f7)](-0x1,_0xbdd0a2(0x76f),_0x5aa5f4[_0xbdd0a2(0x24e)](_0x5aa5f4[_0xbdd0a2(0x62c)][_0x446bff]['x'],_0x5aa5f4['addedJobs'][_0x446bff]['y'],_0x46ea38))[_0xbdd0a2(0x1f7)](-0x1,'jobRemove',_0x5aa5f4[_0xbdd0a2(0x508)](_0x5aa5f4[_0xbdd0a2(0x62c)][_0x446bff]['x'],_0x5aa5f4[_0xbdd0a2(0x62c)][_0x446bff]['y'],_0x46ea38))[_0xbdd0a2(0x1f7)](-0x1,_0xbdd0a2(0x826),_0x5aa5f4[_0xbdd0a2(0x7ee)](_0x46ea38,_0x5aa5f4[_0xbdd0a2(0x4f7)],_0x11ac18));}$(document)['on'](_0xbdd0a2(0x4d9),function(_0x3449f0){const _0x14c3b3=_0xbdd0a2;!$(_0x3449f0['target'])[_0x14c3b3(0x3bc)](_0xc33c1f)[_0x14c3b3(0x881)]&&!$(_0x3449f0['target'])[_0x14c3b3(0x3bc)](_0x14c3b3(0x5b0))[_0x14c3b3(0x881)]&&(_0xc33c1f[_0x14c3b3(0x22c)](),_0x30e387=null,clearInterval(_0x36cf15));});let _0x2d47e4=0x0,_0x135e38=0x0;const _0x18ca19=new west[(_0xbdd0a2(0x6cc))][(_0xbdd0a2(0x528))](_0x5aa5f4[_0xbdd0a2(0x62c)][_0xbdd0a2(0x881)]===0x0?_0xbdd0a2(0x7bb):_0x5aa5f4['currentState']!==0x0?_0xbdd0a2(0x308):_0xbdd0a2(0x5c1),function(){const _0x34a718=_0xbdd0a2;if(!_0x5aa5f4[_0x34a718(0x644)]()){new UserMessage(_0x34a718(0x364),UserMessage['TYPE_ERROR'])[_0x34a718(0x50f)]();return;}if(_0x5aa5f4['addedJobs'][_0x34a718(0x881)]===0x0&&!_0x5aa5f4[_0x34a718(0x596)]()){new UserMessage(_0x34a718(0x6c3),UserMessage[_0x34a718(0x49f)])['show']();return;}!_0x5aa5f4[_0x34a718(0x219)]()&&new UserMessage(_0x34a718(0x8d6),UserMessage['TYPE_ERROR'])[_0x34a718(0x50f)](),!_0x5aa5f4['setCheck']()&&_0x5aa5f4[_0x34a718(0x67a)](_0x5aa5f4['alertTranslations'][_0x5aa5f4[_0x34a718(0x1ed)]]['alert_2'](0x0)),_0x5aa5f4[_0x34a718(0x844)](_0x2d47e4);}),_0x10fcf4=new west[(_0xbdd0a2(0x6cc))][(_0xbdd0a2(0x528))](_0x2c1850!=null&&_0x5aa5f4[_0xbdd0a2(0x723)]!==0x4?_0xbdd0a2(0x385):_0xbdd0a2(0x887),function(){const _0x557a97=_0xbdd0a2;_0x5aa5f4[_0x557a97(0x721)](_0x135e38);});_0x5aa5f4[_0xbdd0a2(0x66b)]||_0x5aa5f4[_0xbdd0a2(0x723)]!==0x0?_0x10fcf4[_0xbdd0a2(0x4f6)]():_0x10fcf4[_0xbdd0a2(0x69a)]();const _0x49aefc=_0x5aa5f4[_0xbdd0a2(0x716)]({'label':_0xbdd0a2(0x86c),'initialValue':0x0,'onChange':_0x2e6d62=>{const _0x23b452=_0xbdd0a2;_0x2d47e4=Math[_0x23b452(0x5e2)](0x0,Number(_0x2e6d62)||0x0);},'explainer':_0x5aa5f4[_0xbdd0a2(0x3d0)][_0x5aa5f4[_0xbdd0a2(0x1ed)]]['explainer_25']}),_0x11595d=_0x5aa5f4['createDelayInput']({'label':_0xbdd0a2(0x73e),'initialValue':0x0,'onChange':_0x1e7ba7=>{const _0x1434ce=_0xbdd0a2;_0x135e38=Math[_0x1434ce(0x5e2)](0x0,Number(_0x1e7ba7)||0x0);},'explainer':_0x5aa5f4[_0xbdd0a2(0x3d0)][_0x5aa5f4[_0xbdd0a2(0x1ed)]]['explainer_25']}),_0x97d57d=_0x5aa5f4[_0xbdd0a2(0x723)]===0x0?_0x49aefc:_0x11595d;return _0x5aa5f4[_0xbdd0a2(0x62c)][_0xbdd0a2(0x881)]===0x1&&(_0x15457b=_0x5aa5f4[_0xbdd0a2(0x3ad)](_0x15457b)),(_0x5c7502===0x0||LinearQuestHandler[_0xbdd0a2(0x788)]())&&$(_0xbdd0a2(0x4a6),_0x53cd51)[_0xbdd0a2(0x820)](_0x5aa5f4[_0xbdd0a2(0x46c)]()),_0x15457b[_0xbdd0a2(0x820)](_0x2d312e[_0xbdd0a2(0x71f)]()),_0x15457b['append'](_0xc33c1f),$(_0xbdd0a2(0x860),_0x53cd51)[_0xbdd0a2(0x820)](_0x97d57d),$(_0xbdd0a2(0x860),_0x53cd51)[_0xbdd0a2(0x820)](_0x18ca19[_0xbdd0a2(0x71f)]()),$(_0xbdd0a2(0x860),_0x53cd51)[_0xbdd0a2(0x820)](_0x10fcf4[_0xbdd0a2(0x71f)]()),_0x15457b[_0xbdd0a2(0x820)](_0x53cd51),_0x15457b;},_0x5aa5f4[_0x54d740(0x716)]=function({label:_0x2eb36c,initialValue:_0x13aff7,onChange:_0x5bd444,explainer:_0x4958c9}){const _0x5e1d5d=_0x54d740;let _0x593d34=_0x13aff7;const _0x51c0fa=_0x5aa5f4[_0x5e1d5d(0x723)]!==0x4?_0x593d34:'\x20',_0x40682f=$(_0x5e1d5d(0x86e))['addClass'](_0x2eb36c+_0x5e1d5d(0x2b6))[_0x5e1d5d(0x1f6)](_0x5e1d5d(0x546),_0x5e1d5d(0x61e))['text'](_0x51c0fa),_0x50ba2d=$('<input>')[_0x5e1d5d(0x473)](_0x2eb36c+'DelayInput')[_0x5e1d5d(0x327)]('type',_0x5e1d5d(0x3e9))[_0x5e1d5d(0x3d9)](_0x593d34)[_0x5e1d5d(0x22c)](),_0x2c03bb=$(_0x5e1d5d(0x37c))[_0x5e1d5d(0x1f6)]({'display':_0x5e1d5d(0x388),'cursor':'pointer','minWidth':_0x5e1d5d(0x602),'maxWidth':_0x5e1d5d(0x602)})[_0x5e1d5d(0x327)](_0x5e1d5d(0x4b9),_0x4958c9)['append'](_0x40682f)[_0x5e1d5d(0x820)](_0x50ba2d);_0x2c03bb['on'](_0x5e1d5d(0x4d9),function(_0x41c0d1){const _0x19abab=_0x5e1d5d;_0x41c0d1[_0x19abab(0x69c)](),_0x40682f[_0x19abab(0x22c)](),_0x50ba2d['show']()[_0x19abab(0x1f6)]({'background':_0x19abab(0x34f),'border':_0x19abab(0x634),'width':'38px'})[_0x19abab(0x418)]()[_0x19abab(0x85c)]();}),_0x50ba2d['on'](_0x5e1d5d(0x3a0),function _0x25f75a(){const _0x25091d=_0x5e1d5d;_0x426808[_0x25091d(0x354)](this),_0x50ba2d[_0x25091d(0x5ad)]('blur\x20focusout',_0x25f75a),setTimeout(()=>{const _0x3b840a=_0x25091d;_0x50ba2d[_0x3b840a(0x4bb)](_0x3b840a(0x3a0),_0x25f75a);},0x0);}),_0x50ba2d['on'](_0x5e1d5d(0x6f6),function(_0x413d15){const _0x248833=_0x5e1d5d;_0x413d15[_0x248833(0x6b2)]===_0x248833(0x1f9)&&$(this)[_0x248833(0x2c8)](_0x248833(0x79e));});function _0x426808(){const _0x13dd8d=_0x5e1d5d,_0x1aaadb=parseInt($(this)['val']());!isNaN(_0x1aaadb)&&_0x1aaadb>=0x0?(_0x593d34=_0x1aaadb*0xea60,_0x40682f[_0x13dd8d(0x3e9)](_0x1aaadb),_0x5bd444(_0x593d34)):$(this)['val'](0x0),$(this)[_0x13dd8d(0x22c)](),_0x40682f[_0x13dd8d(0x50f)]();}return _0x2c03bb;},_0x5aa5f4['createMinMotivationTextfield']=function(_0x6f9d5d,_0x3562a8,_0x2917f5,_0x3bb604){const _0x35a7f0=_0x54d740;var _0x56e54a='x-'+_0x6f9d5d+'y-'+_0x3562a8+_0x35a7f0(0x6ed)+_0x2917f5,_0x4a1a58=new west[(_0x35a7f0(0x6cc))][(_0x35a7f0(0x3ee))]()['setId'](_0x56e54a)[_0x35a7f0(0x7c8)]()[_0x35a7f0(0x707)](0x28)['setValue'](_0x3bb604),_0x7c2cbe=_0x4a1a58[_0x35a7f0(0x71f)]();_0x7c2cbe[_0x35a7f0(0x327)](_0x35a7f0(0x4b9),_0x5aa5f4['explainerTranslations'][_0x5aa5f4['translationLang']][_0x35a7f0(0x560)]);var _0xe10bb5=_0x7c2cbe[_0x35a7f0(0x492)](_0x35a7f0(0x70c));return _0xe10bb5['on'](_0x35a7f0(0x348),function(){const _0x245b1d=_0x35a7f0;_0x5aa5f4['parseStopMotivation'](),_0x5aa5f4[_0x245b1d(0x423)](0x3e8);}),_0x7c2cbe;},_0x5aa5f4['skipTutorial']=function(){const _0x117e8b=_0x54d740;LinearQuestHandler['hasTutorialQuest']=()=>![],GameMap['Component'][_0x117e8b(0x483)]=()=>{},$(_0x117e8b(0x245))['remove'](),EventHandler[_0x117e8b(0x82c)](_0x117e8b(0x58e)),GameMap[_0x117e8b(0x750)]();},_0x5aa5f4[_0x54d740(0x46c)]=function(){const _0x53363d=_0x54d740;var _0x4ab267=$(_0x53363d(0x39d)),_0x3a6a84=new west[(_0x53363d(0x6cc))]['Checkbox']()['setLabel'](_0x53363d(0x48a))[_0x53363d(0x495)](_0x5aa5f4[_0x53363d(0x31a)][_0x53363d(0x84c)])[_0x53363d(0x845)](function(){const _0x46795c=_0x53363d;_0x5aa5f4[_0x46795c(0x31a)]['skipTutorial']=this[_0x46795c(0x465)](),_0x5aa5f4[_0x46795c(0x423)](0x64,()=>new UserMessage('Saved\x20successfully.',UserMessage[_0x46795c(0x4a8)])[_0x46795c(0x50f)]()),new UserMessage('Saved\x20successfully.',UserMessage[_0x46795c(0x4a8)])['show'](),this[_0x46795c(0x465)]()&&LinearQuestHandler[_0x46795c(0x788)]()&&_0x5aa5f4[_0x46795c(0x84c)]();});return _0x4ab267[_0x53363d(0x820)](_0x3a6a84[_0x53363d(0x71f)]()),_0x4ab267;},_0x5aa5f4[_0x54d740(0x3ad)]=function(_0x175f23){const _0x40d7b9=_0x54d740;var _0x43a898=$(_0x40d7b9(0x6dd));_0x43a898['attr']('title',_0x5aa5f4[_0x40d7b9(0x3d0)][_0x5aa5f4[_0x40d7b9(0x1ed)]]['explainer_24']);var _0x5e24b1=new west['gui']['Checkbox']()[_0x40d7b9(0x562)](_0x40d7b9(0x535))[_0x40d7b9(0x495)](_0x5aa5f4['farmingAssistant'][_0x40d7b9(0x699)])[_0x40d7b9(0x845)](function(){const _0x2039a5=_0x40d7b9;_0x5aa5f4[_0x2039a5(0x427)][_0x2039a5(0x699)]=this[_0x2039a5(0x465)](),_0x5aa5f4[_0x2039a5(0x423)](0xbb8),_0x5aa5f4['farmingAssistant'][_0x2039a5(0x699)]?$(_0x2039a5(0x5da))[_0x2039a5(0x1f6)]('visibility','visible'):($(_0x2039a5(0x5da))['css'](_0x2039a5(0x76e),'hidden'),_0x5aa5f4[_0x2039a5(0x427)][_0x2039a5(0x885)]=![],_0x5aa5f4[_0x2039a5(0x427)][_0x2039a5(0x2a1)]=![],_0x5aa5f4['refreshTab'](_0x2039a5(0x62c)));});_0x43a898[_0x40d7b9(0x820)](_0x5e24b1[_0x40d7b9(0x71f)]()),$(_0x43a898)[_0x40d7b9(0x1f6)]({'position':_0x40d7b9(0x786),'top':_0x40d7b9(0x2a6),'left':_0x40d7b9(0x7c5),'z-index':_0x40d7b9(0x51f)});let _0x51dd10=new west[(_0x40d7b9(0x6cc))]['Combobox'](_0x40d7b9(0x2ff));const _0x1bcee7=_0x5aa5f4[_0x40d7b9(0x1f3)]['find'](_0x4883bd=>_0x4883bd['jobid']===_0x5aa5f4['addedJobs'][0x0]['id']);_0x1bcee7&&_0x1bcee7[_0x40d7b9(0x3b1)](_0x40d7b9(0x652))?_0x51dd10[_0x40d7b9(0x741)](0x0,'Default'+'&nbsp;&nbsp;&nbsp;'+'✔'):_0x51dd10[_0x40d7b9(0x741)](0x0,_0x40d7b9(0x72c));for(let _0x184cec=0x1;_0x184cec<0xa;_0x184cec++){_0x1bcee7&&_0x1bcee7[_0x40d7b9(0x3b1)](_0x40d7b9(0x6ff)+_0x184cec)?_0x51dd10[_0x40d7b9(0x741)](_0x184cec,_0x40d7b9(0x566)+_0x184cec+'&nbsp;&nbsp;&nbsp;'+'✔'):_0x51dd10['addItem'](_0x184cec,_0x40d7b9(0x566)+_0x184cec);}_0x5aa5f4[_0x40d7b9(0x427)][_0x40d7b9(0x32d)]=Character[_0x40d7b9(0x6c7)]>=0x1&&Character[_0x40d7b9(0x6c7)]<=0x9&&_0x5aa5f4[_0x40d7b9(0x632)][_0x5aa5f4[_0x40d7b9(0x360)]['jobIdx']]>0x0?Character['level']:_0x5aa5f4[_0x40d7b9(0x427)][_0x40d7b9(0x32d)],_0x51dd10=_0x51dd10[_0x40d7b9(0x85c)](_0x5aa5f4[_0x40d7b9(0x427)][_0x40d7b9(0x32d)]),_0x51dd10[_0x40d7b9(0x7e6)](function(_0x3c8cb2){const _0x34031e=_0x40d7b9;_0x5aa5f4[_0x34031e(0x427)][_0x34031e(0x32d)]=_0x3c8cb2;}),_0x51dd10[_0x40d7b9(0x71f)]()[_0x40d7b9(0x327)](_0x40d7b9(0x4b9),_0x5aa5f4[_0x40d7b9(0x3d0)][_0x5aa5f4[_0x40d7b9(0x1ed)]][_0x40d7b9(0x201)]);var _0x32a2e3=$('<div></div>');_0x32a2e3[_0x40d7b9(0x327)](_0x40d7b9(0x4b9),_0x5aa5f4[_0x40d7b9(0x3d0)][_0x5aa5f4[_0x40d7b9(0x1ed)]][_0x40d7b9(0x35b)]);var _0x1f6e81=new west['gui'][(_0x40d7b9(0x528))](_0x40d7b9(0x331),function(){const _0x535ca1=_0x40d7b9;_0x5aa5f4[_0x535ca1(0x2c3)](_0x5aa5f4[_0x535ca1(0x62c)][0x0]['id'],_0x5aa5f4[_0x535ca1(0x427)][_0x535ca1(0x32d)]),_0x5aa5f4[_0x535ca1(0x423)](0x3e8),new UserMessage(_0x535ca1(0x49c),UserMessage[_0x535ca1(0x4a8)])[_0x535ca1(0x50f)](),_0x5aa5f4[_0x535ca1(0x43a)](_0x535ca1(0x62c));}),_0x4e94ac=new west[(_0x40d7b9(0x6cc))][(_0x40d7b9(0x528))](_0x40d7b9(0x82d),function(){const _0x58bef8=_0x40d7b9,_0x387c5c=_0x5aa5f4['deleteSavedGear'](_0x5aa5f4[_0x58bef8(0x62c)][0x0]['id'],_0x5aa5f4['farmingAssistant'][_0x58bef8(0x32d)]);_0x387c5c&&(_0x5aa5f4[_0x58bef8(0x423)](0x3e8),new UserMessage(_0x58bef8(0x25d),UserMessage[_0x58bef8(0x4a8)])['show'](),_0x5aa5f4[_0x58bef8(0x43a)](_0x58bef8(0x62c)));}),_0x2a6fcf=new west[(_0x40d7b9(0x6cc))]['Button']('Export',function(){const _0x3bf6ae=_0x40d7b9;_0x5aa5f4[_0x3bf6ae(0x64a)](_0x5aa5f4[_0x3bf6ae(0x62c)][0x0]['id']);}),_0x18b47d=new west[(_0x40d7b9(0x6cc))][(_0x40d7b9(0x528))](_0x40d7b9(0x45e),function(){const _0x2b238d=_0x40d7b9;_0x5aa5f4['importFarmingGear']()[_0x2b238d(0x3ec)](()=>{const _0x3a0eba=_0x2b238d;_0x5aa5f4[_0x3a0eba(0x447)](),new UserMessage('Gear\x20imported\x20successfully.',UserMessage['TYPE_SUCCESS'])['show'](),_0x5aa5f4[_0x3a0eba(0x43a)](_0x3a0eba(0x62c));})[_0x2b238d(0x676)](_0xd5b784=>{const _0x5cf3b0=_0x2b238d;new UserMessage('Failed\x20to\x20import\x20gear:\x20'+_0xd5b784['message'],UserMessage[_0x5cf3b0(0x49f)])[_0x5cf3b0(0x50f)]();});}),_0x55de3a=new west[(_0x40d7b9(0x6cc))][(_0x40d7b9(0x89b))]()[_0x40d7b9(0x562)](_0x40d7b9(0x7c0))['setSelected'](_0x5aa5f4[_0x40d7b9(0x427)][_0x40d7b9(0x2a1)])[_0x40d7b9(0x845)](function(){const _0x2547a8=_0x40d7b9;_0x5aa5f4[_0x2547a8(0x427)][_0x2547a8(0x2a1)]=this[_0x2547a8(0x465)]();});_0x55de3a[_0x40d7b9(0x71f)]()[_0x40d7b9(0x327)](_0x40d7b9(0x4b9),_0x5aa5f4['explainerTranslations'][_0x5aa5f4[_0x40d7b9(0x1ed)]]['explainer_20']);var _0x51c2e5=new west[(_0x40d7b9(0x6cc))][(_0x40d7b9(0x89b))]()[_0x40d7b9(0x562)](_0x40d7b9(0x7af))[_0x40d7b9(0x495)](_0x5aa5f4[_0x40d7b9(0x427)][_0x40d7b9(0x885)])['setCallback'](function(){const _0x48bb07=_0x40d7b9;_0x5aa5f4[_0x48bb07(0x427)][_0x48bb07(0x885)]=this[_0x48bb07(0x465)]();});_0x51c2e5[_0x40d7b9(0x71f)]()[_0x40d7b9(0x327)]('title',_0x5aa5f4['explainerTranslations'][_0x5aa5f4[_0x40d7b9(0x1ed)]]['explainer_21']);var _0x258cbe=$('<div\x20id=\x27farming_assistant_options\x27></div>');$(_0x258cbe)['css']({'visibility':_0x5aa5f4[_0x40d7b9(0x427)][_0x40d7b9(0x699)]?_0x40d7b9(0x74e):_0x40d7b9(0x5ec),'position':_0x40d7b9(0x786),'width':_0x40d7b9(0x63d),'top':'130px','left':_0x40d7b9(0x7a7),'display':'flex','flex-direction':_0x40d7b9(0x688),'align-items':_0x40d7b9(0x209),'z-index':_0x40d7b9(0x51f)});var _0x20f59f=$('<div></div>')['css']({'display':_0x40d7b9(0x866),'width':_0x40d7b9(0x697),'justify-content':_0x40d7b9(0x5a1),'align-items':'center','margin-top':'10px','margin-bottom':_0x40d7b9(0x33b)});_0x32a2e3[_0x40d7b9(0x820)](_0x1f6e81[_0x40d7b9(0x71f)]()),_0x20f59f['append'](_0x51dd10[_0x40d7b9(0x71f)]()),_0x20f59f[_0x40d7b9(0x820)](_0x32a2e3),_0x20f59f[_0x40d7b9(0x820)](_0x4e94ac[_0x40d7b9(0x71f)]());var _0x206f94=$('<div></div>')['css']({'display':'flex','width':_0x40d7b9(0x697),'justify-content':_0x40d7b9(0x764),'align-items':'center','margin-top':_0x40d7b9(0x33b),'margin-bottom':_0x40d7b9(0x33b)});_0x206f94[_0x40d7b9(0x327)]('title',_0x5aa5f4[_0x40d7b9(0x3d0)][_0x5aa5f4[_0x40d7b9(0x1ed)]][_0x40d7b9(0x224)]),_0x206f94['append'](_0x18b47d['getMainDiv']()),_0x206f94[_0x40d7b9(0x820)](_0x2a6fcf[_0x40d7b9(0x71f)]());var _0x37e2b2=$(_0x40d7b9(0x5d1))['css']({'margin-bottom':_0x40d7b9(0x2a7)});return _0x258cbe[_0x40d7b9(0x820)](_0x55de3a['getMainDiv']()),_0x258cbe[_0x40d7b9(0x820)](_0x37e2b2),_0x258cbe['append'](_0x51c2e5[_0x40d7b9(0x71f)]()),_0x258cbe[_0x40d7b9(0x820)](_0x20f59f),_0x258cbe[_0x40d7b9(0x820)](_0x206f94),_0x175f23[_0x40d7b9(0x820)](_0x43a898),_0x175f23[_0x40d7b9(0x820)](_0x258cbe),_0x175f23;};var _0x423cbd=_0x54d740(0x5cb);_0x5aa5f4['createFavoriteJobsTab']=function(){const _0x250e22=_0x54d740;var _0x4b5332=$(_0x250e22(0x559)),_0x5de5d1=$(_0x250e22(0x3aa));const _0x254502=_0x5aa5f4['getAllUniqueJobs'](),_0x118a28=new Map(_0x5aa5f4[_0x250e22(0x62c)][_0x250e22(0x286)]((_0x4e29f7,_0x56dad4)=>[_0x4e29f7['id'],_0x56dad4])),_0x11526c=new Map(_0x254502[_0x250e22(0x286)]((_0x4a953a,_0x34889b)=>[_0x4a953a['id'],{'job':_0x4a953a,'idx':_0x34889b}]));var _0x6256b4=new west[(_0x250e22(0x6cc))][(_0x250e22(0x514))]();_0x6256b4[_0x250e22(0x755)]('dummy',_0x250e22(0x2a0))[_0x250e22(0x755)]('jobIcon',_0x250e22(0x468))[_0x250e22(0x755)](_0x250e22(0x20e),_0x250e22(0x20e))[_0x250e22(0x755)](_0x250e22(0x76f),_0x250e22(0x76f))[_0x250e22(0x755)]('jobRank',_0x250e22(0x23f))[_0x250e22(0x755)]('jobMoveUp',_0x250e22(0x268))[_0x250e22(0x755)](_0x250e22(0x75d),'jobMoveDown')[_0x250e22(0x755)](_0x250e22(0x2ba),_0x250e22(0x2ba)),_0x6256b4[_0x250e22(0x1f7)](_0x250e22(0x768),'dummy','')['appendToCell'](_0x250e22(0x768),_0x250e22(0x468),_0x250e22(0x841))[_0x250e22(0x1f7)](_0x250e22(0x768),_0x250e22(0x20e),_0x250e22(0x311))['appendToCell']('head','jobSet',_0x250e22(0x263))[_0x250e22(0x1f7)](_0x250e22(0x768),_0x250e22(0x23f),_0x250e22(0x215))['appendToCell'](_0x250e22(0x768),_0x250e22(0x268),'')[_0x250e22(0x1f7)]('head','jobMoveDown','')[_0x250e22(0x1f7)](_0x250e22(0x768),_0x250e22(0x2ba),'');for(let _0x2c951e=0x0;_0x2c951e<_0x5aa5f4[_0x250e22(0x758)][_0x250e22(0x881)];_0x2c951e++){const _0x3a4ec8=_0x5aa5f4['favoriteJobs'][_0x2c951e]['id'],_0x225004=_0x118a28[_0x250e22(0x4fe)](_0x3a4ec8)??-0x1,_0x397c3e=_0x11526c[_0x250e22(0x4fe)](_0x3a4ec8);if(!_0x397c3e){console[_0x250e22(0x34d)](_0x250e22(0x71a)+_0x3a4ec8+'\x20not\x20found\x20in\x20Dusan.createFavoriteJobsTab().');continue;}const _0x4b9ae8=_0x397c3e[_0x250e22(0x78f)],_0x415207=$(_0x250e22(0x86e))[_0x250e22(0x2cf)](_0x5aa5f4[_0x250e22(0x314)](_0x3a4ec8)+_0x250e22(0x38c));_0x225004===-0x1&&_0x415207[_0x250e22(0x1f6)](_0x250e22(0x491),_0x250e22(0x57c))[_0x250e22(0x327)](_0x250e22(0x4b9),_0x250e22(0x401))['on'](_0x250e22(0x4d9),function(){const _0x685610=_0x250e22;_0x5aa5f4[_0x685610(0x1ff)](_0x4b9ae8['x'],_0x4b9ae8['y'],_0x4b9ae8['id']),_0x5aa5f4[_0x685610(0x4a7)][_0x685610(0x83b)]=$(_0x685610(0x4f1))[_0x685610(0x1f6)](_0x685610(0x622)),_0x5aa5f4['favoriteJobsTablePosition'][_0x685610(0x29a)]=$(_0x685610(0x394))[_0x685610(0x1f6)](_0x685610(0x622)),_0x5aa5f4[_0x685610(0x423)](0xbb8),_0x5aa5f4[_0x685610(0x43a)](_0x685610(0x758)),new UserMessage(_0x685610(0x656),UserMessage['TYPE_SUCCESS'])[_0x685610(0x50f)]();});var _0x3499b1=$(_0x250e22(0x280))[_0x250e22(0x3e9)](_0x2c951e+0x1+'.'),_0x207099=$('<input\x20type=\x27number\x27\x20class=\x27jobRankInput\x27>')[_0x250e22(0x3d9)](_0x2c951e+0x1)[_0x250e22(0x22c)](),_0x320a66=$(_0x250e22(0x842))[_0x250e22(0x820)](_0x3499b1)[_0x250e22(0x820)](_0x207099);_0x6256b4[_0x250e22(0x309)]()[_0x250e22(0x1f7)](-0x1,_0x250e22(0x468),_0x5aa5f4[_0x250e22(0x840)](_0x4b9ae8[_0x250e22(0x7b1)],_0x4b9ae8['id'],_0x4b9ae8['x'],_0x4b9ae8['y']))[_0x250e22(0x1f7)](-0x1,'jobName',_0x415207)['appendToCell'](-0x1,_0x250e22(0x76f),_0x5aa5f4[_0x250e22(0x75a)](_0x2c951e,_0x225004))['appendToCell'](-0x1,_0x250e22(0x23f),_0x320a66)[_0x250e22(0x1f7)](-0x1,_0x250e22(0x268),_0x5aa5f4[_0x250e22(0x376)](_0x2c951e,'up'))[_0x250e22(0x1f7)](-0x1,_0x250e22(0x75d),_0x5aa5f4[_0x250e22(0x376)](_0x2c951e,_0x250e22(0x5ce)))[_0x250e22(0x1f7)](-0x1,_0x250e22(0x2ba),_0x5aa5f4[_0x250e22(0x5bc)](_0x2c951e));}var _0x473850=$(_0x250e22(0x791)),_0x1a4db0=$(_0x250e22(0x5d1))[_0x250e22(0x1f6)]({'display':_0x250e22(0x388)});_0x1a4db0[_0x250e22(0x327)](_0x250e22(0x4b9),_0x5aa5f4[_0x250e22(0x3d0)][_0x5aa5f4['translationLang']][_0x250e22(0x783)]);var _0x1eb365=new west['gui'][(_0x250e22(0x3ee))](_0x250e22(0x766))['setWidth'](0x28)[_0x250e22(0x1d6)](_0x5aa5f4[_0x250e22(0x6af)][_0x5aa5f4[_0x250e22(0x6af)][_0x250e22(0x451)]][_0x250e22(0x22a)])[_0x250e22(0x7c8)]();_0x1a4db0[_0x250e22(0x820)]('<span\x20style=\x27font-weight:\x20initial;\x27><b>Add\x20all\x20silver\x20jobs\x20up\x20to\x20rank:&nbsp;\x20</b></span>'),_0x1a4db0[_0x250e22(0x820)](_0x1eb365[_0x250e22(0x71f)]()),_0x473850[_0x250e22(0x820)](_0x1a4db0);var _0x1c5bb9=$(_0x250e22(0x407));_0x1c5bb9[_0x250e22(0x327)]('title',_0x5aa5f4[_0x250e22(0x3d0)][_0x5aa5f4[_0x250e22(0x1ed)]]['explainer_14']),_0x1c5bb9['append'](_0x250e22(0x7b9));var _0x53f19d=new west[(_0x250e22(0x6cc))][(_0x250e22(0x3ee))]('maxJobs')['setWidth'](0x1e)[_0x250e22(0x1d6)](_0x5aa5f4[_0x250e22(0x6af)][_0x5aa5f4[_0x250e22(0x6af)][_0x250e22(0x451)]][_0x250e22(0x489)])[_0x250e22(0x7c8)]();_0x1c5bb9['append'](_0x53f19d[_0x250e22(0x71f)]()),_0x473850[_0x250e22(0x820)](_0x1c5bb9);var _0x101d87=new west['gui'][(_0x250e22(0x528))](_0x250e22(0x425),function(){const _0x288515=_0x250e22;if(_0x5e4505(_0x1eb365[_0x288515(0x8bb)]())){var _0x3c9155=parseInt(_0x1eb365[_0x288515(0x8bb)]());_0x5aa5f4[_0x288515(0x6af)][_0x5aa5f4[_0x288515(0x6af)]['selected']][_0x288515(0x22a)]=Math[_0x288515(0x5e2)](0x0,_0x3c9155);}if(_0x5e4505(_0x53f19d[_0x288515(0x8bb)]())){var _0xe5d538=parseInt(_0x53f19d[_0x288515(0x8bb)]());_0x5aa5f4[_0x288515(0x6af)][_0x5aa5f4[_0x288515(0x6af)][_0x288515(0x451)]][_0x288515(0x489)]=_0x4f183f(_0xe5d538,0x0,_0x453c68);}_0x5aa5f4['debouncedSetCookies'](0x64,()=>new UserMessage('Saved\x20successfully.',UserMessage['TYPE_SUCCESS'])[_0x288515(0x50f)]()),_0x5aa5f4[_0x288515(0x522)](_0x288515(0x758));})[_0x250e22(0x707)](0x3c);if(_0x5aa5f4[_0x250e22(0x758)][_0x250e22(0x881)]===0x0){function _0x53432d(_0x38ff79,_0xd8fc5b){const _0x2f87c9=_0x250e22;return new west[(_0x2f87c9(0x6cc))]['Button'](_0xd8fc5b,function(){const _0x9b95a=_0x2f87c9;_0x149deb(_0x38ff79,_0x5aa5f4['favoriteJobs']),_0x5aa5f4[_0x9b95a(0x423)](0x64,()=>new UserMessage(_0x9b95a(0x68f),UserMessage[_0x9b95a(0x4a8)])[_0x9b95a(0x50f)]()),_0x5aa5f4['selectTab'](_0x9b95a(0x758));})[_0x2f87c9(0x707)](0xa0);}var _0xa4153d=_0x53432d(_0x5aa5f4[_0x250e22(0x341)],_0x250e22(0x26d)),_0x2fba95=_0x53432d(_0x5aa5f4['moneyJobsPreset'],'Load\x20best\x20$\x20jobs'),_0x422a87=_0x5aa5f4['addComboboxSetItems'](new west[(_0x250e22(0x6cc))]['Combobox']()['setWidth'](0x78),_0x5aa5f4[_0x250e22(0x76f)])[_0x250e22(0x7e6)](function(_0x2a2bd5){const _0x5339a8=_0x250e22;_0x5aa5f4[_0x5339a8(0x76f)]=_0x2a2bd5;}),_0x12d83d=$(_0x250e22(0x3cd))['css']({'position':_0x250e22(0x786),'top':_0x250e22(0x363),'left':'135px','display':_0x250e22(0x866),'flex-direction':_0x250e22(0x688),'align-items':_0x250e22(0x548),'z-index':'9999'}),_0x278d1e=$(_0x250e22(0x455))[_0x250e22(0x1f6)]({'display':_0x250e22(0x866),'gap':_0x250e22(0x33b),'justify-content':_0x250e22(0x548)}),_0x2d1978=$('<div\x20id=\x27combobox_div\x27></div>')[_0x250e22(0x1f6)]({'margin-top':_0x250e22(0x59d),'display':'flex','gap':_0x250e22(0x33b),'align-items':_0x250e22(0x548),'justify-content':'center'});_0x278d1e[_0x250e22(0x820)](_0xa4153d[_0x250e22(0x71f)]()),_0x278d1e[_0x250e22(0x820)](_0x2fba95[_0x250e22(0x71f)]()),_0x2d1978['append']($(_0x250e22(0x67e))),_0x2d1978[_0x250e22(0x820)](_0x422a87[_0x250e22(0x71f)]()),_0x12d83d[_0x250e22(0x820)](_0x278d1e),_0x12d83d[_0x250e22(0x820)](_0x2d1978),_0x4b5332['append'](_0x12d83d);}let _0x1829e5={},_0x460b6e=$(_0x250e22(0x724),{'type':_0x250e22(0x80c),'id':'profile1','class':_0x250e22(0x6ec)})['on'](_0x250e22(0x348),_0x527647),_0x6a960d=$(_0x250e22(0x399),{'for':'profile1'})[_0x250e22(0x820)](_0x460b6e,'\x20Profile\x201');_0x1829e5[_0x250e22(0x6d8)]=_0x460b6e;let _0x457208=$(_0x250e22(0x724),{'type':_0x250e22(0x80c),'id':'profile2','class':_0x250e22(0x6ec)})['on']('change',_0x527647),_0xdd0975=$(_0x250e22(0x399),{'for':_0x250e22(0x435)})[_0x250e22(0x820)](_0x457208,_0x250e22(0x2fc));_0x1829e5[_0x250e22(0x435)]=_0x457208;let _0x41c7f0=$(_0x250e22(0x680))[_0x250e22(0x820)](_0x6a960d,_0xdd0975);_0x1829e5[_0x5aa5f4[_0x250e22(0x6af)]['selected']]?.[_0x250e22(0x650)]('checked',!![]),_0x473850[_0x250e22(0x820)](_0x101d87[_0x250e22(0x71f)]()),$(_0x250e22(0x279),_0x5de5d1)[_0x250e22(0x820)](_0x473850),_0x6256b4[_0x250e22(0x43c)]('dummy',_0x5de5d1),_0x4b5332[_0x250e22(0x820)](_0x6256b4[_0x250e22(0x71f)]()),_0x4b5332[_0x250e22(0x820)](_0x41c7f0),_0x4b5332['find']('.jobRank')[_0x250e22(0x4d9)](function(){const _0x48f4d5=_0x250e22;var _0x1a6d76=$(this)[_0x48f4d5(0x492)](_0x48f4d5(0x4e1));_0x1a6d76[_0x48f4d5(0x50f)]()[_0x48f4d5(0x1f6)]({'background':'inherit','border':_0x48f4d5(0x634),'width':_0x48f4d5(0x5e6),'margin-left':_0x48f4d5(0x782)})[_0x48f4d5(0x418)](),_0x1a6d76[_0x48f4d5(0x85c)](),$(this)[_0x48f4d5(0x492)](_0x48f4d5(0x257))[_0x48f4d5(0x22c)]();}),_0x4b5332[_0x250e22(0x492)]('.jobRankInput')['one'](_0x250e22(0x3a0),function _0x5cc3d6(){const _0x27c299=_0x250e22;_0x5f49f6[_0x27c299(0x354)](this),setTimeout(()=>{const _0x335843=_0x27c299;$(this)['one'](_0x335843(0x3a0),_0x5cc3d6);},0x0);}),_0x4b5332['find'](_0x250e22(0x4e1))['on'](_0x250e22(0x6f6),function(_0x49ec35){const _0x243191=_0x250e22;_0x49ec35[_0x243191(0x6b2)]===_0x243191(0x1f9)&&$(this)[_0x243191(0x2c8)]('blur');});function _0x5f49f6(){const _0x578651=_0x250e22;var _0x1ae6bb=parseInt($(this)[_0x578651(0x3d9)]()),_0x46a201=$(this)[_0x578651(0x3bc)](_0x578651(0x22b))[_0x578651(0x1ee)]();if(!isNaN(_0x1ae6bb)&&_0x1ae6bb>0x0&&_0x1ae6bb<=_0x5aa5f4[_0x578651(0x758)][_0x578651(0x881)]){var _0x16b548=_0x1ae6bb-0x1,_0x899d7e=_0x5aa5f4[_0x578651(0x758)][_0x578651(0x811)](_0x46a201,0x1)[0x0];_0x5aa5f4[_0x578651(0x758)][_0x578651(0x811)](_0x16b548,0x0,_0x899d7e);for(var _0x4d286d=0x0;_0x4d286d<_0x5aa5f4[_0x578651(0x758)]['length'];_0x4d286d++){$(this)['closest'](_0x578651(0x296))['find'](_0x578651(0x22b))['eq'](_0x4d286d)['find'](_0x578651(0x257))[_0x578651(0x3e9)](_0x4d286d+0x1+'.');}_0x5aa5f4['favoriteJobsTablePosition'][_0x578651(0x83b)]=$(_0x578651(0x4f1))[_0x578651(0x1f6)](_0x578651(0x622)),_0x5aa5f4[_0x578651(0x4a7)][_0x578651(0x29a)]=$(_0x578651(0x394))[_0x578651(0x1f6)](_0x578651(0x622)),_0x5aa5f4[_0x578651(0x423)](0x3e8),_0x5aa5f4['selectTab'](_0x578651(0x758));}else $(this)['val'](_0x46a201+0x1);$(this)['hide'](),$(this)[_0x578651(0x872)](_0x578651(0x257))[_0x578651(0x50f)]();}function _0x527647(){const _0x51763a=_0x250e22;$(_0x51763a(0x668))[_0x51763a(0x3c9)](this)[_0x51763a(0x650)](_0x51763a(0x48e),![]),_0x5aa5f4[_0x51763a(0x6af)][_0x51763a(0x451)]=this['checked']?this['id']:_0x51763a(0x664),_0x5aa5f4['setWorkerProfile'](_0x5aa5f4[_0x51763a(0x6af)][_0x51763a(0x451)]),$(_0x51763a(0x4f1))[_0x51763a(0x1f6)]({'top':'0px'}),$('.Dusan2window\x20.tw2gui_scrollbar_pulley')[_0x51763a(0x1f6)]({'top':_0x51763a(0x36f)}),_0x5aa5f4[_0x51763a(0x43a)](_0x51763a(0x758)),_0x5aa5f4[_0x51763a(0x423)](0x3e8);}function _0x149deb(_0x2d4892,_0x2a2c36,_0xaeb68f=_0x5aa5f4[_0x250e22(0x76f)]){_0x2d4892['forEach'](_0x47706b=>_0x2a2c36['push']({'id':_0x47706b,'set':_0xaeb68f}));}return _0x4b5332;},_0x5aa5f4[_0x54d740(0x376)]=function(_0x569502,_0x2cfba1){const _0x1f6fef=_0x54d740;var _0x469c57=document[_0x1f6fef(0x8b6)](_0x1f6fef(0x3b6)),_0x337c0f=_0x2cfba1==='up'?_0x1f6fef(0x5fe):_0x1f6fef(0x502),_0x960ba8=_0x2cfba1==='up'?_0x569502-0x1:_0x569502+0x1;return _0x2cfba1==='up'?_0x469c57['style']['cssText']='user-select:\x20none;\x20font-family:\x20Arial,\x20Verdana,\x20sans-serif;\x20font-size:\x2013px;\x20width:\x209px;\x20height:\x2027px;\x20background:\x20url(https://westsk.innogamescdn.com/images/tw2gui/pagebar/arrows.png);\x20background-position:\x20-50px\x208.5px;\x20transform:\x20rotate('+_0x337c0f+_0x1f6fef(0x84b):_0x469c57[_0x1f6fef(0x742)]['cssText']=_0x1f6fef(0x3df)+_0x337c0f+_0x1f6fef(0x84b),_0x469c57[_0x1f6fef(0x605)](_0x1f6fef(0x4d9),function(){const _0x30b2fe=_0x1f6fef;if(_0x2cfba1==='up'&&_0x569502>0x0){const _0x1672c9=_0x5aa5f4[_0x30b2fe(0x758)][_0x569502];_0x5aa5f4[_0x30b2fe(0x758)][_0x569502]=_0x5aa5f4[_0x30b2fe(0x758)][_0x960ba8],_0x5aa5f4[_0x30b2fe(0x758)][_0x960ba8]=_0x1672c9;}else{if(_0x2cfba1===_0x30b2fe(0x5ce)&&_0x569502<_0x5aa5f4['favoriteJobs'][_0x30b2fe(0x881)]-0x1){const _0x3e2f1a=_0x5aa5f4['favoriteJobs'][_0x569502];_0x5aa5f4['favoriteJobs'][_0x569502]=_0x5aa5f4[_0x30b2fe(0x758)][_0x960ba8],_0x5aa5f4[_0x30b2fe(0x758)][_0x960ba8]=_0x3e2f1a;}}_0x5aa5f4[_0x30b2fe(0x4a7)]['content']=$(_0x30b2fe(0x4f1))[_0x30b2fe(0x1f6)](_0x30b2fe(0x622)),_0x5aa5f4[_0x30b2fe(0x4a7)][_0x30b2fe(0x29a)]=$(_0x30b2fe(0x394))[_0x30b2fe(0x1f6)](_0x30b2fe(0x622)),_0x5aa5f4[_0x30b2fe(0x423)](0xbb8),_0x5aa5f4[_0x30b2fe(0x522)]('favoriteJobs');}),_0x469c57;},_0x5aa5f4[_0x54d740(0x5bc)]=function(_0x17d4b7){const _0x4c5214=_0x54d740;var _0x22936e=document[_0x4c5214(0x8b6)](_0x4c5214(0x3b6));return _0x22936e[_0x4c5214(0x742)][_0x4c5214(0x649)]='width:\x2016px;\x20height:\x2019px;\x20background:\x20url(\x27https://westsk.innogamescdn.com/images/window/messages/icons.png?2\x27)\x20repeat\x20scroll\x200\x200\x20transparent;\x20background-position:\x20-292px\x20-4px;\x20margin:\x200px;\x20padding:\x200;\x20border:\x20none;\x20outline:\x20none;\x20display:\x20inline-block;\x20cursor:\x20pointer;\x20user-select:\x20none;\x20font-size:\x2013px;\x20white-space:\x20nowrap;\x20line-height:\x2029px;',_0x22936e['addEventListener']('click',function(){const _0x1c806e=_0x4c5214;_0x5aa5f4[_0x1c806e(0x758)][_0x1c806e(0x811)](_0x17d4b7,0x1),_0x5aa5f4[_0x1c806e(0x4a7)][_0x1c806e(0x83b)]=$(_0x1c806e(0x4f1))['css'](_0x1c806e(0x622)),_0x5aa5f4[_0x1c806e(0x4a7)][_0x1c806e(0x29a)]=$(_0x1c806e(0x394))['css'](_0x1c806e(0x622)),_0x5aa5f4[_0x1c806e(0x423)](0x7d0),_0x5aa5f4['selectTab'](_0x1c806e(0x758));}),_0x22936e;};const _0x235c8a=_0x366e25;_0x5aa5f4[_0x54d740(0x508)]=function(_0x2985c2,_0x51a586,_0x33ad55){const _0x5a9e61=_0x54d740;var _0x198163=new west[(_0x5a9e61(0x6cc))][(_0x5a9e61(0x528))]('Remove',function(){const _0x1c64b4=_0x5a9e61;_0x5aa5f4[_0x1c64b4(0x4a4)](_0x2985c2,_0x51a586,_0x33ad55),_0x5aa5f4['addedJobsTablePosition']['content']=$('.Dusan2window\x20.tw2gui_scrollpane_clipper_contentpane')[_0x1c64b4(0x1f6)](_0x1c64b4(0x622)),_0x5aa5f4[_0x1c64b4(0x4f7)][_0x1c64b4(0x29a)]=$(_0x1c64b4(0x394))[_0x1c64b4(0x1f6)]('top'),_0x5aa5f4[_0x1c64b4(0x423)](0x7d0),_0x5aa5f4[_0x1c64b4(0x522)](_0x1c64b4(0x62c));});return _0x198163[_0x5a9e61(0x707)](0x50),_0x198163[_0x5a9e61(0x71f)]();},_0x5aa5f4['createComboxFavoriteJobSets']=function(_0x1bdedd,_0x2646d4){const _0x527d57=_0x54d740;return _0x5aa5f4[_0x527d57(0x613)](new west[(_0x527d57(0x6cc))]['Combobox']()['setWidth'](0x3c),_0x5aa5f4[_0x527d57(0x758)][_0x1bdedd][_0x527d57(0x61f)])[_0x527d57(0x7e6)](function(_0x58dc12){const _0x1e2282=_0x527d57;_0x5aa5f4['favoriteJobs'][_0x1bdedd]['set']=_0x58dc12,_0x2646d4!==-0x1&&_0x5aa5f4[_0x1e2282(0x62c)][_0x2646d4]['setSet'](_0x58dc12),_0x5aa5f4[_0x1e2282(0x423)](0x7d0);})['getMainDiv']();},_0x5aa5f4[_0x54d740(0x24e)]=function(_0x23eff3,_0x3f06eb,_0x5e9d5b){const _0x1d56ad=_0x54d740;return _0x5aa5f4[_0x1d56ad(0x613)](new west[(_0x1d56ad(0x6cc))][(_0x1d56ad(0x67f))]()[_0x1d56ad(0x707)](0x3c),_0x5aa5f4[_0x1d56ad(0x2bc)](_0x23eff3,_0x3f06eb,_0x5e9d5b))[_0x1d56ad(0x7e6)](function(_0x1885d7){const _0x153bad=_0x1d56ad;_0x5aa5f4[_0x153bad(0x6e0)](_0x23eff3,_0x3f06eb,_0x5e9d5b,_0x1885d7),_0x5aa5f4[_0x153bad(0x758)][_0x153bad(0x4f4)](_0x3ff60d=>_0x3ff60d['id']===_0x5e9d5b)&&_0x5aa5f4[_0x153bad(0x7de)](_0x5e9d5b,!![],_0x1885d7),_0x5aa5f4[_0x153bad(0x423)](0x7d0);})[_0x1d56ad(0x71f)]();},_0x5aa5f4[_0x54d740(0x4f3)]=function(_0x2905c9,_0x345248=![]){const _0x4ce2e0=_0x54d740,_0x2018df=_0x4ce2e0(0x853),_0x3981f1=_0x4ce2e0(0x5c9)+_0x2018df+_0x4ce2e0(0x5d4),_0x54142f=_0x345248?'white-space:\x20nowrap;':_0x4ce2e0(0x45d);return _0x4ce2e0(0x6c8)+_0x3981f1+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20style=\x22'+_0x54142f+'\x22>'+_0x2905c9+_0x4ce2e0(0x60a);},_0x5aa5f4[_0x54d740(0x613)]=function(_0x505031,_0x287292=-0x1,_0x5e2db4=_0x54d740(0x2ae)){const _0x40603b=_0x54d740;return _0x505031[_0x40603b(0x741)](-0x1,_0x5e2db4),_0x5aa5f4[_0x40603b(0x6ba)][_0x40603b(0x404)]((_0x22a897,_0x1f06ea)=>{const _0x59fb1c=_0x40603b;_0x505031[_0x59fb1c(0x741)](_0x1f06ea,_0x22a897['name']);}),_0x5aa5f4['wardrobe']['forEach']((_0x156fb3,_0x24a109)=>{const _0x5d38d6=_0x40603b;_0x505031[_0x5d38d6(0x741)](_0x24a109,_0x5aa5f4[_0x5d38d6(0x4f3)](_0x156fb3[_0x5d38d6(0x781)],!![]));}),_0x5aa5f4[_0x40603b(0x6ba)][_0x40603b(0x618)]<=_0x287292&&!_0x5aa5f4[_0x40603b(0x3f2)]['has'](_0x287292)&&_0x505031[_0x40603b(0x741)](_0x287292,'null'),!_0x5aa5f4['sets']['has'](_0x287292)&&!_0x5aa5f4[_0x40603b(0x3f2)][_0x40603b(0x1fd)](_0x287292)&&(_0x287292=-0x1),_0x505031[_0x40603b(0x85c)](_0x287292),_0x505031;},_0x5aa5f4[_0x54d740(0x33e)]=function(){const _0xf81bd3=_0x54d740;if(_0x5aa5f4['sets'][_0xf81bd3(0x618)]===0x0)return $('<span\x20style=\x27font-size:20px\x27>No\x20sets\x20available</span>');var _0x2100b3=$(_0xf81bd3(0x59e)),_0x32b50e=_0x5aa5f4[_0xf81bd3(0x613)](new west[(_0xf81bd3(0x6cc))][(_0xf81bd3(0x67f))](_0xf81bd3(0x3ab))['setWidth'](0x8c),_0x5aa5f4[_0xf81bd3(0x776)])[_0xf81bd3(0x7e6)](function(_0x579384){const _0x54955d=_0xf81bd3;_0x5aa5f4[_0x54955d(0x776)]=_0x579384,_0x5aa5f4['selectTab'](_0x54955d(0x6ba));}),_0x557bc2=new west[(_0xf81bd3(0x6cc))][(_0xf81bd3(0x528))]('Equip\x20set',function(){const _0x20b25e=_0xf81bd3;_0x5aa5f4[_0x20b25e(0x79d)](_0x5aa5f4[_0x20b25e(0x776)]);}),_0x3eb2b=new west['gui']['Button'](_0xf81bd3(0x4e4),function(){const _0xa39d15=_0xf81bd3;_0x5aa5f4[_0xa39d15(0x814)]=_0x5aa5f4[_0xa39d15(0x776)]===-0x1?-0x2:_0x5aa5f4[_0xa39d15(0x776)],_0x5aa5f4[_0xa39d15(0x423)](0xbb8),_0x5aa5f4[_0xa39d15(0x522)](_0xa39d15(0x6ba));})[_0xf81bd3(0x707)](0x2d),_0x54d81b=new west[(_0xf81bd3(0x6cc))][(_0xf81bd3(0x528))](_0xf81bd3(0x4e4),function(){const _0x24dacb=_0xf81bd3;_0x5aa5f4[_0x24dacb(0x76f)]=_0x5aa5f4[_0x24dacb(0x776)],_0x5aa5f4[_0x24dacb(0x61c)](_0x5aa5f4[_0x24dacb(0x76f)]),_0x5aa5f4[_0x24dacb(0x6fa)](_0x5aa5f4[_0x24dacb(0x76f)]),_0x5aa5f4[_0x24dacb(0x423)](0xbb8),_0x5aa5f4[_0x24dacb(0x522)](_0x24dacb(0x6ba));})[_0xf81bd3(0x707)](0x2d),_0x5b18af=new west['gui'][(_0xf81bd3(0x528))](_0xf81bd3(0x4e4),function(){const _0x532a3d=_0xf81bd3;_0x5aa5f4[_0x532a3d(0x5c5)]=_0x5aa5f4[_0x532a3d(0x776)]===-0x1?-0x3:_0x5aa5f4['selectedSet'],_0x5aa5f4[_0x532a3d(0x423)](0xbb8),_0x5aa5f4[_0x532a3d(0x522)](_0x532a3d(0x6ba));})[_0xf81bd3(0x707)](0x2d),_0x3969b4=new west[(_0xf81bd3(0x6cc))][(_0xf81bd3(0x528))](_0xf81bd3(0x4e4),function(){const _0x2fd4ac=_0xf81bd3;_0x5aa5f4[_0x2fd4ac(0x4a1)]=_0x5aa5f4['selectedSet'],_0x5aa5f4[_0x2fd4ac(0x423)](0xbb8),_0x5aa5f4[_0x2fd4ac(0x522)](_0x2fd4ac(0x6ba));})[_0xf81bd3(0x707)](0x2d),_0x4741c5=new west[(_0xf81bd3(0x6cc))][(_0xf81bd3(0x528))]('Set',function(){const _0x353f73=_0xf81bd3;_0x5aa5f4[_0x353f73(0x581)][_0x353f73(0x61f)]=_0x5aa5f4[_0x353f73(0x776)],_0x5aa5f4['debouncedSetCookies'](0xbb8),_0x5aa5f4[_0x353f73(0x522)]('sets');})['setWidth'](0x2d),_0x139022=new west[(_0xf81bd3(0x6cc))][(_0xf81bd3(0x528))](_0xf81bd3(0x4e4),function(){const _0x13a9fb=_0xf81bd3;_0x5aa5f4[_0x13a9fb(0x31a)][_0x13a9fb(0x7a8)][_0x13a9fb(0x542)]=_0x5aa5f4[_0x13a9fb(0x776)],_0x5aa5f4[_0x13a9fb(0x423)](0xbb8),_0x5aa5f4['selectTab'](_0x13a9fb(0x6ba));})[_0xf81bd3(0x707)](0x2d),_0x2c3908=new west[(_0xf81bd3(0x6cc))]['Button'](_0xf81bd3(0x4e4),function(){const _0x335e44=_0xf81bd3;_0x5aa5f4[_0x335e44(0x31a)]['fortBattle'][_0x335e44(0x5f4)]=_0x5aa5f4['selectedSet'],_0x5aa5f4[_0x335e44(0x423)](0xbb8),_0x5aa5f4['selectTab'](_0x335e44(0x6ba));})[_0xf81bd3(0x707)](0x2d);function _0x49536c(_0x527bd1,_0x329ddb=_0xf81bd3(0x466)){const _0x596235=_0xf81bd3;if(_0x5aa5f4[_0x596235(0x6ba)][_0x596235(0x1fd)](_0x527bd1))return'<b\x20style=\x22white-space:\x20nowrap;\x20overflow:\x20hidden;\x20text-overflow:\x20ellipsis;\x22>'+_0x5aa5f4[_0x596235(0x6ba)][_0x596235(0x4fe)](_0x527bd1)[_0x596235(0x781)]+_0x596235(0x698);if(_0x5aa5f4[_0x596235(0x3f2)][_0x596235(0x1fd)](_0x527bd1))return _0x596235(0x6e5)+_0x5aa5f4[_0x596235(0x4f3)](_0x5aa5f4[_0x596235(0x3f2)]['get'](_0x527bd1)[_0x596235(0x781)])+_0x596235(0x698);return _0x596235(0x3de)+_0x329ddb+_0x596235(0x802);}var _0xa7062=_0x49536c(_0x5aa5f4['travelSet']),_0x50f3cb=_0x49536c(_0x5aa5f4[_0xf81bd3(0x76f)],_0xf81bd3(0x2ae)),_0x48178e=_0x49536c(_0x5aa5f4[_0xf81bd3(0x5c5)]),_0x354a60=_0x49536c(_0x5aa5f4[_0xf81bd3(0x4a1)],'None'),_0x2e024b=_0x49536c(_0x5aa5f4[_0xf81bd3(0x581)][_0xf81bd3(0x61f)]),_0x2a4ea8=_0x49536c(_0x5aa5f4['settings'][_0xf81bd3(0x7a8)]['attackSet']),_0x2c21cc=_0x49536c(_0x5aa5f4[_0xf81bd3(0x31a)][_0xf81bd3(0x7a8)]['defSet']);const _0x3593f9=(_0x1efb9d,_0x20c089,_0x58d824)=>{const _0x16aa9c=_0xf81bd3;return $(_0x16aa9c(0x37c))[_0x16aa9c(0x1f6)]({'display':_0x16aa9c(0x866),'width':_0x16aa9c(0x697),'justify-content':_0x16aa9c(0x5a1),'align-items':_0x16aa9c(0x548)})[_0x16aa9c(0x820)]($(_0x16aa9c(0x86e))['css']({'display':'inline-flex','align-items':'center','gap':_0x16aa9c(0x46e),'overflow':_0x16aa9c(0x5ec)})[_0x16aa9c(0x2cf)](_0x16aa9c(0x6a5)+_0x1efb9d+_0x16aa9c(0x73c))['append'](_0x20c089),_0x58d824[_0x16aa9c(0x71f)]());},_0x11ae73=new west[(_0xf81bd3(0x6cc))]['Groupframe']()[_0xf81bd3(0x80f)](_0x32b50e[_0xf81bd3(0x71f)]())[_0xf81bd3(0x80f)]($(_0xf81bd3(0x3fa)))[_0xf81bd3(0x80f)]($(_0xf81bd3(0x37c))[_0xf81bd3(0x1f6)]({'display':_0xf81bd3(0x866),'flex-direction':'column','justify-content':_0xf81bd3(0x5a1),'height':_0xf81bd3(0x697),'flex-grow':'1'})[_0xf81bd3(0x820)](_0x3593f9(_0xf81bd3(0x420),_0xa7062,_0x3eb2b),_0x3593f9(_0xf81bd3(0x263),_0x50f3cb,_0x54d81b),_0x3593f9(_0xf81bd3(0x44e),_0x48178e,_0x5b18af),_0x3593f9(_0xf81bd3(0x59f),_0x354a60,_0x3969b4),_0x3593f9(_0xf81bd3(0x745),_0x2e024b,_0x4741c5),_0x3593f9(_0xf81bd3(0x475),_0x2a4ea8,_0x139022),_0x3593f9(_0xf81bd3(0x452),_0x2c21cc,_0x2c3908)))[_0xf81bd3(0x71f)]();$(_0x11ae73)[_0xf81bd3(0x1f6)]({'height':_0xf81bd3(0x2d4),'padding-top':'10px','padding-bottom':_0xf81bd3(0x33b),'white-space':_0xf81bd3(0x49a),'overflow':_0xf81bd3(0x5ec)}),$(_0x11ae73)[_0xf81bd3(0x492)](_0xf81bd3(0x26f))[_0xf81bd3(0x1f6)]({'display':_0xf81bd3(0x866),'flex-direction':'column','height':'340px','justify-content':'space-between','align-items':_0xf81bd3(0x5a0)});var _0x4088ec=$(_0xf81bd3(0x5d1))[_0xf81bd3(0x820)](_0x11ae73),_0x30d247=$('<div\x20style=\x27display:block;\x20position:relative;\x20width:300px;\x20height:410px;\x27></div>');$(_0x557bc2['getMainDiv']())[_0xf81bd3(0x1f6)]({'position':_0xf81bd3(0x786),'top':_0xf81bd3(0x6b4),'right':_0xf81bd3(0x5e6)})[_0xf81bd3(0x5f3)](_0x30d247),_0x30d247[_0xf81bd3(0x820)]('<div\x20class=\x27wear_head\x20wear_slot\x27\x20style=\x27display:block;position:absolute;left:50px;top:1px;width:93px;height:94px;background:url(https://westzz.innogamescdn.com/images/window/wear/bg_sprite.png)\x200\x200\x20no-repeat;background-position:\x20-95px\x200;\x27></div>'),_0x30d247[_0xf81bd3(0x820)]('<div\x20class=\x27wear_body\x20wear_slot\x27\x20style=\x27display:block;position:absolute;left:50px;top:106px;width:95px;height:138px;background:url(https://westzz.innogamescdn.com/images/window/wear/bg_sprite.png)\x200\x200\x20no-repeat;background-position:0\x200;\x27></div>'),_0x30d247[_0xf81bd3(0x820)](_0xf81bd3(0x4aa)),_0x30d247[_0xf81bd3(0x820)](_0xf81bd3(0x591)),_0x30d247[_0xf81bd3(0x820)](_0xf81bd3(0x880)),_0x30d247['append']('<div\x20class=\x27wear_animal\x20wear_slot\x27\x20style=\x27display:block;position:absolute;left:-44px;top:223px;width:93px;height:94px;background:url(https://westzz.innogamescdn.com/images/window/wear/bg_sprite.png)\x200\x200\x20no-repeat;background-position:-95px\x200;\x27></div>'),_0x30d247[_0xf81bd3(0x820)]('<div\x20class=\x27wear_yield\x20wear_slot\x27\x20style=\x27display:block;position:absolute;left:-27px;top:321px;width:74px;height:74px;background:url(https://westzz.innogamescdn.com/images/window/wear/bg_sprite.png)\x200\x200\x20no-repeat;background-position:-189px\x200;\x27></div>'),_0x30d247[_0xf81bd3(0x820)](_0xf81bd3(0x36d)),_0x30d247[_0xf81bd3(0x820)](_0xf81bd3(0x3f6)),_0x30d247[_0xf81bd3(0x820)](_0xf81bd3(0x523));if(_0x5aa5f4[_0xf81bd3(0x776)]!==-0x1){const _0x1147e0=[_0xf81bd3(0x768),_0xf81bd3(0x26b),_0xf81bd3(0x3c5),_0xf81bd3(0x659),_0xf81bd3(0x4ae),_0xf81bd3(0x6b6),_0xf81bd3(0x7f4),_0xf81bd3(0x410),_0xf81bd3(0x4a2),_0xf81bd3(0x754)];_0x5aa5f4[_0xf81bd3(0x6be)](_0x30d247,_0x1147e0);}return $(_0xf81bd3(0x323),_0x2100b3)[_0xf81bd3(0x820)](_0x4088ec),$(_0xf81bd3(0x41a),_0x2100b3)[_0xf81bd3(0x820)](_0x30d247),_0x2100b3;},_0x5aa5f4[_0x54d740(0x6be)]=function(_0x407a1b,_0x22d3cb){const _0x17d21a=_0x54d740;function _0x5acb61(){const _0x25733e=_0x3acb;return $(_0x25733e(0x5e8));}if(_0x5aa5f4['sets']['has'](_0x5aa5f4['selectedSet']))for(let _0x3faa5f=0x0;_0x3faa5f<_0x22d3cb[_0x17d21a(0x881)];_0x3faa5f++){_0x5aa5f4[_0x17d21a(0x6ba)]['get'](_0x5aa5f4[_0x17d21a(0x776)])[_0x22d3cb[_0x3faa5f]]!=null&&$(_0x17d21a(0x7d7)+_0x22d3cb[_0x3faa5f],_0x407a1b)[_0x17d21a(0x820)](_0x5acb61()[_0x17d21a(0x327)]('src',_0x5aa5f4[_0x17d21a(0x6ea)](_0x5aa5f4[_0x17d21a(0x6ba)][_0x17d21a(0x4fe)](_0x5aa5f4[_0x17d21a(0x776)])[_0x22d3cb[_0x3faa5f]])));}else{if(_0x5aa5f4[_0x17d21a(0x3f2)][_0x17d21a(0x1fd)](_0x5aa5f4['selectedSet'])){const _0x5fe059=_0x5aa5f4[_0x17d21a(0x3f2)]['get'](_0x5aa5f4['selectedSet'])[_0x17d21a(0x432)];for(let _0x152d41=0x0;_0x152d41<_0x22d3cb[_0x17d21a(0x881)];_0x152d41++){const _0x1cd077=_0x5fe059[_0x17d21a(0x492)](_0x50c070=>ItemManager['get'](_0x50c070)[_0x17d21a(0x51c)]===_0x22d3cb[_0x152d41]);_0x1cd077&&$(_0x17d21a(0x7d7)+_0x22d3cb[_0x152d41],_0x407a1b)[_0x17d21a(0x820)](_0x5acb61()[_0x17d21a(0x327)](_0x17d21a(0x6a1),_0x5aa5f4[_0x17d21a(0x6ea)](_0x1cd077)));}}}return _0x407a1b;},_0x5aa5f4[_0x54d740(0x3ac)]=function(){const _0x299566=_0x54d740;var _0xad3763=$(_0x299566(0x2cc)),_0xb8fae9=$('<div\x20class\x20=\x20\x27consumables_filter\x27\x20style=\x27position:relative;\x27><div\x20id=\x27filter_text\x27style=\x27position:absolute;top:10px;left:10px;\x27></div><div\x20id=\x27energy_consumables\x27style=\x27position:absolute;top:8px;left:56px;\x27></div><div\x20id=\x27motivation_consumables\x27style=\x27position:absolute;top:8px;left:207px;\x27></div><div\x20id=\x27health_consumables\x27style=\x27position:absolute;top:8px;left:375px;\x27></div><div\x20id=\x27buff_consumables\x27style=\x27position:absolute;top:8px;left:523px;\x27></div></div>');const _0xa2c00c=_0x5aa5f4[_0x299566(0x534)](_0x5aa5f4[_0x299566(0x3bb)][_0x299566(0x6ef)],_0x5aa5f4['consumableSelection']['motivation'],_0x5aa5f4[_0x299566(0x3bb)]['health'],_0x5aa5f4[_0x299566(0x3bb)][_0x299566(0x1e7)]),_0x111a75=_0x5aa5f4['diagnostics'][_0x299566(0x6a7)]||[];_0xa2c00c[_0x299566(0x404)](_0x1882d6=>{const _0x53fb2c=_0x299566;_0x1882d6[_0x53fb2c(0x2da)]=_0x111a75[_0x53fb2c(0x813)](_0x44555e=>_0x44555e[_0x53fb2c(0x2fe)](_0x1882d6[_0x53fb2c(0x781)]))[_0x53fb2c(0x881)];}),_0xa2c00c[_0x299566(0x574)]((_0x1e56af,_0x214faa)=>{const _0x3928b7=_0x299566;if(_0x1e56af[_0x3928b7(0x2da)]!==_0x214faa[_0x3928b7(0x2da)])return _0x214faa[_0x3928b7(0x2da)]-_0x1e56af['usedCount'];else{if(_0x1e56af[_0x3928b7(0x451)]!==_0x214faa[_0x3928b7(0x451)])return _0x1e56af['selected']?-0x1:0x1;else{if(_0x1e56af[_0x3928b7(0x6eb)]!==_0x214faa[_0x3928b7(0x6eb)])return _0x1e56af[_0x3928b7(0x6eb)]?0x1:-0x1;}}return _0xa2c00c[_0x3928b7(0x5c6)](_0x1e56af)-_0xa2c00c[_0x3928b7(0x5c6)](_0x214faa);});var _0x5a71bf=new west[(_0x299566(0x6cc))][(_0x299566(0x514))]();_0x5a71bf[_0x299566(0x755)](_0x299566(0x674),_0x299566(0x674))['addColumn'](_0x299566(0x831),_0x299566(0x831))[_0x299566(0x755)](_0x299566(0x806),_0x299566(0x806))[_0x299566(0x755)]('consumMotivation',_0x299566(0x6d1))[_0x299566(0x755)](_0x299566(0x62a),_0x299566(0x62a))['addColumn'](_0x299566(0x1e8),_0x299566(0x1e8))[_0x299566(0x755)](_0x299566(0x467),_0x299566(0x467)),_0x5a71bf[_0x299566(0x1f7)](_0x299566(0x768),'consumIcon',_0x299566(0x24a))[_0x299566(0x1f7)]('head',_0x299566(0x831),_0x299566(0x301))['appendToCell'](_0x299566(0x768),'consumEnergy',_0x299566(0x40d))[_0x299566(0x1f7)](_0x299566(0x768),_0x299566(0x6d1),_0x299566(0x499))[_0x299566(0x1f7)](_0x299566(0x768),'consumHealth',_0x299566(0x44e))['appendToCell'](_0x299566(0x768),_0x299566(0x1e8),_0x299566(0x4ba))['appendToCell'](_0x299566(0x768),_0x299566(0x467),_0x299566(0x4e9));for(let _0x2607e9=0x0;_0x2607e9<_0xa2c00c[_0x299566(0x881)];_0x2607e9++){var _0x474a51=_0xa2c00c[_0x2607e9][_0x299566(0x28d)],_0x39fc08=_0xa2c00c[_0x2607e9][_0x299566(0x2da)],_0x170ad4=_0x474a51+(_0x39fc08>0x0?'\x20(-'+_0x39fc08+')':''),_0x4a2a6a=new west[(_0x299566(0x6cc))]['Checkbox']()[_0x299566(0x495)](_0xa2c00c[_0x2607e9]['selected'])['setId'](_0xa2c00c[_0x2607e9]['id'])[_0x299566(0x845)](function(){const _0x3f7fe2=_0x299566;_0x5aa5f4[_0x3f7fe2(0x63a)](parseInt(this[_0x3f7fe2(0x44b)][_0x3f7fe2(0x327)]('id')),this['isSelected']()),_0x5aa5f4['consumablesTablePosition'][_0x3f7fe2(0x83b)]=$(_0x3f7fe2(0x4f1))[_0x3f7fe2(0x1f6)](_0x3f7fe2(0x622)),_0x5aa5f4['consumablesTablePosition'][_0x3f7fe2(0x29a)]=$('.Dusan2window\x20.tw2gui_scrollbar_pulley')[_0x3f7fe2(0x1f6)](_0x3f7fe2(0x622)),_0x5aa5f4[_0x3f7fe2(0x423)](0xbb8);}),_0x1dd06b='';if(_0xa2c00c[_0x2607e9]['xp']+_0xa2c00c[_0x2607e9][_0x299566(0x234)]+_0xa2c00c[_0x2607e9]['product']+_0xa2c00c[_0x2607e9][_0x299566(0x828)]+_0xa2c00c[_0x2607e9]['travel']+_0xa2c00c[_0x2607e9][_0x299566(0x441)]+_0xa2c00c[_0x2607e9][_0x299566(0x78a)]+_0xa2c00c[_0x2607e9][_0x299566(0x27d)]===0x0&&!_0xa2c00c[_0x2607e9]['hasBattleBonus'])_0x1dd06b=_0x299566(0x83f);else{_0x1dd06b+=_0x299566(0x59b);if(_0xa2c00c[_0x2607e9][_0x299566(0x6b9)]!==0x0)_0x1dd06b+=_0x299566(0x400);else{if(_0xa2c00c[_0x2607e9]['hasBattleBonus'])_0x1dd06b+=_0x299566(0x7ef);else _0x1dd06b+=_0x299566(0x3ba);}_0x1dd06b+=_0x299566(0x37c);if(_0xa2c00c[_0x2607e9]['xp']!==0x0)_0x1dd06b+='<span>+'+_0xa2c00c[_0x2607e9]['xp']+_0x299566(0x722);if(_0xa2c00c[_0x2607e9][_0x299566(0x234)]!==0x0)_0x1dd06b+='<span>+'+_0xa2c00c[_0x2607e9][_0x299566(0x234)]+_0x299566(0x4f9);if(_0xa2c00c[_0x2607e9][_0x299566(0x66c)]!==0x0)_0x1dd06b+=_0x299566(0x2ce)+_0xa2c00c[_0x2607e9][_0x299566(0x66c)]+_0x299566(0x507);if(_0xa2c00c[_0x2607e9][_0x299566(0x828)]!==0x0)_0x1dd06b+=_0x299566(0x2ce)+_0xa2c00c[_0x2607e9][_0x299566(0x828)]+_0x299566(0x3a8);if(_0xa2c00c[_0x2607e9][_0x299566(0x6b9)]!==0x0)_0x1dd06b+='<span>+'+_0xa2c00c[_0x2607e9][_0x299566(0x6b9)]+_0x299566(0x239);_0xa2c00c[_0x2607e9][_0x299566(0x441)]!==0x0&&_0xa2c00c[_0x2607e9]['xp']+_0xa2c00c[_0x2607e9]['money']+_0xa2c00c[_0x2607e9][_0x299566(0x66c)]+_0xa2c00c[_0x2607e9][_0x299566(0x828)]+_0xa2c00c[_0x2607e9]['travel']===0x0&&(_0x1dd06b+=_0x299566(0x683));(_0xa2c00c[_0x2607e9][_0x299566(0x6eb)]||_0xa2c00c[_0x2607e9]['id']===0x33dcdb0||(_0xa2c00c[_0x2607e9]['hiding']!==0x0||_0xa2c00c[_0x2607e9][_0x299566(0x27d)]!==0x0)&&!_0xa2c00c[_0x2607e9][_0x299566(0x6bb)])&&(_0x1dd06b+=_0x299566(0x25a));if(_0xa2c00c[_0x2607e9][_0x299566(0x69e)]!==0x0){if(_0xa2c00c[_0x2607e9][_0x299566(0x69e)]===0x1)_0x1dd06b+='<span>'+_0xa2c00c[_0x2607e9][_0x299566(0x69e)]+'\x20Hour</span><br>';else _0x1dd06b+=_0x299566(0x86e)+_0xa2c00c[_0x2607e9][_0x299566(0x69e)]+_0x299566(0x1fa);}else{if(_0xa2c00c[_0x2607e9][_0x299566(0x55f)]!==0x0){if(_0xa2c00c[_0x2607e9][_0x299566(0x55f)]===0x1)_0x1dd06b+=_0x299566(0x86e)+_0xa2c00c[_0x2607e9][_0x299566(0x55f)]+_0x299566(0x3c2);else _0x1dd06b+='<span>'+_0xa2c00c[_0x2607e9]['uses']+_0x299566(0x5af);}}_0x1dd06b+='</div>',_0x1dd06b+=_0x299566(0x77f);}_0x5a71bf[_0x299566(0x309)]()['appendToCell'](-0x1,_0x299566(0x674),_0x5aa5f4[_0x299566(0x1d8)](_0xa2c00c[_0x2607e9],_0x170ad4))[_0x299566(0x1f7)](-0x1,'consumName',_0xa2c00c[_0x2607e9][_0x299566(0x781)]+_0x299566(0x72a))[_0x299566(0x1f7)](-0x1,_0x299566(0x806),_0xa2c00c[_0x2607e9][_0x299566(0x6ef)])[_0x299566(0x1f7)](-0x1,_0x299566(0x6d1),_0xa2c00c[_0x2607e9][_0x299566(0x443)])['appendToCell'](-0x1,_0x299566(0x62a),_0xa2c00c[_0x2607e9][_0x299566(0x5f8)])['appendToCell'](-0x1,_0x299566(0x1e8),_0x1dd06b)[_0x299566(0x1f7)](-0x1,_0x299566(0x467),_0x4a2a6a[_0x299566(0x71f)]())['getRow']()[_0x299566(0x1f6)](_0x299566(0x570),_0x474a51<0x1?0.5:0x1);}var _0x4bd310=new west[(_0x299566(0x6cc))][(_0x299566(0x528))](_0x299566(0x72c),function(){const _0x3dd187=_0x299566;_0x5aa5f4[_0x3dd187(0x8ab)](),_0x5aa5f4['selectTab'](_0x3dd187(0x76a)),_0x5aa5f4['debouncedSetCookies'](0x1f4);}),_0x424139=_0x4bd310[_0x299566(0x71f)]();$(_0x424139)['css']({'margin-left':_0x299566(0x86f)});var _0x3a7e51=new west[(_0x299566(0x6cc))][(_0x299566(0x528))]('Deselect\x20buffs',function(){const _0x5dc467=_0x299566;_0x5aa5f4[_0x5dc467(0x2aa)](),_0x5aa5f4['selectTab'](_0x5dc467(0x76a)),_0x5aa5f4[_0x5dc467(0x423)](0x1f4);}),_0x1db66c=_0x3a7e51[_0x299566(0x71f)]();$(_0x1db66c)['css']({'margin-left':_0x299566(0x86f)});var _0x16e456=new west['gui'][(_0x299566(0x528))](_0x299566(0x551),function(){const _0x1b0a49=_0x299566;_0x5aa5f4[_0x1b0a49(0x65d)](!![]),_0x5aa5f4[_0x1b0a49(0x522)](_0x1b0a49(0x76a)),_0x5aa5f4[_0x1b0a49(0x423)](0x1f4);}),_0x4f01f1=_0x16e456[_0x299566(0x71f)]();$(_0x4f01f1)[_0x299566(0x1f6)]({'margin-left':_0x299566(0x794)});var _0x156a84=new west[(_0x299566(0x6cc))][(_0x299566(0x528))](_0x299566(0x7be),function(){const _0x11a3ad=_0x299566;_0x5aa5f4['changeSelectionAllConsumables'](![]),_0x5aa5f4[_0x11a3ad(0x522)](_0x11a3ad(0x76a)),_0x5aa5f4[_0x11a3ad(0x423)](0x1f4);}),_0x4790d5=_0x156a84[_0x299566(0x71f)]();$(_0x4790d5)[_0x299566(0x1f6)]({'margin-left':_0x299566(0x36f)}),_0x5a71bf[_0x299566(0x43c)]('consumEnergy',_0x4f01f1),_0x5a71bf['appendToFooter'](_0x299566(0x6d1),_0x4790d5),_0x5a71bf[_0x299566(0x43c)](_0x299566(0x1e8),_0x1db66c),_0xad3763['append'](_0x5a71bf[_0x299566(0x71f)]());var _0x7c22b3=function(){const _0x494187=_0x299566;$(_0x494187(0x4f1))['css']({'top':_0x494187(0x36f)}),$('.Dusan2window\x20.tw2gui_scrollbar_pulley')[_0x494187(0x1f6)]({'top':_0x494187(0x36f)}),_0x5aa5f4[_0x494187(0x522)]('consumables');},_0xf2b812=new west[(_0x299566(0x6cc))][(_0x299566(0x89b))]()['setLabel'](_0x299566(0x5ff))[_0x299566(0x495)](_0x5aa5f4[_0x299566(0x3bb)]['energy'])[_0x299566(0x845)](function(){const _0x23397b=_0x299566;_0x5aa5f4[_0x23397b(0x3bb)][_0x23397b(0x6ef)]=this[_0x23397b(0x465)](),_0x7c22b3();}),_0x3d8bd4=new west[(_0x299566(0x6cc))][(_0x299566(0x89b))]()['setLabel'](_0x299566(0x368))[_0x299566(0x495)](_0x5aa5f4[_0x299566(0x3bb)][_0x299566(0x443)])['setCallback'](function(){const _0x15624b=_0x299566;_0x5aa5f4[_0x15624b(0x3bb)][_0x15624b(0x443)]=this[_0x15624b(0x465)](),_0x7c22b3();}),_0x396dac=new west[(_0x299566(0x6cc))][(_0x299566(0x89b))]()['setLabel'](_0x299566(0x82a))[_0x299566(0x495)](_0x5aa5f4['consumableSelection'][_0x299566(0x5f8)])[_0x299566(0x845)](function(){const _0x5e3bce=_0x299566;_0x5aa5f4[_0x5e3bce(0x3bb)][_0x5e3bce(0x5f8)]=this[_0x5e3bce(0x465)](),_0x7c22b3();}),_0x4bed6d=new west[(_0x299566(0x6cc))][(_0x299566(0x89b))]()[_0x299566(0x562)](_0x299566(0x4ba))[_0x299566(0x495)](_0x5aa5f4[_0x299566(0x3bb)][_0x299566(0x1e7)])[_0x299566(0x845)](function(){const _0x2757af=_0x299566;_0x5aa5f4[_0x2757af(0x3bb)][_0x2757af(0x1e7)]=this['isSelected'](),_0x7c22b3();});$(_0x299566(0x708),_0xb8fae9)['append'](_0x299566(0x65f)),$(_0x299566(0x207),_0xb8fae9)[_0x299566(0x820)](_0xf2b812[_0x299566(0x71f)]()),$(_0x299566(0x5d2),_0xb8fae9)[_0x299566(0x820)](_0x3d8bd4[_0x299566(0x71f)]()),$(_0x299566(0x3e8),_0xb8fae9)[_0x299566(0x820)](_0x396dac[_0x299566(0x71f)]()),$('#buff_consumables',_0xb8fae9)['append'](_0x4bed6d[_0x299566(0x71f)]()),_0xad3763[_0x299566(0x820)](_0xb8fae9);var _0x186efc=_0x299566(0x634);switch(_0x111a75[_0x299566(0x881)]){case 0x0:break;case 0x1:_0x186efc=_0x111a75['at'](-0x1);break;case 0x2:_0x186efc=_0x111a75['at'](-0x1)+',\x20'+_0x111a75['at'](-0x2);break;case 0x3:_0x186efc=_0x111a75['at'](-0x1)+',\x20'+_0x111a75['at'](-0x2)+',\x20'+_0x111a75['at'](-0x3);break;default:_0x186efc=_0x111a75['at'](-0x1)+',\x20'+_0x111a75['at'](-0x2)+',\x20'+_0x111a75['at'](-0x3)+'...';break;}var _0x324d09=$(_0x299566(0x737)+_0x186efc+_0x299566(0x77f));return _0x324d09[_0x299566(0x1f6)]('margin-top',_0x299566(0x322)),_0x324d09[_0x299566(0x1f6)](_0x299566(0x35d),'10px'),_0xad3763['append'](_0x324d09),_0xad3763;},_0x5aa5f4[_0x54d740(0x482)]=function(_0x4c948b){const _0x5f53b3=_0x54d740;_0x4c948b[_0x5f53b3(0x741)](-0x2,_0x5f53b3(0x2ae));_0x5aa5f4[_0x5f53b3(0x5fd)]!=null&&_0x4c948b[_0x5f53b3(0x741)](-0x1,_0x5aa5f4[_0x5f53b3(0x5fd)][_0x5f53b3(0x781)]);for(let _0x13fa00=0x0;_0x13fa00<_0x5aa5f4[_0x5f53b3(0x2f7)][_0x5f53b3(0x881)];_0x13fa00++){var _0x23c968=_0x5aa5f4[_0x5f53b3(0x2f7)][_0x13fa00][_0x5f53b3(0x51c)]===0x0?_0x5f53b3(0x80b):_0x5aa5f4[_0x5f53b3(0x2f7)][_0x13fa00]['type']===0x1?'Medium':_0x5f53b3(0x73a);_0x4c948b[_0x5f53b3(0x741)](_0x13fa00,_0x5aa5f4['allianceForts'][_0x13fa00]['name']+_0x5f53b3(0x1da)+_0x23c968);}},_0x5aa5f4[_0x54d740(0x1f4)]=function(_0x3107a2){const _0x74d670=_0x54d740;_0x5aa5f4[_0x74d670(0x338)]();_0x5aa5f4['battles']['size']===0x0&&_0x3107a2[_0x74d670(0x741)](-0x1,_0x74d670(0x2ae));for(const [_0x40d9d4,_0x156107]of _0x5aa5f4[_0x74d670(0x6b1)]){const _0x3f9100=_0x198548(Math[_0x74d670(0x5e2)](0x0,Math['floor']((_0x156107[_0x74d670(0x86c)]-new Date()['getTime']())/0x3e8)));_0x3107a2[_0x74d670(0x741)](_0x40d9d4,_0x156107[_0x74d670(0x4b9)]+_0x74d670(0x462)+_0x3f9100);}},_0x5aa5f4[_0x54d740(0x449)]=function(_0x14783e){setTimeout(function(){const _0x3a60b9=_0x3acb;$(_0x14783e)['on'](_0x3a60b9(0x70c),_0x3a60b9(0x70c),function(_0x3c5e3c){const _0x579dff=_0x3a60b9;var _0x554e8c=_0x3c5e3c[_0x579dff(0x80e)][_0x579dff(0x21f)],_0x256952=_0x554e8c['replace'](/\D/g,'');_0x3c5e3c['target'][_0x579dff(0x21f)]=_0x2fa453(_0x256952);});},0x0);},_0x5aa5f4[_0x54d740(0x7c6)]=function(){const _0x5485af=_0x54d740;var _0x27bb74=$(_0x5485af(0x428)),_0x1bea22=$(_0x5485af(0x5d1))[_0x5485af(0x1f6)]({'display':'inline-block'}),_0x35d605=new west[(_0x5485af(0x6cc))][(_0x5485af(0x89b))]()[_0x5485af(0x562)](_0x5485af(0x609))['setSelected'](_0x5aa5f4[_0x5485af(0x31a)][_0x5485af(0x601)])[_0x5485af(0x845)](function(){const _0x604cd8=_0x5485af;_0x5aa5f4['settings'][_0x604cd8(0x601)]=!_0x5aa5f4[_0x604cd8(0x31a)][_0x604cd8(0x601)],_0x5aa5f4['settings'][_0x604cd8(0x601)]?($(_0x604cd8(0x657))[_0x604cd8(0x1f6)]('visibility',_0x604cd8(0x74e)),_0x5aa5f4['settings'][_0x604cd8(0x46f)]&&$(_0x604cd8(0x87b))[_0x604cd8(0x1f6)]('visibility',_0x604cd8(0x74e))):($(_0x604cd8(0x657))['css'](_0x604cd8(0x76e),'hidden'),$(_0x604cd8(0x87b))['css']('visibility','hidden'));});_0x1bea22[_0x5485af(0x820)](_0x35d605[_0x5485af(0x71f)]());var _0x8b0c8=$('<div\x20id=\x27optional_energy_container\x27></div>');_0x8b0c8['css']({'display':_0x5485af(0x7da),'align-items':_0x5485af(0x548),'position':_0x5485af(0x3a6),'left':_0x5485af(0x278),'visibility':_0x5aa5f4[_0x5485af(0x31a)][_0x5485af(0x601)]?_0x5485af(0x74e):_0x5485af(0x5ec)});var _0x209a47=$(_0x5485af(0x669))[_0x5485af(0x1f6)]({'display':_0x5485af(0x866),'align-items':'center','height':_0x5485af(0x504)});_0x209a47[_0x5485af(0x327)](_0x5485af(0x4b9),_0x5aa5f4[_0x5485af(0x3d0)][_0x5aa5f4[_0x5485af(0x1ed)]][_0x5485af(0x457)]);var _0x158b1e=new west[(_0x5485af(0x6cc))][(_0x5485af(0x89b))]()[_0x5485af(0x562)](_0x5485af(0x84d))[_0x5485af(0x495)](_0x5aa5f4[_0x5485af(0x31a)]['addEnergyOptional'])[_0x5485af(0x845)](function(){const _0x57c524=_0x5485af;_0x5aa5f4['settings'][_0x57c524(0x46f)]=!_0x5aa5f4[_0x57c524(0x31a)][_0x57c524(0x46f)],_0x5aa5f4[_0x57c524(0x31a)][_0x57c524(0x46f)]?$(_0x57c524(0x87b))[_0x57c524(0x1f6)](_0x57c524(0x76e),_0x57c524(0x74e)):$('#optional_energy_textfields')[_0x57c524(0x1f6)](_0x57c524(0x76e),_0x57c524(0x5ec));});_0x209a47['append'](_0x158b1e[_0x5485af(0x71f)]());var _0x383e57=$(_0x5485af(0x5e1))[_0x5485af(0x1f6)]({'display':_0x5485af(0x388),'margin-left':_0x5485af(0x782),'visibility':_0x5aa5f4[_0x5485af(0x31a)]['addEnergy']&&_0x5aa5f4[_0x5485af(0x31a)][_0x5485af(0x46f)]?'visible':_0x5485af(0x5ec)}),_0x273061=new west[(_0x5485af(0x6cc))][(_0x5485af(0x3ee))]('addEnergyOptionalMin')['setWidth'](0x23)[_0x5485af(0x1d6)](_0x5aa5f4[_0x5485af(0x31a)][_0x5485af(0x751)])[_0x5485af(0x7c8)](),_0x1c9c02=new west[(_0x5485af(0x6cc))][(_0x5485af(0x3ee))](_0x5485af(0x2be))['setWidth'](0x23)[_0x5485af(0x1d6)](_0x5aa5f4[_0x5485af(0x31a)][_0x5485af(0x2be)])[_0x5485af(0x7c8)](),_0x221871=new west[(_0x5485af(0x6cc))][(_0x5485af(0x89b))]()[_0x5485af(0x562)](_0x5485af(0x825))['setSelected'](_0x5aa5f4[_0x5485af(0x31a)][_0x5485af(0x415)])[_0x5485af(0x845)](function(){const _0x104403=_0x5485af;_0x5aa5f4['settings']['allowMotivationOptional']=this[_0x104403(0x465)]();});_0x221871['getMainDiv']()[_0x5485af(0x327)](_0x5485af(0x4b9),_0x5aa5f4[_0x5485af(0x3d0)][_0x5aa5f4[_0x5485af(0x1ed)]][_0x5485af(0x6a6)]),_0x383e57[_0x5485af(0x820)]('<span>\x20%\x20</span>'),_0x383e57[_0x5485af(0x820)](_0x273061[_0x5485af(0x71f)]()),_0x383e57[_0x5485af(0x820)]('<span>\x20-\x20</span>'),_0x383e57[_0x5485af(0x820)](_0x1c9c02[_0x5485af(0x71f)]()),_0x383e57['append'](_0x5485af(0x6c1)),_0x209a47['append'](_0x383e57),_0x8b0c8[_0x5485af(0x820)](_0x209a47),_0x8b0c8[_0x5485af(0x820)](_0x221871[_0x5485af(0x71f)]());var _0x4d6fba=$(_0x5485af(0x236));_0x4d6fba[_0x5485af(0x327)]('title',_0x5aa5f4[_0x5485af(0x3d0)][_0x5aa5f4[_0x5485af(0x1ed)]][_0x5485af(0x39c)]);var _0x442f27=new west[(_0x5485af(0x6cc))][(_0x5485af(0x89b))]()[_0x5485af(0x562)](_0x5485af(0x5b6))[_0x5485af(0x495)](_0x5aa5f4[_0x5485af(0x31a)]['addMotivation'])['setCallback'](function(){const _0x5f43f8=_0x5485af;_0x5aa5f4[_0x5f43f8(0x31a)]['addMotivation']=!_0x5aa5f4[_0x5f43f8(0x31a)][_0x5f43f8(0x57a)];});_0x4d6fba['append'](_0x442f27['getMainDiv']());var _0x5ba385=$(_0x5485af(0x5d1))[_0x5485af(0x1f6)]({'display':_0x5485af(0x388),'margin-bottom':_0x5485af(0x2a7)});_0x5ba385[_0x5485af(0x327)](_0x5485af(0x4b9),_0x5aa5f4['explainerTranslations'][_0x5aa5f4[_0x5485af(0x1ed)]]['explainer_2']);var _0x59ab52=new west[(_0x5485af(0x6cc))]['Checkbox']()['setLabel'](_0x5485af(0x81f))[_0x5485af(0x495)](_0x5aa5f4['settings'][_0x5485af(0x53d)])[_0x5485af(0x845)](function(){_0x5aa5f4['settings']['addHealth']=!_0x5aa5f4['settings']['addHealth'];});_0x5ba385[_0x5485af(0x820)](_0x59ab52[_0x5485af(0x71f)]());var _0x4ab65e=$(_0x5485af(0x5b4));_0x4ab65e[_0x5485af(0x327)](_0x5485af(0x4b9),_0x5aa5f4[_0x5485af(0x3d0)][_0x5aa5f4[_0x5485af(0x1ed)]]['explainer_2']),_0x4ab65e[_0x5485af(0x820)]('<span\x20style=\x27margin-right:\x205px;\x27>[Stop]</span>');var _0x4ca69c=$(_0x5485af(0x594));_0x4ca69c[_0x5485af(0x820)]('<span>\x20Minimum\x20HP\x20</span>');var _0x56aa1e=new west[(_0x5485af(0x6cc))][(_0x5485af(0x3ee))](_0x5485af(0x454))[_0x5485af(0x707)](0x32)[_0x5485af(0x1d6)](_0x5aa5f4[_0x5485af(0x31a)][_0x5485af(0x454)])[_0x5485af(0x7c8)]();_0x4ca69c[_0x5485af(0x820)](_0x56aa1e[_0x5485af(0x71f)]());var _0x44202c=$(_0x5485af(0x5d1));_0x44202c[_0x5485af(0x1f6)]({'display':_0x5485af(0x388),'margin-left':_0x5485af(0x59d)}),_0x44202c[_0x5485af(0x820)]('<span>Minimum\x20HP\x20%\x20</span>');var _0xeb093c=new west[(_0x5485af(0x6cc))]['Textfield'](_0x5485af(0x5b1))[_0x5485af(0x707)](0x23)['setValue'](_0x5aa5f4[_0x5485af(0x31a)]['healthStopPercent'])[_0x5485af(0x7c8)]();_0x44202c['append'](_0xeb093c['getMainDiv']()),_0x4ab65e['append'](_0x4ca69c),_0x4ab65e[_0x5485af(0x820)](_0x44202c);var _0x46c4f8=$('<div></div>')['css']({'display':'inline-block','margin-bottom':_0x5485af(0x2a7)});_0x46c4f8[_0x5485af(0x327)](_0x5485af(0x4b9),_0x5aa5f4[_0x5485af(0x3d0)][_0x5aa5f4['translationLang']][_0x5485af(0x6dc)]);var _0xf491c7=$(_0x5485af(0x68b))[_0x5485af(0x1f6)]({'display':'inline-flex','justify-content':_0x5485af(0x5a1),'width':_0x5485af(0x5f2),'margin-left':_0x5485af(0x60f),'visibility':_0x5aa5f4[_0x5485af(0x31a)][_0x5485af(0x2c4)]?'visible':_0x5485af(0x5ec)}),_0x1e3237=new west[(_0x5485af(0x6cc))][(_0x5485af(0x89b))]()['setLabel'](_0x5485af(0x2b1))[_0x5485af(0x495)](_0x5aa5f4[_0x5485af(0x31a)]['addBuffs'])[_0x5485af(0x845)](function(){const _0x11abf0=_0x5485af;_0x5aa5f4[_0x11abf0(0x31a)][_0x11abf0(0x2c4)]=!_0x5aa5f4['settings'][_0x11abf0(0x2c4)],_0x5aa5f4[_0x11abf0(0x31a)][_0x11abf0(0x2c4)]?$(_0x11abf0(0x26a))[_0x11abf0(0x1f6)](_0x11abf0(0x76e),_0x11abf0(0x74e)):$('#buff_checkboxes')[_0x11abf0(0x1f6)](_0x11abf0(0x76e),_0x11abf0(0x5ec));});_0x46c4f8[_0x5485af(0x820)](_0x1e3237['getMainDiv']());var _0x2736e4=new west[(_0x5485af(0x6cc))][(_0x5485af(0x89b))]()[_0x5485af(0x562)](_0x5485af(0x612))['setSelected'](_0x5aa5f4[_0x5485af(0x31a)][_0x5485af(0x3ca)])['setCallback'](function(){const _0x240f7b=_0x5485af;_0x5aa5f4[_0x240f7b(0x31a)][_0x240f7b(0x3ca)]=!_0x5aa5f4[_0x240f7b(0x31a)][_0x240f7b(0x3ca)];}),_0xdeca89=new west[(_0x5485af(0x6cc))][(_0x5485af(0x89b))]()[_0x5485af(0x562)]('Product\x20')[_0x5485af(0x495)](_0x5aa5f4[_0x5485af(0x31a)][_0x5485af(0x3e5)])[_0x5485af(0x845)](function(){const _0x38fe8=_0x5485af;_0x5aa5f4[_0x38fe8(0x31a)][_0x38fe8(0x3e5)]=!_0x5aa5f4[_0x38fe8(0x31a)]['addProductBuff'];}),_0x20e220=new west[(_0x5485af(0x6cc))][(_0x5485af(0x89b))]()[_0x5485af(0x562)]('Money\x20')[_0x5485af(0x495)](_0x5aa5f4[_0x5485af(0x31a)][_0x5485af(0x4b7)])[_0x5485af(0x845)](function(){const _0x1fda07=_0x5485af;_0x5aa5f4[_0x1fda07(0x31a)]['addMoneyBuff']=!_0x5aa5f4['settings'][_0x1fda07(0x4b7)];}),_0x5bf2c9=new west[(_0x5485af(0x6cc))][(_0x5485af(0x89b))]()[_0x5485af(0x562)](_0x5485af(0x54a))[_0x5485af(0x495)](_0x5aa5f4[_0x5485af(0x31a)][_0x5485af(0x442)])['setCallback'](function(){const _0x21c0e7=_0x5485af;_0x5aa5f4[_0x21c0e7(0x31a)][_0x21c0e7(0x442)]=!_0x5aa5f4['settings'][_0x21c0e7(0x442)];}),_0x1f73d4=new west['gui'][(_0x5485af(0x89b))]()[_0x5485af(0x562)]('Travel\x20')['setSelected'](_0x5aa5f4[_0x5485af(0x31a)]['addTravelBuff'])['setCallback'](function(){const _0x3647b1=_0x5485af;_0x5aa5f4[_0x3647b1(0x31a)][_0x3647b1(0x3ed)]=!_0x5aa5f4[_0x3647b1(0x31a)][_0x3647b1(0x3ed)];});_0xf491c7['append'](_0x2736e4[_0x5485af(0x71f)]()),_0xf491c7[_0x5485af(0x820)](_0x5bf2c9[_0x5485af(0x71f)]()),_0xf491c7['append'](_0x20e220[_0x5485af(0x71f)]()),_0xf491c7[_0x5485af(0x820)](_0xdeca89['getMainDiv']()),_0xf491c7[_0x5485af(0x820)](_0x1f73d4[_0x5485af(0x71f)]()),_0x46c4f8[_0x5485af(0x820)](_0xf491c7);const _0xdb305c={'addXpBuff':_0x2736e4,'addProductBuff':_0xdeca89,'addMoneyBuff':_0x20e220,'addLuckBuff':_0x5bf2c9};let _0x26dcdb=!![];for(const _0x28fee0 in _0xdb305c){_0xdb305c[_0x28fee0][_0x5485af(0x845)](function(){const _0x39619d=_0x5485af;if(!_0x26dcdb)return;_0x26dcdb=![];const _0x537e5b=_0xdb305c[_0x28fee0],_0x36caf6=_0x5aa5f4[_0x39619d(0x31a)][_0x28fee0];!_0x36caf6?(_0x537e5b[_0x39619d(0x495)](!![]),_0x5aa5f4[_0x39619d(0x31a)][_0x28fee0]=!![]):(_0x537e5b['setSelected'](![]),_0x5aa5f4[_0x39619d(0x31a)][_0x28fee0]=![]);for(const _0x2d21bc in _0xdb305c){_0x28fee0!==_0x2d21bc&&(_0xdb305c[_0x2d21bc][_0x39619d(0x495)](![]),_0x5aa5f4[_0x39619d(0x31a)][_0x2d21bc]=![]);}setTimeout(()=>{_0x26dcdb=!![];},0x64);});}var _0x37fa0d=$(_0x5485af(0x816));_0x37fa0d[_0x5485af(0x1f6)]({'display':_0x5485af(0x388),'position':_0x5485af(0x3a6),'left':_0x5485af(0x41f),'visibility':_0x5aa5f4[_0x5485af(0x31a)]['fortBattle'][_0x5485af(0x5fc)]?_0x5485af(0x74e):_0x5485af(0x5ec)});var _0x171f90=$(_0x5485af(0x6d9))[_0x5485af(0x1f6)]({'display':_0x5485af(0x866),'align-items':_0x5485af(0x548),'height':_0x5485af(0x39b)}),_0x4a4634=$('<div></div>');_0x4a4634[_0x5485af(0x327)](_0x5485af(0x4b9),_0x5aa5f4[_0x5485af(0x3d0)][_0x5aa5f4[_0x5485af(0x1ed)]][_0x5485af(0x307)]);var _0x5745a5=new west['gui'][(_0x5485af(0x89b))]()['setLabel'](_0x5485af(0x8c3))[_0x5485af(0x495)](_0x5aa5f4[_0x5485af(0x31a)][_0x5485af(0x7a8)][_0x5485af(0x83c)])[_0x5485af(0x845)](function(){const _0x532e51=_0x5485af;_0x5aa5f4[_0x532e51(0x31a)][_0x532e51(0x7a8)][_0x532e51(0x83c)]=!_0x5aa5f4['settings'][_0x532e51(0x7a8)][_0x532e51(0x83c)],_0x5aa5f4['settings'][_0x532e51(0x7a8)][_0x532e51(0x83c)]?($('#battle_health_textfield')[_0x532e51(0x1f6)](_0x532e51(0x76e),'visible'),$(_0x532e51(0x743))[_0x532e51(0x1f6)](_0x532e51(0x76e),'visible')):($(_0x532e51(0x6f2))[_0x532e51(0x1f6)](_0x532e51(0x76e),_0x532e51(0x5ec)),$(_0x532e51(0x743))[_0x532e51(0x1f6)]('visibility',_0x532e51(0x5ec)));}),_0x45d7a3=$(_0x5485af(0x777))['css']({'display':_0x5485af(0x388),'margin-left':_0x5485af(0x782),'visibility':_0x5aa5f4['settings']['fortBattle'][_0x5485af(0x5fc)]&&_0x5aa5f4[_0x5485af(0x31a)][_0x5485af(0x7a8)]['refillHealth']?_0x5485af(0x74e):_0x5485af(0x5ec)}),_0x2b861e=new west[(_0x5485af(0x6cc))][(_0x5485af(0x3ee))](_0x5485af(0x8a7))[_0x5485af(0x707)](0x23)[_0x5485af(0x1d6)](_0x5aa5f4[_0x5485af(0x31a)]['fortBattle'][_0x5485af(0x658)])['onlyNumeric'](),_0x382ffb=$('<div\x20id=\x27battle_health_tank\x27></div>')[_0x5485af(0x1f6)]({'display':_0x5485af(0x388),'margin-left':_0x5485af(0x33b),'visibility':_0x5aa5f4[_0x5485af(0x31a)][_0x5485af(0x7a8)][_0x5485af(0x5fc)]&&_0x5aa5f4[_0x5485af(0x31a)]['fortBattle'][_0x5485af(0x83c)]?'visible':_0x5485af(0x5ec)});_0x382ffb[_0x5485af(0x327)](_0x5485af(0x4b9),_0x5aa5f4['explainerTranslations'][_0x5aa5f4['translationLang']]['explainer_18']);var _0x3ae1ed=new west[(_0x5485af(0x6cc))][(_0x5485af(0x89b))]()['setLabel'](_0x5485af(0x79b))[_0x5485af(0x495)](_0x5aa5f4[_0x5485af(0x31a)]['fortBattle'][_0x5485af(0x7b2)])[_0x5485af(0x845)](function(){const _0x13f289=_0x5485af;_0x5aa5f4[_0x13f289(0x31a)][_0x13f289(0x7a8)][_0x13f289(0x7b2)]=!_0x5aa5f4[_0x13f289(0x31a)]['fortBattle'][_0x13f289(0x7b2)];});_0x382ffb[_0x5485af(0x820)](_0x3ae1ed['getMainDiv']());var _0x57c521=$(_0x5485af(0x5d1));_0x57c521[_0x5485af(0x327)](_0x5485af(0x4b9),_0x5aa5f4['explainerTranslations'][_0x5aa5f4[_0x5485af(0x1ed)]]['explainer_10']);var _0x8cfa39=new west[(_0x5485af(0x6cc))][(_0x5485af(0x89b))]()[_0x5485af(0x562)](_0x5485af(0x2e0))[_0x5485af(0x495)](_0x5aa5f4['settings'][_0x5485af(0x7a8)][_0x5485af(0x25f)])[_0x5485af(0x845)](function(){const _0x44b611=_0x5485af;_0x5aa5f4[_0x44b611(0x31a)][_0x44b611(0x7a8)][_0x44b611(0x25f)]=!_0x5aa5f4[_0x44b611(0x31a)][_0x44b611(0x7a8)][_0x44b611(0x25f)];});_0x57c521[_0x5485af(0x820)](_0x8cfa39[_0x5485af(0x71f)]());var _0x405967=$(_0x5485af(0x5d1))[_0x5485af(0x1f6)]({'display':'flex','align-items':_0x5485af(0x548),'height':_0x5485af(0x39b)}),_0xfdb69e=new west[(_0x5485af(0x6cc))]['Checkbox']()[_0x5485af(0x562)](_0x5485af(0x6f5))[_0x5485af(0x495)](_0x5aa5f4['settings'][_0x5485af(0x7a8)]['useConsumable'])[_0x5485af(0x845)](function(){const _0x378220=_0x5485af;_0x5aa5f4['settings'][_0x378220(0x7a8)][_0x378220(0x720)]=this[_0x378220(0x465)](),this[_0x378220(0x465)]()?$(_0x378220(0x7ac))[_0x378220(0x1f6)](_0x378220(0x76e),_0x378220(0x74e)):$(_0x378220(0x7ac))['css'](_0x378220(0x76e),_0x378220(0x5ec));}),_0x4c656a=$(_0x5485af(0x251))[_0x5485af(0x1f6)]({'display':_0x5485af(0x388),'margin-left':_0x5485af(0x782),'visibility':_0xfdb69e[_0x5485af(0x465)]()&&_0x5aa5f4['settings']['fortBattle'][_0x5485af(0x5fc)]?_0x5485af(0x74e):_0x5485af(0x5ec)}),_0x27701a=new west[(_0x5485af(0x6cc))]['Textfield'](_0x5485af(0x744))[_0x5485af(0x707)](0x64)[_0x5485af(0x1d6)](_0x5aa5f4[_0x5485af(0x31a)][_0x5485af(0x7a8)][_0x5485af(0x412)]);_0x4c656a[_0x5485af(0x820)](_0x27701a[_0x5485af(0x71f)]()),_0x405967[_0x5485af(0x820)](_0xfdb69e[_0x5485af(0x71f)]()),_0x405967[_0x5485af(0x820)](_0x4c656a),_0x45d7a3[_0x5485af(0x820)](_0x5485af(0x790)),_0x45d7a3[_0x5485af(0x820)](_0x2b861e[_0x5485af(0x71f)]()),_0x4a4634[_0x5485af(0x820)](_0x5745a5[_0x5485af(0x71f)]()),_0x4a4634[_0x5485af(0x820)](_0x45d7a3),_0x171f90['append'](_0x4a4634),_0x171f90[_0x5485af(0x820)](_0x382ffb),_0x37fa0d[_0x5485af(0x820)](_0x171f90),_0x37fa0d[_0x5485af(0x820)](_0x57c521);_0x5aa5f4[_0x5485af(0x31a)][_0x5485af(0x7a8)][_0x5485af(0x412)]&&_0x37fa0d[_0x5485af(0x820)](_0x405967);var _0x318f44=$(_0x5485af(0x36a));_0x318f44[_0x5485af(0x327)](_0x5485af(0x4b9),_0x5aa5f4[_0x5485af(0x3d0)][_0x5aa5f4[_0x5485af(0x1ed)]][_0x5485af(0x493)]);var _0x3e2183=new west[(_0x5485af(0x6cc))]['Checkbox']()['setLabel'](_0x5485af(0x832))[_0x5485af(0x495)](_0x5aa5f4[_0x5485af(0x31a)][_0x5485af(0x7d6)])[_0x5485af(0x845)](function(){const _0x140b72=_0x5485af;_0x5aa5f4[_0x140b72(0x31a)]['nightShiftWorker']=!_0x5aa5f4['settings'][_0x140b72(0x7d6)];}),_0x1ba3de=$('<span>Open\x20worker</span>')[_0x5485af(0x1f6)]({'margin-left':_0x5485af(0x46e),'font-size':_0x5485af(0x607),'color':_0x5485af(0x787),'cursor':_0x5485af(0x57c),'display':_0x5485af(0x7da),'align-items':_0x5485af(0x548),'gap':_0x5485af(0x782)})[_0x5485af(0x421)](function(){const _0x21658d=_0x5485af;$(this)[_0x21658d(0x1f6)]('color',_0x21658d(0x753));},function(){const _0x476af8=_0x5485af;$(this)[_0x476af8(0x1f6)]('color',_0x476af8(0x787));})['on']('click',function(){const _0x5be053=_0x5485af;_0x5aa5f4[_0x5be053(0x522)](_0x5be053(0x758));}),_0x2bb623=$(_0x5485af(0x87d))[_0x5485af(0x1f6)]({'font-size':_0x5485af(0x607),'color':_0x5485af(0x34f)});_0x1ba3de[_0x5485af(0x7e9)](_0x2bb623),_0x318f44[_0x5485af(0x820)](_0x3e2183[_0x5485af(0x71f)]()),_0x318f44[_0x5485af(0x820)](_0x1ba3de);var _0x4f8c1e=$('<div\x20style=\x27margin-bottom:\x203px;\x27></div>');_0x4f8c1e[_0x5485af(0x327)]('title',_0x5aa5f4[_0x5485af(0x3d0)][_0x5aa5f4[_0x5485af(0x1ed)]][_0x5485af(0x804)]);var _0x576b7a=new west[(_0x5485af(0x6cc))][(_0x5485af(0x89b))]()['setLabel'](_0x5485af(0x3f7))[_0x5485af(0x495)](_0x5aa5f4[_0x5485af(0x31a)][_0x5485af(0x712)])['setCallback'](function(){const _0x3c595c=_0x5485af;_0x5aa5f4['settings'][_0x3c595c(0x712)]=!_0x5aa5f4[_0x3c595c(0x31a)]['nightBuild'];});_0x4f8c1e[_0x5485af(0x820)](_0x576b7a[_0x5485af(0x71f)]());let _0x334b17=_0x5aa5f4[_0x5485af(0x31a)][_0x5485af(0x55b)],_0x52d0f6;function _0x4f0383(){_0x52d0f6&&clearTimeout(_0x52d0f6),_0x52d0f6=setTimeout(()=>{const _0x12028e=_0x3acb;_0x5aa5f4[_0x12028e(0x31a)][_0x12028e(0x55b)]&&!_0x334b17&&_0x5aa5f4[_0x12028e(0x66b)]&&(_0x5aa5f4[_0x12028e(0x621)](),_0x334b17=!![]);},0x1388);}var _0x538dc7=$(_0x5485af(0x36a));_0x538dc7[_0x5485af(0x327)](_0x5485af(0x4b9),_0x5aa5f4[_0x5485af(0x3d0)][_0x5aa5f4[_0x5485af(0x1ed)]][_0x5485af(0x4cb)]);var _0x36d295=new west['gui'][(_0x5485af(0x89b))]()['setLabel'](_0x5485af(0x746))[_0x5485af(0x495)](_0x5aa5f4['settings'][_0x5485af(0x55b)])[_0x5485af(0x845)](function(){const _0xef0ad6=_0x5485af;_0x5aa5f4[_0xef0ad6(0x31a)][_0xef0ad6(0x55b)]=!_0x5aa5f4[_0xef0ad6(0x31a)]['autoReload'],_0x5aa5f4[_0xef0ad6(0x31a)][_0xef0ad6(0x55b)]&&!_0x334b17&&_0x5aa5f4[_0xef0ad6(0x66b)]&&_0x4f0383();});_0x538dc7[_0x5485af(0x820)](_0x36d295[_0x5485af(0x71f)]());var _0x13b79e=$('<div\x20style=\x27margin-top:\x203px;\x20width:\x20fit-content;\x27></div>');_0x13b79e[_0x5485af(0x327)]('title',_0x5aa5f4['explainerTranslations'][_0x5aa5f4['translationLang']]['explainer_6']);var _0x29c01e=new west[(_0x5485af(0x6cc))][(_0x5485af(0x89b))]()[_0x5485af(0x562)](_0x5485af(0x271))[_0x5485af(0x495)](_0x5aa5f4['settings'][_0x5485af(0x7f0)])[_0x5485af(0x845)](function(){const _0x37df9f=_0x5485af;_0x5aa5f4[_0x37df9f(0x31a)][_0x37df9f(0x7f0)]=!_0x5aa5f4['settings'][_0x37df9f(0x7f0)];});_0x13b79e['append'](_0x29c01e[_0x5485af(0x71f)]());var _0x47f6=$(_0x5485af(0x36a)),_0x503fb5=$(_0x5485af(0x8b0));_0x503fb5[_0x5485af(0x327)](_0x5485af(0x4b9),_0x5aa5f4[_0x5485af(0x3d0)][_0x5aa5f4[_0x5485af(0x1ed)]][_0x5485af(0x71b)]);var _0x183e7e=new west[(_0x5485af(0x6cc))][(_0x5485af(0x89b))]()[_0x5485af(0x562)](_0x5485af(0x891))[_0x5485af(0x495)](_0x5aa5f4[_0x5485af(0x31a)][_0x5485af(0x63b)])[_0x5485af(0x845)](function(){const _0x59fc52=_0x5485af;_0x5aa5f4[_0x59fc52(0x31a)][_0x59fc52(0x63b)]=!_0x5aa5f4['settings'][_0x59fc52(0x63b)];});_0x503fb5[_0x5485af(0x820)](_0x183e7e[_0x5485af(0x71f)]()),_0x47f6[_0x5485af(0x820)](_0x503fb5);var _0x47826a=$('<div\x20style=\x27display:\x20flex;\x20align-items:\x20center;\x20height:\x2026px;\x20width:\x20fit-content;\x27></div>');_0x47826a[_0x5485af(0x327)]('title',_0x5aa5f4['explainerTranslations'][_0x5aa5f4['translationLang']]['explainer_19']);var _0x199fb4=new west[(_0x5485af(0x6cc))][(_0x5485af(0x89b))]()[_0x5485af(0x562)](_0x5485af(0x646))['setSelected'](_0x5aa5f4[_0x5485af(0x31a)][_0x5485af(0x238)])[_0x5485af(0x845)](function(){const _0x32cc81=_0x5485af;_0x5aa5f4[_0x32cc81(0x31a)][_0x32cc81(0x238)]=!_0x5aa5f4[_0x32cc81(0x31a)]['enableAutoDeposit'],_0x5aa5f4[_0x32cc81(0x31a)]['enableAutoDeposit']?($(_0x32cc81(0x29d))['css'](_0x32cc81(0x76e),'visible'),$('#deposit_options_container')[_0x32cc81(0x1f6)](_0x32cc81(0x76e),'visible'),Character['homeTown'][_0x32cc81(0x2dd)]===0x0&&$('#button_set_town')[_0x32cc81(0x1f6)](_0x32cc81(0x76e),_0x32cc81(0x74e))):($(_0x32cc81(0x4f8))[_0x32cc81(0x1f6)](_0x32cc81(0x76e),_0x32cc81(0x5ec)),$(_0x32cc81(0x29d))['css']('visibility',_0x32cc81(0x5ec)),!_0x5aa5f4['settings'][_0x32cc81(0x7a8)][_0x32cc81(0x5fc)]&&$(_0x32cc81(0x57d))[_0x32cc81(0x1f6)](_0x32cc81(0x76e),_0x32cc81(0x5ec)));}),_0x31a900=$(_0x5485af(0x6c2));_0x31a900['css']({'display':_0x5485af(0x388),'margin-left':'15.5px','visibility':_0x5aa5f4[_0x5485af(0x31a)][_0x5485af(0x238)]?'visible':_0x5485af(0x5ec)}),_0x31a900[_0x5485af(0x820)]($(_0x5485af(0x2ac)));var _0x45bcfa=new west['gui'][(_0x5485af(0x3ee))](_0x5485af(0x44f))['setWidth'](0x5a)[_0x5485af(0x1d6)](_0x2fa453(_0x5aa5f4[_0x5485af(0x31a)][_0x5485af(0x44f)]))[_0x5485af(0x7c8)]();_0x31a900[_0x5485af(0x820)](_0x45bcfa[_0x5485af(0x71f)]()),_0x47826a[_0x5485af(0x820)](_0x199fb4[_0x5485af(0x71f)]()),_0x47826a[_0x5485af(0x820)](_0x31a900),_0x5aa5f4[_0x5485af(0x449)](_0x5485af(0x29d));var _0x5331d1=$('<div\x20id=\x27deposit_options_container\x27></div>');_0x5331d1[_0x5485af(0x1f6)]({'display':_0x5485af(0x866),'align-items':'center','position':_0x5485af(0x3a6),'height':_0x5485af(0x504),'left':_0x5485af(0x41f),'visibility':_0x5aa5f4[_0x5485af(0x31a)][_0x5485af(0x238)]?_0x5485af(0x74e):_0x5485af(0x5ec)}),_0x5331d1[_0x5485af(0x327)](_0x5485af(0x4b9),_0x5aa5f4[_0x5485af(0x3d0)][_0x5aa5f4[_0x5485af(0x1ed)]][_0x5485af(0x60b)]);var _0x4acf7b=new west['gui']['Checkbox']()['setLabel'](_0x5485af(0x2e2))['setSelected'](_0x5aa5f4['settings'][_0x5485af(0x2a2)])[_0x5485af(0x845)](function(){const _0x461b03=_0x5485af;_0x5aa5f4[_0x461b03(0x31a)]['depositDuelProtected']=!_0x5aa5f4['settings'][_0x461b03(0x2a2)];});_0x5331d1[_0x5485af(0x820)](_0x4acf7b[_0x5485af(0x71f)]());var _0x4e428b=$(_0x5485af(0x589));_0x4e428b['attr']('title',_0x5aa5f4[_0x5485af(0x3d0)][_0x5aa5f4['translationLang']][_0x5485af(0x701)]);var _0x21fb67=new west[(_0x5485af(0x6cc))][(_0x5485af(0x89b))]()['setLabel']('Attend\x20battles')[_0x5485af(0x495)](_0x5aa5f4[_0x5485af(0x31a)][_0x5485af(0x7a8)][_0x5485af(0x5fc)])[_0x5485af(0x845)](function(){const _0x17f5ba=_0x5485af;_0x5aa5f4[_0x17f5ba(0x31a)][_0x17f5ba(0x7a8)][_0x17f5ba(0x5fc)]=!_0x5aa5f4['settings']['fortBattle'][_0x17f5ba(0x5fc)],_0x5aa5f4['settings'][_0x17f5ba(0x7a8)][_0x17f5ba(0x5fc)]?($(_0x17f5ba(0x285))[_0x17f5ba(0x1f6)](_0x17f5ba(0x76e),'visible'),$(_0x17f5ba(0x8a6))[_0x17f5ba(0x1f6)](_0x17f5ba(0x76e),_0x17f5ba(0x74e)),_0x5aa5f4['settings'][_0x17f5ba(0x7a8)][_0x17f5ba(0x83c)]&&($(_0x17f5ba(0x6f2))['css'](_0x17f5ba(0x76e),_0x17f5ba(0x74e)),$(_0x17f5ba(0x743))[_0x17f5ba(0x1f6)]('visibility',_0x17f5ba(0x74e))),Character[_0x17f5ba(0x5fd)][_0x17f5ba(0x2dd)]===0x0&&($(_0x17f5ba(0x57d))['css'](_0x17f5ba(0x76e),_0x17f5ba(0x74e)),_0x5aa5f4[_0x17f5ba(0x5fd)]==null&&new UserMessage(_0x17f5ba(0x8cd),UserMessage['TYPE_HINT'])['show']()),_0x5aa5f4[_0x17f5ba(0x522)](_0x17f5ba(0x31a))):(_0x5aa5f4['maxAllowedEnergy']=0x64,$(_0x17f5ba(0x8a6))['css'](_0x17f5ba(0x76e),_0x17f5ba(0x5ec)),$(_0x17f5ba(0x285))[_0x17f5ba(0x1f6)](_0x17f5ba(0x76e),'hidden'),$(_0x17f5ba(0x6f2))[_0x17f5ba(0x1f6)](_0x17f5ba(0x76e),'hidden'),$(_0x17f5ba(0x743))[_0x17f5ba(0x1f6)](_0x17f5ba(0x76e),'hidden'),$(_0x17f5ba(0x7ac))['css']('visibility','hidden'),!_0x5aa5f4[_0x17f5ba(0x31a)][_0x17f5ba(0x238)]&&$(_0x17f5ba(0x57d))[_0x17f5ba(0x1f6)](_0x17f5ba(0x76e),_0x17f5ba(0x5ec)));}),_0x3851ed=new west[(_0x5485af(0x6cc))][(_0x5485af(0x67f))]('upcoming_battles');_0x5aa5f4[_0x5485af(0x1f4)](_0x3851ed),_0x3851ed=_0x3851ed[_0x5485af(0x85c)](_0x5aa5f4[_0x5485af(0x31a)][_0x5485af(0x7a8)][_0x5485af(0x451)]),_0x3851ed[_0x5485af(0x707)](0x78),_0x3851ed[_0x5485af(0x7e6)](function(_0x58a3df){const _0x17e257=_0x5485af;_0x5aa5f4[_0x17e257(0x31a)][_0x17e257(0x7a8)][_0x17e257(0x451)]=_0x58a3df;});var _0x1f7db1=$(_0x5485af(0x732));_0x1f7db1[_0x5485af(0x1f6)]({'display':_0x5485af(0x388),'visibility':_0x5aa5f4[_0x5485af(0x31a)]['fortBattle'][_0x5485af(0x5fc)]?_0x5485af(0x74e):_0x5485af(0x5ec)}),_0x1f7db1['append']($(_0x5485af(0x459)));var _0x166a8f=_0x5aa5f4[_0x5485af(0x613)](new west[(_0x5485af(0x6cc))][(_0x5485af(0x67f))]()[_0x5485af(0x707)](0x4b),_0x5aa5f4['settings'][_0x5485af(0x7a8)]['attackSet'],_0x5485af(0x466))[_0x5485af(0x7e6)](function(_0xad8ee2){const _0x1043ad=_0x5485af;_0x5aa5f4[_0x1043ad(0x31a)][_0x1043ad(0x7a8)]['attackSet']=_0xad8ee2;}),_0x481b9b=_0x5aa5f4[_0x5485af(0x613)](new west[(_0x5485af(0x6cc))][(_0x5485af(0x67f))]()[_0x5485af(0x707)](0x4b),_0x5aa5f4[_0x5485af(0x31a)][_0x5485af(0x7a8)][_0x5485af(0x5f4)],_0x5485af(0x466))[_0x5485af(0x7e6)](function(_0x105e08){const _0x2a2840=_0x5485af;_0x5aa5f4['settings'][_0x2a2840(0x7a8)][_0x2a2840(0x5f4)]=_0x105e08;});_0x1f7db1['append'](_0x3851ed[_0x5485af(0x71f)]()),_0x1f7db1[_0x5485af(0x820)]($(_0x5485af(0x839))),_0x1f7db1[_0x5485af(0x820)](_0x166a8f[_0x5485af(0x71f)]()),_0x1f7db1[_0x5485af(0x820)]($(_0x5485af(0x206))),_0x1f7db1[_0x5485af(0x820)](_0x481b9b['getMainDiv']()),_0x4e428b['append'](_0x21fb67[_0x5485af(0x71f)]()),_0x4e428b[_0x5485af(0x820)](_0x1f7db1);var _0x42c42d=new west['gui']['Button'](_0x5aa5f4[_0x5485af(0x5fd)]==null?_0x5485af(0x886):_0x5485af(0x648),function(){const _0x5817e3=_0x5485af;_0x5aa5f4[_0x5817e3(0x6e2)]()?(new UserMessage(_0x5817e3(0x3ef),UserMessage['TYPE_SUCCESS'])[_0x5817e3(0x50f)](),_0x5aa5f4[_0x5817e3(0x43a)](_0x5817e3(0x31a))):new UserMessage('Not\x20in\x20town.',UserMessage[_0x5817e3(0x49f)])[_0x5817e3(0x50f)]();}),_0x5a658c=$(_0x5485af(0x5d1))[_0x5485af(0x327)](_0x5485af(0x4b9),_0x5aa5f4['explainerTranslations'][_0x5aa5f4[_0x5485af(0x1ed)]][_0x5485af(0x5b3)])[_0x5485af(0x650)]('id','button_set_town')[_0x5485af(0x1f6)]({'position':_0x5485af(0x786),'bottom':'157px','right':'65px','visibility':Character[_0x5485af(0x5fd)][_0x5485af(0x2dd)]===0x0&&(_0x5aa5f4[_0x5485af(0x31a)]['enableAutoDeposit']||_0x5aa5f4[_0x5485af(0x31a)][_0x5485af(0x7a8)][_0x5485af(0x5fc)])?_0x5485af(0x74e):_0x5485af(0x5ec)});const _0x5873a3=$(_0x5485af(0x5d1))['text'](_0x5aa5f4[_0x5485af(0x5fd)]?.['name']||'')['css']({'margin-top':_0x5485af(0x53f),'text-align':_0x5485af(0x548),'font-size':_0x5485af(0x607),'color':'black'});_0x5a658c['append'](_0x42c42d['getMainDiv']()),_0x5a658c[_0x5485af(0x820)](_0x5873a3);var _0x3909ff=new west[(_0x5485af(0x6cc))][(_0x5485af(0x528))](_0x5485af(0x738),function(){const _0xc15d1=_0x5485af;let _0x2d895a=![];if(_0x5e4505(_0x273061[_0xc15d1(0x8bb)]())){var _0x627ba3=parseInt(_0x273061[_0xc15d1(0x8bb)]());_0x5aa5f4[_0xc15d1(0x31a)][_0xc15d1(0x751)]=_0x4f183f(_0x627ba3,0xa,0x64);}else new UserMessage(_0xc15d1(0x64b),UserMessage[_0xc15d1(0x49f)])[_0xc15d1(0x50f)](),_0x2d895a=!![];if(_0x5e4505(_0x1c9c02[_0xc15d1(0x8bb)]())){var _0x3b0be6=parseInt(_0x1c9c02[_0xc15d1(0x8bb)]());_0x5aa5f4[_0xc15d1(0x31a)]['addEnergyOptionalMax']=_0x4f183f(_0x3b0be6,_0x5aa5f4[_0xc15d1(0x31a)]['addEnergyOptionalMin'],0x64);}else new UserMessage(_0xc15d1(0x72d),UserMessage[_0xc15d1(0x49f)])[_0xc15d1(0x50f)](),_0x2d895a=!![];if(_0x5e4505(_0x2b861e[_0xc15d1(0x8bb)]())){var _0x373b41=parseInt(_0x2b861e[_0xc15d1(0x8bb)]());_0x5aa5f4[_0xc15d1(0x31a)][_0xc15d1(0x7a8)][_0xc15d1(0x658)]=_0x4f183f(_0x373b41,0x28,0x64);}else new UserMessage('Wrong\x20format\x20of\x20health\x20%\x20value.\x20Please\x20set\x20a\x20number.',UserMessage[_0xc15d1(0x49f)])[_0xc15d1(0x50f)](),_0x2d895a=!![];/^\d+(,\d+)?$/[_0xc15d1(0x870)](_0x27701a[_0xc15d1(0x8bb)]()[_0xc15d1(0x1df)]())?_0x5aa5f4[_0xc15d1(0x31a)][_0xc15d1(0x7a8)][_0xc15d1(0x412)]=_0x27701a['getValue']()['trim']()[_0xc15d1(0x6fd)](',')['map'](Number):_0x5aa5f4['settings'][_0xc15d1(0x7a8)][_0xc15d1(0x412)]=null;if(_0x5e4505(_0xeb093c[_0xc15d1(0x8bb)]())){var _0x278c66=parseInt(_0xeb093c['getValue']());_0x5aa5f4[_0xc15d1(0x31a)][_0xc15d1(0x5b1)]=_0x4f183f(_0x278c66,0xa,0x1e);}if(_0x5e4505(_0x56aa1e[_0xc15d1(0x8bb)]())){var _0x48bef8=parseInt(_0x56aa1e[_0xc15d1(0x8bb)]());_0x5aa5f4[_0xc15d1(0x31a)]['healthStopValue']=Math[_0xc15d1(0x5e2)](0x14,_0x48bef8);}if(_0x5e4505(_0x45bcfa['getValue']())){var _0x57b7bc=parseInt(_0x45bcfa['getValue']()[_0xc15d1(0x4fa)](/\./g,''));_0x5aa5f4['settings'][_0xc15d1(0x44f)]=Math['max'](0x2710,_0x57b7bc);}_0x5aa5f4[_0xc15d1(0x522)](_0xc15d1(0x31a)),_0x5aa5f4[_0xc15d1(0x423)](0x64);if(!_0x2d895a)new UserMessage(_0xc15d1(0x80d),UserMessage[_0xc15d1(0x4a8)])[_0xc15d1(0x50f)]();}),_0x46793b=_0x3909ff[_0x5485af(0x71f)]();$(_0x46793b)[_0x5485af(0x1f6)]({'position':_0x5485af(0x786),'bottom':_0x5485af(0x3d1),'right':_0x5485af(0x47d)});var _0xc4dda8=$('<div></div>');_0xc4dda8[_0x5485af(0x1f6)]({'position':'absolute','bottom':_0x5485af(0x36f),'right':'170px','transform':'scale(0.9)'}),_0xc4dda8['attr']('title',_0x5aa5f4['explainerTranslations'][_0x5aa5f4[_0x5485af(0x1ed)]][_0x5485af(0x319)]);var _0x6a23c=new west[(_0x5485af(0x6cc))][(_0x5485af(0x528))](_0x5485af(0x4e3),function(){_0x5aa5f4['exportSettings']();}),_0xffd992=new west[(_0x5485af(0x6cc))][(_0x5485af(0x528))](_0x5485af(0x45e),function(){const _0x1474c8=_0x5485af;_0x5aa5f4[_0x1474c8(0x3fd)]()[_0x1474c8(0x3ec)](()=>{const _0x17d47a=_0x1474c8;_0x5aa5f4['getCookies'](),_0x5aa5f4[_0x17d47a(0x77c)](function(){}),_0x5aa5f4[_0x17d47a(0x686)](),_0x5aa5f4[_0x17d47a(0x43a)]('settings'),new UserMessage(_0x17d47a(0x383),UserMessage[_0x17d47a(0x4a8)])['show']();})['catch'](_0x3da9eb=>{const _0x525d85=_0x1474c8;new UserMessage(_0x525d85(0x4e2)+_0x3da9eb['message'],UserMessage['TYPE_ERROR'])['show']();});});return _0x6a23c['setWidth'](0x46),_0xffd992['setWidth'](0x46),_0xc4dda8[_0x5485af(0x820)](_0xffd992[_0x5485af(0x71f)]()),_0xc4dda8[_0x5485af(0x820)](_0x6a23c['getMainDiv']()),_0x27bb74[_0x5485af(0x820)](_0x1bea22),_0x27bb74[_0x5485af(0x820)](_0x8b0c8),_0x27bb74[_0x5485af(0x820)](_0x4d6fba),_0x27bb74[_0x5485af(0x820)](_0x5ba385),_0x27bb74[_0x5485af(0x820)](_0x4ab65e),_0x27bb74[_0x5485af(0x820)](_0x5485af(0x3fa)),_0x27bb74[_0x5485af(0x820)](_0x47f6),_0x27bb74[_0x5485af(0x820)](_0x46c4f8),_0x27bb74[_0x5485af(0x820)](_0x538dc7),_0x27bb74[_0x5485af(0x820)](_0x318f44),_0x27bb74['append'](_0x13b79e),_0x27bb74[_0x5485af(0x820)](_0x47826a),_0x27bb74[_0x5485af(0x820)](_0x5331d1),_0x27bb74[_0x5485af(0x820)](_0x5a658c),_0x27bb74[_0x5485af(0x820)](_0x4e428b),_0x27bb74[_0x5485af(0x820)](_0x37fa0d),_0x27bb74[_0x5485af(0x820)](_0x5485af(0x3fa)),_0x27bb74[_0x5485af(0x820)](_0x46793b),_0x27bb74[_0x5485af(0x820)](_0xc4dda8),_0x27bb74;};function _0x1ed131(){((async()=>{const _0x314cb8=_0x3acb,_0x48a9fd=_0x5aa5f4;try{const _0xd0c022=[_0x582061,_0x54834b,_0x17d0a0,_0x48a9fd[_0x314cb8(0x3ae)],_0x48a9fd[_0x314cb8(0x79d)],_0x48a9fd[_0x314cb8(0x8b1)],_0x248180,_0x48a9fd[_0x314cb8(0x22e)],_0x29d6aa,_0x48a9fd[_0x314cb8(0x844)],_0x12400c,_0x48a9fd[_0x314cb8(0x7db)]][_0x314cb8(0x286)](_0x36c92b=>String(_0x36c92b))[_0x314cb8(0x57e)](''),_0x41737e=(_0x264685,_0x466e88)=>_0x264685[_0x314cb8(0x881)]===_0x466e88[_0x314cb8(0x881)]&&JSON['stringify']([..._0x264685][_0x314cb8(0x574)]())===JSON[_0x314cb8(0x6a2)]([..._0x466e88]['sort']());_0x5be3e8=encodeURIComponent(_0xd0c022);const _0xff1628=await _0x29d6aa(_0xd0c022,!![]);!_0x41737e(_0x5a8589[_0x314cb8(0x811)](0x2,0x5),_0xff1628)&&_0x2d53cd(_0x5aa5f4);}catch(_0x10abb6){_0x2d53cd(_0x5aa5f4);}})());}_0x5aa5f4['createNotificationsGui']=function(){const _0x2c73a2=_0x54d740;var _0x1fcf06=$('<div\x20id=\x27notifications_overview\x27\x20style\x20=\x20\x27margin:\x2030px;\x20margin-top:\x2010px;\x27></div>');const _0x5a7692=()=>_0x5aa5f4['debouncedSetCookies'](0x64,()=>new UserMessage(_0x2c73a2(0x8cf),UserMessage[_0x2c73a2(0x4a8)])[_0x2c73a2(0x50f)]());!('Notification'in _0xa3527)&&new UserMessage(_0x2c73a2(0x575),UserMessage[_0x2c73a2(0x49f)])[_0x2c73a2(0x50f)]();Notification[_0x2c73a2(0x47f)]!==_0x2c73a2(0x2d1)&&Notification[_0x2c73a2(0x796)]()[_0x2c73a2(0x3ec)](function(_0x2e84e3){const _0x1bfc4c=_0x2c73a2;_0x2e84e3!==_0x1bfc4c(0x2d1)&&new UserMessage('Notification\x20permission\x20denied',UserMessage[_0x1bfc4c(0x49f)])[_0x1bfc4c(0x50f)]();});var _0x459aca=new west[(_0x2c73a2(0x6cc))][(_0x2c73a2(0x528))]('Test',function(){const _0x531b4d=_0x2c73a2;_0x5aa5f4[_0x531b4d(0x498)]('The\x20West\x20-\x20Notification\x20test',_0x531b4d(0x713)+_0x322198(),_0x531b4d(0x699));});_0x459aca[_0x2c73a2(0x707)](0x46);var _0x3e8158=_0x459aca[_0x2c73a2(0x71f)]();_0x3e8158['id']='button_test_notification',$(_0x3e8158)[_0x2c73a2(0x1f6)]({'position':'absolute','top':'50px','right':_0x2c73a2(0x450),'visibility':_0x5aa5f4[_0x2c73a2(0x31a)][_0x2c73a2(0x54f)][_0x2c73a2(0x699)]?_0x2c73a2(0x74e):'hidden'});var _0x42f6b1=$(_0x2c73a2(0x281)),_0x661aa0=new west[(_0x2c73a2(0x6cc))][(_0x2c73a2(0x89b))]()[_0x2c73a2(0x562)](_0x2c73a2(0x6d5))[_0x2c73a2(0x495)](_0x5aa5f4['settings'][_0x2c73a2(0x54f)][_0x2c73a2(0x699)])[_0x2c73a2(0x845)](function(){const _0x2fd9ad=_0x2c73a2;_0x5aa5f4[_0x2fd9ad(0x31a)][_0x2fd9ad(0x54f)][_0x2fd9ad(0x699)]=!_0x5aa5f4['settings'][_0x2fd9ad(0x54f)][_0x2fd9ad(0x699)],_0x5aa5f4[_0x2fd9ad(0x31a)][_0x2fd9ad(0x54f)][_0x2fd9ad(0x699)]?($(_0x2fd9ad(0x623))[_0x2fd9ad(0x1f6)](_0x2fd9ad(0x76e),_0x2fd9ad(0x74e)),$(_0x2fd9ad(0x6cb))[_0x2fd9ad(0x1f6)](_0x2fd9ad(0x76e),_0x2fd9ad(0x74e))):($(_0x2fd9ad(0x623))[_0x2fd9ad(0x1f6)](_0x2fd9ad(0x76e),_0x2fd9ad(0x5ec)),$(_0x2fd9ad(0x6cb))[_0x2fd9ad(0x1f6)](_0x2fd9ad(0x76e),'hidden')),_0x5a7692();});_0x42f6b1[_0x2c73a2(0x820)](_0x661aa0[_0x2c73a2(0x71f)]());var _0x283041=$(_0x2c73a2(0x858))[_0x2c73a2(0x1f6)]({'display':'inline-block','position':_0x2c73a2(0x3a6),'left':_0x2c73a2(0x41f),'visibility':_0x5aa5f4[_0x2c73a2(0x31a)][_0x2c73a2(0x54f)][_0x2c73a2(0x699)]?_0x2c73a2(0x74e):_0x2c73a2(0x5ec)}),_0x4a643a=$(_0x2c73a2(0x4ed)),_0xe9be8e=new west['gui'][(_0x2c73a2(0x89b))]()[_0x2c73a2(0x562)](_0x2c73a2(0x353))[_0x2c73a2(0x495)](!_0x5aa5f4['settings']['notifications']['silent'])[_0x2c73a2(0x845)](function(){const _0x1f666b=_0x2c73a2;_0x5aa5f4[_0x1f666b(0x31a)][_0x1f666b(0x54f)][_0x1f666b(0x762)]=!_0x5aa5f4[_0x1f666b(0x31a)]['notifications']['silent'],_0x5a7692();});_0x4a643a[_0x2c73a2(0x820)](_0xe9be8e[_0x2c73a2(0x71f)]());var _0x2ee0a6=$(_0x2c73a2(0x5d1)),_0xada786=new west[(_0x2c73a2(0x6cc))][(_0x2c73a2(0x89b))]()['setLabel'](_0x2c73a2(0x763))[_0x2c73a2(0x495)](_0x5aa5f4[_0x2c73a2(0x31a)]['notifications'][_0x2c73a2(0x3e1)])[_0x2c73a2(0x845)](function(){const _0x2f395e=_0x2c73a2;_0x5aa5f4[_0x2f395e(0x31a)]['notifications'][_0x2f395e(0x3e1)]=!_0x5aa5f4[_0x2f395e(0x31a)][_0x2f395e(0x54f)]['requireInteraction'],_0x5a7692();});_0x2ee0a6[_0x2c73a2(0x820)](_0xada786[_0x2c73a2(0x71f)]());var _0x15c78c=$('<div\x20style=\x27margin-bottom:\x204px;\x27></div>'),_0x3f0e4c=new west[(_0x2c73a2(0x6cc))][(_0x2c73a2(0x89b))]()[_0x2c73a2(0x562)](_0x2c73a2(0x89a))[_0x2c73a2(0x495)](_0x5aa5f4[_0x2c73a2(0x31a)]['notifications'][_0x2c73a2(0x34d)])[_0x2c73a2(0x845)](function(){const _0x3acd2c=_0x2c73a2;_0x5aa5f4['settings'][_0x3acd2c(0x54f)]['error']=!_0x5aa5f4[_0x3acd2c(0x31a)][_0x3acd2c(0x54f)][_0x3acd2c(0x34d)],_0x5a7692();});_0x15c78c[_0x2c73a2(0x820)](_0x3f0e4c[_0x2c73a2(0x71f)]());var _0x2733c5=$(_0x2c73a2(0x1dd)),_0x1fc80b=new west[(_0x2c73a2(0x6cc))][(_0x2c73a2(0x89b))]()['setLabel'](_0x2c73a2(0x6e9))[_0x2c73a2(0x495)](_0x5aa5f4[_0x2c73a2(0x31a)][_0x2c73a2(0x54f)][_0x2c73a2(0x313)])[_0x2c73a2(0x845)](function(){const _0x16080c=_0x2c73a2;_0x5aa5f4['settings'][_0x16080c(0x54f)][_0x16080c(0x313)]=!_0x5aa5f4[_0x16080c(0x31a)][_0x16080c(0x54f)][_0x16080c(0x313)],_0x5a7692();});_0x2733c5[_0x2c73a2(0x820)](_0x1fc80b[_0x2c73a2(0x71f)]());var _0x5c6d37=$(_0x2c73a2(0x1dd)),_0x4a1419=new west[(_0x2c73a2(0x6cc))]['Checkbox']()[_0x2c73a2(0x562)](_0x2c73a2(0x283))[_0x2c73a2(0x495)](_0x5aa5f4[_0x2c73a2(0x31a)]['notifications'][_0x2c73a2(0x70f)])[_0x2c73a2(0x845)](function(){const _0x54389c=_0x2c73a2;_0x5aa5f4[_0x54389c(0x31a)][_0x54389c(0x54f)]['sleep']=!_0x5aa5f4['settings']['notifications']['sleep'],_0x5a7692();});_0x5c6d37[_0x2c73a2(0x820)](_0x4a1419[_0x2c73a2(0x71f)]());var _0x26325c=$(_0x2c73a2(0x1dd)),_0x296dbc=new west['gui'][(_0x2c73a2(0x89b))]()[_0x2c73a2(0x562)](_0x2c73a2(0x6fb))['setSelected'](_0x5aa5f4[_0x2c73a2(0x31a)][_0x2c73a2(0x54f)][_0x2c73a2(0x809)])['setCallback'](function(){const _0x31c71c=_0x2c73a2;_0x5aa5f4[_0x31c71c(0x31a)][_0x31c71c(0x54f)]['battle']=!_0x5aa5f4[_0x31c71c(0x31a)][_0x31c71c(0x54f)][_0x31c71c(0x809)],_0x5a7692();});_0x26325c[_0x2c73a2(0x820)](_0x296dbc[_0x2c73a2(0x71f)]());var _0x2af301=$('<div\x20style=\x27margin-bottom:\x204px;\x27></div>'),_0x1739ac=new west[(_0x2c73a2(0x6cc))][(_0x2c73a2(0x89b))]()[_0x2c73a2(0x562)](_0x2c73a2(0x2d8))[_0x2c73a2(0x495)](_0x5aa5f4[_0x2c73a2(0x31a)][_0x2c73a2(0x54f)]['battle_prep'])['setCallback'](function(){const _0x372e34=_0x2c73a2;_0x5aa5f4[_0x372e34(0x31a)][_0x372e34(0x54f)][_0x372e34(0x431)]=!_0x5aa5f4[_0x372e34(0x31a)][_0x372e34(0x54f)][_0x372e34(0x431)],_0x5a7692();});_0x2af301['append'](_0x1739ac[_0x2c73a2(0x71f)]());var _0x2d7191=$('<div></div>'),_0x41fb80=new west[(_0x2c73a2(0x6cc))][(_0x2c73a2(0x89b))]()[_0x2c73a2(0x562)]('<span>\x20Duel\x20protection\x20ends\x20</span>')[_0x2c73a2(0x495)](_0x5aa5f4[_0x2c73a2(0x31a)]['notifications'][_0x2c73a2(0x3ce)])[_0x2c73a2(0x845)](function(){const _0x4cf009=_0x2c73a2;_0x5aa5f4['settings'][_0x4cf009(0x54f)][_0x4cf009(0x3ce)]=!_0x5aa5f4['settings'][_0x4cf009(0x54f)][_0x4cf009(0x3ce)],_0x5a7692();});return _0x2d7191[_0x2c73a2(0x820)](_0x41fb80['getMainDiv']()),_0x283041[_0x2c73a2(0x820)](_0x4a643a),_0x283041['append'](_0x2ee0a6),_0x283041[_0x2c73a2(0x820)](_0x2c73a2(0x7ae)),_0x283041[_0x2c73a2(0x820)](_0x2c73a2(0x53b)),_0x283041[_0x2c73a2(0x820)](_0x2c73a2(0x7ae)),_0x283041['append'](_0x15c78c),_0x283041['append'](_0x2733c5),_0x283041[_0x2c73a2(0x820)](_0x5c6d37),_0x283041[_0x2c73a2(0x820)](_0x26325c),_0x283041['append'](_0x2af301),_0x283041[_0x2c73a2(0x820)](_0x2d7191),_0x1fcf06[_0x2c73a2(0x820)](_0x42f6b1),_0x1fcf06[_0x2c73a2(0x820)](_0x283041),_0x1fcf06[_0x2c73a2(0x820)](_0x3e8158),_0x1fcf06;},_0x5aa5f4[_0x54d740(0x86d)]=function(){const _0x37b0ca=_0x54d740;var _0x1b604c=$(_0x37b0ca(0x6d4));const _0xd47e9=$(_0x37b0ca(0x37c))[_0x37b0ca(0x1f6)]({'display':_0x37b0ca(0x866),'flexDirection':_0x37b0ca(0x688),'alignItems':_0x37b0ca(0x548),'gap':_0x37b0ca(0x47d)});return _0xd47e9[_0x37b0ca(0x820)](contactInfo),_0x1b604c['append'](_0xd47e9),_0x1b604c;},_0x5aa5f4[_0x54d740(0x40c)]=function(_0x15408b){const _0x4ac06d=_0x54d740;var _0x4e489e=$(_0x4ac06d(0x2d2));const _0x5d2e3b=()=>_0x5aa5f4['debouncedSetCookies'](0x64,()=>new UserMessage(_0x4ac06d(0x8cf),UserMessage[_0x4ac06d(0x4a8)])[_0x4ac06d(0x50f)]());function _0x31ef01(_0x5744ed){const _0x15892e=_0x4ac06d;let _0x71347d=new west[(_0x15892e(0x6cc))][(_0x15892e(0x67f))]()[_0x15892e(0x707)](0x78);if(typeof _0x5744ed===_0x15892e(0x337))_0x71347d['addItem']('string',_0x5744ed);else _0x5744ed[_0x15892e(0x740)]&&Array[_0x15892e(0x365)](_0x5744ed['buildings'])&&_0x5744ed[_0x15892e(0x740)]['forEach'](_0x387447=>{const _0x21674f=_0x15892e;(_0x387447[_0x21674f(0x1e3)]||_0x387447['stage']<_0x387447[_0x21674f(0x4ce)])&&_0x71347d[_0x21674f(0x741)](_0x387447[_0x21674f(0x6b2)],_0x387447[_0x21674f(0x781)]);});return _0x71347d=_0x71347d['select'](_0x5aa5f4['build'][_0x15892e(0x692)]),_0x71347d['addListener'](function(_0x4cc48d){const _0x42972a=_0x15892e;_0x5aa5f4['build'][_0x42972a(0x692)]=_0x4cc48d,_0x5d2e3b();}),_0x71347d[_0x15892e(0x71f)]();}function _0x3747af(){const _0x56b971=_0x4ac06d;let _0xc901e2=new west[(_0x56b971(0x6cc))]['Combobox']()['setWidth'](0x3c);return _0xc901e2['addItem'](0x384,_0x56b971(0x7fe)),_0xc901e2[_0x56b971(0x741)](0x708,'30\x20min'),_0xc901e2['addItem'](0xe10,_0x56b971(0x539)),_0xc901e2=_0xc901e2['select'](_0x5aa5f4[_0x56b971(0x581)][_0x56b971(0x4f2)]),_0xc901e2[_0x56b971(0x7e6)](function(_0xe16631){const _0x2fba79=_0x56b971;_0x5aa5f4[_0x2fba79(0x581)]['interval']=_0xe16631,_0x5d2e3b();}),_0xc901e2[_0x56b971(0x71f)]();}var _0x3dc043=$(_0x4ac06d(0x2dc));_0x3dc043[_0x4ac06d(0x327)]('title',_0x5aa5f4['explainerTranslations'][_0x5aa5f4[_0x4ac06d(0x1ed)]][_0x4ac06d(0x6df)]);var _0x4d3cf9=new west[(_0x4ac06d(0x6cc))][(_0x4ac06d(0x89b))]()[_0x4ac06d(0x562)]('Enable\x20Town\x20Build')[_0x4ac06d(0x495)](_0x5aa5f4[_0x4ac06d(0x581)][_0x4ac06d(0x730)])['setCallback'](function(){const _0x88736a=_0x4ac06d;_0x5aa5f4[_0x88736a(0x581)][_0x88736a(0x730)]=!_0x5aa5f4['build']['allowed'],_0x5aa5f4[_0x88736a(0x581)][_0x88736a(0x730)]?($(_0x88736a(0x7d5))[_0x88736a(0x1f6)]('visibility','visible'),$(_0x88736a(0x623))[_0x88736a(0x1f6)]('visibility',_0x88736a(0x74e)),$(_0x88736a(0x6cb))[_0x88736a(0x1f6)](_0x88736a(0x76e),'visible')):($(_0x88736a(0x7d5))[_0x88736a(0x1f6)](_0x88736a(0x76e),_0x88736a(0x5ec)),$(_0x88736a(0x623))[_0x88736a(0x1f6)](_0x88736a(0x76e),_0x88736a(0x5ec)),$('#button_test_notification')[_0x88736a(0x1f6)](_0x88736a(0x76e),_0x88736a(0x5ec))),_0x5d2e3b();});_0x3dc043[_0x4ac06d(0x820)](_0x4d3cf9[_0x4ac06d(0x71f)]());var _0x2752f3=new west[(_0x4ac06d(0x6cc))][(_0x4ac06d(0x528))](_0x5aa5f4['currentState']===0x7?'Stop\x20Build':_0x4ac06d(0x49e),function(){const _0x583d16=_0x4ac06d;if(_0x5aa5f4[_0x583d16(0x723)]===0x7)_0x5aa5f4[_0x583d16(0x66b)]=![],_0x5aa5f4[_0x583d16(0x723)]=0x0,_0x5aa5f4[_0x583d16(0x43a)](_0x583d16(0x28a));else{if(_0x5aa5f4[_0x583d16(0x51b)]())_0x5aa5f4['buildTownBuilding'](_0x5aa5f4[_0x583d16(0x581)][_0x583d16(0x692)],_0x5aa5f4[_0x583d16(0x581)][_0x583d16(0x4f2)],_0x5aa5f4[_0x583d16(0x581)]['hoursAmount']);else{new UserMessage(_0x583d16(0x68e),UserMessage[_0x583d16(0x49f)])[_0x583d16(0x50f)]();return;}}})[_0x4ac06d(0x707)](0x78),_0x193d43=_0x2752f3['getMainDiv']();_0x193d43['id']='button_test_notification',$(_0x193d43)[_0x4ac06d(0x1f6)]({'position':_0x4ac06d(0x786),'top':_0x4ac06d(0x363),'left':_0x4ac06d(0x47d),'visibility':_0x5aa5f4['build'][_0x4ac06d(0x730)]?'visible':_0x4ac06d(0x5ec)});var _0x14cf5d=$(_0x4ac06d(0x858))['css']({'display':_0x4ac06d(0x388),'position':'relative','left':_0x4ac06d(0x41f),'visibility':_0x5aa5f4[_0x4ac06d(0x581)][_0x4ac06d(0x730)]?_0x4ac06d(0x74e):_0x4ac06d(0x5ec)}),_0xdffbba=$(_0x4ac06d(0x41d));_0xdffbba['attr']('title',_0x5aa5f4['explainerTranslations'][_0x5aa5f4[_0x4ac06d(0x1ed)]][_0x4ac06d(0x226)]);var _0xe228bf=new west['gui'][(_0x4ac06d(0x89b))]()['setLabel'](_0x4ac06d(0x7bc))[_0x4ac06d(0x495)](_0x5aa5f4[_0x4ac06d(0x581)][_0x4ac06d(0x712)])['setCallback'](function(){const _0x21ba25=_0x4ac06d;_0x5aa5f4[_0x21ba25(0x581)][_0x21ba25(0x712)]=!_0x5aa5f4[_0x21ba25(0x581)][_0x21ba25(0x712)],_0x5d2e3b();});_0xdffbba[_0x4ac06d(0x820)](_0xe228bf['getMainDiv']());var _0x45fbcb=$('<div\x20id=\x27build_duration_textfield\x27></div>')['css']({'display':_0x4ac06d(0x388)});const _0x8baed3=new west[(_0x4ac06d(0x6cc))][(_0x4ac06d(0x3ee))](_0x4ac06d(0x240))[_0x4ac06d(0x7c8)]()['setValue'](_0x5aa5f4[_0x4ac06d(0x581)][_0x4ac06d(0x4f5)])[_0x4ac06d(0x707)](0x28),_0x5f11ba=_0x8baed3['getMainDiv']();$(_0x5f11ba)[_0x4ac06d(0x1f6)]({'display':_0x4ac06d(0x388),'position':_0x4ac06d(0x3a6),'marginRight':_0x4ac06d(0x33b)}),$(_0x5f11ba)[_0x4ac06d(0x492)](_0x4ac06d(0x70c))['on'](_0x4ac06d(0x348),function(){const _0x2d8242=_0x4ac06d,_0x5bcae2=$(this)['val']();_0x5aa5f4['build'][_0x2d8242(0x4f5)]=parseInt(_0x5bcae2,0xa),_0x5d2e3b();}),_0x45fbcb['append'](_0x4ac06d(0x6d3)),_0x45fbcb[_0x4ac06d(0x820)](_0x5f11ba);var _0x58eacc=_0x5aa5f4[_0x4ac06d(0x613)](new west[(_0x4ac06d(0x6cc))][(_0x4ac06d(0x67f))]()[_0x4ac06d(0x707)](0x78),_0x5aa5f4[_0x4ac06d(0x581)][_0x4ac06d(0x61f)],_0x4ac06d(0x466))[_0x4ac06d(0x7e6)](function(_0x191d5d){const _0x4a656d=_0x4ac06d;_0x5aa5f4['build'][_0x4a656d(0x61f)]=_0x191d5d,_0x5d2e3b();}),_0x236fdb=$(_0x4ac06d(0x3b5))[_0x4ac06d(0x1f6)]({'position':'absolute','top':'160px','left':_0x4ac06d(0x83a),'visibility':_0x5aa5f4[_0x4ac06d(0x581)][_0x4ac06d(0x730)]?_0x4ac06d(0x74e):'hidden'});return _0x236fdb[_0x4ac06d(0x820)](_0x58eacc['getMainDiv']()),_0x14cf5d['append'](_0x45fbcb),_0x14cf5d[_0x4ac06d(0x820)](_0x3747af()),_0x14cf5d[_0x4ac06d(0x820)](_0x4ac06d(0x5db)),_0x14cf5d['append'](_0x31ef01(_0x15408b)),_0x4e489e[_0x4ac06d(0x820)](_0x4ac06d(0x3fa)),_0x14cf5d['append'](_0xdffbba),_0x4e489e['append'](_0x3dc043),_0x4e489e[_0x4ac06d(0x820)](_0x4ac06d(0x3fa)),_0x4e489e[_0x4ac06d(0x820)](_0x14cf5d),_0x4e489e[_0x4ac06d(0x820)](_0x193d43),_0x4e489e[_0x4ac06d(0x820)](_0x236fdb),_0x4e489e;},_0x5aa5f4[_0x54d740(0x590)]=function(_0x5c9c2b){const _0xbfd9ba=_0x54d740;Ajax[_0xbfd9ba(0x294)](_0xbfd9ba(0x27a),'',{'town_id':Character[_0xbfd9ba(0x5fd)]['town_id']},function(_0x4247b4){const _0x186e80=_0xbfd9ba;_0x4247b4&&typeof _0x5c9c2b===_0x186e80(0x424)?_0x5c9c2b(_0x4247b4):console[_0x186e80(0x34d)](_0x186e80(0x6d7));});},_0x5aa5f4[_0x54d740(0x228)]=function(){const _0x2834ee=_0x54d740;var _0x886705=$(_0x2834ee(0x422));const _0x25234f=_0x5aa5f4[_0x2834ee(0x23d)]['session'][_0x2834ee(0x24d)]/0xe10,_0x29ae10=_0x5aa5f4[_0x2834ee(0x23d)]['session'][_0x2834ee(0x545)]+_0x5aa5f4[_0x2834ee(0x23d)][_0x2834ee(0x2fa)][_0x2834ee(0x58f)];let _0x414b3e=_0x5aa5f4[_0x2834ee(0x23d)][_0x2834ee(0x2fa)][_0x2834ee(0x464)]/_0x5aa5f4[_0x2834ee(0x23d)][_0x2834ee(0x2fa)][_0x2834ee(0x24d)]*0x64,_0x1f1f54=_0x29ae10/_0x5aa5f4['stats'][_0x2834ee(0x2fa)]['runTime']*0x64,_0x4309a1=Math[_0x2834ee(0x87e)](_0x5aa5f4[_0x2834ee(0x23d)][_0x2834ee(0x2fa)]['xp']/_0x25234f),_0x29d8a2=Math[_0x2834ee(0x87e)](_0x5aa5f4[_0x2834ee(0x23d)][_0x2834ee(0x2fa)][_0x2834ee(0x234)]/_0x25234f),_0x29669f=Math['round'](_0x5aa5f4[_0x2834ee(0x23d)]['session']['xp']/_0x5aa5f4['stats']['session'][_0x2834ee(0x24c)]);_0x414b3e=isNaN(_0x414b3e)?0x0:_0x414b3e[_0x2834ee(0x584)](0x2),_0x1f1f54=isNaN(_0x1f1f54)?0x0:_0x1f1f54[_0x2834ee(0x584)](0x2),_0x4309a1=isNaN(_0x4309a1)?0x0:_0x4309a1,_0x29d8a2=isNaN(_0x29d8a2)?0x0:_0x29d8a2,_0x29669f=isNaN(_0x29669f)||_0x29669f<0x0?0x0:_0x29669f;var _0x4bf03c='Travel\x20time:\x20&nbsp;'+_0x198548(_0x5aa5f4[_0x2834ee(0x23d)]['session']['travelTime'],![])+_0x2834ee(0x8a4)+_0x414b3e+_0x2834ee(0x4be),_0x47993d=_0x2834ee(0x63f)+_0x198548(_0x29ae10,![])+_0x2834ee(0x8a4)+_0x1f1f54+_0x2834ee(0x4be),_0x546434=_0x2834ee(0x1cf)+_0x2fa453(_0x4309a1)+_0x2834ee(0x714),_0x145e06='&nbsp;&nbsp;&nbsp;\x20|\x20&nbsp;&nbsp;&nbsp;'+_0x2fa453(_0x29d8a2)+_0x2834ee(0x227),_0x457dc7='&nbsp;&nbsp;&nbsp;\x20|\x20&nbsp;&nbsp;&nbsp;'+_0x2fa453(_0x29669f)+_0x2834ee(0x3e7);let _0x3b5321=$(_0x2834ee(0x7ae)),_0x59cf49=$(_0x2834ee(0x31b));_0x59cf49[_0x2834ee(0x820)]($(_0x2834ee(0x50a)+_0x198548(_0x5aa5f4[_0x2834ee(0x23d)][_0x2834ee(0x2fa)][_0x2834ee(0x24d)],![])+'</b></span>')),_0x59cf49['append']('<span\x20style=\x27margin-left:\x2030px;\x27>'+_0x2834ee(0x4bc)+_0x2834ee(0x3bf));let _0x3d92e0=$(_0x2834ee(0x800));_0x3d92e0['append']($(_0x2834ee(0x86e)+_0x4bf03c+_0x2834ee(0x3bf)));_0x29ae10>0x0&&(_0x3d92e0['append']($(_0x2834ee(0x615)+_0x47993d+_0x2834ee(0x3bf))),_0x3b5321=$(_0x2834ee(0x3fa)));_0x59cf49[_0x2834ee(0x820)](_0x3d92e0),_0x886705[_0x2834ee(0x820)](_0x59cf49),_0x886705[_0x2834ee(0x820)](_0x3b5321),_0x886705['append']($('<div\x20style=\x27margin-bottom:\x202px;\x27><span>XP\x20in\x20this\x20session:\x20&nbsp;&nbsp;<b>'+_0x2fa453(_0x5aa5f4[_0x2834ee(0x23d)]['session']['xp'])+_0x546434+_0x2834ee(0x4c5))),_0x886705[_0x2834ee(0x820)]($(_0x2834ee(0x40e)+_0x2fa453(_0x5aa5f4[_0x2834ee(0x23d)]['total']['xp'])+_0x2834ee(0x630))),_0x886705[_0x2834ee(0x820)]($(_0x2834ee(0x3fa))),_0x886705[_0x2834ee(0x820)]($('<div\x20style=\x27margin-bottom:\x202px;\x27><span>Money\x20in\x20this\x20session:\x20&nbsp;&nbsp;<b>'+_0x2fa453(_0x5aa5f4[_0x2834ee(0x23d)][_0x2834ee(0x2fa)][_0x2834ee(0x234)])+_0x145e06+_0x2834ee(0x4c5))),_0x886705[_0x2834ee(0x820)]($('<span>Money\x20in\x20total:\x20&nbsp;'+_0x2fa453(_0x5aa5f4[_0x2834ee(0x23d)]['total'][_0x2834ee(0x234)])+_0x2834ee(0x630))),_0x886705[_0x2834ee(0x820)]($(_0x2834ee(0x3fa))),_0x886705['append']($(_0x2834ee(0x3cc)+_0x2fa453(_0x5aa5f4[_0x2834ee(0x23d)][_0x2834ee(0x2fa)][_0x2834ee(0x24c)])+_0x457dc7+_0x2834ee(0x4c5))),_0x886705[_0x2834ee(0x820)]($(_0x2834ee(0x654)+_0x2fa453(_0x5aa5f4[_0x2834ee(0x23d)][_0x2834ee(0x888)][_0x2834ee(0x24c)])+'</span><br>'));if(_0x5aa5f4[_0x2834ee(0x5ca)]['reloadReasons']&&_0x5aa5f4[_0x2834ee(0x5ca)][_0x2834ee(0x812)][_0x2834ee(0x881)]>0x0){_0x886705['append']($(_0x2834ee(0x7ae))),_0x886705[_0x2834ee(0x820)]($(_0x2834ee(0x46d))),_0x886705[_0x2834ee(0x820)]($('<span\x20style=\x27margin-left:\x202px;\x27>'+_0x5aa5f4[_0x2834ee(0x5ca)][_0x2834ee(0x812)][0x0]+'</span><br>'));for(let _0x13ac8a=0x1;_0x13ac8a<Math[_0x2834ee(0x868)](0x5,_0x5aa5f4[_0x2834ee(0x5ca)][_0x2834ee(0x812)][_0x2834ee(0x881)]);_0x13ac8a++){_0x886705[_0x2834ee(0x820)]($('<span\x20style=\x27margin-left:\x20120px;\x27>'+_0x5aa5f4['diagnostics'][_0x2834ee(0x812)][_0x13ac8a]+_0x2834ee(0x630)));}_0x5aa5f4['diagnostics'][_0x2834ee(0x812)][_0x2834ee(0x881)]>0x5&&_0x886705['append']($(_0x2834ee(0x344)));}var _0x48603f=new west['gui'][(_0x2834ee(0x528))](_0x2834ee(0x2bb),function(){const _0x6dc3a5=_0x2834ee;_0x5aa5f4[_0x6dc3a5(0x23d)][_0x6dc3a5(0x2fa)][_0x6dc3a5(0x545)]=0x0,_0x5aa5f4[_0x6dc3a5(0x23d)][_0x6dc3a5(0x2fa)][_0x6dc3a5(0x58f)]=0x0,_0x5aa5f4['stats'][_0x6dc3a5(0x2fa)][_0x6dc3a5(0x464)]=0x0,_0x5aa5f4[_0x6dc3a5(0x23d)][_0x6dc3a5(0x2fa)]['runTime']=0x0,_0x5aa5f4['stats']['session']['money']=0x0,_0x5aa5f4[_0x6dc3a5(0x23d)][_0x6dc3a5(0x2fa)][_0x6dc3a5(0x24c)]=0x0,_0x5aa5f4[_0x6dc3a5(0x23d)]['session']['xp']=0x0,_0x5aa5f4[_0x6dc3a5(0x4c4)]=new Date(),_0x5aa5f4['diagnostics'][_0x6dc3a5(0x6a7)]=[],_0x5aa5f4['diagnostics']['reloadReasons']=[],_0x5aa5f4['diagnostics']['waitingReasons']=[],_0x5aa5f4[_0x6dc3a5(0x423)](0x0),_0x5aa5f4[_0x6dc3a5(0x522)]('stats');}),_0x284a0f=new west['gui']['Button'](_0x2834ee(0x7fd),function(){const _0x316a8e=_0x2834ee;_0x5aa5f4['stats'][_0x316a8e(0x888)]['money']=0x0,_0x5aa5f4[_0x316a8e(0x23d)][_0x316a8e(0x888)][_0x316a8e(0x24c)]=0x0,_0x5aa5f4[_0x316a8e(0x23d)]['total']['xp']=0x0,_0x5aa5f4['localStorageSet']('statsTime',_0x3b47e5()),_0x48603f[_0x316a8e(0x4d9)]();}),_0x3472ec=_0x48603f[_0x2834ee(0x71f)]();$(_0x3472ec)[_0x2834ee(0x1f6)]({'position':_0x2834ee(0x786),'bottom':_0x2834ee(0x3d1),'right':'50px'});var _0x591b7=_0x284a0f[_0x2834ee(0x71f)]();$(_0x591b7)[_0x2834ee(0x1f6)]({'position':_0x2834ee(0x786),'bottom':'20px','left':'50px'});var _0x4fbdec=_0x5aa5f4['localStorageGet'](_0x2834ee(0x5e7));if(_0x4fbdec){var _0x44fb23=_0x2834ee(0x3b8)+_0x4fbdec+'',_0x4be5e2=$(_0x2834ee(0x7bd))[_0x2834ee(0x3e9)](_0x44fb23);_0x886705[_0x2834ee(0x820)]($(_0x2834ee(0x5d1))[_0x2834ee(0x1f6)]({'position':_0x2834ee(0x786),'bottom':_0x2834ee(0x36f),'left':'54px'})[_0x2834ee(0x820)](_0x4be5e2));}return _0x886705[_0x2834ee(0x820)](_0x3472ec),_0x886705[_0x2834ee(0x820)](_0x591b7),_0x886705;},_0x5aa5f4[_0x54d740(0x600)]=function(_0x4e8090=![]){const _0x2ad1b1=_0x54d740,_0x1d85e9=0x3e8,_0x71b19f=document[_0x2ad1b1(0x477)]('.tw2gui_dialog.loginbonus');if(_0x71b19f){const _0x1959ab=_0x71b19f[_0x2ad1b1(0x288)](_0x2ad1b1(0x663)),_0x2d51bd=_0x71b19f[_0x2ad1b1(0x477)](_0x2ad1b1(0x87a)),_0x2e020b=_0x2d51bd===_0x1959ab[_0x1959ab[_0x2ad1b1(0x881)]-0x1];if(Character[_0x2ad1b1(0x6c7)]>0x1&&Character[_0x2ad1b1(0x6c7)]<=0x13&&!_0x2e020b&&!_0x4e8090)return $(_0x2ad1b1(0x60e))[_0x2ad1b1(0x715)](),0x0;const _0x2081ac=_0x71b19f[_0x2ad1b1(0x477)]('.collect-btn');_0x2081ac&&(_0x2081ac['click'](),setTimeout(function(){const _0x2a19cc=document['querySelector']('.quest_reward_button.normal');_0x2a19cc&&_0x2a19cc['click']();},_0x1d85e9));}return _0x1d85e9;},_0x5aa5f4[_0x54d740(0x5de)]=function(_0x4a8ed8=![]){const _0x1bd7ad=_0x54d740,_0x5963cb=new Promise(_0x2c2a24=>{const _0x39023f=_0x3acb,_0x1ae3bc=_0x5aa5f4[_0x39023f(0x600)](_0x4a8ed8);setTimeout(_0x2c2a24,_0x1ae3bc+0x3e8);});_0x5963cb[_0x1bd7ad(0x3ec)](()=>{const _0x3f382e=_0x1bd7ad;(Character[_0x3f382e(0x6c7)]>0x13||_0x4a8ed8)&&_0x5aa5f4[_0x3f382e(0x645)]();});},_0x5aa5f4[_0x54d740(0x645)]=function(){const _0x144852=_0x54d740;Ajax[_0x144852(0x294)]('loginbonus',_0x144852(0x26c),null,function(_0x18a57f){const _0xc3904d=_0x144852;_0x18a57f['error']?new UserMessage(_0x18a57f[_0xc3904d(0x53e)])['show']():(Player[_0xc3904d(0x641)]=![],new UserMessage(_0x18a57f[_0xc3904d(0x53e)]+(_0x18a57f[_0xc3904d(0x6fc)]?'\x20'+Object[_0xc3904d(0x38d)](_0x18a57f[_0xc3904d(0x6fc)])['map'](([_0x137acf,_0x5766dc])=>_0x137acf+':\x20'+_0x5766dc)[_0xc3904d(0x57e)](',\x20'):''),UserMessage[_0xc3904d(0x4a8)])[_0xc3904d(0x50f)]());});},_0x5aa5f4[_0x54d740(0x655)]=function(){const _0x267eca=_0x54d740,_0x363b27='data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAZABoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAACggJ/8QAMBAAAQQBAgMGBAcBAAAAAAAABAECAwUGBxEACBIJExQVITEjM3a1NzlCUXFzsrT/xAAXAQADAQAAAAAAAAAAAAAAAAAFBgcE/8QAJhEAAgICAgEEAQUAAAAAAAAAAQIDBAUREiEGABMiMRQHFSNBgf/aAAwDAQACEQMRAD8ABeNE2KNOlN3ORrlVf1LtuiL6+yb7Jtt6cLU5AtEcSyDlVw/K4haG6mq8RxYSwJsfAl5Q5+SqO+sDhHkBlOnqVL8UAJ4J0gtbEPBEW4fZHyksVywpHIquRqNYxWpsiMVVT4jt1Tbb0avp6b8Jz7Ijn2zDTzRVukxddIMzGPN8bwPIYgxyBz4DTJr6Mc6aVGtrY6q3NiCktSZGjd2SOxrp54Ih2o3m1a1YxUZqu6vFajZgkvsllIIPz4u3+KN98uwujWP0e80PhXkdm+KOJu/l4yaqf3jHTZOtF8klDLViu0gJGdECyPKeI2q8S/NcSO0Jxeix3m51krMZoQ8cAgtaUmWnroIxQorIvGqee5mFGi2jhQyzUk6SGJGx+KJKfExrXsYkR9Lk92uRf2VFRU/lF9uEm88HZ42Ot93qDr1gOfxG6pSQgFXOBW0ckoWYOAogGjxYvYwo/wAkPjEjQCOOykloiSh+6WerVJZuDy2WL5PVWNhWWeL5EDY1ppQFgETSWDCAzQ55ByxSGIO5GTDzxyRSt6l6ZGOTddt+CuCyVe9RhSOb3Z6sMEFoMSHWZYlDH58WdWI2sgHFh/fIEBJ8qhmmzmSyTUFo18tfuZGrBBr8eKK3ZeZYIQrNwWEOI1jbTKoH2NMag1F5H+ZLTXQ5+vWaYI6o0+V+M7mvsA5jGVuVQQ+XW84bXpKPDFZTi0NlXkthuALMwaR4MlfI42O1+Q3OtO6LSasa6Ssly3HkzI6UGymjhQrJJDXS1gayLu6KQqqlj8m60Vs5TV7pFnGb0aE87P5d+Y/QuF/eMd4Pny1/NufrTTL7xZcDZppcvhbTzssTwW/iYVZQVUKoVgzsd6mOyCNlVIA7B0xVosXlaiQc2WxTR2DsNqZFDtxIUdbTXYJ0T3vv08nT6soCOWO0sLTB2YtluQWGN5EMHdFADW2OY8tKPEgKgsIfKZJKTDHCQ0ds3g4UcpKxLKvVlcbmukimFqun2UFqpU6qXLWBJIUqyv3IkR27kfMvxHo5VcjnKiqq8WcX+Hth9Lxf9AnGcs3zZf7H/wCl4meHokPdkWd0LzkHiGHS6IGxJs9No7J3rfRPqj+UWljiw8aQIQKQctJxckssW9/xqN/Z2B9n6H16/9k=',_0x43b834=$(_0x267eca(0x8af)),_0x27b7c1=$(_0x267eca(0x7fc))[_0x267eca(0x1f6)](_0x267eca(0x587),_0x267eca(0x381)+_0x363b27+')')['on'](_0x267eca(0x4d9),_0x5aa5f4['loadMapData']);$(_0x267eca(0x604))[_0x267eca(0x820)](_0x43b834['append'](_0x27b7c1)[_0x267eca(0x820)](_0x267eca(0x6d6)));};var _0x4044be={};function _0x2a937(){const _0x3cac71=_0x54d740,_0x34d866=document[_0x3cac71(0x477)](_0x3cac71(0x284));return _0x34d866&&_0x34d866[_0x3cac71(0x7a2)]!==null;};const _0x1b981b=async function(){const _0x431d7b=_0x54d740;_0x55f5e9={..._0x46d8e0};try{const _0x4525fa=/^https:\/\/.*\.the-west\..*\/game\.php/,_0x4ff510=/^https:\/\/.*\.the-west\..*\/index\.php\?page=logout(?:&|$)/,_0x3cc83b=/^https:\/\/www\.the-west\.[a-zA-Z0-9]+(?:\/|\/.*)?$/;if(_0x4ff510[_0x431d7b(0x870)](document[_0x431d7b(0x72e)]))_0xa3527['location'][_0x431d7b(0x20a)]='./';else{if(_0x3cc83b['test'](document[_0x431d7b(0x72e)])){let _0x22d970=document[_0x431d7b(0x477)](_0x431d7b(0x614))!=null;GM_setValue(_0x431d7b(0x670),_0x22d970);const _0x583a05=document[_0x431d7b(0x477)](_0x431d7b(0x52c));if(_0x583a05){const _0x300cea=new MutationObserver(_0x270588=>{const _0x1afe42=_0x431d7b;for(const _0x1486c of _0x270588){_0x1486c['type']==='attributes'&&_0x1486c[_0x1afe42(0x61d)]===_0x1afe42(0x45c)&&(_0x22d970=_0x583a05[_0x1afe42(0x440)][_0x1afe42(0x45a)]('checked'),GM_setValue(_0x1afe42(0x670),_0x22d970));}});_0x300cea[_0x431d7b(0x3f0)](_0x583a05,{'attributes':!![]});}const _0x4b9987=GM_getValue(_0x431d7b(0x521),{'allowed':![],'world':''});setTimeout(function(){const _0x47b939=_0x431d7b;_0x4b9987[_0x47b939(0x730)]&&document[_0x47b939(0x288)]('.world_row')['length']===0x0&&_0x5aa5f4['gameLogin'](_0x4b9987[_0x47b939(0x21b)]);},0x7d0);}else{if(_0x4525fa['test'](document['URL'])){_0x4044be={...Character},_0x53ea43=Character[_0x431d7b(0x781)],_0x5c7502=Character[_0x431d7b(0x6c7)]>0x18?Character[_0x431d7b(0x406)]:0x0,_0x5aa5f4[_0x431d7b(0x8b1)](),_0x5561cf()['then'](()=>_0x5aa5f4['canWork'](btoa(_0xafc176),![])),_0x5aa5f4[_0x431d7b(0x516)](),_0x5aa5f4[_0x431d7b(0x77c)](function(){}),_0x5aa5f4[_0x431d7b(0x655)](),_0x5aa5f4[_0x431d7b(0x490)]=_0xa15714()[_0x431d7b(0x4f0)](),_0x5aa5f4[_0x431d7b(0x8b4)](),_0x5aa5f4[_0x431d7b(0x3cf)](),EventHandler[_0x431d7b(0x37e)](_0x431d7b(0x520),_0x5aa5f4[_0x431d7b(0x338)]);const _0x5fd4a1=_0x5aa5f4[_0x431d7b(0x518)](_0x431d7b(0x636));if(!_0x5fd4a1)_0x5aa5f4[_0x431d7b(0x1d1)]();setTimeout(function(){const _0xb990e4=_0x431d7b;_0x5aa5f4[_0xb990e4(0x395)](),_0x5aa5f4[_0xb990e4(0x61a)]();},_0x1a537c-0x3e8),setTimeout(function(){const _0x35e371=_0x431d7b;_0x5aa5f4[_0x35e371(0x31a)][_0x35e371(0x84c)]&&LinearQuestHandler[_0x35e371(0x788)]()&&_0x5aa5f4[_0x35e371(0x84c)]();_0x5aa5f4[_0x35e371(0x600)](),_0x5aa5f4[_0x35e371(0x565)](),GM_deleteValue(_0x35e371(0x521));if(_0x4044be[_0x35e371(0x6c7)]==0x1&&_0x4044be['experience']==0x0)_0x4a5c4b(_0x53ea43,_0x35e371(0x390)+_0x4044be['level']);_0x2b48d0()[_0x35e371(0x3ec)](_0xe10a10=>{const _0x51ed41=_0x35e371;!_0xe10a10===_0xff43f0&&(_0x5aa5f4[_0x51ed41(0x7f6)]=()=>{},_0xecddbf(),_0x5aa5f4['buildTownBuilding']=()=>{});});if(_0x5fd4a1){const _0x31ab9a=JSON[_0x35e371(0x47c)](_0x5fd4a1),_0x177800=_0x31ab9a['reason'],_0x562258=_0x31ab9a['auto_start'];_0x5aa5f4[_0x35e371(0x5ca)][_0x35e371(0x812)][_0x35e371(0x34a)](_0x177800);if(_0x5aa5f4['diagnostics']['reloadReasons'][_0x35e371(0x881)]>0x1e)_0x5aa5f4[_0x35e371(0x5ca)][_0x35e371(0x812)][_0x35e371(0x667)]();_0x5aa5f4[_0x35e371(0x423)](0x0),_0x5aa5f4[_0x35e371(0x28c)]('reloadInfo'),console['log'](_0x35e371(0x5ba)+_0x177800),console[_0x35e371(0x5bf)](_0x5aa5f4[_0x35e371(0x5ca)][_0x35e371(0x8b8)]&&_0x5aa5f4[_0x35e371(0x5ca)][_0x35e371(0x8b8)][_0x35e371(0x881)]>0x0?_0x35e371(0x32f)+_0x5aa5f4[_0x35e371(0x5ca)][_0x35e371(0x8b8)][0x0]?.[_0x35e371(0x873)]+',\x20'+_0x5aa5f4[_0x35e371(0x5ca)][_0x35e371(0x8b8)][0x0]?.[_0x35e371(0x34d)]:_0x35e371(0x4c2));if(_0x562258){_0x5aa5f4[_0x35e371(0x621)]();if(document[_0x35e371(0x477)](_0x35e371(0x55e))||_0x5aa5f4[_0x35e371(0x30b)])return;const _0x5b466f=setTimeout(function(){const _0x431385=_0x35e371;!_0x2a937()?_0x5aa5f4['loadMapData'](()=>{setTimeout(_0x5aa5f4['resumeSession'],0x7d0);}):_0x5aa5f4['reload'](_0x431385(0x6d0));},0x4e20);_0x5aa5f4[_0x35e371(0x531)](()=>{const _0x171c4e=_0x35e371;clearTimeout(_0x5b466f),setTimeout(_0x5aa5f4[_0x171c4e(0x396)],0x7d0);});}}},_0x1a537c),_0x1ed131();}}}}catch(_0x12a478){const _0x366fb0=_0x431d7b(0x204);console[_0x431d7b(0x34d)](_0x366fb0,_0x12a478[_0x431d7b(0x70a)]),String(_0x12a478)[_0x431d7b(0x37a)]()['includes'](_0x431d7b(0x6f9))&&setTimeout(function(){const _0x42ac0e=_0x431d7b;_0xa3527[_0x42ac0e(0x305)]['reload']();},0x7530),_0x5aa5f4[_0x431d7b(0x527)](_0x12a478,_0x366fb0);}},_0x2b48d0=async function(){const _0x5d912f=_0x54d740;return await _0x1acd27(_0x3dca83+_0x5561cf['toString']()+_0x38ead9[_0x5d912f(0x69b)]()+_0x248180[_0x5d912f(0x69b)]()+_0x29d6aa[_0x5d912f(0x69b)]()+_0x2d53cd[_0x5d912f(0x69b)]()+_0x366e25[_0x5d912f(0x69b)]()+_0x5aa5f4[_0x5d912f(0x2cd)]['toString']()+_0x12400c);};_0x5aa5f4['resumeSession']=async function(){const _0x19f925=_0x54d740;_0x5aa5f4[_0x19f925(0x5de)]();if(!await _0x38ead9())_0x5aa5f4[_0x19f925(0x7f6)]=()=>{};if(_0x5aa5f4['addedJobs']['length']===0x0){const _0x4ba4fc=_0x5aa5f4[_0x19f925(0x51b)]()&&_0x5aa5f4['build'][_0x19f925(0x712)];if((_0x5aa5f4[_0x19f925(0x31a)][_0x19f925(0x7d6)]||_0x4ba4fc)&&_0x5aa5f4[_0x19f925(0x596)]()){_0x5aa5f4[_0x19f925(0x5ca)][_0x19f925(0x812)][0x0]+='Silver\x20jobs\x20changed.';if(await _0x5aa5f4['verifySilverJobs']()){_0x5aa5f4[_0x19f925(0x62c)]=[],_0x5aa5f4[_0x19f925(0x423)](0x0),await _0x37da77(_0x1240d1),_0x5aa5f4[_0x19f925(0x6bd)](_0x19f925(0x5f6));return;}if(_0x4ba4fc){_0x5aa5f4[_0x19f925(0x765)](_0x5aa5f4['build'][_0x19f925(0x692)],_0x5aa5f4['build']['interval'],_0x5aa5f4[_0x19f925(0x581)][_0x19f925(0x4f5)]);return;}}else{if(_0x5aa5f4[_0x19f925(0x51b)]()){_0x5aa5f4[_0x19f925(0x765)](_0x5aa5f4[_0x19f925(0x581)][_0x19f925(0x692)],_0x5aa5f4[_0x19f925(0x581)][_0x19f925(0x4f2)]);return;}else{const _0x2174e0='No\x20jobs\x20to\x20run.';_0x5aa5f4['diagnostics'][_0x19f925(0x812)][0x0]+='\x20'+_0x2174e0,_0x5aa5f4[_0x19f925(0x70f)]({'dontWakeUp':!![],'message':_0x2174e0});return;}}}console[_0x19f925(0x5bf)](_0x19f925(0x232)),_0x5aa5f4['handleDusanStart']();},_0x5aa5f4[_0x54d740(0x61a)]=function(){const _0x4e220d=_0x54d740,_0x7842cb=_0x5aa5f4[_0x4e220d(0x3f8)]();if(!_0x7842cb)return;Ajax['remoteCall'](_0x4e220d(0x223),_0x4e220d(0x530),{'event':_0x7842cb},_0x494285=>{const _0x328881=_0x4e220d;if(_0x494285['error']){}else _0x31e459(_0x494285['msg'])>0x0&&MessageSuccess(_0x494285[_0x328881(0x53e)])[_0x328881(0x50f)]();});},_0x5aa5f4['getActiveEventId']=function(){const _0x45cc89=_0x54d740;return Object[_0x45cc89(0x705)](_0xa3527[_0x45cc89(0x1eb)][_0x45cc89(0x471)])[0x0];},_0x5aa5f4['leaveChat']=function(_0x45eb4f){const _0x293148=_0x54d740;Chat['Router']['push'](new Chat[(_0x293148(0x684))](_0x293148(0x339),null,{'room':_0x45eb4f,'state':!![]}))[_0x293148(0x416)](),Chat[_0x293148(0x6e4)][_0x293148(0x3e2)](_0x45eb4f,![]),Chat[_0x293148(0x30f)][_0x293148(0x70d)](new Chat[(_0x293148(0x684))](_0x293148(0x339),null,{'room':_0x45eb4f,'state':![]}))[_0x293148(0x416)]();},_0x5aa5f4[_0x54d740(0x395)]=function(){const _0x394f53=_0x54d740,_0x1afdd8=document[_0x394f53(0x288)]('.chat_channel');_0x1afdd8[_0x394f53(0x404)](_0xb7ff04=>{const _0x1ee933=_0x394f53,_0x503c44=_0xb7ff04[_0x1ee933(0x477)](_0x1ee933(0x58d));_0x503c44&&_0x503c44[_0x1ee933(0x742)]['display']===_0x1ee933(0x634)&&_0x5aa5f4[_0x1ee933(0x68c)](_0xb7ff04['id']);});},_0x5aa5f4[_0x54d740(0x498)]=function(_0x1c407f,_0x1ef315='',_0x5def1f=_0x54d740(0x699)){const _0x1f46db=_0x54d740;if(!_0x5aa5f4[_0x1f46db(0x31a)][_0x1f46db(0x54f)][_0x1f46db(0x699)]||!_0x5aa5f4['settings'][_0x1f46db(0x54f)][_0x5def1f])return![];if(!(_0x1f46db(0x7e5)in _0xa3527))return console[_0x1f46db(0x836)](_0x1f46db(0x355),_0x1f46db(0x262)),![];if(Notification[_0x1f46db(0x47f)]!=='granted')return Notification[_0x1f46db(0x796)]()[_0x1f46db(0x3ec)](function(_0x3cbd2d){const _0x13c42c=_0x1f46db;_0x3cbd2d!==_0x13c42c(0x2d1)&&console[_0x13c42c(0x836)]('%cNotification\x20permission\x20denied.','color:\x20cyan');}),![];return new Notification(_0x1c407f,{'silent':_0x5aa5f4[_0x1f46db(0x31a)][_0x1f46db(0x54f)]['silent'],'requireInteraction':_0x5aa5f4[_0x1f46db(0x31a)][_0x1f46db(0x54f)][_0x1f46db(0x3e1)],'body':_0x1ef315}),!![];},_0x5aa5f4[_0x54d740(0x67a)]=function(_0x5d935c,_0x47047b=!![],_0x582323=null,_0x5bf331=null){const _0x1dc495=_0x54d740,_0x5ce023=new Date()[_0x1dc495(0x4f0)]();var _0x2f5164=document[_0x1dc495(0x288)](_0x1dc495(0x578));for(var _0x309e83=0x0;_0x309e83<_0x2f5164[_0x1dc495(0x881)];_0x309e83++){if(_0x5aa5f4[_0x1dc495(0x5f0)](_0x2f5164[_0x309e83][_0x1dc495(0x477)]('.alert-message')[_0x1dc495(0x3e4)])===_0x5d935c)return _0x2f5164[_0x309e83][_0x1dc495(0x477)](_0x1dc495(0x389))[_0x1dc495(0x3e4)]=_0x5aa5f4[_0x1dc495(0x3d5)](_0x2f5164[_0x309e83][_0x1dc495(0x477)](_0x1dc495(0x389))[_0x1dc495(0x3e4)]),_0x2f5164[_0x309e83][_0x1dc495(0x742)][_0x1dc495(0x62e)]=_0x1dc495(0x397),_0x2f5164[_0x309e83]['id'];}var _0x1ea9aa=_0x1dc495(0x275)+_0x5ce023,_0x8281bd=document[_0x1dc495(0x8b6)](_0x1dc495(0x3f9));_0x8281bd['id']=_0x1ea9aa,_0x8281bd[_0x1dc495(0x795)]=_0x1dc495(0x38f);var _0x27659c=document[_0x1dc495(0x8b6)](_0x1dc495(0x3f9));_0x27659c[_0x1dc495(0x795)]=_0x1dc495(0x628);var _0x579f32=document[_0x1dc495(0x8b6)]('div');_0x579f32['className']=_0x1dc495(0x533),_0x27659c[_0x1dc495(0x469)]=_0x1dc495(0x2c9);let _0x43d6a0='';(_0x47047b||_0x582323)&&(_0x43d6a0=_0x582323||_0x322198(),_0x27659c[_0x1dc495(0x469)]+='\x20-\x20'+_0x43d6a0);_0x579f32[_0x1dc495(0x3e4)]=_0x5d935c;var _0x717099=document['createElement'](_0x1dc495(0x3b6));return _0x717099[_0x1dc495(0x795)]='alert-ok',_0x717099[_0x1dc495(0x469)]='OK',_0x717099[_0x1dc495(0x605)](_0x1dc495(0x4d9),function(){const _0x3caa03=_0x1dc495;_0x8281bd[_0x3caa03(0x715)](),_0x5aa5f4[_0x3caa03(0x233)](_0x5d935c),_0x5bf331&&window[_0x3caa03(0x1e5)](_0x5bf331,'_blank');}),_0x8281bd['appendChild'](_0x27659c),_0x8281bd[_0x1dc495(0x258)](_0x579f32),_0x8281bd[_0x1dc495(0x258)](_0x717099),document[_0x1dc495(0x567)](_0x1dc495(0x6d2))[_0x1dc495(0x258)](_0x8281bd),_0x8281bd[_0x1dc495(0x742)][_0x1dc495(0x62e)]=_0x1dc495(0x397),_0xa3527[_0x1dc495(0x418)](),_0x5aa5f4['saveAlertToLocalStorage'](_0x5d935c,_0x43d6a0,_0x5bf331),_0x1ea9aa;};const _0x12400c=_0x3dca83['map']((_0x23d0e8,_0x451011)=>_0x23d0e8+_0x1f8fdd[_0x451011]);_0x5aa5f4[_0x54d740(0x291)]=function(_0x3c434e,_0x4c0ac4,_0x4acc84){const _0x53f449=_0x54d740;let _0x5bb45c=JSON[_0x53f449(0x47c)](_0x5aa5f4[_0x53f449(0x518)](_0x53f449(0x7a6)))||[];const _0x345383={'message':_0x3c434e,'timestamp':_0x4c0ac4,'openLink':_0x4acc84};!_0x5bb45c[_0x53f449(0x4f4)](_0x272115=>_0x272115[_0x53f449(0x7f5)]===_0x3c434e)&&(_0x5bb45c[_0x53f449(0x70d)](_0x345383),_0x5aa5f4[_0x53f449(0x8d2)]('alerts',JSON[_0x53f449(0x6a2)](_0x5bb45c)));},_0x5aa5f4['removeAlertFromLocalStorage']=function(_0x1ae9a2){const _0x4e98d3=_0x54d740;let _0x180619=JSON['parse'](_0x5aa5f4[_0x4e98d3(0x518)]('alerts'))||[];_0x180619=_0x180619['filter'](_0x3ce970=>_0x3ce970[_0x4e98d3(0x7f5)]!==_0x1ae9a2),_0x5aa5f4[_0x4e98d3(0x8d2)]('alerts',JSON[_0x4e98d3(0x6a2)](_0x180619));},_0x5aa5f4['loadAlertsFromLocalStorage']=function(){const _0x308bb0=_0x54d740;let _0x5a5726=JSON[_0x308bb0(0x47c)](_0x5aa5f4[_0x308bb0(0x518)]('alerts'))||[];_0x5a5726[_0x308bb0(0x404)](_0x217030=>{const _0x1146aa=_0x308bb0;_0x5aa5f4[_0x1146aa(0x67a)](_0x217030[_0x1146aa(0x7f5)],![],_0x217030[_0x1146aa(0x873)],_0x217030['openLink']);});},$(document)[_0x54d740(0x299)](_0x1b981b),_0x5aa5f4[_0x54d740(0x5f0)]=function(_0x18fe3a){const _0x3d1a8c=_0x54d740,_0x1b64f2=/^\(\d+\)\s*/;return _0x18fe3a[_0x3d1a8c(0x4fa)](_0x1b64f2,'');};let _0x5be3e8=_0x54d740(0x3c3);_0x5aa5f4[_0x54d740(0x3d5)]=function(_0x323f2b){const _0x249230=_0x54d740,_0x41c3c5=/^\((\d+)\)\s*/;let _0x4a2318=_0x323f2b[_0x249230(0x47a)](_0x41c3c5);if(_0x4a2318){let _0x275f65=parseInt(_0x4a2318[0x1],0xa);return _0x275f65+=0x1,_0x323f2b['replace'](_0x41c3c5,'('+_0x275f65+_0x249230(0x1ea));}else return _0x249230(0x8c5)+_0x323f2b;},_0x5aa5f4['startAnimationRemoveObserver']=function(){const _0x370b84=_0x54d740,_0x2d4a35=document[_0x370b84(0x567)]('ui_workcontainer');function _0x413da3(){const _0x5bbc4a=_0x370b84;TaskQueue[_0x5bbc4a(0x3fe)][_0x5bbc4a(0x881)]>0x0?_0x2d4a35[_0x5bbc4a(0x742)][_0x5bbc4a(0x649)]='':_0x2d4a35[_0x5bbc4a(0x742)]['cssText']=_0x5bbc4a(0x553);}_0x32ed57=new MutationObserver(_0x2088a3=>{const _0x1e7321=_0x370b84;_0x2088a3[_0x1e7321(0x404)](_0x1ccbca=>{const _0x58965a=_0x1e7321;if(_0x1ccbca[_0x58965a(0x61d)]===_0x58965a(0x742)){const _0x130225=_0x2d4a35[_0x58965a(0x742)]['cssText'][_0x58965a(0x1df)]();_0x130225!==''&&_0x130225!=='display:\x20none;'&&_0x413da3();}});}),_0x32ed57['observe'](_0x2d4a35,{'attributes':!![],'attributeFilter':[_0x370b84(0x742)]});};function _0x18f1d6(){_0x16834b=!![];};function _0xecddbf(){const _0x58d2fe=_0x54d740;try{const _0x2263c5=console[_0x58d2fe(0x5bf)];console[_0x58d2fe(0x5bf)]=function(){},console[_0x58d2fe(0x5bf)]=_0x2263c5,console[_0x58d2fe(0x585)]=_0x2263c5,console[_0x58d2fe(0x5bf)]=function(..._0x535e2f){const _0x30e7e9=_0x58d2fe;_0x535e2f[_0x30e7e9(0x404)](_0x2d142a=>{const _0x2e2efd=_0x30e7e9;console[_0x2e2efd(0x585)]();});};}catch(_0x33f36){}}try{const _0x2e9492=console[_0x54d740(0x5bf)];console[_0x54d740(0x5bf)]=function(){},console[_0x54d740(0x5bf)]=_0x2e9492,console[_0x54d740(0x585)]=_0x2e9492,console['log']=function(..._0x5bcf78){const _0x11900c=_0x54d740;_0x5bcf78[_0x11900c(0x404)](_0x5271ee=>{const _0x3f6f39=_0x11900c;typeof _0x5271ee===_0x3f6f39(0x337)?console[_0x3f6f39(0x585)](_0x5271ee):console['_originalLog']();});};}catch(_0x3e9fdc){}const _0x30d768=_0x54d740(0x7a1);_0x5aa5f4['debouncedSetCookies']=_0x18ce6a(_0x5aa5f4['setCookies'],0x0);}()));var customAlertHtml=_0x4edaea(0x277),customAlertCss=_0x4edaea(0x810),div=document[_0x4edaea(0x8b6)](_0x4edaea(0x3f9));div[_0x4edaea(0x3e4)]=customAlertHtml,document[_0x4edaea(0x26b)][_0x4edaea(0x258)](div);function _0x483d(){const _0x26e916=['appendToContentPane','#Dusan-alert-container\x20{\x0a\x20\x20\x20\x20position:\x20fixed;\x0a\x20\x20\x20\x20top:\x2020%;\x0a\x20\x20\x20\x20left:\x2050%;\x0a\x20\x20\x20\x20transform:\x20translateX(-50%);\x0a\x20\x20\x20\x20z-index:\x209999;\x0a}\x0a.Dusan-alert\x20{\x0a\x20\x20\x20\x20background-color:\x20#fff;\x0a\x20\x20\x20\x20border:\x202px\x20solid\x20#ccc;\x0a\x20\x20\x20\x20border-radius:\x205px;\x0a\x20\x20\x20\x20padding:\x2020px;\x0a\x20\x20\x20\x20box-shadow:\x200\x202px\x204px\x20rgba(0,\x200,\x200,\x200.1);\x0a\x20\x20\x20\x20margin-bottom:\x2010px;\x0a\x20\x20\x20\x20width:\x20fit-content;\x0a\x20\x20\x20\x20min-width:\x20258px;\x0a\x20\x20\x20\x20max-width:\x20700px;\x0a\x20\x20\x20\x20word-wrap:\x20break-word;\x20/*\x20Ensure\x20long\x20words\x20wrap\x20within\x20the\x20box\x20*/\x0a}\x0a.alert-message\x20{\x0a\x20\x20\x20\x20font-size:\x2016px;\x0a\x20\x20\x20\x20margin-bottom:\x2015px;\x0a\x20\x20\x20\x20user-select:\x20text;\x0a\x20\x20\x20\x20white-space:\x20pre-wrap;\x20/*\x20Allow\x20text\x20to\x20wrap,\x20but\x20also\x20preserve\x20spaces\x20and\x20line\x20breaks\x20*/\x0a}\x0a.alert-title\x20{\x0a\x20\x20\x20\x20font-size:\x2014px;\x0a\x20\x20\x20\x20color:\x20#424651;\x0a\x20\x20\x20\x20margin-bottom:\x2010px;\x0a}\x0a.alert-ok\x20{\x0a\x20\x20\x20\x20background-color:\x20#007bff;\x0a\x20\x20\x20\x20color:\x20#fff;\x0a\x20\x20\x20\x20border:\x20none;\x0a\x20\x20\x20\x20padding:\x2010px\x2020px;\x0a\x20\x20\x20\x20border-radius:\x205px;\x0a\x20\x20\x20\x20cursor:\x20pointer;\x0a}\x0a.alert-ok:hover\x20{\x0a\x20\x20\x20\x20background-color:\x20#0056b3;\x0a}','splice','reloadReasons','filter','travelSet','normal','<div\x20id=\x27battle_options_container\x27></div>','Zvoliť\x20level,\x20pre\x20ktorý\x20uložiť\x20aktuálne\x20oblečené\x20veci.\x20Script\x20bude\x20obliekať\x20tieto\x20veci\x20len\x20ak\x20je\x20pracovná\x20motivácia\x20>\x200\x20a\x20level\x20postavy\x20<\x2010.\x20(Default\x20použije\x20v\x20každom\x20inom\x20prípade.)','motivationEventBuff','#jobFilter','-15.5px','Enable\x20town\x20build\x20as\x20backup\x20option.\x20Construction\x20can\x20also\x20serve\x20as\x20an\x20alternative\x20activity\x20in\x20cases\x20where\x20the\x20saved\x20jobs\x20do\x20not\x20provide\x20enough\x20silver\x20ones,\x20or\x20as\x20an\x20option\x20for\x20building\x20overnight.','66ef1','get_tasks','filename','Add\x20health\x20','append','testTimerThrottling','Error\x20occurred\x20in\x20\x27Dusan.loadJob\x27.\x20Retrying\x20(','OPR','center\x20-28px','<span>\x20Allow\x20motivation\x20</span>','jobAddFavorite','position','luck','charismaText','Health\x20consumables','doIt','signal','Delete\x20saved\x20gear','Nothing\x20is\x20saved\x20for\x20this\x20job!','allBonuspoints','Used\x20before:\x20<','consumName','Night\x20shift\x20worker\x20','stopCleanup','Uložiť\x20náhradné\x20mesto\x20pre\x20ukladanie\x20peňazí\x20pred\x20bojom\x20o\x20pevnosť.','buyItem','warn','wayTimes','renderWear','<span\x20style=\x27margin-left:\x2010px;\x27>\x20Attack:\x20</span>','339px','content','refillHealth','c8455','jobObj','No\x20buffs','getJobIcon','Job\x20icon','<td></td>','.Dusan2window\x20.row\x20.jobMoveDown','handleDusanStart','setCallback','online','isSessionExpired','consumablesTablePosition','healthCurrent','isHealthBelowLimit',');\x20cursor:\x20pointer;\x20margin:\x200;\x20padding:\x200;\x20display:\x20inline-block;\x20border:\x20none;\x20outline:\x20none;','skipTutorial','<span>\x20Continuously\x20refill\x20</span>','43906','Replenish\x20health\x20before\x20battle\x20if\x20the\x20current\x20health\x20in\x20battle\x20gear\x20is\x20lower\x20than\x20the\x20specified\x20percentage.','130px','[id^=\x22buff_div_','Pripojenie\x20k\x20internetu\x20sa\x20prerušilo.','background:\x20url(/images/tw2gui/iconset.png)\x20repeat\x20-32px\x2080px;\x20transform:\x20scale(0.8);\x20transform-origin:\x20center;\x20width:\x2016px;\x20height:\x2016px;\x20display:\x20inline-block;\x20flex-shrink:\x200;','Oneskoriť\x20štart/stop\x20(počet\x20minút).','e49d2','sk_SK','setHours','<div\x20id=\x27options_container\x27></div>','A-2','done','runJob','select','random','30px','The\x20West\x20-\x20Fort\x20battle\x20started','.Dusan_run','floor','maxHealth','setOffense','getById','loadJobsData','flex','game.php?window=logout&action=logout&h=','min','updateAllBonuspoints','tryFindConsumable','masterURL','start','createDonateGui','<span>','-10px','test','cash','siblings','timestamp','build_name','workPointBonus','undefined',',\x20error\x20occured.','Last\x20activity\x20','getBattleRoomByFortId','.reward-row.today','#optional_energy_textfields','</u>\x27\x20...odstraňujem\x20prácu.','<span>&#x21AA;</span>','round','fort_battle_end','<div\x20class=\x27wear_right_arm\x20wear_slot\x27\x20style=\x27display:block;position:absolute;left:-44px;top:79px;width:95px;height:138px;background:url(https://westzz.innogamescdn.com/images/window/wear/bg_sprite.png)\x200\x200\x20no-repeat;background-position:0\x200;\x27></div>','length','Save\x20a\x20backup\x20town\x20for\x20money\x20deposit\x20before\x20battle.','Motivatie\x20de\x20muncă','checkIfJobAdded','stopLevel','Set\x20Town','Stop','total','Add\x20every\x20silver\x20job\x20on\x20the\x20list\x20up\x20to\x20this\x20specified\x20rank.\x20(It\x20will\x20ignore\x20max\x20jobs\x20limit.)','allowWardrobeExport','canAddBuff','alert_3','getStatusIcon','getJobsByGroupId','#job_filter_textField','prizes','Enable\x20regeneration','text/plain','filterAllianceForts','7px','velka','canContinue','Chrome','You\x20got\x20KO.','motivationText','<span>\x20Error\x20occurs\x20(important)\x20</span>','Checkbox','Internet\x20connection\x20restored.','setStopMotivation','short','considerUseConsumable','getEventBuff','initData','</u>\x27\x20is\x20missing\x20items\x20in\x20inventory:\x20<b>','.tw2gui_dialog.system_error','&nbsp;\x20=\x20&nbsp;<b>','addActiveTab','#battle_choices_container','minBattleHealth','jobAdd','slice','The\x20West\x20-\x20Problem\x20in\x20game','defaultConsumablesSelection','fetch_town_offers','\x22></div>','isDestinationReached','<div\x20class=\x22ui_menucontainer\x22\x20/>','<div\x20style=\x27display:\x20inline-block\x27></div>','getCookies','offset','apply','loadAlertsFromLocalStorage','NFD','createElement','bid','errorLog','.Dusan2window\x20.jobRemove','26570FJpYwt','getValue','&t=','Sets','setCharacter','equipped','1733550mGoHdR','fortbattle','/index.php?page=logout','<span>\x20Refill\x20HP\x20before\x20battle\x20</span>','cost','(2)\x20\x20','data','.Dusan2window\x20.consumEnergy','Replenish\x20health\x20if\x20it\x20drops\x20below\x20a\x20certain\x20value\x20and\x20percentage\x20(e.g.,\x20if\x20HP\x20falls\x20below\x20500\x20and\x20is\x20also\x20less\x20than\x2020%\x20of\x20total\x20health).','jobFilterPreferences','version:','Uloženému\x20oblečeniu\x20pre\x20\x27<u>','color:green','Set\x20town\x20to\x20deposit\x20money\x20before\x20battle.','needReload','Saved\x20successfully.','towns','files','localStorageSet','now','Exception\x20occured\x20in\x20\x27Dusan.useBuff()\x27:\x20','stopMotivation','Job\x20set\x20not\x20assigned!','<div\x20class=\x22player-state\x22><img\x20src=\x22','&nbsp;&nbsp;&nbsp;\x20|\x20&nbsp;&nbsp;&nbsp;','jobIndex','updateCheck','clientTimedrift','jobmotivation','Allocates\x20more\x20time\x20for\x20HP\x20refill.\x20(If\x20needed,\x20allows\x20HP\x20to\x20be\x20refilled\x20with\x20two\x20consumables\x20in\x20a\x20row.)','grayscale(100%)','setValue','travelText','getConsumableIcon','tw2gui_window_tab_active','\x20\x20-\x20\x20','debouncedTestTimerThrottling','%cDestination\x20to\x20deposit\x20money\x20not\x20reached\x20within\x20timeout.','<div\x20style=\x27margin-bottom:\x204px;\x27></div>','carry','trim','Povoliť\x20možnosť\x20výstavby\x20mesta.\x20Výstavba\x20môže\x20slúžiť\x20aj\x20ako\x20alternatívna\x20činnosť\x20v\x20prípadoch,\x20kedy\x20z\x20uložených\x20prác\x20nebude\x20dostatok\x20strieborných,\x20alebo\x20ako\x20možnosť\x20stavania\x20cez\x20noc.','profession_id','Use\x20buffs\x20for\x20the\x20character\x20(duration-based)\x20and\x20for\x20traveling\x20(use-based).\x20Select\x20buffs\x20allowed\x20in\x20the\x20\x27Consumables\x27\x20section.','infinite','div._tab_id_','open','.Dusan2window\x20.jobMoveDown','buffs','consumBuffs','getMonth',')\x20\x20','Game','energyText','translationLang','index','shift','addJobFilterEvent','readAsText','strengthText','jobsFarmingGear','addUpcomingFortBattles','Povoliť\x20automatické\x20znovu\x20načítanie\x20stránky\x20(F5)\x20ak\x20to\x20bude\x20potrebné..','css','appendToCell','</span><div\x20class=\x27Dusan_skip_tutorial\x27\x20style=\x27position:absolute;\x20left:20px;\x20top:43px;\x27></div><div\x20class=\x27Dusan_run\x27\x20style=\x27position:absolute;\x20left:310px;\x20top:20px;\x27></div></div>','Enter','\x20Hours</span><br>','%cDusan\x20Timings\x20restored.','initJobs','has','Silvers','addJob','.Dusan2window\x20.jobIcon','explainer_22','</b>\x20set\x20has\x20saved\x20missing\x20item!','cocumislu','Exception\x20occured\x20when\x20loading\x20document:\x20','<span\x20style=\x22color:\x20red;\x22>CHYBA</span>:\x20Je\x20priradené\x20odstránené\x20vybavenie..\x20Skončilo\x20prémium\x20<span\x20style=\x22color:\x20blue;\x22>\x27Automatizácia\x27</span>.','<span\x20style=\x27margin-left:\x205px;\x27>\x20Def.:\x20</span>','#energy_consumables','addTab','flex-start','href','https://westsk.innogamescdn.com/images/chat/status_online.png','itemEnhance','en_DK','jobName','linkstyle','.Dusan2window\x20.consumName','building_market',')...','.Dusan2window\x20.row\x20.jobMoveUp','Dusan','Rank','maxEnergy','ui-loader','calculateJobDistances','setsAssigned','.png\x22\x20class=\x22job_icon\x22></div>','world','Trying\x20to\x20equip\x20invalid\x20set..','start_walk','consolidePosition','value','exportSettings','Pri\x20zapnutom\x20nastavení\x20\x27Night\x20shift\x20worker\x27,\x20bude\x20stavať\x20kostol\x206\x20hodín\x20cez\x20noc\x20a\x20potom\x20bude\x20pokračovať\x20v\x20klikaní\x20prác.\x20Pri\x20vypnutom\x20workerovi\x20ostane\x20stavať\x20len\x20kostol.','maxHealthForSet','friendsbar','explainer_23','version','explainer_29','&nbsp;&nbsp;\x20$\x20/\x20h','createStatisticsGui','battleDamage','maxJobRank','.row','hide','saveReloadInfo','walkToJob','Vyberie\x20každú\x20striebornú\x20prácu\x20v\x20zozname\x20až\x20do\x20tohto\x20maximálneho\x20ranku.\x20(Bez\x20ohľadu\x20na\x20maximálny\x20počet\x20prác\x20vpravo.)','jobpoints','Search\x20job\x20name','Continuing\x20jobs..','removeAlertFromLocalStorage','money','relogAllowed','<div\x20style=\x27width:\x20fit-content;\x27></div>','sessionStats','enableAutoDeposit','%\x20Speed</span><br>','Po\x20začatí\x20boja,\x20nechať\x20bojové\x20okno\x20otvorené\x20(online\x20stav).','getItemByItemId','Y2ljaW5h','stats','alert_9','jobRank','build_duration_textField','destinyGuardian','has_cooldown','Balance','Data','[id^=\x22linear_quest\x22]','WofHeartsWindow','Infinity','tabIds','deleteSavedGear','Count','bonus','jobs','runTime','createComboxJobSets','Destiny\x20prevention!\x20-\x20Call\x20limit\x20\x27','removeClass','<div\x20id=\x27battle_consumable_textfield\x27></div>','cs_CZ','Missing\x20items.','laborPointsText','cancelAll','object','.jobRank','appendChild','<div>A\x20new\x20version\x20is\x20available!\x20Please\x20update.</div>','<span>BATTLE</span><br>','outerHeight','deleteCookie','Gear\x20deleted.','The\x20West\x20-\x20Script\x20has\x20paused','openFortWindow','waitUntilDestinationIsReached','setSpeed','color:\x20cyan','Job\x20set','Stops\x20upon\x20reaching\x20a\x20new\x20level\x20or\x20daily\x20jobs\x20reset.\x20(Useful,\x20for\x20example,\x20when\x20different\x20clothing\x20needs\x20to\x20be\x20saved\x20at\x20each\x20level\x20to\x20maintain\x20~0\x20LP.)','every','Motivacion\x20de\x20trabajo','Dušan\x20&nbsp;&nbsp;','jobMoveUp','motywacji\x20do\x20prac','#buff_checkboxes','body','collect','Load\x20best\x20XP\x20jobs','Can\x27t\x20continue\x20because\x20of\x20motivation.','.tw2gui_groupframe_content_pane','character','Efficient\x20Travel\x20','findIndex','&nbsp;\x20&#8594;\x20&nbsp;','normalizeSearchKeys','Dusan-alert-','getPlayerProfileData','<div\x20id=\x22Dusan-alert-container\x22></div>','62px','#max_rank_amount','building_cityhall','.tbody','resolve','settingTraps','compareNonUniqueJobs','jobSwapped','<span\x20class=\x27jobRank\x27\x20style=\x27cursor:\x20pointer;\x27></span>','<div\x20style=\x27display:\x20flex;\x20align-items:\x20center;\x20height:\x2026px;\x20margin-bottom:3px;\x27></div>','abs','<span>\x20Sleep\x20regenerating\x20starts</span>','.progress-bar','#battle_options_container','map','addEnergyAfterJobs','querySelectorAll','durationText','townBuild','checkMotivation','localStorageRemove','count','handleVisibilityChange','color:\x20pink','handlePlayerDeath','saveAlertToLocalStorage','attendFortBattle','Got\x20stuck','remoteCall','setProduct','.Dusan2window','45px','<div\x20id=\x27added_jobs_overview\x27></div>','ready','scrollbar','getHours','getRooms','#deposit_money_field','Network\x20connection\x20lost.','energyCurrent','dummy','awaitNextSession','depositDuelProtected','Delay\x20start\x20(in\x20minutes).','Continuously\x20replenish\x20energy\x20with\x20consumables\x20that\x20fall\x20within\x20the\x20set\x20min-max\x20energy\x20range\x20(will\x20not\x20use\x20consumables\x20that\x20also\x20add\x20motivation).\x20(Tip:\x20Metal\x20bottle\x20plug\x20=\x2030%\x20energy\x20every\x2010\x20minutes.)','premiumText','100px','3px','setMotivation','2abea','deselectConsumablesWithBuffs','.Dusan2window\x20.jobMoveUp','<span>Deposit\x20amount\x20above\x20$\x20</span>','get_data','None','setDuration','54cbc','Add\x20buffs\x20','fort','walkToJob()','Hide\x20saved','useItemLoop','DelaySpan','Používať\x20aj\x20posilnenia\x20pre\x20postavu\x20(na\x20trvanie)\x20a\x20cestovanie\x20(na\x20použitia).\x20Vyberie\x20z\x20posilnení\x20\x27Buffs\x27\x20povolených\x20v\x20sekcii\x20\x27Consumables\x27.','addRunTimeEventListeners','canWork','jobRemove','Reset\x20session\x20stats','getJobSet','swapSilverJob','addEnergyOptionalMax','Opera','Added\x20jobs','equipBestGear','calcWayTo','saveCurrentGear','addBuffs','alert_5','The\x20West\x20-\x20Set\x20Error','removeRunTimeEventListeners','trigger','Dušan','.Dusan2window\x20.dummy','.txt','<div\x20id=\x27consumables_overview\x27></div>','startFlagCheck','<span>+','html','https://','granted','<div\x20id=\x27build_overview\x27\x20style\x20=\x20\x27margin:\x2030px;\x20margin-top:\x2010px;\x27></div>','RoomFortBattle','370px','checkInternetConnection','Alternating\x20between\x20jobs\x20and\x20construction.\x20Similar\x20to\x20the\x20\x27Night\x20Shift\x20worker\x27\x20setting,\x20but\x20instead\x20of\x20continuing\x20with\x20jobs,\x20it\x20will\x20first\x20build\x20for\x20a\x20specified\x20number\x20of\x20hours\x20and\x20resume\x20doing\x20jobs\x20after.','Notifications','<span>\x20Fort\x20Battle\x20prepare\x20</span>','\x20(Battle)','usedCount','setDefense','<div\x20style=\x27display:\x20flex;\x20align-items:\x20center;\x20width:\x20fit-content;\x20height:\x2026px;\x20margin-bottom:3px;\x27></div>','town_id','overlay','Work\x20motivation','<span>\x20Open\x20fort\x20window\x20to\x20appear\x20online\x20</span>','padStart','<span>\x20Don\x27t\x20deposit\x20while\x20duel\x20protected\x20</span>','Exception\x20occured\x20in\x20\x27Dusan.useConsumable\x27:\x20','cookieExpireTime','getCharacterInfo','adjustGlobalTimings','getType','max_damage','No\x20file\x20selected.','direction','cancelJobs','number','jobMotivation','getCurrentBattleTimer','substring','normalize','ERR_TUNNEL_CONNECTION_FAILED','Dec.','left','task','language','ms.','allianceForts','Mar.','getLastInvId','session','lastActiveTab','\x20Profile\x202','alert_7','includes','combobox_gear_level','path','Name','switchEquip','asc','jobFilterCondition','location','Daily\x20jobs\x20reset.\x20Farming\x20job\x20changed.','explainer_9','Recalc','appendRow','alert_2','invalidSession','openFort','setPlaceholder','alert_10','Router','Pre\x20málo\x20PB\x20nevie\x20obliecť\x20vybavenie\x20na\x20prácu:\x20\x27<u>','Job\x20name','89017','stopped','getJobName','bindTo','optionalEnergyAllowed','distance','addConsumableTableCss','explainer_16','settings','<div\x20style=\x27display:\x20flex;\x20align-items:\x20baseline;\x27></div>','altTown','lineno','changeJob','setSize','55px','loadJobSilverStatus','39px','#Dusan_sets_left','Retrying\x20equipBestGear..','saveConsumableSelection','\x27\x20retry..\x20','attr','itemUse','Missed\x20fort\x20battle.\x20Continuing\x20jobs..\x20:(','.Dusan2window\x20.jobSet','color:orange','../images/chat/servicegrade_traitor.png','selectedGearLevel','Document\x20is\x20hidden.','Last\x20Error:\x20','getColor','Save\x20current\x20gear','.Dusan2window\x20.row_head','loadActiveEventItemId','item_used','Unhandled\x20error\x20in\x20\x27Dusan.loadJob\x27:\x20','jobsTablePosition','string','updateFortBattles','setonlinestate','Použiť\x20posilnenie\x20ak\x20motivácia\x20všetkých\x20pridaných\x20prác\x20klesne\x20na\x20úroveň\x20\x27Stop\x20motivation\x27.\x20(Tip:\x20Tortové\x20ozdoby\x20+\x20Kovové\x20zátky\x20na\x20fľašu\x20=\x20ušetrené\x20Tinktúry.)','10px','hasBonus','Duel\x20protection\x20ends\x20in\x20','createSetGui','Can\x27t\x20continue\x20because\x20of\x20health.','remoteCallMode','xpJobsPreset','allConsumables','getAllFilteredUniqueJobs','<span\x20style=\x27margin-left:\x20120px;\x27><b>...</b></span><br>','town','alliance_id','Wardrobe\x20(TW\x20Calc)\x20<b>','change','wanted','unshift','makeRoute','Восстановление\x20мотивации\x20к\x20работам','error','energyCost','inherit','goDepositMoney','createAddJobButton','cookie','<span>\x20Make\x20sound\x20</span>','call','%cNotifications\x20not\x20supported\x20in\x20this\x20browser.','waiting\x20for\x20a\x20consumable\x20cooldown','show_equip','111px','380px','\x20minutes.','explainer_15','Unlocked','margin-left','cooldowns','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.flashing-red\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20red;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20animation:\x20flash-warning\x201s\x20infinite\x20alternate;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x20-15px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:\x2060px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20@keyframes\x20flash-warning\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x200%\x20{\x20opacity:\x201;\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2050%\x20{\x20opacity:\x201;\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20100%\x20{\x20opacity:\x200.0;\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','currentJob','updateStatusIcon','Jun.','160px','Wrong\x20format\x20of\x20set\x20stop\x20motivation','isArray','gameURL','next','Motivation\x20consumables','loadJobMotivation','<div\x20style=\x27margin-bottom:\x203px;\x20width:\x20fit-content;\x27></div>','Center\x20jobs','use','<div\x20class=\x27wear_left_arm\x20wear_slot\x27\x20style=\x27display:block;position:absolute;left:147px;top:52px;width:95px;height:138px;background:url(https://westzz.innogamescdn.com/images/window/wear/bg_sprite.png)\x200\x200\x20no-repeat;background-position:0\x200;\x27></div>','<div\x20class=\x22centermap\x22\x20onclick=\x22GameMap.center(','0px','showCooldown','tileSize','Prezliecť\x20a\x20zadať\x20práce\x20už\x20počas\x20cestovania\x20pre\x20ušetrenie\x20pár\x20bezvyznamných\x20sekúnd\x20:D','setBattleItem','common','Enable\x20\x27Night\x20shift\x20worker\x27\x20setting\x20to\x20build\x20church\x20for\x206\x20hours\x20over\x20night\x20and\x20then\x20continue\x20with\x20jobs.\x20With\x20disabled\x20worker,\x20it\x20will\x20keep\x20building\x20church.','createFavoriteJobShiftButton','TablePosition','getAllUniqueJobs','.\x20Index\x20must\x20be\x20less\x20than\x20','toLowerCase','filterTimeout','<div>','inventory_changed','listen','startAnimationRemoveObserver','sortJobTable','url(','getItemBaseId','Data\x20successfully\x20imported.','https://mackodusko.github.io/dusan/','Stopping','Maximum\x20jobs\x20amount.\x20Will\x20continue\x20adding\x20additional\x20silver\x20jobs\x20from\x20the\x20list\x20until\x20this\x20specified\x20amount\x20is\x20added.','reduce','inline-block','.alert-message','https://westsk.innogamescdn.com/images/chat/status_idle.png','<span\x20class=\x27ms-text\x27>ms</span>','&nbsp;\x20','entries','checkDuelProtection','Dusan-alert','LVL','Cannot\x20travel\x20to\x20job.','filterCenterJobs','parseConsumableBonuses','.Dusan2window\x20.tw2gui_scrollbar_pulley','verifyChatLeave','resumeSession','block','filterNoSilver','<label>','battleAttackText','28px','explainer_12','<div\x20id=\x27farming_assistant_skip_tutorial\x27></div>','uncarry','jobsLoaded','blur\x20focusout','activities','No\x20file\x20selected','prototype','%25','loadBuildingData','relative','canDo','%\x20Luck</span><br>','obj','<div\x20class=\x22job_rank_select_foot\x22\x20style=\x22margin-left:5px;\x22><div\x20id=\x22max_rank_amount\x22></div></div>','combobox_sets','createConsumablesTab','addFarmingAssistantWiew','run','updateRuntime','hasCharacterBonus','hasOwnProperty','fortsleep','.Dusan2window\x20.consumHealth','Allow\x20to\x20change\x20clothes\x20and\x20assign\x20jobs\x20during\x20travel\x20to\x20save\x20a\x20few\x20insignificant\x20seconds\x20:D','<div\x20id=\x27build_set_combobox\x27><span>\x20Set:\x20</span></div>','button','bad','Last\x20reset:\x20','lastResultFarming','<img\x20src=\x27https://westsk.innogamescdn.com/images/buffs/character.jpg\x27\x20style=\x27width:\x2025px;\x20height:\x2025px;\x20vertical-align:\x20middle;\x20margin-right:\x205px;\x27>','consumableSelection','closest','setEntryPoint','alert_1','</span>','executions','chat_room_removed','\x20Use</span><br>','keket','lastPosition','pants','div.tw2gui_window_tab_active','7764c','})\x22\x20class=\x22featured\x20','not','addXpBuff','b67e2','<div\x20style=\x27margin-bottom:\x202px;\x27><span>Jobs\x20in\x20this\x20session:\x20&nbsp;&nbsp;<b>','<div\x20id=\x27worker_preset_div\x27></div>','duel','installHooks','explainerTranslations','20px','createMinMotivationTextfield','checkIfSilver','jobXp','incrementAlertCount','fill','<div\x20class=\x22status-icon-container\x22></div>','inventory_loaded','val','setMiniTitle','.Dusan2window\x20.jobStopMotivation','fortId','</b></p>','<p>','user-select:\x20none;\x20font-family:\x20Arial,\x20Verdana,\x20sans-serif;\x20font-size:\x2013px;\x20width:\x209px;\x20height:\x2027px;\x20background:\x20url(https://westsk.innogamescdn.com/images/tw2gui/pagebar/arrows.png);\x20background-position:\x20-50px\x200px;\x20transform:\x20rotate(','isDuelProtected','requireInteraction','setRoomState','getConsumeCooldown','innerHTML','addProductBuff','Nemôže\x20pokračovať\x20kvôli\x20energii.','&nbsp;&nbsp;\x20xp\x20/\x20job','#health_consumables','text','The\x20West\x20-\x20Fort\x20battle\x20prepare','waitForInternetConnection','then','addTravelBuff','Textfield','Town\x20changed.','observe','Worker','wardrobe','isGearEquiped','keyup\x20change','getRow','<div\x20class=\x27wear_belt\x20wear_slot\x27\x20style=\x27display:block;position:absolute;left:147px;top:200px;width:93px;height:94px;background:url(https://westzz.innogamescdn.com/images/window/wear/bg_sprite.png)\x200\x200\x20no-repeat;background-position:-95px\x200;\x27></div>','Build\x20Church\x20during\x20night\x20','getActiveEventId','div','<br>','Neaktívne\x20okno\x20prehliadača\x20spôsobuje\x20spomalenie\x20scriptu!\x20<br>Reštartuj\x20prehliadač\x20a\x20použi\x20flag:\x20<b>--disable-background-timer-throttling</b>','relog','importSettings','queue','<img\x20src=\x22/images/icons/star.png\x22>','<img\x20src=\x27https://westsk.innogamescdn.com/images/buffs/travel.jpg\x27\x20style=\x27width:\x2025px;\x20height:\x2025px;\x20vertical-align:\x20middle;\x20margin-right:\x205px;\x27>','Add\x20new\x20job','133f9','The\x20West\x20-\x20Script\x20has\x20stopped','forEach','alert_11','playerId','<div\x20style=\x27display:\x20inline-block;\x20margin-left:\x2025px;\x20margin-right:\x2025px;\x27></div>','jobid','1px','Počas\x20priebežného\x20dopĺňania\x20energie\x20povoliť\x20aj\x20posilnenia,\x20ktoré\x20môžu\x20doplniť\x20aj\x20motiváciu.\x20(Neodporúčam.\x20Užitočné\x20len\x20v\x20prípade,\x20že\x20nie\x20je\x20dostatok\x20lepších\x20posilnení.)','Error\x20checking\x20job\x20at\x20index\x20','createTownBuildGui','Energy','<span>XP\x20in\x20total:\x20&nbsp;','jobIdx','left_arm','munka\x20motiváció','consumable','background:\x20url(/images/tw2gui/iconset.png)\x20repeat\x20-80px\x2048px;\x20transform:\x20scale(1.0);\x20transformOrigin:\x20center;\x20width:\x2016px;\x20height:\x2016px;\x20position:\x20absolute;\x20top:\x200;\x20left:\x200;\x20margin-top:\x201px;','_currentState','allowMotivationOptional','request','filterEnoughLP','focus','.json','#Dusan_sets_right','notificationSettings','Average\x20interval:\x20','<div\x20style=\x27display:\x20flex;\x20align-items:\x20center;\x20width:\x20fit-content;\x20height:\x2035px;\x27></div>','window','25px','Travel','hover','<div\x20id=\x27statistics_overview\x27\x20style\x20=\x20\x27margin-left:\x2010px;\x20margin-top:\x205px;\x20user-select:\x20text\x27></div>','debouncedSetCookies','function','Save','speed','farmingAssistant','<div\x20id=\x27settings_overview\x27\x20style\x20=\x27margin-left:\x2010px;\x20margin-top:\x205px;\x20overflow:\x20hidden;\x20white-space:\x20nowrap;\x27></div>','.Dusan2window\x20.row\x20.jobXp','<button>','script.user.js','changelog','cors','Level\x20up.','switch_equip','battleDamageText','battle_prep','items','skills','cancel','profile2','<div\x20class=\x27delay-wrapper\x27></div>','HMAC','inventory','250px','refreshTab','uniqueJobs','appendToFooter','<style>','accept','vybit','classList','other','addLuckBuff','motivation','Nemôže\x20pokračovať\x20kvôli\x20zdraviu.','Measured\x20intervals:\x20','Settings','setCookies','Problem\x20switching\x20equip\x20due\x20low\x20LP..\x20\x27Dusan.runJob\x27\x20retry..','formatInputNumber','If\x20unable\x20to\x20replenish\x20energy/motivation/health,\x20at\x20least\x20go\x20regenerate.\x20Will\x20regenerate\x20in\x20closest\x20fort\x20or\x20in\x20closest\x20town.','divMain','status','.fancytable','Health','depositAmount','290px','selected','Fort\x20Defend','.tw2gui_button:nth-child(1)','healthStopValue','<div\x20id=\x27buttons_div\x27></div>','automation','explainer_1','gear','<span>:\x20&nbsp;</span>','contains','ceil','class','white-space:\x20nowrap;\x20overflow:\x20hidden;\x20text-overflow:\x20ellipsis;\x20display:\x20inline-block;\x20max-width:\x20100%;','Import','<div\x20class=\x22job\x22\x20style=\x22left:\x200;\x20top:\x200;\x20position:\x20relative;\x22><div\x20onclick=\x22javascript:GameMap.JobHandler.openJob(','calcHealthRefill','Request\x20Timeout','\x20-\x20','time','travelTime','isSelected','AUTO_CALC','consumSelected','jobIcon','innerText','removeWindowContent','[error]','createSkipTutorialDiv','<span><b>Last\x20auto-refresh:</b>\x20&nbsp;</span>','8px','addEnergyOptional','checkIfConsumableAdded','sesData','filterJob','addClass','.world.name','Fort\x20Attack','GET','querySelector','<img/>','verifySilverJobs','match','The\x20West\x20-\x20Duel\x20protection','parse','50px','disconnect','permission','building_bank','setCount','addSleepPlacesItems','TutorialCloud','.tw2gui_dialog_actions','removeEventListener','f6cdb','handleNetworkChange','findJobData','jobsToAdd','Skip\x20tutorial','.tw2gui_button','getOptimalRoute','Dusan:\x20Hooks\x20installed.\x20Max\x20wait\x20time\x20(','checked','profession','lastReloadTime','cursor','find','explainer_3','building_hotel','setSelected','digest','setHiding','showNotification','Motivation','nowrap','\x27Travel\x20set\x27\x20could\x20not\x20be\x20equipped!','Current\x20gear\x20saved.','addedJobsOld','Start\x20Build\x20now','TYPE_ERROR','12LNHZFn','regenerationSet','belt','premium','removeJob','<span\x20style=\x22color:\x20red;\x22>ERROR</span>:\x20Deleted\x20set\x20is\x20still\x20assigned..\x20<span\x20style=\x22color:\x20blue;\x22>\x27Automation\x27</span>\x20premium\x20ended.','.Dusan_skip_tutorial','favoriteJobsTablePosition','TYPE_SUCCESS','Stats','<div\x20class=\x27wear_pants\x20wear_slot\x27\x20style=\x27display:block;position:absolute;left:50px;top:258px;width:93px;height:138px;background:url(https://westzz.innogamescdn.com/images/window/wear/bg_sprite.png)\x200\x200\x20no-repeat;background-position:0\x200;\x27></div>','tb_balance_input_','jobs_town','\x20while\x20running\x20job.','right_arm','Počká\x20do\x20nočného\x20reštartu\x20motivácie\x20prác\x20a\x20až\x20potom\x20začne\x20script\x20pracovať.\x20(V\x20prehliadačoch\x20ako\x20napr.\x20\x27Epic\x20Privacy\x20browser\x27,\x20nemusí\x20fungovať\x20správne!)','workpoints','itemId','9217116btrPSw','0.1','tryUseBuff','flashing-red','useSpecialConsumable','addMoneyBuff','.Dusan2window\x20.jobDistance','title','Buffs','one','Including:','SHA-256','%</b>','battleDefendText','%cDusan.wearCarry\x20not\x20finished\x20within\x20timeout,\x20continuing\x20execution...','Builder','No\x20errors\x20logged.','getUniqueJobs','startTime','</b></span></div>','isFinished','Saves\x20currently\x20equipped\x20gear\x20as\x20the\x20best\x20ones\x20to\x20equip\x20when\x20starting\x20this\x20job.','getBestGear','createFavoriteJobsTab','market_offer_id','explainer_5','jobFilter','height','maxStage','72739','updateChanges','.Dusan2window\x20.row\x20.jobDistance','init','forts','.Dusan2window\x20.jobRank','formatDuration','wear','.world.last_played\x20>\x20div:nth-child(2)','mobilityText','click','Sleep\x20regenerating:\x20','startsWith','buyDialog','locale','getItem','setTraps','2283e','.jobRankInput','Failed\x20to\x20import\x20data:\x20','Export','Set','Dusan_','setLuck','forts_town','186df','Use','concat','isGearSaved','MAX_VALUE','<div\x20style=\x27display:\x20flex;\x20align-items:\x20center;\x20height:\x2028px;\x27></div>','revokeObjectURL','err','getTime','.Dusan2window\x20.tw2gui_scrollpane_clipper_contentpane','interval','addWardrobeIcon','some','hoursAmount','enable','addedJobsTablePosition','#deposit_options_container','%\x20Money</span><br>','replace','taskqueue-ready','7309f40db6d2c25d6992105c6193c49740bd85d8ef360dd0b695a16ec0935e7d','Your\x20VPN\x20provider\x20does\x20not\x20allow\x20connection:\x20','get','filterBestGear','addedJobsChanged','maxRetries','90deg','profile','26px','%cBest\x20gear\x20not\x20properly\x20equipped..\x20\x27','wof','%\x20Product</span><br>','createRemoveJobButton','taskqueue-updated','<span>Session\x20runtime:\x20&nbsp;<b>','\x20somehow..','Doplniť\x20zdravie\x20v\x20prípade\x20že\x20klesne\x20pod\x20určitú\x20hodnotu\x20a\x20zároveň\x20pod\x20určitý\x20počet\x20percent\x20(napr.\x20ak\x20má\x20menej\x20ako\x20500\x20HP\x20a\x20zároveň\x20je\x20to\x20aj\x20menej\x20ako\x2020%\x20z\x20celkového\x20zdravia).','cancelJobsPromise','date_start','show','character_weapon_changed','getCapital','moneyText','equipBestCustomGear','Table','getItemsByItemIds','loadAccountSettings','.Dusan2window\x20.row\x20.jobStopMotivation','localStorageGet','church','enhanceToColor','canBuild','type','date_done','%cDouble-call\x20warning!\x20Async\x20function\x20\x27Dusan.walkToJob\x27\x20is\x20already\x20in\x20progress..\x20return..','9999','fort_battle_joined','autoLogin','selectTab','<div\x20class=\x27wear_foot\x20wear_slot\x27\x20style=\x27display:block;position:absolute;left:147px;top:302px;width:93px;height:94px;background:url(https://westzz.innogamescdn.com/images/window/wear/bg_sprite.png)\x200\x200\x20no-repeat;background-position:-95px\x200;\x27></div>','Failed\x20to\x20load\x20job\x20in\x20\x27Dusan.loadJobMotivation\x27:\x20','150px','Can\x27t\x20continue\x20because\x20of\x20energy.','handleError','Button','360px','Pravidelne\x20ukladať\x20peniaze\x20do\x20banky\x20po\x20našetrení\x20zvolenej\x20sumy.','printSum','#cookie','<div\x20class\x20=\x20\x27jobs_search_foot\x27\x20style=\x27position:relative;\x20align-items:\x20center;\x20display:\x20flex;\x20justify-content:\x20space-between;\x27><div\x20id=\x27jobFilter\x27style=\x27margin-right:\x2025px;\x27></div><div\x20id=\x27job_only_silver\x27style=\x27margin-right:\x2015px;\x27></div><div\x20id=\x27job_no_silver\x27style=\x27margin-right:\x2010px;\x27></div><div\x20id=\x27job_center\x27style=\x27margin-right:\x2010px;\x27></div><div\x20id=\x27job_hide_favorites\x27style=\x27\x20\x27></div></div>','Error\x20parsing\x20JSON\x20file','<span\x20style=\x22color:\x20red;\x22>CHYBA</span>:\x20Je\x20priradené\x20odstránené\x20vybavenie..\x20Znova\x20priraďte\x20všetky\x20\x27Sets\x27!','event_all','loadMapData','Set\x200\x20to\x20never\x20stop\x20for\x20motivation\x20refill.','alert-message','filterConsumables','Enable\x20farming\x20assistant','#buy_amount_textField','coefficient','.Dusan2window\x20.row\x20.jobMotivation','1\x20hour','getUTCDate','<span><b>Notify\x20when:</b></span>','MAX_SAFE_INTEGER','addHealth','msg','5px','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','addJobTableCss','attackSet','createObjectURL','animateRewards','consumableWaitingTime','font-weight','getJobById','center','70px','Luck\x20','login','Awaited\x20session\x20started.\x20','Nenašlo\x20sa\x20žiadne\x20vhodné\x20posilnenie\x20na\x20použitie..','traderBuy','notifications','Automatically\x20participate\x20in\x20upcoming\x20fort\x20battles\x20and\x20change\x20into\x20the\x20selected\x20set.\x20After\x20the\x20battle\x20ends,\x20job\x20clicking\x20will\x20resume.\x20(Before\x20the\x20battle,\x20it\x20won\x27t\x20replenish\x20energy\x20that\x20cannot\x20be\x20used\x20in\x20time.)','Select\x20all','result','display:\x20none;','12804841qQSfBQ','here','xpText','loadJob','cancelTimerTestLoop','<div\x20id=\x27favorite_jobs_overview\x27></div>','moneyDepositAllowed','autoReload','cc646','BagSearch','.critical-error','uses','explainer_17','event_','setLabel','limit','<div\x20style=\x27margin-top:\x2015px;\x20font-weight:\x20bold;\x27>Changelog:</div>','startSpecialConsumableInterval','Level\x20','getElementById','getDuelProtection','finishRun','7ad46','>\x20|\x20Waited\x20for:\x20<','fort_id','Jobs','7600a','getJobFilterParams','opacity','waitingReasons','\x27\x20-\x20','Dusan_data_','sort','Notifications\x20not\x20supported\x20in\x20this\x20browser','\x20(LOW\x20HP)','removeConfirmDialog','.Dusan-alert','Exception\x20occured\x20in\x20\x27Dusan.runJob\x27:\x20','addMotivation','handleDeath','pointer','#button_set_town','join','#jobs_overview\x20.row.row_','calculateDistance','build','calcWayTime','&s=','toFixed','_originalLog','</u>\x27\x20v\x20inventári\x20chýba:\x20<b>','background-image','encode','<div\x20style=\x27margin-top:\x2013px;\x20width:\x20fit-content;\x27></div>','0a91d','hasSpecialBonus','usesText','.leave_channel','tutorial_finished','sleepTime','loadCityHall','<div\x20class=\x27wear_neck\x20wear_slot\x27\x20style=\x27display:block;position:absolute;left:-27px;top:1px;width:74px;height:74px;background:url(https://westzz.innogamescdn.com/images/window/wear/bg_sprite.png)\x200\x200\x20no-repeat;background-position:-189px\x200;\x27></div>','<div\x20id=\x27start_Dusan\x27\x20style=\x27position:relative;\x27><span\x20class\x20=\x27Dusan_state\x27\x20style=\x27\x20position:absolute;\x20left:20px;\x20top:8px;\x20font-family:\x20Arial,\x20Helvetica,\x20sans-serif;\x20font-size:\x2015px;\x20font-weight:\x20bold;\x27>\x20Current\x20state:\x20','userAgent','<div\x20style=\x27display:\x20inline-block;\x27></div>','equipGear','swapSilverJobs','removeConsumable','ItemSetManager','.Dusan2window\x20.row\x20.jobSet','.world_row','<div\x20style=\x27line-height:\x201.3;\x20display:\x20flex;\x20align-items:\x20center;\x27>','findAllConsumables','15px','<div\x20id=\x27Dusan_sets_window\x27\x20style=\x27display:block;\x20position:relative;\x20width:650px;\x20height:430px;\x27><div\x20id=\x27Dusan_sets_left\x27\x20style=\x27display:block;\x20position:absolute;\x20width:270px;\x20height:390px;\x20top:0px;\x20left:0px;\x27></div><div\x20id=\x27Dusan_sets_right\x27\x20style=\x27display:block;\x20position:absolute;\x20width:300px;\x20height:410px;\x20top:0px;\x20left:325px\x27></div></div>','Regen','stretch','space-between','visibilitychange','Manager','Failed\x20to\x20load\x20job\x20data.','Na\x20doplnenie\x20HP\x20si\x20vyhradí\x20viacej\x20času.\x20(Podľa\x20potreby\x20umožní\x20doplniť\x20dvoma\x20HP\x20posilneniami\x20po\x20sebe.)','toAdd','Jul.','setXp','getMinutes','1de13','Failed\x20to\x20load\x20account\x20settings.','importKey','off','addConsumable','\x20Uses</span><br>','span','healthStopPercent','.Dusan2window\x20.consumMotivation','explainer_27','<div\x20style=\x27margin-left:\x2065.5px;\x20display:\x20inline-flex;\x20align-items:\x20center;\x20text-align:\x20center;\x20height:\x2026px;\x20line-height:\x2026px;\x27></div>','170px','Add\x20motivation\x20','states','b4716','manual_input','Auto-reload\x20occured..\x20Reason:\x20','_waytime','createRemoveFavoriteJobButton','sign','experience','log','parseJobData','Start','<span\x20style=\x22color:\x20orange;\x22>WARNING</span>:\x20Vybavenie\x20sa\x20nedá\x20obliecť..\x20Skončilo\x20prémium\x20<span\x20style=\x22color:\x20blue;\x22>\x27Automatizácia\x27</span>.','alert_4','canAttendBattle','healthSet','indexOf','addSortEventsHeader','canAddMissing','<span\x20style=\x22','diagnostics','bco.pyth','Navigator\x20reports\x20online,\x20but\x20fetch\x20check\x20failed.\x20Still\x20waiting...','2px','down','be464','Loader','<div></div>','#motivation_consumables','setMoney','\x22></span>','\x20while\x20traveling\x20to\x20job.','getItemLevel','defineProperty','60px','fromCharCode','#farming_assistant_options','<span\x20style=\x27margin-right:\x2010px;\x27>\x20</span>','alertTranslations','Премиум','handleCollectLoginReward','<span>⚠\x20Login\x20reward\x20not\x20collected!</span>','&nbsp;<img\x20src=\x22../images/window/jobs/sortarrow_desc.png\x22/>','<div\x20id=\x27optional_energy_textfields\x27></div>','max','useable','countSetBits','Sell','43px','statsTime','<img\x20src=\x27\x27>','çalışma\x20motivasyonu','get_minimap','setSet','hidden','good','\x20while\x20equipping\x20best\x20gear.','JobHandler','isolateAlertMessage','loaded','350px','appendTo','defSet','Timer\x20test.','Silver\x20jobs\x20mismatch.\x20Retrying..\x20','equipError','health','battleData','origin','item','attend','homeTown','-90deg','Energy\x20consumables','checkAndClickRewardButton','addEnergy','40px','isInteger','#ui_menubar','addEventListener','heldKarpSymmetric','11px','createDistanceMatrix','<span>Add\x20energy\x20</span>','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</span>','explainer_7','.Dusan2window\x20.consumIcon','ONE_TIME_EVENT','.tw2gui_dialog_framefix','73px','updateAllJobDistances','auction_price','XP\x20','addComboboxSetItems','#cookieLogged','<span\x20style=\x27margin-top:\x203px;\x27>','TWCalc_Wardrobe','Confirm\x20Timer\x20test.','size','Feb.','sendEventCurrency','first','setSetForAllJobs','attributeName','bold','set','searchUseBonus','startReloadObserver','top','#options_container','No\x20silvers','isMotivationAboveLow','135px','offline','alert-title','getClosestFort','consumHealth','hidingText','addedJobs','.tw2gui_window.inventory','display','Scheduled\x20stop.','</span><br>','getFullYear','lastResult','.Dusan2window\x20.jobAdd','none','account','reloadInfo','checkForPremium','Error\x20parsing\x20JSON\x20file:\x20','b0c49','changeConsumableSelection','enableRegeneration','equip_error','440px','application/json','Waiting\x20time:\x20&nbsp;','usetype','hasLoginBonus','Dusan.runJob','Featured','parseStopMotivation','forceCollectLoginReward','Deposit\x20money','Unhandled\x20error\x20in\x20\x27Dusan.loadJobsData\x27:\x20','Change\x20Town','cssText','exportFarmingGear','Wrong\x20format\x20of\x20energy\x20min\x20%\x20value.\x20Please\x20set\x20a\x20number.','item_id','SYS_WARNING','152GAaVMq','totalMotivationLeft','prop','paySpin','level_0','<span\x20class=\x27count\x27\x20style=\x27display:\x20block;\x27>','<span>Jobs\x20in\x20total:\x20&nbsp;','createMenuIcon','Job\x20added.','#optional_energy_container','minHealth','neck','ItemManager\x20is\x20not\x20initialized\x20yet:\x20','filterOnlySilver','Loading...','changeSelectionAllConsumables','.twdb_banking','<div><b>Filter:\x20</b></div>','Jan.','04e84','\x20ms.\x20(expected:\x20','.reward-row','profile0','d1e34','a1d03','pop','.profile-checkbox','<div\x20id=\x27optional_energy_wrapper\x27></div>','all','isRunning','product','setDeposit','visibilityState','raw','permaLogged','createNotificationsGui','48dc7','TYPE_HINT','consumIcon','Destination\x20not\x20reached\x20(walkToJob).\x20Server\x20error..?','catch','Error\x20in\x20Dusan.checkMotivation.\x20Invalid\x20index:\x20','onLine','findJob','showAlert','#job_hide_favorites','maxAllowedEnergy','295px','<span>Default\x20set:\x20</span>','Combobox','<div\x20id=\x22profileContainer\x22\x20style=\x22display:flex;\x20gap:15px;\x20margin-left:15px;\x22>','\x20in\x20\x27Dusan.verifySilverJobs()\x27:\x20','jobMoney','<span>+Attributes..</span><br>','Request','</strong>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x27display:\x20inline-block;\x27>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','loadAllConsumablesSelection','No\x20internet\x20connection.\x20Waiting\x20to\x20retry...','column','<img\x20src=\x22/images/icons/dollar.png\x22>','DOM','<div\x20id=\x27buff_checkboxes\x27></div>','leaveChat','isMotivationAbove','You\x20are\x20gay\x20:)','Loaded\x20and\x20Saved\x20successfully.','image','dusan_stopped','building','forceLogout','Problem\x20starting\x20job\x20due\x20low\x20LP..\x20\x27Dusan.runJob\x27\x20retry..','.Dusan2window\x20.row\x20.jobName','usebonus','100%','</b>','enabled','disable','toString','stopPropagation','base_url','duration','job_groups','findProperConsumable','src','stringify','addFavoriteJobsTableCss','Dusan:\x20Hooks\x20installed.\x20Elapsed\x20time:\x20','<p><i>','explainer_30','consumablesUsed','%cDouble-call\x20warning!\x20Async\x20function\x20\x27Dusan.useConsumable\x27\x20is\x20already\x20in\x20progress..\x20return..','tok','db77e','Finished.\x20','middle','setOther','154149qxZvsE','workerProfiles','Maximálny\x20počet\x20prác.\x20Bude\x20pokračovať\x20vo\x20vyberaní\x20dalších\x20strieborných\x20prác\x20zo\x20zoznamu,\x20pokiaľ\x20ich\x20nebude\x20pridaných\x20tento\x20počet.','battles','key','reason','9px','.Dusan2window\x20.jobMoney','animal','filterFavorites','search_result','travel','sets','hasCooldown','token','reload','insertSetImages','averageMissingMotivation','Po\x20dosiahnutí\x20nového\x20levelu\x20/\x20dennom\x20resete\x20prác\x20sa\x20zastaví.\x20(Užitočné\x20napr.\x20ak\x20po\x20každom\x20leveli\x20treba\x20uložiť\x20iné\x20oblečenie\x20pre\x20udržanie\x20~0\x20PB.)','<span\x20style=\x27margin-right:10px;\x27></span>','<div\x20id=\x27deposit_money_field\x27></div>','No\x20jobs\x20to\x20run.','Network\x20status\x20changed:\x20You\x20are\x20currently\x20','removeActiveTab','jobsBestGear','level','<span\x20style=\x22display:\x20flex;\x20align-items:\x20center;\x20gap:\x203px;\x20max-width:\x20100%;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','pracovní\x20motivace','jobDistance','#button_test_notification','gui','add','^.*','busy','Stuck\x20in\x20loading\x20screen.\x20Retrying..\x20','consumMotivation','Dusan-alert-container','<span>\x20Hours\x20amount\x20to\x20build:\x20</span>','<div\x20id=\x27donate_overview\x27\x20style=\x27display:\x20flex;\x20gap:\x2020px;\x20margin-top:\x2010px;\x20justify-content:\x20center;\x20align-items:\x20center;\x20height:\x20350px;\x20overflow:\x20hidden;\x20white-space:\x20nowrap;\x27></div>','Enable\x20notifications','<div\x20class=\x22menucontainer_bottom\x22\x20/>','Dusan.loadCityHall:\x20Invalid\x20JSON\x20response\x20or\x20callback\x20not\x20provided.','profile1','<div\x20id=\x27battle_health_wrapper\x27></div>','div.tw2gui_window_tab','isItemsBuffActive','explainer_4','<div\x20id=\x27farming_assistant_checkbox\x27></div>','Login\x20error\x20at\x20\x27checkWorldRows()\x27:\x20','explainer_28','setJobSet','.Dusan2window\x20.row\x20.jobAdd','setNewHomeTown','#use_amount_textField','MyClient','<b\x20style=\x22height:15px;\x20overflow:\x20hidden;\x22>','getSeconds','setBattleDamage','wear_image','<span>\x20Script\x20has\x20Stopped\x20</span>','getItemImage','hasBattleBonus','profile-checkbox','id-','unlisten','energy','clearInterval','description','#battle_health_textfield','createAddedJobsTab','background:\x20url(/images/tw2gui/iconset.png)\x20repeat\x20-32px\x20112px;\x20transform:\x20scale(1.0);\x20transformOrigin:\x20center;\x20width:\x2016px;\x20height:\x2016px;\x20position:\x20absolute;\x20top:\x200;\x20left:\x200;\x20margin-top:\x201px;','<span>\x20Use\x20consumable\x20</span>','keydown','Invalid\x20session.\x20','(.*)$','invalid\x20session','setSetForFavoriteJobs','<span>\x20Fort\x20Battle\x20starts\x20</span>','rewards','split','town\x20building','level_','Dopĺňať\x20energiu\x20priebežne\x20posilneniami,\x20ktoré\x20sa\x20nachádzajú\x20v\x20stanovenom\x20rozsahu\x20%\x20pridanej\x20energie\x20min\x20-\x20max\x20(nepoužije\x20posilnenia\x20ktoré\x20pridávajú\x20aj\x20motiváciu).\x20(Tip:\x20Kovové\x20zátky\x20na\x20fľašu\x20=\x2030%\x20energie\x20kažých\x2010\x20minút.)','explainer_8','setWorkerProfile','starting..','findAddedJob','keys','getBestSet','setWidth','#filter_text','consumablesSelection','stack','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','input','push','addAddedJobsTableCss','sleep','hasLowHealth','jobsBelowMotivation','nightBuild','Notification\x20test\x20message\x20-\x20','&nbsp;&nbsp;\x20xp\x20/\x20h','remove','createDelayInput','deposit','calcMaxHealth','color:\x20orange','Job\x20with\x20ID\x20','explainer_11','<div\x20class=\x27route_warning\x27\x20style=\x27position:absolute;\x20left:20px;\x20top:40px;\x20font-family:\x20Arial,\x20Helvetica,\x20sans-serif;\x20font-size:\x2013px;\x20font-weight:\x20bold;\x27>Jobs\x20changed!\x20(Press\x20\x27Recalc\x27\x20to\x20recalculate\x20route).</div>','fort_building_barracks','Not\x20enough\x20LP\x20to\x20equip\x20Job\x20set\x20for:\x20\x27<u>','getMainDiv','useConsumable','handleButtonStopClick','%\x20XP</span><br>','currentState','<input>','Exception\x20occured\x20in\x20\x27removeUiElement()\x27\x20while\x20removing\x20DOM\x20element\x20','subtle','Allows\x20the\x20script\x20to\x20run\x2024/7.\x20Automatically\x20switches\x20silver\x20jobs\x20based\x20on\x20the\x20\x27Rank\x27\x20order\x20saved\x20in\x20the\x20\x27Worker\x27\x20section.\x20(Also\x20collects\x20the\x20login\x20bonus.)\x20(It\x20may\x20not\x20work\x20properly\x20in\x20browsers\x20such\x20as\x20\x27Epic\x20Privacy\x20browser\x27!)','\x20minutes\x20ago..\x20Page\x20will\x20auto\x20refresh\x20in\x20','cancelSleep','&nbsp;&nbsp;\x20','10316224MgVmMT','Default','Wrong\x20format\x20of\x20energy\x20max\x20%\x20value.\x20Please\x20set\x20a\x20number.','URL','update.txt?','allowed','from','<div\x20id=\x27battle_choices_container\x27></div>','townid','useBuff','.json,\x20.txt','removeChild','<div><b>Last\x20used:\x20&nbsp;</b>','Apply','wearHandleClothChange','Big','Sep.',':</i></p>\x20','offense','stop','91px','buildings','addItem','style','#battle_health_tank','battleConsumable','Build','Enable\x20auto-refresh\x20','Error\x20parsing\x20JSON\x20file:','Firefox','jobStopMotivation','min_damage','.cemetery\x20.tw2gui_window_buttons_close','jobstarsValue','Distance\x20','visible','fail','refresh','addEnergyOptionalMin','isWearing','#000','foot','addColumn','startTimerTestLoop','equip_manager_id','favoriteJobs','member_count','createComboxFavoriteJobSets','%cDouble-call\x20warning!\x20Async\x20function\x20\x27Dusan.runJob\x27\x20is\x20already\x20in\x20progress..\x20return..','addedJobsHasChanged','jobMoveDown','#job_center','timer','getBattleRooms','filterUniqueJobs','silent','<span>\x20Require\x20interaction\x20</span>','space-around','buildTownBuilding','maxRank','bufftype','head','healthPointsText','consumables','no-cors','wear_changed','assign','visibility','jobSet','dusan','compareUniqueJobs','During\x20continuous\x20energy\x20replenishment,\x20also\x20allow\x20consumables\x20that\x20can\x20add\x20motivation.\x20(Not\x20recommended.\x20Useful\x20only\x20if\x20there\x20aren\x27t\x20enough\x20better\x20consumables.)','.Dusan2window\x20.jobName','sec','updateStatistics','selectedSet','<div\x20id=\x27battle_health_textfield\x27></div>','toCancel','Use\x20consumable\x20if\x20the\x20motivation\x20of\x20all\x20Added\x20jobs\x20drops\x20to\x20the\x20\x27Stop\x20motivation\x27\x20level.\x20(Tip:\x20Cake\x20decorations\x20+\x20Metal\x20bottle\x20plugs\x20=\x20saved\x20Tinctures.)','Exports\x20saved\x20clothing\x20for\x20the\x20current\x20job\x20to\x20a\x20file\x20and\x20allows\x20for\x20re-importing\x20saved\x20outfits.\x20(Useful,\x20for\x20example,\x20when\x20changing\x20or\x20clearing\x20web\x20browser.)','changes','loadSets','Automaticky\x20sa\x20zúčasní\x20nadchádzajúceho\x20boja\x20o\x20pevnosť\x20a\x20prezlečie\x20vybraný\x20set.\x20Po\x20skončení\x20boja\x20bude\x20pokračovať\x20v\x20klikaní\x20prác.\x20(Pred\x20bojom\x20nebude\x20dopĺnať\x20energiu,\x20ktorú\x20by\x20nestihol\x20využiť.)','getSlotByItemId','</div>','download','name','4px','explainer_13','_timer','dusanData','absolute','#333','hasTutorialQuest','canUseConsume','hiding','textContent','<div\x20class=\x27Dusan2window\x27/>','page','.Dusan2window\x20.jobXp','job','<span>\x20-\x20Minimum\x20battle\x20HP\x20%\x20</span>','<div\x20style=\x27float:\x20left;\x20display:\x20flex;\x20align-items:\x20center;\x27></div>','<div\x20style=\x27max-width:\x20450px;\x27>','cityhall_build','-40px','className','requestPermission','shuffle','getClosestTown','getUTCHours','cicina','<span>\x20Tank\x20HP\x20</span>','Dialog','equipSet','blur','<div\x20class=\x27item\x20item_inventory\x20hasMousePopup\x27>','3663DhmxmN','9bf70ba66cdc4acefb858e1346bd756a418d8bfaf5bf13bb24c3a9c53e487b31','offsetParent','task_error','getItems','=;\x20expires=Thu,\x2001\x20Jan\x201970\x2000:00:00\x20UTC;\x20path=/;','alerts','110px','fortBattle','sessionData','setTravel','.reward_','#battle_consumable_textfield','.Dusan2window\x20.row\x20.jobAddFavorite','<br><br>','Stop\x20after:\x20level\x20up\x20/\x20jobs\x20reset','.status-icon-container\x20img','silver','isTank','Automatically\x20deposit\x20money\x20in\x20the\x20bank\x20when\x20selected\x20amount\x20is\x20reached.','<img\x20src=\x22../images/jobs/','isStopMotivationZero','hotel_level','.tfoot','margin-left:\x208px;\x20transform:\x20scale(1.1);\x20transformOrigin:\x20center;\x20width:\x2016px;\x20height:\x2019px;\x20background:\x20url(\x27https://westsk.innogamescdn.com/images/window/messages/icons.png?2\x27)\x20repeat\x20scroll\x200\x200\x20transparent;\x20background-position:\x20-292px\x20-4px;\x20padding:\x200;\x20border:\x20none;\x20outline:\x20none;\x20display:\x20inline-block;\x20cursor:\x20pointer;\x20user-select:\x20none;\x20font-size:\x2013px;\x20white-space:\x20nowrap;\x20line-height:\x2029px;','<span\x20style=\x27font-weight:\x20initial;\x27><b>Add\x20more\x20if\x20less\x20than:\x20</b></span>','depositMoney','Run\x20saved\x20jobs','<span>\x20Build\x20over\x20night\x20</span>','<span></span>','Deselect\x20all','7eb35','Await\x20jobs\x20reset','isMotivationRequired','createJobsTab','.tw2gui_scrollpane','delay_textField','80px','createSettingsGui','Aug.','onlyNumeric','setExperience','fort\x20battle','.Dusan2window\x20.consumBuffs','0bd84','setUpItems','setMinSize','setItem','onanyw','Umožní\x20scriptu\x20fungovať\x2024/7.\x20Automaticky\x20vymení\x20strieborné\x20práce\x20podľa\x20poradia\x20\x27Rank\x27,\x20ako\x20sú\x20uložené\x20v\x20sekcii\x20\x27Worker\x27.\x20(Vyzdvihne\x20aj\x20prihlasovací\x20bonus.)\x20(V\x20prehliadačoch\x20ako\x20napr.\x20\x27Epic\x20Privacy\x20browser\x27,\x20nemusí\x20fungovať\x20správne!)','2f031','motivação\x20de\x20trabalho','groupId','#build_set_combobox','nightShiftWorker','.wear_','Allow\x20automatic\x20page\x20refresh\x20(F5)\x20if\x20necessary.','allJobs','inline-flex','tryUseConsumable','wayData','%cThere\x20was\x20problem\x20equipping\x20best\x20gear\x20for\x20job:\x20\x27','updateFavoriteJobs','Resource','Nemôže\x20pokračovať\x20kvôli\x20motivácii.','lang','Uloží\x20aktuálne\x20oblečené\x20veci\x20ako\x20ako\x20tie\x20najlepšie,\x20ktoré\x20bude\x20obliekať\x20pri\x20začínaní\x20tejto\x20práce.','.com/?key=','collectAll','Notification','addListener','searchAttrib','scale(0.85)','prepend','_initRewards','saveWayTimes','bonuses','Doplniť\x20zdravie\x20pred\x20bojom,\x20ak\x20aktuálne\x20zdravie\x20v\x20bojovom\x20oblečení\x20je\x20menšie\x20ako\x20počet\x20stanovených\x20percent.','makeFavoriteJobCheckbox','<img\x20src=\x27https://westsk.innogamescdn.com/images/buffs/items.jpg\x27\x20style=\x27width:\x2025px;\x20height:\x2025px;\x20vertical-align:\x20middle;\x20margin-right:\x205px;\x27>','advancedWalkingToJob','.Dusan2window\x20.row','createWindow','52460mpPvOh','yield','message','prepareJobRun','wearCarry','-13.5px','defense','Exception\x20occured\x20in\x20\x27Dusan.walkToJob\x27:\x20','awaiting\x20jobs\x20reset','<div\x20id=\x22Menu\x22\x20class=\x22menulink\x22\x20title=\x22Dušan\x22></div>','Reset\x20all\x20stats','15\x20min','BankWindow','<div\x20style=\x27display:\x20flex;\x20flex-direction:\x20column;\x20margin-left:\x2010px;\x27></div>','.Dusan2window\x20.jobMotivation','</p>','fc7d7','explainer_26','bonusTypeMap','consumEnergy','8e873','getActiveTab','battle','getClosetSilverJob','Small','checkbox','Saved\x20succesfully.','target'];_0x483d=function(){return _0x26e916;};return _0x483d();}function _0x3acb(_0x3f94d9,_0x19e769){const _0x483d29=_0x483d();return _0x3acb=function(_0x3acbab,_0x2e441e){_0x3acbab=_0x3acbab-0x1ce;let _0x2083e3=_0x483d29[_0x3acbab];return _0x2083e3;},_0x3acb(_0x3f94d9,_0x19e769);}var style=document[_0x4edaea(0x8b6)](_0x4edaea(0x742));style[_0x4edaea(0x78b)]=customAlertCss,document[_0x4edaea(0x768)][_0x4edaea(0x258)](style);
+(function() {
+    'use strict';
+    const MAX_ALLOWED_JOBS = 16; // Maximum jobs handled by expensive Held-Karp algorithm.
+    const AUTO_START_DELAY = 6000; // How many milisecons to wait after auto refresh.
+    const ENERGY_WASTE_TOLERANCE = 5; // Energy above full energy loss tolerance (consumable %).
+    const FUNCTION_TIMEOUT = 5000; // Timeout for equip set attempt and other functions longer than expected execution.
+    const EQUIP_TIMEOUT = 10000; // Timeout for preventing potentional hang when equipping multiple gear pieces.
+    const NETWORK_CHECK_PERIOD = 10000; // How often would check internet connection in case of connection lost.
+    const SESSION_EXPIRE_SECOND = 30; // Delay margin to avoid premature reload.
+    const MIN_DUEL_PROTECTION = 30; // Minimum minutes of duel protection remaining for automatic money deposit.
+    const BATTLE_MAX_DURATION = 65; // Force signal 'battle end' after specified time in minutes to prevent softlock when original signal is lost.
+    const BATTLE_START_MARGIN = 60; // Stop HP refill attempt before battle timeleft (in seconds).
+    const BATTLE_BUFF_OVERWRITE_TOLERANCE = 0.25; // Maximum buff duration portion amount allowed to be wasted.
+    const GAME_LOAD_TIMEOUT = 20000; // Timeout when to consider game to be stuck in loading screen.
+    var battle_time_reserve = 240; // Time added on top of the minimal required fort battle preparation time (in seconds).
+
+    var idle_limit = 10; // Minutes of inactivity to force auto refresh.
+    var interval_long = 1000; // Performance interval for checking conditions in loops.
+    var interval_short = 500;
+    var timeout_long = 4000;
+    var timeout_regular = 2000; // Standard safe wait time between various in-game actions.
+    var timersAdjusted = false;
+
+    var avg_interval_margin = 1800; // Minimum average of 5 consecutive browser throttling interval measures
+    var single_interval_margin = 400; // Minimum measured interval for all 5 measurements
+    var timerTestTimeoutId = null;
+    var intervalTimeTestLength = 1200000;
+
+    var startStopDelayTimeoutId = null;
+    var flagCheckInterval = null;
+    var queueAnimationObserver = null;
+    var reloadObserverInterval = null;
+
+    var queuedActions = [];
+    var isQueueInProgress = false;
+    var isRequestInProgress = false;
+    var walkToJob_running = false;
+    var runJob_running = false;
+    var useConsumable_running = false;
+    var useBuff_running = false;
+    var equipBestGear_running = false;
+    var errorOccured = false;
+    var characterId = 0;
+
+    const Maco = {
+        version:'3.66.3',
+        base_url: '',//'https://username.github.io/maco/',
+        updateInfo:[],
+        updateCheck: function() {
+            fetch(Maco.base_url + "update.txt?" + new Date().getTime())
+                .then(response => response.text())
+                .then(text => {
+                    const lines = text.split("\n");
+                    const updateInfo = [];
+                    let changelog = [];
+                    let currentVersionFound = false;
+                    let currentVersion = Maco.version;
+                    let version = null;
+
+                    lines.forEach(line => {
+                        line = line.trim();
+                        if (!line) return; // Skip empty lines
+
+                        if (line.toLowerCase().startsWith('version') || line.toLowerCase().startsWith('version:')) { // Match a version keyword
+                            if (version != null) updateInfo.push({ version, changelog }); // Store the previous version before resetting
+                            version = line.split(/\s*[:\s]\s*/)[1]; // Extract the version number (split by space or colon)
+                            changelog = []; // Reset changelog for the new version
+                        } else {
+                            changelog.push(line); // Add changelog entries for the current version
+                        }
+                    });
+
+                    if (version != null) updateInfo.push({ version, changelog }); // Ensure the last found version is added, even if no changelog exists
+                    Maco.updateInfo = updateInfo;
+                    const updates = updateInfo.filter(info => isNewerVersion(currentVersion, info.version)); // Filter for versions higher than the current script version
+
+                    if (updates.length > 0) {
+                        let changelogText = updates
+                            .filter(info => info.changelog.length > 0) // Ignore empty changelogs
+                            .map(info => `
+                                <div style='display: flex; gap: 5px; margin-top: 10px;'>
+                                    <strong style='display: inline-block; vertical-align: top; min-width: 55px;'>${info.version}</strong>
+                                    <div style='display: inline-block;'>
+                                        ${info.changelog.map(change => `
+                                            <div style='display: flex; gap: 5px;'>
+                                                <span style='display: inline-block;'>-</span>
+                                                <span>${change}</span>
+                                            </div>
+                                        `).join("")}
+                                    </div>
+                                </div>
+                            `).join("");
+
+                        const $content = $("<div style='max-width: 450px;'>").append(`<div>A new version is available! Please update.</div>`);
+
+                        if (changelogText.trim() !== "") {
+                            $content
+                                .append("<div style='margin-top: 15px; font-weight: bold;'>Changelog:</div>")
+                                .append(changelogText);
+                        }
+
+                        new west.gui.Dialog("Maco &nbsp;&nbsp;" + Maco.version + "&nbsp; &#8594; &nbsp;" + updates[0].version, $content, west.gui.Dialog.SYS_WARNING)
+                            .addButton("Update", function() {
+                                window.open(Maco.base_url + 'script.user.js');
+                                Maco.needReload = true;
+                                document.removeEventListener("visibilitychange", Maco.handleVisibilityChange);
+                                document.addEventListener("visibilitychange", Maco.handleVisibilityChange);
+                            })
+                            .show();
+                    }
+                })
+                .catch(error => {console.error("Error fetching update:", error)});
+        },
+        window:null,
+        needReload:false,
+        invalidSession:false,
+        jobsLoaded:false,
+        startTime:null,
+        lastReloadTime:null,
+        lastResult:[],
+        lastResultFarming:[],
+        bonusTypeMap:[],
+        //skillTexts:[],
+        //battleBonusesTexts:[],
+        allConsumables:[],
+        allJobs:[],
+        uniqueJobs:[],
+        lastPosition:{x:null, y:null},
+        addedJobsOld:[],
+        addedJobsHasChanged:true,
+        jobsBestGear:[],
+        allianceForts:[],
+        battles:[],
+        towns:[],
+        homeTown:null,
+        jobsTablePosition:{content:"0px", scrollbar:"0px"},
+        addedJobsTablePosition:{content:"0px", scrollbar:"0px"},
+        consumablesTablePosition:{content:"0px", scrollbar:"0px"},
+        favoriteJobsTablePosition:{content:"0px", scrollbar:"0px"},
+        questsTablePosition:{content:"0px", scrollbar:"0px"},
+        _currentState: 0,
+        get currentState() {
+            return this._currentState;
+        },
+        set currentState(value) {
+            if (this._currentState !== value) {
+                this._currentState = value;
+                handleStateChange(value);
+            }
+        },
+        states:["idle", "running", "waiting for a consumable cooldown", "sleep regenerating", "starting..", "fort battle", "awaiting jobs reset", "town building"],
+        lastActiveTab:"jobs",
+        xpJobsPreset:[202,205,201,192,204,200,199,185,187,196,180,189,203,181,194,153,197,190,177,188,182,195,184,152,186,191,178,176,159,175,170,193,179,151,165,160,172,161,174,145,183,168,171,147,166,157,149,150,167,164],
+        moneyJobsPreset:[193,199,202,185,179,205,204,203,161,190,198,187,200,201,196,181,184,178,182,197,177,191,171,194,168,175,166,192,160,186],
+        wayTimes:null,
+        wardrobe:new Map(),
+        maxHealthForSet:new Map(),
+        sets:new Map(),
+        selectedSet:null,
+        maxAllowedEnergy:100, // in %
+        isDuelProtected:false,
+        consumableSelection:{energy:false, motivation:false, health:false, buffs:false},
+        isRunning:false,
+        jobRunning:false,
+        energyCost:1,
+        language:"",
+        translationLang:"",
+        // Local storage saved
+        addedJobs:[],
+        consumablesSelection:[],
+        jobsFarmingGear:[],
+        favoriteJobs:[],
+        dailyQuests:{enabled:true, quests:[]},
+        workerProfiles:{selected:"profile0", profile0:{jobs:[], maxJobRank:10, jobsToAdd:8}, profile1:{jobs:[], maxJobRank:10, jobsToAdd:8}, profile2:{jobs:[], maxJobRank:10, jobsToAdd:8}},
+        travelSet:-2,
+        jobSet:-1,
+        healthSet:-3,
+        regenerationSet:-1,
+        sortJobTable:{xp:1, distance:0, money:0},
+        jobFilter:{filterOnlySilver:true, filterNoSilver:false, filterCenterJobs:false, filterFavorites:false, filterEnoughLP:false, filterJob:""},
+        farmingAssistant:{enabled:false, jobSwapped:false, stopLevel:false, awaitNextSession:false, selectedGearLevel:0},
+        currentJob:{jobIdx:0, direction:true},
+        build:{allowed:true, nightBuild:false, interval:900, hoursAmount:6, building:'church', set:-1},
+        settings:{
+            allowMotivationOptional:false,
+            addEnergyOptional:true,
+            addEnergy:true,
+            addMotivation:true,
+            addHealth:true,
+            addBuffs:false,
+            addXpBuff:false,
+            addLuckBuff:false,
+            addMoneyBuff:false,
+            addProductBuff:false,
+            addTravelBuff:true,
+            healthStopPercent:20,
+            healthStopValue:800,
+            addEnergyOptionalMin:15,
+            addEnergyOptionalMax:60,
+            enableRegeneration:true,
+            altTown:null,
+            autoMoneyDeposit:{enabled: true, amount: 200000, duelProtected: true, sellerName:"", auctionItemId: ""},
+            fortBattle:{attend:false, selected:-1, attackSet:-1, defSet:-1, openFortWindow:false, refillHealth:true, isTank:false, minHealth:100, useConsumable:false, overwriteCharacterBonus:false, consumable:null},
+            notifications:{enabled:true, silent:false, requireInteraction:true, error:true, stopped:true, sleep:true, battle:true, battle_prep:false, duel:true},
+            autoReload:true,
+            autoLogin:true,
+            nightShiftWorker:true,
+            advancedWalkingToJob:false,
+            maxJobRank:10,
+            jobsToAdd:8,
+            skipTutorial:true,
+            allowWardrobeExport:true,
+            showMenuIcon: false
+        },
+        diagnostics:{reloadReasons:[], waitingReasons:[], consumablesUsed:[], errorLog:[]},
+        stats: {
+            session:{consumableWaitingTime:0, sleepTime:0, travelTime:0, runTime:0, money:0, jobs:0, xp:0},
+            total:{money:0, jobs:0, xp:0}
+        },
+        searchKeys:{
+            "en_DK": {
+                motivationEventBuff:"Work motivation"
+            },
+            "sk_SK": {
+                motivationEventBuff:"pracovná motivácia"
+            },
+            "cs_CZ": {
+                motivationEventBuff:"pracovní motivace"
+            },
+            "pl_PL": {
+                motivationEventBuff:"motywacji do prac"
+            },
+            "hu_HU": {
+                motivationEventBuff:"munka motiváció"
+            },
+            "ro_RO": {
+                motivationEventBuff:"Motivatie de muncă"
+            },
+            "tr_TR": {
+                motivationEventBuff:"çalışma motivasyonu"
+            },
+            "nl_NL": {
+                motivationEventBuff:"Arbeidsmotivatie"
+            },
+            "it_IT": {
+                motivationEventBuff:"Motivazione lavoro"
+            },
+            "el_GR": {
+                motivationEventBuff:"Κίνητρο δουλειάς"
+            },
+            "fr_FR": {
+                motivationEventBuff:"de motivation de travail"
+            },
+            "es_ES": {
+                motivationEventBuff:"Motivacion de trabajo"
+            },
+            "de_DE": {
+                motivationEventBuff:"Arbeitsmotivation"
+            },
+            "pt_PT": {
+                motivationEventBuff:"motivação de trabalho"
+            },
+            "pt_BR": {
+                motivationEventBuff:"Em motivação para trabalho"
+            },
+            "ru_RU": {
+                premiumText:"Премиум",
+                motivationEventBuff:"Восстановление мотивации к работам"
+            },
+        },
+        explainerTranslations:{
+            "en_DK": {
+                explainer_1: "Continuously replenish energy with consumables that fall within the set min-max energy range (will not use consumables that also add motivation). (Tip: Metal bottle plug = 30% energy every 10 minutes.)",
+                explainer_2: "Replenish health if it drops below a certain value and percentage (e.g., if HP falls below 500 and is also less than 20% of total health).",
+                explainer_3: "Allows the script to run 24/7. Automatically switches silver jobs based on the 'Rank' order saved in the 'Worker' section. (Also collects the login bonus.) (It may not work properly in browsers such as 'Epic Privacy browser'!)",
+                explainer_4: "Use buffs for the character (duration-based) and for traveling (use-based). Select buffs allowed in the 'Consumables' section.",
+                explainer_5: "Allow automatic page refresh (F5) if necessary.",
+                explainer_6: "Allow to change clothes and assign jobs during travel to save a few insignificant seconds :D",
+                explainer_7: "Do not deposit money in the bank while duel protection is active.",
+                explainer_8: "Automatically participate in upcoming fort battles and change into the selected set. After the battle ends, job clicking will resume. (Before the battle, it won't replenish energy that cannot be used in time.)",
+                explainer_9: "Replenish health before battle if the current health in battle gear is lower than the specified percentage.",
+                explainer_10: "After the battle starts, keep the battle window open (stay online).",
+                explainer_11: "If unable to replenish energy/motivation/health, at least go regenerate. Will regenerate in closest fort or in closest town.",
+                explainer_12: "Use consumable if the motivation of all Added jobs drops to the 'Stop motivation' level. (Tip: Cake decorations + Metal bottle plugs = saved Tinctures.)",
+                explainer_13: "Add every silver job on the list up to this specified rank. (It will ignore max jobs limit.)",
+                explainer_14: "Maximum jobs amount. Will continue adding additional silver jobs from the list until this specified amount is added.",
+                explainer_15: "Saves currently equipped gear as the best ones to equip when starting this job.",
+                explainer_16: "Export all saved settings, jobs, sets and consumables to a file, and the ability to re-import the saved data. (Useful, for example, when changing or clearing web browser.)",
+                explainer_17: "Set 0 to never stop for motivation refill.",
+                explainer_18: "Allocates more time for HP refill. Can also use Fort Medicine if selected in 'Consumables'. (If needed, allows HP to be refilled with two consumables in a row.)",
+                explainer_19: "Automatically deposit money in the bank when selected amount is reached.",
+                explainer_20: "Waits until the night reset of job motivations and then the script starts working. (It may not work properly in browsers such as 'Epic Privacy browser'!)",
+                explainer_21: "Stops upon reaching a new level or daily jobs reset. (Useful, for example, when different clothing needs to be saved at each level to maintain ~0 LP.)",
+                explainer_22: "Select a level for which to save the currently worn items. The script will equip these items only if job motivation > 0 and character level < 10. (Default will be used in all other cases.)",
+                explainer_23: "Exports saved clothing for the current job to a file and allows for re-importing saved outfits. (Useful, for example, when changing or clearing web browser.)",
+                explainer_24: "Enables helper functions for farming products. Designed primarily for accounts up to level 10 (possibly up to 20).",
+                explainer_25: "Delay start (in minutes).",
+                explainer_26: "Enable 'Night shift worker' setting to build church for 6 hours over night and then continue with jobs. With disabled worker, it will keep building church.",
+                explainer_27: "Save a backup town for money deposit before battle.",
+                explainer_28: "Enable town build as backup option. Construction can also serve as an alternative activity in cases where the saved jobs do not provide enough silver ones, or as an option for building overnight.",
+                explainer_29: "Alternating between jobs and construction. Similar to the 'Night Shift worker' setting, but instead of continuing with jobs, it will first build for a specified number of hours and resume doing jobs after.",
+                explainer_30: "During continuous energy replenishment, also allow consumables that can add motivation. (Not recommended. Useful only if there aren't enough better consumables.)",
+                explainer_31: "Replace active character buffs with new bonuses, such as HP refill using Fort Medicine.",
+                explainer_32: "To deposit money into auction bid instead, specify item ID and seller name."
+            },
+            "sk_SK": {
+                explainer_1: "Dopĺňať energiu priebežne posilneniami, ktoré sa nachádzajú v stanovenom rozsahu % pridanej energie min - max (nepoužije posilnenia ktoré pridávajú aj motiváciu). (Tip: Kovové zátky na fľašu = 30% energie kažých 10 minút.)",
+                explainer_2: "Doplniť zdravie v prípade že klesne pod určitú hodnotu a zároveň pod určitý počet percent (napr. ak má menej ako 500 HP a zároveň je to aj menej ako 20% z celkového zdravia).",
+                explainer_3: "Umožní scriptu fungovať 24/7. Automaticky vymení strieborné práce podľa poradia 'Rank', ako sú uložené v sekcii 'Worker'. (Vyzdvihne aj prihlasovací bonus.) (V prehliadačoch ako napr. 'Epic Privacy browser', nemusí fungovať správne!)",
+                explainer_4: "Používať aj posilnenia pre postavu (na trvanie) a cestovanie (na použitia). Vyberie z posilnení 'Buffs' povolených v sekcii 'Consumables'.",
+                explainer_5: "Povoliť automatické znovu načítanie stránky (F5) ak to bude potrebné..",
+                explainer_6: "Prezliecť a zadať práce už počas cestovania pre ušetrenie pár bezvyznamných sekúnd :D",
+                explainer_7: "Neukladať peniaze do banky pokiaľ je duelová ochrana aktívna.",
+                explainer_8: "Automaticky sa zúčasní nadchádzajúceho boja o pevnosť a prezlečie vybraný set. Po skončení boja bude pokračovať v klikaní prác. (Pred bojom nebude dopĺnať energiu, ktorú by nestihol využiť.)",
+                explainer_9: "Doplniť zdravie pred bojom, ak aktuálne zdravie v bojovom oblečení je menšie ako počet stanovených percent.",
+                explainer_10: "Po začatí boja, nechať bojové okno otvorené (online stav).",
+                explainer_11: "V prípade že nebude mať čím doplniť energiu/motiváciu/zdravie, tak pôjde aspoň regenerovať. Regenerovať pôjde do najbližšej pevnosti, alebo najbližšieho mesta.",
+                explainer_12: "Použiť posilnenie ak motivácia všetkých pridaných prác klesne na úroveň 'Stop motivation'. (Tip: Tortové ozdoby + Kovové zátky na fľašu = ušetrené Tinktúry.)",
+                explainer_13: "Vyberie každú striebornú prácu v zozname až do tohto maximálneho ranku. (Bez ohľadu na maximálny počet prác vpravo.)",
+                explainer_14: "Maximálny počet prác. Bude pokračovať vo vyberaní dalších strieborných prác zo zoznamu, pokiaľ ich nebude pridaných tento počet.",
+                explainer_15: "Uloží aktuálne oblečené veci ako ako tie najlepšie, ktoré bude obliekať pri začínaní tejto práce.",
+                explainer_16: "Export všetkých uložených nastavení, prác, setov a posilnení do súboru a možnosť spätného importovania uložených dát. (Užitočné napr. pri zmene/čistení prehliadača.)",
+                explainer_17: "Nastav 0 aby sa nikdy nezastavil a nedopĺňal motiváciu.",
+                explainer_18: "Na doplnenie HP si vyhradí viacej času. Môže použiť aj Pevnostnú medicínu, ak je zvolená v 'Consumables'. (Podľa potreby umožní doplniť dvoma HP posilneniami po sebe.)",
+                explainer_19: "Pravidelne ukladať peniaze do banky po našetrení zvolenej sumy.",
+                explainer_20: "Počká do nočného reštartu motivácie prác a až potom začne script pracovať. (V prehliadačoch ako napr. 'Epic Privacy browser', nemusí fungovať správne!)",
+                explainer_21: "Po dosiahnutí nového levelu / dennom resete prác sa zastaví. (Užitočné napr. ak po každom leveli treba uložiť iné oblečenie pre udržanie ~0 PB.)",
+                explainer_22: "Zvoliť level, pre ktorý uložiť aktuálne oblečené veci. Script bude obliekať tieto veci len ak je pracovná motivácia > 0 a level postavy < 10. (Default použije v každom inom prípade.)",
+                explainer_23: "Export uloženého oblečenia pre aktuálnu prácu do súboru a možnosť spätného Importovania uložených oblečení. (Užitočné napr. pri zmene/čistení prehliadača.)",
+                explainer_24: "Sprístupní pomocné funkcie pre farmenie produktov. Navrhnuté najmä pre účty do levelu 10 (prípadne aj do 20).",
+                explainer_25: "Oneskoriť štart/stop (počet minút).",
+                explainer_26: "Pri zapnutom nastavení 'Night shift worker', bude stavať kostol 6 hodín cez noc a potom bude pokračovať v klikaní prác. Pri vypnutom workerovi ostane stavať len kostol.",
+                explainer_27: "Uložiť náhradné mesto pre ukladanie peňazí pred bojom o pevnosť.",
+                explainer_28: "Povoliť možnosť výstavby mesta. Výstavba môže slúžiť aj ako alternatívna činnosť v prípadoch, kedy z uložených prác nebude dostatok strieborných, alebo ako možnosť stavania cez noc.",
+                explainer_29: "Striedanie prác a výstavby. Obdoba nastavenia 'Night Shift worker', ale namiesto pokračovania v robení prác, bude najprv určený počet hodín stavať a až potom bude znovu pokračovať v robení prác.",
+                explainer_30: "Počas priebežného dopĺňania energie povoliť aj posilnenia, ktoré môžu doplniť aj motiváciu. (Neodporúčam. Užitočné len v prípade, že nie je dostatok lepších posilnení.)",
+                explainer_31: "Nahradiť aktívne posilnenie pre postavu novým bonusom napr. doplnenie HP pomocou Pevnostnej medicíny.",
+                explainer_32: "Pre uloženie peňazí do aukcie namiesto banky, zadaj ID predmetu a meno predávajúceho hráča."
+            },
+        },
+        alertTranslations:{
+            "en_DK": {
+                alert_1: "Network connection lost.",
+                alert_2: (set) => (Premium.hasBonus('automation') || isWithinRange(Array.from(Maco.sets.keys()).indexOf(set), 0, 2))
+                    ? "<span style=\"color: red;\">ERROR</span>: Deleted set is still assigned.. Reassign all 'Sets'!"
+                    : "<span style=\"color: red;\">ERROR</span>: Deleted set is still assigned.. <span style=\"color: blue;\">'Automation'</span> premium ended.",
+                alert_3: "<span style=\"color: orange;\">WARNING</span>: Set can't be equipped.. <span style=\"color: blue;\">'Automation'</span> premium ended.",
+                alert_4: (jobName, missingItems) => `Saved gear for '<u>${jobName}</u>' is missing items in inventory: <b>${missingItems}</b>`,
+                alert_5: "Can't continue because of motivation.",
+                alert_6: "Can't continue because of energy.",
+                alert_7: "Can't continue because of health.",
+                alert_8: "Could not find any suitable consumable to use.",
+                alert_9: "You got KO.",
+                alert_10: (jobName) => `Not enough LP to equip Job set for: '<u>${jobName}</u>' ...removing job.`,
+                alert_11: "The inactive browser tab caused throttled script timers! <br>Restart browser with flag: <b>--disable-background-timer-throttling</b>",
+            },
+            "sk_SK": {
+                alert_1: "Pripojenie k internetu sa prerušilo.",
+                alert_2: (set) => (Premium.hasBonus('automation') || isWithinRange(Array.from(Maco.sets.keys()).indexOf(set), 0, 2))
+                    ? "<span style=\"color: red;\">CHYBA</span>: Je priradené odstránené vybavenie.. Znova priraďte všetky 'Sets'!"
+                    : "<span style=\"color: red;\">CHYBA</span>: Je priradené odstránené vybavenie.. Skončilo prémium <span style=\"color: blue;\">'Automatizácia'</span>.",
+                alert_3: "<span style=\"color: orange;\">WARNING</span>: Vybavenie sa nedá obliecť.. Skončilo prémium <span style=\"color: blue;\">'Automatizácia'</span>.",
+                alert_4: (jobName, missingItems) => `Uloženému oblečeniu pre '<u>${jobName}</u>' v inventári chýba: <b>${missingItems}</b>`,
+                alert_5: "Nemôže pokračovať kvôli motivácii.",
+                alert_6: "Nemôže pokračovať kvôli energii.",
+                alert_7: "Nemôže pokračovať kvôli zdraviu.",
+                alert_8: "Nenašlo sa žiadne vhodné posilnenie na použitie..",
+                alert_9: "Dostal si KO.",
+                alert_10: (jobName) => `Pre málo PB nevie obliecť vybavenie na prácu: '<u>${jobName}</u>' ...odstraňujem prácu.`,
+                alert_11: "Neaktívne okno prehliadača spôsobuje spomalenie scriptu! <br>Reštartuj prehliadač a použi flag: <b>--disable-background-timer-throttling</b>",
+            },
+        },
+    };
+
+    const globalWindow = (typeof unsafeWindow !== 'undefined') ? unsafeWindow : window;
+    //globalWindow.Maco = Maco; // Debugging-only exposure
+    /*if (globalWindow.GameMap) {
+        Object.defineProperty(globalWindow, 'Maco', {
+            value: Maco,
+            writable: true,       // or false if you want read-only
+            configurable: true,   // allows later deletion
+            enumerable: false     // hides from Object.keys(window)
+        });
+    }*/
+
+    function JobPrototype(x,y,id,groupId,silver) {
+        this.x = x;
+        this.y = y;
+        this.id = id;
+        this.groupId = groupId;
+        this.silver = silver;
+        this.distance = 0;
+        this.experience = 0;
+        this.money = 0;
+        this.motivation = 0;
+        this.stopMotivation = 75;
+        this.set = -1;
+    };
+    JobPrototype.prototype = {
+        calculateDistance:function() {
+            this.distance = Character.calcWayTo({x:this.x, y:this.y});
+        },
+        setExperience:function(xp) {
+            this.experience = xp;
+        },
+        setMoney:function(money) {
+            this.money = money;
+        },
+        setMotivation:function(motivation) {
+            this.motivation = motivation;
+        },
+        setStopMotivation:function(stopMotivation) {
+            this.stopMotivation = stopMotivation;
+        },
+        setSet:function(setIndex) {
+            this.set = setIndex;
+        }
+    };
+    function ConsumablePrototype(id,image,name,bonuses,hasCooldown) {
+        this.id = id;
+        this.energy = 0;
+        this.motivation = 0;
+        this.health = 0;
+        this.xp = 0;
+        this.product = 0;
+        this.luck = 0;
+        this.money = 0;
+        this.travel = 0;
+        this.settingTraps = 0;
+        this.hiding = 0;
+        this.offense = 0;
+        this.defense = 0;
+        this.battleDamage = 0;
+        this.other = 0;
+        this.selected = true;
+        this.image = image;
+        this.count = 0;
+        this.duration = 0;
+        this.uses = 0;
+        this.name = name;
+        this.bonuses = bonuses;
+        this.hasCooldown = hasCooldown;
+        this.hasSpecialBonus = false;
+        this.hasCharacterBonus = false;
+        this.hasBattleBonus = false;
+    };
+    ConsumablePrototype.prototype = {
+        constructor: ConsumablePrototype,
+        setEnergy:function(energy) {
+            this.energy = energy;
+        },
+        setMotivation:function(motivation) {
+            this.motivation = motivation;
+        },
+        setHealth:function(health) {
+            this.health = health;
+        },
+        setXp:function(xp) {
+            this.xp = xp || 0;
+        },
+        setProduct:function(product) {
+            this.product = product || 0;
+        },
+        setLuck:function(luck) {
+            this.luck = luck || 0;
+        },
+        setMoney:function(money) {
+            this.money = money || 0;
+        },
+        setTravel:function(travel) {
+            this.travel = travel || 0;
+        },
+        setOther:function(other) {
+            this.other = other || 0;
+        },
+        setSelected:function(select) {
+            this.selected = select;
+        },
+        setCount:function(count) {
+            this.count = count;
+        },
+        setDuration:function(duration) {
+            this.duration = duration || 0;
+        },
+        setUses:function(uses) {
+            this.uses = uses || 0;
+        },
+        setSpecial:function(special) {
+            this.hasSpecialBonus = special;
+        },
+        setCharacter:function(character) {
+            this.hasCharacterBonus = character;
+        },
+        setBattleItem:function(battle) {
+            this.hasBattleBonus = battle;
+        },
+        setTraps:function(settingTraps) {
+            this.settingTraps = settingTraps || 0;
+        },
+        setHiding:function(hiding) {
+            this.hiding = hiding || 0;
+        },
+        setOffense:function(offense) {
+            this.offense = offense || 0;
+        },
+        setDefense:function(defense) {
+            this.defense = defense || 0;
+        },
+        setBattleDamage:function(damage) {
+            this.battleDamage = damage || 0;
+        }
+    };
+
+    function isNewerVersion(current, latest) {
+        const currentParts = current.split('.').map(Number);
+        const latestParts = latest.split('.').map(Number);
+        for (let i = 0; i < latestParts.length; i++) {
+            if ((latestParts[i] || 0) > (currentParts[i] || 0)) return true;
+            if ((latestParts[i] || 0) < (currentParts[i] || 0)) return false;
+        }
+        return false;
+    };
+    function handleStateChange(newState) {
+        Maco.updateStatusIcon();
+        Maco.refreshTab("addedJobs");
+    };
+    function replacer(key, value) { // Custom replacer function for JSON.stringify
+        if (value === Infinity) return "Infinity";
+        return value;
+    };
+    function reviver(key, value) { // Custom reviver function for JSON.parse
+        if (value === "Infinity") return Infinity;
+        return value;
+    };
+    function debounce(func, defaultDelay = 0) {
+        let timeoutId;
+
+        function debounced(...args) {
+            let delay = defaultDelay;
+            let callback = null;
+
+            if (typeof args[0] === 'number') {
+                delay = args.shift(); // Extract delay
+            }
+            if (typeof args[0] === 'function') {
+                callback = args.shift(); // Extract callback
+            }
+
+            clearTimeout(timeoutId);
+
+            timeoutId = setTimeout(() => {
+                if (callback) callback();
+                func.apply(this, args); // Apply remaining arguments to the debounced function
+            }, delay);
+        }
+
+        debounced.cancel = function() {
+            clearTimeout(timeoutId);
+        };
+
+        return debounced;
+    };
+    function wait(duration) {
+        return new Promise(resolve => setTimeout(resolve, duration));
+    };
+    function waitForEvent(eventName, withTimeout = true) {
+        return new Promise((resolve) => {
+            // Reference to the listener function for unlistening later
+            const listener = function () {
+                if (withTimeout) clearTimeout(timeout); // Cancel the timeout if the event fires
+                resolve();
+                return EventHandler.ONE_TIME_EVENT; // Ensure it's a one-time listener
+            };
+
+            EventHandler.listen(eventName, listener);
+
+            let timeout;
+            if (withTimeout) {
+                timeout = setTimeout(() => {
+                    EventHandler.unlisten(eventName, listener);
+                    resolve(); // Resolve even though the event did not fire
+                }, FUNCTION_TIMEOUT);
+            }
+        });
+    };
+    function executeQueuedActions() {
+        isQueueInProgress = true;
+        while (queuedActions.length > 0) {
+            let action = queuedActions.shift();
+            action();
+        }
+        isQueueInProgress = false;
+    };
+    function removeUiElement(key) {
+        const element = document.getElementById(key);
+        if (element) {
+            element.style.display = "none";
+            try {
+                element.remove();
+            } catch (e) {
+                const msg = `Exception occured in 'removeUiElement()' while removing DOM element ${key}: `;
+                console.error(msg, e.stack);
+                Maco.handleError(e, msg, true);
+            }
+        }
+    };
+    function customEncode(str) {
+        // Step 1: Replace spaces with hyphens
+        let result = str.replace(/ /g, '-');
+
+        // Step 2: First encodeURIComponent
+        result = encodeURIComponent(result);
+
+        // Step 3: Manually encode '%' as '%25' in case it was already encoded
+        result = result.replace(/%/g, '%25');
+
+        return result;
+    };
+    function assignObjects(target, source) {
+        for (const key in source) {
+            if (target.hasOwnProperty(key)) {
+                const sourceValue = source[key];
+                const targetValue = target[key];
+                if (typeof targetValue === "object" && typeof sourceValue === "object" && targetValue != null && sourceValue != null) {
+                    Object.assign(targetValue, sourceValue); // Merge objects
+                } else {
+                    target[key] = sourceValue; // Overwrite value
+                }
+            }
+        }
+    };
+    function normalizeStr(str) {
+        str = str.toLowerCase();
+
+        // Remove punctuation
+        str = str.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "");
+
+        // Normalize diacritics
+        str = str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        str = str.trim();
+        return str;
+    };
+    function levenshteinDistance(a, b) {
+        const an = a ? a.length : 0;
+        const bn = b ? b.length : 0;
+        if (an === 0) {
+            return bn;
+        }
+        if (bn === 0) {
+            return an;
+        }
+        const matrix = Array.from(Array(bn + 1), () => new Array(an + 1).fill(0));
+        for (let i = 0; i <= an; i++) {
+            matrix[0][i] = i;
+        }
+        for (let j = 0; j <= bn; j++) {
+            matrix[j][0] = j;
+        }
+        for (let j = 1; j <= bn; j++) {
+            for (let i = 1; i <= an; i++) {
+                const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+                matrix[j][i] = Math.min(
+                    matrix[j - 1][i] + 1,       // deletion
+                    matrix[j][i - 1] + 1,       // insertion
+                    matrix[j - 1][i - 1] + cost // substitution
+                );
+            }
+        }
+        return matrix[bn][an];
+    };
+    function compareStrings(str1, str2, tolerance = 0.95) {
+        const normStr1 = normalizeStr(str1);
+        const normStr2 = normalizeStr(str2);
+        const distance = levenshteinDistance(normStr1, normStr2);
+        const maxLen = Math.max(normStr1.length, normStr2.length);
+        const similarity = 1 - distance / maxLen;
+        return similarity >= tolerance;
+    };
+    function formatNumber(number) {
+        return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.'); // Format the number with thousands separators
+    };
+    function clamp(value, min, max) {
+        return Math.min(Math.max(value, min), max);
+    };
+    function isWithinRange(value, min, max) {
+        return value >= min && value <= max;
+    };
+    function getFormattedLocalDate(time = true) {
+        // Get the current local date
+        var now = new Date();
+
+        // Extract day, month, and year in local time
+        var day = String(now.getDate());
+        var month = String(now.getMonth() + 1).padStart(2, '0');
+        var year = now.getFullYear();
+
+        // Format the date as "day.month.year"
+        var formattedDate = day + '.' + month + '.' + year;
+
+        // If time is true, append the time in "hours:minutes" format
+        if (time) {
+            var hours = String(now.getHours());
+            var minutes = String(now.getMinutes()).padStart(2, '0');
+            formattedDate += ' ' + hours + ':' + minutes;
+        }
+
+        return formattedDate;
+    };
+    function getUTCDate() {
+        function removeFirstWordFromEnd(str) {
+            const words = str.split(' ');
+            words.pop(); // Remove the last word
+            return words.join(' ');
+        }
+
+        let utcDate = new Date().toUTCString();
+        utcDate = removeFirstWordFromEnd(utcDate);
+        return new Date(utcDate);
+    };
+    function formatTime(seconds, useShortFormat = true, padWithZero = false) {
+        if (useShortFormat) {
+            if (seconds >= 3600) {
+                const hours = Math.floor(seconds / 3600);
+                return `${hours}h`;
+            } else if (seconds >= 60) {
+                const minutes = Math.floor(seconds / 60);
+                return `${minutes}m`;
+            } else {
+                return `${seconds}s`;
+            }
+        } else {
+            const padZero = (num) => (num < 10 ? '0' : '') + num;
+
+            const hours = Math.floor(seconds / 3600);
+            const minutes = Math.floor((seconds % 3600) / 60);
+            const remainingSeconds = (seconds % 60).toFixed(0);
+
+            return padWithZero ?
+                `${padZero(hours)}:${padZero(minutes)}:${padZero(remainingSeconds)}` :
+                `${hours}:${padZero(minutes)}:${padZero(remainingSeconds)}`;
+        }
+    };
+    function timestamp(customDate = null) {
+        let currentTime;
+        if (customDate instanceof Date) {
+            currentTime = customDate;
+        } else {
+            currentTime = new Date();
+        }
+        const hours = currentTime.getHours().toString().padStart(2, '0');
+        const minutes = currentTime.getMinutes().toString().padStart(2, '0');
+        const seconds = currentTime.getSeconds().toString().padStart(2, '0');
+        // Format day.month.year
+        const day = currentTime.getDate().toString();
+        const month = (currentTime.getMonth() + 1).toString();
+        const year = currentTime.getFullYear().toString();
+        const date = `${day}.${month}.${year}`;
+        // Format day month
+        const monthNames = ['Jan.', 'Feb.', 'Mar.', 'Apr.', 'May', 'Jun.', 'Jul.', 'Aug.', 'Sep.', 'Oct.', 'Nov.', 'Dec.'];
+        const monthName = monthNames[currentTime.getMonth()];
+        const dayMonth = `${day}. ${monthName}`;
+
+        if (customDate instanceof Date && customDate.getFullYear() !== new Date().getFullYear()) {
+            return `${hours}:${minutes}:${seconds} (${date})`;
+        } else {
+            return `${hours}:${minutes}:${seconds} (${dayMonth})`;
+        }
+    };
+    function calculateElapsedSeconds(startTime) {
+        const endTime = new Date();
+        const elapsedTime = endTime - startTime; // in milliseconds
+        const elapsedSeconds = Math.floor(elapsedTime / 1000); // in seconds
+        return elapsedSeconds;
+    };
+    function extractNumberFromString(str) {
+        const regex = /\d+/;
+        const match = str.match(regex);
+        return match ? parseInt(match[0]) : null;
+    };
+    function isNaturalNumber(num) {
+        return Number.isInteger(num) && num >= 0;
+    };
+    function isNumber(potentialNumber) {
+        return Number.isInteger(parseInt(potentialNumber));
+    };
+    function isVersionOutdated(current, required) {
+        if (!current) return true; // No version means outdated
+        const curParts = current.split('.').map(Number);
+        const reqParts = required.split('.').map(Number);
+
+        for (let i = 0; i < reqParts.length; i++) {
+            if ((curParts[i] || 0) < reqParts[i]) return true;  // current < required
+            if ((curParts[i] || 0) > reqParts[i]) return false; // current > required
+        }
+        return false; // They are equal
+    };
+    function getReferer() {
+        return Game?.gameURL || globalWindow.location.origin;
+    };
+    function generateRandomNumber(min, max) {
+        var minN = Math.min(min, max);
+        var maxN = Math.max(min, max);
+        return Math.floor((minN + Math.random() * (maxN-minN + 1)));
+    };
+    function normalizeChatMessage(msg) {
+        if (!msg) return "";
+
+        return msg
+            .replace(/\/\d{1,3}/g, "")   // remove /111 /999 color codes
+            .replace(/\s*\*\s*/g, "")    // remove any * used for formatting
+            .trim()
+            .replace(/\s+/g, " ");       // normalize spaces
+    };
+    function proxyMethod(obj, methodName, handler) {
+        const original = obj[methodName];
+        if (typeof original !== 'function' || typeof Proxy !== 'function') return;
+        if (original.__isProxied) return; // Prevent double-proxying
+
+        const proxied = new Proxy(original, {
+            apply(target, thisArg, args) {
+                return handler({ target, thisArg, args });
+            }
+        });
+
+        proxied.__isProxied = true;
+        obj[methodName] = proxied;
+    };
+    (function setupChatController() {
+        if (typeof Chat !== "object") return;
+        function proxyMethod(obj, methodName, handler) {
+            const original = obj[methodName];
+
+            obj[methodName] = function (...args) {
+                try {
+                    const result = handler({ target: original, thisArg: this, args });
+                    if (result !== undefined) return result;
+                } catch (err) {
+                    console.error("[Maco proxy error]", err);
+                }
+                return original.apply(this, args);
+            };
+        };
+        proxyMethod(Chat, "sendMessage", ({ target, thisArg, args }) => {
+            const [message, room] = args;
+
+            if (typeof message === "string") {
+                const clean = normalizeChatMessage(message);
+
+                if (/^[\/\\!]m(aco)?\b/.test(clean)) {
+                    handleMacoChatCommand(clean, room);
+                    return false; // block sending to server
+                }
+            }
+
+            return;
+            //return Reflect.apply(target, thisArg, args);
+        });
+
+        function handleMacoChatCommand(msg, room) {
+            const parts = msg.split(/\s+/);
+            const cmd = parts[1]?.toLowerCase() || "";
+            const arg = parts[2];
+            const delay = Number(arg) || 0;
+
+            switch (cmd) {
+                case "start":
+                    Maco.loadMapData(() => macoChatStart(delay * 60000));
+                    (delay > 0) ? macoReply(room, `[Maco] Script started. Delay: ${delay} min.`) : macoReply(room, `[Maco] Script started.`);
+                    break;
+
+                case "stop":
+                    Maco.handleButtonStopClick(delay * 60000);
+                    (delay > 0) ? macoReply(room, `[Maco] Script stopped. Delay: ${delay} min.`) : macoReply(room, `[Maco] Script stopped.`);
+                    break;
+
+                case "":
+                case "gui":
+                case "menu":
+                case "window":
+                    toggleGui();
+                    break;
+
+                case "set": {
+                    // Format: /m set settings.showMenuIcon = true
+                    const full = msg.substring(msg.indexOf("set") + 3).trim();
+                    const match = full.match(/^([\w\.]+)\s*=\s*(.+)$/);
+
+                    if (!match) {
+                        macoReply(room, "[Maco] Usage: /m set <path> = <value>");
+                        break;
+                    }
+
+                    const path = match[1];
+                    const rawValue = match[2];
+
+                    const result = setDeepProperty(Maco, path, rawValue);
+
+                    if (result.ok) {
+                        macoReply(room, `[Maco] Updated '${path}' → ${JSON.stringify(result.newValue)}`);
+                        Maco.debouncedSaveAll?.(500); // auto-save
+                    } else {
+                        macoReply(room, `[Maco] Could not set '${path}': ${result.reason}`);
+                    }
+
+                    break;
+                }
+
+                default:
+                    macoReply(room,
+                        "Commands:\n" +
+                        "/m start\n" +
+                        "/m stop\n" +
+                        "/m gui"
+                    );
+            }
+        }
+
+        function setDeepProperty(obj, path, rawValue) {
+            const parts = path.split(".");
+            let target = obj;
+
+            // Traverse path
+            for (let i = 0; i < parts.length - 1; i++) {
+                if (!(parts[i] in target)) {
+                    return { ok: false, reason: `Property '${parts[i]}' does not exist.` };
+                }
+                target = target[parts[i]];
+            }
+
+            const key = parts[parts.length - 1];
+            if (!(key in target)) {
+                return { ok: false, reason: `Property '${key}' does not exist.` };
+            }
+
+            // Convert value to JS type
+            let value;
+            if (rawValue === "true") value = true;
+            else if (rawValue === "false") value = false;
+            else if (rawValue === "null") value = null;
+            else if (!isNaN(rawValue)) value = Number(rawValue);
+            else value = rawValue; // string
+
+            // Set the value
+            target[key] = value;
+            return { ok: true, newValue: value };
+        }
+
+        function macoChatStart(delay) {
+            if (Maco.addedJobs.length === 0 && !Maco.swapSilverJobs()) {
+                new UserMessage("No jobs to run.", UserMessage.TYPE_ERROR).show();
+                return;
+            }
+            if (!Maco.setsAssigned()) {
+                new UserMessage("Job set not assigned!", UserMessage.TYPE_ERROR).show();
+                Maco.createWindow();
+            }
+            if (!Maco.setCheck()) {
+                Maco.showAlert(Maco.alertTranslations[Maco.translationLang].alert_2(0));
+            }
+
+            Maco.handleScriptStart(delay);
+        }
+
+        function toggleGui() {
+            try {
+                //if (Maco.window && Maco.window.isOpen()) {
+                  //  Maco.window.close();
+                //} else {
+                    Maco.loadMapData(Maco.createWindow);
+                //}
+            } catch (e) {
+                console.error("toggleGui error:", e);
+            }
+        }
+
+        function macoReply(room, text) {
+            Chat.pushSystemMessage(`${text}`, false, room);
+        }
+
+        function notify(text) {
+            new UserMessage(text, UserMessage.TYPE_SUCCESS).show();
+        }
+    })();
+    // The game has annoying bug when consumables are on cooldown and page refreshes.. just to prevent console error spam..
+    globalWindow.onerror = function(message, source, lineno, colno, error) {
+        let errorMessage = '', errorStack = '', errorSource = source, errorLine = lineno, errorObj = error;
+
+        if (typeof message === 'object') { // Handle sandboxed context (all in `message`)
+            errorMessage = message.message || '';
+            errorStack = message.error?.stack || '';
+            errorSource = message.filename || '';
+            errorLine = message.lineno || 0;
+            errorObj = message.error;
+        } else { // Normal context
+            errorMessage = message || '';
+            errorStack = error?.stack || '';
+        }
+
+        if (errorStack.includes('updateCooldownTimer')) {
+            //console.log("Clearing all cooldown intervals in 'BuffList.cooldowns' to prevent console error spam.");
+            const cooldowns = BuffList.cooldowns;
+            Object.keys(cooldowns).forEach((id) => {
+                if (cooldowns[id]?.timer) {
+                    globalWindow.clearInterval(cooldowns[id].timer);
+                }
+            });
+
+            return true; // Return true to prevent the error from being logged to the console
+        }
+
+        const scriptName = GM_info.script.name;
+        if (errorSource.includes(customEncode(scriptName)) || errorSource.includes(encodeURIComponent(scriptName))) {
+            Maco.handleError(errorObj);
+        }
+
+        return false; // Allow other handlers to process error
+    };
+    function waitForCondition(conditionFn, callback, checkInterval = 500, timeout = 10000, alwaysCallback = false) {
+        const startTime = Date.now();
+
+        function check() {
+            if (conditionFn()) {
+                callback();
+            } else if (Date.now() - startTime < timeout) {
+                setTimeout(check, checkInterval);
+            } else if (alwaysCallback) {
+                callback();
+            }
+        }
+
+        check();
+    };
+    Maco.startTimerTestLoop = function() {
+        function runTest() {
+            Maco.testTimerThrottling({title:"Timer test.", bad:true, good:false}).then((isThrottled) => {
+                Maco.adjustGlobalTimings(isThrottled);
+                scheduleNextTest(); // Schedule the next test after the current one completes
+            });
+        }
+
+        function scheduleNextTest() {
+            clearTimeout(timerTestTimeoutId);
+            timerTestTimeoutId = setTimeout(runTest, intervalTimeTestLength); // Store timeout ID
+        }
+
+        scheduleNextTest(); // Start the initial test
+    };
+    Maco.cancelTimerTestLoop = function() {
+        clearTimeout(timerTestTimeoutId); // Cancels the timeout
+        if (Maco.debouncedTestTimerThrottling.cancel) {
+            Maco.debouncedTestTimerThrottling.cancel();
+        }
+    };
+    Maco.debouncedTestTimerThrottling = debounce((logResults) => {
+        if (document.visibilityState === 'hidden' || document.hidden) {
+            Maco.testTimerThrottling(logResults).then((isThrottled) => {
+                const isDocumentHidden = document.visibilityState === 'hidden' || document.hidden;
+                Maco.adjustGlobalTimings(isThrottled && isDocumentHidden);
+                if (isThrottled && isDocumentHidden && logResults.title === "Confirm Timer test.") {
+                    Maco.showAlert(Maco.alertTranslations[Maco.translationLang].alert_11, true, null, () => {
+                        avg_interval_margin = 8000;
+                        single_interval_margin = 1000;
+                    });
+                }
+            });
+        }
+    }, 10000);
+    Maco.adjustGlobalTimings = function(throttled = false) {
+        if (throttled && !timersAdjusted) {
+            console.log("%cMaco Timings adjusted.", "color:orange");
+            Maco.debouncedTestTimerThrottling({title:"Confirm Timer test.", bad:false, good:false});
+            Maco.startTimerTestLoop();
+            timersAdjusted = throttled;
+            idle_limit = 15;
+            battle_time_reserve = 360;
+        } else if (!throttled && timersAdjusted) {
+            console.log("%cMaco Timings restored.", "color:green");
+            Maco.cancelTimerTestLoop();
+            timersAdjusted = throttled;
+            idle_limit = 10;
+            battle_time_reserve = 240;
+        }
+    };
+    Maco.testTimerThrottling = function(logResults = {title:"", bad:true, good:false}, interval = 100) {
+        return new Promise((resolve) => {
+            const avgIntervalMargin = avg_interval_margin + interval + 1800;
+            const singleIntervalMargin = single_interval_margin + interval + 400;
+            const numTests = 5; // Number of intervals to measure
+            let expectedNextTime = performance.now() + interval;
+            let measuredIntervals = [];
+
+            function checkTimer() {
+                let now = performance.now();
+                let elapsed = now - (expectedNextTime - interval);
+
+                measuredIntervals.push(elapsed);
+
+                if (measuredIntervals.length < numTests) {
+                    expectedNextTime += interval;
+                    setTimeout(checkTimer, Math.max(0, expectedNextTime - performance.now()));
+                } else { // Results
+                    measuredIntervals.splice(0, 1);
+                    const averageInterval = measuredIntervals.reduce((acc, cur) => acc + cur, 0) / measuredIntervals.length;
+                    const isFullyThrottled = measuredIntervals.every(t => t > singleIntervalMargin);
+
+                    if (averageInterval > avgIntervalMargin && isFullyThrottled) {
+                        if (logResults.bad) {
+                            console.log(`%c${logResults.title} ${timestamp()}\n` +
+                                `Measured intervals: ${measuredIntervals.map(t => t.toFixed(2)).join(', ')}.\n` +
+                                `Average interval: ${averageInterval.toFixed(2)} ms. (expected: ${interval}).`, 'color: orange'
+                            );
+                        }
+                        resolve(true);
+                    } else {
+                        if (logResults.good) {
+                            console.log(`%c${logResults.title} ${timestamp()}\n` +
+                                `Average interval: ${averageInterval.toFixed(2)} ms. (expected: ${interval}).`, 'color: green'
+                            );
+                        }
+                        resolve(false);
+                    }
+                }
+            }
+            checkTimer();
+        });
+    };
+    Maco.installHooks = function() {
+        const MAX_WAIT_TIME = AUTO_START_DELAY - 1000; // Maximum wait time in ms
+        const CHECK_INTERVAL = 100;
+        let elapsedTime = 0;
+
+        const checkAndInstallHooks = () => {
+            const functionsReady =
+                typeof Player?.forceLogout === "function" &&
+                typeof ItemUse?.use === "function" &&
+                typeof TaskQueue?.handleError === "function" &&
+                typeof Premium?.checkForPremium === "function" &&
+                typeof TaskQueue?.handlePlayerDeath === "function" &&
+                typeof Ajax?.remoteCall === "function" &&
+                typeof MarketWindow?.Sell?.collectAll === "function" &&
+                //typeof LinearQuestHandler?.init === "function" &&
+                typeof Trader?.buyDialog === "function" &&
+                typeof west?.wof?.WofHeartsWindow?.prototype?.animateRewards === "function";
+
+            if (functionsReady || elapsedTime >= MAX_WAIT_TIME) {
+                const originalForceLogout = Player?.forceLogout;
+                const originalItemUse = ItemUse?.use;
+                const originalTaskError = TaskQueue?.handleError;
+                const originalPremiumCheck = Premium?.checkForPremium;
+                const originalHandlePlayerDeath = TaskQueue?.handlePlayerDeath;
+                const originalRemoteCall = Ajax?.remoteCall;
+                const originalMarketCollect = MarketWindow?.Sell.collectAll;
+                const originalTraderDialog = Trader?.buyDialog;
+                const originalAnimateRewards = west?.wof.WofHeartsWindow.prototype.animateRewards;
+                //const originalQuestHandler = LinearQuestHandler?.init;
+
+                /*if (Maco.settings.skipTutorial) {
+                    LinearQuestHandler.init = new Proxy(originalQuestHandler, {
+                        apply(target, thisArg, argumentsList) {
+                            EventHandler.signal("tutorial_finished");
+                            return Reflect.apply(target, thisArg, argumentsList);
+                        }
+                    });
+                }*/
+
+                proxyMethod(Ajax, "remoteCall", ({ target, thisArg, args }) => {
+                    const [window, action, param, callback, view] = args;
+                    const wrappedCallback = function(data) {
+                        if (window === 'inventory' && action === 'switch_equip' && data.error) {
+                            EventHandler.signal('equip_error', data.msg);
+                        }
+                        if (typeof callback === 'function') {
+                            callback(data);
+                        }
+                    };
+                    return Reflect.apply(target, thisArg, [window, action, param, wrappedCallback, view]);
+                });
+
+                if (Maco.getActiveEventId()) {
+                    west.wof.WofHeartsWindow.prototype.animateRewards = new Proxy(originalAnimateRewards, {
+                        apply(target, thisArg, args) {
+                            const [prize, newPrizes] = args;
+
+                            $(".reward_container .item").removeClass("overlay");
+
+                            var slot = thisArg.getSlotByItemId(prize.itemId);
+                            var reward = $(".reward_" + slot);
+                            var classChange = thisArg.getColor(reward.data('itemId'));
+                            reward.addClass('overlay');
+                            reward.removeClass(classChange);
+
+                            GameGift.enqueue("wof", [prize.itemId, thisArg.wof.prizes.enhanceToColor(prize.itemEnhance)], function() {});
+                            if (newPrizes) {
+                                thisArg._initRewards(newPrizes);
+                            }
+                            thisArg.paySpin.enable();
+
+                            return;
+                        }
+                    });
+                }
+
+                proxyMethod(Ajax, "remoteCall", ({ target, thisArg, args }) => {
+                    const [window, action, param, callback, view] = args;
+                    const wrappedCallback = function(data) {
+                        if (window === 'inventory' && action === 'switch_equip' && data.error) {
+                            EventHandler.signal('equip_error', data.msg);
+                        }
+                        if (typeof callback === 'function') {
+                            callback(data);
+                        }
+                    };
+                    return Reflect.apply(target, thisArg, [window, action, param, wrappedCallback, view]);
+                });
+
+                Player.forceLogout = new Proxy(originalForceLogout, {
+                    apply(target, thisArg, argumentsList) {
+                        Maco.invalidSession = true;
+                        const reloadInfoString = Maco.localStorageGet('reloadData');
+                        if (!reloadInfoString && Maco.isRunning) {
+                            Maco.setReloadData("Invalid session. ");
+                        }
+
+                        return Reflect.apply(target, thisArg, argumentsList);
+                    }
+                });
+
+                proxyMethod(Premium, "checkForPremium", ({ target, thisArg, args }) => {
+                    const [bonus, callback] = args;
+                    if (bonus === "energy") {
+                        return false;
+                    }
+                    return Reflect.apply(target, thisArg, args);
+                });
+
+                proxyMethod(TaskQueue, "handleError", ({ target, thisArg, args }) => {
+                    const [task, error, msg] = args;
+                    EventHandler.signal('task_error', msg);
+                    return Reflect.apply(target, thisArg, args);
+                });
+
+                proxyMethod(Trader, "buyDialog", ({ target, thisArg, args }) => {
+                    const result = Reflect.apply(target, thisArg, args);
+
+                    const [item_id] = args;
+                    const item = Trader.getItemByItemId(item_id);
+
+                    setTimeout(() => {
+                        const dialog = $(".tw2gui_dialog_framefix");
+                        if (!dialog.length) return result;
+                        const actionsContainer = dialog.find(".tw2gui_dialog_actions");
+                        if (!actionsContainer.length) return result;
+
+                        const textfield = new west.gui.Textfield("buyAmount_textfield", null, 'manual_input').onlyNumeric().setValue(1).setWidth(40);
+                        const textfieldDiv = textfield.getMainDiv();
+                        $(textfieldDiv).css({
+                            display: "inline-block",
+                            position: "relative",
+                            marginRight: "5px",
+                        });
+
+                        const textfieldDelay = new west.gui.Textfield("delay_textfield", null, 'manual_input').onlyNumeric().setValue(1000).setPlaceholder("delay").setWidth(40);
+                        const textfieldDelayDiv = textfieldDelay.getMainDiv().css({
+                            display: "inline-block",
+                            position: "relative",
+                        });
+
+                        const delayWrapper = $("<div class='delay-wrapper'></div>").css({
+                            display: "inline-block", // Initially hidden
+                            position: "relative",
+                            float: "left"
+                        });
+                        delayWrapper.append("<span class='delay-text'>delay:</span>");
+                        delayWrapper.append(textfieldDelayDiv);
+                        delayWrapper.append("<span class='ms-text'>ms</span>");
+
+                        const yesButton = actionsContainer.find(".tw2gui_button").first();
+                        yesButton.off("click").on("click", function () {
+                            if (textfield.getValue() > 1) {
+                                dialog.remove();
+                                Maco.traderBuy(item, textfield.getValue(), textfieldDelay.getValue());
+                            } else {
+                                dialog.remove();
+                                Trader.buyItem(item);
+                            }
+                        });
+
+                        const secondButton = actionsContainer.find(".tw2gui_button").eq(1);
+                        if (secondButton.length > 0) {
+                            actionsContainer.prepend(textfieldDiv);
+                            actionsContainer.prepend(delayWrapper);
+                            delayWrapper.hide();
+                        }
+
+                        $("#buyAmount_textfield").on("input", function () {
+                            if (parseInt(textfield.getValue()) > 1) {
+                                delayWrapper.show(); // Show if value > 1
+                            } else {
+                                delayWrapper.hide(); // Hide otherwise
+                            }
+                        });
+                    }, 0);
+
+                    return result;
+                });
+
+                proxyMethod(ItemUse, "use", ({ target, thisArg, args }) => {
+                    const [itemId, bonuses, type] = args;
+
+                    const result = Reflect.apply(target, thisArg, args);
+
+                    const item = Bag.getItemByItemId(itemId);
+                    if (item.obj.has_cooldown !== false || item.count <= 1 || item.obj.usetype == "use") return result;
+
+                    setTimeout(() => {
+                        const dialog = $(".tw2gui_dialog_framefix");
+                        if (!dialog.length) return result;
+                        const actionsContainer = dialog.find(".tw2gui_dialog_actions");
+                        if (!actionsContainer.length) return result;
+
+                        const textfield = new west.gui.Textfield("useAmount_textfield", null, 'manual_input').onlyNumeric().setValue(1).setWidth(40);
+                        const textfieldDiv = textfield.getMainDiv();
+                        $(textfieldDiv).css({
+                            display: "inline-block",
+                            position: "relative",
+                            marginRight: "5px",
+                        });
+
+                        const textfieldDelay = new west.gui.Textfield("delay_textfield", null, 'manual_input').onlyNumeric().setValue(1000).setPlaceholder("delay").setWidth(40);
+                        const textfieldDelayDiv = textfieldDelay.getMainDiv().css({
+                            display: "inline-block",
+                            position: "relative",
+                        });
+
+                        const delayWrapper = $("<div class='delay-wrapper'></div>").css({
+                            display: "inline-block", // Initially hidden
+                            position: "relative",
+                            float: "left"
+                        });
+                        delayWrapper.append(textfieldDelayDiv);
+                        delayWrapper.append("<span class='ms-text'>ms</span>");
+
+                        const maxButton = $("<button>")
+                            .text(`(${item.count})`)
+                            .on("click", function () {
+                                textfield.setValue(item.count); // Set text field value to item.count
+                                delayWrapper.show();
+                            })
+                            .css({
+                                position: "relative", verticalAlign: "middle", marginRight: "2px", marginBottom: "1.5px", padding: "0",
+                                background: "none", border: "none", cursor: "pointer", fontWeight: "bold", fontSize: "14px", lineHeight: "0.1"
+                            })
+                            .addClass("linkstyle");
+
+                        const yesButton = actionsContainer.find(".tw2gui_button").first();
+                        yesButton.off("click").on("click", function () {
+                            if (textfield.getValue() > 1) {
+                                dialog.remove();
+                                Maco.useItemLoop(item, textfield.getValue(), textfieldDelay.getValue());
+                            } else {
+                                setTimeout(() => {
+                                    dialog.remove();
+                                    ItemUse.doIt(itemId);
+                                }, 200);
+                            }
+                        });
+
+                        const secondButton = actionsContainer.find(".tw2gui_button").eq(1);
+                        if (secondButton.length > 0 && document.querySelector('.tw2gui_window.inventory')) {
+                            actionsContainer.prepend(textfieldDiv);
+                            actionsContainer.prepend(maxButton);
+                            actionsContainer.prepend(delayWrapper);
+                            delayWrapper.hide();
+                        }
+
+                        $("#useAmount_textfield").on("input", function () {
+                            if (parseInt(textfield.getValue()) > 1) {
+                                delayWrapper.show(); // Show if value > 1
+                            } else {
+                                delayWrapper.hide(); // Hide otherwise
+                            }
+                        });
+                    }, 0); // Timeout ensures DOM modifications occur after the dialog is rendered
+
+                    return result;
+                });
+
+                proxyMethod(MarketWindow.Sell, "collectAll", ({ target, thisArg, args }) => { // (Premium.confirmUse) can be used as alternative for cancelling multiple premium dialogs at once
+                    const [window] = args;
+
+                    let errorTown = false;
+
+                    const refreshList = function () {
+                        if (errorTown) {
+                            new MessageError(errorTown).show();
+                            return true;
+                        }
+                        EventHandler.signal('inventory_changed');
+                        MarketWindow[window].initData();
+                    };
+
+                    const action = (window === 'Sell') ? 'fetch_town_offers' : 'fetch_town_bids';
+
+                    Ajax.remoteCall('building_market', action, {}, function (resp) {
+                        errorTown = resp.error ? resp.msg : false;
+                        if (!resp.error) {
+                            Character.setDeposit(resp.deposit);
+                            Character.setMoney(resp.cash);
+                            return new MessageSuccess(resp.msg).show();
+                        }
+                    }, MarketWindow).done(function () {
+                        refreshList();
+                    });
+
+                    // No return value expected from original function
+                });
+
+                proxyMethod(TaskQueue, "handlePlayerDeath", ({ target, thisArg, args }) => {
+                    const [lastDied, previousDeath, isInit, isFirstKO] = args;
+
+                    if (isInit) {
+                        return Reflect.apply(target, thisArg, args);
+                    }
+
+                    Ajax.remoteCallMode('task', 'get_tasks', {}, function (resp) {
+                        TaskQueue.init(resp.queue);
+                        Maco.handleDeath();
+                    });
+                });
+
+                if (elapsedTime >= MAX_WAIT_TIME) { // #TEST
+                    console.warn(`Maco: Proxies installed. Max wait time (${MAX_WAIT_TIME}ms) reached. Some hooks may be missing.`);
+                } else {
+                    console.log(`Maco: Proxies installed. Elapsed time: ${elapsedTime}ms.`);
+                }
+            } else {
+                elapsedTime += CHECK_INTERVAL;
+                setTimeout(checkAndInstallHooks, CHECK_INTERVAL);
+            }
+        };
+
+        checkAndInstallHooks();
+    };
+    Maco.traderBuy = async function(item, amount, delay) {
+        for (let i = 0; i < amount; i++) {
+            if (item.obj.price > Character.getCapital()) {
+                break;
+            }
+            Trader.buyItem(item);
+            await wait(delay);
+        }
+    };
+    Maco.addRunTimeEventListeners = function() {
+        //EventHandler.listen('fort_battle_joined', Maco.updateFortBattles);
+        document.addEventListener("visibilitychange", Maco.handleVisibilityChange);
+        globalWindow.addEventListener('offline', Maco.handleNetworkChange);
+        //window.addEventListener('blur', Maco.handleWindowBlur);
+    };
+    Maco.removeRunTimeEventListeners = function() {
+        Maco.cancelTimerTestLoop();
+        //EventHandler.unlisten('fort_battle_joined', Maco.updateFortBattles);
+        document.removeEventListener("visibilitychange", Maco.handleVisibilityChange);
+        globalWindow.removeEventListener('offline', Maco.handleNetworkChange);
+        globalWindow.removeEventListener('online', Maco.handleNetworkChange);
+        //globalWindow.removeEventListener('blur', Maco.handleWindowBlur);
+        //globalWindow.removeEventListener('focus', Maco.handleWindowFocus);
+    };
+    Maco.handleVisibilityChange = function() {
+        if (document.visibilityState === 'hidden' || document.hidden) {
+            Maco.debouncedTestTimerThrottling({title:"Document is hidden.", bad:true, good:false});
+        } else {
+            Maco.adjustGlobalTimings();
+            if (Maco.needReload) {
+                globalWindow.location.reload();
+            }
+        }
+    };
+    /*Maco.handleWindowBlur = function() {
+        setTimeout(() => {
+            if (!document.hidden) {
+                Maco.debouncedTestTimerThrottling({title:"Window focus lost.", bad:true, good:false});
+                globalWindow.addEventListener('focus', Maco.handleWindowFocus, { once: true });
+            }
+        }, 100);
+    };
+    Maco.handleWindowFocus = function() {
+        console.log('Window gained focus - ' + timestamp());
+        Maco.adjustGlobalTimings();
+    };*/
+    Maco.handleNetworkChange = function() {
+        const status = navigator.onLine ? "online" : "offline";
+        console.log(`Network status changed: You are currently ${status}.`);
+        if (!navigator.onLine) {
+            Maco.showAlert(Maco.alertTranslations[Maco.translationLang].alert_1);
+            globalWindow.addEventListener('online', Maco.handleNetworkChange, { once: true });
+        }
+    };
+    Maco.handleDeath = function() {
+        if (![4,5].includes(Maco.currentState)) {
+            Maco.showAlert(Maco.alertTranslations[Maco.translationLang].alert_9);
+        }
+
+        setTimeout(function () {
+            Maco.cancelSleep();
+        }, timeout_regular);
+    };
+    Maco.cancelSleep = function(any = false) {
+        if (TaskQueue.queue.length > 0 && ['sleep', 'fortsleep'].includes(TaskQueue.queue.at(0).type) && Object.keys(TaskQueue.toCancel).length === 0 &&
+            (Maco.isDestinationReached(Maco.homeTown) || any) && Maco.currentState !== 3
+        ) {
+            TaskQueue.cancel(0);
+        }
+    };
+    Maco.handleError = function(err, msg = "", logOnly = false) {
+        errorOccured = !logOnly;
+
+        const errorDetails = {
+            error: msg + err.name + ": " + err.message,
+            stack: err.stack,
+            timestamp: getFormattedLocalDate()
+        };
+
+        if (Character && (!Maco.diagnostics.errorLog.length || (Maco.diagnostics.errorLog[0]?.error !== errorDetails.error && Maco.diagnostics.errorLog[0]?.stack !== err.stack))) {
+            Maco.diagnostics.errorLog.unshift(errorDetails);
+            if (Maco.diagnostics.errorLog.length > 20) {
+                Maco.diagnostics.errorLog.pop();
+            }
+            Maco.debouncedSaveAll(0);
+        }
+    };
+    Maco.startReloadObserver = function() {
+        const DESTINY_TIMEOUT = 300000 // 5 minutes
+        let destinyCount = 0;
+        let destinyCountTimeoutId = null;
+        let lastLoggedMinute = 0;
+        let errorMessage = "Got stuck";
+
+        if (Maco.startTime == null) {
+            Maco.startTime = new Date();
+        }
+        if (reloadObserverInterval) {
+            clearInterval(reloadObserverInterval);
+        }
+
+        reloadObserverInterval = setInterval(function() {
+            const wayData = TaskQueue.queue.at(0)?.wayData ?? {};
+            const travelTime = wayData.date_done - wayData.date_start || 0; // Travel time to substract from elapsedMinutes
+            const lastUpdateTime = Maco.startTime.getTime() + travelTime;
+            const currentTime = new Date().getTime();
+            const elapsedMinutes = Math.floor((currentTime - lastUpdateTime) / (1000 * 60)); // minutes
+            const criticalError = document.querySelector('.critical-error');
+
+            if ((elapsedMinutes >= idle_limit && [1].includes(Maco.currentState)) || criticalError || (Maco.invalidSession && elapsedMinutes > 2)) {
+                if (criticalError) {
+                    if (++destinyCount > 2) {
+                        setTimeout(() => {
+                            errorMessage = "Critical error (maybe destiny?). ";
+                            Maco.reload(errorMessage);
+                        }, DESTINY_TIMEOUT);
+                        Maco.handleButtonStopClick();
+                    } else {
+                        clearTimeout(destinyCountTimeoutId);
+                        destinyCountTimeoutId = setTimeout(() => {
+                            destinyCount = 0;
+                        }, DESTINY_TIMEOUT);
+                        const dialog = criticalError.closest('.tw2gui_dialog.system_error');
+                        const buttons = dialog.querySelectorAll('.tw2gui_button');
+                        buttons[buttons.length - 1].click();
+                    }
+                    return;
+                } else if (Maco.invalidSession) {
+                    Maco.saveAll();
+                    if (Maco.relogAllowed() && Maco.settings.autoReload) {
+                        errorMessage = "Invalid session (relogged). ";
+                        Maco.relog(errorMessage);
+                        return;
+                    } else {
+                        errorMessage = "Invalid session (reloaded). ";
+                    }
+                } else {
+                    errorMessage += equipBestGear_running ? " while equipping best gear." : walkToJob_running ? " while traveling to job." : runJob_running ? " while running job." : errorOccured ? ", error occured." : " somehow..";
+                    if (destinyCount === 0) {
+                        errorMessage += " (Idle limit: " + idle_limit + " min.) ";
+                    }
+                    errorMessage += errorOccured ? "[error]" : `[state:${Maco.currentState}]`;
+                }
+
+                if (Maco.settings.autoReload) {
+                    Maco.reload(errorMessage);
+                }
+
+                lastLoggedMinute = 0;
+                clearInterval(reloadObserverInterval);
+                return;
+            }
+
+            if (elapsedMinutes >= 5 && lastLoggedMinute < elapsedMinutes && ([1].includes(Maco.currentState) || criticalError)) {
+                console.log("Last activity " + elapsedMinutes + " minutes ago.. Page will auto refresh in " + (idle_limit - elapsedMinutes) + " minutes.");
+                lastLoggedMinute = elapsedMinutes;
+            }
+        }, 10000);
+    };
+    Maco.setReloadData = function(reason, auto_start = true) {
+        const reasonMsg = reason ? timestamp() + " - " + reason : "";
+        const reloadInfo = {
+            reason: reasonMsg,
+            auto_start: auto_start
+        };
+        Maco.localStorageSet('reloadData', JSON.stringify(reloadInfo));
+        GM_setValue("auto_login", {allowed: auto_start, world: Game.worldName});
+    };
+    Maco.reload = function(reason, auto_start = true) {
+        Maco.setReloadData(reason, auto_start);
+        globalWindow.location.reload();
+    };
+    Maco.relog = function(reason, auto_start = true) {
+        Maco.setReloadData(reason, auto_start);
+        if (Maco.invalidSession) {
+            globalWindow.location.href = Game.masterURL + "/index.php?page=logout";
+        } else {
+            globalWindow.location.href = "game.php?window=logout&action=logout&h=" + Player.h;
+        }
+    };
+    Maco.relogAllowed = function() {
+        const isPermaLogged = GM_getValue("perma_logged", false);
+        return Maco.settings.autoLogin && isPermaLogged && characterId !== 0;
+    };
+    Maco.gameLogin = async function(worldName = '') {
+        let worldCheckTimeout = null;
+
+        function parseTimestamp(timestampText) {
+            const parts = timestampText.split(' ');
+            const dateParts = parts[0].split('-');
+            let timeParts = [];
+            if (parts.length > 1) {
+                timeParts = parts[1].split(':');
+            }
+            return new Date(dateParts[2], dateParts[1] - 1, dateParts[0], timeParts[0] || 0, timeParts[1] || 0, timeParts[2] || 0);
+        }
+
+        function getLatestConnectedWorldName(worldRows) {
+            let mostRecentTimestamp = new Date(0);
+            let worldToConnect = '';
+            for (let i = 0; i < worldRows.length; i++) {
+                const row = worldRows[i];
+                const timestampText = row.querySelector('.world.last_played > div:nth-child(2)').textContent.trim();
+                if (!timestampText) continue;
+                const timestamp = parseTimestamp(timestampText);
+                if (timestamp > mostRecentTimestamp) {
+                    mostRecentTimestamp = timestamp;
+                    worldToConnect = row.querySelector('.world.name')?.textContent.trim();
+                }
+            }
+            return worldToConnect;
+        }
+
+        function checkWorldRows() {
+            const worldRows = document.querySelectorAll('.world_row');
+            if (worldRows.length > 0) {
+                clearTimeout(loginTimeout);
+                const targetWorldName = worldName || getLatestConnectedWorldName(worldRows);
+
+                try {
+                    for (let i = 0; i < worldRows.length; i++) {
+                        const gameWorld = worldRows[i].querySelector('.world.name');
+                        if (gameWorld.textContent.trim() === targetWorldName) {
+                            console.log("Choosen server: " + targetWorldName);
+                            gameWorld.click();
+                            return;
+                        }
+                    }
+                } catch (e) {
+                    const msg = "Login error at 'checkWorldRows()': ";
+                    console.error(msg, e.stack);
+                    Maco.handleError(e, msg, true);
+                }
+            } else {
+                worldCheckTimeout = setTimeout(function() {
+                    worldCheckTimeout = null;
+                    checkWorldRows();
+                }, 500);
+            }
+        };
+
+        const serverMaintenanceTimeout = setTimeout(function() {
+            globalWindow.location.reload();
+        }, 3e5); // 5 minutes (6e5 = 10min)
+
+        const loginTimeout = setTimeout(function() {
+            clearTimeout(worldCheckTimeout);
+            clearTimeout(serverMaintenanceTimeout);
+            console.log("Maco could not login within timeout.");
+            Maco.showAlert("Could not login. (Login credentials not saved?)");
+            return;
+        }, 4000);
+
+        //const isPermaLogged = document.querySelector('#cookieLogged') != null;
+        const loginButton = document.getElementById('loginButton');
+
+        if (loginButton) {
+            console.log("Login attempt " + timestamp());
+            loginButton.click();
+        } else {
+            clearTimeout(loginTimeout);
+            clearTimeout(serverMaintenanceTimeout);
+            return;
+        }
+
+        checkWorldRows();
+    };
+    Maco.setNewHomeTown = function(pos = Character.position) {
+        for (let i = 0; i < Maco.towns.length; i++) {
+            if (Maco.towns[i].x === pos.x && Maco.towns[i].y === pos.y) {
+                Maco.homeTown = Maco.towns[i];
+                Maco.settings.altTown = Maco.homeTown;
+                return true;
+            }
+        }
+        return false;
+    };
+    Maco.filterAllianceForts = function(minForts = 1) {
+        const type2Forts = Maco.allianceForts.filter(fort => fort.type === 2); // BIG
+        const type1Forts = Maco.allianceForts.filter(fort => fort.type === 1); // Medium
+
+        if (type2Forts.length >= minForts) { // Prefer only type 2 forts if minForts or more exist
+            Maco.allianceForts = type2Forts;
+        } else { // Include type 2 and type 1 forts
+            Maco.allianceForts = [...type2Forts, ...type1Forts];
+        }
+    };
+    Maco.loadMapData = function(callback) {
+        if (Maco.jobsLoaded) {
+            Maco.updateFortBattles();
+            Maco.findAllConsumables();
+            //Maco.createWindow();
+            Maco.loadSets(function(){});
+            if (typeof callback === 'function') {
+                callback();
+            }
+            return;
+        }
+        new UserMessage("Loading...", UserMessage.TYPE_HINT).show();
+        var tiles = [];
+        var index = 0;
+        var currentLength = 0;
+        var maxLength = 299;
+        Ajax.get('map','get_minimap', {}, function(r) {
+            var tiles = [];
+            var jobs = [];
+            Maco.allianceForts = [];
+            for (var fortNumber in r.forts) {
+                for (var fortNumber2 in r.forts[fortNumber]) {
+                    var fort = r.forts[fortNumber][fortNumber2];
+                    if (Character.homeTown?.town_id != 0 && fort.fort?.alliance_id == Character.homeTown?.alliance_id) {
+                       Maco.allianceForts.push(fort['fort']);
+                    }
+                }
+            }
+            if (Character.homeTown.town_id != 0) {
+                for (var townNumber in r.towns) {
+                    if (r.towns[townNumber].member_count !== 0 && r.towns[townNumber].town_id == Character.homeTown.town_id) {
+                        Maco.homeTown = r.towns[townNumber];
+                        break;
+                    }
+                }
+                Maco.filterAllianceForts();
+            } else if (Maco.settings.altTown != null) {
+                Maco.homeTown = Maco.settings.altTown;
+            } else {
+                for (var townNumber in r.towns) {
+                    if (r.towns[townNumber].member_count !== 0) {
+                        Maco.towns.push({town_id: r.towns[townNumber].town_id, x: r.towns[townNumber].x, y: r.towns[townNumber].y, name: r.towns[townNumber].name});
+                        if (Maco.homeTown == null && r.towns[townNumber].x === Character.position.x && r.towns[townNumber].y === Character.position.y) {
+                            Maco.homeTown = r.towns[townNumber];
+                            Maco.settings.altTown = Maco.homeTown;
+                        }
+                    }
+                }
+            }
+            Maco.updateFortBattles();
+            for (var jobGroup in r.job_groups) {
+                const groupId = parseInt(jobGroup);
+                var group = r.job_groups[jobGroup];
+                var jobsGroup = JobList.getJobsByGroupId(groupId);
+                for (var tilecoord = 0; tilecoord < group.length; tilecoord++) {
+                    var xCoord = Math.floor(group[tilecoord][0] / GameMap.tileSize);
+                    var yCoord = Math.floor(group[tilecoord][1] / GameMap.tileSize);
+                    if (currentLength === 0) {
+                        tiles[index] = [];
+                    }
+                    tiles[index].push([xCoord,yCoord]);
+                    currentLength++;
+                    if (currentLength === maxLength) {
+                        currentLength = 0;
+                        index++;
+                    }
+                    for (let i = 0; i < jobsGroup.length; i++) {
+                        jobs.push(new JobPrototype(group[tilecoord][0], group[tilecoord][1], jobsGroup[i].id, groupId, false));
+                    }
+                }
+            }
+
+            var toLoad = tiles.length;
+            var loaded = 0;
+
+            for (var blocks = 0; blocks < tiles.length; blocks++) {
+                GameMap.Data.Loader.load(tiles[blocks], function() {
+                    loaded++;
+                    if (loaded === toLoad) {
+                        for (let i = 0; i < jobs.length; i++) {
+                            jobs[i].silver = Maco.checkIfSilver(jobs[i].x, jobs[i].y, jobs[i].id);
+                        }
+                        for (let i = 0; i < Maco.addedJobs.length; i++) {
+                            Maco.addedJobs[i].silver = Maco.checkIfSilver(Maco.addedJobs[i].x, Maco.addedJobs[i].y, Maco.addedJobs[i].id);
+                        }
+                        Maco.allJobs = jobs;
+                        Maco.jobsLoaded = true;
+                        Maco.findAllConsumables();
+                        //Maco.createWindow();
+                        if (typeof callback === 'function') {
+                            callback();
+                        }
+                    }
+                });
+            }
+        });
+    };
+    Maco.loadJobsData = async function(callback) {
+        async function attemptLoadJobsData() {
+            try {
+                const response = await Ajax.get('work', 'index', {});
+                if (response.jobs) {
+                    JobsModel.initJobs(response.jobs);
+                    callback();
+                }
+            } catch (e) {
+                if (!await Maco.checkInternetConnection()) {
+                    if (await Maco.waitForInternetConnection()) {
+                        await attemptLoadJobsData();
+                    }
+                } else {
+                    const msg = "Unhandled error in 'Maco.loadJobsData': ";
+                    console.error(msg, e.stack);
+                    Maco.handleError(e, msg);
+                }
+            }
+        }
+
+        await attemptLoadJobsData();
+    };
+    Maco.loadSets = (function() {
+        let lastLoadTime = 0; // Tracks the last time the Ajax call was made
+        const cooldown = 10000; // Cooldown period in milliseconds
+
+        return function (callback) {
+            const currentTime = Date.now();
+            Maco.wardrobe = new Map(
+                (JSON.parse(localStorage.getItem('TWCalc_Wardrobe') || '[]'))
+                    .map(item => [item.id, item])
+            );
+
+            if (currentTime - lastLoadTime >= cooldown) { // Execute Ajax call if cooldown has expired
+                lastLoadTime = currentTime;
+                Ajax.remoteCallMode('inventory', 'show_equip', {}, function (r) {
+                    Maco.sets = new Map(r.data.map(set => [set.name, set]));
+                    if (Maco.selectedSet == null) {
+                        Maco.selectedSet = ((r.data.length > 0) ? r.data[0].name : Maco.wardrobe.keys().next().value) ?? Maco.selectedSet;
+                    }
+                    callback();
+                });
+            } else { // Skip Ajax call and execute callback immediately
+                callback();
+            }
+        };
+    })();
+    Maco.loadAccountSettings = function() {
+        Ajax.remoteCall("settings", "settings", {})
+            .done(function(r) {
+                const lang = r.lang?.account?.key || Game.locale;
+                Maco.login = r.activities || {}; 
+                Maco.language = lang;
+                applyLanguageSettings(lang);
+            })
+            .fail(function() {
+                console.error("Failed to load account settings.");
+                Maco.login = Maco.login || {}; 
+                Maco.language = Game.locale; 
+
+                applyLanguageSettings(Game.locale);
+            });
+
+        function applyLanguageSettings(lang) {
+            Maco.translationLang = Maco.explainerTranslations[lang] 
+                ? lang 
+                : (lang === "cs_CZ" ? "sk_SK" : "en_DK");
+
+            characterId = Character.level > 24 ? Character.playerId : 0;
+        }
+    };
+    Maco.verifySilverJobs = async function() {
+        for (let i = 0; i < Maco.addedJobs.length; i++) {
+            try {
+                const isSilver = await Maco.loadJobSilverStatus(i);
+                if (!isSilver && Maco.addedJobs[i].silver) {
+                    return true;
+                }
+            } catch (e) {
+                const msg = `Error checking job at index ${i} in 'Maco.verifySilverJobs()': `;
+                console.error(msg, e.stack || e.message || e);
+                Maco.handleError(e, msg);
+                break;
+            }
+        }
+        return false;
+    };
+    Maco.loadJobSilverStatus = function(index) {
+        return new Promise((resolve, reject) => {
+            Maco.loadJob(index, function(job) {
+                if (job != undefined) {
+                    resolve(job.is_silver || false);
+                } else {
+                    reject(new Error("Failed to load job data."));
+                }
+            }, function(error) {
+                reject(error);
+            });
+        });
+    };
+    Maco.loadJobMotivation = function(index, callback) {
+        Maco.loadJob(index, function(job) {
+            callback(Math.floor(job.motivation * 100));
+        }, function(error) {
+            const msg = "Failed to load job in 'Maco.loadJobMotivation': ";
+            console.error(msg, error.stack || error.message || error);
+            Maco.handleError(error, msg);
+            callback(0); // <— Prevents the chain from freezing
+        });
+    };
+    Maco.loadJob = async function(index, callback, errorCallback) {
+        const maxRetries = 2; // Maximum number of retries
+        const retryDelay = 2000; // Delay between retries in milliseconds
+
+        async function attemptLoadJob(retryCount = 0) {
+            try {
+                await Ajax.get('job', 'job', {
+                    jobId: Maco.addedJobs[index].id,
+                    x: Maco.addedJobs[index].x,
+                    y: Maco.addedJobs[index].y
+                }, function(json) {
+                    callback(json);
+                });
+            } catch (e) {
+                if (!await Maco.checkInternetConnection()) {
+                    if (await Maco.waitForInternetConnection()) {
+                        await attemptLoadJob();
+                    } else if (errorCallback) {
+                        errorCallback(e);
+                    }
+                } else if (retryCount < maxRetries) {
+                    console.error(`Error occurred in 'Maco.loadJob'. Retrying (${retryCount + 1}/${maxRetries})...`);
+                    await new Promise(resolve => setTimeout(resolve, retryDelay));
+                    await attemptLoadJob(retryCount + 1);
+                } else {
+                    if (errorCallback) {
+                        errorCallback(e);
+                    } else {
+                        const msg = "Unhandled error in 'Maco.loadJob': ";
+                        console.error(msg, e.stack || e.message || e);
+                        Maco.handleError(e, msg);
+                    }
+                }
+            }
+        }
+
+        await attemptLoadJob();
+    };
+    Maco.checkInternetConnection = function() {
+        if (!navigator.onLine) {
+            return Promise.resolve(false);
+        }
+        const url = 'https://www.google.com/favicon.ico';
+        const fetchPromise = fetch(url, { method: 'GET', mode: 'no-cors' });
+        const timeoutPromise = new Promise((_, reject) =>
+            setTimeout(() => reject(new Error('Request Timeout')), FUNCTION_TIMEOUT)
+        );
+        return Promise.race([fetchPromise, timeoutPromise]) // return the first settled promise (either fetch or timeout)
+            .then(() => true)
+            .catch(() => false);
+    };
+    Maco.waitForInternetConnection = function() {
+        return new Promise(resolve => {
+            const checkConnection = () => {
+                Maco.checkInternetConnection().then(isConnected => {
+                    if (isConnected) {
+                        console.log("Internet connection restored.");
+                        resolve(isConnected);
+                    } else if (!Maco.isRunning) {
+                        resolve(isConnected);
+                    } else {
+                        console.error("Navigator reports online, but fetch check failed. Still waiting...");
+                        setTimeout(checkConnection, NETWORK_CHECK_PERIOD);
+                    }
+                });
+            };
+
+            if (navigator.onLine) {
+                checkConnection();
+            } else {
+                const handleOnline = () => {
+                    globalWindow.removeEventListener('online', handleOnline);
+                    checkConnection();
+                };
+
+                console.error("No internet connection. Waiting to retry...");
+                globalWindow.addEventListener('online', handleOnline);
+            }
+        });
+    };
+    Maco.getJobName = function(id) {
+        return JobList.getJobById(id).name;
+    };
+    Maco.getJobIcon = function(silver, id, x, y, showExtraIcon = false) {
+        const gotoIcon ='<div class="centermap" onclick="GameMap.center(' + x + ',' + y + ');"style="position: absolute; background-image: url(\'../images/map/icons/instantwork.png\'); width:20px; height:20px; top:0; right:3px; cursor:pointer;"></div>';
+        const warningIconStyle = 'background: url(/images/tw2gui/iconset.png) repeat -48px 64px; transform: scale(1.0); transformOrigin: center; width: 16px; height: 16px; position: absolute; top: 0; left: 0; margin-top: 1px;';
+        const dangerIconStyle = 'background: url(/images/tw2gui/iconset.png) repeat -80px 48px; transform: scale(1.0); transformOrigin: center; width: 16px; height: 16px; position: absolute; top: 0; left: 0; margin-top: 1px;';
+        const lockedIconStyle = 'background: url(/images/tw2gui/iconset.png) repeat -32px 112px; transform: scale(1.0); transformOrigin: center; width: 16px; height: 16px; position: absolute; top: 0; left: 0; margin-top: 1px;';
+        const job = JobsModel.getById(id);
+        const warningIcon = showExtraIcon
+            ? !job.jobObj.canDo()
+                ? `<span style="${lockedIconStyle}"></span>`
+                : job.jobpoints < job.workpoints
+                    ? `<span style="${dangerIconStyle}"></span>`
+                    : job.jobstarsValue < 6
+                        ? `<span style="${warningIconStyle}"></span>`
+                        : ''
+            : '';
+        const silverHtml = silver ? 'silver' : '';
+        return'<div class="job" style="left: 0; top: 0; position: relative;"><div onclick="javascript:GameMap.JobHandler.openJob(' + id + ',{x:' + x + ',y:' + y + '})" class="featured ' + silverHtml + '"></div>' + gotoIcon + warningIcon + '<img src="../images/jobs/' + JobList.getJobById(id).shortname + '.png" class="job_icon"></div>';
+    };
+    Maco.getConsumableIcon = function(item, countText) {
+        const src = item.image;
+
+        // Create the DOM structure for inventory item enable popup functionality
+        const $wrapper = $("<div class='item item_inventory hasMousePopup'>")
+            .css("position", "relative") // just if needed for layout
+            .click(() => ItemUse.use(item.id, item.bonuses));
+
+        const $img = $("<img class='tw_item item_inventory_img'>").attr("src", src);
+        const $count = $("<span class='count' style='display: block;'>").text(countText);
+
+        $wrapper.append($img).append($count);
+
+        // Add popup functionality using ItemManager
+        const popupItem = ItemManager.get(item.id);
+        new ItemPopup(popupItem).bindTo($img);
+
+        return $wrapper;
+    };
+    Maco.findJobData = function(job) {
+        for (let i = 0; i < JobsModel.Jobs.length; i++) {
+            if (JobsModel.Jobs[i].id === job.id) {
+                return JobsModel.Jobs[i];
+            }
+        }
+    };
+    Maco.parseJobData = function(jobs) {
+        for (const currentJob of jobs) {
+            const data = Maco.findJobData(currentJob);
+            const { experience: baseXp, money: baseMoney } = data.basis.short;
+            const multiplier = currentJob.silver ? 1.5 : 1;
+
+            currentJob.setMotivation(data.jobmotivation * 100);
+            currentJob.setExperience(Math.ceil(baseXp * multiplier));
+            currentJob.setMoney(Math.ceil(baseMoney * multiplier));
+        }
+    };
+    Maco.updateAllJobDistances = function(jobs = Maco.allJobs) {
+        for (let i = 0; i < jobs.length; i++) {
+            jobs[i].calculateDistance();
+        }
+    };
+    Maco.checkIfSilver = function(x,y,id) {
+        var key = x + "-" + y;
+        var jobData = GameMap.JobHandler.Featured[key];
+        if (jobData == undefined || jobData[id] == undefined) {
+            return false;
+        } else {
+            return jobData[id].silver;
+        }
+    };
+    Maco.getClosetSilverJob = function(jobid, getSilver = true) {
+        Maco.updateAllJobDistances();
+        let closestJob = null;
+        for (let i = 0; i < Maco.allJobs.length; i++) {
+            if (Maco.allJobs[i].id === jobid && (Maco.allJobs[i].silver === getSilver)) {
+                if (closestJob == null) {
+                    closestJob = Maco.allJobs[i];
+                } else if (Maco.allJobs[i].distance < closestJob.distance) {
+                    closestJob = Maco.allJobs[i];
+                }
+            }
+        }
+        return closestJob;
+    };
+    Maco.compareUniqueJobs = function(job, jobs) {
+        let mapCenter = {x:23000, y:10000};
+        for (let i = 0; i < jobs.length; i++) {
+            if (jobs[i].id === job.id) {
+                if (job.silver && !jobs[i].silver ||
+                    (job.silver === jobs[i].silver && (
+                        (job.silver && GameMap.calcWayTime(job, mapCenter) < GameMap.calcWayTime(jobs[i], mapCenter)) ||
+                        (!job.silver && job.distance < jobs[i].distance)
+                    ))) {
+                    jobs[i] = job;
+                }
+                return;
+            }
+        }
+        jobs.push(job);
+    };
+    Maco.compareNonUniqueJobs = function(job, jobs, isAdded) {
+        for (let i = 0; i < jobs.length; i++) {
+            if (jobs[i].id === job.id) {
+                if (job.silver && !jobs[i].silver || (!job.silver && !jobs[i].silver && job.distance < jobs[i].distance)) {
+                    jobs[i] = job;
+                } else if (job.silver && (job.distance !== jobs[i].distance && !isAdded)) {
+                    break;
+                }
+                return;
+            }
+        }
+        jobs.push(job);
+    };
+    Maco.swapSilverJobs = function() {
+        if (Maco.favoriteJobs.length === 0) return false;
+        const maxJobRank = Math.min(Maco.workerProfiles[Maco.workerProfiles.selected].maxJobRank, Maco.favoriteJobs.length);
+        const addedJobIds = new Set(Maco.addedJobs.map(job => job.id));
+        let jobs = [];
+        let favoriteJobsAdded = 0;
+
+        for (let i = 0; i < Maco.allJobs.length; i++) {
+            let currentJob = Maco.allJobs[i];
+            if (addedJobIds.has(currentJob.id)) {
+                continue;
+            }
+            Maco.compareUniqueJobs(currentJob, jobs);
+        }
+
+        for (let i = 0; i < maxJobRank; i++) {
+            const favoriteJob = Maco.favoriteJobs[i];
+            if (jobs.some(job => job.id === favoriteJob.id && job.silver) && favoriteJobsAdded <= MAX_ALLOWED_JOBS) {
+                const matchingJob = jobs.find(job => job.id === favoriteJob.id && job.silver);
+                Maco.addJob(matchingJob.x, matchingJob.y, matchingJob.id);
+                favoriteJobsAdded++;
+            }
+        }
+
+        for (let i = maxJobRank; i < Maco.favoriteJobs.length; i++) {
+            const favoriteJob = Maco.favoriteJobs[i];
+            if (favoriteJobsAdded >= Maco.workerProfiles[Maco.workerProfiles.selected].jobsToAdd) {
+                break;
+            }
+            if (jobs.some(job => job.id === favoriteJob.id && job.silver)) {
+                const matchingJob = jobs.find(job => job.id === favoriteJob.id && job.silver);
+                Maco.addJob(matchingJob.x, matchingJob.y, matchingJob.id);
+                favoriteJobsAdded++;
+            }
+        }
+
+        if (favoriteJobsAdded <= 1 && Maco.farmingAssistant.enabled && maxJobRank <= 1 && Math.min(Maco.workerProfiles[Maco.workerProfiles.selected].jobsToAdd, Maco.favoriteJobs.length) === 1) {
+            if (Maco.addedJobs.length === 0) {
+                const matchingJob = jobs.find(job => job.id === Maco.favoriteJobs[0].id);
+                Maco.addJob(matchingJob.x, matchingJob.y, matchingJob.id);
+                favoriteJobsAdded++;
+            }
+            Maco.addedJobs[0].stopMotivation = 0;
+        }
+
+        return favoriteJobsAdded > 0 || Maco.addedJobs.length > 0;
+    };
+    Maco.getAllUniqueJobs = function() {
+        let jobs = [];
+        if (Maco.favoriteJobs.length === 0) return jobs;
+        Maco.updateAllJobDistances();
+
+        for (const currentJob of Maco.allJobs) {
+            Maco.compareUniqueJobs(currentJob, jobs);
+        }
+
+        return jobs;
+    };
+    Maco.getUniqueJobs = function() {
+        let jobs = [];
+        Maco.updateAllJobDistances();
+        const addedJobIds = new Set(Maco.addedJobs.map(job => job.id));
+
+        for (const currentJob of Maco.allJobs) {
+            Maco.compareNonUniqueJobs(currentJob, jobs, addedJobIds.has(currentJob.id));
+        }
+
+        return jobs;
+    };
+    Maco.getAllFilteredUniqueJobs = function() {
+        let jobs = [];
+        Maco.updateAllJobDistances();
+        const addedJobIds = new Set(Maco.addedJobs.map(job => job.id));
+
+        for (const currentJob of Maco.allJobs) {
+            if (!Maco.jobFilterCondition(currentJob, Maco.getJobFilterParams())) continue;
+
+            Maco.compareNonUniqueJobs(currentJob, jobs, addedJobIds.has(currentJob.id));
+        }
+
+        Maco.parseJobData(jobs);
+
+        if (Maco.sortJobTable.xp) { // Sorting logic based on experience and distance flags
+            jobs.sort((a, b) => Maco.sortJobTable.xp * (b.experience - a.experience));
+        } else if (Maco.sortJobTable.distance) {
+            jobs.sort((a, b) => Maco.sortJobTable.distance * (b.distance - a.distance));
+        } else if (Maco.sortJobTable.money) {
+            jobs.sort((a, b) => Maco.sortJobTable.money * (b.money - a.money));
+        }
+
+        return jobs;
+    };
+    Maco.filterUniqueJobs = function(jobs) {
+        Maco.updateAllJobDistances(jobs);
+        const filteredJobs = jobs.filter(job => Maco.jobFilterCondition(job, Maco.getJobFilterParams()));
+        Maco.parseJobData(filteredJobs);
+
+        if (Maco.sortJobTable.xp) { // Sorting logic based on experience and distance flags
+            filteredJobs.sort((a, b) => Maco.sortJobTable.xp * (b.experience - a.experience));
+        } else if (Maco.sortJobTable.distance) {
+            filteredJobs.sort((a, b) => Maco.sortJobTable.distance * (b.distance - a.distance));
+        } else if (Maco.sortJobTable.money) {
+            filteredJobs.sort((a, b) => Maco.sortJobTable.money * (b.money - a.money));
+        }
+
+        return filteredJobs;
+    };
+    Maco.jobFilterCondition = function(job, { filterText, favoriteJobIds }) {
+        return (
+            (!filterText || Maco.getJobName(job.id).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").includes(filterText)) &&
+            (!Maco.jobFilter.filterFavorites || !favoriteJobIds.has(job.id)) &&
+            (!Maco.jobFilter.filterNoSilver || !job.silver) &&
+            (!Maco.jobFilter.filterOnlySilver || job.silver) &&
+            (!Maco.jobFilter.filterCenterJobs || job.groupId >= 29) &&
+            (!Maco.jobFilter.filterEnoughLP || JobList.getJobById(job.id).canDo())
+        );
+    };
+    Maco.getJobFilterParams = function() {
+        return {
+            filterText: Maco.jobFilter.filterJob.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, ""),
+            favoriteJobIds: new Set(Maco.favoriteJobs.map(favJob => favJob.id))
+        };
+    };
+    Maco.findJob = function(x,y,id) {
+        for (let i = 0; i < Maco.allJobs.length; i++) {
+            if (Maco.allJobs[i].id === id && Maco.allJobs[i].x === x && Maco.allJobs[i].y === y) {
+                return Maco.allJobs[i];
+            }
+        }
+    };
+    Maco.addJob = function(x,y,id) {
+        if (Maco.checkIfJobAdded(id)) return;
+        let job = Maco.findJob(x,y,id);
+        const savedJob = Maco.favoriteJobs.find(job => job.id === id);
+        if (savedJob) job.setSet(savedJob.set);
+        if (job.set === -1) job.setSet(Maco.jobSet);
+        if (Character.level <= 19 && Maco.farmingAssistant.enabled) job.setStopMotivation(0);
+        Maco.addedJobs.push(job);
+        Maco.addedJobsHasChanged = true;
+    };
+    Maco.removeJob = function(x,y,id) {
+        for (let i = 0; i < Maco.addedJobs.length; i++) {
+            if (Maco.addedJobs[i].id === id && Maco.addedJobs[i].x === x && Maco.addedJobs[i].y === y) {
+                if (Maco.lastResult.length === Maco.addedJobs.length) {
+                    Maco.lastResult.splice(i, 1);
+                }
+                Maco.addedJobs.splice(i, 1);
+                Maco.consolidePosition(i);
+                Maco.addedJobsHasChanged = true;
+                break;
+            }
+        }
+    };
+    Maco.consolidePosition = function(removeIndex) {
+        if (Maco.currentJob.jobIdx > 0) {
+            if (Maco.currentJob.jobIdx === Maco.addedJobs.length) {
+                Maco.currentJob.jobIdx--;
+            } else if (removeIndex < Maco.currentJob.jobIdx) {
+                Maco.currentJob.jobIdx--;
+            } else if (removeIndex === Maco.currentJob.jobIdx && !Maco.currentJob.direction) {
+                Maco.currentJob.jobIdx--;
+            }
+        }
+        if (Maco.addedJobs.length === 1) {
+            Maco.currentJob.direction = true;
+        }
+    };
+    Maco.checkIfJobAdded = function(id) {
+        for (let i = 0; i < Maco.addedJobs.length; i++) {
+            if (Maco.addedJobs[i].id === id) {
+                return true;
+            }
+        }
+        return false;
+    };
+    Maco.findAddedJob = function(x,y,id) {
+        for (let i = 0; i < Maco.addedJobs.length; i++) {
+            if (Maco.addedJobs[i].x === x && Maco.addedJobs[i].y === y && Maco.addedJobs[i].id === id) {
+                return Maco.addedJobs[i];
+            }
+        }
+        return null;
+    };
+    Maco.getJobSet = function(x,y,id) {
+        const job = Maco.findAddedJob(x,y,id);
+        if (job != null)
+            return job.set;
+    };
+    Maco.setJobSet = function(x,y,id,set) {
+        const job = Maco.findAddedJob(x,y,id);
+        if (job != null)
+            return job.setSet(set);
+    };
+    Maco.setSetForAllJobs = function(set = Maco.jobSet) {
+        for (let i = 0; i < Maco.addedJobs.length; i++) {
+            if (Maco.addedJobs[i].set === -1 || set === -1) {
+                Maco.addedJobs[i].setSet(set);
+            }
+        }
+    };
+    Maco.setSetForFavoriteJobs = function(set = Maco.jobSet) {
+        for (let i = 0; i < Maco.favoriteJobs.length; i++) {
+            if (Maco.favoriteJobs[i].set === -1) {
+                Maco.favoriteJobs[i].set = set;
+            }
+        }
+    };
+    Maco.updateFavoriteJobs = function(id, selected, newSet = Maco.jobSet) {
+        const index = Maco.favoriteJobs.findIndex(job => job.id === id);
+        
+        if (selected && index === -1) {
+            Maco.favoriteJobs.push({ id, set: newSet });
+        } else if (!selected && index !== -1) {
+            Maco.favoriteJobs.splice(index, 1);
+        } else if (selected && index !== -1) {
+            Maco.favoriteJobs[index].set = newSet;
+        }
+    };
+    Maco.parseStopMotivation = function() {
+        for (let i = 0; i < Maco.addedJobs.length; i++) {
+            var stopMotivation = $(".Maco2window #x-" + Maco.addedJobs[i].x + "y-" + Maco.addedJobs[i].y + "id-" + Maco.addedJobs[i].id).prop("value");
+            if (isNumber(stopMotivation)) {
+                Maco.addedJobs[i].setStopMotivation(clamp(parseInt(stopMotivation), 0, 100));
+            } else {
+                return false;
+            }
+        }
+        return true;
+    };
+    Maco.getItemImage = function(id) {
+        return ItemManager.get(id).wear_image;
+    };
+    Maco.BagSearch = function(text) {
+        let res = [];
+
+        if (!Bag.loaded) {
+            EventHandler.listen('inventory_loaded', function() {
+                Maco.findAllConsumables();
+                return EventHandler.ONE_TIME_EVENT;
+            });
+            return res;
+        }
+
+        const searchPattern = new RegExp('^.*' + text + '(.*)$', 'i');
+        const items = Bag.getItemsByItemIds();
+
+        west.common.forEach(items, function(item, item_id) {
+            let obj = item.obj;
+
+            switch (text) {
+                case "useable":
+                    if (obj.usetype !== 'none' && obj.profession_id == undefined) {
+                        res.push(item);
+                    }
+                    break;
+                default:
+                    if (searchPattern.test(obj.name) ||
+                        (obj.set !== null && searchPattern.test(west.storage.ItemSetManager.get(obj.set).name)) ||
+                        Bag.searchAttrib(obj.bonus, searchPattern) ||
+                        Bag.searchUseBonus(obj, searchPattern) ||
+                        text == obj.level ||
+                        (obj.profession !== undefined && searchPattern.test(obj.profession))
+                    ) {
+                        res.push(item);
+                    }
+                    break;
+            }
+        });
+
+        return res;
+    };
+    Maco.findAllConsumables = function() {
+        if (Maco.bonusTypeMap.length === 0) {
+            Maco.normalizeSearchKeys(Maco.searchKeys[Maco.language]);
+        }
+        const oldLength = Maco.allConsumables.length;
+        const consumes = Maco.BagSearch("useable");
+        const consumeIds = new Set(consumes.map(item => item.obj.item_id));
+
+        // Set count to 0 for items in Maco.allConsumables that are not in inventory anymore
+        Maco.allConsumables.forEach(item => {
+            if (!consumeIds.has(item.id)) item.count = 0;
+        });
+
+        for (let i = 0; i < consumes.length; i++) {
+            Maco.addConsumable(consumes[i]);
+        }
+
+        if (Maco.allConsumables.length > oldLength) {
+            Maco.loadAllConsumablesSelection();
+        }
+    };
+    Maco.checkIfConsumableAdded = function(item) {
+        if (item == undefined) return true;
+
+        for (let i = 0; i < Maco.allConsumables.length; i++) {
+            if (Maco.allConsumables[i].id === item.obj.item_id) {
+                if (Maco.allConsumables[i].count !== item.count) {
+                    Maco.allConsumables[i].count = item.count;
+                }
+                return true;
+            }
+        }
+
+        return false;
+    };
+    Maco.normalizeSearchKeys = function(lang) {
+        function cleanBonusText(text) {
+            text = text.trim();
+
+            // Case: colon detected → keep label up to the colon
+            if (text.includes(":")) {
+                return text.substring(0, text.indexOf(":") + 1).trim();
+            }
+
+            // Remove leading/trailing or standalone numeric parts like "+25%", " 100 ", etc.
+            // Regex will match:
+            //   - optional + or - (or Unicode minus)
+            //   - optional spaces
+            //   - number (int or float)
+            //   - optional % sign
+            //   - optional spaces
+            return text
+                .replace(/([+\-−]?\s*\d+[.,]?\d*\s*%?)/g, "")
+                .replace(/\s+/g, " ")
+                .trim();
+        }
+
+        try {
+            const bonus = {
+                energyText: cleanBonusText(ItemManager.get(1890000).usebonus[0]),
+                healthText: cleanBonusText(ItemManager.get(1883000).usebonus[0]),
+                motivationText: cleanBonusText(ItemManager.get(12701000).usebonus[0]),
+                luckText: cleanBonusText(ItemManager.get(2247000).usebonus[0]),
+                productText: cleanBonusText(ItemManager.get(2466000).usebonus[0]),
+                xpText: cleanBonusText(ItemManager.get(2467000).usebonus[0]),
+                moneyText: cleanBonusText(ItemManager.get(2468000).usebonus[0]),
+                travelText: cleanBonusText(ItemManager.get(1987000).usebonus[0]),
+                durationText: cleanBonusText(ItemManager.get(2467000).usebonus[1]),
+                usesText: cleanBonusText(ItemManager.get(1987000).usebonus[1]),
+                strengthText: cleanBonusText(ItemManager.get(2287000).usebonus[0]),
+                mobilityText: cleanBonusText(ItemManager.get(2287000).usebonus[2]),
+                dexterityText: cleanBonusText(ItemManager.get(2287000).usebonus[1]),
+                charismaText: cleanBonusText(ItemManager.get(2287000).usebonus[3]),
+                hidingText: cleanBonusText(ItemManager.get(54380000).usebonus[1]),
+                settingTrapsText: cleanBonusText(ItemManager.get(54381000).usebonus[1]),
+                leadershipText: cleanBonusText(ItemManager.get(54382000).usebonus[1]),
+                //dodgingText: cleanBonusText(ItemManager.get(54380000).usebonus[0]),
+                constructionText: cleanBonusText(ItemManager.get(53940000).usebonus[0]),
+                healthPointsText: cleanBonusText(ItemManager.get(54382000).usebonus[0]),
+                laborPointsText: cleanBonusText(ItemManager.get(1940000).usebonus[0]),
+                battleDamageText: cleanBonusText(ItemManager.get(2741000).usebonus[0]),
+                battleAttackText: cleanBonusText(ItemManager.get(2741000).usebonus[2]),
+                battleDefendText: cleanBonusText(ItemManager.get(2741000).usebonus[1])
+            };
+
+            // Pre-normalize the bonus type map and skill texts
+            Maco.bonusTypeMap = [
+                { key: normalizeStr(bonus.energyText), type: 0 },
+                { key: normalizeStr(bonus.motivationText), type: 1 },
+                { key: normalizeStr(bonus.healthText), type: 2 },
+                { key: normalizeStr(bonus.xpText), type: 3 },
+                { key: normalizeStr(bonus.productText), type: 4 },
+                { key: normalizeStr(bonus.luckText), type: 5 },
+                { key: normalizeStr(bonus.moneyText), type: 6 },
+                { key: normalizeStr(bonus.durationText), type: 8 },
+                { key: normalizeStr(bonus.usesText), type: 9 },
+                { key: normalizeStr(lang.premiumText ?? 'premium'), type: 10 }, // Every lang translation has same premium text except RU
+                { key: normalizeStr(bonus.travelText), type: 11 },
+                // skills = type 7
+                { key: normalizeStr(bonus.strengthText), type: 7 },
+                { key: normalizeStr(bonus.mobilityText), type: 7 },
+                { key: normalizeStr(bonus.dexterityText), type: 7 },
+                { key: normalizeStr(bonus.charismaText), type: 7 },
+                { key: normalizeStr(bonus.constructionText), type: 7 },
+                { key: normalizeStr(bonus.leadershipText), type: 7 },
+                { key: normalizeStr(bonus.healthPointsText), type: 7 },
+                { key: normalizeStr(bonus.laborPointsText), type: 7 },
+                // battle buffs = type 12
+                { key: normalizeStr(bonus.battleAttackText), type: 12 },
+                { key: normalizeStr(bonus.battleDefendText), type: 13 },
+                { key: normalizeStr(bonus.battleDamageText), type: 14 },
+                { key: normalizeStr(bonus.hidingText), type: 15 },
+                { key: normalizeStr(bonus.settingTrapsText), type: 16 }
+            ];
+        } catch (e) {
+            console.error("ItemManager is not initialized yet: ", e.stack);
+        }
+    };
+    Maco.addConsumable = function(item) {
+        if (Maco.checkIfConsumableAdded(item)) return;
+
+        const consumable = new ConsumablePrototype(item.obj.item_id, item.obj.image, item.obj.name, item.obj.usebonus, item.obj.has_cooldown);
+        const bonuses = Maco.parseConsumableBonuses(item.obj.usebonus);
+
+        if (//bonuses[10] == null || ( // (If consumable has premium bonus, null is returned)
+                bonuses.slice(0, 3).every(bonus => bonus === 0) && // Check if consumable has no energy/motivation/health
+                (bonuses.slice(3, 7).every(bonus => bonus === 0) || bonuses[8] === 0) && // Check if consumable has no xp/product/luck/money with duration
+                (bonuses[11] === 0 || (bonuses[9] === 0 || item.obj.usebonus.length !== 2)) && // Check if consumable has no travel with uses only
+                (item.obj.has_cooldown || [bonuses[12], bonuses[13], bonuses[14]].filter(b => b !== 0).length < 2) && // Check if consumable has less than 2 battle bonuses
+                (item.obj.has_cooldown || bonuses.slice(15, 17).every(bonus => bonus < 50)) // No battle character skills
+            //)
+        ) {
+            return;
+        }
+
+        consumable.setCount(item.count);
+        consumable.setEnergy(bonuses[0]);
+        consumable.setMotivation(bonuses[1]);
+        consumable.setHealth(bonuses[2]);
+        consumable.setXp(bonuses[3]);
+        consumable.setProduct(bonuses[4]);
+        consumable.setLuck(bonuses[5]);
+        consumable.setMoney(bonuses[6]);
+        consumable.setOther(bonuses[7]);
+        consumable.setDuration(bonuses[8]);
+        consumable.setUses(bonuses[9]);
+        consumable.setTravel(bonuses[11]);
+        consumable.setOffense(bonuses[12]);
+        consumable.setDefense(bonuses[13]);
+        consumable.setBattleDamage(bonuses[14]);
+        consumable.setHiding(bonuses[15]);
+        consumable.setTraps(bonuses[16]);
+
+        if ((item.obj.bufftype && item.obj.bufftype !== 0) || bonuses[10] == null) {
+            consumable.setSpecial(true);
+
+            if (item.obj.bufftype === 'character') {
+                consumable.setCharacter(true);
+            } else if (item.obj.bufftype === 'items' && !item.obj.has_cooldown && bonuses.slice(12, 15).some(b => b !== 0)) {
+                consumable.setBattleItem(true);
+            }
+        }
+
+        Maco.allConsumables.push(consumable);
+    };
+    Maco.removeConsumable = function(item) {
+        const index = (item instanceof ConsumablePrototype)
+            ? Maco.allConsumables.findIndex(c => c.id === item.id)
+            : Maco.allConsumables.findIndex(c => c.id === item);
+
+        if (index !== -1 && Maco.allConsumables[index].count > 0) {
+            Maco.allConsumables[index].count--;
+        }
+    };
+    Maco.parseConsumableBonuses = function(bonuses) {
+        let result = Array(17).fill(0);
+        const normalizedBonuses = bonuses.map(normalizeStr);
+
+        for (const bonus of normalizedBonuses) {
+            let type = -1;
+
+            for (const { key, type: mappedType } of Maco.bonusTypeMap) {
+                if (bonus.includes(key)) {
+                    type = mappedType;
+                    break;
+                }
+            }
+
+            if (type !== -1) result[type] = extractNumberFromString(bonus);
+        }
+
+        return result;
+    };
+    Maco.loadAllConsumablesSelection = function() {
+        if (Maco.consumablesSelection.length === 0) {
+            Maco.defaultConsumablesSelection();
+        } else {
+            const selectedConsumablesMap = {};
+            Maco.consumablesSelection.forEach(consumable => {
+                selectedConsumablesMap[consumable.id] = consumable.selected;
+            });
+            Maco.allConsumables.forEach(consumable => {
+                const isSelected = selectedConsumablesMap[consumable.id];
+                if (isSelected != undefined) {
+                    consumable.setSelected(isSelected);
+                } else {
+                    consumable.setSelected([52871000].includes(consumable.id) ? true : !consumable.hasSpecialBonus); // Keep bottle plug (52871000) selected by default
+                }
+            });
+        }
+    };
+    Maco.saveConsumableSelection = function(id, selected) {
+        const index = Maco.consumablesSelection.findIndex(consumable => consumable.id === id);
+        if (index !== -1) {
+            Maco.consumablesSelection[index].selected = selected;
+        } else {
+            Maco.consumablesSelection.push({ id: id, selected: selected });
+        }
+    };
+    Maco.changeConsumableSelection = function(id, selected) {
+        const index = Maco.allConsumables.findIndex(consumable => consumable.id === id);
+        if (index !== -1) {
+            Maco.allConsumables[index].setSelected(selected);
+            Maco.saveConsumableSelection(id, selected);
+        }
+    };
+    Maco.changeSelectionAllConsumables = function(selected) {
+        for (let i = 0; i < Maco.allConsumables.length; i++) {
+            Maco.allConsumables[i].setSelected(selected);
+            Maco.saveConsumableSelection(Maco.allConsumables[i].id, selected);
+        }
+    };
+    Maco.defaultConsumablesSelection = function() {
+        for (let i = 0; i < Maco.allConsumables.length; i++) {
+            let consumable = Maco.allConsumables[i];
+            const shouldSelect = [52871000].includes(consumable.id) ? true : !consumable.hasSpecialBonus; // Keep bottle plug (52871000) selected by default
+
+            consumable.setSelected(shouldSelect);
+            Maco.saveConsumableSelection(consumable.id, shouldSelect);
+        }
+    };
+    Maco.deselectConsumablesWithBuffs = function() {
+        for (let i = 0; i < Maco.allConsumables.length; i++) {
+            if (Maco.allConsumables[i].hasSpecialBonus) {
+                Maco.allConsumables[i].setSelected(false);
+                Maco.saveConsumableSelection(Maco.allConsumables[i].id, false);
+            }
+        }
+    };
+    Maco.filterConsumables = function(energy, motivation, health, buffs) {
+        var result = [];
+        for (let i = 0; i < Maco.allConsumables.length; i++) {
+            if (energy && Maco.allConsumables[i].energy === 0) {
+                continue;
+            }
+            if (motivation && Maco.allConsumables[i].motivation === 0) {
+                continue;
+            }
+            if (health && Maco.allConsumables[i].health === 0) {
+                continue;
+            }
+            if (buffs && !Maco.allConsumables[i].hasSpecialBonus) {
+                continue;
+            }
+            result.push(Maco.allConsumables[i]);
+        }
+        return result;
+    };
+    Maco.countSetBits = function(number) {
+        let count = 0;
+        while (number > 0) {
+            count += number & 1;
+            number >>= 1;
+        }
+        return count;
+    };
+    Maco.heldKarpSymmetric = function(distances, startJob) {
+        const n = distances.length;
+        const memo = Array(1 << n).fill().map(() => Array(n).fill({ cost: Infinity, path: [] }));
+        memo[1 << startJob][startJob] = { cost: 0, path: [startJob] };
+
+        for (let subsetSize = 2; subsetSize <= n; subsetSize++) {
+            for (let subset = 0; subset < (1 << n); subset++) {
+                if (Maco.countSetBits(subset) === subsetSize && (subset & (1 << startJob))) {
+                    for (let end = 0; end < n; end++) {
+                        if ((subset & (1 << end)) !== 0) {
+                            for (let prevEnd = 0; prevEnd < n; prevEnd++) {
+                                if (prevEnd !== end && (subset & (1 << prevEnd)) !== 0) {
+                                    const newCost = memo[subset ^ (1 << end)][prevEnd].cost + distances[prevEnd][end];
+                                    if (newCost < memo[subset][end].cost) {
+                                        memo[subset][end] = { cost: newCost, path: memo[subset ^ (1 << end)][prevEnd].path.concat([end]) }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        let minCost = Infinity;
+        let minPath = [];
+        for (let end = 0; end < n; end++) {
+            if (end !== startJob && memo[(1 << n) - 1][end].cost < minCost) {
+                minCost = memo[(1 << n) - 1][end].cost;
+                minPath = memo[(1 << n) - 1][end].path;
+            }
+        }
+        return { cost: minCost, path: minPath }
+    };
+    Maco.getOptimalRoute = function(distanceMatrix) {
+        const jobsCount = distanceMatrix.length;
+        const routes = [];
+        for (let startJob = 0; startJob < jobsCount; startJob++) {
+            const { cost, path } = Maco.heldKarpSymmetric(distanceMatrix, startJob);
+            routes.push({ cost, path });
+        }
+        return routes.reduce(function(prev, curr) {
+            return prev.cost < curr.cost ? prev : curr;
+        })
+    };
+    Maco.createDistanceMatrix = function() {
+        var distances = new Array(Maco.addedJobs.length);
+        for (let i = 0; i < distances.length; i++) {
+            distances[i] = new Array(Maco.addedJobs.length);
+        }
+        for (let i = 0; i < distances.length; i++) {
+            for (let j = i; j < distances[i].length; j++) {
+                if (i == j) {
+                    distances[i][j] = distances[j][i] = Number.MAX_SAFE_INTEGER;
+                    continue;
+                }
+                distances[i][j] = distances[j][i] = GameMap.calcWayTime({x:Maco.addedJobs[i].x,y:Maco.addedJobs[i].y},{x:Maco.addedJobs[j].x,y:Maco.addedJobs[j].y});
+            }
+        }
+        return distances;
+    };
+    Maco.setEntryPoint = function(jobs) {
+        if (jobs.length === 0) return;
+        let minDistanceIndex = 0;
+        let minDistance = jobs[0].distance;
+        for (let i = 1; i < jobs.length; i++) {
+            if (jobs[i].distance < minDistance) {
+                minDistance = jobs[i].distance;
+                minDistanceIndex = i;
+            }
+        }
+        Maco.currentJob.jobIdx = minDistanceIndex;
+    };
+    Maco.calculateJobDistances = function() {
+        for (let i = 0; i < Maco.addedJobs.length; i++) {
+            Maco.addedJobs[i].calculateDistance();
+        }
+    };
+    Maco.makeRoute = function() {
+        if (Maco.addedJobs.length === 1) {
+            Maco.addedJobsOld = [...Maco.addedJobs];
+            Maco.addedJobs = [Maco.addedJobs[0]];
+            return;
+        }
+
+        Maco.calculateJobDistances();
+
+        if (Maco.addedJobsChanged()) {
+            const runningJob = Maco.addedJobs[Maco.currentJob.jobIdx];
+            const distanceMatrix = Maco.createDistanceMatrix();
+            const optimalRoute = Maco.getOptimalRoute(distanceMatrix);
+            const addedJobsOrder = [];
+            for (const index of optimalRoute.path) {
+                addedJobsOrder.push(Maco.addedJobs.at(index));
+            }
+            Maco.addedJobs = addedJobsOrder;
+            Maco.addedJobsOld = [...addedJobsOrder];
+            Maco.wayTimes = null;
+            Maco.addedJobsHasChanged = true;
+            if (Maco.isRunning) {
+                Maco.currentJob.jobIdx = Maco.addedJobs.findIndex(job => job.id === runningJob.id && job.x === runningJob.x && job.y === runningJob.y);
+                Maco.currentJob.direction = !Maco.currentJob.direction;
+            } else {
+                Maco.currentJob = { jobIdx: 0, direction: true }
+            }
+        }
+
+        if (!Maco.isRunning) {
+            Maco.setEntryPoint(Maco.addedJobs);
+        }
+    };
+    Maco.createRoute = function() {
+        Maco.calculateJobDistances();
+        if (!Maco.addedJobsChanged()) {
+            if (!walkToJob_running) {
+                Maco.setEntryPoint(Maco.addedJobs);
+            }
+            return;
+        }
+        const runningJob = Maco.addedJobs[Maco.currentJob.jobIdx];
+        let closestJobIndex = 0;
+        let closestDistance = Maco.addedJobs[0].distance;
+        let route = [];
+        const distances = Maco.createDistanceMatrix();
+        var getClosestJob = function(index, route, distances) {
+            var closestDistance = Number.MAX_SAFE_INTEGER;
+            var closestIndex = -1;
+            for (let i = 0; i < distances.length; i++) {
+                if (index === i || route.includes(i)) {
+                    continue;
+                }
+                if (distances[i][index] < closestDistance) {
+                    closestDistance = distances[i][index];
+                    closestIndex = i;
+                }
+            }
+            return closestIndex;
+        };
+        for (let i = 1; i < Maco.addedJobs.length; i++) {
+            if (Maco.addedJobs[i].distance < closestDistance) {
+                closestDistance = Maco.addedJobs[i].distance;
+                closestJobIndex = i;
+            }
+        }
+        route.push(closestJobIndex);
+        while (route.length < Maco.addedJobs.length) {
+            let closestJob = getClosestJob(route[route.length-1], route, distances);
+            route.push(closestJob);
+        }
+        var addedJobsOrder = [];
+        for (let i = 0; i < route.length; i++) {
+            addedJobsOrder.push(Maco.addedJobs[route[i]]);
+        }
+        Maco.addedJobs = addedJobsOrder;
+        Maco.addedJobsOld = [...addedJobsOrder];
+        Maco.wayTimes = null;
+        Maco.addedJobsHasChanged = true;
+        if (Maco.isRunning) {
+            Maco.currentJob.jobIdx = Maco.addedJobs.findIndex(job => job.id === runningJob.id && job.x === runningJob.x && job.y === runningJob.y);
+        } else {
+            Maco.currentJob = { jobIdx: 0, direction: true }
+        }
+    };
+    Maco.addedJobsChanged = function(array1 = Maco.addedJobs, array2 = Maco.addedJobsOld) {
+        if (array1.length !== array2.length) {
+            return true;
+        }
+        for (let i = 0; i < array1.length; i++) {
+            if (array1[i].id !== array2[i].id || array1[i].x !== array2[i].x || array1[i].y !== array2[i].y) {
+                return true;
+            }
+        }
+        return false;
+    };
+    Maco.equipSet = async function(set) {
+        let equipError = false;
+        let finished = false;
+
+        const specialSets = new Map([
+            [-2, { ride: 100 }],
+            [-3, { health: 100 }],
+        ]);
+
+        if (specialSets.has(set)) {
+            finished = await Maco.equipBestCustomGear(specialSets.get(set));
+            if (finished) Maco.maxHealthForSet.set(set, Character.maxHealth);
+
+            return {equipped: finished, error: equipError};
+        }
+
+        const wardrobeSet = Maco.wardrobe.get(set);
+        if (wardrobeSet) {
+            const missingItems = await Maco.equipGear(wardrobeSet.items);
+            if (missingItems.length > 0) {
+                Maco.showAlert(`Wardrobe (TW Calc) <b>${wardrobeSet.name}</b> set has saved missing item!`);
+            }
+            finished = Maco.isGearEquiped(wardrobeSet.items);
+            if (finished) Maco.maxHealthForSet.set(set, Character.maxHealth);
+
+            return {equipped: finished, error: equipError};
+        }
+
+        if (set <= -1) return {equipped: false, error: false};
+
+        if (!Maco.sets.has(set)) {
+            Maco.showAlert(Maco.alertTranslations[Maco.translationLang].alert_2(set));
+            Maco.showNotification("The West - Set Error", "Trying to equip invalid set..", "error");
+            const backupSet = (set == Maco.travelSet) ? -2 : set == Maco.healthSet ? -3 : set;
+            if (specialSets.has(backupSet)) {
+                finished = await Maco.equipBestCustomGear(specialSets.get(backupSet));
+                if (finished) Maco.maxHealthForSet.set(set, Character.maxHealth);
+            }
+
+            return {equipped: finished, error: equipError};
+        }
+
+        let startTime = performance.now();
+        const setItems = ["head", "neck", "body", "right_arm", "left_arm", "belt", "foot", "animal", "yield", "pants"]
+            .map(key => Maco.sets.get(set)[key])
+            .filter(value => value != null);
+
+        function handleEquipError(msg) {
+            equipError = true;
+            return EventHandler.ONE_TIME_EVENT;
+        }
+
+        EventHandler.listen('equip_error', handleEquipError);
+        EquipManager.switchEquip(Maco.sets.get(set).equip_manager_id);
+
+        while ((performance.now() - startTime) < FUNCTION_TIMEOUT) {
+            await wait(interval_short);
+            finished = Maco.isGearEquiped(setItems);
+            if (finished || equipError || !Maco.isRunning) break;
+        }
+
+        EventHandler.unlisten('equip_error', handleEquipError);
+
+        if (finished) {
+            Maco.maxHealthForSet.set(set, Character.maxHealth);
+            removeUiElement("ui_inv_changed");
+        } else if (Array.from(Maco.sets.keys()).indexOf(set) > 2 && !Premium.hasBonus('automation')) {
+            Maco.showAlert(Maco.alertTranslations[Maco.translationLang].alert_3);
+            Maco.showNotification("The West - Problem in game", "Cannot equip set.. 'Automation' premium ended.", "error");
+        } else if (!Maco.equipError && Maco.isRunning) {
+            if (!await Maco.checkInternetConnection()) {
+                if (await Maco.waitForInternetConnection()) {
+                    return await Maco.equipSet(set);
+                }
+            } else {
+                Maco.loadSets(function(){});
+            }
+        }
+
+        return {equipped: finished, error: equipError};
+    };
+    Maco.isWearing = function(itemId) {
+        const item = ItemManager.get(itemId);
+        if (!item || !Wear.wear[item.type]) return false;
+
+        const wornItemId = Wear.wear[item.type].obj.item_id;
+        if (wornItemId == itemId) return true;
+
+        // Check if the last digit of wornItemId is greater than itemId's last digit
+        const baseItemId = Math.floor(itemId / 10); // Remove the last digit
+        const baseWornItemId = Math.floor(wornItemId / 10);
+
+        if (baseItemId === baseWornItemId) {
+            return (wornItemId % 10) >= (itemId % 10); // Get last digit representing item level
+        }
+
+        return false;
+    };
+    Maco.isGearEquiped = function(items, uncarryKeys = []) {
+        for (let i = 0; i < items.length; i++) {
+            if (!Maco.isWearing(items[i])) return false;
+        }
+        for (let key of uncarryKeys) {
+            if (Wear.wear[key] != undefined) return false;
+        }
+        return true;
+    };
+    Maco.getBestGear = function(jobId, jobSkills) { 
+        const jobIndex = JobsModel.Jobs.findIndex(job => job.id == jobId);
+        if (jobIndex === -1 && !jobSkills) {
+            return null;
+        }
+        jobSkills = jobSkills || JobsModel.Jobs[jobIndex]?.get('skills');
+        const result = west.item.Calculator.getBestSet(jobSkills, jobId);
+        return result && result.getItems() || [];
+    };
+    Maco.filterBestGear = function(items) {
+        let invItems = Bag.getItemsByItemIds(items), result = [], invItem, wearItem;
+
+        for (let i = 0; i < invItems.length; i++) {
+            invItem = invItems[i];
+            wearItem = Wear.get(invItem.getType());
+            if (!wearItem || (wearItem && (wearItem.getItemBaseId() !== invItem.getItemBaseId() || wearItem.getItemLevel() < invItem.getItemLevel()))) {
+                result.push(invItem.obj.item_id);
+            }
+        }
+
+        return result;
+    };
+    Maco.equipBestCustomGear = async function(jobSkills, jobId = null) {
+        const bestGear = Maco.filterBestGear(Maco.getBestGear(jobId, jobSkills));
+        let finished = false;
+        const startTime = performance.now();
+
+        for (let i = 0; i < bestGear.length; i++) {
+            if (!Maco.isWearing(bestGear[i])) {
+                const item = Bag.getItemByItemId(bestGear[i]);
+                if (item != undefined) {
+                    Wear.carry(item);
+                }
+            }
+        }
+
+        while ((performance.now() - startTime) < EQUIP_TIMEOUT) {
+            finished = Maco.isGearEquiped(bestGear);
+            if (finished) break;
+            await wait(interval_long);
+        }
+
+        return Promise.resolve(finished);
+    };
+    Maco.wearHandleClothChange = function(data, item, change, successCallback, finishCallback) {
+        WearSet.setUpItems(data.wearSets);
+        WearSet.setWorkPointBonus(data.workPointBonus);
+        CharacterSkills.updateAllBonuspoints(data.bonus.allBonuspoints);
+        Character.setSpeed(data.speed);
+        Character.calcMaxHealth();
+        EventHandler.signal('health', [Character.health, Character.maxHealth]);
+
+        if (data.error) {
+            new UserMessage(data.message || data.error, UserMessage.TYPE_ERROR).show();
+        } else {
+            Bag.updateChanges(data.changes, "wear");
+            if (successCallback) successCallback.call();
+            if (item.obj.type == 'right_arm') {
+                EventHandler.signal('character_weapon_changed', [ItemManager.get(item.obj.item_id)]);
+            }
+            EventHandler.signal('wear_changed', [change]);
+            Wear.renderWear();
+        }
+
+        if (finishCallback) finishCallback();
+    };
+    Maco.wearCarry = function(item, callback) {
+        var newItem = item.obj;
+        var change = {
+            added: [newItem],
+            removed: [Wear.wear[newItem.type] && Wear.wear[newItem.type].obj] || []
+        };
+
+        Ajax.remoteCall('inventory', 'carry', {
+            item_id: item.obj.item_id,
+            last_inv_id: Bag.getLastInvId()
+        }, function(json) {
+            Maco.wearHandleClothChange(json, item, change, function() {
+                Wear.add(item.obj.item_id);
+            }, function() {
+                if (callback) callback();
+            });
+        });
+    };
+    Maco.equipGear = async function(gear, uncarryKeys = []) {
+        const missingItems = [];
+        const promises = [];
+
+        for (const itemId of gear) {
+            if (!Maco.isWearing(itemId)) {
+                const item = Bag.getItemByItemId(itemId);
+                if (item) {
+                    const wearPromise = new Promise((resolve) => { // Create a promise for each wearCarry call
+                        const timeoutId = setTimeout(() => {
+                            console.warn("%cMaco.wearCarry not finished within timeout, continuing execution...", "color: cyan");
+                            resolve();
+                        }, EQUIP_TIMEOUT);
+
+                        Maco.wearCarry(item, () => {
+                            clearTimeout(timeoutId);
+                            resolve();
+                        });
+                    });
+
+                    promises.push(wearPromise);
+                } else {
+                    missingItems.push(" " + ItemManager.get(itemId).name);
+                }
+            }
+        }
+
+        await Promise.all(promises); // Wait for all wearCarry calls to complete before continuing
+        //Wear.renderWear();
+
+        for (let i = 0; i < uncarryKeys.length; i++) {
+            if (Wear.wear[uncarryKeys[i]] != undefined)
+                Wear.uncarry(uncarryKeys[i]);
+        }
+
+        return missingItems;
+    };
+    Maco.equipBestGear = async function(jobid, walkingToJob = false, retry = 1) {
+        if (equipBestGear_running) {
+            console.warn("%cDouble-call warning! Async function 'Maco.equipBestGear' is already in progress.. return..", 'color: cyan');
+            return Promise.resolve(true);
+        }
+        equipBestGear_running = true;
+
+        try {
+            let jobGear;
+            let bestGear;
+            let uncarryKeys = [];
+
+            function checkFarmingJobs() { // Equip no gear by default when farming jobs that unlocks at level less than 10 to earn the least possible XP.
+                const farmingJobs = [17,23,18,5,6,12,9,4,8,2,92,3,11,7,1,93,13,14,15,20,22,10]; // job id
+                for (let jobId of farmingJobs) {
+                    const jobLevel = JobsModel.getById(jobId).jobObj.level;
+                    if (jobid === jobId && Character.level >= jobLevel) {
+                        for (let level = jobLevel; level <= 9; level++) {
+                            if (!Maco.isGearSaved(jobId, level)) {
+                                Maco.saveCurrentGear(jobId, level, true);
+                            }
+                        }
+                        return true;
+                    }
+                }
+                return false; // No match
+            }
+
+            if (Maco.farmingAssistant.enabled && [1, 2].includes(Maco.addedJobs.length)) {
+                jobGear = Maco.jobsFarmingGear.find(item => item.jobid === jobid);
+                if (!jobGear && Maco.lastResult[Maco.currentJob.jobIdx] > 0 && Character.level <= 9 && checkFarmingJobs()) {
+                    jobGear = Maco.jobsFarmingGear.find(item => item.jobid === jobid); // Equip no gear from checkFarmingJobs() for certain jobs when under level 10.
+                }
+                if (jobGear) {
+                    if (Character.level <= 9 && Maco.lastResult[Maco.currentJob.jobIdx] > 0) {
+                        bestGear = jobGear[`level_${Character.level}`]?.gear || jobGear[`level_0`]?.gear;
+                        uncarryKeys = jobGear[`level_${Character.level}`]?.uncarry || jobGear[`level_0`]?.uncarry || [];
+                    } else {
+                        bestGear = jobGear[`level_0`]?.gear;
+                        uncarryKeys = jobGear[`level_0`]?.uncarry || [];
+                    }
+                }
+            }
+
+            if (!jobGear || (!bestGear && !uncarryKeys.length)) {
+                jobGear = Maco.jobsBestGear.find(item => item.jobid === jobid);
+                bestGear = jobGear ? jobGear[`level_0`]?.gear : undefined;
+                uncarryKeys = jobGear ? jobGear[`level_0`]?.uncarry || [] : [];
+            }
+
+            if (!bestGear) {
+                bestGear = Maco.getBestGear(jobid);
+                if (bestGear && bestGear.length) {
+                    Maco.jobsBestGear.push({ jobid: jobid, [`level_0`]: { gear: bestGear, uncarry: [] } });
+                } else {
+                    return Promise.resolve(true);
+                }
+            }
+
+            while (TaskQueue.queue.length > 0 && !walkingToJob) {
+                await wait(interval_long);
+                if (!Maco.isRunning) return Promise.resolve(true);
+            }
+
+            const missingItems = await Maco.equipGear(Maco.filterBestGear(bestGear), uncarryKeys); // Equip gear
+
+            if (missingItems.length > 0) {
+                let index = Maco.jobsBestGear.findIndex(item => item.jobid === jobid);
+                if (index !== -1) Maco.jobsBestGear.splice(index, 1);
+                index = Maco.jobsFarmingGear.findIndex(item => item.jobid === jobid);
+                if (index !== -1) {
+                    delete Maco.jobsFarmingGear[index].level_0;
+                    Maco.refreshTab("addedJobs");
+                    Maco.showAlert(Maco.alertTranslations[Maco.translationLang].alert_4(Maco.getJobName(jobid), missingItems));
+                    if (Maco.jobsFarmingGear[index][`level_${Character.level}`]) {
+                        Maco.showNotification("The West - Script has stopped", "Missing items.", "error");
+                        Maco.handleButtonStopClick();
+                        return Promise.resolve(false);
+                    }
+                }
+                if (retry > 0 && Character.level > 9) {
+                    equipBestGear_running = false;
+                    return await Maco.equipBestGear(jobid, walkingToJob, retry - 1);
+                }
+            }
+
+            const finished = Maco.isGearEquiped(bestGear, uncarryKeys);
+
+            if (!finished && missingItems.length === 0 && Maco.isRunning) {
+                if (!await Maco.checkInternetConnection()) {
+                    if (await Maco.waitForInternetConnection()) {
+                        equipBestGear_running = false;
+                        return await Maco.equipBestGear(jobid, walkingToJob);
+                    }
+                } else if (retry > 0) {
+                    console.warn(`%cBest gear not properly equipped.. '${Maco.getJobName(jobid)}' retry.. ` + timestamp(), 'color: cyan');
+                    equipBestGear_running = false;
+                    return await Maco.equipBestGear(jobid, walkingToJob, retry - 1);
+                } else {
+                    console.warn(`%cThere was problem equipping best gear for job: '${Maco.getJobName(jobid)}' - ` + timestamp(), "color: pink");
+                }
+            }
+
+            return Promise.resolve(finished);
+
+        } catch (e) {
+            const msg = "Error in 'Maco.equipBestGear': ";
+            console.error(msg, e.stack);
+            const index = Maco.jobsBestGear.findIndex(item => item.jobid === jobid);
+
+            if (index !== -1) {
+                Maco.jobsBestGear.splice(index, 1);
+            }
+
+            if (retry > 0) {
+                console.log("Retrying equipBestGear..");
+                equipBestGear_running = false;
+                return await Maco.equipBestGear(jobid, walkingToJob, retry - 1);
+            }
+
+            Maco.handleError(e, msg);
+            return Promise.resolve(false);
+        } finally {
+            equipBestGear_running = false;
+        }
+    };
+    Maco.saveCurrentGear = function(jobid, level = 0, saveNoGear = false) { 
+        const keys = ["animal", "yield", "right_arm", "left_arm", "foot", "pants", "belt", "body", "neck", "head"];
+        let gear = [];
+        let uncarryKeys = [];
+
+        for (let i = 0; i < keys.length; i++) {
+            if (saveNoGear) {
+                uncarryKeys.push(keys[i]);
+            } else {
+                if (Wear.wear[keys[i]] != undefined) {
+                    gear.push(Wear.wear[keys[i]].obj.item_id);
+                } else {
+                    uncarryKeys.push(keys[i]);
+                }
+            }
+        }
+
+        // Check if the jobGear entry already exists in jobsFarmingGear
+        let jobGear = Maco.jobsFarmingGear.find(item => item.jobid === jobid);
+        if (jobGear) {
+            jobGear[`level_${level}`] = { gear: gear, uncarry: uncarryKeys };
+        } else {
+            Maco.jobsFarmingGear.push({ jobid: jobid, [`level_${level}`]: { gear: gear, uncarry: uncarryKeys } });
+        }
+
+        // If it's level 0, also update the best gear logic
+        if (level === 0) {
+            const bestGearIndex = Maco.jobsBestGear.findIndex(item => item.jobid === jobid);
+            if (bestGearIndex !== -1) {
+                Maco.jobsBestGear[bestGearIndex][`level_${level}`] = { gear: gear, uncarry: uncarryKeys };
+            } else {
+                Maco.jobsBestGear.push({ jobid: jobid, [`level_${level}`]: { gear: gear, uncarry: uncarryKeys } });
+            }
+        }
+    };
+    Maco.deleteSavedGear = function(jobid, level = 0) {
+        let deleted = false;
+        const index = Maco.jobsFarmingGear.findIndex(item => item.jobid === jobid);
+
+        if (index !== -1) {
+            let jobGear = Maco.jobsFarmingGear[index];
+            if (jobGear.hasOwnProperty(`level_${level}`)) {
+                delete jobGear[`level_${level}`];
+                deleted = true;
+            }
+            if (Object.keys(jobGear).length === 1) {
+                Maco.jobsFarmingGear.splice(index, 1);
+            }
+        }
+
+        if (level === 0) {
+            const gearIndex = Maco.jobsBestGear.findIndex(item => item.jobid === jobid);
+            if (gearIndex !== -1) {
+                Maco.jobsBestGear.splice(gearIndex, 1);
+                deleted = true;
+            }
+        }
+
+        return deleted;
+    };
+    Maco.isGearSaved = function(jobid, level = 0) {
+        let jobGear = Maco.jobsFarmingGear.find(item => item.jobid === jobid);
+
+        if (jobGear && jobGear[`level_${level}`]) {
+            let savedGear = jobGear[`level_${level}`];
+
+            if (savedGear.gear.length > 0 || savedGear.uncarry.length > 0) {
+                return true;
+            }
+        }
+
+        return false;
+    };
+    Maco.exportFarmingGear = function(jobid) {
+        let jobGear = Maco.jobsFarmingGear.find(item => item.jobid === jobid);
+
+        if (jobGear) {
+            let jobGearCopy = JSON.parse(JSON.stringify(jobGear)); // Create a copy of jobGear to modify without affecting the original
+
+            // Add comments to the 'gear' items for export (ignore during import)
+            Object.keys(jobGearCopy).forEach(key => {
+                if (key.startsWith('level_')) {
+                    let levelData = jobGearCopy[key];
+                    if (levelData && levelData.gear && Array.isArray(levelData.gear)) {
+                        levelData.gear.forEach((itemId, index) => {
+                            let itemName = ItemManager.get(itemId).name;
+                            levelData.gear[index] = `${itemId}, ${itemName}`; // Format as "itemId, (itemName)"
+                        });
+                    }
+                }
+            });
+
+            // Convert jobGearCopy to formatted JSON string
+            let jsonData = JSON.stringify(jobGearCopy, null, 2); // Indent with 2 spaces
+
+            let blob = new Blob([jsonData], { type: 'text/plain' }); // Create a Blob containing the JSON data
+
+            // Create a link element to trigger the download
+            let link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = `${Maco.getJobName(jobid)}.txt`; // Save as .txt file
+            link.style.display = 'none';
+            document.body.appendChild(link);
+
+            link.click(); // Click the link to trigger download
+
+            // Clean up
+            document.body.removeChild(link);
+            setTimeout(() => URL.revokeObjectURL(link.href), 0); // Use a small delay to ensure download starts
+        } else {
+            new UserMessage("Nothing is saved for this job!", UserMessage.TYPE_ERROR).show();
+            //console.log(`Farming gear data not found for: ${Maco.getJobName(jobid)}`);
+        }
+    };
+    Maco.importFarmingGear = function() {
+        function convertImportedData(data) {
+            let newData = JSON.parse(JSON.stringify(data)); // Create a deep copy of the imported data to modify without affecting the original
+
+            // Remove comments from 'gear' items and format back to original structure
+            Object.keys(newData).forEach(key => {
+                if (key.startsWith('level_')) {
+                    let levelData = newData[key];
+                    if (levelData && levelData.gear && Array.isArray(levelData.gear)) {
+                        levelData.gear.forEach((gearItem, index) => {
+                            if (typeof gearItem === 'string') {
+                                let parts = gearItem.split(', ');
+                                if (parts.length === 2) {
+                                    let itemId = parseInt(parts[0]);
+                                    levelData.gear[index] = itemId;
+                                }
+                            }
+                        });
+                    }
+                }
+            });
+
+            return newData;
+        }
+
+        return new Promise((resolve, reject) => {
+            let input = document.createElement('input'); // Create an input element for file selection
+            input.type = 'file';
+            input.accept = '.json, .txt'; // Accept both JSON and TXT files
+
+            input.onchange = function(event) { // Handle file selection
+                let file = event.target.files[0];
+                if (!file) {
+                    reject(new Error('No file selected'));
+                    return;
+                }
+
+                let reader = new FileReader(); // Read the file contents
+                reader.onload = function(event) {
+                    try {
+                        let jsonData = event.target.result;
+                        let importedData = JSON.parse(jsonData);
+
+                        let existingIndex = Maco.jobsFarmingGear.findIndex(item => item.jobid === importedData.jobid);
+                        if (existingIndex !== -1) {
+                            Maco.jobsFarmingGear[existingIndex] = convertImportedData(importedData); // Update existing entry
+                        } else {
+                            Maco.jobsFarmingGear.push(convertImportedData(importedData)); // Add new entry
+                        }
+
+                        resolve(true);
+
+                    } catch (e) {
+                        console.error('Error parsing JSON file: ', e.stack);
+                        reject(new Error('Error parsing JSON file'));
+                    }
+                };
+
+                reader.readAsText(file);
+            };
+
+            input.click(); // Trigger file selection dialog
+        });
+    };
+    Maco.checkMotivation = function(index, result, callback) {
+        if (result.length === Maco.addedJobs.length && !Maco.addedJobsHasChanged) {
+            Maco.lastResult = [...result];
+            callback(result);
+            return;
+        }
+        result = [];
+
+        const processMotivation = (idx) => {
+            if (!Maco.isRunning) return; // Stop if the process is no longer running.
+
+            Maco.loadJobMotivation(idx, function(motivation) {
+                if (!Maco.isRunning) return; // Stop if the process is no longer running.
+                result.push(motivation);
+
+                if (idx + 1 < Maco.addedJobs.length) { // Continue processing the next job.
+                    processMotivation(idx + 1);
+                } else { // All jobs processed, save result and invoke callback.
+                    Maco.lastResult = [...result];
+                    Maco.addedJobsHasChanged = false;
+                    callback(result);
+                }
+            });
+        };
+
+        if (index < Maco.addedJobs.length) {
+            processMotivation(index);
+        } else { // Handle invalid index input.
+            console.error(`Error in Maco.checkMotivation. Invalid index: ${index}. Index must be less than ${Maco.addedJobs.length}.`);
+            callback([]);
+        }
+    };
+    Maco.isMotivationAbove = function(result) {
+        if (Maco.isStopMotivationZero()) return true;
+        for (let i = 0; i < result.length; i++) {
+            if (result[i] > Maco.addedJobs[i].stopMotivation) {
+                return true;
+            }
+        }
+        return false;
+    };
+    Maco.isMotivationAboveLow = function(result) {
+        if (Maco.isStopMotivationZero()) return true;
+        for (let i = 0; i < result.length; i++) {
+            if (result[i] > Maco.addedJobs[i].stopMotivation + 5) {
+                return true;
+            }
+        }
+        return false;
+    };
+    Maco.jobsBelowMotivation = function(result) {
+        if (!result) return 0;
+        let count = 0;
+        for (let i = 0; i < result.length; i++) {
+            if (result[i] <= Maco.addedJobs[i].stopMotivation && Maco.addedJobs[i].stopMotivation > 0) {
+                count++;
+            }
+        }
+        return count;
+    };
+    Maco.averageMissingMotivation = function(result) {
+        if (!result) return 0;
+        const event = Maco.getEventBuff(Maco.searchKeys[Maco.language]?.motivationEventBuff);
+        let motivation = 0;
+        for (let i = 0; i < result.length; i++) {
+            motivation += ((100 + event) - result[i]);
+        }
+        return motivation / result.length;
+    };
+    Maco.totalMotivationLeft = function(result) {
+        if (result.length < Maco.addedJobs.length) return 0;
+        let motivation = 0;
+
+        for (let i = 0; i < Maco.addedJobs.length; i++) {
+            const currentResult = result[i];
+
+            if (typeof currentResult === 'number' && !isNaN(currentResult)) {
+                motivation += (currentResult - Maco.addedJobs[i].stopMotivation);
+            }
+        }
+
+        return motivation;
+    };
+    Maco.isMotivationRequired = function() {
+        return Maco.settings.addMotivation && !Maco.isStopMotivationZero();
+    };
+    Maco.isStopMotivationZero = function() {
+        for (let i = 0; i < Maco.addedJobs.length; i++) {
+            if (Maco.addedJobs[i].stopMotivation <= 0) {
+                return true;
+            }
+        }
+        return false;
+    };
+    Maco.isHealthBelowLimit = function(healthStopValue = Maco.settings.healthStopValue, healthStopPercent = Maco.settings.healthStopPercent) {
+        return (healthStopPercent >= ((Character.health / Character.maxHealth) * 100) && healthStopValue >= Character.health)
+    };
+    Maco.calcHealthRefill = async function(setInUse, fastCalc = false) {
+        if (!Maco.sets.has(setInUse) && !Maco.wardrobe.has(setInUse) && !Maco.maxHealthForSet.has(setInUse))
+            return 0;
+
+        if (fastCalc && (!Maco.maxHealthForSet.has(setInUse) || !Maco.maxHealthForSet.has(Maco.healthSet)))
+            return 0;
+
+        let setInUseEquipped = true,
+            healthSetEquipped = true;
+
+        if (!Maco.maxHealthForSet.has(setInUse)) {
+            setInUseEquipped = (await Maco.equipSet(setInUse)).equipped;
+            await wait(interval_long);
+        }
+
+        if (!Maco.maxHealthForSet.has(Maco.healthSet))
+            healthSetEquipped = (await Maco.equipSet(Maco.healthSet)).equipped;
+
+        if (!setInUseEquipped || !healthSetEquipped)
+            return 0;
+
+        const healthMissing = Maco.maxHealthForSet.get(setInUse) - Character.health;
+        return Math.round((healthMissing / Maco.maxHealthForSet.get(Maco.healthSet)) * 100);
+    };
+    Maco.useItemLoop = async function(toUse, amount = 0, delay) {
+        let item;
+
+        if (typeof toUse === 'object') {
+            item = toUse;
+        } else if (typeof toUse === 'number') {
+            item = Bag.getItemByItemId(toUse);
+        } else if (typeof toUse === 'string') {
+            const itemArr = Maco.BagSearch(toUse);
+            if (!itemArr || itemArr.length !== 1) {
+                new UserMessage("Item name is not accurate or not found!", UserMessage.TYPE_ERROR).show();
+                return;
+            }
+            const foundItem = itemArr[0].obj;
+            if (foundItem.usetype === 'none' || foundItem.has_cooldown) {
+                new UserMessage("Invalid item! Cannot use this item.", UserMessage.TYPE_ERROR).show();
+                return;
+            }
+            item = itemArr[0];
+        } else {
+            return;
+        }
+
+        amount = Math.min(amount, item.count) || item.count;
+
+        for (let i = 0; i < amount; i++) {
+            try {
+                ItemUse.doIt(item.obj.item_id);
+                await wait(delay || 1000);
+                if (Maco.invalidSession || document.querySelector('.critical-error')) {
+                    break;
+                }
+                Maco.removeConfirmDialog();
+            } catch (error) {
+                console.error(`Error using item '${item.obj.name}': `, error);
+                break;
+            }
+        }
+    };
+    Maco.getEventBuff = function(buffName) {
+        if (buffName == undefined) return 0;
+        const buffs = CharacterSkills.buffs;
+
+        function cleanDescription(desc) {
+            return desc.replace(/[+%0-9]/g, '').trim();
+        }
+
+        for (let key in buffs) {
+            if (key.startsWith('event_')) {
+                const description = buffs[key].description.find(desc => compareStrings(cleanDescription(desc), buffName, 0.85));
+                return description ? extractNumberFromString(description) : 0;
+            }
+        }
+
+        return 0;
+    };
+    Maco.loadActiveEventItemId = function() {
+        let ids = [];
+
+        const eventMapping = {
+            'Hearts': [2558000, 2557000],
+            'Easter': [2698000],
+            'Independence': [51483000],
+            'Octoberfest': [50691000],
+            'DayOfDead': [2666000, 2665000]
+        };
+
+        for (let eventKey in eventMapping) {
+            if ($(`.custom_unit_counter.${eventKey}`).length > 0) {
+                ids = eventMapping[eventKey];
+                break;
+            }
+        }
+
+        return ids;
+    };
+    Maco.startSpecialConsumableInterval = function() {
+        const executeConsumables = () => {
+            const nuggetId = [2482000]; // magic nugget bag
+            const consumableIds = [...nuggetId, ...Maco.loadActiveEventItemId()]; // Combine all IDs (flatten into one array)
+
+            let usedConsumables = [];
+
+            consumableIds.forEach(id => {
+                if (Maco.useSpecialConsumable(id)) {
+                    usedConsumables.push(id);
+                }
+            });
+
+            setTimeout(() => {
+                if (usedConsumables.length > 0) {
+                    const cooldowns = usedConsumables.map(id => Maco.getConsumeCooldown(id) * 1000 || 3e5);
+                    const minCooldown = Math.min(...cooldowns); // Get the shortest cooldown
+                    setTimeout(executeConsumables, minCooldown);
+                }
+            }, timeout_regular); // Delay to ensure ItemUse.doIt(id) is finished and cooldowns updated
+        };
+
+        executeConsumables();
+    };
+    Maco.useSpecialConsumable = function(id) {
+        if (id != null && Bag.getItemByItemId(id)) {
+            if (Maco.canUseConsume(id) && Maco.currentState !== 5) {
+                Maco.itemUse(id, ItemManager.get(id).name.trim());
+            }
+            return true;
+        }
+        return false;
+    };
+    Maco.getConsumeCooldown = function(itemId = 0) {
+        if (itemId === 0 && Maco.allConsumables.length > 0) {
+            const foundItem = Maco.allConsumables.find(item => item.energy !== 0 || item.motivation !== 0 || item.health !== 0);
+            if (foundItem) {
+                itemId = foundItem.id;
+            } else {
+                return 0;
+            }
+        }
+        const item = Bag.getItemByItemId(itemId);
+        if (item && BuffList.cooldowns[itemId] != undefined) {
+            item.showCooldown();
+            return Math.max((BuffList.cooldowns[itemId].time - new ServerDate().getTime()) / 1000, 0); // in seconds
+        }
+        return 0;
+    };
+    Maco.canUseConsume = function(itemId) {
+        const item = Bag.getItemByItemId(itemId);
+        if (item) {
+            item.showCooldown();
+            if ((BuffList.cooldowns[itemId] != undefined && BuffList.cooldowns[itemId].time > new ServerDate().getTime()) || !navigator.onLine) {
+                return false;
+            }
+            return true;
+        }
+        return false;
+    };
+    Maco.canAddBuff = function(type) {
+        if ($(`[id^="buff_div_${type}"]`).length > 0) {
+            return false;
+        }
+        return CharacterSkills.buffs[type] == null;
+    };
+    Maco.tryUseBuff = function() {
+        const calculateEnergyMissing = () => 100 - (Character.energy / Character.maxEnergy) * 100;
+        let toAdd =
+            Maco.settings.addXpBuff ? 'xp' :
+            Maco.settings.addProductBuff ? 'product' :
+            Maco.settings.addMoneyBuff ? 'money' :
+            Maco.settings.addLuckBuff ? 'luck' :
+            '';
+        const characterBuff = Maco.canAddBuff('character') && toAdd !== '';
+        const travelBuff = Maco.canAddBuff('travel') && Maco.settings.addTravelBuff;
+
+        if (!characterBuff && travelBuff) {
+            toAdd = 'travel';
+        } else if (toAdd === '' || (!characterBuff && !travelBuff)) {
+            return;
+        }
+
+        let consumables = Maco.allConsumables.filter(c => c.selected && c[toAdd] > 0 && c.count > 0);
+        if (consumables.length === 0 && characterBuff && travelBuff) {
+            toAdd = 'travel';
+            consumables = Maco.allConsumables.filter(c => c.selected && c[toAdd] > 0 && c.count > 0);
+        }
+
+        if (consumables.length === 0 || useBuff_running) {
+            return;
+        }
+        consumables.sort((a, b) => b.duration - a.duration);
+        consumables.sort((a, b) => b[toAdd] - a[toAdd]);
+
+        const battleTimer = Maco.getCurrentBattleTimer() / 60;
+        let index = null;
+        let indexes = [];
+
+        for (let i = 0; i < consumables.length; i++) {
+            if ((toAdd === 'travel' && consumables[i].uses !== 0 && ((Maco.settings.addEnergyOptional) ? consumables[i].bonuses.length === 2 : true)) ||
+                (consumables[i].duration !== 0 && toAdd !== 'travel'))
+            {
+                if ((Character.level <= 19 && consumables[i].other > 0 && Maco.lastResult[Maco.currentJob.jobIdx] > 0) ||
+                    (
+                        consumables[i].hasCooldown &&
+                        (
+                            (consumables[i].motivation <= 5 && Maco.isMotivationRequired() && Maco.totalMotivationLeft(Maco.lastResult) < (Maco.getConsumeCooldown(consumables[i].id) / 15) + 39) ||
+                            ((consumables[i].energy * Character.maxEnergy / 100 + Character.energy) < Maco.getConsumeCooldown() / 15 - TaskQueue.queue.length + 39)
+                        )
+                    )
+                ) {
+                    continue;
+                }
+
+                if (toAdd !== 'travel' && Maco.settings.fortBattle.overwriteCharacterBonus && battleTimer > 0 &&
+                    (consumables[i].duration * 60) - battleTimer > (consumables[i].duration * 60) * BATTLE_BUFF_OVERWRITE_TOLERANCE
+                ) {
+                    continue;
+                }
+
+                if (index == null) { // The first item that satisfy condition above.
+                    index = i;
+                }
+
+                if (consumables[i].energy > 0 && (!Maco.settings.addEnergy || consumables[i].energy > calculateEnergyMissing() + ENERGY_WASTE_TOLERANCE)) {
+                    continue;
+                }
+
+                indexes.push(i);
+            }
+        }
+
+        if (indexes.length > 0) {
+            // Find the index of the item with the most energy
+            index = indexes.reduce((maxIndex, currentIndex) => {
+                return consumables[currentIndex].energy > consumables[maxIndex]?.energy ? currentIndex : maxIndex;
+            }, indexes[0]); // Start with the first index as the initial maxIndex
+        }
+
+        if (index != null) {
+            Maco.useBuff(consumables[index]);
+        }
+    };
+    Maco.useBuff = async function(itemToUse) {
+        if (!itemToUse) return;
+        if (useBuff_running) {
+            console.warn("%cDouble-call warning! Async function 'Maco.useBuff' is already in progress.. return..", 'color: cyan');
+            return;
+        }
+        useBuff_running = true;
+
+        try {
+            let waiting = false;
+            const stateBefore = Maco.currentState;
+
+            while (Maco.isRunning && !useConsumable_running) {
+                if (Maco.canUseConsume(itemToUse.id)) {
+                    Maco.itemUse(itemToUse.id, itemToUse.name.trim());
+                    /*setTimeout(() => {
+                        Maco.refreshTab("consumables");
+                    }, 1000);*/
+                    break;
+                } else if (!waiting) {
+                    waiting = true;
+                    Maco.currentState = 2;
+                }
+                await wait(interval_long);
+            }
+
+            if (waiting && Maco.isRunning && Maco.currentState === 2 && !useConsumable_running) {
+                Maco.currentState = stateBefore;
+            }
+        } catch (e) {
+            const msg = "Exception occured in 'Maco.useBuff()': ";
+            console.error(msg, e.stack);
+            Maco.handleError(e, msg);
+        } finally {
+            useBuff_running = false;
+        }
+    };
+    Maco.removeConfirmDialog = function() {
+        if ($(".tw2gui_dialog_framefix").length > 0) {
+            $(".tw2gui_dialog_framefix").remove();
+            return;
+        }
+
+        const removeDialogTimeout = setTimeout(() => {
+            clearInterval(removeDialogInterval);
+        }, timeout_regular);
+
+        const removeDialogInterval = setInterval(() => {
+            const dialogs = $(".tw2gui_dialog_framefix");
+            if (dialogs.length > 0) {
+                dialogs.remove();
+                clearInterval(removeDialogInterval);
+                clearTimeout(removeDialogTimeout);
+            }
+        }, interval_short);
+    };
+    Maco.itemUse = function(item_id, item_name) {
+        EventHandler.listen('item_used', function() {
+            setTimeout(() => {
+                Maco.removeConfirmDialog();
+                Maco.removeConsumable(item_id);
+                if (item_name) {
+                    Maco.diagnostics.consumablesUsed.push(item_name);
+                    Maco.refreshTab("consumables");
+                }
+            }, 0);
+            return EventHandler.ONE_TIME_EVENT;
+        });
+
+        ItemUse.doIt(item_id);
+    };
+    Maco.useConsumable = async function(itemToUse, lowMotivationFlag = false, optionalEnergy = false, battleFlag = false, equipHealthSet = true) {
+        if (useConsumable_running) {
+            console.warn("%cDouble-call warning! Async function 'Maco.useConsumable' is already in progress.. return..", 'color: cyan');
+            return false;
+        }
+        useConsumable_running = true;
+
+        try {
+            let waiting = null;
+            const stateBefore = Maco.currentState;
+
+            while (Maco.isRunning) {
+                if (Maco.canUseConsume(itemToUse.id)) {
+                    if (itemToUse.health !== 0 && !walkToJob_running && !runJob_running && ![7].includes(stateBefore) && equipHealthSet) {
+                        const maxHealthJob = Maco.maxHealthForSet.get(Maco.addedJobs[Maco.currentJob.jobIdx].set);
+                        const maxHealth = (battleFlag) ? Character.maxHealth : maxHealthJob || Character.maxHealth;
+                        const healthMissing = ((maxHealth - Character.health) / maxHealth) * 100;
+                        const isSetChangeOptimal = healthMissing > itemToUse.health;
+
+                        if (battleFlag ? isSetChangeOptimal : ((!optionalEnergy && !lowMotivationFlag) || isSetChangeOptimal)) {
+                            await Maco.equipSet(Maco.healthSet);
+                        }
+                    }
+                    const itemName = battleFlag ? itemToUse.name.trim() + " (Battle)" : (Maco.isHealthBelowLimit() ? itemToUse.name + " (LOW HP)" : itemToUse.name);
+                    Maco.itemUse(itemToUse.id, itemName);
+                    break;
+                } else if (!waiting) {
+                    if (battleFlag && (Maco.getCurrentBattleTimer() - BATTLE_START_MARGIN / 2 < Maco.getConsumeCooldown(itemToUse.id))) {
+                        break;
+                    }
+                    waiting = new Date();
+                    Maco.currentState = 2;
+                }
+
+                await wait(interval_long);
+            }
+
+            await wait(interval_long); // To prevent race conditions (energy/cooldown game update)
+
+            if (Maco.isRunning && !optionalEnergy && !lowMotivationFlag && !battleFlag) {
+                if (waiting) {
+                    Maco.stats.session.consumableWaitingTime += calculateElapsedSeconds(waiting);
+                    Maco.addWaitingReason("Used before: <" + Maco.diagnostics.consumablesUsed.at(-2) + "> | Waited for: <" + Maco.diagnostics.consumablesUsed.at(-1) + ">");
+                }
+                Maco.updateRuntime();
+                Maco.run();
+            } else if (Maco.isRunning) {
+                Maco.currentState = stateBefore;
+            }
+
+            //Maco.refreshTab("consumables");
+            return true;
+        } catch (e) {
+            const msg = "Exception occured in 'Maco.useConsumable': ";
+            console.error(msg, e.stack);
+            Maco.handleError(e, msg);
+            return false;
+        } finally {
+            useConsumable_running = false;
+        }
+    };
+    function sortByHealthMissing(consumes, healthMissing) {
+        return consumes.sort((a, b) => {
+            const diffA = Math.abs(a.health - healthMissing);
+            const diffB = Math.abs(b.health - healthMissing);
+            if (diffA !== diffB) {
+                return diffA - diffB;
+            }
+            return b.health - a.health; // If proximity is the same, sort by more health
+        });
+    };
+    function equalValuesOnly(consumes, attribute) {
+        // Find the index of the first item with a different value for the given attribute
+        const index = consumes.findIndex((item, i, arr) => i > 0 && item[attribute] !== arr[0][attribute]);
+        // Slice the array to keep only the items with the same value for the given attribute
+        return index !== -1 ? consumes.slice(0, index) : consumes;
+    };
+    Maco.findProperConsumable = function(jobsBelowMotivation,energyMissing,healthMissing,averageMotivationMissing,consumables,lowMotivationFlag,optionalEnergy,battleFlag) {
+        function betterEnergy(item1, item2) {
+            const targetEnergy = Math.min(energyMissing, Maco.maxAllowedEnergy);
+            const distanceItem1 = Math.abs(targetEnergy - item1.energy);
+            const distanceItem2 = Math.abs(targetEnergy - item2.energy);
+            return distanceItem1 - distanceItem2;
+        }
+        function betterMotivation(item1, item2) {
+            const adjust = (dist) => dist > 0 ? dist * 3 : dist; // Consumables that have lower motivation than needed are deprioritized in the sorting
+            const distanceItem1 = adjust(averageMotivationMissing - item1.motivation);
+            const distanceItem2 = adjust(averageMotivationMissing - item2.motivation);
+            return Math.abs(distanceItem1) - Math.abs(distanceItem2);
+        }
+
+        function findMotivationConsume(consumes) {
+            consumes.sort(betterMotivation);
+            const lowHealthFlag = Maco.hasLowHealth();
+            const idealConsume = consumes.find(c =>
+                (c.motivation >= averageMotivationMissing || Math.abs(averageMotivationMissing - c.motivation) <= 5) &&
+                (c.energy <= energyMissing + ENERGY_WASTE_TOLERANCE && c.energy * Character.maxEnergy / 100 + Character.energy >= 39) &&
+                (!lowHealthFlag || c.health > 0)
+            );
+            if (idealConsume) return idealConsume; //return sortByHealthMissing(equalValuesOnly(equalValuesOnly(idealConsumes, 'energy'), 'motivation'), healthMissing)[0];
+
+            let filteredConsumes = consumes.filter(c => c.motivation > 0 && (c.energy <= energyMissing + ENERGY_WASTE_TOLERANCE || Character.energy < 26));
+            if (filteredConsumes.length === 0) {
+                filteredConsumes = consumes.filter(c => c.motivation > 0);
+            }
+            for (let i = 0; i < filteredConsumes.length; i++) {
+                if (filteredConsumes[i].energy * Character.maxEnergy / 100 + Character.energy >= 39) {
+                    return filteredConsumes[i];
+                }
+            }
+            return filteredConsumes[0];
+        }
+
+        function findHealthConsume(consumes) {
+            const filteredConsumes = consumes.filter(c => c.health > 0);
+            if (filteredConsumes.length === 0) return null;
+            if (battleFlag) return equalValuesOnly(sortByHealthMissing(filteredConsumes, healthMissing), 'health').sort((a, b) => a.energy - b.energy)[0];
+            let slicedConsumes = sortByHealthMissing(equalValuesOnly(filteredConsumes, 'energy'), healthMissing);
+
+            if (Maco.isMotivationRequired() && Maco.totalMotivationLeft(Maco.lastResult) < 39) {
+                if (slicedConsumes.sort(betterMotivation)[0].motivation === 0) {
+                    const idealConsumes = filteredConsumes.filter(c =>
+                        c.motivation > 0 &&
+                        c.energy <= energyMissing + ENERGY_WASTE_TOLERANCE &&
+                        c.energy * Character.maxEnergy / 100 + Character.energy >= 39
+                    );
+                    slicedConsumes = idealConsumes.length > 0 ? idealConsumes.sort(betterMotivation) : slicedConsumes;
+                }
+            } else {
+                slicedConsumes.sort((a, b) => (a.health === b.health) ? a.motivation - b.motivation : 0);
+            }
+
+            return slicedConsumes[0];
+        }
+
+        function findEnergyConsume(consumes) {
+            const lowHealthFlag = Maco.hasLowHealth();
+            let filteredConsumes = consumes.filter(c => c.energy > 0);
+
+            if (optionalEnergy) {
+                filteredConsumes = filteredConsumes.filter(c => {
+                    const lowHealthCondition = lowHealthFlag ? c.health > 0 : true;
+                    const allowedMotivationCondition = ((c.motivation === 0 || Maco.settings.allowMotivationOptional) || (Maco.isStopMotivationZero() && Maco.settings.addMotivation));
+                    const minEnergyLimitCondition = ((c.energy / 100) * Character.maxEnergy) + Character.energy >= (39 - TaskQueue.queue.length);
+
+                    return c.energy <= Math.min(Maco.settings.addEnergyOptionalMax, energyMissing) && 
+                    (
+                        (c.energy >= Maco.maxAllowedEnergy || (minEnergyLimitCondition && c.energy >= Maco.settings.addEnergyOptionalMin)) &&
+                        lowHealthCondition && allowedMotivationCondition
+                    );
+                });
+                if (filteredConsumes.length === 0) {
+                    return null;
+                } else if (filteredConsumes.length === 1) {
+                    return filteredConsumes[0];
+                }
+            }
+
+            const slicedConsumes = sortByHealthMissing(equalValuesOnly(filteredConsumes, 'energy'), healthMissing);
+            if (Maco.isMotivationRequired() && Maco.totalMotivationLeft(Maco.lastResult) < 39) {
+                slicedConsumes.sort(betterMotivation);
+            } else {
+                slicedConsumes.sort((a, b) => a.motivation - b.motivation);
+            }
+            return slicedConsumes[0];
+        }
+
+
+        if (consumables.length === 0) return null;
+        if (Maco.settings.addEnergy && !battleFlag) {
+            consumables.sort(betterEnergy);
+        } else {
+            consumables.sort((a, b) => a.energy - b.energy);
+        }
+
+        if (Maco.isHealthBelowLimit() || battleFlag) {
+            return findHealthConsume(consumables);
+        }
+        if (jobsBelowMotivation >= Maco.addedJobs.length || lowMotivationFlag) {
+            return findMotivationConsume(consumables);
+        }
+        if (consumables[0].energy > 0 && (optionalEnergy || Character.energy < Maco.energyCost)) {
+            return findEnergyConsume(consumables);
+        }
+
+        return null;
+    };
+    Maco.hasLowHealth = function() {
+        const maxJobHealth = Maco.maxHealthForSet.get(Maco.addedJobs[Maco.currentJob.jobIdx].set) || Character.maxHealth;
+        const healthMissing = ((maxJobHealth - Character.health) / maxJobHealth) * 100;
+
+        return 100 - healthMissing < Maco.settings.healthStopPercent * 1.5 || (healthMissing > 70 && Character.health < Maco.settings.healthStopValue * 1.9);
+    };
+    Maco.tryFindConsumable = function(jobsBelowMotivation, averageMotivationMissing, healthMissing, lowMotivationFlag, optionalEnergy, battleFlag) {
+        const energyMissing = 100 - (Character.energy / Character.maxEnergy) * 100;
+        const selectedConsumes = Maco.allConsumables.filter(c =>
+            c.selected && c.count > 0 &&
+            (!c.hasCharacterBonus || (Maco.canAddBuff('character') && c.uses !== 0))
+        );
+
+        return Maco.findProperConsumable(jobsBelowMotivation, energyMissing, healthMissing, averageMotivationMissing, selectedConsumes, lowMotivationFlag, optionalEnergy, battleFlag);
+    };
+    Maco.tryUseConsumable = async function(result, healthMissing = 0, lowMotivationFlag = false, optionalEnergy = false, battleFlag = false, equipHealthSet = true) {
+        if (healthMissing === 0) healthMissing = await Maco.calcHealthRefill(Maco.jobSet, true);
+
+        const jobsBelowMotivation = Maco.jobsBelowMotivation(result);
+        const averageMotivationMissing = Maco.averageMissingMotivation(result);
+
+        const itemToUse = Maco.tryFindConsumable(jobsBelowMotivation, averageMotivationMissing, healthMissing, lowMotivationFlag, optionalEnergy, battleFlag);
+
+        if (!itemToUse) {
+            return false;
+        }
+
+        if (optionalEnergy || lowMotivationFlag) {
+            if (!Maco.canUseConsume(itemToUse.id)) {
+                return false;
+            }
+            await Maco.useConsumable(itemToUse, lowMotivationFlag, optionalEnergy, battleFlag, equipHealthSet);
+        } else {
+            Maco.useConsumable(itemToUse, lowMotivationFlag, optionalEnergy, battleFlag, equipHealthSet);
+        }
+
+        return true;
+    };
+    Maco.cancelJobsPromise = function() {
+        return new Promise(resolve => {
+            if (TaskQueue.queue.length === 0) {
+                resolve();
+            } else {
+                if (navigator.onLine && Object.keys(TaskQueue.toCancel).length === 0) {
+                    TaskQueue.cancelAll();
+                }
+                setTimeout(() => {
+                    Maco.cancelJobsPromise().then(resolve);
+                }, timeout_regular);
+            }
+        });
+    };
+    Maco.cancelJobs = async function() {
+        while (TaskQueue.queue.length > 0 && navigator.onLine) {
+            TaskQueue.cancelAll();
+            await waitForEvent('taskqueue-ready');
+        }
+    };
+    Maco.updateRuntime = function() {
+        Maco.stats.session.runTime += calculateElapsedSeconds(Maco.startTime);
+        Maco.startTime = new Date();
+        Maco.debouncedSaveAll(0);
+    };
+    Maco.updateStatistics = function(oldXp, oldMoney) {
+        const xpDifference = Character.experience - oldXp;
+        const moneyDifference = Character.money > oldMoney ? Character.money - oldMoney : 0;
+        Maco.stats.session.xp += xpDifference;
+        Maco.stats.total.xp += xpDifference;
+        Maco.stats.session.money += moneyDifference;
+        Maco.stats.total.money += moneyDifference;
+        Maco.updateRuntime();
+        Maco.refreshTab("stats");
+    };
+    Maco.canAddMissing = function(result) {
+        if (!Maco.settings.addMotivation && !Maco.isMotivationAbove(result) && !Maco.isStopMotivationZero()) {
+            Maco.showAlert(Maco.alertTranslations[Maco.translationLang].alert_5);
+            return {canContinue: false, reason: "motivation"};
+        }
+        if (!Maco.settings.addEnergy && Character.energy === 0) {
+            Maco.showAlert(Maco.alertTranslations[Maco.translationLang].alert_6);
+            return {canContinue: false, reason: "energy"};
+        }
+        if (!Maco.settings.addHealth && Maco.isHealthBelowLimit()) {
+            Maco.showAlert(Maco.alertTranslations[Maco.translationLang].alert_7);
+            return {canContinue: false, reason: "health"};
+        }
+        return {canContinue: true};
+    };
+    Maco.considerUseConsumable = async function(result, healthMissing = 0) {
+        const answer = Maco.canAddMissing(result);
+        if (!answer.canContinue) {
+            if (answer.reason === "motivation") {
+                Maco.sleep({ dontWakeUp: true, message: answer.reason, flag: answer.reason });
+            } else {
+                Maco.sleep({ message: answer.reason, flag: answer.reason });
+            }
+        } else if (!await Maco.tryUseConsumable(result, healthMissing)) {
+            const message = Maco.maxAllowedEnergy === 100 ? Maco.alertTranslations[Maco.translationLang].alert_8 : "";
+            if (message) Maco.showAlert(message);
+            Maco.sleep({ message: message, flag: (Maco.isHealthBelowLimit()) ? "health" : "" });
+        }
+    };
+    Maco.run = function() {
+        Maco.checkMotivation(0, [], function(result) {
+            if (Maco.invalidSession) return;
+            if (Maco.isMotivationAbove(result) && Character.energy > 0 && !Maco.isHealthBelowLimit()) {
+                Maco.currentState = 1;
+                Maco.prepareJobRun(Maco.currentJob.jobIdx, result);
+            } else {
+                Maco.considerUseConsumable(result);
+            }
+        });
+    };
+    Maco.swapSilverJob = function(index, swapToSilver = true) {
+        let job = Maco.getClosetSilverJob(Maco.addedJobs[index].id, swapToSilver);
+        if (job != null) {
+            job.setStopMotivation(Maco.addedJobs[index].stopMotivation);
+            job.setSet(Maco.addedJobs[index].set);
+            Maco.addedJobs.splice(index, 1, job);
+            return true;
+        } else {
+            return false;
+        }
+    };
+    Maco.optionalEnergyAllowed = function() {
+        return Maco.settings.addEnergy && Maco.settings.addEnergyOptional && (Character.level >= 9 || Maco.lastResult[Maco.currentJob.jobIdx] === 0);
+    }
+    Maco.prepareJobRun = function(index, _result = [], walkingToJob = false) {
+        if (!Maco.isRunning) return;
+        const energyMissing = (queue = 0) => 100 - ((Character.energy - queue) / Character.maxEnergy) * 100;
+        const energyCondition = (minEnergyResult, queue = 0) => Maco.optionalEnergyAllowed() && energyMissing(queue) >= Maco.settings.addEnergyOptionalMin &&
+                                                                Character.energy + Character.maxEnergy * (Maco.settings.addEnergyOptionalMax / 100) >= minEnergyResult;
+        setTimeout(function() {
+            Maco.loadJobMotivation(index, async function(motivation) {
+                const addedJob = Maco.addedJobs[index];
+
+                if ([1, 2].includes(Maco.addedJobs.length) && Maco.addedJobs.every(job => job.stopMotivation <= 0)) {
+                    if ((Maco.lastResult[index] === 0 || Maco.lastResultFarming[index] === 0) && motivation > 81) {
+                        if (Maco.addedJobs.length === 2) {
+                            Maco.removeJob(addedJob.x, addedJob.y, addedJob.id);
+                            Maco.debouncedSaveAll(0);
+                            if (Maco.settings.autoReload) {
+                                Maco.reload("Daily jobs reset. Farming job changed.");
+                            } else {
+                                Maco.lastResult = [];
+                                Maco.prepareJobRun(Maco.currentJob.jobIdx);
+                                return;
+                            }
+                        } else if (Maco.farmingAssistant.stopLevel) {
+                            Maco.handleButtonStopClick();
+                            return;
+                        }
+                    }
+                    if (!addedJob.silver && (motivation <= 0 || (characterId !== 0 && Maco.farmingAssistant.enabled)) && !Maco.farmingAssistant.jobSwapped) {
+                        Maco.farmingAssistant.jobSwapped = true;
+                        Maco.swapSilverJob(index);
+                        Maco.selectTab("addedJobs");
+                    } else if (motivation > 0 && addedJob.silver && Character.level <= 19) {
+                        Maco.farmingAssistant.jobSwapped = false;
+                        Maco.swapSilverJob(index, false);
+                        Maco.selectTab("addedJobs");
+                    }
+                }
+
+                Maco.lastResult[index] = motivation;
+                Maco.lastResultFarming = [...Maco.lastResult];
+
+                if (Character.energy === 0 || Maco.isHealthBelowLimit()) {
+                    if (Maco.canAttendBattle()) {
+                        Maco.attendFortBattle();
+                        return;
+                    }
+                    Maco.run();
+                } else if (motivation <= addedJob.stopMotivation && addedJob.stopMotivation > 0) {
+                    Maco.checkMotivation(0, _result, function(result) {
+                        if (Maco.isMotivationAbove(result)) {
+                            do {
+                                Maco.changeJob();
+                            } while (result[Maco.currentJob.jobIdx] <= Maco.addedJobs[Maco.currentJob.jobIdx].stopMotivation && Maco.addedJobs[Maco.currentJob.jobIdx].stopMotivation > 0)
+                            Maco.debouncedSaveAll(0);
+                            Maco.prepareJobRun(Maco.currentJob.jobIdx, result);
+                            return;
+                        } else {
+                            Maco.considerUseConsumable(result);
+                        }
+                    });
+                } else if (Maco.isDestinationReached(Maco.addedJobs[Maco.currentJob.jobIdx]) || walkingToJob) {
+                    const inQueue = TaskQueue.queue.length;
+                    const motivationLeft = motivation - addedJob.stopMotivation;
+                    const maxJobs = Premium.hasBonus('automation') ? TaskQueue.limit.premium : TaskQueue.limit.normal;
+                    const energyLimit = Math.min(39, Character.energy + (Maco.maxAllowedEnergy * 150) / 100); // Minimum energy/motivation needed (after consumable used) to work without waiting for cooldown.
+                    let addEnergyAfterJobs = false;
+
+                    if (!walkingToJob && Maco.canAttendBattle()) {
+                        Maco.attendFortBattle();
+                        return;
+                    }
+
+                    if (addedJob.stopMotivation <= 0) {
+                        var numberOfJobs = Math.min(Character.energy, maxJobs);
+                    } else {
+                        var numberOfJobs = Math.min(Math.min(motivationLeft - inQueue, Character.energy), maxJobs);
+                    }
+
+                    if (Maco.getConsumeCooldown() === 0 && (Maco.totalMotivationLeft(Maco.lastResult) >= energyLimit || !Maco.isMotivationRequired())) {
+                        if (energyCondition(energyLimit) && TaskQueue.queue.length === 0 && !walkingToJob) {
+                            addEnergyAfterJobs = !await Maco.tryUseConsumable(Maco.lastResult, 0, false, true);
+                        } else if (energyCondition(energyLimit, numberOfJobs)) {
+                            addEnergyAfterJobs = true;
+                        }
+                    }
+
+                    Maco.runJob(index, numberOfJobs, walkingToJob, addEnergyAfterJobs);
+                } else {
+                    while (TaskQueue.queue.length > 0 && Maco.isRunning) {
+                        Maco.cancelSleep(true);
+                        await wait(interval_long);
+                    }
+
+                    const equipped = (await Maco.equipSet(Maco.travelSet)).equipped;
+                    (equipped) ? Maco.saveWayTimes() : new UserMessage("'Travel set' could not be equipped!", UserMessage.TYPE_ERROR).show();
+
+                    if (Maco.canAttendBattle(equipped)) {
+                        Maco.attendFortBattle();
+                        return;
+                    }
+
+                    Maco.checkMotivation(0, _result, function(result) {
+                        let canAddEnergy = false;
+                        let lowMotivation = false;
+                        const energyLimit = Math.min(39, Character.energy + (Maco.maxAllowedEnergy * 150) / 100);
+
+                        if (motivation <= addedJob.stopMotivation + 5 && Maco.isMotivationRequired()){
+                            if (Maco.isMotivationAboveLow(result)) {
+                                do {
+                                    Maco.changeJob();
+                                } while (result[Maco.currentJob.jobIdx] <= Maco.addedJobs[Maco.currentJob.jobIdx].stopMotivation + 5 && Maco.addedJobs[Maco.currentJob.jobIdx].stopMotivation > 0)
+                                index = Maco.currentJob.jobIdx;
+                                Maco.debouncedSaveAll(0);
+                            } else if (Maco.settings.addMotivation) {
+                                lowMotivation = true;
+                            }
+                        }
+
+                        if (
+                            energyCondition(energyLimit) &&
+                            (!Maco.isMotivationRequired() || (!lowMotivation && Maco.jobsBelowMotivation(result) <= result.length - 2 && Maco.totalMotivationLeft(result) >= energyLimit))
+                        ) {
+                            canAddEnergy = true;
+                        }
+
+                        Maco.loadJobsData(function() {
+                            Maco.walkToJob(index, result);
+                            if ((canAddEnergy || lowMotivation) || Maco.isRunning) {
+                                setTimeout(function() {
+                                    Maco.tryUseConsumable(result, 0, lowMotivation, canAddEnergy);
+                                }, 1000);
+                            }
+                        });
+                    });
+                }
+            });
+        }, 0);
+    };
+    Maco.isDestinationReached = function(dest) {
+        if (dest == null) return false;
+        const from = Character.position;
+        return Character.calcWayTo(dest) <= 0 || (from.x === dest.x && from.y === dest.y);
+    };
+    Maco.waitUntilDestinationIsReached = async function(destination) {
+        if (destination == null) return false;
+        while (!Maco.isDestinationReached(destination) && TaskQueue.queue.length > 0 && Maco.isRunning) {
+            Maco.cancelSleep(true);
+            await wait(interval_long);
+        }
+        return Maco.isDestinationReached(destination);
+    };
+    Maco.getPlayerProfileData = async function(playerId, playerName) {
+        return await Ajax.remoteCallMode("profile", "init", {
+            name: playerName,
+            playerId: playerId
+        }, function(resp) {
+            if (resp.error) {
+                new UserMessage(resp.message,UserMessage.TYPE_ERROR).show();
+            }
+            return resp;
+        });
+    };
+    Maco.checkDuelProtection = async function(duration = 0) {
+        const town = Character.homeTown;
+        const isWanted = (await Maco.getPlayerProfileData(Character.playerId)).wanted;
+        let isProtected = town.town_id == 0 && !isWanted;
+
+        if ((town.town_id != 0 || isWanted) && Character.getDuelProtection(true) > new ServerDate().getTime()) {
+            const protectionTime = (((Character.getDuelProtection(true) - new ServerDate().getTime()) / 1000) / 60); // minutes
+            isProtected = protectionTime > duration;
+            if (Maco.isDuelProtected && !isProtected) {
+                Maco.showNotification("The West - Duel protection", `Duel protection ends in ${Math.floor(protectionTime)} minutes.`, "duel");
+            }
+        }
+
+        Maco.isDuelProtected = isProtected;
+        return isProtected;
+    };
+    Maco.moneyDepositAllowed = async function() {
+        await Maco.checkDuelProtection(MIN_DUEL_PROTECTION);
+        return Maco.settings.autoMoneyDeposit.enabled && (!Maco.settings.autoMoneyDeposit.duelProtected || !Maco.isDuelProtected);
+    }
+    Maco.walkToJob = async function(index, result, retry = 1) {
+        if (walkToJob_running) {
+            console.warn("%cDouble-call warning! Async function 'Maco.walkToJob' is already in progress.. return..", 'color: cyan');
+            return;
+        }
+        walkToJob_running = true;
+
+        try {
+            const job = Maco.addedJobs.at(index);
+            const jobGroup = JobList.getJobsByGroupId(job.groupId);
+            const jobToWalkTo = jobGroup.map(j => {
+                    const { id, workpoints, jobpoints } = JobsModel.getById(j.id);
+                    const level = j.level;
+                    return { id, workpoints, jobpoints, level }; // workpoints = required LP, jobpoints = character has LP
+                })
+                .reduce((prev, curr) => {
+                    if (curr.jobpoints >= curr.workpoints && (curr.jobpoints - curr.workpoints) > (prev.jobpoints - prev.workpoints)) {
+                        return curr;
+                    }
+                    return prev;
+                });
+
+            if (!Maco.isRunning) return;
+            let taskError = false;
+            let wayTime = Character.calcWayTo(job);
+            Maco.destinyGuardian("walkToJob()", 4, 20000);
+
+            if (await Maco.moneyDepositAllowed() && Character.money > Maco.settings.autoMoneyDeposit.amount) {
+                const bidSuccess = await Maco.auctionDeposit(
+                    Maco.settings.autoMoneyDeposit.auctionItemId,
+                    Maco.settings.autoMoneyDeposit.sellerName
+                );
+                if (!bidSuccess && Maco.homeTown) {
+                    wayTime = Character.calcWayTo(Maco.homeTown) + GameMap.calcWayTime(Maco.homeTown, job);
+                    await Maco.goDepositMoney();
+                }
+            }
+
+            function handleTaskError(msg) {
+                taskError = true;
+
+                if (retry > 0) {
+                    Maco.showAlert(msg);
+                } else {
+                    Maco.showNotification("The West - Script has stopped", "Cannot travel to job.", "error");
+                    Maco.handleButtonStopClick();
+                }
+
+                return EventHandler.ONE_TIME_EVENT;
+            }
+
+            EventHandler.listen('task_error', handleTaskError);
+            TaskQueue.add(new TaskJob(jobToWalkTo.id, job.x, job.y, 15));
+            await waitForEvent('taskqueue-ready');
+            EventHandler.unlisten('task_error', handleTaskError);
+
+            if (taskError) {
+                if (retry > 0) {
+                    await wait(timeout_regular);
+                    await Maco.equipBestGear(jobToWalkTo.id, false, 0);
+                    walkToJob_running = false;
+                    await Maco.walkToJob(index, result, retry - 1);
+                }
+                return;
+            }
+
+            const advancedWalk = Maco.settings.advancedWalkingToJob && wayTime > 9 && Character.energy >= 8 && Character.level >= jobToWalkTo.level && Premium.hasBonus('automation');
+            if (advancedWalk) {
+                await wait(timeout_regular);
+                Maco.prepareJobRun(index, result, true);
+            }
+
+            const xp = Character.experience;
+            const arrived = await Maco.waitUntilDestinationIsReached(job);
+            removeUiElement("ui-loader");
+
+            if (Maco.isRunning) {
+                if (arrived) {
+                    Maco.stats.session.travelTime += Math.round(wayTime);
+                } else if (xp !== Character.experience && Maco.settings.autoReload) {
+                    Maco.reload("Destination not reached (walkToJob). Server error..?");
+                }
+
+                if (advancedWalk) return;
+            }
+
+            await Maco.cancelJobs();
+
+            if (Maco.isRunning) {
+                Maco.prepareJobRun(Maco.currentJob.jobIdx, result);
+            }
+        } catch (e) {
+            const msg = "Exception occured in 'Maco.walkToJob': ";
+            console.error(msg, e.stack);
+            Maco.handleError(e, msg);
+        } finally {
+            walkToJob_running = false;
+            Maco.updateRuntime();
+        }
+    };
+    Maco.changeJob = function() {
+        if (Maco.currentJob.direction) {
+            Maco.currentJob.jobIdx++;
+            if (Maco.currentJob.jobIdx === Maco.addedJobs.length) {
+                Maco.currentJob.direction = false;
+                Maco.currentJob.jobIdx--;
+            }
+        } else {
+            Maco.currentJob.jobIdx--;
+            if (Maco.currentJob.jobIdx < 0) {
+                Maco.currentJob.direction = true;
+                Maco.currentJob.jobIdx++;
+            }
+        }
+    };
+    Maco.runJob = async function(jobIndex, jobCount, walkingToJob = false, addEnergy = false, retry = 1) {
+        if (runJob_running) {
+            console.warn("%cDouble-call warning! Async function 'Maco.runJob' is already in progress.. return..", 'color: cyan');
+            return;
+        }
+        runJob_running = true;
+
+        try {
+            var endJob = async function(oldXp, oldMoney) {
+                Maco.stats.session.jobs -= TaskQueue.queue.length;
+                Maco.stats.total.jobs -= TaskQueue.queue.length;
+                await Maco.cancelJobs();
+                Maco.updateStatistics(oldXp, oldMoney);
+            }
+
+            let taskError = false;
+            function handleTaskError(msg) {
+                taskError = !JobList.getJobById(Maco.addedJobs.at(jobIndex).id).canDo();
+                return EventHandler.ONE_TIME_EVENT;
+            }
+
+            const job = Maco.addedJobs[jobIndex];
+            const oldXp = Character.experience;
+            const oldMoney = Character.money;
+            Maco.destinyGuardian("Maco.runJob", 3, 30000);
+
+            if (Maco.settings.addBuffs) {
+                Maco.tryUseBuff();
+            }
+
+            const bestGearEquipped = await Maco.equipBestGear(job.id, walkingToJob);
+
+            if (Maco.isRunning) {
+                EventHandler.listen('task_error', handleTaskError);
+                if (TaskQueue.busy && TaskQueue.toAdd.length > 0) {
+                    TaskQueue.toAdd = [];
+                    TaskQueue.busy = false;
+                }
+                const tasks = [];
+                for (let i = 0; i < jobCount; i++) {
+                    tasks.push(new TaskJob(job.id, job.x, job.y, 15));
+                }
+                TaskQueue.add(tasks);
+                await waitForEvent('taskqueue-ready');
+                EventHandler.unlisten('task_error', handleTaskError);
+
+                Maco.stats.session.jobs += jobCount;
+                Maco.stats.total.jobs += jobCount;
+
+                await wait(timeout_long);
+                const setEquip = await Maco.equipSet(job.set);
+
+                if (taskError || (!setEquip.equipped && setEquip.error && Character.level > 19 && Maco.isRunning)) {
+                    if (!bestGearEquipped && walkingToJob) {
+                        Maco.settings.advancedWalkingToJob = false;
+                        Maco.showAlert("Cannot equip set. ...Turning off 'Efficient Travel' setting!");
+                    }
+                    while (walkingToJob && walkToJob_running && Maco.isRunning) {
+                        await wait(interval_long);
+                    }
+                    await endJob(oldXp, oldMoney);
+
+                    if (retry > 0) {
+                        (taskError) ? console.log("Problem starting job due low LP.. 'Maco.runJob' retry..")
+                                    : console.log("Problem switching equip due low LP.. 'Maco.runJob' retry..");
+                        runJob_running = false;
+                        return await Maco.runJob(jobIndex, jobCount, false, addEnergy, retry - 1);
+                    }
+
+                    if (Array.from(Maco.sets.keys()).indexOf(job.set) > 2 && !Premium.hasBonus('automation')) {
+                        for (let i = Maco.addedJobs.length - 1; i >= 0; i--) {
+                            if (Maco.addedJobs[i].set === job.set) {
+                                Maco.removeJob(Maco.addedJobs[i].x, Maco.addedJobs[i].y, Maco.addedJobs[i].id);
+                            }
+                        }
+                    } else {
+                        Maco.showAlert(Maco.alertTranslations[Maco.translationLang].alert_10(Maco.getJobName(job.id)));
+                        Maco.removeJob(job.x, job.y, job.id);
+                        (Maco.addedJobs.length > 2 && Maco.addedJobs.length <= MAX_ALLOWED_JOBS) ? Maco.makeRoute() : Maco.createRoute();
+                    }
+                    Maco.selectTab("addedJobs");
+
+                    if (Maco.addedJobs.length === 0) {
+                        Maco.sleep({ dontWakeUp: true, message: "No jobs to run." });
+                    } else {
+                        Maco.prepareJobRun(Maco.currentJob.jobIdx);
+                    }
+
+                    return;
+                }
+
+                if (walkingToJob && TaskQueue.queue.length > 1) {
+                    let idx;
+                    do {
+                        if (TaskQueue.busy && Object.keys(TaskQueue.toCancel).length > 0) {
+                            TaskQueue.toCancel = {};
+                            TaskQueue.busy = false;
+                        }
+                        idx = TaskQueue.queue.at(0).type === 'job' ? 0 : 1;
+                        TaskQueue.cancel(idx);
+                        await waitForEvent('taskqueue-ready');
+                    } while (TaskQueue.queue.length > 1 && TaskQueue.queue.at(idx).type === 'job' && TaskQueue.queue.at(idx).data.job.id !== job.id);
+                }
+            } else {
+                return;
+            }
+
+            if (addEnergy) {
+                const healthMissing = ((Character.maxHealth - Character.health) / Character.maxHealth) * 100;
+                Maco.tryUseConsumable(Maco.lastResult, healthMissing, false, true);
+            }
+
+            let queueLength = TaskQueue.queue.length;
+            const oldLevel = Character.level;
+
+            while (Maco.isRunning) {
+                if (TaskQueue.queue.length < queueLength) {
+                    queueLength = TaskQueue.queue.length;
+                    if (Character.level > oldLevel && Maco.farmingAssistant.enabled && Maco.farmingAssistant.stopLevel) {
+                        Maco.showAlert("Level up.");
+                        Maco.showNotification("The West - Script has stopped", "Level up.", "stopped");
+                        Maco.handleButtonStopClick();
+                        return;
+                    }
+                    const isSessionExpired = (
+                        (
+                            (Maco.build.nightBuild && Maco.canBuild()) || 
+                            (Maco.settings.nightShiftWorker && Maco.favoriteJobs.length > 0)
+                        ) && Maco.isSessionExpired()
+                    ) || (
+                        Character.level <= 19 &&
+                        (Character.experience - oldXp > 0) &&
+                        Maco.addedJobs.length === 2 &&
+                        Maco.addedJobs.every(job => job.stopMotivation <= 0) &&
+                        Maco.lastResultFarming[Maco.currentJob.jobIdx] === 0
+                    );
+                    if (isSessionExpired) {
+                        break;
+                    }
+                }
+                if (TaskQueue.queue.length === 0) {
+                    Maco.updateStatistics(oldXp, oldMoney);
+                    Maco.prepareJobRun(Maco.currentJob.jobIdx);
+                    return;
+                }
+                if (Maco.isHealthBelowLimit()) {
+                    break;
+                }
+
+                await wait(interval_long);
+            }
+
+            await endJob(oldXp, oldMoney);
+
+            if (Maco.isRunning) {
+                Maco.run();
+            }
+        } catch (e) {
+            const msg = "Exception occured in 'Maco.runJob': ";
+            console.error(msg, e.stack);
+            Maco.handleError(e, msg);
+        } finally {
+            runJob_running = false;
+        }
+    };
+
+    Maco.destinyGuardian = (function() {
+        // Private object to store start times and execution counts for each target
+        const guardianData = {};
+
+        return function(target, maxRepetitions, timeWindow, stop = false) {
+            if (!Maco.isRunning || !navigator.onLine) {
+                return;
+            }
+            const currentTime = Date.now();
+
+            if (!guardianData[target]) { // Initialize data for the target if it doesn't exist
+                guardianData[target] = {
+                    startTime: currentTime,
+                    executions: 0
+                };
+            }
+
+            const targetData = guardianData[target];
+
+            if (currentTime - targetData.startTime >= timeWindow) { // Check if the time window has expired
+                targetData.executions = 0;
+                targetData.startTime = currentTime;
+            }
+
+            if (targetData.executions >= maxRepetitions) { // Check if the max repetitions limit has been reached
+                const msg = `Destiny prevention! - Call limit '${target}'.`;
+                if (stop || !Maco.settings.autoReload || Maco.diagnostics.reloadReasons[0]?.includes(msg)) {
+                    Maco.showNotification("The West - Script has stopped", msg, "error");
+                    Maco.handleButtonStopClick();
+                } else {
+                    Maco.reload(msg);
+                }
+                return;
+            }
+
+            targetData.executions++;
+        };
+    })();
+    Maco.auctionDeposit = async function(itemId, sellerName) {
+        if (!itemId || !sellerName) return false;
+        const item = ItemManager.get(itemId);
+        if (!item) return false;
+        const ajaxKey = 'building_market';
+        const searchKey = item.name;
+        let searchResult = [];
+        let page = 1;
+        let next = true; // Start with the assumption there is a next page
+
+        while (next) {
+            const reqObj = {
+                pattern: searchKey,
+                nav: 'page',
+                page: page,
+                sort: 'bid', // bid, buynow
+                order: 'asc',
+                type: '',
+                level_range_min: 1,
+                level_range_max: 250,
+                usable: true,
+                has_effect: false,
+                visibility: 2 // 2 - world, 1 - alliance, 0 - town
+            };
+
+            try {
+                const response = await new Promise((resolve) => {
+                    Ajax.remoteCall(ajaxKey, 'search', reqObj, (json) => {
+                        (json.error) ? resolve(null) : resolve(json);
+                    });
+                });
+
+                if (!response) break;
+
+                if (response?.msg?.search_result) {
+                    searchResult.push(...response.msg.search_result); // Merge results
+                }
+                next = Boolean(response?.msg?.next); // Check if there is another page
+                page++; // Move to the next page
+
+                if (next) await wait(generateRandomNumber(150, 250)); // Wait before next search request
+            } catch (e) {
+                break; // Exit loop for this key if an error occurs
+            }
+        }
+
+        const filteredOffers = searchResult.filter(offer =>
+            offer.auction_price != null && (offer.current_bid || offer.auction_price) + Character.money < Character.getCapital() &&
+            offer.seller_name === sellerName
+        );
+        if (filteredOffers.length === 0) return false;
+        const selectedOffer = filteredOffers.find(o => o.is_highest_bidder) || filteredOffers[0];
+
+        try {
+            await new Promise((resolve, reject) => {
+                Ajax.remoteCall(ajaxKey, 'bid', {
+                    bidtype: 0, // 0 - Use money on hand, 1 - Use money in bank
+                    bid: (selectedOffer.current_bid || selectedOffer.auction_price) + Character.money,
+                    market_offer_id: selectedOffer.market_offer_id
+                }, function (resp) {
+                    (resp.error) ? reject(resp) : resolve(resp);
+                });
+            });
+
+            return true;
+        } catch (error) {
+            return false;
+        }
+    };
+    Maco.goDepositMoney = async function(town = Maco.homeTown, amount = Character.money) { 
+        if (town == null) return false;
+
+        if (!Maco.isDestinationReached(town)) {
+            TaskQueue.add(new TaskWalk(town.town_id, 'town'));
+            await waitForEvent('taskqueue-ready');
+        }
+
+        (async () => {
+            if (await Maco.waitUntilDestinationIsReached(town)) {
+                Maco.depositMoney(town.town_id, amount);
+            } else {
+                console.warn("%cDestination to deposit money not reached within timeout.", 'color: cyan');
+            }
+        })();
+
+        return true;
+    };
+    Maco.acceptMoneyDialog = function() {
+        let dialogBox = document.querySelector('.tw2gui_dialog');
+        if (dialogBox && dialogBox.querySelector('.twdb_banking')) {
+            let yesButton = dialogBox.querySelector('.tw2gui_button:nth-child(1)');
+            yesButton.click();
+            return true;
+        }
+        return false;
+    };
+    Maco.depositMoney = function(townId = 1, amount = Character.money) {
+        if (!Maco.acceptMoneyDialog()) {
+            if (townId == null) townId = 1;
+            if (amount < 20) return;
+            try {
+                globalWindow.BankWindow.townid = townId;
+                globalWindow.BankWindow.DOM = new west.gui.Textfield("tb_balance_input_" + globalWindow.BankWindow.townid).setSize(10).setValue(amount).getMainDiv();
+                globalWindow.BankWindow.Balance.add();
+            } catch (e) {
+                Ajax.remoteCall("building_bank", "deposit", {
+                    town_id: townId,
+                    amount: amount
+                });
+            }
+        }
+    };
+    Maco.saveWayTimes = function(town = Maco.homeTown) {
+        if (Maco.settings.fortBattle.selected < 0 || Maco.wayTimes || !Maco.battles.size || Maco.currentState !== 1 || town == null || !Maco.addedJobs.length) return;
+        const jobs_town = [];
+        const forts_town = new Map();
+        let town_fort = 0;
+
+        for (let i = 0; i < Maco.addedJobs.length; i++) {
+            jobs_town[i] = GameMap.calcWayTime(Maco.addedJobs[i], town);
+        }
+
+        for (let i = 0; i < Maco.allianceForts.length; i++) {
+            const fort = Maco.allianceForts[i];
+            const time = GameMap.calcWayTime(fort, town);
+            forts_town.set(fort.fort_id, time);
+        }
+
+        town_fort = GameMap.calcWayTime(town, Maco.battles.get(Maco.settings.fortBattle.selected));
+
+        Maco.wayTimes = {
+            town_fort,
+            jobs_town,
+            forts_town,
+        };
+    };
+    Maco.canAttendBattle = function(traveling = false, town = Maco.homeTown) {
+        if (Maco.isInBattle()) return true;
+        const battleTimer = Maco.getCurrentBattleTimer(); // seconds
+
+        if (Maco.settings.fortBattle.attend && Maco.battles.has(Maco.settings.fortBattle.selected) && battleTimer > 0) {
+            const coolup = (Maco.totalMotivationLeft(Maco.lastResult) > 9 && Character.energy > 9 && !Maco.hasLowHealth())
+                ? Math.max(0, 600 - Maco.getConsumeCooldown())
+                : 0;
+            const refill_time_reserve = (Maco.settings.fortBattle.refillHealth && Maco.currentState !== 3)
+                ? (Maco.settings.fortBattle.isTank ? 1260 - coolup : 600 - coolup)
+                : 0;
+            const timeToGo = 120
+                + Math.max(refill_time_reserve - battle_time_reserve, calcMaxPrepareTime())
+                + battle_time_reserve
+                + BATTLE_START_MARGIN;
+
+            updateAllowedEnergy(battleTimer - timeToGo);
+
+            if (battleTimer < timeToGo) {
+                return true;
+            }
+        }
+
+        function calcMaxPrepareTime() {
+            const job = Maco.addedJobs[Maco.currentJob.jobIdx];
+            const max_jobs_duration = 135; // 9 jobs * 15s = 135s
+            let player_job_town = 0, player_town = 0, town_fort = 0, maxPrepareTime = 600;
+
+            if (traveling && town != null) {
+                player_job_town = GameMap.calcWayTime(Character.position, job) + GameMap.calcWayTime(job, town);
+                town_fort = GameMap.calcWayTime(town, Maco.battles.get(Maco.settings.fortBattle.selected));
+                player_town = GameMap.calcWayTime(Character.position, town);
+                maxPrepareTime = Math.max(max_jobs_duration + player_town, player_job_town) + town_fort;
+            } else if (Maco.wayTimes && town != null) {
+                if (Maco.currentState !== 3) { // not sleeping
+                    player_town = Maco.wayTimes.jobs_town[Maco.currentJob.jobIdx] + max_jobs_duration;
+                } else if (TaskQueue.queue[0]?.type === 'fortsleep') { // is sleeping in fort
+                    player_town = Maco.wayTimes.forts_town.get(TaskQueue.queue[0].data.fortId);
+                }
+                town_fort = Maco.wayTimes.town_fort;
+                maxPrepareTime = player_town + town_fort;
+            } else {
+                maxPrepareTime = Math.min(maxPrepareTime, Character.calcWayTo(Maco.battles.get(Maco.settings.fortBattle.selected))) + max_jobs_duration;
+            }
+
+            return maxPrepareTime;
+        }
+
+        function updateAllowedEnergy(remnant) {
+            if (remnant <= ((Character.energy - (Character.maxEnergy * (ENERGY_WASTE_TOLERANCE / 100))) * 15)) {
+                Maco.maxAllowedEnergy = 0;
+            } else if (remnant < Character.maxEnergy * 15) {
+                Maco.maxAllowedEnergy = ENERGY_WASTE_TOLERANCE + (((remnant / 15) - Character.energy) / Character.maxEnergy) * 100;
+            } else {
+                Maco.maxAllowedEnergy = 100;
+            }
+        }
+
+        return false;
+    };
+    Maco.isItemsBuffActive = function(item) {
+        if (!CharacterSkills.buffs['items']) return false;
+        return CharacterSkills.buffs['items'].fortbattle.offense == item.offense &&
+            CharacterSkills.buffs['items'].fortbattle.defense == item.defense &&
+            Number(CharacterSkills.buffs['items'].min_damage + "" + CharacterSkills.buffs['items'].max_damage) == item.battleDamage;
+    };
+    Maco.attendFortBattle = async function() {
+        const battleSettings = Maco.settings.fortBattle;
+        const calculateHealthPercent = (set) => Math.ceil((Character.health / (Maco.maxHealthForSet.get(set) || Character.maxHealth)) * 100); // returns HP %
+        let refillHealthTokens = battleSettings.refillHealth ? (battleSettings.isTank ? 2 : 1) : 0;
+        const fort = { ...Maco.battles.get(battleSettings.selected) };
+        const battleSet = (fort.defense) ? battleSettings.defSet : battleSettings.attackSet;
+        const getTimeLeft = () => (Maco.getCurrentBattleTimer(fort) - BATTLE_START_MARGIN);
+        const battleStarted = () => Maco.getCurrentBattleTimer(fort) <= 0;
+        let battleDurationTimeoutId = null;
+
+        Maco.currentState = 5;
+        Maco.selectTab("addedJobs");
+
+        if (Maco.isInBattle()) {
+            if (battleSettings.openFortWindow) {
+                west.notification.fortBattle.openFort(fort.fortId);
+            } else {
+                closeBattleWindows();
+            }
+
+            EventHandler.listen('fort_battle_end', handleFortBattleEnd);
+            EventHandler.listen("chat_room_removed", handleBattleRoomRemove);
+            battleDurationTimeoutId = setTimeout(function() {
+                EventHandler.signal('fort_battle_end', fort.fortId);
+            }, BATTLE_MAX_DURATION * 60 * 1000); // minutes
+            return;
+        }
+
+        Maco.showNotification("The West - Fort battle prepare", timestamp(), "battle_prep");
+
+        const bidSuccess = await Maco.auctionDeposit(
+            Maco.settings.autoMoneyDeposit.auctionItemId,
+            Maco.settings.autoMoneyDeposit.sellerName
+        );
+        if (!Maco.isDestinationReached(fort)) {
+            await Maco.equipSet(Maco.travelSet);
+            if (!bidSuccess && Character.money > 1000) {
+                await Maco.goDepositMoney();
+            }
+            Guidepost.start_walk(fort.fortId, 'fort');
+            await waitForEvent('taskqueue-ready');
+        }
+
+        if (!Maco.maxHealthForSet.get(Maco.healthSet)) {
+            await Maco.equipSet(Maco.healthSet);
+        }
+        await handleBattleSet(battleSet);
+
+        while (refillHealthTokens > 0 && calculateHealthPercent(battleSet) < battleSettings.minHealth && getTimeLeft() > Maco.getConsumeCooldown()) {
+            await wait(Maco.getConsumeCooldown() * 1000);
+            if (calculateHealthPercent(battleSet) < battleSettings.minHealth) {
+                await handleHealthRefill();
+            } else {
+                break;
+            }
+        }
+
+        // Use battle consumable character/weapon buff or both
+        const itemsBuff = Maco.allConsumables.find(item => item.hasBattleBonus && item.selected);
+        const characterBuff = Maco.allConsumables.find(item => item.selected && ((fort.defense) ? item.settingTraps >= 50 : item.hiding >= 50));
+        if (itemsBuff && !Maco.isItemsBuffActive(itemsBuff)) Maco.itemUse(itemsBuff.id, itemsBuff.name.trim() + " (Battle)");
+        if (characterBuff && Maco.canAddBuff('character')) Maco.itemUse(characterBuff.id, characterBuff.name.trim() + " (Battle)");
+
+        Maco.maxAllowedEnergy = 100;
+        const arrived = await Maco.waitUntilDestinationIsReached(fort);
+        if (!arrived && TaskQueue.queue.length === 0 && Maco.isRunning && !battleStarted()) {
+            Maco.attendFortBattle();
+            return;
+        }
+
+        executeAfterBattleTimer(() => {
+            if (arrived) {
+                if (battleSettings.openFortWindow) {
+                    west.notification.fortBattle.openFort(fort.fortId);
+                } else {
+                    closeBattleWindows();
+                }
+
+                Maco.showNotification("The West - Fort battle started", timestamp(), "battle");
+                EventHandler.listen('fort_battle_end', handleFortBattleEnd);
+                EventHandler.listen("chat_room_removed", handleBattleRoomRemove);
+                battleDurationTimeoutId = setTimeout(function() {
+                    EventHandler.signal('fort_battle_end', fort.fortId);
+                }, BATTLE_MAX_DURATION * 60 * 1000); // minutes
+            } else {
+                Maco.showAlert("Missed fort battle. Continuing jobs.. :(");
+                Maco.cancelJobsPromise().then(() => {
+                    Maco.startTime = new Date();
+                    Maco.run();
+                });
+            }
+        });
+
+        function executeAfterBattleTimer(callback) {
+            const timer = Maco.getCurrentBattleTimer(fort);
+            if (timer <= 0 && Maco.isRunning) {
+                callback();
+                return;
+            }
+            const timeoutId = setTimeout(() => {
+                if (!Maco.isRunning) {
+                    clearTimeout(timeoutId);
+                    return;
+                }
+                callback();
+            }, (timer * 1000) + 10000);
+        }
+
+        function sortByBetterHealth(consumes, refillAmount) {
+            // First, try to find consumables strictly above refillAmount
+            const above = consumes.filter(c => c.health >= refillAmount);
+            if (above.length > 0) {
+                return above.sort((a, b) => {
+                    if (a.health !== b.health) return a.health - b.health; // closest above refillAmount
+                });
+            }
+
+            // Otherwise, fall back to "closest to refillAmount" logic
+            return sortByHealthMissing(consumes, refillAmount);
+        }
+
+        async function handleHealthRefill() {
+            const missingBattleHealth = 100 - calculateHealthPercent(battleSet); // amount in %
+            const fortMedicine = Maco.allConsumables.find(item => item.id == 54382000);
+            const HPbuff = battleSettings.isTank && Character.maxHealth > 5000 && refillHealthTokens > 1 && (Maco.canAddBuff('character') || battleSettings.overwriteCharacterBonus) && fortMedicine?.selected; // fort medicine
+            const fortMedicineRefill = HPbuff && fortMedicine?.health + calculateHealthPercent(battleSet) >= battleSettings.minHealth;
+            const equipHealthSet = !fortMedicineRefill && (missingBattleHealth > 10 && calculateHealthPercent(Maco.healthSet) < calculateHealthPercent(battleSet));
+            const refillAmount = (equipHealthSet)
+                ? (await Maco.calcHealthRefill(battleSet) || missingBattleHealth)
+                : missingBattleHealth;
+            //const itemToUse = (HPbuff) ? fortMedicine : (refillAmount >= 1) ? Maco.tryFindConsumable(0, 0, refillAmount, false, false, true) : null;
+            const selectedConsumes = Maco.allConsumables.filter(c =>
+                c.selected && c.count > 0 && c.health > 0 && (!c.hasCharacterBonus || battleSettings.overwriteCharacterBonus)
+            );
+            const itemToUse = (HPbuff) ? fortMedicine
+                : (refillAmount >= 1)
+                    ? (refillHealthTokens >= 2)
+                        ? equalValuesOnly(sortByHealthMissing(selectedConsumes, refillAmount), 'health').sort((a, b) => a.energy - b.energy)[0]
+                        : equalValuesOnly(sortByBetterHealth(selectedConsumes, refillAmount), 'health').sort((a, b) => a.energy - b.energy)[0]
+                    : null;
+
+            if (itemToUse && refillAmount >= 1) {
+                Maco.useConsumable(itemToUse, false, false, true, equipHealthSet);
+                await wait(timeout_regular);
+                while (Maco.currentState === 2 && Maco.isRunning) {
+                    await wait(interval_long);
+                }
+                Maco.currentState = 5;
+                refillHealthTokens -= 1;
+            } else {
+                refillHealthTokens = 0;
+            }
+
+            await handleBattleSet(battleSet);
+        }
+
+        function handleFortBattleEnd(fortId) {
+            if (fortId != fort.fortId) {
+                return false;
+            }
+            clearTimeout(battleDurationTimeoutId);
+            EventHandler.unlisten("chat_room_removed", handleBattleRoomRemove);
+
+            setTimeout(function () {
+                if (Maco.dailyQuests.enabled) {
+                    Maco.runDailyQuests();
+                }
+                if (Maco.currentState === 5 && Maco.isRunning) {
+                    Maco.cancelJobsPromise().then(() => {
+                        setTimeout(function() {
+                            closeBattleWindows();
+                        }, 60000);
+                        Maco.updateFortBattles();
+                        Maco.startTime = new Date();
+                        Maco.currentState = 1;
+                        Maco.run();
+                    });
+                }
+            }, 5000);
+
+            return EventHandler.ONE_TIME_EVENT;
+        }
+
+        function handleBattleRoomRemove(room) {
+            if (room.battleData?.isFinished && room.fortId == fort.fortId) {
+                EventHandler.signal('fort_battle_end', room.fortId);
+
+                return EventHandler.ONE_TIME_EVENT;
+            }
+        }
+
+        function closeBattleWindows() {
+            const cemeteryCloseButton = document.querySelector('.cemetery .tw2gui_window_buttons_close');
+            const battleSelector = `.fortbattle-${fort.fortId} .tw2gui_window_buttons_close`;
+            const battleCloseButton = document.querySelector(battleSelector);
+            if (battleCloseButton) battleCloseButton.click();
+            if (cemeteryCloseButton) cemeteryCloseButton.click();
+        }
+
+        async function handleBattleSet(battleSet, retries = 1) {
+            if (Maco.sets.has(battleSet)) {
+                return (await Maco.equipSet(battleSet)).equipped;
+            }
+
+            const wardrobeSet = Maco.wardrobe.get(battleSet);
+            if (wardrobeSet != undefined) {
+                for (let attempt = 0; attempt <= retries; attempt++) {
+                    const result = await Maco.equipSet(wardrobeSet.id);
+                    if (result.equipped) return true;
+                }
+                return false;
+            }
+
+            const isTank = battleSettings.isTank;
+            const gear = fort.defense
+                ? isTank
+                    ? { leadership: 100, pitfall: 150, health: 150, dodge: 100 }
+                    : { leadership: 125, pitfall: 150, aim: 100 }
+                : isTank
+                    ? { leadership: 100, hide: 150, health: 150, dodge: 100 }
+                    : { leadership: 125, hide: 150, aim: 100 };
+
+            const finished = await Maco.equipBestCustomGear(gear);
+            if (finished) Maco.maxHealthForSet.set(battleSet, Character.maxHealth);
+            return finished;
+        }
+    };
+    Maco.isInBattle = function() {
+        Maco.updateFortBattles();
+        const battle = Maco.battles.get(Maco.settings.fortBattle.selected);
+        if (!battle) return false;
+        const battleSeconds = Math.floor((battle.start + Game.clientTimedrift - new Date().getTime()) / 1000);
+        return battleSeconds <= 0 && Maco.isDestinationReached(battle);
+    };
+    Maco.getCurrentBattleTimer = function(fort = Maco.battles.get(Maco.settings.fortBattle.selected)) { // in seconds
+        if (!fort) return 0;
+        const battleSeconds = Math.floor((fort.start + Game.clientTimedrift - new Date().getTime()) / 1000);
+        return Math.max(battleSeconds, 0);
+    };
+    Maco.updateFortBattles = function(newBattle) {
+        const battleRooms = Maco.getBattleRooms();
+        const noActiveBattles = battleRooms.every(room => room.battleData.isFinished) || !west.notification.fortBattle._timer;
+
+        if (!Maco.settings.fortBattle.attend || noActiveBattles) {
+            Maco.battles = new Map();
+            Maco.settings.fortBattle.selected = -1;
+            Maco.maxAllowedEnergy = 100;
+            return;
+        }
+
+        const battles = battleRooms
+            .filter(room => !room.battleData.isFinished)
+            .reduce((map, { title, fortId, battleData: { x, y, start, defense } }) => {
+                map.set(fortId, { title, fortId, x, y, start, defense });
+                return map;
+            }, new Map());
+
+        Maco.battles = battles;
+        const selected = Maco.settings.fortBattle.selected;
+        const firstFortId = battles.keys().next().value; // Get first fortId
+        const isInvalidSelection = selected === -1 || !battles.has(selected);
+        const soonerNewBattle = newBattle?.fortId === firstFortId;
+
+        if (battles.size > 0 && (isInvalidSelection || soonerNewBattle)) {
+            Maco.settings.fortBattle.selected = firstFortId;
+        }
+    };
+    Maco.getBattleRooms = function() { 
+        const rooms = Chat.Resource.Manager.getRooms();
+        const battleRooms = [];
+        
+        for (let roomId in rooms) {
+            const room = rooms[roomId];
+            if (room instanceof Chat.Resource.RoomFortBattle) {
+                battleRooms.push(room);
+            }
+        }
+
+        // Sort battleRooms by room.battleData.start in ascending order
+        battleRooms.sort((a, b) => a.battleData.start - b.battleData.start);
+
+        return battleRooms;
+    };
+    Maco.getBattleRoomByFortId = function(fortId) {
+        const rooms = Chat.Resource.Manager.getRooms();
+        for (let roomId in rooms) {
+            const room = rooms[roomId];
+            if (room instanceof Chat.Resource.RoomFortBattle && room.fortId == fortId) {
+                return room;
+            }
+        }
+        return null;
+    };
+    Maco.getClosestFort = function(fortsArray) {
+        return new Promise((resolve) => {
+            const forts = [...Object.values(fortsArray)]; // Clone array so we can mutate it safely
+
+            function tryNext() {
+                if (forts.length === 0) {
+                    return resolve(null); // No valid fort found
+                }
+
+                // Get closest fort
+                const closest = forts.reduce((closest, fort) => {
+                    const time = Character.calcWayTo(fort);
+                    return !closest || time < Character.calcWayTo(closest) ? fort : closest;
+                }, null);
+
+                if (!closest) return resolve(null);
+
+                // Check barrack stage
+                Ajax.remoteCallMode("fort_building_barracks", "index", { fort_id: closest.fort_id }, function(data) {
+                    if (!data.error && data.barrackStage >= 4) {
+                        resolve(closest); // Valid fort found
+                    } else {
+                        // Remove this fort and try next
+                        const index = forts.findIndex(f => f.fort_id === closest.fort_id);
+                        if (index !== -1) forts.splice(index, 1);
+                        tryNext();
+                    }
+                });
+            }
+
+            tryNext();
+        });
+    };
+    Maco.getClosestTown = async function() {
+        return new Promise((resolve, reject) => {
+            console.time("Execution Time");
+            const towns = []; // Initialize an empty array to hold the towns
+
+            Ajax.get('map', 'get_minimap', {}, function (json) {
+                if (json.error) {
+                    return reject(new UserMessage(json.msg).show()); // Reject the promise if there's an error
+                }
+
+                for (const i of Object.keys(json.towns)) {
+                    const town = json.towns[i];
+
+                    if (town.member_count > 0) {
+                        town._waytime = GameMap.calcWayTime(Character.position, {x: town.x, y: town.y}); // Store the calculated waytime in the town object
+                        towns.push(town); // Add the town to the array if it has members
+                    }
+                }
+
+                towns.sort((a, b) => a._waytime - b._waytime); // Sort towns by calculated waytime
+
+                const processTown = function (index) {
+                    if (index >= towns.length) {
+                        return resolve(null); // Resolve with null if no town with level 5 hotel is found
+                    }
+
+                    const town = towns[index];
+
+                    // AJAX call to get the hotel level for the town
+                    Ajax.remoteCallMode('building_hotel', 'get_data', { town_id: town.town_id }, function (data) {
+                        if (data.error) {
+                            return reject(new UserMessage(data.msg).show()); // Reject the promise if there's an error
+                        }
+
+                        const hotelLevel = data.hotel_level || 0;
+
+                        if (hotelLevel === 5) {
+                            return resolve(town); // Resolve the promise with the closest town with level 5 hotel
+                        } else {
+                            processTown(index + 1); // Recursively process the next town
+                        }
+                    });
+                };
+
+                if (towns.length > 0) {
+                    processTown(0); // Start processing the first town
+                } else {
+                    resolve(null); // Resolve with null if no towns are available
+                }
+            });
+        });
+    };
+    Maco.addWaitingReason = function(reason) {
+        Maco.diagnostics.waitingReasons.push(reason);
+        if (Maco.diagnostics.waitingReasons.length > 50) {
+            Maco.diagnostics.waitingReasons.shift();
+        }
+    };
+    Maco.getCharacterInfo = function(callback) {
+        Ajax.remoteCallMode('character', 'get_info', {}, function(resp) {
+            callback(resp);
+        });
+    };
+    Maco.sleep = async function(options = {}) {
+        const { dontWakeUp = false, message = "", flag = "" } = options;
+        const calculateEnergyMissing = () => 100 - (Character.energy / Character.maxEnergy) * 100;
+        const calculateHealthLimit = () => Math.min((Maco.maxHealthForSet.get(Maco.addedJobs[Maco.currentJob.jobIdx]?.set) || Character.maxHealth) * 0.4, Maco.settings.healthStopValue * 2);
+        const isEnoughHealth = () => Character.health >= (Maco.maxHealthForSet.get(Maco.addedJobs[Maco.currentJob.jobIdx]?.set) || (Character.maxHealth * 0.5));
+        const sleepCondition = () => (flag === "health") ? !isEnoughHealth() : (calculateEnergyMissing() !== 0 || !isEnoughHealth());
+
+        async function monitorCharacterSleep() {
+            const sleepTime = new Date();
+            let attendingBattle = false;
+            let intervalId = setInterval(() => {
+                Maco.getCharacterInfo(function(data) {
+                    Character.energy = data.energyCurrent;
+                    Character.health = data.healthCurrent;
+                });
+            }, 5 * 60 * 1000); // 5 minutes in milliseconds
+
+            try {
+                while (Maco.currentState === 3 && sleepCondition()) {
+                    if (Maco.canAttendBattle()) {
+                        attendingBattle = true;
+                        await Maco.cancelJobs();
+                        Maco.attendFortBattle();
+                        break;
+                    }
+
+                    await wait(timeout_long);
+                }
+            } finally {
+                clearInterval(intervalId);
+
+                if (!attendingBattle) {
+                    const sleepDuration = calculateElapsedSeconds(sleepTime);
+                    Maco.stats.session.sleepTime += sleepDuration;
+                    Maco.addWaitingReason(`Sleep regenerating: ${sleepDuration / 60} minutes.`);
+                    Maco.updateRuntime();
+
+                    if (Maco.currentState === 3) {
+                        await Maco.cancelJobs();
+                        Maco.run();
+                    }
+                }
+            }
+        }
+
+        if (Maco.settings.enableRegeneration && (dontWakeUp || (calculateEnergyMissing() !== 0 || Maco.isHealthBelowLimit(calculateHealthLimit())))) {
+            Maco.currentState = 3;
+            Maco.selectTab("addedJobs");
+            if (!dontWakeUp && message) Maco.showNotification("The West - Script has paused", message, 'sleep');
+
+            const closestFort = await Maco.getClosestFort(Maco.allianceForts);
+            let closestTown = null;
+            if (!closestFort) {
+                closestTown = await Maco.getClosestTown();
+            }
+
+            if (!Maco.isDestinationReached(closestFort || closestTown)) {
+                await Maco.equipSet(Maco.travelSet);
+                Maco.saveWayTimes();
+            }
+
+            TaskQueue.add(
+                closestFort
+                    ? new TaskFortSleep(closestFort.fort_id, closestFort.x, closestFort.y)
+                    : new TaskSleep(closestTown.town_id, "luxurious_apartment")
+            );
+
+            await waitForEvent('taskqueue-ready');
+            (Maco.regenerationSet !== -1) ? Maco.equipSet(Maco.regenerationSet) : Maco.equipSet(Maco.healthSet);
+
+            await Maco.waitUntilDestinationIsReached(closestFort || closestTown);
+
+            if (Maco.isDestinationReached(Maco.homeTown) && await Maco.moneyDepositAllowed()) {
+                Maco.depositMoney(Maco.homeTown.town_id);
+            }
+
+            if (dontWakeUp) {
+                Maco.finishRun(message);
+                return;
+            }
+
+            await monitorCharacterSleep();
+        } else if (Maco.maxAllowedEnergy < 100 && Maco.settings.fortBattle.attend && Maco.battles.has(Maco.settings.fortBattle.selected)) {
+            Maco.attendFortBattle();
+        } else {
+            Maco.finishRun(message);
+        }
+    };
+    Maco.loadBuildingData = async function(town, building) {
+        if (town.town_id == 0) return null;
+        return new Promise((resolve, reject) => {
+            Ajax.remoteCallMode("cityhall_build", "build", {
+                x: town.x,
+                y: town.y,
+                building: building
+            }, function(json) {
+                if (json.error) {
+                    new UserMessage(json.msg, UserMessage.TYPE_ERROR).show();
+                    reject(null);
+                } else {
+                    resolve(json); // Resolve the promise with the received data
+                }
+            });
+        });
+    };
+    Maco.buildTownBuilding = async function(building, duration, hours) { // Allowed durations: 3600, 1800, 900
+        Maco.currentState = 7;
+        Maco.isRunning = true;
+        Maco.refreshTab();
+        const energyCostBefore = Maco.energyCost;
+        const town = Character.homeTown;
+        const buildingData = await Maco.loadBuildingData(town, building);
+        if (!buildingData) {
+            handleBuildEnd();
+            return;
+        }
+
+        const minMotivation = 88;
+        const skillsObject = Object.fromEntries(buildingData.build_skills.skills.map(s => [s.skill, s.coefficient]));
+        const maxJobs = Premium.hasBonus('automation') ? TaskQueue.limit.premium : TaskQueue.limit.normal;
+        const divisor = duration === 3600 ? 12 : duration === 1800 ? 6 : 3;
+        Maco.energyCost = divisor;
+        let motivation = buildingData.motivation * 100;
+        let remainingJobs = (hours) ? ((3600 / duration) * hours) : Number.MAX_VALUE;
+        let totalAddedTasks = 0;
+        let taskError = false;
+
+        if (!Maco.isDestinationReached(town)) {
+            await Maco.equipSet(Maco.travelSet);
+            await Maco.goDepositMoney(town);
+        } else {
+            Maco.depositMoney(town.town_id);
+        }
+
+        (Maco.build.set < 0)
+            ? await Maco.equipBestCustomGear(skillsObject)
+            : await Maco.equipSet(Maco.build.set);
+
+        while ((Maco.currentState === 7 || Maco.isRunning) && (remainingJobs > 0 || TaskQueue.queue.length > 0 || totalAddedTasks > 0)) {
+            const currentQueue = TaskQueue.queue.length;
+
+            if (currentQueue <= 1 && Maco.settings.addEnergy && Character.energy < divisor && !taskError) { // Energy refill
+                await handleEnergyRefill(motivation);
+            }
+
+            if (totalAddedTasks - currentQueue === 1 && !taskError) { // Handle case where one task successfully finished
+                totalAddedTasks -= 1;
+                motivation -= divisor;
+                if (Maco.settings.addMotivation && motivation <= minMotivation) {
+                    motivation = await handleMotivationRefill(motivation);
+                }
+            } else if (currentQueue === 0 && totalAddedTasks > 0) { // Handle unexpected clearing of all tasks (gets KO, not enough LP, task error)
+                remainingJobs += totalAddedTasks;
+                totalAddedTasks = 0;
+            }
+
+            const tasksToAdd = Math.min(
+                Math.floor(Character.energy / divisor),
+                maxJobs - currentQueue,
+                remainingJobs
+            );
+
+            if (tasksToAdd > 0) { // Add new tasks
+                EventHandler.listen('task_error', handleTaskError);
+                build(tasksToAdd);
+                await waitForEvent('taskqueue-updated');
+                EventHandler.unlisten('task_error', handleTaskError);
+
+                if (taskError && TaskQueue.queue.length === 0) {
+                    if (Maco.build.set >= 0) {
+                        Maco.build.set = -1;
+                        await Maco.equipBestCustomGear(skillsObject)
+                    } else {
+                        break;
+                    }
+                }
+
+                remainingJobs -= tasksToAdd;
+                totalAddedTasks += tasksToAdd;
+            }
+
+            await wait(5000);
+        }
+
+        handleBuildEnd();
+
+        async function handleEnergyRefill(currentMotivation) {
+            let consumable = Maco.tryFindConsumable(-1, 0, 0, false, true, false);
+            const consumUsed = Maco.settings.addEnergyOptional && consumable && Maco.canUseConsume(consumable.id) &&
+                await Maco.useConsumable(consumable, false, true, false); // Optional energy
+
+            if (!consumUsed && TaskQueue.queue.length === 0) {
+                consumable = Maco.tryFindConsumable(-1, 100 - currentMotivation, 0, false, false, false);
+                if (consumable) await Maco.useConsumable(consumable, false, true, false);
+            }
+        }
+
+        async function handleMotivationRefill(currentMotivation) {
+            const consumable = Maco.tryFindConsumable(-1, 100 - currentMotivation, 0, true, false, false);
+
+            if (consumable && Maco.canUseConsume(consumable.id)) {
+                Maco.useConsumable(consumable, true, false, false);
+                return Math.min(100, currentMotivation + consumable.motivation);
+            }
+
+            return currentMotivation;
+        }
+
+        function handleTaskError(msg) {
+            taskError = true;
+            Maco.showAlert(buildingData.build_name + ": " + msg);
+            return EventHandler.ONE_TIME_EVENT;
+        }
+
+        function build(amount) {
+            if (TaskQueue.busy && TaskQueue.toAdd.length > 0) {
+                TaskQueue.toAdd = [];
+                TaskQueue.busy = false;
+            }
+            const tasks = [];
+            for (let i = 0; i < amount; i++) {
+                tasks.push(new TaskBuild(town.x, town.y, building, duration, "town"));
+            }
+            TaskQueue.add(tasks);
+        }
+
+        function handleBuildEnd() {
+            Maco.energyCost = energyCostBefore || Maco.energyCost;
+            if (Maco.currentState === 7) {
+                Maco.isRunning = false;
+                if (Maco.addedJobs.length === 0 && !Maco.swapSilverJobs()) {
+                    Maco.sleep({ dontWakeUp: true, message: "No jobs to run." });
+                } else {
+                    Maco.handleScriptStart();
+                }
+            }
+        }
+    };
+    Maco.setWorkerProfile = function(profile) {
+        if (profile == undefined) {
+            if (Maco.favoriteJobs.length > 0 && Maco.workerProfiles["profile0"].jobs.length === 0 && Maco.workerProfiles.selected === "profile0") {
+                Maco.workerProfiles["profile0"].jobs = Maco.favoriteJobs;
+                Maco.workerProfiles["profile0"].maxJobRank = Maco.settings.maxJobRank;
+                Maco.workerProfiles["profile0"].jobsToAdd = Maco.settings.jobsToAdd;
+                return;
+            }
+            Maco.favoriteJobs = Maco.workerProfiles[Maco.workerProfiles.selected].jobs;
+        } else {
+            Maco.workerProfiles.selected = profile;
+            Maco.favoriteJobs = Maco.workerProfiles[profile].jobs;
+        }
+    };
+    Maco.canBuild = function() {
+        return Maco.build.allowed && Character.homeTown.town_id !== 0;
+    };
+    Maco.localStorageSet = function(key, value) {
+        localStorage.setItem(`Maco_${characterId}_${key}`, value);
+    };
+    Maco.localStorageGet = function(key) {
+        return localStorage.getItem(`Maco_${characterId}_${key}`);
+    };
+    Maco.localStorageRemove = function(key) {
+        localStorage.removeItem(`Maco_${characterId}_${key}`);
+    };
+    Maco.deleteCookie = function(key) {
+        document.cookie = key + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+    };
+    Maco.isSessionExpired = function(toDate = getUTCDate()) {
+        const currentHour = new Date().getUTCHours(); // This is important to get correct UTC hours in all timezones and browsers with any VPN.
+        const currentMinute = toDate.getMinutes();
+        const currentSecond = toDate.getSeconds();
+        const expireHour = 1; // UTC
+        const expireMinute = 0;
+        return (currentHour >= expireHour && currentMinute >= expireMinute && currentSecond >= SESSION_EXPIRE_SECOND) &&
+            Maco.lastReloadTime < new Date(toDate).setHours(expireHour, expireMinute, SESSION_EXPIRE_SECOND);
+    };
+    Maco.saveAll = function() {
+        const currentDate = getUTCDate();
+        const expireHour = 1; // UTC
+        const expireMinute = 0;
+        const cookieExpireTime = Maco.localStorageGet('cookieExpireTime');
+        const cookieExpired = (cookieExpireTime) ? currentDate >= new Date(cookieExpireTime) : true;
+        let expiracyDateTemporary;
+        let needReload = false;
+
+        if (cookieExpired || Character.level <= 19) {
+            expiracyDateTemporary = getUTCDate();
+            expiracyDateTemporary.setHours(expireHour, expireMinute, SESSION_EXPIRE_SECOND);
+            expiracyDateTemporary.setDate(new Date().getUTCDate() + ((Character.level <= 19) ? 2 : 1)); // Expiry day is next day, or in 2 days when low level.
+            Maco.localStorageSet('cookieExpireTime', expiracyDateTemporary);
+        } else {
+            expiracyDateTemporary = new Date(cookieExpireTime);
+        }
+
+        if (Maco.isRunning && !Maco.farmingAssistant.awaitNextSession && Maco.isSessionExpired(currentDate) &&
+            ((Maco.settings.nightShiftWorker && Maco.favoriteJobs.length > 0) || (Maco.build.nightBuild && Maco.canBuild()))
+        ) {
+            Maco.addedJobs = [];
+            needReload = true;
+        }
+
+        const jobFilterCopy = { ...Maco.jobFilter, filterJob: "" };
+        const jobsToSave = [];
+        if (!cookieExpired || (!Maco.settings.nightShiftWorker || Maco.favoriteJobs.length === 0) || Maco.farmingAssistant.awaitNextSession) {
+            Maco.addedJobs.forEach(function(job) {
+                let jobForm = {
+                    x: job.x,
+                    y: job.y,
+                    id: job.id,
+                    groupId: job.groupId,
+                    silver: job.silver,
+                    motivation: job.motivation,
+                    stopMotivation: job.stopMotivation,
+                    set: job.set
+                };
+                jobsToSave.push(jobForm);
+            });
+        }
+        /*const temporaryObject = {
+            currentJob: Maco.currentJob,
+            addedJobs: jobsToSave
+        };*/
+        const sessionObject = {
+            sessionStats: Maco.stats.session,
+            diagnostics: Maco.diagnostics,
+            currentJob: Maco.currentJob,
+            addedJobs: jobsToSave
+        };
+        const permanentObject = {
+            jobFilterPreferences: jobFilterCopy,
+            sortJobTable: Maco.sortJobTable,
+            farmingAssistant: Maco.farmingAssistant.enabled,
+            build: Maco.build,
+            settings: Maco.settings,
+            consumablesSelection: Maco.consumablesSelection,
+            favoriteJobs: Maco.favoriteJobs,
+            workerProfiles: Maco.workerProfiles,
+            dailyQuests: Maco.dailyQuests,
+            jobsFarmingGear: Maco.jobsFarmingGear,
+            totalStats: Maco.stats.total,
+            travelSet: Maco.travelSet,
+            jobSet: Maco.jobSet,
+            healthSet: Maco.healthSet,
+            regenerationSet: Maco.regenerationSet
+        };
+
+        //const jsonTemporary = encodeURIComponent(JSON.stringify(temporaryObject));
+        const jsonSession = encodeURIComponent(JSON.stringify(sessionObject));
+        const jsonSettings = encodeURIComponent(JSON.stringify(permanentObject, replacer));
+        Maco.localStorageSet('sessionData', jsonSession);
+        Maco.localStorageSet('data', jsonSettings);
+        //document.cookie = `Maco_${characterId}=${jsonTemporary};expires=${expiracyDateTemporary};SameSite=None;Secure;`;
+        if (needReload && Maco.isRunning) {
+            if (Maco.relogAllowed()) {
+                Maco.relog("Daily jobs reset (relogged). ");
+            } else {
+                Maco.reload("Daily jobs reset (reloaded). ");
+            }
+        }
+    };
+    (function waitForLinearQuestHandlerFactory() {
+        const gameURL = /^https:\/\/.*\.the-west\..*\/game\.php/;
+        if (!gameURL.test(document.URL)) return;
+
+        const startTime = performance.now();
+        const pollInterval = 50;
+        const maxWait = 6000; // Maximum time to wait in ms
+
+        function waitForLinearQuestHandler() {
+            const elapsed = performance.now() - startTime;
+
+            if (elapsed > maxWait) {
+                console.log(`[Maco] Gave up waiting for LinearQuestHandler after ${Math.round(elapsed)} ms`);
+                return;
+            }
+
+            if (typeof LinearQuestHandler?.init !== 'function') {
+                return setTimeout(waitForLinearQuestHandler, pollInterval);
+            }
+
+            console.log(`[Maco] LinearQuestHandler.init became available after ${Math.round(elapsed)} ms`);
+
+            let data = Maco.localStorageGet('data');
+            let permanentObject = data ? JSON.parse(decodeURIComponent(data), reviver) : null;
+            if (!permanentObject?.settings?.skipTutorial) return;
+
+            proxyMethod(LinearQuestHandler, "init", ({ target, thisArg, args }) => {
+                EventHandler.signal("tutorial_finished");
+                return;
+            });
+        }
+
+        waitForLinearQuestHandler();
+    })();
+    Maco.loadSavedData = function() {
+        const cookieExpireTime = Maco.localStorageGet('cookieExpireTime');
+        const cookieExpired = (cookieExpireTime) ? getUTCDate() >= new Date(cookieExpireTime) : true;
+        const sessionObject = (!cookieExpired && Maco.localStorageGet('sessionData')) ? JSON.parse(decodeURIComponent(Maco.localStorageGet('sessionData'))) : null;
+        let data = Maco.localStorageGet('data');
+        const permanentObject = data ? JSON.parse(decodeURIComponent(data), reviver) : null;
+
+        if (sessionObject) {
+            Maco.addedJobs = [];
+            const tmpAddedJobs = sessionObject.addedJobs || [];
+            for(let j = 0; j < tmpAddedJobs.length; j++) {
+                const jobP = new JobPrototype(tmpAddedJobs[j].x, tmpAddedJobs[j].y, tmpAddedJobs[j].id, tmpAddedJobs[j].groupId, tmpAddedJobs[j].silver);
+                jobP.distance = 0;
+                jobP.setMotivation(tmpAddedJobs[j].motivation);
+                jobP.setStopMotivation(tmpAddedJobs[j].stopMotivation);
+                jobP.setSet(tmpAddedJobs[j].set);
+                Maco.addedJobs.push(jobP);
+            }
+            Maco.addedJobsOld = [...Maco.addedJobs];
+            assignObjects(Maco.currentJob, sessionObject.currentJob);
+
+            Maco.stats.session = sessionObject.sessionStats ?? Maco.stats.session;
+            Maco.diagnostics = sessionObject.diagnostics ?? Maco.diagnostics;
+            for (var key in sessionObject.diagnostics) {
+                if (sessionObject.diagnostics.hasOwnProperty(key) && sessionObject.diagnostics[key] != undefined) {
+                    Maco.diagnostics[key] = sessionObject.diagnostics[key];
+                    if (Array.isArray(Maco.diagnostics[key]) && Maco.diagnostics[key].length > 5000) { // Empty arrays exceeding "too many" items
+                        Maco.diagnostics[key] = [];
+                    }
+                }
+            }
+        }
+
+        if (permanentObject) {
+            // Objects
+            assignObjects(Maco.settings, permanentObject.settings);
+            assignObjects(Maco.build, permanentObject.build);
+            assignObjects(Maco.jobFilter, permanentObject.jobFilterPreferences);
+            assignObjects(Maco.sortJobTable, permanentObject.sortJobTable);
+            assignObjects(Maco.stats.total, permanentObject.totalStats);
+            assignObjects(Maco.workerProfiles, permanentObject.workerProfiles);
+            assignObjects(Maco.dailyQuests, permanentObject.dailyQuests);
+            // Arrays
+            Maco.jobsFarmingGear = permanentObject.jobsFarmingGear ?? Maco.jobsFarmingGear;
+            Maco.favoriteJobs = permanentObject.favoriteJobs ?? Maco.favoriteJobs;
+            Maco.consumablesSelection = permanentObject.consumablesSelection ?? Maco.consumablesSelection;
+            // Other variables
+            Maco.farmingAssistant.enabled = permanentObject.farmingAssistant ?? Maco.farmingAssistant.enabled;
+            Maco.travelSet = permanentObject.travelSet ?? Maco.travelSet;
+            Maco.jobSet = permanentObject.jobSet ?? Maco.jobSet;
+            Maco.healthSet = permanentObject.healthSet ?? Maco.healthSet;
+            Maco.regenerationSet = permanentObject.regenerationSet ?? Maco.regenerationSet;
+            // Methods
+            Maco.setSetForAllJobs();
+            Maco.setWorkerProfile();
+        }
+    };
+    Maco.exportSettings = function() {
+        Maco.saveAll();
+        var data = Maco.localStorageGet('data');
+        var wardrobe = localStorage.getItem('TWCalc_Wardrobe'); // Get wardrobe if exists
+
+        var exportData = {
+            macoData: JSON.parse(decodeURIComponent(data), reviver),
+            wardrobe: (wardrobe && Maco.settings.allowWardrobeExport) ? JSON.parse(wardrobe) : null
+        };
+        var jsonExport = encodeURIComponent(JSON.stringify(exportData, replacer));
+
+        var fileName = `Maco_data_${Character.name}.json`;
+        var blob = new Blob([jsonExport], { type: 'application/json' });
+        var link = document.createElement('a');
+        link.href = URL.createObjectURL(blob);
+        link.download = fileName;
+
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        setTimeout(() => URL.revokeObjectURL(link.href), 0); // Small delay to ensure download starts
+    };
+    Maco.importSettings = function() {
+        return new Promise((resolve, reject) => {
+            var input = document.createElement('input');
+            input.type = 'file';
+            input.accept = '.json';
+
+            input.onchange = function(event) {
+                var file = event.target.files[0];
+                if (!file) {
+                    reject(new Error('No file selected.'));
+                    return;
+                }
+
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    try {
+                        var jsonData = JSON.parse(decodeURIComponent(e.target.result));
+
+                        if (jsonData.macoData) {
+                            Maco.localStorageSet('data', encodeURIComponent(JSON.stringify(jsonData.macoData, replacer)));
+                        }/* else if (jsonData.dusanData) { // #compatibility
+                            Maco.localStorageSet('data', encodeURIComponent(JSON.stringify(jsonData.dusanData, replacer)));
+                        } else if (jsonData.settings.settings) { // Correct old object with bad naming #compatibility
+                            Maco.localStorageSet('data', encodeURIComponent(JSON.stringify(jsonData.settings, replacer)));
+                        } else if (jsonData.settings) { // Wrong even older object, old way of storing in local storage #compatibility
+                            Maco.localStorageSet('data', encodeURIComponent(JSON.stringify(jsonData, replacer)));
+                        }*/
+
+                        if (jsonData.wardrobe) {
+                            localStorage.setItem('TWCalc_Wardrobe', JSON.stringify(jsonData.wardrobe));
+                        }
+
+                        resolve(true);
+                    } catch (e) {
+                        console.error('Error parsing JSON file:', e.stack);
+                        reject(new Error('Error parsing JSON file'));
+                    }
+                };
+
+                reader.readAsText(file);
+            };
+
+            input.click();
+        });
+    };
+    Maco.runDailyQuests = function() {
+        function hasRequiredKeys(obj) { //#compatibility
+            if (!obj || typeof obj !== 'object') return false; // Prevent null/undefined or non-object
+            const REQUIRED_KEYS = ["id", "title", "requirements", "finish", "accept"];
+            return REQUIRED_KEYS.every(key => key in obj);
+        }
+        Ajax.remoteCall('quest_employer', '', {
+            employer: "paper",
+            x: undefined,
+            y: undefined
+        }, function(json) {
+            if (json.error) {
+                new UserMessage(json.error, UserMessage.TYPE_ERROR).show();
+                return;
+            }
+
+            const actions = [];
+            const quests = json.employer.open;
+            const disabledQuests = [2043364,2043368,2043365,2043369,2043367,2043371,2043366,2043370];
+            if (!Array.isArray(quests)) return;
+
+            if (!Array.isArray(Maco.dailyQuests.quests) || !hasRequiredKeys(Maco.dailyQuests.quests?.[0])) {
+                Maco.dailyQuests.quests = [];
+            }
+
+            for (const quest of quests) {
+                const { id, soloTitle, accepted, acceptable, finishable, requirements } = quest;
+                const allSolved = requirements.every(req => req.solved === true);
+
+                let existingQuest = Maco.dailyQuests.quests.find(q => q.id === id);
+                // Build requirements info string
+                let requirementsInfo = '';
+                if (requirements.length === 1) {
+                    requirementsInfo = requirements[0].info || '';
+                } else if (requirements.length > 1) {
+                    const filteredRequirements = requirements.filter((req, index) => {
+                        // If it's the first requirement and both helpicons and jsInfo are null, skip it
+                        if (index === 0 && req.helpicons == null && req.jsInfo == null) {
+                            return false;
+                        }
+                        return true;
+                    });
+
+                    requirementsInfo = filteredRequirements.map(req => req.info).join(', ');
+                }
+                // Add new quest to the list, mark finish by default
+                if (!existingQuest) {
+                    existingQuest = { id, title: soloTitle, requirements: requirementsInfo || '', finish: !disabledQuests.includes(id), accept: false };
+                    Maco.dailyQuests.quests.push(existingQuest);
+                } else {
+                    existingQuest.requirements = requirementsInfo || '';
+                }
+
+                // If quest exists and finish is disabled, skip it
+                if (!existingQuest.finish && existingQuest !== undefined) {
+                    continue;
+                }
+
+                // Build actions respecting the rules
+                if (accepted && allSolved && finishable) {
+                    // Directly finish → mark with "directFinish"
+                    actions.push(() => finishQuest(id).then(success => success ? "directFinish" : false));
+                } else if (acceptable && allSolved) {
+                    // First accept, then finish → only return true/false, no rerun marker
+                    actions.push(async () => {
+                        const isFinishable = await acceptQuest(id);
+                        await wait(generateRandomNumber(750, 1250));
+                        return finishQuest(id, isFinishable); // resolves true/false
+                    });
+                } else if (acceptable && !allSolved && existingQuest.accept) {
+                    // Just accept → no finish
+                    actions.push(() => acceptQuest(id).then(() => false));
+                }
+            }
+
+            Maco.refreshTab("quests");
+
+            // Async runner with delay
+            (async function runActions() {
+                let rerunNeeded = false;
+
+                for (const action of actions) {
+                    try {
+                        const result = await action();
+                        if (result === "directFinish") rerunNeeded = true;
+                    } catch (e) {
+                        console.error("[Maco] Quest action error:", e);
+                    }
+                    await wait(generateRandomNumber(1000, 2000));
+                }
+
+                if (rerunNeeded) {
+                    Maco.runDailyQuests();
+                }
+            })();
+        });
+
+        function acceptQuest(quest_id) {
+            return new Promise((resolve, reject) => {
+                Ajax.remoteCall("quest", "accept_quest", {
+                    quest_id: quest_id
+                }, function(json) {
+                    if (json.error) {
+                        new UserMessage(json.msg, UserMessage.TYPE_ERROR).show();
+                        reject(json.error);
+                    } else {
+                        EventHandler.signal('questemployer_changed', ['accepted', quest_id]);
+                        const quest = QuestLog.getEmployerQuest(quest_id);
+                        if (quest) {
+                            quest.accepted = true;
+                            quest.isChallenge = json.isChallenge;
+                            quest.finishable = json.finishable;
+                            quest.updateQuest();
+                            QuestTrackerWindow.toggleTracking(quest, true);
+                            QuestLog.addQuest(quest);
+                        }
+                        resolve(json.finishable);
+                    }
+                });
+            });
+        }
+
+        function finishQuest(quest_id, finishable = true) {
+            return new Promise(resolve => {
+                if (!finishable) return resolve(false);
+
+                Ajax.remoteCall("quest", "finish_quest", {
+                    quest_id: quest_id,
+                    reward_option_id: undefined
+                }, function(json) {
+                    if (json.health !== undefined)
+                        EventHandler.signal("health", [json.health]);
+
+                    if (json.error) {
+                        new UserMessage(json.msg, UserMessage.TYPE_ERROR).show();
+                        return resolve(false);
+                    }
+
+                    // Success path
+                    Character.updateDailyTask('quests');
+                    EventHandler.signal('questemployer_changed', ['finished', quest_id]);
+                    var quest = QuestLog.getQuest(quest_id);
+                    if (quest) {
+                        quest.setGainedRewards(json.allRewards);
+                        quest.questCompletionHint = json.questCompletionHint;
+                        quest.questCompletionText = json.questCompletionText;
+                        quest.updateQuest();
+                        QuestLog.addSolvedQuest(quest);
+                    }
+                    QuestLog.removeQuest(quest_id, false);
+                    if (json.reportData) {
+                        ReportWindow.open(json.reportData.report_id, json.reportData.hash);
+                    }
+                    try {
+                        $.globalEval(json.eval);
+                    } catch (e) {
+                        if (window.DEBUG) console.log("Evaluation failed: ", e);
+                    }
+
+                    resolve(true);
+                });
+            });
+        }
+    };
+    Maco.getStatusIcon = function() {
+        return [0, 4].includes(Maco.currentState)
+            ? 'https://westsk.innogamescdn.com/images/chat/status_offline.png'
+            : [3, 5, 6, 7].includes(Maco.currentState)
+            ? 'https://westsk.innogamescdn.com/images/chat/status_idle.png'
+            : 'https://westsk.innogamescdn.com/images/chat/status_online.png';
+    };
+    Maco.updateStatusIcon = function() {
+        var imgSrc = Maco.getStatusIcon();
+        $('.status-icon-container img').attr('src', imgSrc).attr('title', Maco.states[Maco.currentState]);
+    };
+    Maco.createWindow = function() {
+        var macoWindow = wman.open("Maco").setResizeable(false).setMinSize(650, 480).setSize(650, 480).setMiniTitle("Maco");
+        var content = $('<div class=\'Maco2window\'/>');
+
+        var statusIconContainer = $('<div class="status-icon-container"></div>');
+        var imgSrc = Maco.getStatusIcon();
+        var statusIcon = $('<div class="player-state"><img src="' + imgSrc + '"></div>');
+        statusIcon.css({
+            position:'absolute', top:'-15.5px', left:'5.5px',
+            margin:'0', 'padding-left':'5px', 'padding-right':'5px',
+            border:'none', verticalAlign:'middle'
+        });
+
+        var version = $(`<p><b>v. ${Maco.version}</b></p>`).css({
+            position:'absolute', top:'-13.5px', right:'9px',
+            'padding-left':'10px', 'padding-right':'10px',
+            transform:'scale(0.85)', 'user-select':'text'
+        });
+
+        $('<style>') // styles for flashing effect
+            .prop('type', 'text/css')
+            .html(`
+                .flashing-red {
+                    color: red;
+                    cursor: pointer;
+                    animation: flash-warning 1s infinite alternate;
+                    position: absolute;
+                    top: -15px;
+                    left: 60px;
+                }
+
+                @keyframes flash-warning {
+                    0% { opacity: 1; }
+                    50% { opacity: 1; }
+                    100% { opacity: 0.0; }
+                }
+            `)
+            .appendTo('head');
+
+        if (Player.hasLoginBonus) {
+            var loginRewardWarningButton = $('<span>⚠ Login reward not collected!</span>')
+                .addClass('flashing-red')
+                .on('click', function() {
+                    Maco.forceCollectLoginReward();
+                    $(this).remove();
+                });
+
+            statusIconContainer.append(loginRewardWarningButton);
+        }
+
+        statusIconContainer.append(statusIcon);
+        statusIconContainer.append(version);
+        macoWindow.appendToContentPane(statusIconContainer);
+
+        function tabContentControl(tab) {
+            Maco.removeActiveTab();
+            Maco.removeWindowContent();
+            Maco.addActiveTab(tab);
+        }
+
+        const tabs = {
+            "jobs":"Jobs",
+            "addedJobs":"Added jobs",
+            "sets":"Sets",
+            "consumables":"Consumables",
+            "stats":"Stats",
+            "settings":"Settings",
+            "favoriteJobs":"Worker",
+            "quests":"Quests",
+            "townBuild":"Builder",
+            "notificationSettings":"Notifications"
+        };
+
+        var tabLogic = function(win, id) {
+            var content = $('<div class=\'Maco2window\'/>');
+            switch(id) {
+                case "jobs":
+                    Maco.loadJobsData(function(){
+                        tabContentControl(id);
+                        content.append(Maco.createJobsTab());
+                        Maco.window.appendToContentPane(content);
+                        Maco.addJobTableCss();
+                        $(".Maco2window .tw2gui_scrollpane_clipper_contentpane").css({"top":Maco.jobsTablePosition.content});
+                        $(".Maco2window .tw2gui_scrollbar_pulley").css({"top":Maco.jobsTablePosition.scrollbar});
+                        Maco.addSortEventsHeader();
+                        Maco.addJobFilterEvent();
+                        $('#jobFilter_textfield').attr('autocomplete', 'off').trigger('focus');
+                    });
+                    break;
+                case "addedJobs":
+                    tabContentControl(id);
+                    content.append(Maco.createAddedJobsTab());
+                    Maco.window.appendToContentPane(content);
+                    $(".Maco2window .tw2gui_scrollpane_clipper_contentpane").css({"top":Maco.addedJobsTablePosition.content});
+                    $(".Maco2window .tw2gui_scrollbar_pulley").css({"top":Maco.addedJobsTablePosition.scrollbar});
+                    Maco.addAddedJobsTableCss();
+                    break;
+                case "consumables":
+                    tabContentControl(id);
+                    Maco.findAllConsumables();
+                    content.append(Maco.createConsumablesTab());
+                    Maco.window.appendToContentPane(content);
+                    $(".Maco2window .tw2gui_scrollpane_clipper_contentpane").css({"top":Maco.consumablesTablePosition.content});
+                    $(".Maco2window .tw2gui_scrollbar_pulley").css({"top":Maco.consumablesTablePosition.scrollbar});
+                    Maco.addConsumableTableCss();
+                    break;
+                case "sets":
+                    Maco.loadSets(function() {
+                        tabContentControl(id);
+                        content.append(Maco.createSetGui())
+                        Maco.window.appendToContentPane(content);
+                    });
+                    break;
+                case "stats":
+                    tabContentControl(id);
+                    content.append(Maco.createStatisticsGui());
+                    Maco.window.appendToContentPane(content);
+                    break;
+                case "settings":
+                    tabContentControl(id);
+                    content.append(Maco.createSettingsGui());
+                    Maco.window.appendToContentPane(content);
+                    break;
+                case "favoriteJobs":
+                    tabContentControl(id);
+                    content.append(Maco.createFavoriteJobsTab());
+                    Maco.window.appendToContentPane(content);
+                    $(".Maco2window .tw2gui_scrollpane_clipper_contentpane").css({"top":Maco.favoriteJobsTablePosition.content});
+                    $(".Maco2window .tw2gui_scrollbar_pulley").css({"top":Maco.favoriteJobsTablePosition.scrollbar});
+                    Maco.addFavoriteJobsTableCss();
+                    break;
+                case "quests":
+                    tabContentControl(id);
+                    content.append(Maco.createQuestsTab());
+                    Maco.window.appendToContentPane(content);
+                    $(".Maco2window .tw2gui_scrollpane_clipper_contentpane").css({"top":Maco.questsTablePosition.content});
+                    $(".Maco2window .tw2gui_scrollbar_pulley").css({"top":Maco.questsTablePosition.scrollbar});
+                    Maco.addQuestsTableCss();
+                    break;
+                case "townBuild":
+                    Maco.loadCityHall(function(data) {
+                        tabContentControl(id);
+                        content.append(Maco.createTownBuildGui(data));
+                        Maco.window.appendToContentPane(content);
+                    });
+                    break;
+                case "notificationSettings":
+                    tabContentControl(id);
+                    content.append(Maco.createNotificationsGui());
+                    Maco.window.appendToContentPane(content);
+                    break;
+            }
+
+            Maco.lastActiveTab = id;
+        }
+
+        for (var tab in tabs) {
+            macoWindow.addTab(tabs[tab], tab, tabLogic);
+        }
+
+        Maco.window = macoWindow;
+        Maco.selectTab(Maco.lastActiveTab);
+    };
+    Maco.refreshTab = function(key) {
+        const activeTab = Maco.getActiveTab();
+        const tabKey = key != undefined ? key : activeTab;
+        if (tabKey && tabKey === activeTab) {
+            Maco.window.tabIds[tabKey].f(Maco.window, tabKey);
+        }
+    };
+    Maco.selectTab = function(key) {
+        if (!Maco.window?.tabIds?.[key]) return;
+        Maco.window?.tabIds[key].f(Maco.window, key);
+    };
+    Maco.removeActiveTab = function() {
+        const activeTab = Maco.getActiveTab();
+        if (['jobs', 'addedJobs', 'consumables', 'favoriteJobs'].includes(activeTab)) { // save scrollbar position before removing GUI
+            Maco[activeTab + "TablePosition"].content = $(".Maco2window .tw2gui_scrollpane_clipper_contentpane").css("top");
+            Maco[activeTab + "TablePosition"].scrollbar = $(".Maco2window .tw2gui_scrollbar_pulley").css("top");
+        }
+        $('div.tw2gui_window_tab', Maco.window.divMain).removeClass('tw2gui_window_tab_active');
+    };
+    Maco.addActiveTab = function(key) {
+        $('div._tab_id_' + key, Maco.window.divMain).addClass('tw2gui_window_tab_active');
+    };
+    Maco.removeWindowContent = function() {
+        $(".Maco2window").remove();
+    };
+    Maco.getActiveTab = function() {
+        const activeTab = $('div.tw2gui_window_tab_active', Maco.window?.divMain);
+        if (activeTab.length > 0) {
+            var tabKey = activeTab.attr('class').match(/_tab_id_([^\s]+)/);
+            if (tabKey && tabKey.length > 1) {
+                return tabKey[1];
+            }
+        }
+        return '';
+    };
+    Maco.addJobTableCss = function() {
+        $(".Maco2window .row_head").css({"margin-top":"1px"});
+        $(".Maco2window .dummy").css({"float": "left"});
+        $(".Maco2window .jobIcon").css({"width":"70px"});
+        $(".Maco2window .jobName").css({"width":"150px"});
+        $(".Maco2window .jobXp").css({"width":"40px"});
+        $(".Maco2window .jobMoney").css({"width":"40px"});
+        $(".Maco2window .jobMotivation").css({"width":"40px"});
+        $(".Maco2window .jobDistance").css({"width":"80px"});
+        $(".Maco2window .jobAdd").css({"width":"111px"});
+        $(".Maco2window .row .jobName").css({"width":"150px", "margin-bottom":"10px"});
+        $(".Maco2window .row .jobXp").css({"width":"40px", "margin-bottom":"10px"});
+        $(".Maco2window .row .jobMoney").css({"width":"40px", "margin-bottom":"10px"});
+        $(".Maco2window .row .jobMotivation").css({"width":"40px", "margin-bottom":"10px"});
+        $(".Maco2window .row .jobDistance").css({"width":"80px", "margin-bottom":"10px"});
+        $(".Maco2window .row .jobAdd").css({"width":"111px", "margin-bottom":"5px"});
+        $(".Maco2window .row .jobAddFavorite").css({"margin-bottom":"5px"});
+        $(".Maco2window .row").css({"height":"55px", "background": "none"});
+        $(".Maco2window .trows").css({"height":"360px"});
+        $('.Maco2window').find('.fancytable').css('height', '380px');
+        $('.Maco2window').find('.tbody').css('height', '290px');
+        $('.Maco2window').find('.tw2gui_scrollpane').css('height', '290px');
+        $('.Maco2window').find('.tfoot').css('height', '30px');
+    };
+    Maco.addAddedJobsTableCss = function() {
+        //$(".Maco2window .row_head").css({"margin-bottom":"3.5px", "margin-top":"3px"});
+        $(".Maco2window .jobIcon").css({"width":"70px"});
+        $(".Maco2window .jobName").css({"width":"150px"});
+        $(".Maco2window .jobStopMotivation").css({"width":"110px"});
+        $(".Maco2window .jobSet").css({"width":"110px"});
+        $(".Maco2window .jobRemove").css({"width":"91px"});
+        $(".Maco2window .row .jobName").css({"width":"150px", "margin-bottom":"10px"});
+        $(".Maco2window .row .jobStopMotivation").css({"width":"110px", "margin-bottom":"10px"});
+        $(".Maco2window .row .jobSet").css({"width":"110px", "margin-bottom":"10px"});
+        $(".Maco2window .row .jobRemove").css({"width":"91px", "margin-bottom":"5px"});
+        $(".Maco2window .row .jobAddFavorite").css({"margin-bottom":"5px"});
+        $(".Maco2window .row").css({"height":"55px", "background": "none"});
+        $('.Maco2window').find('.tw2gui_scrollpane').css('height', '250px');
+    };
+    Maco.addFavoriteJobsTableCss = function() {
+        //$(".Maco2window .row_head").css({"margin-bottom":"3.5px", "margin-top":"3px"});
+        $(".Maco2window .dummy").css({"float": "left"});
+        $(".Maco2window .jobIcon").css({"width":"70px"});
+        $(".Maco2window .jobName").css({"width":"170px"});
+        $(".Maco2window .jobSet").css({"width":"130px"});
+        $(".Maco2window .jobRank").css({"width":"50px", "font-weight": "bold"});
+        $(".Maco2window .jobMoveUp").css({"width":"28px"});
+        $(".Maco2window .jobMoveDown").css({"width":"45px"});
+        $(".Maco2window .row .jobRank").css({"padding-left":"2px"});
+        $(".Maco2window .row .jobMoveUp").css({"height":"30px", "display": "flex", "align-items": "center"});
+        $(".Maco2window .row .jobMoveDown").css({"height":"30px", "display": "flex", "align-items": "center"});
+        $(".Maco2window .jobRemove").css({"width":"50px", "display": "flex", "align-items": "center"});
+        $(".Maco2window .row:not(.row_head) > *:not(.jobIcon)").css({"margin-top": "4px"});
+        $(".Maco2window .row").css({"background": "none", "height":"55px", "display": "flex", "align-items": "center"});
+        $(".Maco2window .trows").css({"height":"360px"});
+        $('.Maco2window').find('.fancytable').css('height', '380px');
+        $('.Maco2window').find('.tbody').css('height', '295px');
+        $('.Maco2window').find('.tw2gui_scrollpane').css('height', '295px');
+        $('.Maco2window').find('.tfoot').css('height', '30px');
+    };
+    Maco.addQuestsTableCss = function() {
+        $(".Maco2window .questTitle").css({"width":"190px"});
+        $(".Maco2window .questRequirements").css({"width":"265px"});
+        $(".Maco2window .questFinish").css({"width":"60px"});
+        $(".Maco2window .questAccept").css({"width":"50px"});
+        $(".Maco2window .row .cell_0").css({"margin-left":"5px"});
+        $(".Maco2window .row").css({"display": "flex"});
+        $(".Maco2window .row .questFinish").css({"display": "inline-flex", "align-items": "center"});
+        $(".Maco2window .row .questAccept").css({"display": "inline-flex", "align-items": "center"});
+        $('.Maco2window').find('.fancytable').css('height', '380px');
+        $('.Maco2window').find('.tbody').css('height', '295px');
+        $('.Maco2window').find('.tw2gui_scrollpane').css('height', '295px');
+        $('.Maco2window').find('.tfoot').css('height', '30px');
+    };
+    Maco.addConsumableTableCss = function() {
+        $(".Maco2window .consumIcon").css({"width":"65px"});
+        //$(".Maco2window .consumIcon .item").css({"background":"none"});
+        $(".Maco2window .consumName").css({"width":"130px"});
+        $(".Maco2window .consumEnergy").css({"width":"70px"});
+        $(".Maco2window .consumMotivation").css({"width":"70px"});
+        $(".Maco2window .consumHealth").css({"width":"60px"});
+        $(".Maco2window .consumBuffs").css({"width":"130px"});
+        $(".Maco2window .row .consumSelected").css({"display": "flex", "align-items": "center"});
+        $(".Maco2window .row:not(.row_head) > *:not(.consumIcon)").css({"margin-top": "5px"});
+        $(".Maco2window .row").css({"height":"60px", "background-position":"center -28px", "display": "flex", "align-items": "center"});
+        $('.Maco2window').find('.tw2gui_scrollpane').css('height', '250px');
+    };
+    Maco.addSortEventsHeader = function() {
+        $(".Maco2window .jobXp").click(function() {
+            (Maco.sortJobTable.xp === 0) ? Maco.sortJobTable.xp = 1 : Maco.sortJobTable.xp *= -1;
+            Maco.sortJobTable.distance = 0;
+            Maco.sortJobTable.money = 0;
+            Maco.refreshTab("jobs");
+        });
+        $(".Maco2window .jobMoney").click(function() {
+            (Maco.sortJobTable.money === 0) ? Maco.sortJobTable.money = 1 : Maco.sortJobTable.money *= -1;
+            Maco.sortJobTable.distance = 0;
+            Maco.sortJobTable.xp = 0;
+            Maco.refreshTab("jobs");
+        });
+        $(".Maco2window .jobDistance").click(function() {
+            (Maco.sortJobTable.distance === 0) ? Maco.sortJobTable.distance = -1 : Maco.sortJobTable.distance *= -1;
+            Maco.sortJobTable.xp = 0;
+            Maco.sortJobTable.money = 0;
+            Maco.refreshTab("jobs");
+        });
+    };
+    Maco.addJobFilterEvent = function() {
+        var f = function () {
+            if (Maco.filterTimeout != undefined) {
+                clearTimeout(Maco.filterTimeout);
+            }
+            Maco.filterTimeout = setTimeout(function () {
+                Maco.jobFilter.filterJob = $('#jobFilter_textfield').val() || "";
+                $(".Maco2window .tw2gui_scrollpane_clipper_contentpane").css({"top":"0px"});
+                $(".Maco2window .tw2gui_scrollbar_pulley").css({"top":"0px"});
+                Maco.refreshTab("jobs");
+            }, 700);
+        };
+        $('#jobFilter_textfield').on('keyup change', f);
+    };
+    Maco.createJobsTab = function() {
+        var htmlSkel = $("<div id = \'jobs_overview'\></div>");
+        var html = $("<div class = \'jobs_search_foot'\ style=\'position:relative; align-items: center; display: flex; justify-content: space-between;'\><div id=\'jobFilter'\style=\'margin-right: 25px;'\></div><div id=\'job_only_silver'\style=\'margin-right: 15px;'\></div><div id=\'job_no_silver'\style=\'margin-right: 10px;'\></div><div id=\'job_center'\style=\'margin-right: 10px;'\></div><div id=\'job_hide_favorites'\style=\' '\></div></div>");
+        var xpIcon = '<img src="/images/icons/star.png">';
+        var dollarIcon = '<img src="/images/icons/dollar.png">';
+        var motivationIcon = '<img src="/images/icons/motivation.png">';
+        var arrow_desc = '&nbsp;<img src="../images/window/jobs/sortarrow_desc.png"/>';
+        var arrow_asc = '&nbsp;<img src="../images/window/jobs/sortarrow_asc.png"/>';
+
+        var textfield = new west.gui.Textfield("jobFilter_textfield").setPlaceholder("Search job name").setWidth(140);
+        if (Maco.jobFilter.filterJob) {
+            textfield.setValue(Maco.jobFilter.filterJob);
+        }
+        var clearImage = $('<img/>', {src: '../images/chat/servicegrade_traitor.png',
+            click: function () {
+                $('#jobFilter_textfield').val('').trigger('change');
+            },
+            css: {filter: 'grayscale(100%)', '-webkit-filter': 'grayscale(100%)', '-moz-filter': 'grayscale(100%)', '-o-filter': 'grayscale(100%)', position: 'absolute', top: '7px', left: '135px'}
+        });
+
+        let uniqueJobs = [];
+        if (!Maco.jobFilter.filterNoSilver) {
+            if (!Maco.isDestinationReached(Maco.lastPosition) || Maco.uniqueJobs.length === 0) {
+                Maco.uniqueJobs = Maco.getUniqueJobs(); // 12 ms
+            }
+            Maco.lastPosition = {...Character.position};
+            uniqueJobs = Maco.filterUniqueJobs(Maco.uniqueJobs); // 16 ms
+        } else {
+            uniqueJobs = Maco.getAllFilteredUniqueJobs();
+        }
+
+        //const uniqueJobs = Maco.getAllFilteredUniqueJobs();
+        const favoriteJobIds = new Set(Maco.favoriteJobs.map(job => job.id));
+        const addedJobIds = new Set(Maco.addedJobs.map(job => job.id));
+
+        var table = new west.gui.Table();
+        table.addColumn("dummy","dummy").addColumn("jobIcon","jobIcon").addColumn("jobName","jobName").addColumn("jobXp","jobXp").addColumn("jobMoney","jobMoney").addColumn("jobMotivation","jobMotivation").addColumn("jobDistance","jobDistance").addColumn("jobAdd","jobAdd").addColumn("jobAddFavorite","jobAddFavorite");
+        table.appendToCell("head","dummy","").appendToCell("head","jobIcon","Job icon").appendToCell("head","jobName","Job name").appendToCell("head","jobXp", xpIcon + (Maco.sortJobTable.xp == 1 ? arrow_asc : Maco.sortJobTable.xp == -1 ? arrow_desc : "")).appendToCell("head","jobMoney", dollarIcon + (Maco.sortJobTable.money == 1 ? arrow_asc : Maco.sortJobTable.money == -1 ? arrow_desc : "")).appendToCell("head","jobMotivation",motivationIcon).appendToCell("head","jobDistance","Distance " + (Maco.sortJobTable.distance == 1 ? arrow_asc : Maco.sortJobTable.distance == -1 ? arrow_desc : "")).appendToCell("head","jobAdd","").appendToCell("head","jobAddFavorite","Save");
+
+        for (let job = 0; job < uniqueJobs.length; job++) {
+            const isAdded = addedJobIds.has(uniqueJobs[job].id);
+            table.appendRow()
+                .appendToCell(-1, "jobIcon", Maco.getJobIcon(uniqueJobs[job].silver, uniqueJobs[job].id, uniqueJobs[job].x, uniqueJobs[job].y, true)) // 50ms
+                .appendToCell(-1, "jobName", Maco.getJobName(uniqueJobs[job].id) + "&nbsp; ") // 25ms
+                .appendToCell(-1, "jobXp", uniqueJobs[job].experience) // 15ms
+                .appendToCell(-1, "jobMoney", uniqueJobs[job].money) // 15ms
+                .appendToCell(-1, "jobMotivation", uniqueJobs[job].motivation) // 15ms
+                .appendToCell(-1, "jobDistance", uniqueJobs[job].distance.formatDuration()) // 30 ms
+                .appendToCell(-1, "jobAdd", Maco.createAddJobButton(uniqueJobs[job].x, uniqueJobs[job].y, uniqueJobs[job].id, isAdded, job)) // 60ms
+                .appendToCell(-1, "jobAddFavorite", Maco.makeFavoriteJobCheckbox(uniqueJobs[job].id, Maco.jobsTablePosition, favoriteJobIds)) // 70ms
+                .getRow().css("opacity", isAdded ? 0.6 : 1);
+        }
+
+        let refreshDeferred = false;
+        function deferRefresh() {
+            if (refreshDeferred) return;
+            refreshDeferred = true;
+            setTimeout(function() {
+                refreshDeferred = false;
+                Maco.debouncedSaveAll(3000);
+                $(".Maco2window .tw2gui_scrollpane_clipper_contentpane").css({"top":"0px"});
+                $(".Maco2window .tw2gui_scrollbar_pulley").css({"top":"0px"});
+                Maco.selectTab("jobs");
+            }, 0);
+        }
+
+        var checkboxOnlySilver = new west.gui.Checkbox()
+            .setLabel("Silvers")
+            .setSelected(Maco.jobFilter.filterOnlySilver)
+            .setCallback(function() {
+                if (this.isSelected()) {
+                    Maco.jobFilter.filterOnlySilver = this.isSelected();
+                    checkboxNoSilver.setSelected(!this.isSelected());
+                } else {
+                    Maco.jobFilter.filterOnlySilver = false;
+                }
+                deferRefresh();
+            });
+
+        var checkboxNoSilver = new west.gui.Checkbox()
+            .setLabel("No silvers")
+            .setSelected(Maco.jobFilter.filterNoSilver)
+            .setCallback(function() {
+                if (this.isSelected()) {
+                    Maco.jobFilter.filterNoSilver = this.isSelected();
+                    checkboxOnlySilver.setSelected(!this.isSelected());
+                } else {
+                    Maco.jobFilter.filterNoSilver = false;
+                }
+                deferRefresh();
+            });
+
+        var checkboxCenterJobs = new west.gui.Checkbox()
+            .setLabel("Center jobs")
+            .setSelected(Maco.jobFilter.filterCenterJobs)
+            .setCallback(function() {
+                Maco.jobFilter.filterCenterJobs = this.isSelected();
+                deferRefresh();
+            });
+
+        var checkboxHideFavorites = new west.gui.Checkbox()
+            .setLabel("Hide saved")
+            .setSelected(Maco.jobFilter.filterFavorites)
+            .setCallback(function() {
+                Maco.jobFilter.filterFavorites = this.isSelected();
+                deferRefresh();
+            });
+
+        var checkboxEnoughLP = new west.gui.Checkbox()
+            .setLabel("Unlocked")
+            .setSelected(Maco.jobFilter.filterEnoughLP)
+            .setCallback(function() {
+                Maco.jobFilter.filterEnoughLP = this.isSelected();
+                deferRefresh();
+            });
+
+        $('#jobFilter', html).append(textfield.getMainDiv());
+        $('#jobFilter', html).append(clearImage);
+        $("#job_only_silver",html).append(checkboxOnlySilver.getMainDiv());
+        $("#job_no_silver",html).append(checkboxNoSilver.getMainDiv());
+        $("#job_center",html).append(checkboxCenterJobs.getMainDiv());
+        $("#job_hide_favorites",html).append(checkboxEnoughLP.getMainDiv());
+        //$("#job_hide_favorites",html).append(checkboxHideFavorites.getMainDiv());
+        table.appendToFooter("dummy", html);
+        htmlSkel.append(table.getMainDiv());
+        return htmlSkel;
+    };
+    Maco.createAddJobButton = function(x, y, id, isAdded, tableIndex) {
+        var buttonAdd = new west.gui.Button("Add new job", function() {
+            Maco.addJob(x,y,id);
+            Maco.jobsTablePosition.content = $(".Maco2window .tw2gui_scrollpane_clipper_contentpane").css("top");
+            Maco.jobsTablePosition.scrollbar = $(".Maco2window .tw2gui_scrollbar_pulley").css("top");
+            Maco.debouncedSaveAll(3000);
+            $(buttonAdd.getMainDiv()).hide();
+            $(`#jobs_overview .row.row_${tableIndex}`).css("opacity", "0.6");
+        });
+        buttonAdd.setWidth(100);
+        var buttonDiv = $(buttonAdd.getMainDiv()); // Wrap in jQuery
+        return isAdded ? buttonDiv.css("display", "none") : buttonDiv;
+    };
+    Maco.makeFavoriteJobCheckbox = function(id, position, favoriteJobIds) {
+        const checkbox = new west.gui.Checkbox()
+            .setSelected(favoriteJobIds.has(id)) // Use Set for constant-time check
+            .setId(id)
+            .setCallback(function() {
+                Maco.updateFavoriteJobs(parseInt(this.divMain.attr("id")), this.isSelected());
+                Maco.debouncedSaveAll(3000);
+            });
+        return checkbox.getMainDiv();
+    };
+    Maco.setCheck = function() {
+        const predefinedSets = [
+            Maco.travelSet,
+            Maco.jobSet,
+            Maco.healthSet,
+            Maco.regenerationSet,
+            Maco.settings.fortBattle.attackSet,
+            Maco.settings.fortBattle.defSet
+        ];
+
+        // Check if all predefined sets are defined in Maco.sets
+        const arePredefinedSetsDefined = predefinedSets.every(setId => Maco.sets.has(setId) || setId <= -1 || Maco.wardrobe.has(setId));
+
+        // Check if all sets for jobs in Maco.addedJobs are defined in Maco.sets
+        const areJobSetsDefined = Maco.addedJobs.every(job => Maco.sets.has(job.set) || job.set <= -1 || Maco.wardrobe.has(job.set));
+
+        return arePredefinedSetsDefined && areJobSetsDefined;
+    };
+    Maco.setsAssigned = function() {
+        for (let i = 0; i < Maco.addedJobs.length; i++) {
+            if (Maco.addedJobs[i].set <= -1) {
+                return false
+            }
+        }
+        return true;
+    };
+    Maco.startFlagCheck = function() {
+        flagCheckInterval = setInterval(function() {
+            if (!isQueueInProgress && !runJob_running && !walkToJob_running && !isRequestInProgress && !useConsumable_running) {
+                executeQueuedActions();
+                clearInterval(flagCheckInterval);
+            }
+        }, interval_long);
+    };
+    Maco.handleScriptStart = function(startDelay = 0) {
+        if (!Maco.isRunning) Maco.currentState = 4;
+        (Maco.addedJobs.length <= MAX_ALLOWED_JOBS) ? Maco.makeRoute() : Maco.createRoute();
+        Maco.selectTab("addedJobs");
+        Maco.debouncedSaveAll(1000);
+
+        if (!Maco.isRunning && !isQueueInProgress && queuedActions.length === 0) {
+            queuedActions.push(function() {
+                Maco.isRunning = true;
+                Maco.maxAllowedEnergy = 100;
+                Maco.addRunTimeEventListeners();
+                if (Maco.farmingAssistant.awaitNextSession) {
+                    Maco.awaitNextSession();
+                } else {
+                    clearTimeout(startStopDelayTimeoutId);
+                    startStopDelayTimeoutId = setTimeout(() => {
+                        //if (Config.get("gui.animations")) {
+                            Maco.startAnimationRemoveObserver();
+                        //}
+                        if (Maco.settings.autoReload) {
+                            Maco.startReloadObserver();
+                        }
+                        Maco.startTime = new Date();
+                        EventHandler.unlisten('handle_maco_start', Maco._onStart);
+                        EventHandler.unlisten('handle_maco_stop', Maco._onStop);
+                        EventHandler.listen('handle_maco_stop', Maco._onStop);
+                        Maco.keepAlive.start();
+                        startStopDelayTimeoutId = null;
+                        if (Maco.canAttendBattle()) {
+                            Maco.attendFortBattle();
+                        } else {
+                            Maco.run();
+                        }
+                    }, startDelay);
+                }
+            });
+
+            Maco.startFlagCheck();
+        }
+    };
+    Maco.handleButtonStopClick = function(stopDelay = 0) {
+        clearTimeout(startStopDelayTimeoutId);
+        clearInterval(flagCheckInterval);
+        queuedActions = [];
+        if (stopDelay > 0) {
+            startStopDelayTimeoutId = setTimeout(() => {
+                Maco.stopCleanup();
+                waitForCondition(
+                    () => (TaskQueue.queue.length === 0 && !runJob_running && !walkToJob_running && !useConsumable_running),
+                    () => Maco.sleep({ dontWakeUp: true, message: "Scheduled stop." }),
+                    500,
+                    10000
+                );
+            }, stopDelay);
+            Maco.refreshTab("addedJobs");
+            return startStopDelayTimeoutId;
+        } else {
+            Maco.stopCleanup();
+            waitForCondition(
+                () => (TaskQueue.queue.length === 0 && !runJob_running && !walkToJob_running && !useConsumable_running),
+                () => EventHandler.signal("maco_stopped"),
+                500,
+                5000,
+                true
+            );
+        }
+        return null;
+    };
+    Maco.stopCleanup = function() {
+        Maco.currentState = 0;
+        Maco.isRunning = false;
+        Maco.keepAlive.stop();
+        startStopDelayTimeoutId = null;
+        clearInterval(reloadObserverInterval);
+        Maco.removeRunTimeEventListeners();
+        if (queueAnimationObserver != null) {
+            queueAnimationObserver.disconnect();
+            queueAnimationObserver = null;
+        }
+        Maco.selectTab("addedJobs");
+        EventHandler.unlisten('handle_maco_stop', Maco._onStop);
+        EventHandler.unlisten('handle_maco_start', Maco._onStart);
+        EventHandler.listen('handle_maco_start', Maco._onStart);
+    };
+    Maco.finishRun = function(optMessage = "") {
+        const message = "Finished. " + optMessage;
+        Maco.stopCleanup();
+        Maco.showNotification("The West - Script has stopped", message, "stopped");
+    };
+    Maco._onStart = function() {
+        Maco.handleScriptStart();
+        return EventHandler.ONE_TIME_EVENT;
+    };
+    Maco._onStop = function() {
+        if (![5].includes(Maco.currentState)) {
+            Maco.handleButtonStopClick(10 * 1000);
+        }
+        return EventHandler.ONE_TIME_EVENT;
+    };
+    Maco.awaitNextSession = async function() {
+        Maco.currentState = 6;
+        clearInterval(reloadObserverInterval);
+        const intervalId = setInterval(() => {
+            if (!Maco.isRunning || Maco.currentState !== 6 || !Maco.farmingAssistant.awaitNextSession) {
+                clearInterval(intervalId);
+            } else if (Maco.isSessionExpired()) {
+                clearInterval(intervalId);
+                Maco.saveAll();
+                Maco.reload("Awaited session started. ");
+            }
+        }, 10000);
+    };
+    Maco.createAddedJobsTab = function() {
+        var htmlSkel = $("<div id=\'added_jobs_overview'\></div>");
+        var footerHtml = $("<div id=\'start_Maco'\ style=\'position:relative;'\><span class =\'Maco_state'\ style=\' position:absolute; left:20px; top:8px; font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: bold;'\> Current state: "+ Maco.states[Maco.currentState] +"</span><div class=\'Maco_skip_tutorial'\ style=\'position:absolute; left:20px; top:43px;'\></div><div class=\'Maco_run'\ style=\'position:absolute; left:310px; top:20px;'\></div></div>");
+        if (Maco.addedJobsChanged() && Maco.addedJobs.length > 2 && Maco.isRunning) {
+            var routeWarning = $("<div class='route_warning' style='position:absolute; left:20px; top:40px; font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold;'>Jobs changed! (Press 'Recalc' to recalculate route).</div>");
+            footerHtml.append(routeWarning);
+        }
+
+        const favoriteJobIds = new Set(Maco.favoriteJobs.map(job => job.id));
+        let activeJobIndex = null; // Track the currently active job index
+        let scrollCheckInterval = null;
+        var previousScrollTop = $(".Maco2window .tw2gui_scrollbar_pulley").css("top"); // Initialize previous scrollbar pulley position
+        var buttonDiv = $("<div></div>").attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_15);
+
+        var buttonSaveCurrentGear = new west.gui.Button("Save current gear", function() {
+            const jobIndex = buttonSaveCurrentGear.jobIndex; // retrieve the stored job index
+            if (jobIndex !== undefined && Maco.addedJobs[jobIndex]) {
+                Maco.saveCurrentGear(Maco.addedJobs[jobIndex].id);
+                new UserMessage("Current gear saved.", UserMessage.TYPE_SUCCESS).show();
+                Maco.debouncedSaveAll(1000);
+                buttonDiv.hide();
+                activeJobIndex = null;
+                clearInterval(scrollCheckInterval);
+            }
+        });
+
+        var buttonDeleteSavedGear = document.createElement("button");
+        buttonDeleteSavedGear.style.cssText = "margin-left: 8px; transform: scale(1.1); transformOrigin: center; width: 16px; height: 19px; background: url('https://westsk.innogamescdn.com/images/window/messages/icons.png?2') repeat scroll 0 0 transparent; background-position: -292px -4px; padding: 0; border: none; outline: none; display: inline-block; cursor: pointer; user-select: none; font-size: 13px; white-space: nowrap; line-height: 29px;";
+        buttonDeleteSavedGear.addEventListener("click", function() {
+            const jobIndex = buttonSaveCurrentGear.jobIndex; // retrieve the stored job index
+            if (jobIndex !== undefined && Maco.addedJobs[jobIndex]) {
+                Maco.deleteSavedGear(Maco.addedJobs[jobIndex].id); 
+                new UserMessage("Default best gear.", UserMessage.TYPE_SUCCESS).show();
+                Maco.debouncedSaveAll(1000);
+                buttonDiv.hide();
+                activeJobIndex = null;
+                clearInterval(scrollCheckInterval);
+            }
+        });
+
+        buttonDiv.append(buttonSaveCurrentGear.getMainDiv());
+        buttonDiv.append(buttonDeleteSavedGear);
+        buttonDiv.hide(); // Initially hide the button
+
+        function checkForScroll() { // Function to check for scroll events
+            var currentScrollTop = $(".Maco2window .tw2gui_scrollbar_pulley").css("top");
+
+            if (currentScrollTop !== previousScrollTop) {
+                buttonDiv.hide();
+                activeJobIndex = null;
+                clearInterval(scrollCheckInterval);
+
+                // Update previousScrollTop to current position
+                previousScrollTop = currentScrollTop;
+            }
+        }
+        function startScrollCheckInterval() {
+            previousScrollTop = $(".Maco2window .tw2gui_scrollbar_pulley").css("top");
+            scrollCheckInterval = setInterval(checkForScroll, 100);
+        }
+
+        var table = new west.gui.Table();
+        table.addColumn("jobIcon","jobIcon").addColumn("jobName","jobName").addColumn("jobStopMotivation","jobStopMotivation").addColumn("jobSet","jobSet").addColumn("jobRemove","jobRemove").addColumn("jobAddFavorite","jobAddFavorite");
+        table.appendToCell("head","jobIcon","Job icon").appendToCell("head","jobName","Job name").appendToCell("head","jobStopMotivation","Stop motivation").appendToCell("head","jobSet","Job set").appendToCell("head","jobRemove","").appendToCell("head","jobAddFavorite","Save");
+
+        for (var jobIdx = 0; jobIdx < Maco.addedJobs.length; jobIdx++) {
+            const jobId = Maco.addedJobs[jobIdx].id;
+            const jobNameCell = $("<span>").html(Maco.getJobName(jobId) + "&nbsp; ");
+
+            if (Maco.addedJobs.length > 1) {
+                jobNameCell.css("cursor", "pointer").attr("title", "Save current gear");
+                (function(index) { // Wrap this part to capture jobIdx
+                    jobNameCell.on('click', function() { // Add click event listener to jobName to show/hide the buttonSaveCurrentGear
+                        if (activeJobIndex === index) { // if the same job is clicked again, hide the button
+                            buttonDiv.hide();
+                            activeJobIndex = null;
+                            clearInterval(scrollCheckInterval);
+                        } else {
+                            // Positioning and showing button logic
+                            var clickedElement = $(this);
+                            var parentOffset = clickedElement.closest(table.getMainDiv()).offset(); // closest parent offset
+                            var position = clickedElement.offset(); // get the position of the clicked jobName
+                            var topPosition = position.top - parentOffset.top + clickedElement.outerHeight() + 2; // add some padding
+                            var leftPosition = position.left - parentOffset.left;
+
+                            if (Maco.isGearSaved(Maco.addedJobs[index].id)) {
+                                buttonDeleteSavedGear.style.display = 'inline-block';
+                            } else {
+                                buttonDeleteSavedGear.style.display = 'none';
+                            }
+
+                            buttonDiv.css({
+                                transform: 'scale(0.9)',
+                                transformOrigin: 'left',
+                                position: 'absolute',
+                                display: 'inline-flex',
+                                'align-items': 'center',
+                                top: topPosition + 'px', // position the button slightly below the clicked element
+                                left: leftPosition + 'px'
+                            }).show(); // show the button
+
+                            buttonSaveCurrentGear.jobIndex = index; // store the job index
+                            activeJobIndex = index; // set the current active job index
+                            clearInterval(scrollCheckInterval);
+                            startScrollCheckInterval();
+                        }
+                    });
+                })(jobIdx); // Capture jobIdx
+            }
+
+            table.appendRow()
+                .appendToCell(-1, "jobIcon", Maco.getJobIcon(Maco.addedJobs[jobIdx].silver, jobId, Maco.addedJobs[jobIdx].x, Maco.addedJobs[jobIdx].y))
+                .appendToCell(-1, "jobName", jobNameCell)
+                .appendToCell(-1, "jobStopMotivation", Maco.createMinMotivationTextfield(Maco.addedJobs[jobIdx].x, Maco.addedJobs[jobIdx].y, jobId, Maco.addedJobs[jobIdx].stopMotivation))
+                .appendToCell(-1, "jobSet", Maco.createComboxJobSets(Maco.addedJobs[jobIdx].x, Maco.addedJobs[jobIdx].y, jobId))
+                .appendToCell(-1, "jobRemove", Maco.createRemoveJobButton(Maco.addedJobs[jobIdx].x, Maco.addedJobs[jobIdx].y, jobId))
+                .appendToCell(-1, "jobAddFavorite", Maco.makeFavoriteJobCheckbox(jobId, Maco.addedJobsTablePosition, favoriteJobIds));
+        }
+
+        // Hide buttonSaveCurrentGear when clicking elsewhere on the document
+        $(document).on('click', function(event) {
+            if (!$(event.target).closest(buttonDiv).length && 
+                !$(event.target).closest("span").length) { // Ensure the click is not on the jobName or the button itself
+                buttonDiv.hide();
+                activeJobIndex = null; // Reset active job index when clicking outside
+                clearInterval(scrollCheckInterval);
+            }
+        });
+
+        let startDelay = 0,
+            stopDelay = 0; // minutes
+
+        const buttonStart = new west.gui.Button(Maco.addedJobs.length === 0 ? "Run saved jobs" : (Maco.currentState !== 0) ? "Recalc" : "Start", function() {
+            if (!Maco.parseStopMotivation()) {
+                new UserMessage("Wrong format of set stop motivation", UserMessage.TYPE_ERROR).show();
+                return;
+            }
+            if (Maco.addedJobs.length === 0 && !Maco.swapSilverJobs()) {
+                new UserMessage("No jobs to run.", UserMessage.TYPE_ERROR).show();
+                return;
+            }
+            /*if (Maco.searchKeys[Maco.language] == undefined) {
+                Maco.showAlert("Script is not supported for your server language.. it will not work properly.", false);
+            }*/
+            if (!Maco.setsAssigned()) {
+                new UserMessage("Job set not assigned!", UserMessage.TYPE_ERROR).show();
+            }
+            if (!Maco.setCheck()) {
+                Maco.showAlert(Maco.alertTranslations[Maco.translationLang].alert_2(0));
+            }
+
+            Maco.handleScriptStart(startDelay);
+        });
+
+        const buttonStop = new west.gui.Button((startStopDelayTimeoutId != null && Maco.currentState !== 4) ? "Stopping" : "Stop", function() {
+            Maco.handleButtonStopClick(stopDelay);
+        });
+        (Maco.isRunning || Maco.currentState !== 0) ? buttonStop.enable() : buttonStop.disable();
+
+        const startDelayDiv = Maco.createDelayInput({
+            label: "start",
+            initialValue: 0,
+            onChange: (value) => {
+                startDelay = Math.max(0, Number(value) || 0); // Update external startDelay variable
+            },
+            explainer: Maco.explainerTranslations[Maco.translationLang].explainer_25,
+        });
+
+        const stopDelayDiv = Maco.createDelayInput({
+            label: "stop",
+            initialValue: 0,
+            onChange: (value) => {
+                stopDelay = Math.max(0, Number(value) || 0); // Update external stopDelay variable
+            },
+            explainer: Maco.explainerTranslations[Maco.translationLang].explainer_25,
+        });
+
+        const delayDiv = (Maco.currentState === 0) ? startDelayDiv : stopDelayDiv;
+        if (Maco.addedJobs.length === 1) {
+            htmlSkel = Maco.addFarmingAssistantWiew(htmlSkel);
+        }
+        if ((characterId === 0 || LinearQuestHandler.hasTutorialQuest())) {
+            $(".Maco_skip_tutorial", footerHtml).append(Maco.createSkipTutorialDiv());
+        }
+        htmlSkel.append(table.getMainDiv());
+        htmlSkel.append(buttonDiv);
+        $(".Maco_run", footerHtml).append(delayDiv);
+        $(".Maco_run", footerHtml).append(buttonStart.getMainDiv());
+        $(".Maco_run", footerHtml).append(buttonStop.getMainDiv());
+        htmlSkel.append(footerHtml);
+        return htmlSkel;
+    };
+    Maco.createDelayInput = function({ label, initialValue, onChange, explainer }) {
+        let delayValue = initialValue; // Delay value in minutes
+        const displayText = Maco.currentState !== 4 ? delayValue : " ";
+
+        const delaySpan = $("<span>")
+            .addClass(`${label}DelaySpan`)
+            .css("font-weight", "bold")
+            .text(displayText);
+
+        const delayInput = $("<input>")
+            .addClass(`${label}DelayInput`)
+            .attr("type", "text")
+            .val(delayValue)
+            .hide();
+
+        const delayDiv = $("<div>")
+            .css({ display: "inline-block", cursor: "pointer", minWidth: "40px", maxWidth: "40px" })
+            .attr("title", explainer)
+            .append(delaySpan)
+            .append(delayInput);
+
+        // Event listeners
+        delayDiv.on("click", function (event) {
+            event.stopPropagation();
+            delaySpan.hide();
+            delayInput.show().css({ background: "inherit", border: "none", width: "38px" }).focus().select();
+        });
+
+        delayInput.on("blur focusout", function handleOnce() {
+            handleDelay.call(this);
+            delayInput.off("blur focusout", handleOnce); // Remove the listener
+            setTimeout(() => {
+                delayInput.one("blur focusout", handleOnce); // Reattach after execution
+            }, 0); // Delay to reattach after the event completes
+        });
+
+        delayInput.on("keydown", function (event) {
+            if (event.key === 'Enter') {
+                $(this).trigger('blur');
+            }
+        });
+
+        function handleDelay() {
+            const inputValue = parseInt($(this).val());
+            if (!isNaN(inputValue) && inputValue >= 0) {
+                delayValue = inputValue * 60000; // Convert to milliseconds
+                delaySpan.text(inputValue);
+                onChange(delayValue); // Call the callback to update external state
+            } else {
+                $(this).val(0);
+            }
+            $(this).hide();
+            delaySpan.show();
+        }
+
+        return delayDiv;
+    };
+    Maco.createMinMotivationTextfield = function(x, y, id, placeholder) {
+        var componentId = "x-" + x + "y-" + y + "id-" + id;
+        var textfield = new west.gui.Textfield().setId(componentId).onlyNumeric().setWidth(40).setValue(placeholder);
+        //return textfield.getMainDiv();
+
+        // Get the DOM element of the textfield's input
+        var textfieldDiv = textfield.getMainDiv();
+        textfieldDiv.attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_17);
+        var inputElement = textfieldDiv.find('input');
+
+        // Attach the input event listener to detect changes
+        inputElement.on('change', function() {
+            Maco.parseStopMotivation(); //console.log("The new text field value is: " + inputElement.val());
+            Maco.debouncedSaveAll(1000);
+        });
+
+        return textfieldDiv;
+    };
+    Maco.skipTutorial = function() {
+        LinearQuestHandler.hasTutorialQuest = () => false;
+        GameMap.Component.TutorialCloud = () => {};
+        $('[id^="linear_quest"]').remove();
+        EventHandler.signal("tutorial_finished");
+        GameMap.refresh();
+    };
+    Maco.createSkipTutorialDiv = function() {
+        var skipTutorialDiv = $("<div id='farmingAssistant_tutorialSkip'></div>");//.css({'position': 'absolute', 'top': '100px', 'left': '280px', 'z-index': '9999'});
+        var checkboxSkipTutorial = new west.gui.Checkbox()
+            .setLabel("Skip tutorial")
+            .setSelected(Maco.settings.skipTutorial)
+            .setCallback(function() {
+                Maco.settings.skipTutorial = this.isSelected();
+                Maco.debouncedSaveAll(100, () => new UserMessage("Saved successfully.", UserMessage.TYPE_SUCCESS).show());
+                new UserMessage("Saved successfully.", UserMessage.TYPE_SUCCESS).show();
+                if (this.isSelected() && LinearQuestHandler.hasTutorialQuest()) {
+                    Maco.skipTutorial();
+                }
+            });
+        skipTutorialDiv.append(checkboxSkipTutorial.getMainDiv());
+
+        return skipTutorialDiv;
+    };
+    Maco.addFarmingAssistantWiew = function(htmlSkel) {
+        var checkboxAssistantDiv = $("<div id='farmingAssistant_checkbox'></div>");
+        checkboxAssistantDiv.attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_24);
+        var checkboxFarmingAssistant = new west.gui.Checkbox()
+            .setLabel("Enable farming assistant")
+            .setSelected(Maco.farmingAssistant.enabled)
+            .setCallback(function() {
+                Maco.farmingAssistant.enabled = this.isSelected();
+                Maco.debouncedSaveAll(3000);
+                if (Maco.farmingAssistant.enabled) {
+                    $("#farmingAssistant_options").css('visibility', 'visible');
+                } else {
+                    $("#farmingAssistant_options").css('visibility', 'hidden');
+                    Maco.farmingAssistant.stopLevel = false;
+                    Maco.farmingAssistant.awaitNextSession = false;
+                    Maco.refreshTab("addedJobs");
+                }
+            });
+        checkboxAssistantDiv.append(checkboxFarmingAssistant.getMainDiv());
+        $(checkboxAssistantDiv).css({
+            'position': 'absolute', 'top': '100px', 'left': '80px',
+            'z-index': '9999'
+        });
+
+        let comboboxGearLevel = new west.gui.Combobox("combobox_gear_level");
+        const jobGear = Maco.jobsFarmingGear.find(item => item.jobid === Maco.addedJobs[0].id);
+        if (jobGear && jobGear.hasOwnProperty(`level_0`)) {
+            comboboxGearLevel.addItem(0, "Default" + "&nbsp;&nbsp;&nbsp;" + "\u2714");
+        } else {
+            comboboxGearLevel.addItem(0, "Default");
+        }
+        for (let i = 1; i < 10; i++) {
+            if (jobGear && jobGear.hasOwnProperty(`level_${i}`)) {
+                comboboxGearLevel.addItem(i, "Level " + i + "&nbsp;&nbsp;&nbsp;" + "\u2714");
+            } else {
+                comboboxGearLevel.addItem(i, "Level " + i);
+            }
+        }
+        Maco.farmingAssistant.selectedGearLevel = (Character.level >= 1 && Character.level <= 9 && Maco.lastResult[Maco.currentJob.jobIdx] > 0) ? Character.level : Maco.farmingAssistant.selectedGearLevel;
+        comboboxGearLevel = comboboxGearLevel.select(Maco.farmingAssistant.selectedGearLevel);
+        comboboxGearLevel.addListener(function(value) {
+            Maco.farmingAssistant.selectedGearLevel = value;
+        });
+        comboboxGearLevel.getMainDiv().attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_22);
+
+        var htmlSaveAssistantGear = $("<div></div>");
+        htmlSaveAssistantGear.attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_15);
+        var buttonSaveAssistantGear = new west.gui.Button("Save current gear", function() {
+            Maco.saveCurrentGear(Maco.addedJobs[0].id, Maco.farmingAssistant.selectedGearLevel);
+            Maco.debouncedSaveAll(1000);
+            new UserMessage("Current gear saved.", UserMessage.TYPE_SUCCESS).show();
+            Maco.refreshTab("addedJobs");
+        });
+
+        var buttonDeleteAssistantGear = new west.gui.Button("Delete saved gear", function() {
+            const deleted = Maco.deleteSavedGear(Maco.addedJobs[0].id, Maco.farmingAssistant.selectedGearLevel);
+            if (deleted) {
+                Maco.debouncedSaveAll(1000);
+                new UserMessage("Gear deleted.", UserMessage.TYPE_SUCCESS).show();
+                Maco.refreshTab("addedJobs");
+            }
+        });
+
+        var buttonExportAssistantGear = new west.gui.Button("Export", function() {
+            Maco.exportFarmingGear(Maco.addedJobs[0].id);
+        });
+
+        var buttonImportAssistantGear = new west.gui.Button("Import", function() {
+            Maco.importFarmingGear()
+                .then(() => {
+                    Maco.saveAll();
+                    new UserMessage("Gear imported successfully.", UserMessage.TYPE_SUCCESS).show();
+                    Maco.refreshTab("addedJobs");
+                })
+                .catch(error => {
+                    new UserMessage("Failed to import gear: " + error.message, UserMessage.TYPE_ERROR).show();
+                });
+        });
+
+        var checkboxAwaitNextSession = new west.gui.Checkbox()
+            .setLabel("Await jobs reset")
+            .setSelected(Maco.farmingAssistant.awaitNextSession)
+            .setCallback(function() {
+                Maco.farmingAssistant.awaitNextSession = this.isSelected();
+            });
+        checkboxAwaitNextSession.getMainDiv().attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_20);
+
+        var checkboxAssistantStopLevel = new west.gui.Checkbox()
+            .setLabel("Stop after: level up / jobs reset")
+            .setSelected(Maco.farmingAssistant.stopLevel)
+            .setCallback(function() {
+                Maco.farmingAssistant.stopLevel = this.isSelected();
+            });
+        checkboxAssistantStopLevel.getMainDiv().attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_21);
+
+        var htmlFarmingAssistant = $("<div id='farmingAssistant_options'></div>");
+        $(htmlFarmingAssistant).css({
+            'visibility': (Maco.farmingAssistant.enabled) ? 'visible' : 'hidden',
+            'position': 'absolute', 'width': '440px', 'top': '130px', 'left': '110px',
+            'display': 'flex', 'flex-direction': 'column', 'align-items': 'flex-start',
+            'z-index': '9999'
+        });
+
+        // Create a container for the first two elements with horizontal layout
+        var topRow = $("<div></div>").css({
+            'display': 'flex', 'width': '100%', 'justify-content': 'space-between', 'align-items': 'center', 'margin-top': '10px', 'margin-bottom': '10px'
+        });
+        htmlSaveAssistantGear.append(buttonSaveAssistantGear.getMainDiv());
+        topRow.append(comboboxGearLevel.getMainDiv());
+        topRow.append(htmlSaveAssistantGear);
+        topRow.append(buttonDeleteAssistantGear.getMainDiv());
+
+        var bottomRow = $("<div></div>").css({
+            'display': 'flex', 'width': '100%', 'justify-content': 'space-around', 'align-items': 'center', 'margin-top': '10px', 'margin-bottom': '10px'
+        });
+        bottomRow.attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_23);
+        bottomRow.append(buttonImportAssistantGear.getMainDiv());
+        bottomRow.append(buttonExportAssistantGear.getMainDiv());
+
+        var smallSpace = $("<div></div>").css({'margin-bottom': '3px'});
+        htmlFarmingAssistant.append(checkboxAwaitNextSession.getMainDiv());
+        htmlFarmingAssistant.append(smallSpace);
+        htmlFarmingAssistant.append(checkboxAssistantStopLevel.getMainDiv());
+        htmlFarmingAssistant.append(topRow);
+        htmlFarmingAssistant.append(bottomRow);
+
+        htmlSkel.append(checkboxAssistantDiv);
+        htmlSkel.append(htmlFarmingAssistant);
+        return htmlSkel;
+    };
+    Maco.createQuestsTab = function() {
+        var htmlSkel = $("<div id=\'quests_overview'\></div>");
+        var footer = $('<div class="quests_options_foot" style="margin-left:5px;"><div id="daily_quests_options"></div></div>');
+        var table = new west.gui.Table();
+        table.addColumn("questTitle","questTitle").addColumn("questRequirements","questRequirements").addColumn("questFinish","questFinish").addColumn("questAccept","questAccept");
+        table.appendToCell("head","questTitle","Quest Title").appendToCell("head","questRequirements","Requirements").appendToCell("head","questFinish","Finish").appendToCell("head","questAccept","Accept");
+
+        for (let questIdx = 0; questIdx < Maco.dailyQuests.quests.length; questIdx++) {
+            const questTitleCell = $("<span>").html(Maco.dailyQuests.quests[questIdx].title + "&nbsp; ");
+            questTitleCell.css("cursor", "pointer").attr("title", Maco.dailyQuests.quests[questIdx].title);
+            const questRequirementsCell = $("<span>").html(Maco.dailyQuests.quests[questIdx].requirements + "&nbsp; ");
+            questRequirementsCell.css("cursor", "pointer").attr("title", Maco.dailyQuests.quests[questIdx].requirements);
+
+            table.appendRow()
+                .appendToCell(-1, "questTitle", questTitleCell)
+                .appendToCell(-1, "questRequirements", questRequirementsCell)
+                .appendToCell(-1, "questFinish", Maco.makeQuestCheckbox(Maco.dailyQuests.quests[questIdx], "finish"))
+                .appendToCell(-1, "questAccept", Maco.makeQuestCheckbox(Maco.dailyQuests.quests[questIdx], "accept"))
+        }
+
+        var buttonRunQuests = new west.gui.Button("Run", function() {
+            buttonRunQuests.disable();
+            Maco.runDailyQuests();
+        }).setWidth(60);
+
+        var optionsContainerDiv = $("<div style='float: left; display: flex; align-items: center; gap:310px; width:max-content;'></div>");
+        const checkboxEnableQuests = new west.gui.Checkbox()
+            .setLabel("Enable Daily Quests")
+            .setSelected(Maco.dailyQuests.enabled)
+            .setCallback(function() {
+                Maco.dailyQuests.enabled = this.isSelected();
+                Maco.debouncedSaveAll(1000);
+            });
+        optionsContainerDiv.append(checkboxEnableQuests.getMainDiv());
+        optionsContainerDiv.append(buttonRunQuests.getMainDiv());
+        $("#daily_quests_options", footer).append(optionsContainerDiv);
+        table.appendToFooter("questTitle", footer);
+        htmlSkel.append(table.getMainDiv());
+        return htmlSkel;
+    };
+    Maco.makeQuestCheckbox = function(quest, key) {
+        const checkbox = new west.gui.Checkbox()
+            .setSelected(quest[key])
+            .setId(quest.id)
+            .setCallback(function() {
+                quest[key] = this.isSelected();
+                Maco.debouncedSaveAll(1000);
+            });
+        return checkbox.getMainDiv();
+    };
+    Maco.createFavoriteJobsTab = function() {
+        var htmlSkel = $("<div id=\'favoriteJobs_overview'\></div>");
+        var footer = $('<div class="job_rank_select_foot" style="margin-left:5px;"><div id="max_rank_amount"></div></div>');
+
+        const uniqueJobs = Maco.getAllUniqueJobs();
+        // Precompute job indices for faster access
+        const addedJobsMap = new Map(Maco.addedJobs.map((job, idx) => [job.id, idx]));
+        const uniqueJobsMap = new Map(uniqueJobs.map((job, idx) => [job.id, { job: job, idx: idx }]));
+
+        var table = new west.gui.Table();
+        table.addColumn("dummy","dummy").addColumn("jobIcon","jobIcon").addColumn("jobName","jobName").addColumn("jobSet","jobSet").addColumn("jobRank","jobRank").addColumn("jobMoveUp","jobMoveUp").addColumn("jobMoveDown","jobMoveDown").addColumn("jobRemove","jobRemove");
+        table.appendToCell("head","dummy","").appendToCell("head","jobIcon","Job icon").appendToCell("head","jobName","Job name").appendToCell("head","jobSet","Job set").appendToCell("head","jobRank","Rank").appendToCell("head","jobMoveUp","").appendToCell("head","jobMoveDown","").appendToCell("head","jobRemove","");
+
+        for (let jobIdx = 0; jobIdx < Maco.favoriteJobs.length; jobIdx++) {
+            const jobId = Maco.favoriteJobs[jobIdx].id;
+            const addedJobIndex = addedJobsMap.get(jobId) ?? -1;
+            const uniqueJobInfo = uniqueJobsMap.get(jobId);
+
+            if (!uniqueJobInfo) {
+                console.error("Job with ID " + jobId + " not found in Maco.createFavoriteJobsTab().");
+                continue;
+            }
+
+            const currentJob = uniqueJobInfo.job;
+            const jobNameCell = $("<span>").html(`${Maco.getJobName(jobId)}&nbsp; `);
+
+            if (addedJobIndex === -1) {
+                jobNameCell.css("cursor", "pointer").attr("title", "Add new job").on('click', function() {
+                    Maco.addJob(currentJob.x, currentJob.y, currentJob.id);
+                    Maco.favoriteJobsTablePosition.content = $(".Maco2window .tw2gui_scrollpane_clipper_contentpane").css("top");
+                    Maco.favoriteJobsTablePosition.scrollbar = $(".Maco2window .tw2gui_scrollbar_pulley").css("top");
+                    Maco.debouncedSaveAll(3000);
+                    Maco.refreshTab("favoriteJobs");
+                    new UserMessage("Job added.", UserMessage.TYPE_SUCCESS).show();
+                });
+            }
+
+            var rankSpan = $("<span class='jobRank' style='cursor: pointer;'></span>").text(jobIdx + 1 + ".");
+            var rankInput = $("<input type='number' class='jobRankInput'>").val(jobIdx + 1).hide();
+            var rankCell = $("<td></td>").append(rankSpan).append(rankInput);
+
+            table.appendRow()
+                .appendToCell(-1, "jobIcon", Maco.getJobIcon(currentJob.silver, currentJob.id, currentJob.x, currentJob.y))
+                .appendToCell(-1, "jobName", jobNameCell)
+                .appendToCell(-1, "jobSet", Maco.createComboxFavoriteJobSets(jobIdx, addedJobIndex))
+                .appendToCell(-1, "jobRank", rankCell)
+                .appendToCell(-1, "jobMoveUp", Maco.createFavoriteJobShiftButton(jobIdx, 'up'))
+                .appendToCell(-1, "jobMoveDown", Maco.createFavoriteJobShiftButton(jobIdx, 'down'))
+                .appendToCell(-1, "jobRemove", Maco.createRemoveFavoriteJobButton(jobIdx));
+        }
+
+        var rankContainerDiv = $("<div style='float: left; display: flex; align-items: center;'></div>");
+        var htmlMaxRank = $("<div></div>").css({'display': 'inline-block'});
+        htmlMaxRank.attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_13);
+        //rankContainerDiv.append("<span style='font-weight: initial;'><b>Add all silver jobs up to rank:&nbsp; </b></span>");
+        var maxRankTextField = new west.gui.Textfield("maxRank")
+            .setWidth(40)
+            .setValue(Maco.workerProfiles[Maco.workerProfiles.selected].maxJobRank)
+            .onlyNumeric();
+        htmlMaxRank.append("<span style='font-weight: initial;'><b>Add all silver jobs up to rank:&nbsp; </b></span>");
+        htmlMaxRank.append(maxRankTextField.getMainDiv());
+        rankContainerDiv.append(htmlMaxRank);
+        //rankContainerDiv.append(maxRankTextField.getMainDiv());
+
+        var htmlMaxJobs = $("<div style='display: inline-block; margin-left: 25px; margin-right: 25px;'></div>");
+        htmlMaxJobs.attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_14);
+        htmlMaxJobs.append("<span style='font-weight: initial;'><b>Add more if less than: </b></span>");
+        var maxJobsTextfiled = new west.gui.Textfield("maxJobs")
+            .setWidth(30)
+            .setValue(Maco.workerProfiles[Maco.workerProfiles.selected].jobsToAdd)
+            .onlyNumeric();
+        htmlMaxJobs.append(maxJobsTextfiled.getMainDiv());
+        rankContainerDiv.append(htmlMaxJobs);
+
+        var buttonSave = new west.gui.Button("Save", function() {
+            if (isNumber(maxRankTextField.getValue())) {
+                var rankVal = parseInt(maxRankTextField.getValue());
+                Maco.workerProfiles[Maco.workerProfiles.selected].maxJobRank = Math.max(0, rankVal);
+            }
+            if (isNumber(maxJobsTextfiled.getValue())) {
+                var jobsVal = parseInt(maxJobsTextfiled.getValue());
+                Maco.workerProfiles[Maco.workerProfiles.selected].jobsToAdd = clamp(jobsVal, 0, MAX_ALLOWED_JOBS);
+            }
+            Maco.debouncedSaveAll(100, () => new UserMessage("Saved successfully.", UserMessage.TYPE_SUCCESS).show());
+            Maco.selectTab("favoriteJobs");
+        }).setWidth(60);
+
+        if (Maco.favoriteJobs.length === 0) {
+            function createJobsPresetButton(presetJobs, title) {
+                return new west.gui.Button(title, function() {
+                    loadJobsPreset(presetJobs, Maco.favoriteJobs);
+                    Maco.debouncedSaveAll(100, () => new UserMessage("Loaded and Saved successfully.", UserMessage.TYPE_SUCCESS).show());
+                    Maco.selectTab("favoriteJobs");
+                }).setWidth(160);
+            }
+            var buttonLoadXPPreset = createJobsPresetButton(Maco.xpJobsPreset, "Load best XP jobs");
+            var buttonLoadMoneyPreset = createJobsPresetButton(Maco.moneyJobsPreset, "Load best $ jobs");
+            var comboboxDefaultJobSet = Maco.addComboboxSetItems(new west.gui.Combobox().setWidth(120), Maco.jobSet)
+                .addListener(function(set) {
+                    Maco.jobSet = set;
+                });
+
+            var workerPresetDiv = $("<div id='workerPreset_div'></div>").css({
+                'position': 'absolute', 'top': '160px', 'left': '135px',
+                'display': 'flex', 'flex-direction': 'column', 'align-items': 'center',
+                'z-index': '9999'
+            });
+            var buttonsDiv = $("<div id='buttons_div'></div>").css({
+                'display': 'flex', 'gap': '10px', 'justify-content': 'center'
+            });
+            var comboboxDiv = $("<div id='combobox_div'></div>").css({
+                'margin-top': '15px', 'display': 'flex', 'gap': '10px', 'align-items': 'center', 'justify-content': 'center'
+            });
+
+            buttonsDiv.append(buttonLoadXPPreset.getMainDiv());
+            buttonsDiv.append(buttonLoadMoneyPreset.getMainDiv());
+            comboboxDiv.append($("<span>Default set: </span>"));
+            comboboxDiv.append(comboboxDefaultJobSet.getMainDiv());
+            workerPresetDiv.append(buttonsDiv);
+            workerPresetDiv.append(comboboxDiv);
+
+            htmlSkel.append(workerPresetDiv);
+        }
+
+        // Favorite jobs profiles
+        let profileCheckboxes = {};
+
+        let $profile1 = $('<input>', { type: 'checkbox', id: 'profile1', class: 'profile-checkbox' }).on("change", handleProfileChange);
+        let $label1 = $('<label>', { for: 'profile1' }).append($profile1, ' Profile 1');
+        profileCheckboxes.profile1 = $profile1;
+
+        let $profile2 = $('<input>', { type: 'checkbox', id: 'profile2', class: 'profile-checkbox' }).on("change", handleProfileChange);
+        let $label2 = $('<label>', { for: 'profile2' }).append($profile2, ' Profile 2');
+        profileCheckboxes.profile2 = $profile2;
+
+        let $workerProfilesDiv = $('<div id="profileContainer" style="display:flex; gap:15px; margin-left:15px;">').append($label1, $label2);
+        profileCheckboxes[Maco.workerProfiles.selected]?.prop('checked', true);
+
+        // Append everything
+        rankContainerDiv.append(buttonSave.getMainDiv());
+        $("#max_rank_amount", footer).append(rankContainerDiv);
+        table.appendToFooter("dummy", footer);
+        htmlSkel.append(table.getMainDiv());
+        htmlSkel.append($workerProfilesDiv);
+
+        // Rank focus logic
+        htmlSkel.find('.jobRank').click(function() {
+            var inputBox = $(this).find('.jobRankInput');
+            inputBox.show().css({"background": "inherit", "border": "none", "width": "43px", "margin-left":"4px"}).focus();
+            inputBox.select();
+            $(this).find('.jobRank').hide();
+        });
+
+        // Use also focusout as an alternative to blur
+        htmlSkel.find('.jobRankInput').one("blur focusout", function handleOnce() {
+            handleJobRankInputBlur.call(this);
+            setTimeout(() => {
+                $(this).one("blur focusout", handleOnce); // Reattach after execution
+            }, 0);
+        });
+
+        // Add keydown event to detect Enter key and trigger blur manually
+        htmlSkel.find('.jobRankInput').on('keydown', function(event) {
+            if (event.key === 'Enter') {
+                $(this).trigger('blur');
+            }
+        });
+
+        function handleJobRankInputBlur() {
+            var rankValue = parseInt($(this).val());
+            var currentIndex = $(this).closest('.row').index();
+
+            if (!isNaN(rankValue) && rankValue > 0 && rankValue <= Maco.favoriteJobs.length) {
+                var newIndex = rankValue - 1;
+                var currentJob = Maco.favoriteJobs.splice(currentIndex, 1)[0];
+                Maco.favoriteJobs.splice(newIndex, 0, currentJob);
+
+                for (var i = 0; i < Maco.favoriteJobs.length; i++) {
+                    $(this).closest('.Maco2window').find('.row').eq(i).find('.jobRank').text(i + 1 + ".");
+                }
+
+                Maco.favoriteJobsTablePosition.content = $(".Maco2window .tw2gui_scrollpane_clipper_contentpane").css("top");
+                Maco.favoriteJobsTablePosition.scrollbar = $(".Maco2window .tw2gui_scrollbar_pulley").css("top");
+                Maco.debouncedSaveAll(1000);
+                Maco.selectTab("favoriteJobs");
+            } else {
+                $(this).val(currentIndex + 1); // If the input is invalid, revert to the current index
+            }
+
+            // Hide the input box and show the rank display again
+            $(this).hide();
+            $(this).siblings('.jobRank').show();
+        }
+
+        function handleProfileChange() {
+            $(".profile-checkbox").not(this).prop("checked", false); // Uncheck the other checkbox
+            Maco.workerProfiles.selected = this.checked ? this.id : "profile0";
+            Maco.setWorkerProfile(Maco.workerProfiles.selected);
+            $(".Maco2window .tw2gui_scrollpane_clipper_contentpane").css({"top":"0px"});
+            $(".Maco2window .tw2gui_scrollbar_pulley").css({"top":"0px"});
+            Maco.refreshTab("favoriteJobs");
+            Maco.debouncedSaveAll(1000);
+        }
+
+        function loadJobsPreset(idArray, targetArray, set = Maco.jobSet) {
+            idArray.forEach(id => targetArray.push({id: id, set: set}));
+        }
+
+        return htmlSkel;
+    };
+    Maco.createFavoriteJobShiftButton = function(jobIndex, direction) {
+        var buttonShift = document.createElement("button");
+        var rotateDeg = direction === 'up' ? '-90deg' : '90deg';
+        var newIndex = direction === 'up' ? jobIndex - 1 : jobIndex + 1;
+        if (direction === 'up') {
+            buttonShift.style.cssText = "user-select: none; font-family: Arial, Verdana, sans-serif; font-size: 13px; width: 9px; height: 27px; background: url(https://westsk.innogamescdn.com/images/tw2gui/pagebar/arrows.png); background-position: -50px 8.5px; transform: rotate(" + rotateDeg + "); cursor: pointer; margin: 0; padding: 0; display: inline-block; border: none; outline: none;";
+        } else {
+            buttonShift.style.cssText = "user-select: none; font-family: Arial, Verdana, sans-serif; font-size: 13px; width: 9px; height: 27px; background: url(https://westsk.innogamescdn.com/images/tw2gui/pagebar/arrows.png); background-position: -50px 0px; transform: rotate(" + rotateDeg + "); cursor: pointer; margin: 0; padding: 0; display: inline-block; border: none; outline: none;";
+        }
+        buttonShift.addEventListener("click", function() {
+            if (direction === 'up' && jobIndex > 0) {
+                const temp = Maco.favoriteJobs[jobIndex];
+                Maco.favoriteJobs[jobIndex] = Maco.favoriteJobs[newIndex];
+                Maco.favoriteJobs[newIndex] = temp;
+            } else if (direction === 'down' && jobIndex < Maco.favoriteJobs.length - 1) {
+                const temp = Maco.favoriteJobs[jobIndex];
+                Maco.favoriteJobs[jobIndex] = Maco.favoriteJobs[newIndex];
+                Maco.favoriteJobs[newIndex] = temp;
+            }
+            Maco.favoriteJobsTablePosition.content = $(".Maco2window .tw2gui_scrollpane_clipper_contentpane").css("top");
+            Maco.favoriteJobsTablePosition.scrollbar = $(".Maco2window .tw2gui_scrollbar_pulley").css("top");
+            Maco.debouncedSaveAll(3000);
+            Maco.selectTab("favoriteJobs");
+        });
+        return buttonShift;
+    };
+    Maco.createRemoveFavoriteJobButton = function(jobIndex) {
+        var buttonRemove = document.createElement("button");
+        buttonRemove.style.cssText = "width: 16px; height: 19px; background: url('https://westsk.innogamescdn.com/images/window/messages/icons.png?2') repeat scroll 0 0 transparent; background-position: -292px -4px; margin: 0px; padding: 0; border: none; outline: none; display: inline-block; cursor: pointer; user-select: none; font-size: 13px; white-space: nowrap; line-height: 29px;";
+        buttonRemove.addEventListener("click", function() {
+            Maco.favoriteJobs.splice(jobIndex,1);
+            Maco.favoriteJobsTablePosition.content = $(".Maco2window .tw2gui_scrollpane_clipper_contentpane").css("top");
+            Maco.favoriteJobsTablePosition.scrollbar = $(".Maco2window .tw2gui_scrollbar_pulley").css("top");
+            Maco.debouncedSaveAll(2000);
+            Maco.selectTab("favoriteJobs");
+        });
+        return buttonRemove;
+    };
+    Maco.createRemoveJobButton = function(x,y,id) {
+        var buttonRemove = new west.gui.Button("Remove", function() {
+            Maco.removeJob(x,y,id);
+            Maco.addedJobsTablePosition.content = $(".Maco2window .tw2gui_scrollpane_clipper_contentpane").css("top");
+            Maco.addedJobsTablePosition.scrollbar = $(".Maco2window .tw2gui_scrollbar_pulley").css("top");
+            Maco.debouncedSaveAll(2000);
+            Maco.selectTab("addedJobs");
+        });
+        buttonRemove.setWidth(80);
+        return buttonRemove.getMainDiv();
+    };
+    Maco.createComboxFavoriteJobSets = function(savedJobIndex, addedJobIndex) {
+        return Maco.addComboboxSetItems(new west.gui.Combobox().setWidth(60), Maco.favoriteJobs[savedJobIndex].set)
+            .addListener(function(set) {
+                Maco.favoriteJobs[savedJobIndex].set = set;
+                if (addedJobIndex !== -1) {
+                    Maco.addedJobs[addedJobIndex].setSet(set);
+                }
+                Maco.debouncedSaveAll(2000);
+            })
+            .getMainDiv();
+    };
+    Maco.createComboxJobSets = function(x,y,id) {
+        return Maco.addComboboxSetItems(new west.gui.Combobox().setWidth(60), Maco.getJobSet(x,y,id))
+            .addListener(function(set) {
+                Maco.setJobSet(x,y,id, set);
+                if (Maco.favoriteJobs.some(job => job.id === id)) {
+                    Maco.updateFavoriteJobs(id, true, set);
+                }
+                Maco.debouncedSaveAll(2000);
+            })
+            .getMainDiv();
+    };
+    Maco.addWardrobeIcon = function(setName, enableOverflow = false) {
+        const iconStyle = 'background: url(/images/tw2gui/iconset.png) repeat -32px 80px; transform: scale(0.8); transform-origin: center; width: 16px; height: 16px; display: inline-block; flex-shrink: 0;';
+        const icon = `<span style="${iconStyle}"></span>`;
+
+        const textStyle = enableOverflow
+            ? 'white-space: nowrap;'
+            : 'white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: inline-block; max-width: 100%;';
+
+        return `<span style="display: flex; align-items: center; gap: 3px; max-width: 100%;">
+                    ${icon}
+                    <span style="${textStyle}">${setName}</span>
+                </span>`;
+    };
+    Maco.addComboboxSetItems = function(combobox, toSelect = -1, defaultText = "None") {
+        combobox.addItem(-1, defaultText);
+
+        Maco.sets.forEach((set, key) => {
+            combobox.addItem(key, set.name);
+        });
+
+        Maco.wardrobe.forEach((set, setId) => {
+            combobox.addItem(setId, Maco.addWardrobeIcon(set.name, true));
+        });
+
+        if (Maco.sets.size <= toSelect && !Maco.wardrobe.has(toSelect)) {
+            combobox.addItem(toSelect, "null");
+        }
+
+        if (!Maco.sets.has(toSelect) && !Maco.wardrobe.has(toSelect)) {
+            toSelect = -1;
+        }
+
+        combobox.select(toSelect);
+        return combobox;
+    };
+    Maco.createSetGui = function() {
+        if (Maco.sets.size === 0) return $("<span style=\'font-size:20px'\>No sets available</span>");
+        var htmlSkel = $("<div id=\'Maco_sets_window'\ style=\'display:block; position:relative; width:650px; height:430px;'\><div id=\'Maco_sets_left' style=\'display:block; position:absolute; width:270px; height:390px; top:0px; left:0px;'\></div><div id=\'Maco_sets_right' style=\'display:block; position:absolute; width:300px; height:410px; top:0px; left:325px'\></div></div>");
+        var combobox = Maco.addComboboxSetItems(new west.gui.Combobox("combobox_sets").setWidth(140), Maco.selectedSet)
+            .addListener(function(value) {
+                Maco.selectedSet = value;
+                Maco.selectTab("sets");
+            });
+
+        var buttonEquipSet = new west.gui.Button("Equip set", function() {
+            Maco.equipSet(Maco.selectedSet);
+        });
+
+        var buttonSelectTravelSet = new west.gui.Button("Set", function() {
+            Maco.travelSet = Maco.selectedSet === -1 ? -2 : Maco.selectedSet;
+            Maco.debouncedSaveAll(3000);
+            Maco.selectTab("sets");
+        }).setWidth(45);
+        var buttonSelectJobSet = new west.gui.Button("Set", function() {
+            Maco.jobSet = Maco.selectedSet;
+            Maco.setSetForAllJobs(Maco.jobSet);
+            Maco.setSetForFavoriteJobs(Maco.jobSet);
+            Maco.debouncedSaveAll(3000);
+            Maco.selectTab("sets");
+        }).setWidth(45);
+        var buttonSelectHealthSet = new west.gui.Button("Set", function() {
+            Maco.healthSet = Maco.selectedSet === -1 ? -3 : Maco.selectedSet;
+            Maco.debouncedSaveAll(3000);
+            Maco.selectTab("sets");
+        }).setWidth(45);
+        var buttonSelectRegenerationSet = new west.gui.Button("Set", function() {
+            Maco.regenerationSet = Maco.selectedSet;
+            Maco.debouncedSaveAll(3000);
+            Maco.selectTab("sets");
+        }).setWidth(45);
+        var buttonSelectBuildSet = new west.gui.Button("Set", function() {
+            Maco.build.set = Maco.selectedSet;
+            Maco.debouncedSaveAll(3000);
+            Maco.selectTab("sets");
+        }).setWidth(45);
+        var buttonSelectAttackSet = new west.gui.Button("Set", function() {
+            Maco.settings.fortBattle.attackSet = Maco.selectedSet;
+            Maco.debouncedSaveAll(3000);
+            Maco.selectTab("sets");
+        }).setWidth(45);
+        var buttonSelectDefendSet = new west.gui.Button("Set", function() {
+            Maco.settings.fortBattle.defSet = Maco.selectedSet;
+            Maco.debouncedSaveAll(3000);
+            Maco.selectTab("sets");
+        }).setWidth(45);
+
+        function getSetText(setKey, defaultText = "AUTO_CALC") {
+            if (Maco.sets.has(setKey)) {
+                return `<b style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${Maco.sets.get(setKey).name}</b>`;
+            }
+            if (Maco.wardrobe.has(setKey)) {
+                return `<b style="height:15px; overflow: hidden;">${Maco.addWardrobeIcon(Maco.wardrobe.get(setKey).name)}</b>`;
+            }
+            return `<p>${defaultText}</p>`;
+        }
+
+        var travelSetText = getSetText(Maco.travelSet);
+        var jobSetText = getSetText(Maco.jobSet, "None");
+        var healthSetText = getSetText(Maco.healthSet);
+        var regenerationSetText = getSetText(Maco.regenerationSet, "None");
+        var buildSetText = getSetText(Maco.build.set);
+        var attackSetText = getSetText(Maco.settings.fortBattle.attackSet);
+        var defendSetText = getSetText(Maco.settings.fortBattle.defSet);
+
+        const createSetRow = (label, text, button) => {
+            return $("<div>").css({
+                display: "flex",
+                width: "100%",
+                "justify-content": "space-between",
+                "align-items": "center" // Ensures elements stay aligned
+            }).append(
+                $("<span>").css({
+                    display: "inline-flex",
+                    "align-items": "center",
+                    gap: "8px",
+                    overflow: "hidden"
+                }).html("<p><i>" + label + ":</i></p> ").append(text),
+                button.getMainDiv()
+            );
+        };
+
+        const groupframe = new west.gui.Groupframe()
+            .appendToContentPane(combobox.getMainDiv())
+            .appendToContentPane($("<br>"))
+            .appendToContentPane(
+                $("<div>").css({
+                    display: "flex",
+                    "flex-direction": "column",
+                    "justify-content": "space-between",
+                    "height": "100%",
+                    "flex-grow": "1"
+                }).append(
+                    createSetRow("Travel", travelSetText, buttonSelectTravelSet),
+                    createSetRow("Job set", jobSetText, buttonSelectJobSet),
+                    createSetRow("Health", healthSetText, buttonSelectHealthSet),
+                    createSetRow("Regen", regenerationSetText, buttonSelectRegenerationSet),
+                    createSetRow("Build", buildSetText, buttonSelectBuildSet),
+                    createSetRow("Fort Attack", attackSetText, buttonSelectAttackSet),
+                    createSetRow("Fort Defend", defendSetText, buttonSelectDefendSet)
+                )
+            )
+            .getMainDiv();
+
+        $(groupframe).css({'height':'370px', 'padding-top':'10px', 'padding-bottom':'10px', 'white-space':'nowrap', 'overflow':'hidden'});
+        $(groupframe).find(".tw2gui_groupframe_content_pane").css({
+            display: "flex",
+            "flex-direction": "column",
+            "height": "340px",
+            "justify-content": "space-between",
+            "align-items": "stretch"
+        });
+
+        var left = $("<div></div>").append(groupframe);
+        var right = $("<div style=\'display:block; position:relative; width:300px; height:410px;'\></div>");
+
+        //equip button
+        $(buttonEquipSet.getMainDiv()).css({'position':'absolute', 'top':'9px', 'right':'43px'}).appendTo(right);
+        //head div
+        right.append("<div class=\'wear_head wear_slot'\ style=\'display:block;position:absolute;left:50px;top:1px;width:93px;height:94px;background:url(https://westzz.innogamescdn.com/images/window/wear/bg_sprite.png) 0 0 no-repeat;background-position: -95px 0;'\></div>");
+        //chest div
+        right.append("<div class=\'wear_body wear_slot'\ style=\'display:block;position:absolute;left:50px;top:106px;width:95px;height:138px;background:url(https://westzz.innogamescdn.com/images/window/wear/bg_sprite.png) 0 0 no-repeat;background-position:0 0;'\></div>");
+        //pants div
+        right.append("<div class=\'wear_pants wear_slot'\ style=\'display:block;position:absolute;left:50px;top:258px;width:93px;height:138px;background:url(https://westzz.innogamescdn.com/images/window/wear/bg_sprite.png) 0 0 no-repeat;background-position:0 0;'\></div>");
+        //neck div
+        right.append("<div class=\'wear_neck wear_slot'\ style=\'display:block;position:absolute;left:-27px;top:1px;width:74px;height:74px;background:url(https://westzz.innogamescdn.com/images/window/wear/bg_sprite.png) 0 0 no-repeat;background-position:-189px 0;'\></div>");
+        //right arm div
+        right.append("<div class=\'wear_right_arm wear_slot'\ style=\'display:block;position:absolute;left:-44px;top:79px;width:95px;height:138px;background:url(https://westzz.innogamescdn.com/images/window/wear/bg_sprite.png) 0 0 no-repeat;background-position:0 0;'\></div>");
+        //animal div
+        right.append("<div class=\'wear_animal wear_slot'\ style=\'display:block;position:absolute;left:-44px;top:223px;width:93px;height:94px;background:url(https://westzz.innogamescdn.com/images/window/wear/bg_sprite.png) 0 0 no-repeat;background-position:-95px 0;'\></div>");
+        //yield div
+        right.append("<div class=\'wear_yield wear_slot'\ style=\'display:block;position:absolute;left:-27px;top:321px;width:74px;height:74px;background:url(https://westzz.innogamescdn.com/images/window/wear/bg_sprite.png) 0 0 no-repeat;background-position:-189px 0;'\></div>");
+        //left arm div
+        right.append("<div class=\'wear_left_arm wear_slot'\ style=\'display:block;position:absolute;left:147px;top:52px;width:95px;height:138px;background:url(https://westzz.innogamescdn.com/images/window/wear/bg_sprite.png) 0 0 no-repeat;background-position:0 0;'\></div>");
+        //belt div
+        right.append("<div class=\'wear_belt wear_slot'\ style=\'display:block;position:absolute;left:147px;top:200px;width:93px;height:94px;background:url(https://westzz.innogamescdn.com/images/window/wear/bg_sprite.png) 0 0 no-repeat;background-position:-95px 0;'\></div>");
+        //boots div
+        right.append("<div class=\'wear_foot wear_slot'\ style=\'display:block;position:absolute;left:147px;top:302px;width:93px;height:94px;background:url(https://westzz.innogamescdn.com/images/window/wear/bg_sprite.png) 0 0 no-repeat;background-position:-95px 0;'\></div>");
+
+        if (Maco.selectedSet !== -1) {
+            const keys = ["head","body","pants","neck","right_arm","animal","yield","left_arm","belt","foot"];
+            Maco.insertSetImages(right, keys);
+        }
+
+        $("#Maco_sets_left", htmlSkel).append(left);
+        $("#Maco_sets_right", htmlSkel).append(right);
+        return htmlSkel;
+    };
+    Maco.insertSetImages = function(html, keys) {
+        function getImageSkel() {
+            return $("<img src=\''\>");
+        }
+
+        if (Maco.sets.has(Maco.selectedSet)) {
+            for (let i = 0; i < keys.length; i++) {
+                if (Maco.sets.get(Maco.selectedSet)[keys[i]] != null) {
+                    $(".wear_" + keys[i], html).append(getImageSkel().attr("src", Maco.getItemImage(Maco.sets.get(Maco.selectedSet)[keys[i]])));
+                }
+            }
+        } else if (Maco.wardrobe.has(Maco.selectedSet)) {
+            const wardrobeItems = Maco.wardrobe.get(Maco.selectedSet).items;
+
+            for (let i = 0; i < keys.length; i++) {
+                const item = wardrobeItems.find(itemId => ItemManager.get(itemId).type === keys[i]);
+                if (item) {
+                    $(".wear_" + keys[i], html).append(
+                        getImageSkel().attr("src", Maco.getItemImage(item))
+                    );
+                }
+            }
+        }
+
+        return html;
+    };
+    Maco.createConsumablesTab = function() {
+        var htmlSkel = $("<div id=\'consumables_overview'\></div>");
+        var html = $("<div class = \'consumables_filter'\ style=\'position:relative;'\><div id=\'filter_text'\style=\'position:absolute;top:10px;left:10px;'\></div><div id=\'energy_consumables'\style=\'position:absolute;top:8px;left:56px;'\></div><div id=\'motivation_consumables'\style=\'position:absolute;top:8px;left:207px;'\></div><div id=\'health_consumables'\style=\'position:absolute;top:8px;left:375px;'\></div><div id=\'buff_consumables'\style=\'position:absolute;top:8px;left:523px;'\></div></div>");
+
+        const consumableList = Maco.filterConsumables(Maco.consumableSelection.energy, Maco.consumableSelection.motivation, Maco.consumableSelection.health, Maco.consumableSelection.buffs);
+        const consumablesUsed = Maco.diagnostics.consumablesUsed || [];
+
+        consumableList.forEach(consumable => { // Calculate usedCount for each consumable
+            consumable.usedCount = consumablesUsed.filter(consumableName => consumableName.includes(consumable.name)).length;
+        });
+
+        consumableList.sort((a, b) => { // Sort consumableList by usedCount in descending order, then sort selected items first
+            if (a.usedCount !== b.usedCount) {
+                return b.usedCount - a.usedCount;
+            } else if (a.selected !== b.selected) {
+                return a.selected ? -1 : 1;
+            } else if (a.hasBattleBonus !== b.hasBattleBonus) {
+                return a.hasBattleBonus ? 1 : -1;
+            }
+            return consumableList.indexOf(a) - consumableList.indexOf(b);
+        });
+
+        var table = new west.gui.Table();
+        table.addColumn("consumIcon","consumIcon").addColumn("consumName","consumName").addColumn("consumEnergy","consumEnergy").addColumn("consumMotivation","consumMotivation").addColumn("consumHealth","consumHealth").addColumn("consumBuffs","consumBuffs").addColumn("consumSelected","consumSelected");
+        table.appendToCell("head","consumIcon","Count").appendToCell("head","consumName","Name").appendToCell("head","consumEnergy","Energy").appendToCell("head","consumMotivation","Motivation").appendToCell("head","consumHealth","Health").appendToCell("head","consumBuffs","Buffs").appendToCell("head","consumSelected","Use");
+
+        for (let i = 0; i < consumableList.length; i++) {
+            var totalCount = consumableList[i].count;
+            var usedCount = consumableList[i].usedCount;
+            var countText = totalCount + (usedCount > 0 ? " (-" + usedCount + ")" : "");
+            var checkbox = new west.gui.Checkbox()
+                .setSelected(consumableList[i].selected)
+                .setId(consumableList[i].id)
+                .setCallback(function() {
+                    Maco.changeConsumableSelection(parseInt(this.divMain.attr("id")),this.isSelected());
+                    Maco.consumablesTablePosition.content = $(".Maco2window .tw2gui_scrollpane_clipper_contentpane").css("top");
+                    Maco.consumablesTablePosition.scrollbar = $(".Maco2window .tw2gui_scrollbar_pulley").css("top");
+                    Maco.debouncedSaveAll(3000);
+                });
+            var buffs = '';
+            if (consumableList[i].xp + consumableList[i].money + consumableList[i].product + consumableList[i].luck + consumableList[i].travel + consumableList[i].other + consumableList[i].hiding + consumableList[i].settingTraps === 0 && !consumableList[i].hasBattleBonus) {
+                buffs = "No buffs";
+            } else {
+                buffs += "<div style='line-height: 1.3; display: flex; align-items: center;'>";
+
+                if (consumableList[i].travel !== 0) buffs += "<img src='https://westsk.innogamescdn.com/images/buffs/travel.jpg' style='width: 25px; height: 25px; vertical-align: middle; margin-right: 5px;'>";
+                else if (consumableList[i].hasBattleBonus) buffs += "<img src='https://westsk.innogamescdn.com/images/buffs/items.jpg' style='width: 25px; height: 25px; vertical-align: middle; margin-right: 5px;'>";
+                else buffs += "<img src='https://westsk.innogamescdn.com/images/buffs/character.jpg' style='width: 25px; height: 25px; vertical-align: middle; margin-right: 5px;'>";
+
+                buffs += "<div>";
+
+                if (consumableList[i].xp !== 0) buffs += "<span>+" + consumableList[i].xp + "% XP</span><br>";
+                if (consumableList[i].money !== 0) buffs += "<span>+" + consumableList[i].money + "% Money</span><br>";
+                if (consumableList[i].product !== 0) buffs += "<span>+" + consumableList[i].product + "% Product</span><br>";
+                if (consumableList[i].luck !== 0) buffs += "<span>+" + consumableList[i].luck + "% Luck</span><br>";
+                if (consumableList[i].travel !== 0) buffs += "<span>+" + consumableList[i].travel + "% Speed</span><br>";
+                if (consumableList[i].other !== 0 && (consumableList[i].xp + consumableList[i].money + consumableList[i].product + consumableList[i].luck + consumableList[i].travel === 0)) {
+                    buffs += "<span>+Attributes..</span><br>";
+                }
+                if (consumableList[i].hasBattleBonus || consumableList[i].id === 54382000 || (consumableList[i].hiding !== 0 || consumableList[i].settingTraps !== 0) && !consumableList[i].hasCooldown) {
+                    buffs += "<span>BATTLE</span><br>";
+                }
+                if (consumableList[i].duration !== 0) {
+                    if (consumableList[i].duration === 1) buffs += "<span>" + consumableList[i].duration + " Hour</span><br>";
+                    else buffs += "<span>" + consumableList[i].duration + " Hours</span><br>";
+                } else if (consumableList[i].uses !== 0) {
+                    if (consumableList[i].uses === 1) buffs += "<span>" + consumableList[i].uses + " Use</span><br>";
+                    else buffs += "<span>" + consumableList[i].uses + " Uses</span><br>";
+                }
+
+                buffs += "</div>";
+                buffs += "</div>";
+            }
+            table.appendRow()
+                .appendToCell(-1, "consumIcon", Maco.getConsumableIcon(consumableList[i], countText))
+                .appendToCell(-1, "consumName", consumableList[i].name + "&nbsp;&nbsp; ")
+                .appendToCell(-1, "consumEnergy", consumableList[i].energy)
+                .appendToCell(-1, "consumMotivation", consumableList[i].motivation)
+                .appendToCell(-1, "consumHealth", consumableList[i].health)
+                .appendToCell(-1, "consumBuffs", buffs)
+                .appendToCell(-1, "consumSelected", checkbox.getMainDiv())
+                .getRow().css("opacity", totalCount < 1 ? 0.5 : 1);
+        }
+        var buttonSelectDefault = new west.gui.Button("Default", function() {
+            Maco.defaultConsumablesSelection();
+            Maco.selectTab("consumables");
+            Maco.debouncedSaveAll(500);
+        });
+        var buttonSelectDefaultDiv = buttonSelectDefault.getMainDiv();
+        $(buttonSelectDefaultDiv).css({
+            'margin-left': '-10px',
+        });
+        var buttonDeselectBuffs = new west.gui.Button("Deselect buffs", function() {
+            Maco.deselectConsumablesWithBuffs();
+            Maco.selectTab("consumables");
+            Maco.debouncedSaveAll(500);
+        });
+        var buttonDeselectBuffsDiv = buttonDeselectBuffs.getMainDiv();
+        $(buttonDeselectBuffsDiv).css({
+            'margin-left': '-10px',
+        });
+        var buttonSelect = new west.gui.Button("Select all", function() {
+            Maco.changeSelectionAllConsumables(true);
+            Maco.selectTab("consumables");
+            Maco.debouncedSaveAll(500);
+        });
+        var buttonSelectDiv = buttonSelect.getMainDiv();
+        $(buttonSelectDiv).css({
+            'margin-left': '-40px',
+        });
+        var buttonDeselect = new west.gui.Button("Deselect all", function() {
+            Maco.changeSelectionAllConsumables(false);
+            Maco.selectTab("consumables");
+            Maco.debouncedSaveAll(500);
+        });
+        var buttonDeselectDiv = buttonDeselect.getMainDiv();
+        $(buttonDeselectDiv).css({
+            'margin-left': '0px',
+        });
+        table.appendToFooter("consumEnergy", buttonSelectDiv);
+        table.appendToFooter("consumMotivation", buttonDeselectDiv);
+        table.appendToFooter("consumBuffs", buttonDeselectBuffsDiv);
+        htmlSkel.append(table.getMainDiv());
+
+        var refreshTab = function() {
+            $(".Maco2window .tw2gui_scrollpane_clipper_contentpane").css({"top":"0px"});
+            $(".Maco2window .tw2gui_scrollbar_pulley").css({"top":"0px"});
+            Maco.selectTab("consumables");
+        };
+        var checkboxEnergyConsumes = new west.gui.Checkbox()
+            .setLabel("Energy consumables")
+            .setSelected(Maco.consumableSelection.energy)
+            .setCallback(function() {
+                Maco.consumableSelection.energy = this.isSelected();
+                refreshTab();
+            });
+        var checkboxMotivationConsumes = new west.gui.Checkbox()
+            .setLabel("Motivation consumables")
+            .setSelected(Maco.consumableSelection.motivation)
+            .setCallback(function() {
+                Maco.consumableSelection.motivation = this.isSelected();
+                refreshTab();
+            });
+        var checkboxHealthConsumes = new west.gui.Checkbox()
+            .setLabel("Health consumables")
+            .setSelected(Maco.consumableSelection.health)
+            .setCallback(function() {
+                Maco.consumableSelection.health = this.isSelected();
+                refreshTab();
+            });
+        var checkboxBuffs = new west.gui.Checkbox()
+            .setLabel("Buffs")
+            .setSelected(Maco.consumableSelection.buffs)
+            .setCallback(function() {
+                Maco.consumableSelection.buffs = this.isSelected();
+                refreshTab();
+            });
+        $("#filter_text",html).append("<div><b>Filter: </b></div>");
+        $("#energy_consumables",html).append(checkboxEnergyConsumes.getMainDiv());
+        $("#motivation_consumables",html).append(checkboxMotivationConsumes.getMainDiv());
+        $("#health_consumables",html).append(checkboxHealthConsumes.getMainDiv());
+        $("#buff_consumables",html).append(checkboxBuffs.getMainDiv());
+        htmlSkel.append(html);
+        
+        var lastConsumUsed = "none";
+        switch (consumablesUsed.length) {
+            case 0:
+                break;
+            case 1: 
+                lastConsumUsed = consumablesUsed.at(-1);
+                break;
+            case 2:
+                lastConsumUsed = consumablesUsed.at(-1) + ", " + consumablesUsed.at(-2);
+                break;
+            case 3:
+                lastConsumUsed = consumablesUsed.at(-1) + ", " + consumablesUsed.at(-2) + ", " + consumablesUsed.at(-3);
+                break;
+            default:
+                lastConsumUsed = consumablesUsed.at(-1) + ", " + consumablesUsed.at(-2) + ", " + consumablesUsed.at(-3) + "...";
+                break;
+        }
+        var lastConsumUsedText = $("<div><b>Last used: &nbsp;</b>" + lastConsumUsed + "</div>");
+        lastConsumUsedText.css('margin-top', '39px');
+        lastConsumUsedText.css('margin-left', '10px');
+        htmlSkel.append(lastConsumUsedText);
+
+        return htmlSkel;
+    };
+    Maco.addSleepPlacesItems = function(combobox) {
+        combobox.addItem(-2, "None");
+        if (Maco.homeTown != null) {
+            combobox.addItem(-1, Maco.homeTown.name);
+        }
+        for (let i = 0; i < Maco.allianceForts.length; i++) {
+            var type = (Maco.allianceForts[i].type === 0) ? "Small" : (Maco.allianceForts[i].type === 1) ? "Medium" : "Big";
+            combobox.addItem(i, Maco.allianceForts[i].name + "  -  " + type);
+        }
+    };
+    Maco.addUpcomingFortBattles = function(combobox) {
+        Maco.updateFortBattles();
+        if (Maco.battles.size === 0) {
+            combobox.addItem(-1, "None");
+        }
+        for (const [fortId, battle] of Maco.battles) {
+            const battleTimer = formatTime(Math.max(0, Math.floor((battle.start - new Date().getTime()) / 1000)));
+            combobox.addItem(fortId, battle.title + " - " + battleTimer);
+        }
+    };
+    Maco.formatInputNumber = function(elementID) {
+        // Wait for the text field to be appended to the DOM
+        setTimeout(function() {
+            $(elementID).on('input', 'input', function(event) {
+                var currentValue = event.target.value;
+                var digitsOnly = currentValue.replace(/\D/g, '');
+                event.target.value = formatNumber(digitsOnly);
+            });
+        }, 0);
+    };
+    Maco.createSettingsGui = function() {
+        var htmlSkel = $("<div id=\'settings_overview'\ style =\'margin-left: 10px; margin-top: 5px; overflow: hidden; white-space: nowrap;'\></div>");
+
+        var htmlAddEnergy = $("<div></div>").css({'display': 'inline-block'});
+        var checkboxAddEnergy = new west.gui.Checkbox()
+            .setLabel("<span>Add energy </span>")
+            .setSelected(Maco.settings.addEnergy)
+            .setCallback(function() {
+                Maco.settings.addEnergy = !Maco.settings.addEnergy;
+                if (Maco.settings.addEnergy) {
+                    $("#optional_energy_container").css('visibility','visible');
+                    if (Maco.settings.addEnergyOptional) {
+                        $("#optional_energy_textfields").css('visibility','visible');
+                    }
+                } else {
+                    $("#optional_energy_container").css('visibility','hidden');
+                    $("#optional_energy_textfields").css('visibility','hidden');
+                }
+            });
+        htmlAddEnergy.append(checkboxAddEnergy.getMainDiv());
+        var htmlAddEnergyOptional = $("<div id='optional_energy_container'></div>");
+        htmlAddEnergyOptional.css({
+            'display': 'inline-flex',
+            'align-items': 'center',
+            'position': 'relative',
+            'left': '62px',
+            'visibility': (Maco.settings.addEnergy) ? 'visible' : 'hidden'
+        });
+        var htmlAddEnergyOptionalWrapper = $("<div id='optional_energy_wrapper'></div>").css({
+            'display': 'flex',
+            'align-items': 'center',
+            'height': '26px',
+        });
+        htmlAddEnergyOptionalWrapper.attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_1);
+        var checkboxAddEnergyOptional = new west.gui.Checkbox()
+            .setLabel("<span> Continuously refill </span>")
+            .setSelected(Maco.settings.addEnergyOptional)
+            .setCallback(function() {
+                Maco.settings.addEnergyOptional = !Maco.settings.addEnergyOptional;
+                if (Maco.settings.addEnergyOptional) {
+                    $("#optional_energy_textfields").css('visibility','visible');
+                } else {
+                    $("#optional_energy_textfields").css('visibility','hidden');
+                }
+            });
+        htmlAddEnergyOptionalWrapper.append(checkboxAddEnergyOptional.getMainDiv());
+        var htmlAddEnergyOptionalTextFields = $("<div id='optional_energy_textfields'></div>").css({
+            'display': 'inline-block',
+            'margin-left': '4px',
+            'visibility': (Maco.settings.addEnergy && Maco.settings.addEnergyOptional) ? 'visible' : 'hidden'
+        });
+        var addEnergyOptionalMinTextField = new west.gui.Textfield("addEnergyOptionalMin")
+            .setWidth(35)
+            .setValue(Maco.settings.addEnergyOptionalMin)
+            .onlyNumeric();
+        var addEnergyOptionalMaxTextField = new west.gui.Textfield("addEnergyOptionalMax")
+            .setWidth(35)
+            .setValue(Maco.settings.addEnergyOptionalMax)
+            .onlyNumeric();
+        var checkboxAllowMotivation = new west.gui.Checkbox()
+            .setLabel("<span> Allow motivation </span>")
+            .setSelected(Maco.settings.allowMotivationOptional)
+            .setCallback(function() {
+                Maco.settings.allowMotivationOptional = this.isSelected();
+            });
+        checkboxAllowMotivation.getMainDiv().attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_30);
+
+        htmlAddEnergyOptionalTextFields.append("<span> % </span>");
+        htmlAddEnergyOptionalTextFields.append(addEnergyOptionalMinTextField.getMainDiv());
+        htmlAddEnergyOptionalTextFields.append("<span> - </span>");
+        htmlAddEnergyOptionalTextFields.append(addEnergyOptionalMaxTextField.getMainDiv());
+        htmlAddEnergyOptionalTextFields.append("<span style='margin-right:10px;'></span>");
+        htmlAddEnergyOptionalWrapper.append(htmlAddEnergyOptionalTextFields);
+        htmlAddEnergyOptional.append(htmlAddEnergyOptionalWrapper);
+        htmlAddEnergyOptional.append(checkboxAllowMotivation.getMainDiv());
+
+        var htmlAddMotivation = $("<div style='width: fit-content;'></div>");
+        htmlAddMotivation.attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_12);
+        var checkboxAddMotivation = new west.gui.Checkbox()
+            .setLabel("Add motivation ")
+            .setSelected(Maco.settings.addMotivation)
+            .setCallback(function() {
+                Maco.settings.addMotivation = !Maco.settings.addMotivation;
+            });
+        htmlAddMotivation.append(checkboxAddMotivation.getMainDiv());
+
+        var htmlAddHealth = $("<div></div>").css({'display': 'inline-block', 'margin-bottom': '3px'});
+        htmlAddHealth.attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_2);
+        var checkboxAddHealth = new west.gui.Checkbox()
+            .setLabel("Add health ")
+            .setSelected(Maco.settings.addHealth)
+            .setCallback(function() {
+                Maco.settings.addHealth = !Maco.settings.addHealth;
+            });
+        htmlAddHealth.append(checkboxAddHealth.getMainDiv());
+
+        var htmlhealthStop = $("<div style='margin-left: 65.5px; display: inline-flex; align-items: center; text-align: center; height: 26px; line-height: 26px;'></div>");
+        htmlhealthStop.attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_2);
+        htmlhealthStop.append("<span style='margin-right: 5px;'>[Stop]</span>");
+        var htmlhealthStopValue = $("<div style='display: inline-block;'></div>");
+        htmlhealthStopValue.append("<span> Minimum HP </span>");
+        var healthStopValueTextfiled = new west.gui.Textfield("healthStopValue")
+            .setWidth(50)
+            .setValue(Maco.settings.healthStopValue)
+            .onlyNumeric();
+        htmlhealthStopValue.append(healthStopValueTextfiled.getMainDiv());
+        var htmlhealthStopPercent = $("<div></div>");
+        htmlhealthStopPercent.css({
+            'display': 'inline-block',
+            'margin-left': '15px'
+        });
+        htmlhealthStopPercent.append("<span>Minimum HP % </span>");
+        var healthStopPercentTextfiled = new west.gui.Textfield("healthStopPercent")
+            .setWidth(35)
+            .setValue(Maco.settings.healthStopPercent)
+            .onlyNumeric();
+        htmlhealthStopPercent.append(healthStopPercentTextfiled.getMainDiv());
+        htmlhealthStop.append(htmlhealthStopValue);
+        htmlhealthStop.append(htmlhealthStopPercent);
+
+        var htmlAddBuffs = $("<div></div>").css({'display': 'inline-block', 'margin-bottom': '3px'});
+        htmlAddBuffs.attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_4);
+        var htmlBuffsDiv = $("<div id='buff_checkboxes'></div>").css({
+            'display': 'inline-flex', 'justify-content': 'space-between', 'width': '350px', 'margin-left': '73px',
+            'visibility': (Maco.settings.addBuffs) ? 'visible' : 'hidden'
+        });
+        var checkboxAddBuffs = new west.gui.Checkbox()
+            .setLabel("Add buffs ")
+            .setSelected(Maco.settings.addBuffs)
+            .setCallback(function() {
+                Maco.settings.addBuffs = !Maco.settings.addBuffs;
+                if (Maco.settings.addBuffs) {
+                    $("#buff_checkboxes").css('visibility','visible');
+                } else {
+                    $("#buff_checkboxes").css('visibility','hidden');
+                }
+            });
+        htmlAddBuffs.append(checkboxAddBuffs.getMainDiv());
+        var checkboxAddXpBuff = new west.gui.Checkbox()
+            .setLabel("XP ")
+            .setSelected(Maco.settings.addXpBuff)
+            .setCallback(function() {
+                Maco.settings.addXpBuff = !Maco.settings.addXpBuff;
+            });
+        var checkboxAddProductBuff = new west.gui.Checkbox()
+            .setLabel("Product ")
+            .setSelected(Maco.settings.addProductBuff)
+            .setCallback(function() {
+                Maco.settings.addProductBuff = !Maco.settings.addProductBuff;
+            });
+        var checkboxAddMoneyBuff = new west.gui.Checkbox()
+            .setLabel("Money ")
+            .setSelected(Maco.settings.addMoneyBuff)
+            .setCallback(function() {
+                Maco.settings.addMoneyBuff = !Maco.settings.addMoneyBuff;
+            });
+        var checkboxAddLuckBuff = new west.gui.Checkbox()
+            .setLabel("Luck ")
+            .setSelected(Maco.settings.addLuckBuff)
+            .setCallback(function() {
+                Maco.settings.addLuckBuff = !Maco.settings.addLuckBuff;
+            });
+        var checkboxAddTravelBuff = new west.gui.Checkbox()
+            .setLabel("Travel ")
+            .setSelected(Maco.settings.addTravelBuff)
+            .setCallback(function() {
+                Maco.settings.addTravelBuff = !Maco.settings.addTravelBuff;
+            });
+        htmlBuffsDiv.append(checkboxAddXpBuff.getMainDiv());
+        htmlBuffsDiv.append(checkboxAddLuckBuff.getMainDiv());
+        htmlBuffsDiv.append(checkboxAddMoneyBuff.getMainDiv());
+        htmlBuffsDiv.append(checkboxAddProductBuff.getMainDiv());
+        htmlBuffsDiv.append(checkboxAddTravelBuff.getMainDiv());
+        htmlAddBuffs.append(htmlBuffsDiv);
+        const checkboxes = {
+            'addXpBuff': checkboxAddXpBuff,
+            'addProductBuff': checkboxAddProductBuff,
+            'addMoneyBuff': checkboxAddMoneyBuff,
+            'addLuckBuff': checkboxAddLuckBuff,
+        };
+        let callbackEnabled = true;
+        for (const key in checkboxes) {
+            checkboxes[key].setCallback(function() {
+                if (!callbackEnabled) return;
+                callbackEnabled = false;
+                // Update checkbox states
+                const currentCheckbox = checkboxes[key];
+                const currentState = Maco.settings[key];
+                if (!currentState) { // Only toggle the current checkbox if it's not already checked
+                    currentCheckbox.setSelected(true);
+                    Maco.settings[key] = true;
+                } else { // Uncheck the current checkbox
+                    currentCheckbox.setSelected(false);
+                    Maco.settings[key] = false;
+                }
+                // Reset other checkboxes
+                for (const otherKey in checkboxes) {
+                    if (key !== otherKey) {
+                        checkboxes[otherKey].setSelected(false);
+                        Maco.settings[otherKey] = false;
+                    }
+                }
+                setTimeout(() => {
+                    callbackEnabled = true;
+                }, 100);
+            });
+        }
+
+        var htmlBattleOptions = $("<div id='battle_options_container'></div>");
+        htmlBattleOptions.css({
+            'display': 'inline-block',
+            'position': 'relative',
+            'left': '25px',
+            'visibility': (Maco.settings.fortBattle.attend) ? 'visible' : 'hidden'
+        });
+        var htmlRefillBattleHealthWrapper = $("<div id='battle_health_wrapper'></div>").css({
+            'display': 'flex',
+            'align-items': 'center',
+            'height': '28px',
+        });
+        var htmlRefillBattleHealth = $("<div></div>");
+        htmlRefillBattleHealth.attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_9);
+        var checkboxRefillBattleHealth = new west.gui.Checkbox()
+            .setLabel("<span> Refill HP before battle </span>")
+            .setSelected(Maco.settings.fortBattle.refillHealth)
+            .setCallback(function() {
+                Maco.settings.fortBattle.refillHealth = !Maco.settings.fortBattle.refillHealth;
+                if (Maco.settings.fortBattle.refillHealth) {
+                    $("#battle_health_textfield").css('visibility','visible');
+                    $("#battle_health_tank").css('visibility','visible');
+                } else {
+                    $("#battle_health_textfield").css('visibility','hidden');
+                    $("#battle_health_tank").css('visibility','hidden');
+                }
+            });
+        var htmlBattleHealthTextField = $("<div id='battle_health_textfield'></div>").css({
+            'display': 'inline-block',
+            'margin-left': '4px',
+            'visibility': (Maco.settings.fortBattle.attend && Maco.settings.fortBattle.refillHealth) ? 'visible' : 'hidden'
+        });
+        var minBattleHealthTextField = new west.gui.Textfield("minBattleHealth")
+            .setWidth(35)
+            .setValue(Maco.settings.fortBattle.minHealth)
+            .onlyNumeric();
+
+        var htmlRefillTank = $("<div id='battle_health_tank'></div>").css({
+            'display': 'inline-flex',
+            'margin-left': '10px',
+            'gap': '10px',
+            'visibility': (Maco.settings.fortBattle.attend && Maco.settings.fortBattle.refillHealth) ? 'visible' : 'hidden'
+        });
+        var htmlCheckboxRefillTank = $("<div></div>");
+        htmlCheckboxRefillTank.attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_18);
+        var checkboxRefillTank = new west.gui.Checkbox()
+            .setLabel("<span> Tank HP </span>")
+            .setSelected(Maco.settings.fortBattle.isTank)
+            .setCallback(function() {
+                Maco.settings.fortBattle.isTank = !Maco.settings.fortBattle.isTank;
+            });
+        htmlCheckboxRefillTank.append(checkboxRefillTank.getMainDiv());
+        htmlRefillTank.append(htmlCheckboxRefillTank);
+
+        var htmlCheckboxOverwriteBuffTank = $("<div></div>");
+        htmlCheckboxOverwriteBuffTank.attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_31);
+        var checkboxOverwriteBuffTank = new west.gui.Checkbox()
+            .setLabel("<span> Overwrite Buff </span>")
+            .setSelected(Maco.settings.fortBattle.overwriteCharacterBonus)
+            .setCallback(function() {
+                Maco.settings.fortBattle.overwriteCharacterBonus = !Maco.settings.fortBattle.overwriteCharacterBonus;
+            });
+        htmlCheckboxOverwriteBuffTank.append(checkboxOverwriteBuffTank.getMainDiv());
+        htmlRefillTank.append(htmlCheckboxOverwriteBuffTank);
+
+        var htmlCheckboxOpenFortWindow = $("<div></div>");
+        htmlCheckboxOpenFortWindow.attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_10);
+        var checkboxOpenFortWindow = new west.gui.Checkbox()
+            .setLabel("<span> Open fort window to appear online </span>")
+            .setSelected(Maco.settings.fortBattle.openFortWindow)
+            .setCallback(function() {
+                Maco.settings.fortBattle.openFortWindow = !Maco.settings.fortBattle.openFortWindow;
+            });
+        htmlCheckboxOpenFortWindow.append(checkboxOpenFortWindow.getMainDiv());
+
+        var htmlBattleConsumable = $("<div></div>").css({
+            'display': 'flex',
+            'align-items': 'center',
+            'height': '28px'
+        });
+        var checkboxBattleConsumable = new west.gui.Checkbox()
+            .setLabel("<span> Use consumable </span>")
+            .setSelected(Maco.settings.fortBattle.useConsumable)
+            .setCallback(function() {
+                Maco.settings.fortBattle.useConsumable = this.isSelected();
+                if (this.isSelected()) {
+                    $("#battle_consumable_textfield").css('visibility','visible');
+                } else {
+                    $("#battle_consumable_textfield").css('visibility','hidden');
+                }
+            });
+        var htmlBattleConsumableTextField = $("<div id='battle_consumable_textfield'></div>").css({
+            'display': 'inline-block',
+            'margin-left': '4px',
+            'visibility': (checkboxBattleConsumable.isSelected() && Maco.settings.fortBattle.attend) ? 'visible' : 'hidden'
+        });
+        var battleConsumableTextField = new west.gui.Textfield("battleConsumable")
+            .setWidth(100)
+            .setValue(Maco.settings.fortBattle.consumable)
+        htmlBattleConsumableTextField.append(battleConsumableTextField.getMainDiv());
+        htmlBattleConsumable.append(checkboxBattleConsumable.getMainDiv());
+        htmlBattleConsumable.append(htmlBattleConsumableTextField);
+
+        htmlBattleHealthTextField.append("<span> - Minimum battle HP % </span>");
+        htmlBattleHealthTextField.append(minBattleHealthTextField.getMainDiv());
+        htmlRefillBattleHealth.append(checkboxRefillBattleHealth.getMainDiv());
+        htmlRefillBattleHealth.append(htmlBattleHealthTextField);
+        htmlRefillBattleHealthWrapper.append(htmlRefillBattleHealth);
+        htmlRefillBattleHealthWrapper.append(htmlRefillTank);
+        htmlBattleOptions.append(htmlRefillBattleHealthWrapper);
+        htmlBattleOptions.append(htmlCheckboxOpenFortWindow);
+        if (Maco.settings.fortBattle.consumable) {
+            htmlBattleOptions.append(htmlBattleConsumable);
+        }
+
+        var htmlWorker = $("<div style='margin-bottom: 3px; width: fit-content;'></div>");
+        htmlWorker.attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_3);
+        var checkboxWorker = new west.gui.Checkbox()
+            .setLabel("Night shift worker ")
+            .setSelected(Maco.settings.nightShiftWorker)
+            .setCallback(function() {
+                Maco.settings.nightShiftWorker = !Maco.settings.nightShiftWorker;
+            });
+        var htmlOpenWorker = $('<span>Open worker</span>')
+            .css({
+                'margin-left': '8px',
+                'font-size': '11px',
+                'color': '#333',                   // lighter black
+                'cursor': 'pointer',
+                'display': 'inline-flex',          // to align icon and text
+                'align-items': 'center',
+                'gap': '4px'                       // spacing between text and icon
+            })
+            .hover(
+                function () { $(this).css('color', '#000'); },
+                function () { $(this).css('color', '#333'); }
+            )
+            .on('click', function () {
+                Maco.selectTab("favoriteJobs");
+            });
+        var arrowIcon = $('<span>&#x21AA;</span>').css({'font-size': '11px','color': 'inherit'});
+        htmlOpenWorker.prepend(arrowIcon);
+        htmlWorker.append(checkboxWorker.getMainDiv());
+        htmlWorker.append(htmlOpenWorker);
+
+        var htmlBuild = $("<div style='margin-bottom: 3px;'></div>");
+        htmlBuild.attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_26);
+        var checkboxChurch = new west.gui.Checkbox()
+            .setLabel("Build Church during night ")
+            .setSelected(Maco.settings.nightBuild)
+            .setCallback(function() {
+                Maco.settings.nightBuild = !Maco.settings.nightBuild;
+            });
+        htmlBuild.append(checkboxChurch.getMainDiv());
+
+        let autoReloadOld = Maco.settings.autoReload;
+        let debounceReloadObserverId;
+        function debouncedStartReloadObserver() {
+            if (debounceReloadObserverId) {
+                clearTimeout(debounceReloadObserverId);
+            }
+            debounceReloadObserverId = setTimeout(() => {
+                if (Maco.settings.autoReload && !autoReloadOld && Maco.isRunning) {
+                    Maco.startReloadObserver();
+                    autoReloadOld = true;
+                }
+            }, 5000);
+        }
+        var htmlAutoReload = $("<div style='margin-bottom: 3px; width: fit-content;'></div>");
+        htmlAutoReload.attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_5);
+        var checkboxAutoReload = new west.gui.Checkbox()
+            .setLabel("Enable auto-refresh ")
+            .setSelected(Maco.settings.autoReload)
+            .setCallback(function() {
+                Maco.settings.autoReload = !Maco.settings.autoReload;
+                if (Maco.settings.autoReload && !autoReloadOld && Maco.isRunning) {
+                    debouncedStartReloadObserver();
+                }
+            });
+        htmlAutoReload.append(checkboxAutoReload.getMainDiv());
+
+        var htmlEfficientTravel = $("<div style='margin-top: 3px; width: fit-content;'></div>");
+        htmlEfficientTravel.attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_6);
+        var checkboxEfficientTravel = new west.gui.Checkbox()
+            .setLabel("Efficient Travel ")
+            .setSelected(Maco.settings.advancedWalkingToJob)
+            .setCallback(function() {
+                Maco.settings.advancedWalkingToJob = !Maco.settings.advancedWalkingToJob;
+            });
+        htmlEfficientTravel.append(checkboxEfficientTravel.getMainDiv());
+
+        var htmlRegeneration = $("<div style='margin-bottom: 3px; width: fit-content;'></div>");
+        var htmlCheckboxEnableRegeneration = $("<div style='display: inline-block'></div>");
+        htmlCheckboxEnableRegeneration.attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_11);
+        var checkboxEnableRegeneration = new west.gui.Checkbox()
+            .setLabel("Enable regeneration")
+            .setSelected(Maco.settings.enableRegeneration)
+            .setCallback(function() {
+                Maco.settings.enableRegeneration = !Maco.settings.enableRegeneration;
+            });
+
+        htmlCheckboxEnableRegeneration.append(checkboxEnableRegeneration.getMainDiv());
+        htmlRegeneration.append(htmlCheckboxEnableRegeneration);
+
+        var htmlEnableAutoDeposit = $("<div style='display: flex; align-items: center; height: 26px; width: fit-content;'></div>");
+        htmlEnableAutoDeposit.attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_19);
+        var checkboxEnableAutoDeposit = new west.gui.Checkbox()
+            .setLabel("Deposit money")
+            .setSelected(Maco.settings.autoMoneyDeposit.enabled)
+            .setCallback(function() {
+                Maco.settings.autoMoneyDeposit.enabled = !Maco.settings.autoMoneyDeposit.enabled;
+                if (Maco.settings.autoMoneyDeposit.enabled) {
+                    $("#deposit_money_field").css('visibility','visible');
+                    $("#deposit_options_container").css('visibility','visible');
+                    if (Character.homeTown.town_id === 0) {
+                        $("#button_set_town").css('visibility','visible');
+                    }
+                } else {
+                    $("#deposit_options_container").css('visibility','hidden');
+                    $("#deposit_money_field").css('visibility','hidden');
+                    if (!Maco.settings.fortBattle.attend) { // && !Maco.settings.enableRegeneration
+                        $("#button_set_town").css('visibility','hidden');
+                    }
+                }
+            });
+        var htmlDepositAmount = $("<div id='deposit_money_field'></div>").css({
+            'display': 'inline-block',
+            'margin-left': '15.5px',
+            'visibility': (Maco.settings.autoMoneyDeposit.enabled) ? 'visible' : 'hidden'
+        });
+        htmlDepositAmount.append($("<span> Deposit amount above $ </span>"));
+        var htmlDepositAmountTextfiled = new west.gui.Textfield("depositAmount")
+            .setWidth(90)
+            .setValue(formatNumber(Maco.settings.autoMoneyDeposit.amount))
+            .onlyNumeric();
+        htmlDepositAmount.append(htmlDepositAmountTextfiled.getMainDiv());
+        htmlEnableAutoDeposit.append(checkboxEnableAutoDeposit.getMainDiv());
+        htmlEnableAutoDeposit.append(htmlDepositAmount);
+        Maco.formatInputNumber("#deposit_money_field");
+
+        var htmlDepositOptions = $("<div id='deposit_options_container'></div>");
+        htmlDepositOptions.css({
+            'display': 'flex',
+            'align-items': 'flex-start', // center
+            'flex-direction': 'column',
+            'position': 'relative',
+            'left': '25px',
+            'visibility': (Maco.settings.autoMoneyDeposit.enabled) ? 'visible' : 'hidden'
+        });
+        htmlDepositOptions.attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_7);
+        var checkboxDepositDuelProtected = new west.gui.Checkbox()
+            .setLabel("<span> Don't deposit while duel protected </span>")
+            .setSelected(Maco.settings.autoMoneyDeposit.duelProtected)
+            .setCallback(function() {
+                Maco.settings.autoMoneyDeposit.duelProtected = this.isSelected();
+            });
+        var htmlAuctionDeposit = $("<div></div>").css({});
+        var htmlSellerNameTextfiled = new west.gui.Textfield("auctionBidName")
+            .setWidth(100)
+            .setValue(Maco.settings.autoMoneyDeposit.sellerName);
+        var htmlAuctionItemIdTextfiled = new west.gui.Textfield("auctionItemId")
+            .setWidth(100)
+            .setValue((Maco.settings.autoMoneyDeposit.auctionItemId) ? `[item=${Maco.settings.autoMoneyDeposit.auctionItemId}]` : "");
+        htmlAuctionDeposit.attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_32);
+        htmlAuctionDeposit.append($("<span> Item ID: </span>"));
+        htmlAuctionDeposit.append(htmlAuctionItemIdTextfiled.getMainDiv());
+        htmlAuctionDeposit.append($("<span> Seller Name: </span>").css('margin-left','10px'));
+        htmlAuctionDeposit.append(htmlSellerNameTextfiled.getMainDiv());
+        htmlDepositOptions.append(htmlAuctionDeposit);
+        htmlDepositOptions.append(checkboxDepositDuelProtected.getMainDiv());
+
+        var htmlAttendBattles = $("<div style='margin-top: 13px; width: fit-content;'></div>");
+        htmlAttendBattles.attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_8);
+        var checkboxAttendBattles = new west.gui.Checkbox()
+            .setLabel("Attend battles")
+            .setSelected(Maco.settings.fortBattle.attend)
+            .setCallback(function() {
+                Maco.settings.fortBattle.attend = !Maco.settings.fortBattle.attend;
+                if (Maco.settings.fortBattle.attend) {
+                    $("#battle_options_container").css('visibility','visible');
+                    $("#battle_choices_container").css('visibility','visible');
+                    if (Maco.settings.fortBattle.refillHealth) {
+                        $("#battle_health_textfield").css('visibility','visible');
+                        $("#battle_health_tank").css('visibility','visible');
+                    }
+                    if (Character.homeTown.town_id === 0) {
+                        $("#button_set_town").css('visibility','visible');
+                        if (Maco.homeTown == null) {
+                            new UserMessage("Set town to deposit money before battle.", UserMessage.TYPE_HINT).show();
+                        }
+                    }
+                    Maco.selectTab("settings");
+                } else {
+                    Maco.maxAllowedEnergy = 100;
+                    $("#battle_choices_container").css('visibility','hidden');
+                    $("#battle_options_container").css('visibility','hidden');
+                    $("#battle_health_textfield").css('visibility','hidden');
+                    $("#battle_health_tank").css('visibility','hidden');
+                    $("#battle_consumable_textfield").css('visibility','hidden');
+                    if (!Maco.settings.autoMoneyDeposit.enabled) { // && !Maco.settings.enableRegeneration
+                        $("#button_set_town").css('visibility','hidden');
+                    }
+                }
+            });
+        var upcomingBattlesCombobox = new west.gui.Combobox("upcoming_battles");
+        Maco.addUpcomingFortBattles(upcomingBattlesCombobox);
+        upcomingBattlesCombobox = upcomingBattlesCombobox.select(Maco.settings.fortBattle.selected);
+        upcomingBattlesCombobox.setWidth(120);
+        upcomingBattlesCombobox.addListener(function(value) {
+            Maco.settings.fortBattle.selected = value;
+        });
+        var htmlBattleChoices = $("<div id='battle_choices_container'></div>");
+        htmlBattleChoices.css({
+            'display': 'inline-block',
+            'visibility': (Maco.settings.fortBattle.attend) ? 'visible' : 'hidden'
+        });
+        htmlBattleChoices.append($("<span>: &nbsp;</span>")); // Text infront battle choices combobox
+
+        var battleAttackSetCombobox = Maco.addComboboxSetItems(new west.gui.Combobox().setWidth(75), Maco.settings.fortBattle.attackSet, 'AUTO_CALC')
+            .addListener(function(value) {
+                Maco.settings.fortBattle.attackSet = value;
+            });
+        var battleDefSetCombobox = Maco.addComboboxSetItems(new west.gui.Combobox().setWidth(75), Maco.settings.fortBattle.defSet, 'AUTO_CALC')
+            .addListener(function(value) {
+                Maco.settings.fortBattle.defSet = value;
+            });
+
+        htmlBattleChoices.append(upcomingBattlesCombobox.getMainDiv());
+        htmlBattleChoices.append($("<span style='margin-left: 10px;'> Attack: </span>"));
+        htmlBattleChoices.append(battleAttackSetCombobox.getMainDiv());
+        htmlBattleChoices.append($("<span style='margin-left: 5px;'> Def.: </span>"));
+        htmlBattleChoices.append(battleDefSetCombobox.getMainDiv());
+        htmlAttendBattles.append(checkboxAttendBattles.getMainDiv());
+        htmlAttendBattles.append(htmlBattleChoices);
+
+        var buttonSetTown = new west.gui.Button(Maco.homeTown == null ? "Set Town" : "Change Town", function() {
+            if (Maco.setNewHomeTown()) {
+                new UserMessage("Town changed.", UserMessage.TYPE_SUCCESS).show();
+                Maco.refreshTab("settings");
+            } else {
+                new UserMessage("Not in town.", UserMessage.TYPE_ERROR).show();
+            }
+        });
+        var buttonSetTownDiv = $("<div></div>")
+            .attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_27)
+            .prop('id', 'button_set_town')
+            .css({
+                position: 'absolute',
+                bottom: '157px',
+                right: '65px',
+                visibility: (Character.homeTown.town_id === 0 && (Maco.settings.autoMoneyDeposit.enabled || Maco.settings.fortBattle.attend)) ? 'visible' : 'hidden'
+            });
+        const townNameLabel = $("<div></div>")
+            .text(Maco.homeTown?.name || '')
+            .css({
+                'margin-top': '5px',
+                'text-align': 'center',
+                'font-size': '11px',
+                'color': 'black'
+            });
+        buttonSetTownDiv.append(buttonSetTown.getMainDiv());
+        buttonSetTownDiv.append(townNameLabel);
+
+        var buttonApply = new west.gui.Button("Apply", function() {
+            let error = false;
+            if (isNumber(addEnergyOptionalMinTextField.getValue())) {
+                var addEnergyOptionalMin = parseInt(addEnergyOptionalMinTextField.getValue());
+                Maco.settings.addEnergyOptionalMin = clamp(addEnergyOptionalMin, 10, 100);
+            } else {
+                new UserMessage("Wrong format of energy min % value. Please set a number.", UserMessage.TYPE_ERROR).show();
+                error = true;
+            }
+            if (isNumber(addEnergyOptionalMaxTextField.getValue())) {
+                var addEnergyOptionalMax = parseInt(addEnergyOptionalMaxTextField.getValue());
+                Maco.settings.addEnergyOptionalMax = clamp(addEnergyOptionalMax, Maco.settings.addEnergyOptionalMin, 100);
+            } else {
+                new UserMessage("Wrong format of energy max % value. Please set a number.", UserMessage.TYPE_ERROR).show();
+                error = true;
+            }
+            if (isNumber(minBattleHealthTextField.getValue())) {
+                var minBattleHealth = parseInt(minBattleHealthTextField.getValue());
+                Maco.settings.fortBattle.minHealth = clamp(minBattleHealth, 40, 100);
+            } else {
+                new UserMessage("Wrong format of health % value. Please set a number.", UserMessage.TYPE_ERROR).show();
+                error = true;
+            }
+            if (/^\d+(,\d+)?$/.test(battleConsumableTextField.getValue().trim())) {
+                Maco.settings.fortBattle.consumable = battleConsumableTextField.getValue().trim().split(",").map(Number);
+            } else {
+                Maco.settings.fortBattle.consumable = null;
+            }
+            if (isNumber(healthStopPercentTextfiled.getValue())) {
+                var healthStopPercent = parseInt(healthStopPercentTextfiled.getValue());
+                Maco.settings.healthStopPercent = clamp(healthStopPercent, 10, 30);
+            }
+            if (isNumber(healthStopValueTextfiled.getValue())) {
+                var healthStopValue = parseInt(healthStopValueTextfiled.getValue());
+                Maco.settings.healthStopValue = Math.max(20, healthStopValue);
+            }
+            if (isNumber(htmlDepositAmountTextfiled.getValue())) {
+                var depositAmount = parseInt(htmlDepositAmountTextfiled.getValue().replace(/\./g, ''));
+                Maco.settings.autoMoneyDeposit.amount = Math.max(10000, depositAmount);
+            }
+            const itemIdVal = extractNumberFromString(htmlAuctionItemIdTextfiled.getValue());
+            const sellerNameVal = htmlSellerNameTextfiled.getValue().trim();
+            Maco.settings.autoMoneyDeposit.sellerName = sellerNameVal || "";
+            if (isNumber(itemIdVal)) {
+                Maco.settings.autoMoneyDeposit.auctionItemId = itemIdVal;
+            } else {
+                Maco.settings.autoMoneyDeposit.auctionItemId = "";
+            }
+            Maco.selectTab("settings");
+            Maco.debouncedSaveAll(100);
+            if (!error) new UserMessage("Saved succesfully.", UserMessage.TYPE_SUCCESS).show();
+        });
+
+        var buttonApplyDiv = buttonApply.getMainDiv();
+        $(buttonApplyDiv).css({
+            'position': 'absolute',
+            'bottom': '20px',
+            'right': '50px'
+        });
+
+        var htmlExportImport = $("<div></div>");
+        htmlExportImport.css({
+            'position': 'absolute',
+            'bottom': '0px',
+            'right': '170px',
+            'transform': 'scale(0.9)'
+        });
+        htmlExportImport.attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_16);
+        var buttonExportData = new west.gui.Button("Export", function() {
+            Maco.exportSettings();
+        });
+        var buttonImportData = new west.gui.Button("Import", function() {
+            Maco.importSettings()
+                .then(() => {
+                    Maco.loadSavedData();
+                    Maco.loadSets(function() {});
+                    Maco.loadAllConsumablesSelection();
+                    Maco.refreshTab("settings");
+                    new UserMessage("Data successfully imported.", UserMessage.TYPE_SUCCESS).show();
+                })
+                .catch(error => {
+                    new UserMessage("Failed to import data: " + error.message, UserMessage.TYPE_ERROR).show();
+                });
+        });
+        buttonExportData.setWidth(70);
+        buttonImportData.setWidth(70);
+        htmlExportImport.append(buttonImportData.getMainDiv());
+        htmlExportImport.append(buttonExportData.getMainDiv());
+
+        htmlSkel.append(htmlAddEnergy);
+        htmlSkel.append(htmlAddEnergyOptional);
+        htmlSkel.append(htmlAddMotivation);
+        htmlSkel.append(htmlAddHealth);
+        htmlSkel.append(htmlhealthStop);
+        htmlSkel.append("<br>");
+        htmlSkel.append(htmlRegeneration);
+        //htmlSkel.append(htmlBuild);
+        htmlSkel.append(htmlAddBuffs);
+        htmlSkel.append(htmlAutoReload);
+        htmlSkel.append(htmlWorker);
+        htmlSkel.append(htmlEfficientTravel);
+        htmlSkel.append(htmlEnableAutoDeposit);
+        htmlSkel.append(htmlDepositOptions);
+        htmlSkel.append(buttonSetTownDiv); // Set town button
+        htmlSkel.append(htmlAttendBattles);
+        htmlSkel.append(htmlBattleOptions);
+        htmlSkel.append("<br>");
+        htmlSkel.append(buttonApplyDiv);
+        htmlSkel.append(htmlExportImport);
+        return htmlSkel;
+    };
+    Maco.createNotificationsGui = function() {
+        var htmlSkel = $("<div id=\'notifications_overview'\ style = \'margin: 30px; margin-top: 10px;'\></div>");
+        const saveAllConfirmation = () => Maco.debouncedSaveAll(100, () => new UserMessage("Saved successfully.", UserMessage.TYPE_SUCCESS).show());
+
+        if (!("Notification" in globalWindow)) {
+            new UserMessage("Notifications not supported in this browser", UserMessage.TYPE_ERROR).show();
+        }
+        // Request permission to display notifications (if not already granted)
+        if (Notification.permission !== "granted") {
+            Notification.requestPermission().then(function (permission) {
+                if (permission !== "granted") {
+                    new UserMessage("Notification permission denied", UserMessage.TYPE_ERROR).show();
+                }
+            });
+        }
+
+        var buttonTest = new west.gui.Button("Test", function() {
+            Maco.showNotification("The West - Notification test", "Notification test message - " + timestamp(), "enabled");
+        });
+        buttonTest.setWidth(70);
+        var buttonTestDiv = buttonTest.getMainDiv();
+        buttonTestDiv.id = 'button_test_notification';
+        $(buttonTestDiv).css({
+            'position': 'absolute',
+            'top': '50px',
+            'right': '290px',
+            'visibility': (Maco.settings.notifications.enabled) ? 'visible' : 'hidden'
+        });
+
+        var htmlEnable = $("<div style='display: flex; align-items: center; height: 26px; margin-bottom:3px;'></div>");
+        //htmlEnable.attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_255);
+        var checkboxEnable = new west.gui.Checkbox()
+            .setLabel("Enable notifications")
+            .setSelected(Maco.settings.notifications.enabled)
+            .setCallback(function() {
+                Maco.settings.notifications.enabled = !Maco.settings.notifications.enabled;
+                if (Maco.settings.notifications.enabled) {
+                    $("#options_container").css('visibility','visible');
+                    $("#button_test_notification").css('visibility','visible');
+                } else {
+                    $("#options_container").css('visibility','hidden');
+                    $("#button_test_notification").css('visibility','hidden');
+                }
+                saveAllConfirmation();
+            });
+        htmlEnable.append(checkboxEnable.getMainDiv());
+
+        var htmlOptions = $("<div id='options_container'></div>").css({
+            'display': 'inline-block',
+            'position': 'relative',
+            'left': '25px',
+            'visibility': (Maco.settings.notifications.enabled) ? 'visible' : 'hidden'
+        });
+
+        var htmlSilent = $("<div style='display: flex; align-items: center; height: 28px;'></div>");
+        //htmlSilent.attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_256);
+        var checkboxSilent = new west.gui.Checkbox()
+            .setLabel("<span> Make sound </span>")
+            .setSelected(!Maco.settings.notifications.silent)
+            .setCallback(function() {
+                Maco.settings.notifications.silent = !Maco.settings.notifications.silent;
+                saveAllConfirmation();
+            });
+        htmlSilent.append(checkboxSilent.getMainDiv());
+
+        var htmlRequireInteraction = $("<div></div>");
+        //htmlRequireInteraction.attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_257);
+        var checkboxRequireInteraction = new west.gui.Checkbox()
+            .setLabel("<span> Require interaction </span>")
+            .setSelected(Maco.settings.notifications.requireInteraction)
+            .setCallback(function() {
+                Maco.settings.notifications.requireInteraction = !Maco.settings.notifications.requireInteraction;
+                saveAllConfirmation();
+            });
+        htmlRequireInteraction.append(checkboxRequireInteraction.getMainDiv());
+
+        // OPTIONS
+        var htmlNotifyError = $("<div style='margin-bottom: 4px;'></div>");
+        //htmlNotifyError.attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_258);
+        var checkboxNotifyError = new west.gui.Checkbox()
+            .setLabel("<span> Error occurs (important) </span>")
+            .setSelected(Maco.settings.notifications.error)
+            .setCallback(function() {
+                Maco.settings.notifications.error = !Maco.settings.notifications.error;
+                saveAllConfirmation();
+            });
+        htmlNotifyError.append(checkboxNotifyError.getMainDiv());
+
+        var htmlNotifyStopped = $("<div style='margin-bottom: 4px;'></div>");
+        //htmlNotifyStopped.attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_259);
+        var checkboxNotifyStopped = new west.gui.Checkbox()
+            .setLabel("<span> Script has Stopped </span>")
+            .setSelected(Maco.settings.notifications.stopped)
+            .setCallback(function() {
+                Maco.settings.notifications.stopped = !Maco.settings.notifications.stopped;
+                saveAllConfirmation();
+            });
+        htmlNotifyStopped.append(checkboxNotifyStopped.getMainDiv());
+
+        var htmlNotifySleep = $("<div style='margin-bottom: 4px;'></div>");
+        //htmlNotifySleep.attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_260);
+        var checkboxNotifySleep = new west.gui.Checkbox()
+            .setLabel("<span> Sleep regenerating starts</span>")
+            .setSelected(Maco.settings.notifications.sleep)
+            .setCallback(function() {
+                Maco.settings.notifications.sleep = !Maco.settings.notifications.sleep;
+                saveAllConfirmation();
+            });
+        htmlNotifySleep.append(checkboxNotifySleep.getMainDiv());
+
+        var htmlNotifyBattle = $("<div style='margin-bottom: 4px;'></div>");
+        //htmlNotifyBattle.attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_261);
+        var checkboxNotifyBattle = new west.gui.Checkbox()
+            .setLabel("<span> Fort Battle starts </span>")
+            .setSelected(Maco.settings.notifications.battle)
+            .setCallback(function() {
+                Maco.settings.notifications.battle = !Maco.settings.notifications.battle;
+                saveAllConfirmation();
+            });
+        htmlNotifyBattle.append(checkboxNotifyBattle.getMainDiv());
+
+        var htmlNotifyBattlePrepare = $("<div style='margin-bottom: 4px;'></div>");
+        //htmlNotifyBattlePrepare.attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_262);
+        var checkboxNotifyBattlePrepare = new west.gui.Checkbox()
+            .setLabel("<span> Fort Battle prepare </span>")
+            .setSelected(Maco.settings.notifications.battle_prep)
+            .setCallback(function() {
+                Maco.settings.notifications.battle_prep = !Maco.settings.notifications.battle_prep;
+                saveAllConfirmation();
+            });
+        htmlNotifyBattlePrepare.append(checkboxNotifyBattlePrepare.getMainDiv());
+
+        var htmlNotifyDuel = $("<div></div>");
+        //htmlNotifyDuel.attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_263);
+        var checkboxNotifyDuel = new west.gui.Checkbox()
+            .setLabel("<span> Duel protection ends </span>")
+            .setSelected(Maco.settings.notifications.duel)
+            .setCallback(function() {
+                Maco.settings.notifications.duel = !Maco.settings.notifications.duel;
+                saveAllConfirmation();
+            });
+        htmlNotifyDuel.append(checkboxNotifyDuel.getMainDiv());
+
+        htmlOptions.append(htmlSilent);
+        htmlOptions.append(htmlRequireInteraction);
+        htmlOptions.append("<br><br>");
+        htmlOptions.append("<span><b>Notify when:</b></span>");
+        htmlOptions.append("<br><br>");
+        htmlOptions.append(htmlNotifyError);
+        htmlOptions.append(htmlNotifyStopped);
+        htmlOptions.append(htmlNotifySleep);
+        htmlOptions.append(htmlNotifyBattle);
+        htmlOptions.append(htmlNotifyBattlePrepare);
+        htmlOptions.append(htmlNotifyDuel);
+
+        htmlSkel.append(htmlEnable);
+        htmlSkel.append(htmlOptions);
+        htmlSkel.append(buttonTestDiv);
+        return htmlSkel;
+    };
+    Maco.createTownBuildGui = function(cityhallData) {
+        var htmlSkel = $("<div id=\'build_overview'\ style = \'margin: 30px; margin-top: 10px;'\></div>");
+        const saveAllConfirmation = () => Maco.debouncedSaveAll(100, () => new UserMessage("Saved successfully.", UserMessage.TYPE_SUCCESS).show());
+
+        function createComboboxBuildings(data) {
+            let combobox = new west.gui.Combobox().setWidth(120);
+
+            if (typeof data === "string") {
+                combobox.addItem("string", data);
+            } else if (data.buildings && Array.isArray(data.buildings)) {
+                data.buildings.forEach(building => {
+                    if (building.infinite || building.stage < building.maxStage) {
+                        combobox.addItem(building.key, building.name);
+                    }
+                });
+            }
+
+            combobox = combobox.select(Maco.build.building);
+            combobox.addListener(function(building) {
+                Maco.build.building = building;
+                saveAllConfirmation();
+            });
+
+            return combobox.getMainDiv();
+        }
+
+        function createComboboxInterval() {
+            let combobox = new west.gui.Combobox().setWidth(60);
+            combobox.addItem(900, "15 min");
+            combobox.addItem(1800, "30 min");
+            combobox.addItem(3600, "1 hour");
+
+            combobox = combobox.select(Maco.build.interval);
+            combobox.addListener(function(interval) {
+                Maco.build.interval = interval;
+                saveAllConfirmation();
+            });
+
+            return combobox.getMainDiv();
+        }
+
+        var htmlEnable = $("<div style='display: flex; align-items: center; width: fit-content; height: 26px; margin-bottom:3px;'></div>");
+        htmlEnable.attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_28);
+        var checkboxEnable = new west.gui.Checkbox()
+            .setLabel("Enable Town Build")
+            .setSelected(Maco.build.allowed)
+            .setCallback(function() {
+                Maco.build.allowed = !Maco.build.allowed;
+                if (Maco.build.allowed) {
+                    $("#build_set_combobox").css('visibility','visible');
+                    $("#options_container").css('visibility','visible');
+                    $("#button_test_notification").css('visibility','visible');
+                } else {
+                    $("#build_set_combobox").css('visibility','hidden');
+                    $("#options_container").css('visibility','hidden');
+                    $("#button_test_notification").css('visibility','hidden');
+                }
+                saveAllConfirmation();
+            });
+        htmlEnable.append(checkboxEnable.getMainDiv());
+
+        // Button
+        var buttonBuild = new west.gui.Button((Maco.currentState === 7) ? "Stop Build" : "Start Build now", function() {
+            if (Maco.currentState === 7) {
+                Maco.isRunning = false;
+                Maco.currentState = 0;
+                Maco.refreshTab("townBuild");
+            } else if (Maco.canBuild()) {
+                Maco.buildTownBuilding(Maco.build.building, Maco.build.interval, Maco.build.hoursAmount);
+            } else {
+                new UserMessage("You are gay :)", UserMessage.TYPE_ERROR).show();
+                return;
+            }
+        }).setWidth(120);
+        var buttonBuildDiv = buttonBuild.getMainDiv();
+        buttonBuildDiv.id = 'button_test_notification';
+        $(buttonBuildDiv).css({
+            'position': 'absolute',
+            'top': '160px',
+            'left': '50px',
+            'visibility': (Maco.build.allowed) ? 'visible' : 'hidden'
+        });
+
+        // OPTIONS
+        var htmlOptions = $("<div id='options_container'></div>").css({
+            'display': 'inline-block',
+            'position': 'relative',
+            'left': '25px',
+            'visibility': (Maco.build.allowed) ? 'visible' : 'hidden'
+        });
+
+        var htmlNightBuild = $("<div style='display: flex; align-items: center; width: fit-content; height: 35px;'></div>");
+        htmlNightBuild.attr('title', Maco.explainerTranslations[Maco.translationLang].explainer_29);
+        var checkboxNightBuild = new west.gui.Checkbox()
+            .setLabel("<span> Build over night </span>")
+            .setSelected(Maco.build.nightBuild)
+            .setCallback(function() {
+                Maco.build.nightBuild = !Maco.build.nightBuild;
+                saveAllConfirmation();
+            });
+        htmlNightBuild.append(checkboxNightBuild.getMainDiv());
+
+        var htmlBuildDurationTextField = $("<div id='build_duration_textfield'></div>").css({
+            'display': 'inline-block',
+        });
+        const hoursTextfield = new west.gui.Textfield("build_duration_textField").onlyNumeric().setValue(Maco.build.hoursAmount).setWidth(40);
+        const textfieldDiv = hoursTextfield.getMainDiv();
+        $(textfieldDiv).css({
+            display: "inline-block",
+            position: "relative",
+            marginRight: "10px",
+        });
+        $(textfieldDiv).find("input").on("change", function() {
+            const newValue = $(this).val();
+            Maco.build.hoursAmount = parseInt(newValue, 10);
+            //Maco.build.hoursAmount = hoursTextfield.getValue(); // This also works
+            saveAllConfirmation();
+        });
+        htmlBuildDurationTextField.append("<span> Hours amount to build: </span>");
+        htmlBuildDurationTextField.append(textfieldDiv);
+
+        var buildSetCombobox = Maco.addComboboxSetItems(new west.gui.Combobox().setWidth(120), Maco.build.set, 'AUTO_CALC')
+            .addListener(function(value) {
+                Maco.build.set = value;
+                saveAllConfirmation();
+            });
+        var buildSetDiv = $("<div id='build_set_combobox'><span> Set: </span></div>").css({
+            'position': 'absolute',
+            'top': '160px',
+            'left': '339px',
+            'visibility': (Maco.build.allowed) ? 'visible' : 'hidden'
+        });
+        buildSetDiv.append(buildSetCombobox.getMainDiv());
+
+        htmlOptions.append(htmlBuildDurationTextField);
+        htmlOptions.append(createComboboxInterval());
+        htmlOptions.append("<span style='margin-right: 10px;'> </span>");
+        htmlOptions.append(createComboboxBuildings(cityhallData));
+        htmlSkel.append("<br>");
+        htmlOptions.append(htmlNightBuild);
+
+        // Assemble all
+        htmlSkel.append(htmlEnable);
+        htmlSkel.append("<br>");
+        htmlSkel.append(htmlOptions);
+        htmlSkel.append(buttonBuildDiv);
+        htmlSkel.append(buildSetDiv);
+        return htmlSkel;
+    };
+    Maco.loadCityHall = function(callback) {
+        Ajax.remoteCall(
+            'building_cityhall', 
+            '', 
+            { town_id: Character.homeTown.town_id }, 
+            function(json) {
+                if (json && typeof callback === 'function') {
+                    callback(json);
+                } else {
+                    console.error("Maco.loadCityHall: Invalid JSON response or callback not provided.");
+                }
+            }
+        );
+    };
+    Maco.createStatisticsGui = function() {
+        var htmlSkel = $("<div id=\'statistics_overview'\ style = \'margin-left: 10px; margin-top: 5px; user-select: text'\></div>");
+
+        const runTimeInHours = Maco.stats.session.runTime / 3600;
+        const totalWaitingTime = Maco.stats.session.consumableWaitingTime + Maco.stats.session.sleepTime;
+        let travelTimePercent = (Maco.stats.session.travelTime / Maco.stats.session.runTime) * 100;
+        let waitingTimePercent = (totalWaitingTime / Maco.stats.session.runTime) * 100;
+        let xpPerHour = Math.round(Maco.stats.session.xp / runTimeInHours);
+        let moneyPerHour = Math.round(Maco.stats.session.money / runTimeInHours);
+        let xpPerJob = Math.round(Maco.stats.session.xp / Maco.stats.session.jobs);
+
+        travelTimePercent = isNaN(travelTimePercent) ? 0 : travelTimePercent.toFixed(2);
+        waitingTimePercent = isNaN(waitingTimePercent) ? 0 : waitingTimePercent.toFixed(2);
+        xpPerHour = isNaN(xpPerHour) ? 0 : xpPerHour;
+        moneyPerHour = isNaN(moneyPerHour) ? 0 : moneyPerHour;
+        xpPerJob = isNaN(xpPerJob) || xpPerJob < 0 ? 0 : xpPerJob;
+
+        var travelTimeText = "Travel time: &nbsp;" + formatTime(Maco.stats.session.travelTime, false) + "&nbsp; = &nbsp;<b>" + travelTimePercent + "%</b>";
+        var waitingTimeText = "Waiting time: &nbsp;" + formatTime(totalWaitingTime, false) + "&nbsp; = &nbsp;<b>" + waitingTimePercent + "%</b>";
+        var xpPerHourText = "&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;" + formatNumber(xpPerHour) + "&nbsp;&nbsp; xp / h";
+        var moneyPerHourText = "&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;" + formatNumber(moneyPerHour) + "&nbsp;&nbsp; $ / h";
+        var xpPerJobText = "&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;" + formatNumber(xpPerJob) + "&nbsp;&nbsp; xp / job";
+
+        let lineBreak = $("<br><br>");
+        let containerDiv = $("<div style='display: flex; align-items: baseline;'></div>");
+        containerDiv.append($("<span>Session runtime: &nbsp;<b>" + formatTime(Maco.stats.session.runTime, false) + "</b></span>"));
+        containerDiv.append("<span style='margin-left: 30px;'>" + "Including:" + "</span>");
+        let nestedDiv = $("<div style='display: flex; flex-direction: column; margin-left: 10px;'></div>");
+        nestedDiv.append($("<span>" + travelTimeText + "</span>"));
+        if (totalWaitingTime > 0) {
+            nestedDiv.append($("<span style='margin-top: 3px;'>" + waitingTimeText + "</span>"));
+            lineBreak = $("<br>");
+        }
+        containerDiv.append(nestedDiv);
+        htmlSkel.append(containerDiv);
+        htmlSkel.append(lineBreak);
+
+        htmlSkel.append($("<div style='margin-bottom: 2px;'><span>XP in this session: &nbsp;&nbsp;<b>" + formatNumber(Maco.stats.session.xp) + xpPerHourText + "</b></span></div>"));
+        htmlSkel.append($("<span>XP in total: &nbsp;" + formatNumber(Maco.stats.total.xp) + "</span><br>"));
+        htmlSkel.append($("<br>"));
+
+        htmlSkel.append($("<div style='margin-bottom: 2px;'><span>Money in this session: &nbsp;&nbsp;<b>" + formatNumber(Maco.stats.session.money) + moneyPerHourText + "</b></span></div>"));
+        htmlSkel.append($("<span>Money in total: &nbsp;" + formatNumber(Maco.stats.total.money) + "</span><br>"));
+        htmlSkel.append($("<br>"));
+
+        htmlSkel.append($("<div style='margin-bottom: 2px;'><span>Jobs in this session: &nbsp;&nbsp;<b>" + formatNumber(Maco.stats.session.jobs) + xpPerJobText + "</b></span></div>"));
+        htmlSkel.append($("<span>Jobs in total: &nbsp;" + formatNumber(Maco.stats.total.jobs) + "</span><br>"));
+
+        if (Maco.diagnostics.reloadReasons && Maco.diagnostics.reloadReasons.length > 0) {
+            htmlSkel.append($("<br><br>"));
+            htmlSkel.append($("<span><b>Last auto-refresh:</b> &nbsp;</span>"));
+            htmlSkel.append($("<span style='margin-left: 2px;'>" + Maco.diagnostics.reloadReasons[0] + "</span><br>"));
+            for (let i = 1; i < Math.min(5, Maco.diagnostics.reloadReasons.length); i++) {
+                htmlSkel.append($("<span style='margin-left: 120px;'>" + Maco.diagnostics.reloadReasons[i] + "</span><br>"));
+            }
+            if (Maco.diagnostics.reloadReasons.length > 5) {
+                htmlSkel.append($("<span style='margin-left: 120px;'><b>...</b></span><br>"));
+            }
+        }
+        var buttonResetSession = new west.gui.Button("Reset session stats", function() {
+            Maco.stats.session.consumableWaitingTime = 0;
+            Maco.stats.session.sleepTime = 0;
+            Maco.stats.session.travelTime = 0;
+            Maco.stats.session.runTime = 0;
+            Maco.stats.session.money = 0;
+            Maco.stats.session.jobs = 0;
+            Maco.stats.session.xp = 0;
+            Maco.startTime = new Date();
+            Maco.diagnostics.consumablesUsed = [];
+            Maco.diagnostics.reloadReasons = [];
+            Maco.diagnostics.waitingReasons = [];
+            Maco.debouncedSaveAll(0);
+            Maco.selectTab("stats");
+        });
+        var buttonResetStats = new west.gui.Button("Reset all stats", function() {
+            Maco.stats.total.money = 0;
+            Maco.stats.total.jobs = 0;
+            Maco.stats.total.xp = 0;
+            Maco.localStorageSet('statsTime', getFormattedLocalDate());
+            buttonResetSession.click();
+        });
+        var buttonResetSessionDiv = buttonResetSession.getMainDiv();
+        $(buttonResetSessionDiv).css({
+            'position': 'absolute',
+            'bottom': '20px',
+            'right': '50px'
+        });
+        var buttonResetStatsDiv = buttonResetStats.getMainDiv();
+        $(buttonResetStatsDiv).css({
+            'position': 'absolute',
+            'bottom': '20px',
+            'left': '50px'
+        });
+        var statsTime = Maco.localStorageGet('statsTime');
+        if (statsTime) {
+            var timestampText = "Last reset: " + statsTime + "";
+            var timestampSpan = $("<span></span>").text(timestampText);
+            htmlSkel.append($("<div></div>").css({
+                'position': 'absolute',
+                'bottom': '0px',
+                'left': '54px'
+            }).append(timestampSpan));
+        }
+        htmlSkel.append(buttonResetSessionDiv);
+        htmlSkel.append(buttonResetStatsDiv);
+        return htmlSkel;
+    };
+    Maco.checkAndClickRewardButton = function(collectLowLevel = false) {
+        const clickDelay = 1000;
+        const dialog = document.querySelector('.tw2gui_dialog.loginbonus');
+        if (dialog) {
+            const rewardRows = dialog.querySelectorAll('.reward-row');
+            const todayRow = dialog.querySelector('.reward-row.today');
+            const isLastRow = todayRow === rewardRows[rewardRows.length - 1];
+            if (Character.level > 1 && Character.level <= 19 && !isLastRow && !collectLowLevel) {
+                $(".tw2gui_dialog_framefix").remove();
+                return 0;
+            }
+            const button = dialog.querySelector('.collect-btn');
+            if (button) {
+                button.click();
+                setTimeout(function() {
+                    const confirmButton = document.querySelector('.quest_reward_button.normal');
+                    if (confirmButton) {
+                        confirmButton.click();
+                    }
+                }, clickDelay);
+            }
+        }
+        return clickDelay;
+    };
+    Maco.handleCollectLoginReward = function(collectLowLevel = false) {
+        const handleLoginBonus = new Promise((r) => {
+            const delay = Maco.checkAndClickRewardButton(collectLowLevel);
+            setTimeout(r, delay + 1000);
+        });
+
+        handleLoginBonus.then(() => {
+            if (Character.level > 19 || collectLowLevel) { // Player.hasLoginBonus
+                Maco.forceCollectLoginReward();
+            }
+        });
+    };
+    Maco.forceCollectLoginReward = function() {
+        Ajax.remoteCall('loginbonus', 'collect', null, function(response) {
+            if (response.error) {
+                new UserMessage(response.msg).show();
+            } else {
+                Player.hasLoginBonus = false;
+                new UserMessage(
+                    response.msg + (response.rewards ? " " + Object.entries(response.rewards).map(([key, value]) => `${key}: ${value}`).join(', ') : ""),
+                    UserMessage.TYPE_SUCCESS
+                ).show();
+            }
+        });
+    };
+    Maco.createMenuIcon = function() {
+        const menuimage = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAFkUlEQVRIS42V7W9T1x3HP+deYzvGwY7D7JCE5mGYhvCQkOxBHVVMClO6SZ22aUZCU2m3ib2YRKVpfwDLVlWaVK2rtmkvNrWgvehUjRfVoBSJDgKkBUYCaakXoAlOnMROnCfHjh/utc/ZC9tpnBRpP+lI594jfT/3fH/nfK+F/79EaZRLrps/sSwbXwDaurkqDc3jcj2nICClREqptHz+7UQuFy6tPxFeAXA5HAeVEG+ggUBDwNvLyeTZaofj8tdbdrS2N3ibFAqpUFdC4y9EFhNXl1dSv3I6HK9rut4lgEIhb6TSmT6K4DWAaPB6v7mv3vNRX4dflL/pzlik59PJubde7u3WNAWI4oJSiJ8Eujqjy6nOC0OhV757sE2r91QjEBQUvPXh7VtxQx6Px+NjFoBAIKB/eu/u7/o6dguP14fb5yOZWGL3yoroaqoXmlKIsgGq5IWCBpeTFw91aDnDoHV/JwDR8Uf0HvB3nx0YPg68umaRKlno9tXRvPcAl945i9NRha6vs1Z9MS2X3WZD1zTi8Tm+0XuUpVi0ohlrACnzmKZJNpVkbnqS1UQCt9sFCpQouSYUqC8ooiRl2WJhMTbL/MwMedPEMHJIWeyzBWBgYEBWOxxnPn7wuCeTyZD6eJCGurqyCqji/kQJhFhrB6q0JrNpLp/7BzarjbtjkTEJA2sAQCbT6TNDE3Pu0djS7zUBJ30+EAK1zntV8kgUHxFoa71ZzBhcGHmMWSgY0/OJYNY0R6DymKrI/OIfAoHAX+4ND19Sgh5Q3JnL8v6N2xze00ygrQlQFBAML2R5/8YtAm3NBNqeIpOXRJZSv0murr4KmGXRjRdNHT582Bge+k++7G/7njbOX7+Fy+ujZV8HClVsw2qBf12/iVKK8jaFEJJ14rAZwN69e4UQur6tqprd9a1cCY3wixd66el7nvcuXeHzyQh9Pc/Q1NjAiUOd7Gtspr2xifH5a1SGQLE2AY4dO6aqnc6CaZpoQqfB5UTb5qTB5+Xkj4P8+ew7HHn2W+gazHjd1Dqr0IWGaRh8WTxtApw+fZo/vfnmucuffPbc3PICjiob27c5USi26Bqv/OB7CE2AKoqNR8OEJh7ySXg6bLFaBzfIbQb09/fL7u7uv96Pz35ldHbx14dad5A1C+wIP6auuQWtyopCMTYyTHx+gdHZRUIzC3lDt7946tSpj/r7+yv0NgEAhoaGzPbGxj8upo3BKw8ir7sjcx0PIjNomr52VGUhz92pRXJ5+XfDkGcmFyI3NorDEwDBYFBPPgi91t5Y+1KD22EtFPLcn4qX7xygEELw/S4/sWT6eCpT+GF91P3Tm+GxdzdIbQYEg0H9g/Pn+09959mf1TptluWVFYYnlzm638+uA5043DXMhseJTYQZfBThkL/R4qiqstit8TfuxabJZrMVkApATU2N6+LFi/vqrJbnkQVLMpXivaGHnDj6DO3dX6P+q34QGjtbWnk4fIdoMsu10DhH9u9CSbO+3mr9dlSIyUwmc/PLAJrXaX9tl6/+JSmVPRSdp9auY0qJZ/t2drT6i9GBQtMt+A92M3jzNqZU3J+aZ8Uo0OZ/6sTTSv7o6n8fn8xkMv/cCBB2q+XnvXtaLKBIGya3x6Zoqt3GtdEJuo6U73YpWXULI+GZYtAJQeDpnQDWghLWq6Hxl4FNAJSUFmQB3aJTbduCZ6sDbBpj0Ti5dBqbYyvFmIPVxBKzy0l2+9w0elxomkAgyJtmhW5F2KUzxruj07FjOz0uBNDs2cpnkVVqZJ6hqx9S461bi+jo+Od4nXZqt1bh0BTJVAoBjEzE8lKpc2XR9QC5lEj98vqjKWHfMhvUNAEIYolVtjvt/O3CvxGahpLFHSglSefyRBLTuCLx4j9CCJZS6d/mcrkzZdH/AeUGcu6EUJgTAAAAAElFTkSuQmCC';
+        const div = $('<div class="ui_menucontainer" />');
+        const link = $('<div id="Menu" class="menulink" title="Maco"></div>').css('background-image', 'url(' + menuimage + ')').on('click', function () {Maco.loadMapData(Maco.createWindow);});
+        $('#ui_menubar').append((div).append(link).append('<div class="menucontainer_bottom" />'));
+    };
+    function isProgressBarVisible() {
+        const progressBar = document.querySelector('.progress-bar');
+        return progressBar && progressBar.offsetParent !== null;
+    };
+    const documentReady = async function() {
+        try {
+            const gameURL = /^https:\/\/.*\.the-west\..*\/game\.php/;
+            const logoutURL = /^https:\/\/.*\.the-west\..*\/index\.php\?page=logout(?:&|$)/;
+            const homeURL = /^https:\/\/www\.the-west\.[a-zA-Z0-9]+(?:\/|\/.*)?$/;
+
+            if (logoutURL.test(document.URL)) {
+                globalWindow.location.href = "./";
+            } else if (homeURL.test(document.URL)) {
+                let isPermaLogged = document.querySelector('#cookieLogged') != null;
+                GM_setValue("perma_logged", isPermaLogged);
+
+                const checkboxElement = document.querySelector('#cookie');
+                if (checkboxElement) {
+                    const observer = new MutationObserver((mutationsList) => {
+                        for (const mutation of mutationsList) {
+                            if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+                                isPermaLogged = checkboxElement.classList.contains('checked');
+                                GM_setValue("perma_logged", isPermaLogged);
+                            }
+                        }
+                    });
+                    observer.observe(checkboxElement, { attributes: true });
+                }
+
+                const autoLogin = GM_getValue("auto_login", {allowed: false, world: ''});
+                setTimeout(function() {
+                    if (autoLogin.allowed && document.querySelectorAll('.world_row').length === 0) {
+                        Maco.gameLogin(autoLogin.world);
+                    }
+                }, 2000);
+            } else if (gameURL.test(document.URL)) {
+                initCss();
+                characterId = Character.level > 24 ? Character.playerId : 0;
+                Maco.loadSavedData();
+                Maco.installHooks();
+                Maco.loadAccountSettings();
+                Maco.loadSets(function() {});
+                if (characterId === 0 || Maco.settings.showMenuIcon) {
+                    Maco.createMenuIcon();
+                }
+                Maco.lastReloadTime = getUTCDate().getTime();
+                Maco.loadAlertsFromLocalStorage();
+                EventHandler.listen('fort_battle_joined', Maco.updateFortBattles);
+                const reloadInfoString = Maco.localStorageGet('reloadData');
+                //if (!reloadInfoString) Maco.updateCheck();
+
+                setTimeout(function() {
+                    Maco.verifyChatLeave();
+                    Maco.sendEventCurrency();
+                }, AUTO_START_DELAY - 1000);
+
+                setTimeout(function() {
+                    if (Maco.dailyQuests.enabled) {
+                        Maco.runDailyQuests();
+                    }
+                }, 5000 + AUTO_START_DELAY + GAME_LOAD_TIMEOUT);
+
+                setTimeout(function() {
+                    if (Maco.settings.skipTutorial && LinearQuestHandler.hasTutorialQuest()) {
+                        Maco.skipTutorial();
+                    }
+                    Maco.checkAndClickRewardButton();
+                    Maco.startSpecialConsumableInterval();
+                    GM_deleteValue("auto_login");
+
+                    if (reloadInfoString) {
+                        const reloadInfo = JSON.parse(reloadInfoString);
+                        const reason = reloadInfo.reason;
+                        const resumeSession = reloadInfo.auto_start;
+                        Maco.diagnostics.reloadReasons.unshift(reason);
+                        if (Maco.diagnostics.reloadReasons.length > 30) Maco.diagnostics.reloadReasons.pop();
+                        Maco.debouncedSaveAll(0);
+                        Maco.localStorageRemove('reloadData');
+                        console.log("Auto-reload occured.. Reason: " + reason);
+                        console.log(Maco.diagnostics.errorLog && Maco.diagnostics.errorLog.length > 0
+                            ? `Last Error: ${Maco.diagnostics.errorLog[0]?.timestamp}, ${Maco.diagnostics.errorLog[0]?.error}`
+                            : "No errors logged."
+                        );
+
+                        if (resumeSession) {
+                            Maco.startReloadObserver();
+                            if (document.querySelector('.critical-error') || Maco.invalidSession) return;
+
+                            const loadJobsTimeoutId = setTimeout(function() {
+                                if (!isProgressBarVisible()) {
+                                    Maco.loadMapData(() => {
+                                        setTimeout(Maco.resumeSession, 2000);
+                                    });
+                                } else {
+                                    Maco.reload("Stuck in loading screen. Retrying.. ");
+                                }
+                            }, GAME_LOAD_TIMEOUT);
+
+                            Maco.loadMapData(() => {
+                                clearTimeout(loadJobsTimeoutId);
+                                setTimeout(Maco.resumeSession, 2000);
+                            });
+                        }
+                    }
+                }, AUTO_START_DELAY);
+            }
+        } catch (e) {
+            const msg = "Exception occured when loading document: ";
+            console.error(msg, e.stack);
+            if (String(e).toLowerCase().includes("invalid session")) {
+                setTimeout(function() {
+                    globalWindow.location.reload();
+                }, 30000);
+            }
+            Maco.handleError(e, msg);
+        }
+    };
+    function initCss() {
+        //globalWindow.Maco = Maco;
+        const customAlertHtml = `<div id="Maco-alertContainer"></div>`;
+        const customAlertCss = `
+        #Maco-alertContainer {
+            position: fixed;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 9999;
+        }
+        .Maco-alert {
+            background-color: #fff;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+            width: fit-content;
+            min-width: 258px;
+            max-width: 700px;
+            word-wrap: break-word;
+        }
+        .alert-message {
+            font-size: 16px;
+            margin-bottom: 15px;
+            user-select: text;
+            white-space: pre-wrap;
+        }
+        .alert-title {
+            font-size: 14px;
+            color: #424651;
+            margin-bottom: 10px;
+        }
+        .alert-ok {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .alert-ok:hover {
+            background-color: #0056b3;
+        }`;
+
+        // Inject HTML
+        const div = document.createElement('div');
+        div.innerHTML = customAlertHtml;
+        document.body.appendChild(div);
+
+        // Inject CSS
+        const style = document.createElement('style');
+        style.textContent = customAlertCss;
+        document.head.appendChild(style);
+    };
+    Maco.resumeSession = async function() {
+        Maco.handleCollectLoginReward();
+        if (Maco.addedJobs.length === 0) {
+            const doNightBuild = Maco.canBuild() && Maco.build.nightBuild;
+            if ((Maco.settings.nightShiftWorker || doNightBuild) && Maco.swapSilverJobs()) {
+                Maco.diagnostics.reloadReasons[0] += "Silver jobs changed.";
+                if (await Maco.verifySilverJobs()) {
+                    Maco.addedJobs = [];
+                    Maco.debouncedSaveAll(0);
+                    await wait(timeout_long); // Delayed reload
+                    Maco.reload("Silver jobs mismatch. Retrying.. ");
+                    return;
+                }
+                if (doNightBuild) {
+                    Maco.buildTownBuilding(Maco.build.building, Maco.build.interval, Maco.build.hoursAmount);
+                    return;
+                }
+            } else if (Maco.canBuild()) {
+                Maco.buildTownBuilding(Maco.build.building, Maco.build.interval);
+                return;
+            } else {
+                const altMessage = "No jobs to run."
+                Maco.diagnostics.reloadReasons[0] += " " + altMessage;
+                Maco.sleep({ dontWakeUp: true, message: altMessage });
+                return;
+            }
+        }
+        console.log("Continuing jobs..");
+        Maco.handleScriptStart();
+    };
+    Maco.sendEventCurrency = function() {
+        const event_id = Maco.getActiveEventId();
+        if (!event_id) return;
+
+        Ajax.remoteCall('friendsbar', 'event_all', {
+            event: event_id
+        }, response => {
+            if (response.error) {
+                //MessageError(response.msg).show();
+            } else if (extractNumberFromString(response.msg) > 0) {
+                MessageSuccess(response.msg).show();
+            }
+        });
+    };
+    Maco.getActiveEventId = function() {
+        return Object.keys(globalWindow.Game.sesData)[0];
+    };
+    Maco.leaveChat = function(id) {
+        Chat.Router.push(new Chat.Request("setonlinestate", null, {
+            room: id,
+            state: true
+        })).request();
+
+        Chat.MyClient.setRoomState(id, false);
+        Chat.Router.push(new Chat.Request("setonlinestate", null, {
+            room: id,
+            state: false
+        })).request();
+    };
+    Maco.verifyChatLeave = function() {
+        const chatChannels = document.querySelectorAll('.chat_channel');
+        chatChannels.forEach(channel => {
+            const leaveChannelImg = channel.querySelector('.leave_channel');
+            if (leaveChannelImg && leaveChannelImg.style.display === 'none') {
+                Maco.leaveChat(channel.id);
+            }
+        });
+    };
+    Maco.showNotification = function(title, body = "", type = "enabled") {
+        if (!Maco.settings.notifications.enabled || !Maco.settings.notifications[type]) return false;
+
+        if (!("Notification" in globalWindow)) { // Check if the Notification API is supported by the browser
+            console.warn("%cNotifications not supported in this browser.", 'color: cyan');
+            return false;
+        }
+        if (Notification.permission !== "granted") { // Request permission to display notifications (if not already granted)
+            Notification.requestPermission().then(function (permission) {
+                if (permission !== "granted") {
+                    console.warn("%cNotification permission denied.", 'color: cyan');
+                }
+            });
+            return false;
+        }
+        // Display the notification
+        new Notification(title, {
+            silent: Maco.settings.notifications.silent,
+            requireInteraction: Maco.settings.notifications.requireInteraction,
+            body: body
+        });
+        return true;
+    };
+    Maco.showAlert = function(message, addTimestamp = true, savedTimestamp = null, callback = null, openLink = null) {
+        const now = new Date().getTime();
+
+        // Check if there's already an alert with the same message in the DOM
+        var existingAlerts = document.querySelectorAll('.Maco-alert');
+        for (var i = 0; i < existingAlerts.length; i++) {
+            if (Maco.isolateAlertMessage(existingAlerts[i].querySelector('.alert-message').innerHTML) === message) {
+                // Increment the count if the message already exists
+                existingAlerts[i].querySelector('.alert-message').innerHTML = Maco.incrementAlertCount(existingAlerts[i].querySelector('.alert-message').innerHTML);
+                existingAlerts[i].style.display = 'block';
+                return existingAlerts[i].id;
+            }
+        }
+
+        // Create a new alert if no matching one exists
+        var alertId = 'Maco-alert-' + now;
+        var alertDiv = document.createElement('div');
+        alertDiv.id = alertId;
+        alertDiv.className = 'Maco-alert';
+
+        var titleDiv = document.createElement('div');
+        titleDiv.className = 'alert-title';
+        
+        var messageDiv = document.createElement('div');
+        messageDiv.className = 'alert-message';
+
+        titleDiv.innerText = "Maco";
+        let timestampString = "";
+        if (addTimestamp || savedTimestamp) {
+            timestampString = savedTimestamp || timestamp();
+            titleDiv.innerText += " - " + timestampString;  // Append timestamp to title
+        }
+
+        messageDiv.innerHTML = message;  // Add the main message text
+
+        var okButton = document.createElement('button');
+        okButton.className = 'alert-ok';
+        okButton.innerText = 'OK';
+        okButton.addEventListener('click', function() {
+            alertDiv.remove();
+            Maco.removeAlertFromLocalStorage(message); // Remove alert from local storage
+            if (openLink) {
+                window.open(openLink, "_blank");
+            }
+            if (typeof callback === 'function') {
+                try {
+                    callback();
+                } catch (err) {
+                    console.error('Error in Maco.showAlert callback:', err);
+                }
+            }
+        });
+
+        alertDiv.appendChild(titleDiv); // Add timestamp div
+        alertDiv.appendChild(messageDiv); // Add message div
+        alertDiv.appendChild(okButton); // Add OK button
+
+        document.getElementById('Maco-alertContainer').appendChild(alertDiv);
+        alertDiv.style.display = 'block';
+        globalWindow.focus();
+        Maco.saveAlertToLocalStorage(message, timestampString, openLink); // Save alert to local storage
+
+        return alertId;
+    };
+    Maco.saveAlertToLocalStorage = function(message, timestamp, openLink) {
+        let alerts = JSON.parse(Maco.localStorageGet('alerts')) || [];
+
+        const alertData = { // Add both message and timestamp as an object
+            message: message,
+            timestamp: timestamp,
+            openLink: openLink
+        };
+
+        if (!alerts.some(alert => alert.message === message)) { // Avoid duplicate entries
+            alerts.push(alertData);
+            Maco.localStorageSet('alerts', JSON.stringify(alerts));
+        }
+    };
+    Maco.removeAlertFromLocalStorage = function(message) {
+        let alerts = JSON.parse(Maco.localStorageGet('alerts')) || [];
+        alerts = alerts.filter(alert => alert.message !== message);
+        Maco.localStorageSet('alerts', JSON.stringify(alerts));
+    };
+    Maco.loadAlertsFromLocalStorage = function() {
+        let alerts = JSON.parse(Maco.localStorageGet('alerts')) || [];
+
+        alerts.forEach(alert => {
+            Maco.showAlert(alert.message, false, alert.timestamp, alert.openLink); // Pass the saved timestamp
+        });
+    };
+    Maco.isolateAlertMessage = function(fullMessage) {
+        const leadingCountPattern = /^\(\d+\)\s*/; // Regex to match a number in parentheses at the start
+        return fullMessage.replace(leadingCountPattern, '');
+    };
+    Maco.incrementAlertCount = function(message) {
+        const countPattern = /^\((\d+)\)\s*/; // Regex to match a number in parentheses at the start of the string
+
+        let match = message.match(countPattern);
+
+        if (match) { // Extract the number, increment it, and replace the original part with the incremented value
+            let count = parseInt(match[1], 10); // Convert matched string to number
+            count += 1; // Increment the number
+            return message.replace(countPattern, `(${count})  `);
+        } else {
+            return `(2)  ` + message; // No number found at the start, prepend with (2)
+        }
+    };
+    Maco.startAnimationRemoveObserver = function() {
+        const workContainer = document.getElementById('ui_workcontainer');
+
+        function updateStyle() {
+            if (TaskQueue.queue.length > 0) {
+                workContainer.style.cssText = '';
+            } else {
+                workContainer.style.cssText = 'display: none;';
+            }
+        }
+
+        queueAnimationObserver = new MutationObserver(mutations => {
+            mutations.forEach(mutation => {
+                if (mutation.attributeName === 'style') {
+                    const currentStyle = workContainer.style.cssText.trim();
+                    if (currentStyle !== '' && currentStyle !== 'display: none;') {
+                        updateStyle();
+                    }
+                }
+            });
+        });
+
+        queueAnimationObserver.observe(workContainer, {
+            attributes: true, // Listen for attribute changes
+            attributeFilter: ['style'] // Only listen for changes to the style attribute
+        });
+    };
+    // Create a dummy invisible button once
+    function createDummyButton() {
+        let dummy = document.getElementById("west-btn-exercise");
+        if (!dummy) {
+            dummy = document.createElement("button");
+            dummy.id = "west-btn-exercise";
+            dummy.style.position = "absolute";
+            dummy.style.left = "-9999px"; // hide offscreen
+            dummy.style.top = "-9999px";
+            dummy.style.width = "1px";
+            dummy.style.height = "1px";
+            dummy.style.opacity = "0";
+            document.body.appendChild(dummy);
+        }
+        return dummy;
+    }
+
+    // Simulate a human-like click on the dummy button
+    function fakeClick(element) {
+        if (!element) return;
+        const rect = element.getBoundingClientRect();
+        const x = rect.left + rect.width / 2;
+        const y = rect.top + rect.height / 2;
+
+        const options = {
+            bubbles: true,
+            cancelable: true,
+            view: element.ownerDocument.defaultView,
+            clientX: x,
+            clientY: y
+        };
+
+        element.dispatchEvent(new MouseEvent("mousedown", options));
+        setTimeout(() => {
+            element.dispatchEvent(new MouseEvent("mouseup", options));
+            element.dispatchEvent(new MouseEvent("click", options));
+        }, 50 + Math.random() * 150); // human-like delay
+    }
+
+    /** Dispatch a small random mousemove event (to feel alive). */
+    function fakeMouseMove() {
+        document.dispatchEvent(new MouseEvent("mousemove", {
+            bubbles: true,
+            clientX: Math.random() * window.innerWidth,
+            clientY: Math.random() * window.innerHeight
+        }));
+    }
+
+    (function installKeepAliveController() {
+        const dummy = createDummyButton();
+
+        let timerId = null;
+        let running = false;
+
+        // returns random delay between min and max (ms)
+        function randomDelay(minMs = 40_000, maxMs = 70_000) {
+            return Math.floor(minMs + Math.random() * (maxMs - minMs));
+        }
+
+        // schedule next tick with random delay; uses recursive setTimeout so each tick can vary
+        function scheduleNextTick() {
+            timerId = setTimeout(async () => {
+                try {
+                    fakeMouseMove();
+                    // small randomized extra jitter before clicking
+                    await new Promise(r => setTimeout(r, 20 + Math.random() * 80));
+                    fakeClick(dummy);
+                } catch (e) {
+                    // swallow errors so runner continues
+                    console.error("keepAlive tick error", e);
+                }
+                // schedule again if still running
+                if (running) scheduleNextTick();
+            }, randomDelay());
+        }
+
+        // start controller
+        function start() {
+            if (running) return;
+            running = true;
+            // first tick quickly so you don't wait full interval on start (optional)
+            scheduleNextTick();
+        }
+
+        // stop controller
+        function stop() {
+            running = false;
+            if (timerId != null) {
+                clearTimeout(timerId);
+                timerId = null;
+            }
+        }
+
+        // Expose control on Maco (or window) so other code can toggle
+        if (typeof Maco !== "object") throw new Error("Maco not defined yet");
+        Maco.keepAlive = { start, stop, isRunning: () => running };
+    })();
+    Maco.debouncedSaveAll = debounce(Maco.saveAll, 0);
+    $(document).ready(documentReady);
+})();
