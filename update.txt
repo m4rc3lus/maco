@@ -1,0 +1,67 @@
+version 3.64.5
+Updated stats for new fort medicine consumable
+Automatically use selected battle consumables before battle
+Fixed minor bug with equipping health set before consumable use
+Fixed bug with auto-refresh after battle end
+
+version 3.65.3
+Hotfix alert bug
+
+version 3.65.2
+Fixed automatic fort battle selection, when newly joined battle starts sooner than others
+Minor bug fixes
+
+version 3.64.5
+Fixed another bug in import settings functionality (last one :D)
+
+version 3.64.3
+Fixed checkbox worker profile 1 / profile 2 not saving
+Fixed broken import settings functionality
+Regeneration in fort will now prefer closest fort
+
+version 3.64.2
+Added Worker profiles
+Duel protection check will now also consider player bounty when player is not in town
+Battles are now saved by ID
+Fixed unreliable fort battle end signal when using bad VPN (will additionally listen for chat remove)
+
+version 3.64.1
+Fixed no HP refill when using battle set saved in TWCalc wardrobe
+Fixed set warning when Automation premium ends
+Added warning in case login reward is not collected
+
+version 3.64.0
+Fixed rare case when silver jobs are not changed
+Improved Sets GUI
+** Sets are now saved by name ** No more suprises! ;-)
+
+version 3.63.7
+Added handy preset for best XP jobs in (empty) Worker
+
+version 3.63.5
+Sort jobs by $ money is now also possible
+Added trader option to make buying multiple items easier
+Added delay option when opening usable items
+Export settings will now also include saved sets in TWCalc wardrobe
+Fixed unreliable refill HP before battle when using wardrobe set
+Allowed to use consumables with premium bonus
+Scheduled stop can also send player to sleep
+
+version 3.63.4
+Valentine wheel of fortune animation skip
+Auto send event currency to friends on login
+Leave chat rooms on login (verify that Salon 1 is offline)
+
+version 3.63.3
+Added: checkbox to allow consumables that also add motivation when continuously refilling energy
+
+version 3.63.2
+Improved: regenerating low health will not wait for full energy anymore
+
+version 3.63.1
+Some bug fixes
+Improved regeneration energy check
+
+version 3.63.0
+Added update manager
+Fixed auto-start triggered when not supposed to
